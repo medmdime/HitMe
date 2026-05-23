@@ -1,8 +1,15 @@
-import { Geist, Geist_Mono, Raleway } from "next/font/google"
+import { Geist_Mono, Raleway } from "next/font/google"
 
 import "./globals.css"
 import { ThemeProvider } from "@/components/theme-provider"
+import { AppNav } from "@/components/app-nav"
+import { Toaster } from "@/components/ui/sonner"
 import { cn } from "@/lib/utils";
+
+export const metadata = {
+  title: "HitMe — YouTube script reverse-engineer",
+  description: "Find outlier videos and extract their scripts in bracket format.",
+}
 
 const raleway = Raleway({subsets:['latin'],variable:'--font-sans'})
 
@@ -23,7 +30,11 @@ export default function RootLayout({
       className={cn("antialiased", fontMono.variable, "font-sans", raleway.variable)}
     >
       <body>
-        <ThemeProvider>{children}</ThemeProvider>
+        <ThemeProvider>
+          <AppNav />
+          <main className="min-h-[calc(100svh-3.5rem)]">{children}</main>
+          <Toaster />
+        </ThemeProvider>
       </body>
     </html>
   )
