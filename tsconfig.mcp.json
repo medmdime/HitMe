@@ -1,0 +1,22 @@
+{
+  "//": "The MCP server and dev scripts are a separate Node program from the Next app. Keeping them out of the Next build means a type error here cannot fail a web deploy; this config keeps them type-checked anyway.",
+  "extends": "./tsconfig.json",
+  "compilerOptions": {
+    "noEmit": true,
+    "module": "esnext",
+    "moduleResolution": "bundler",
+    "lib": [
+      "esnext"
+    ],
+    "types": [
+      "node"
+    ]
+  },
+  "include": [
+    "mcp/**/*.ts",
+    "scripts/**/*.ts"
+  ],
+  "exclude": [
+    "node_modules"
+  ]
+}

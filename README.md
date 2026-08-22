@@ -162,10 +162,18 @@ Everything else works without it — the YouTube research tools need only
 For Instagram/TikTok transcription, yt-dlp must be on PATH:
 
 ```bash
-winget install yt-dlp.yt-dlp
+pip install -U "yt-dlp[default]" curl_cffi
 ```
 
-Nothing else needs installing — clips download as single muxed MP4s, so ffmpeg is optional.
+`curl_cffi` is load-bearing for Instagram: it only answers logged-out requests from clients
+whose TLS fingerprint looks like a real browser, and yt-dlp needs curl_cffi to impersonate
+one. The `[default]` extras do **not** include it. Installing via
+`winget install yt-dlp.yt-dlp` works for TikTok and YouTube but ships no impersonation
+support, so Instagram links will be refused.
+
+ffmpeg is optional — clips download as single muxed MP4s, so no merge step is needed.
+
+The TikTok *research* tools need none of this; they use plain `fetch` and no credentials.
 
 ## The tools
 
@@ -180,6 +188,24 @@ Nothing else needs installing — clips download as single muxed MP4s, so ffmpeg
 | `yt_trending` | Trending chart, annotated with outlier scores. |
 | `yt_video_info` | One video: stats, outlier score, title signals. |
 | `yt_quota` | Estimated API quota left per key. |
+
+**Short-form research (TikTok)** — no API key, works logged out.
+
+| Tool | Purpose |
+| --- | --- |
+| `tiktok_account_outliers` | Rank a public account's posts against its own median. |
+| `tiktok_account_summary` | Cadence, consistency, and breakout count for an account. |
+
+There is **no free platform-wide search on TikTok or Instagram** — no hashtag, keyword,
+trending, or For You feed. Those endpoints require request signing, and TikTok's Research
+API excludes creators by policy. Only per-account reading is open, so research starts from
+a list of accounts you name rather than from a trending page. Instagram account listing is
+dead logged-out; only single posts work, via `transcribe_clip`.
+
+Two caveats when quoting TikTok numbers. Public counts are rounded, and the step jumps to
+100k above a million — a post just over 1M can be off by 5%, and the tool marks these with
+`~`. Outlier scores also shift with the `lookback` window, because the median moves as you
+read deeper; keep the window fixed when comparing runs.
 
 **Analysis**
 

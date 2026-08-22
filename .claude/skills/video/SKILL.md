@@ -40,6 +40,39 @@ lesson.
 Searches cost 100 quota units each out of 10,000/day. Check `yt_quota` if calls start
 failing. Prefer narrowing an existing result set over re-searching.
 
+### Short-form: TikTok and Instagram
+
+| Tool | Use it for |
+|---|---|
+| `tiktok_account_outliers` | Which of a creator's posts broke out against their own median. |
+| `tiktok_account_summary` | Is this account even worth studying? Cadence, consistency, breakout count. |
+
+**The hard limit, and it shapes the whole workflow: there is no free platform-wide search
+on TikTok or Instagram.** No hashtag feed, no keyword search, no trending list, no For You.
+Those endpoints are signed and return nothing without credentials, and the TikTok Research
+API excludes creators by policy. Only per-account reading is open.
+
+So you cannot ask "what's trending on TikTok right now." You *can* ask "which of these ten
+creators in my niche just had a breakout, and why." Keep a seed list of accounts worth
+watching and sweep it — that is the workflow, and it is a better question anyway, because a
+breakout in your niche is a signal you can act on where a global trend usually isn't.
+
+If the user asks for trending TikToks, say plainly that it isn't available for free and
+offer the account sweep instead. Do not fake it with a guess.
+
+Two data caveats that matter when you report numbers:
+
+- **Counts are rounded**, and the step jumps to 100,000 above a million. A post just over
+  1M can be off by 5%. The tool marks these with `~`. Never present close scores as a
+  meaningful ranking, and never quote a score to two decimals.
+- **Scores depend on the lookback window.** The median moves as you read deeper, so the
+  same post can be 198x or 111x depending on sample depth. Keep `lookback` fixed when
+  comparing, and say which window a number came from.
+
+For Instagram, only single posts work — `transcribe_clip` on a reel URL. Account listing is
+dead logged-out. If the user wants an IG account swept, tell them that rather than looping
+over guessed URLs.
+
 Pick 2–4 references. More than that and the remix turns to mush.
 
 ## 2. Study — turn references into scripts
