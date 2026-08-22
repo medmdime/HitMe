@@ -19,7 +19,7 @@ import {
   isCoarse,
   parseAccount,
   type TikTokPost,
-} from "../lib/tiktok"
+} from "../../lib/tiktok"
 import { clamp, compact, guard, text, truncate } from "../lib/text"
 
 /**
