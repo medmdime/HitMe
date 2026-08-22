@@ -16,7 +16,7 @@
  * endpoints are signed and return empty bodies without a valid signature, so a
  * research run has to be seeded with accounts you already care about.
  */
-import { cached, TTL } from "../../lib/cache"
+import { cached, TTL } from "./cache"
 
 const UA =
   "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 " +

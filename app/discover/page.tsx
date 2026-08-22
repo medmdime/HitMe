@@ -15,15 +15,29 @@ import { KeywordSearch } from "@/components/discover/keyword-search"
 import { SmallBreakouts } from "@/components/discover/small-breakouts"
 import { HitVsFlop } from "@/components/discover/hit-vs-flop"
 import { Trending } from "@/components/discover/trending"
+import { TikTokAccounts } from "@/components/discover/tiktok-accounts"
+import { InstagramAccounts } from "@/components/discover/instagram-accounts"
 import {
   RiUser3Line,
   RiSearchLine,
   RiFireLine,
   RiScales3Line,
   RiFlashlightLine,
+  RiMusic2Line,
+  RiInstagramLine,
 } from "@remixicon/react"
 
-type Mode = "trending" | "channel" | "keyword" | "breakouts" | "compare"
+type Mode =
+  | "trending"
+  | "channel"
+  | "keyword"
+  | "breakouts"
+  | "compare"
+  | "tiktok"
+  | "instagram"
+
+// The quota meter tracks YouTube Data API units; the social scanners use no key.
+const YOUTUBE_MODES: Mode[] = ["trending", "channel", "keyword", "breakouts", "compare"]
 
 function DiscoverInner() {
   const router = useRouter()
@@ -56,7 +70,8 @@ function DiscoverInner() {
       <div className="mb-6">
         <h1 className="font-heading text-2xl font-semibold">Discover</h1>
         <p className="text-sm text-muted-foreground">
-          Find outlier videos — then send them to the analyzer.
+          Find outlier videos across YouTube, TikTok and Instagram — then send them to
+          the analyzer.
         </p>
       </div>
 
@@ -87,6 +102,14 @@ function DiscoverInner() {
               <RiScales3Line />
               Hit vs flop
             </TabsTrigger>
+            <TabsTrigger value="tiktok">
+              <RiMusic2Line />
+              TikTok
+            </TabsTrigger>
+            <TabsTrigger value="instagram">
+              <RiInstagramLine />
+              Instagram
+            </TabsTrigger>
           </TabsList>
 
           <TabsContent value="trending" className="mt-4">
@@ -114,10 +137,26 @@ function DiscoverInner() {
           <TabsContent value="compare" className="mt-4">
             <HitVsFlop onSearched={onSearched} />
           </TabsContent>
+          <TabsContent value="tiktok" className="mt-4">
+            <TikTokAccounts />
+          </TabsContent>
+          <TabsContent value="instagram" className="mt-4">
+            <InstagramAccounts />
+          </TabsContent>
         </Tabs>
 
         <aside className="space-y-4">
-          <QuotaMeter refreshSignal={quotaTick} />
+          {YOUTUBE_MODES.includes(mode) ? (
+            <QuotaMeter refreshSignal={quotaTick} />
+          ) : (
+            <div className="rounded-3xl border p-4 text-sm">
+              <p className="font-medium">No API quota used</p>
+              <p className="mt-1 text-muted-foreground">
+                The TikTok and Instagram scanners read public pages directly — no key,
+                no quota. Results are cached for 6 hours per account.
+              </p>
+            </div>
+          )}
         </aside>
       </div>
     </div>

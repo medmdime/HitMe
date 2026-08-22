@@ -44,8 +44,10 @@ failing. Prefer narrowing an existing result set over re-searching.
 
 | Tool | Use it for |
 |---|---|
-| `tiktok_account_outliers` | Which of a creator's posts broke out against their own median. |
-| `tiktok_account_summary` | Is this account even worth studying? Cadence, consistency, breakout count. |
+| `tiktok_account_outliers` | Which of a TikTok creator's posts broke out against their own median. |
+| `tiktok_account_summary` | Is this account worth studying? Cadence, consistency, breakout count. |
+| `instagram_account_outliers` | Same, for Instagram. Ranks on likes by default; `metric: "views"` for reels. |
+| `instagram_account_summary` | Format mix (reels vs photos), cadence, engagement. |
 
 **The hard limit, and it shapes the whole workflow: there is no free platform-wide search
 on TikTok or Instagram.** No hashtag feed, no keyword search, no trending list, no For You.
@@ -69,9 +71,15 @@ Two data caveats that matter when you report numbers:
   same post can be 198x or 111x depending on sample depth. Keep `lookback` fixed when
   comparing, and say which window a number came from.
 
-For Instagram, only single posts work — `transcribe_clip` on a reel URL. Account listing is
-dead logged-out. If the user wants an IG account swept, tell them that rather than looping
-over guessed URLs.
+**Instagram has one extra quirk.** It publishes a view count only for videos and reels —
+photos and carousels carry likes and comments and nothing else. So `metric: "likes"`
+(the default) ranks the whole grid, and `metric: "views"` silently drops every photo. Use
+views when you care about reels reach, likes when you want the account's full picture, and
+say which one a number came from.
+
+Instagram also throttles far sooner than TikTok. A `lookback` of 12 is a single clean
+request; deeper scans may come back short, and the tool flags it when that happens. Prefer
+12 unless you specifically need more history.
 
 Pick 2–4 references. More than that and the remix turns to mush.
 

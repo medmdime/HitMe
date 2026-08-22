@@ -189,23 +189,33 @@ The TikTok *research* tools need none of this; they use plain `fetch` and no cre
 | `yt_video_info` | One video: stats, outlier score, title signals. |
 | `yt_quota` | Estimated API quota left per key. |
 
-**Short-form research (TikTok)** — no API key, works logged out.
+**Short-form research (TikTok + Instagram)** — no API key, no cookies, works logged out.
 
 | Tool | Purpose |
 | --- | --- |
-| `tiktok_account_outliers` | Rank a public account's posts against its own median. |
-| `tiktok_account_summary` | Cadence, consistency, and breakout count for an account. |
+| `tiktok_account_outliers` | Rank a TikTok account's posts against its own median. |
+| `tiktok_account_summary` | Cadence, consistency, and breakout count. |
+| `instagram_account_outliers` | Same for Instagram; ranks on likes or reel views. |
+| `instagram_account_summary` | Format mix, cadence, engagement. |
 
-There is **no free platform-wide search on TikTok or Instagram** — no hashtag, keyword,
+Also available in the web UI as **TikTok** and **Instagram** tabs on `/discover`.
+
+There is **no free platform-wide search on either platform** — no hashtag, keyword,
 trending, or For You feed. Those endpoints require request signing, and TikTok's Research
 API excludes creators by policy. Only per-account reading is open, so research starts from
-a list of accounts you name rather than from a trending page. Instagram account listing is
-dead logged-out; only single posts work, via `transcribe_clip`.
+a list of accounts you name rather than from a trending page.
 
-Two caveats when quoting TikTok numbers. Public counts are rounded, and the step jumps to
-100k above a million — a post just over 1M can be off by 5%, and the tool marks these with
-`~`. Outlier scores also shift with the `lookback` window, because the median moves as you
-read deeper; keep the window fixed when comparing runs.
+Per-platform caveats worth knowing:
+
+- **TikTok rounds its public counts**, and the step jumps to 100k above a million, so a
+  post just over 1M can be off by 5%. Those are marked `~`, and ties are broken on
+  engagement rather than left to arbitrary order.
+- **Instagram publishes views only for videos and reels.** Photos carry likes and comments
+  and nothing else, so likes is the only metric that ranks a whole grid; `views` restricts
+  to reels and reports how many posts it had to exclude. Instagram also throttles quickly —
+  12 posts is one clean request, deeper scans may return short and say so.
+- **Scores move with the scan depth** on both, because the median shifts as you read more
+  history. Keep the lookback fixed when comparing accounts.
 
 **Analysis**
 
