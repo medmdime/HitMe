@@ -35,11 +35,28 @@ function loadKeys(): string[] {
   return keys
 }
 
-// Per-process counters. Resets on cold start (acceptable for solo-user app).
+// Per-process counters. Reset on cold start (acceptable for solo-user app) and
+// at the Pacific-midnight rollover, which is when YouTube actually refills the
+// quota. The rollover matters for long-lived processes like the MCP server: a
+// key marked exhausted at 4pm would otherwise stay dead until a restart.
 const usage: number[] = []
 const exhausted: boolean[] = []
 
+function pacificDay(): string {
+  return new Date().toLocaleDateString("en-CA", {
+    timeZone: "America/Los_Angeles",
+  })
+}
+
+let quotaDay = pacificDay()
+
 function ensureCounters(n: number) {
+  const today = pacificDay()
+  if (today !== quotaDay) {
+    quotaDay = today
+    usage.fill(0)
+    exhausted.fill(false)
+  }
   while (usage.length < n) usage.push(0)
   while (exhausted.length < n) exhausted.push(false)
 }

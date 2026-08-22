@@ -34,3 +34,9 @@ pnpm-debug.log*
 # typescript
 *.tsbuildinfo
 next-env.d.ts
+
+# hitme MCP workspace: downloaded clips + generated exports
+/.hitme/
+
+# Claude Code local machine settings
+.claude/settings.local.json

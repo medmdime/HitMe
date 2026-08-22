@@ -1,0 +1,9 @@
+{
+  "mcpServers": {
+    "hitme": {
+      "command": "node",
+      "args": ["node_modules/tsx/dist/cli.mjs", "mcp/server.ts"],
+      "env": {}
+    }
+  }
+}
