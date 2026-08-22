@@ -20,12 +20,15 @@ export class YtDlpMissingError extends Error {
       [
         "yt-dlp is not installed, so links cannot be downloaded for transcription.",
         "",
-        "Install it (pick one), then restart this MCP server:",
-        "  winget install yt-dlp.yt-dlp",
-        "  pip install -U yt-dlp",
+        "Install it, then restart this MCP server:",
+        '  pip install -U "yt-dlp[default]" curl_cffi',
         "",
-        "Some clips also need ffmpeg to merge audio and video:",
-        "  winget install Gyan.FFmpeg",
+        "curl_cffi matters: Instagram only answers logged-out requests that look",
+        "like a real browser, and yt-dlp needs it to impersonate one. The",
+        "yt-dlp[default] extras do NOT include it. Without curl_cffi, TikTok and",
+        "YouTube links still work but Instagram will refuse.",
+        "",
+        "winget install yt-dlp.yt-dlp also works, but ships no impersonation support.",
         "",
         "Alternative with no install: save the video yourself and pass its path as `file`.",
       ].join("\n")
@@ -138,12 +141,49 @@ function cookieArgs(browser?: string): string[] {
 
 const COMMON_ARGS = ["--no-warnings", "--no-playlist", "--ignore-config"]
 
+/**
+ * Instagram serves logged-out requests only to clients whose TLS fingerprint
+ * looks like a real browser, so single-post extraction needs impersonation.
+ * It requires curl_cffi alongside yt-dlp; when that is missing yt-dlp exits
+ * complaining about the target rather than falling back, so callers retry
+ * without it. See `impersonationUnavailable`.
+ */
+const IMPERSONATE_ARGS = ["--impersonate", "chrome"]
+
+function impersonationUnavailable(stderr: string): boolean {
+  const s = stderr.toLowerCase()
+  return (
+    s.includes("impersonate target") ||
+    s.includes("no impersonate") ||
+    s.includes("not available") && s.includes("impersonat")
+  )
+}
+
+/**
+ * Runs yt-dlp with browser impersonation, retrying without it if this install
+ * lacks curl_cffi. Sites that gate on TLS fingerprint (Instagram) only work
+ * with it; everything else is unaffected by its presence.
+ */
+async function runImpersonating(
+  bin: string,
+  args: string[],
+  timeoutMs?: number
+): Promise<RunResult> {
+  const first = await run(bin, [...IMPERSONATE_ARGS, ...args], timeoutMs)
+  if (first.code === 0 || !impersonationUnavailable(first.stderr)) return first
+  process.stderr.write(
+    "[hitme] yt-dlp has no impersonation target (curl_cffi not installed); retrying without it. " +
+      'Instagram may refuse. Fix with: pip install -U "yt-dlp[default]" curl_cffi\n'
+  )
+  return run(bin, args, timeoutMs)
+}
+
 export async function probeClip(
   url: string,
   browser?: string
 ): Promise<ClipMetadata> {
   const bin = requireYtDlp()
-  const { code, stdout, stderr } = await run(bin, [
+  const { code, stdout, stderr } = await runImpersonating(bin, [
     ...COMMON_ARGS,
     ...cookieArgs(browser),
     "--dump-single-json",
@@ -213,7 +253,7 @@ export async function downloadClip(
   }
 
   const outTemplate = join(MEDIA_DIR, `${stem}.%(ext)s`)
-  const { code, stderr } = await run(
+  const { code, stderr } = await runImpersonating(
     bin,
     [
       ...COMMON_ARGS,

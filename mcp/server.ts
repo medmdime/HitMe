@@ -17,6 +17,7 @@ import { registerAnalyzeTools } from "./tools/analyze"
 import { registerLibraryTools } from "./tools/library"
 import { registerProjectTools } from "./tools/project"
 import { registerCapCutTools } from "./tools/capcut"
+import { registerTikTokTools } from "./tools/tiktok"
 import { hasEnv } from "./env"
 
 const server = new McpServer(
@@ -28,6 +29,8 @@ const server = new McpServer(
       "The loop:",
       "1. RESEARCH — yt_small_breakouts / yt_keyword_outliers / yt_channel_outliers to find videos that beat",
       "   their own channel's median. Outlier score, not raw views, is what makes a lesson replicable.",
+      "   For TikTok use tiktok_account_outliers. It needs a named account — TikTok has no free hashtag,",
+      "   keyword, or trending search, so platform-wide browsing is not possible there.",
       "2. STUDY — analyze_youtube_video for long-form, transcribe_clip for Instagram reels and TikToks.",
       "   Both return a timestamped bracket script plus a teardown, and both cache to the shared database.",
       "3. REMIX — project_create with the references, project_compare_sources to read them beat by beat,",
@@ -45,6 +48,7 @@ registerAnalyzeTools(server)
 registerLibraryTools(server)
 registerProjectTools(server)
 registerCapCutTools(server)
+registerTikTokTools(server)
 
 function warnMissingConfig() {
   const missing: string[] = []

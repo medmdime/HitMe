@@ -9,7 +9,7 @@
     "start": "next start",
     "lint": "eslint",
     "format": "prettier --write \"**/*.{ts,tsx}\"",
-    "typecheck": "tsc --noEmit",
+    "typecheck": "tsc --noEmit && tsc --noEmit -p tsconfig.mcp.json",
     "db:push": "drizzle-kit push --force",
     "db:studio": "drizzle-kit studio",
     "mcp": "tsx mcp/server.ts",

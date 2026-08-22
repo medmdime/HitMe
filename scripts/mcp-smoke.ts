@@ -44,13 +44,25 @@ for (const t of tools) {
   console.log(`  ${t.name.padEnd(26)} ${params || "(no params)"}`)
 }
 
+// Accepts a bare tool name, or `name={"arg":"value"}` to pass arguments.
 const toCall = process.argv.slice(2)
 if (toCall.length === 0) toCall.push("yt_quota")
 
-for (const name of toCall) {
-  console.log(`\n=== ${name} ===`)
+for (const spec of toCall) {
+  const eq = spec.indexOf("=")
+  const name = eq === -1 ? spec : spec.slice(0, eq)
+  let args: Record<string, unknown> = {}
+  if (eq !== -1) {
+    try {
+      args = JSON.parse(spec.slice(eq + 1)) as Record<string, unknown>
+    } catch (err) {
+      console.error(`bad JSON args for ${name}: ${err instanceof Error ? err.message : err}`)
+      continue
+    }
+  }
+  console.log(`\n=== ${name} ${eq === -1 ? "" : JSON.stringify(args)} ===`)
   try {
-    const res = await client.callTool({ name, arguments: {} })
+    const res = await client.callTool({ name, arguments: args })
     const content = res.content as { type: string; text?: string }[]
     console.log(content.map((c) => c.text ?? `<${c.type}>`).join("\n"))
     if (res.isError) console.log("(returned isError=true)")
