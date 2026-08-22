@@ -3,42 +3,11 @@ import { GoogleGenAI } from "@google/genai"
 import { extractVideoId } from "@/lib/youtube-url"
 import { getChannelInfo, getVideoStats } from "@/lib/youtube-data"
 import { upsertAnalysis } from "@/lib/db/analyses"
+import { SCRIPT_PROMPT, splitScriptAndAnalysis } from "@/lib/prompts"
 
 export const runtime = "nodejs"
 export const maxDuration = 300
 
-const SCRIPT_PROMPT = `You are reverse-engineering a YouTube video to extract its script in a specific bracket format.
-
-Watch the video carefully and produce a complete, timestamped script in EXACTLY this format:
-
-[MM:SS — Face camera frame]
-narration text exactly as spoken
-
-[MM:SS — Broll of <description of what is on screen>]
-narration text exactly as spoken
-
-Rules:
-- Use MM:SS timestamps (e.g., [00:00], [01:23], [12:45]).
-- Each bracket header describes the SHOT TYPE and what is visible on screen.
-  - "Face camera frame" = the host is on camera talking to the viewer.
-  - "Broll of X" = b-roll, screen recording, archival footage, graphic, etc. Describe X concretely.
-  - "Cutaway to X" = brief insert shot.
-  - "Text overlay: \"…\"" = on-screen text shown.
-- Below each bracket, write the narration EXACTLY as spoken in the video. If a segment has no narration (e.g., music-only b-roll), write "[no narration]".
-- Start a new bracket every time the shot changes OR every 15-30 seconds of continuous narration, whichever comes first.
-- Capture the hook (first 5-15 seconds) with extra granularity — separate brackets for each beat.
-- Do NOT add commentary, summary, or analysis. Output ONLY the bracket-format script.
-
-After the script, append a section starting with:
-
----SCRIPT ANALYSIS---
-
-Then provide a tight (under 250 words) analysis covering:
-- Hook structure: what is the opening promise / curiosity gap?
-- Pacing: average shot length, where it speeds up / slows down.
-- Retention tactics: pattern interrupts, payoffs, callbacks.
-- Packaging cues: title-to-content alignment, recurring visual motifs.
-- One sentence on what a creator could steal from this format.`
 
 export async function POST(req: Request) {
   const apiKey = process.env.GEMINI_API_KEY
@@ -119,18 +88,6 @@ export async function POST(req: Request) {
   }
 }
 
-function splitScriptAndAnalysis(text: string): {
-  script: string
-  analysis: string
-} {
-  const marker = "---SCRIPT ANALYSIS---"
-  const idx = text.indexOf(marker)
-  if (idx === -1) return { script: text.trim(), analysis: "" }
-  return {
-    script: text.slice(0, idx).trim(),
-    analysis: text.slice(idx + marker.length).trim(),
-  }
-}
 
 async function fetchMetadata(videoId: string) {
   try {
