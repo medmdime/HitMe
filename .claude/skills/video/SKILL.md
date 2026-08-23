@@ -86,22 +86,51 @@ Pick 2–4 references. More than that and the remix turns to mush.
 ## 2. Study — turn references into scripts
 
 - `analyze_youtube_video` — long-form. Slow (1–3 min for a 10-minute video). Cached forever after.
-- `transcribe_clip` — Instagram reels, TikToks, or any local file. Uses the short-form prompt
-  by default: beat-by-beat on the first 3 seconds, on-screen text tracked separately from speech.
+- `transcribe_clip` — Instagram reels, TikToks, or any local file. Returns three things:
+  an **annotated script**, a **teardown**, and a **format template**.
+- `clip_cut_segments` — after transcribing, splits the clip into one mp4 per shot plus the
+  audio track, on the script's cut points. Frame-accurate.
 
 Always run `library_list` first. The teardown may already exist, and a cache hit is instant.
 
-Both return a bracket script:
+Both return a bracket script. Short-form scripts also carry per-shot annotation lines:
 
 ```
-[00:00 — Face camera frame]
+[00:00 — Face camera frame, punch-in]
 narration exactly as spoken
+TEXT: "Should you take Vitamin D?" (centre, bold white, black stroke)
+SFX: whoosh on the cut
+MUSIC: lo-fi beat starts, ducked under voice
 
 [00:04 — Broll of a city street at dawn]
 narration exactly as spoken
+CAM: slow push-in
 ```
 
-That format is load-bearing. Timestamps become the CapCut timeline later, so keep it intact.
+That format is load-bearing. Timestamps become the CapCut timeline and the segment cut
+points, and the parser lifts `TEXT / SFX / MUSIC / CAM / FX` lines out of the narration so
+the SRT and voiceover exports stay clean. Keep it intact.
+
+**What a short-form teardown gives you, and where each piece comes from:**
+
+| Want | Where |
+|---|---|
+| Exact words | script narration |
+| Every on-screen text, with style | `TEXT` annotations |
+| Every sound effect, timestamped | `SFX` annotations + the teardown's Audio section |
+| The music | TikTok: the platform names the sound (`sound` field). Instagram hides it — described by ear; name it by running the cut `audio.mp3` through Shazam. |
+| The hook, typed and explained | teardown `## Hook` |
+| Each b-roll insert and its likely source | teardown `## B-roll and visuals` |
+| A reusable blueprint for a new topic | the **format template** (`library_get section=template`) |
+| The actual shots as files | `clip_cut_segments` |
+
+"Original sound" / "suara asli" / "son original" on TikTok means audio the creator uploaded
+with the video, not a licensed track. Say so rather than guessing a song name.
+
+**Using the template.** It is a blueprint with `[placeholders]`. To remake the format on a new
+subject: keep everything under *Keep exactly* (timing, shot rhythm, caption style, audio
+bed), fill the *Fill with* column with the new topic, and follow the reproduction checklist.
+Save the result as a project script with `project_update`.
 
 **When Instagram refuses.** Anonymous fetches get rate-limited. In order: retry once, then
 `cookiesFromBrowser: "chrome"` to reuse a logged-in session, then ask the user to save the

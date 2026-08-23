@@ -9,7 +9,7 @@ import { z } from "zod"
 import type { McpServer } from "@modelcontextprotocol/sdk/server/mcp.js"
 import { getAnalysis, listAnalyses } from "../../lib/db/analyses"
 import { getClip, listClips, searchClips } from "../../lib/db/clips"
-import { parseScript } from "../../lib/parse-script"
+import { collectAnnotations, parseScript } from "../../lib/parse-script"
 import { requireEnv } from "../env"
 import { age, compact, guard, text, truncate } from "../lib/text"
 
@@ -106,9 +106,11 @@ export function registerLibraryTools(server: McpServer) {
       inputSchema: {
         ref: z.string().describe("yt:VIDEOID, a YouTube URL/id, or a clip id"),
         section: z
-          .enum(["all", "script", "teardown", "shots"])
+          .enum(["all", "script", "teardown", "shots", "template", "audio"])
           .optional()
-          .describe("all (default), script only, teardown only, or shots = the shot list without narration"),
+          .describe(
+            "all (default), script, teardown, shots (shot list without narration), template (the format blueprint, clips only), or audio (music + SFX timeline, clips only)"
+          ),
       },
     },
     guard(async (a) => {
@@ -120,6 +122,7 @@ export function registerLibraryTools(server: McpServer) {
       let subtitle: string
       let script: string
       let analysis: string
+      let template = ""
 
       if (kind === "youtube") {
         const row = await getAnalysis(id)
@@ -141,6 +144,7 @@ export function registerLibraryTools(server: McpServer) {
         subtitle = [row.author, row.url, row.localPath].filter(Boolean).join(" · ")
         script = row.script
         analysis = row.analysis
+        template = row.template ?? ""
       }
 
       const parts: string[] = [`## ${title}`, subtitle, ""]
@@ -148,13 +152,37 @@ export function registerLibraryTools(server: McpServer) {
         const blocks = parseScript(script)
         parts.push(
           blocks.length
-            ? blocks.map((b, i) => `${i + 1}. [${b.timestamp}] ${b.shot}`).join("\n")
+            ? blocks
+                .map((b, i) => {
+                  const tags = b.annotations.map((a) => a.kind).join(",")
+                  return `${i + 1}. [${b.timestamp}] ${b.shot}${tags ? `  ⟨${tags}⟩` : ""}`
+                })
+                .join("\n")
             : "_Script did not parse into bracket blocks._"
+        )
+      } else if (section === "template") {
+        parts.push(
+          template ||
+            "_No format template stored for this entry (YouTube teardowns and older clips have none)._"
+        )
+      } else if (section === "audio") {
+        const blocks = parseScript(script)
+        const music = collectAnnotations(blocks, "MUSIC")
+        const sfx = collectAnnotations(blocks, "SFX")
+        parts.push(
+          "**Music changes**",
+          music.length ? music.map((m) => `- [${m.timestamp}] ${m.value}`).join("\n") : "_none annotated_",
+          "",
+          `**Sound effects (${sfx.length})**`,
+          sfx.length
+            ? sfx.map((x) => `- [${x.timestamp}] ${x.value} — during: ${x.shot}`).join("\n")
+            : "_none annotated_"
         )
       } else {
         if (section === "all" || section === "script") parts.push(script)
         if (section === "all") parts.push("", "### Teardown")
         if (section === "all" || section === "teardown") parts.push(analysis)
+        if (section === "all" && template) parts.push("", "### Format template", template)
       }
       return text(parts.join("\n"))
     })

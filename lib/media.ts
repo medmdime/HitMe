@@ -1,10 +1,10 @@
 /**
  * Local media acquisition via yt-dlp.
  *
- * Instagram has no public API for reading arbitrary third-party posts, so a
- * public reel has to be fetched the same way a browser would. yt-dlp is the
- * maintained tool for that and it also covers TikTok and YouTube, which keeps
- * one code path for every "here is a link, transcribe it" request.
+ * Instagram and TikTok have no public API for reading arbitrary third-party
+ * posts, so a public reel has to be fetched the same way a browser would.
+ * yt-dlp is the maintained tool for that and it also covers YouTube, which
+ * keeps one code path for every "here is a link, transcribe it" request.
  *
  * Nothing here installs software. If yt-dlp is absent the error names the exact
  * command to run — deciding to install a system tool is the user's call.
@@ -12,7 +12,7 @@
 import { spawn } from "node:child_process"
 import { existsSync, mkdirSync, readdirSync, statSync } from "node:fs"
 import { join, resolve } from "node:path"
-import { MEDIA_DIR } from "../env"
+import { binDir, mediaDir } from "./workspace"
 
 export class YtDlpMissingError extends Error {
   constructor() {
@@ -42,42 +42,35 @@ let cachedBin: string | null | undefined
 /** Looks for yt-dlp on PATH, then in the workspace bin dir. */
 export function findYtDlp(): string | null {
   if (cachedBin !== undefined) return cachedBin
-  const candidates =
-    process.platform === "win32" ? ["yt-dlp.exe", "yt-dlp"] : ["yt-dlp"]
+  const candidates = process.platform === "win32" ? ["yt-dlp.exe", "yt-dlp"] : ["yt-dlp"]
   for (const c of candidates) {
     if (which(c)) {
       cachedBin = c
       return c
     }
   }
-  const vendored = resolve(
-    MEDIA_DIR,
-    "..",
-    "bin",
-    process.platform === "win32" ? "yt-dlp.exe" : "yt-dlp"
-  )
+  const vendored = resolve(binDir(), process.platform === "win32" ? "yt-dlp.exe" : "yt-dlp")
   cachedBin = existsSync(vendored) ? vendored : null
   return cachedBin
 }
 
-function which(cmd: string): boolean {
+export function which(cmd: string): string | null {
   const paths = (process.env.PATH ?? "").split(process.platform === "win32" ? ";" : ":")
   const exts =
-    process.platform === "win32"
-      ? (process.env.PATHEXT ?? ".EXE;.CMD;.BAT").split(";")
-      : [""]
+    process.platform === "win32" ? (process.env.PATHEXT ?? ".EXE;.CMD;.BAT").split(";") : [""]
   for (const dir of paths) {
     if (!dir) continue
     for (const ext of exts) {
-      const full = join(dir, cmd.endsWith(ext.toLowerCase()) ? cmd : cmd + ext.toLowerCase())
+      const name = cmd.toLowerCase().endsWith(ext.toLowerCase()) ? cmd : cmd + ext.toLowerCase()
+      const full = join(dir, name)
       try {
-        if (existsSync(full) && statSync(full).isFile()) return true
+        if (existsSync(full) && statSync(full).isFile()) return full
       } catch {
         // unreadable PATH entry — keep looking
       }
     }
   }
-  return false
+  return null
 }
 
 export function requireYtDlp(): string {
@@ -86,20 +79,20 @@ export function requireYtDlp(): string {
   return bin
 }
 
-interface RunResult {
+export interface RunResult {
   code: number
   stdout: string
   stderr: string
 }
 
-function run(bin: string, args: string[], timeoutMs = 180_000): Promise<RunResult> {
+export function run(bin: string, args: string[], timeoutMs = 180_000): Promise<RunResult> {
   return new Promise((resolvePromise, rejectPromise) => {
     const child = spawn(bin, args, { windowsHide: true })
     let stdout = ""
     let stderr = ""
     const timer = setTimeout(() => {
       child.kill()
-      rejectPromise(new Error(`yt-dlp timed out after ${Math.round(timeoutMs / 1000)}s`))
+      rejectPromise(new Error(`${bin} timed out after ${Math.round(timeoutMs / 1000)}s`))
     }, timeoutMs)
     child.stdout.on("data", (d) => (stdout += d.toString()))
     child.stderr.on("data", (d) => (stderr += d.toString()))
@@ -132,6 +125,13 @@ export interface ClipMetadata {
   extractor: string
   width: number | null
   height: number | null
+  /**
+   * The sound attached to the post, when the platform exposes it. TikTok does
+   * ("suara asli - name" means an original sound by that user); Instagram does
+   * not for logged-out readers, so there it is always null.
+   */
+  track: string | null
+  artist: string | null
 }
 
 /** Cookie args, only when the caller opts in — see the tool description. */
@@ -155,7 +155,7 @@ function impersonationUnavailable(stderr: string): boolean {
   return (
     s.includes("impersonate target") ||
     s.includes("no impersonate") ||
-    s.includes("not available") && s.includes("impersonat")
+    (s.includes("not available") && s.includes("impersonat"))
   )
 }
 
@@ -164,11 +164,7 @@ function impersonationUnavailable(stderr: string): boolean {
  * lacks curl_cffi. Sites that gate on TLS fingerprint (Instagram) only work
  * with it; everything else is unaffected by its presence.
  */
-async function runImpersonating(
-  bin: string,
-  args: string[],
-  timeoutMs?: number
-): Promise<RunResult> {
+async function runImpersonating(bin: string, args: string[], timeoutMs?: number): Promise<RunResult> {
   const first = await run(bin, [...IMPERSONATE_ARGS, ...args], timeoutMs)
   if (first.code === 0 || !impersonationUnavailable(first.stderr)) return first
   process.stderr.write(
@@ -178,10 +174,7 @@ async function runImpersonating(
   return run(bin, args, timeoutMs)
 }
 
-export async function probeClip(
-  url: string,
-  browser?: string
-): Promise<ClipMetadata> {
+export async function probeClip(url: string, browser?: string): Promise<ClipMetadata> {
   const bin = requireYtDlp()
   const { code, stdout, stderr } = await runImpersonating(bin, [
     ...COMMON_ARGS,
@@ -206,6 +199,9 @@ export async function probeClip(
     const v = j[k]
     return typeof v === "string" ? v : ""
   }
+  const artists = Array.isArray(j.artists)
+    ? (j.artists as unknown[]).filter((a): a is string => typeof a === "string")
+    : []
   return {
     id: str("id"),
     title: str("title") || str("fulltitle"),
@@ -222,6 +218,8 @@ export async function probeClip(
     extractor: str("extractor_key") || str("extractor"),
     width: num("width"),
     height: num("height"),
+    track: str("track") || null,
+    artist: str("artist") || artists.join(", ") || null,
   }
 }
 
@@ -235,24 +233,19 @@ export interface DownloadedClip {
  * Downloads to .hitme/media/<extractor>-<id>.<ext> and returns the file.
  * Re-downloading the same URL reuses the file already on disk.
  */
-export async function downloadClip(
-  url: string,
-  browser?: string
-): Promise<DownloadedClip> {
+export async function downloadClip(url: string, browser?: string): Promise<DownloadedClip> {
   const bin = requireYtDlp()
   const metadata = await probeClip(url, browser)
-  mkdirSync(MEDIA_DIR, { recursive: true })
+  const dir = mediaDir()
+  mkdirSync(dir, { recursive: true })
 
-  const stem = `${metadata.extractor || "clip"}-${metadata.id || Date.now()}`
-    .replace(/[^A-Za-z0-9._-]/g, "_")
-    .slice(0, 120)
-
+  const stem = clipStem(metadata)
   const existing = findExisting(stem)
   if (existing) {
     return { path: existing, sizeBytes: statSync(existing).size, metadata }
   }
 
-  const outTemplate = join(MEDIA_DIR, `${stem}.%(ext)s`)
+  const outTemplate = join(dir, `${stem}.%(ext)s`)
   const { code, stderr } = await runImpersonating(
     bin,
     [
@@ -278,12 +271,17 @@ export async function downloadClip(
   return { path, sizeBytes: statSync(path).size, metadata }
 }
 
+export function clipStem(metadata: ClipMetadata): string {
+  return `${metadata.extractor || "clip"}-${metadata.id || Date.now()}`
+    .replace(/[^A-Za-z0-9._-]/g, "_")
+    .slice(0, 120)
+}
+
 function findExisting(stem: string): string | null {
-  if (!existsSync(MEDIA_DIR)) return null
-  const hit = readdirSync(MEDIA_DIR).find(
-    (f) => f.startsWith(`${stem}.`) && !f.endsWith(".part")
-  )
-  return hit ? join(MEDIA_DIR, hit) : null
+  const dir = mediaDir()
+  if (!existsSync(dir)) return null
+  const hit = readdirSync(dir).find((f) => f.startsWith(`${stem}.`) && !f.endsWith(".part"))
+  return hit ? join(dir, hit) : null
 }
 
 /**
@@ -310,7 +308,7 @@ function explainFailure(stderr: string, url: string): string {
       `yt-dlp could not fetch ${url} without being signed in.`,
       "",
       "Instagram gates a lot of content behind a session. Options:",
-      "  1. Retry with cookiesFromBrowser: \"chrome\" (or firefox/edge) to reuse your logged-in session.",
+      '  1. Retry with cookiesFromBrowser: "chrome" (or firefox/edge) to reuse your logged-in session.',
       "  2. Save the reel to disk yourself and pass its path as `file` instead.",
       "",
       `yt-dlp said: ${stderr.trim().split("\n").slice(-3).join(" | ")}`,
@@ -333,6 +331,21 @@ export function instagramShortcode(url: string): string | null {
   return m ? m[1] : null
 }
 
+/** Extracts a TikTok video id from a canonical URL (short vm.tiktok links need a probe). */
+export function tiktokVideoId(url: string): string | null {
+  const m = url.match(/tiktok\.com\/(?:@[\w.-]+\/video|embed(?:\/v2)?|v)\/(\d{10,})/i)
+  return m ? m[1] : null
+}
+
 export function isHttpUrl(s: string): boolean {
   return /^https?:\/\//i.test(s.trim())
+}
+
+/** Which platform a clip URL belongs to, for ids and for prompt context. */
+export function platformOf(url: string): "instagram" | "tiktok" | "youtube" | "web" {
+  const u = url.toLowerCase()
+  if (u.includes("instagram.com")) return "instagram"
+  if (u.includes("tiktok.com")) return "tiktok"
+  if (u.includes("youtube.com") || u.includes("youtu.be")) return "youtube"
+  return "web"
 }

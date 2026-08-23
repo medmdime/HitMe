@@ -222,7 +222,20 @@ Per-platform caveats worth knowing:
 | Tool | Purpose |
 | --- | --- |
 | `analyze_youtube_video` | Gemini teardown → bracket script + analysis. Cached in `analyses`. |
-| `transcribe_clip` | Instagram reel, TikTok, or local file → short-form bracket script. Cached in `clips`. |
+| `transcribe_clip` | Instagram reel, TikTok, or local file → annotated script (narration + TEXT/SFX/MUSIC/CAM/FX per shot), structured teardown (hook, audio layer, captions, b-roll, edit style), and a fill-in **format template**. Cached in `clips`. |
+| `clip_cut_segments` | Cut a transcribed clip into one mp4 per shot plus the audio track, on the script's timestamps. Needs ffmpeg. |
+
+Short-form teardowns are also available in the web UI at **`/clips`**: paste a link, get the
+script with annotations, the teardown, the template, an audio panel (music + every SFX, each
+timestamp seeks the player), and a segments panel that cuts and previews every shot.
+
+What the platforms expose: TikTok names the post's sound (`"suara asli - …"` means an
+original sound by that user). Instagram hides the sound from logged-out readers, so the
+music is described by ear; to name it, cut the segments and run `audio.mp3` through a
+music-recognition app.
+
+`/clips` runs on your machine, not the hosted build — it needs yt-dlp and ffmpeg, and the
+platforms refuse datacenter IPs. The hosted route returns a clear message saying so.
 
 **Library** — `library_list`, `library_get`, `library_search`, `library_stats` read across
 both tables, so "what have I already studied" is one question.
