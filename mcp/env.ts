@@ -33,7 +33,9 @@ export function hasEnv(name: string): boolean {
   return Boolean(process.env[name]?.trim())
 }
 
-/** Where downloaded clips, generated b-roll and exports live. */
+// Pin the workspace to the repo regardless of how the server was launched, so
+// lib/workspace.ts resolves the same .hitme/ the web app uses.
 export const WORKSPACE = resolve(REPO_ROOT, ".hitme")
+process.env.HITME_WORKSPACE = WORKSPACE
 export const MEDIA_DIR = resolve(WORKSPACE, "media")
 export const EXPORT_DIR = resolve(WORKSPACE, "exports")

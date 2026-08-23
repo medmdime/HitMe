@@ -3,11 +3,12 @@
 import Link from "next/link"
 import { usePathname } from "next/navigation"
 import { cn } from "@/lib/utils"
-import { RiSearch2Line, RiPlayCircleLine } from "@remixicon/react"
+import { RiSearch2Line, RiPlayCircleLine, RiScissorsCutLine } from "@remixicon/react"
 
 const TABS = [
   { href: "/", label: "Analyze", icon: RiPlayCircleLine },
   { href: "/discover", label: "Discover", icon: RiSearch2Line },
+  { href: "/clips", label: "Clips", icon: RiScissorsCutLine },
 ]
 
 export function AppNav() {

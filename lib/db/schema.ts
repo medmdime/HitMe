@@ -58,6 +58,9 @@ export const clips = pgTable(
     localPath: text("local_path"),
     script: text("script").notNull(),
     analysis: text("analysis").notNull(),
+    // Topic-agnostic blueprint of the format, for remaking the video on a
+    // different subject. Empty for rows analyzed before templates existed.
+    template: text("template").notNull().default(""),
     metadata: jsonb("metadata"),
     analyzedAt: timestamp("analyzed_at", { withTimezone: true })
       .defaultNow()

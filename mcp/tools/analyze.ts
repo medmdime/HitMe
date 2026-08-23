@@ -3,26 +3,15 @@
  * teardown, and file the result where the rest of the pipeline can find it.
  */
 import { z } from "zod"
-import { existsSync, statSync } from "node:fs"
-import { basename, resolve } from "node:path"
 import type { McpServer } from "@modelcontextprotocol/sdk/server/mcp.js"
 import { extractVideoId } from "../../lib/youtube-url"
 import { getChannelInfo, getVideoStats } from "../../lib/youtube-data"
 import { getAnalysis, upsertAnalysis } from "../../lib/db/analyses"
-import { getClip, upsertClip } from "../../lib/db/clips"
-import {
-  SCRIPT_PROMPT,
-  SHORT_FORM_PROMPT,
-  splitScriptAndAnalysis,
-} from "../../lib/prompts"
-import { parseScript } from "../../lib/parse-script"
-import { analyzeLocalVideo, analyzeYouTubeUrl } from "../lib/gemini"
-import {
-  downloadClip,
-  instagramShortcode,
-  isHttpUrl,
-  type ClipMetadata,
-} from "../lib/media"
+import { SCRIPT_PROMPT, splitScriptAndAnalysis } from "../../lib/prompts"
+import { collectAnnotations, isBrollShot, parseScript, type ScriptBlock } from "../../lib/parse-script"
+import { analyzeYouTubeUrl } from "../../lib/gemini"
+import { findStoredClip, transcribeClip, type ClipResult } from "../../lib/clip-pipeline"
+import { cutSegments, findFfmpeg } from "../../lib/segments"
 import { hasEnv } from "../env"
 import { compact, duration, guard, text, truncate } from "../lib/text"
 
@@ -41,23 +30,64 @@ function scriptSummary(script: string): string {
   ].join("\n")
 }
 
-function renderCached(
-  cached: { title: string | null; author: string | null; url: string | null; script: string; analysis: string },
-  full: boolean
-) {
-  return text(
-    [
-      `## ${cached.title ?? "Cached clip"} (cached)`,
-      [cached.author, cached.url].filter(Boolean).join(" · "),
-      "",
-      full ? cached.script : scriptSummary(cached.script),
-      "",
-      "### Teardown",
-      cached.analysis,
-      "",
-      full ? "" : "_Pass full=true for the complete script, or force=true to re-analyze._",
-    ].join("\n")
-  )
+/**
+ * The short-form view: every shot with its annotations, then the audio layer
+ * pulled out on its own, because "what sounds did they use" is the question
+ * that gets asked most.
+ */
+function renderClip(r: ClipResult, full: boolean): string {
+  const blocks = r.blocks
+  const sfx = collectAnnotations(blocks, "SFX")
+  const music = collectAnnotations(blocks, "MUSIC")
+  const texts = collectAnnotations(blocks, "TEXT")
+  const broll = blocks.filter((b) => isBrollShot(b.shot))
+
+  const statLine = r.metadata
+    ? [
+        r.author && `@${r.author}`,
+        r.metadata.viewCount !== null && `${compact(r.metadata.viewCount)} views`,
+        r.metadata.likeCount !== null && `${compact(r.metadata.likeCount)} likes`,
+        r.durationSeconds && duration(r.durationSeconds),
+        r.metadata.width && r.metadata.height && `${r.metadata.width}x${r.metadata.height}`,
+      ]
+        .filter(Boolean)
+        .join(" · ")
+    : r.localPath ?? ""
+
+  const shotLines = (full ? blocks : blocks.slice(0, 6)).map((b: ScriptBlock) => {
+    const ann = b.annotations.map((a) => `    ${a.kind}: ${a.value}`).join("\n")
+    const narr = b.narration && b.narration !== "[no narration]" ? b.narration : "_[no narration]_"
+    return `**[${b.timestamp} — ${b.shot}]**\n${narr}${ann ? `\n${ann}` : ""}`
+  })
+
+  return [
+    `## ${r.title}${r.cached ? " (cached)" : ""}`,
+    statLine,
+    `id: \`${r.id}\`${r.url ? ` · ${r.url}` : ""}${r.localPath ? `\nfile: ${r.localPath}` : ""}`,
+    r.caption ? `\n**Caption**: ${truncate(r.caption, 300)}` : "",
+    "",
+    `### Sound`,
+    r.sound
+      ? `Platform says: **${r.sound.track}**${r.sound.artist ? ` — ${r.sound.artist}` : ""}`
+      : r.platform === "instagram"
+        ? "_Instagram hides the sound name from logged-out readers; see the Audio section of the teardown for what it sounds like._"
+        : "_No sound metadata from the platform._",
+    music.length ? music.map((m) => `- [${m.timestamp}] ${m.value}`).join("\n") : "",
+    sfx.length ? `\n**Sound effects (${sfx.length})**\n${sfx.map((s) => `- [${s.timestamp}] ${s.value}`).join("\n")}` : "\n_No sound effects annotated._",
+    "",
+    `### Shots — ${blocks.length} total, ${broll.length} b-roll, ${texts.length} text overlays`,
+    ...shotLines,
+    !full && blocks.length > 6 ? `\n_…${blocks.length - 6} more shots. Pass full=true for all of them._` : "",
+    "",
+    "### Teardown",
+    r.analysis || "_none_",
+    "",
+    r.template ? `### Format template\n${r.template}` : "_No template section returned._",
+    "",
+    `_Next: \`clip_cut_segments\` with id \`${r.id}\` to extract every shot as its own file._`,
+  ]
+    .filter((l) => l !== "")
+    .join("\n")
 }
 
 export function registerAnalyzeTools(server: McpServer) {
@@ -72,14 +102,13 @@ export function registerAnalyzeTools(server: McpServer) {
         "SLOW: a 10-minute video takes 1-3 minutes to analyze.",
       inputSchema: {
         video: z.string().describe("YouTube URL or 11-char video id"),
-        force: z
-          .boolean()
-          .optional()
-          .describe("Re-analyze even if a cached teardown exists (default false)"),
+        force: z.boolean().optional().describe("Re-analyze even if a cached teardown exists (default false)"),
         full: z
           .boolean()
           .optional()
-          .describe("Return the entire script. Default false returns a summary + the teardown, which is usually what you want for planning."),
+          .describe(
+            "Return the entire script. Default false returns a summary + the teardown, which is usually what you want for planning."
+          ),
       },
     },
     guard(async (a) => {
@@ -110,7 +139,6 @@ export function registerAnalyzeTools(server: McpServer) {
       if (!raw.trim()) throw new Error("Gemini returned an empty response for this video.")
       const { script, analysis } = splitScriptAndAnalysis(raw)
 
-      // Metadata is best effort — a teardown is still useful without it.
       let metadata: Awaited<ReturnType<typeof fetchMeta>> = null
       try {
         metadata = await fetchMeta(videoId)
@@ -130,9 +158,7 @@ export function registerAnalyzeTools(server: McpServer) {
       return text(
         [
           `## ${v?.title ?? videoId}`,
-          v
-            ? `${v.channelTitle} · ${compact(v.views)} views · ${duration(v.duration_seconds)} · ${url}`
-            : url,
+          v ? `${v.channelTitle} · ${compact(v.views)} views · ${duration(v.duration_seconds)} · ${url}` : url,
           "",
           a.full ? script : scriptSummary(script),
           "",
@@ -148,13 +174,15 @@ export function registerAnalyzeTools(server: McpServer) {
   server.registerTool(
     "transcribe_clip",
     {
-      title: "Transcribe an Instagram reel, TikTok, or local video",
+      title: "Tear down an Instagram reel, TikTok, or local video",
       description:
-        "Turn a short-form video into a timestamped bracket script plus a teardown tuned for short-form " +
-        "(hook in the first 3 seconds, cuts per second, on-screen text strategy). " +
-        "Pass `url` for a public Instagram/TikTok link (downloaded with yt-dlp), or `file` for a video already on disk. " +
-        "Downloads are cached in .hitme/media and results are stored in the clips table. " +
-        "If Instagram refuses an anonymous fetch, retry with cookiesFromBrowser, or save the file yourself and pass `file`.",
+        "Turn a short-form video into a complete production breakdown: an annotated shot-by-shot script " +
+        "(exact narration, every on-screen TEXT, every SFX, MUSIC changes, CAM moves, FX), a structured teardown " +
+        "(hook, structure, audio layer incl. music and sound effects, captions, b-roll sources, edit style, CTA), " +
+        "and a topic-agnostic FORMAT TEMPLATE for remaking the video on a different subject. " +
+        "Pass `url` for a public Instagram/TikTok link, or `file` for a video on disk. " +
+        "TikTok's sound name comes from the platform; Instagram hides it, so music there is described by ear. " +
+        "Cached in the clips table; follow with clip_cut_segments to extract the shots as files.",
       inputSchema: {
         url: z.string().optional().describe("Public Instagram / TikTok / other yt-dlp-supported URL"),
         file: z.string().optional().describe("Path to a local video file (absolute, or relative to the repo root)"),
@@ -167,108 +195,82 @@ export function registerAnalyzeTools(server: McpServer) {
           .optional()
           .describe("Use the long-form prompt instead of the short-form one (for clips over ~3 minutes)"),
         force: z.boolean().optional().describe("Re-analyze even if cached (default false)"),
-        full: z.boolean().optional().describe("Return the complete script (default false: summary + teardown)"),
+        full: z.boolean().optional().describe("Return every shot (default false shows the first 6 plus the full teardown and template)"),
       },
     },
     guard(async (a) => {
-      if (!a.url && !a.file) throw new Error("Pass either `url` or `file`.")
-      if (a.url && a.file) throw new Error("Pass `url` or `file`, not both.")
+      const result = await transcribeClip({
+        url: a.url,
+        file: a.file,
+        cookiesFromBrowser: a.cookiesFromBrowser,
+        longForm: a.longForm,
+        force: a.force,
+        onProgress: (note) => process.stderr.write(`[hitme] ${note}\n`),
+      })
+      return text(renderClip(result, a.full ?? false))
+    })
+  )
 
-      // An Instagram shortcode and a local filename both yield the row id
-      // without a network call, so a cached clip costs nothing to serve.
-      const knownId = a.url
-        ? instagramShortcode(a.url)
-          ? `instagram:${instagramShortcode(a.url)}`
-          : null
-        : `file:${basename(resolve(a.file!))}`
-      if (!a.force && knownId && DB_AVAILABLE()) {
-        const cached = await getClip(knownId).catch(() => null)
-        if (cached) return renderCached(cached, a.full ?? false)
+  server.registerTool(
+    "clip_cut_segments",
+    {
+      title: "Cut a transcribed clip into one file per shot",
+      description:
+        "Use ffmpeg to split a clip from the library into its shots, using the cut points in its bracket script. " +
+        "Produces one mp4 per shot in .hitme/segments/<id>/ (numbered, named after the shot), and optionally the " +
+        "full audio track as mp3 for identifying the music. Frame-accurate (re-encoded), since short-form cuts " +
+        "every second or two. Run transcribe_clip first.",
+      inputSchema: {
+        id: z.string().describe("Clip id from transcribe_clip, e.g. instagram:DcL_FY6O--p"),
+        only: z.enum(["all", "broll"]).optional().describe("all shots (default) or just the b-roll inserts"),
+        audio: z.boolean().optional().describe("Also extract the full audio track as audio.mp3 (default true)"),
+      },
+    },
+    guard(async (a) => {
+      const row = await findStoredClip(a.id)
+      if (!row) throw new Error(`No clip "${a.id}" in the library. Run transcribe_clip first.`)
+      if (!row.localPath) throw new Error(`Clip "${a.id}" has no local file recorded. Re-run transcribe_clip with force=true.`)
+      if (!findFfmpeg()) {
+        throw new Error("ffmpeg not found on PATH or in CapCut's folder. Install it with: winget install Gyan.FFmpeg")
       }
+      const blocks = parseScript(row.script)
+      if (blocks.length === 0) throw new Error("The stored script has no bracket blocks to cut on.")
 
-      let localPath: string
-      let meta: ClipMetadata | null = null
-      let id: string
-      let platform: string
-      let sourceUrl: string | null = null
+      const result = await cutSegments({
+        clipId: a.id,
+        sourcePath: row.localPath,
+        blocks,
+        only: a.only ?? "all",
+        audio: a.audio ?? true,
+        onProgress: (note) => process.stderr.write(`[hitme] ${note}\n`),
+      })
 
-      if (a.url) {
-        const url = a.url.trim()
-        if (!isHttpUrl(url)) throw new Error(`"${url}" is not an http(s) URL. Use \`file\` for local paths.`)
-        const shortcode = instagramShortcode(url)
-        const downloaded = await downloadClip(url, a.cookiesFromBrowser)
-        localPath = downloaded.path
-        meta = downloaded.metadata
-        platform = shortcode ? "instagram" : (meta.extractor || "web").toLowerCase()
-        id = `${platform}:${shortcode ?? meta.id}`
-        sourceUrl = meta.webpageUrl || url
-      } else {
-        const path = resolve(a.file!)
-        if (!existsSync(path)) throw new Error(`No such file: ${path}`)
-        localPath = path
-        platform = "file"
-        id = `file:${basename(path)}`
-      }
-
-      // Second look: platforms whose id only emerges after probing.
-      if (!a.force && id !== knownId && DB_AVAILABLE()) {
-        const cached = await getClip(id).catch(() => null)
-        if (cached) return renderCached(cached, a.full ?? false)
-      }
-
-      const prompt = a.longForm ? SCRIPT_PROMPT : SHORT_FORM_PROMPT
-      const raw = await analyzeLocalVideo(localPath, prompt, undefined, (note) =>
-        process.stderr.write(`[hitme] ${note}\n`)
+      const rows = result.segments.map((s) =>
+        [
+          s.index,
+          `${s.start.toFixed(1)}-${s.end.toFixed(1)}s`,
+          `${(s.end - s.start).toFixed(1)}s`,
+          s.broll ? "b-roll" : "face",
+          truncate(s.shot, 48).replace(/\|/g, "/"),
+          s.path.replace(result.dir, "…"),
+        ].join(" | ")
       )
-      if (!raw.trim()) throw new Error("Gemini returned an empty response for this clip.")
-      const { script, analysis } = splitScriptAndAnalysis(raw)
-
-      if (DB_AVAILABLE()) {
-        try {
-          await upsertClip({
-            id,
-            platform,
-            url: sourceUrl,
-            title: meta?.title || basename(localPath),
-            author: meta?.channel || meta?.uploader || null,
-            caption: meta?.description ?? null,
-            durationSeconds: meta?.durationSeconds ?? null,
-            localPath,
-            script,
-            analysis,
-            metadata: meta,
-          })
-        } catch (err) {
-          process.stderr.write(`[hitme] clip DB write failed: ${String(err)}\n`)
-        }
-      }
-
-      const statLine = meta
-        ? [
-            meta.channel && `@${meta.channel}`,
-            meta.viewCount !== null && `${compact(meta.viewCount)} views`,
-            meta.likeCount !== null && `${compact(meta.likeCount)} likes`,
-            meta.durationSeconds && duration(meta.durationSeconds),
-            meta.width && meta.height && `${meta.width}x${meta.height}`,
-          ]
-            .filter(Boolean)
-            .join(" · ")
-        : `${(statSync(localPath).size / 1e6).toFixed(1)} MB local file`
-
       return text(
         [
-          `## ${meta?.title || basename(localPath)}`,
-          statLine,
-          `id: \`${id}\` · file: ${localPath}`,
-          meta?.description ? `\n**Caption**: ${truncate(meta.description, 400)}` : "",
+          `## ${row.title ?? a.id} — ${result.segments.length} segments`,
+          `Folder: \`${result.dir}\` · source ${duration(result.totalSeconds)}`,
+          result.audioPath ? `Audio track: \`${result.audioPath}\`` : "",
           "",
-          a.full ? script : scriptSummary(script),
+          "# | time | len | kind | shot | file",
+          "---|---|---|---|---|---",
+          ...rows,
           "",
-          "### Teardown",
-          analysis,
-          "",
-          a.full ? "" : "_Pass full=true for the complete script._",
-        ].join("\n")
+          "These are the reference's actual shots. Use them to study the cut rhythm, to drop a segment into a CapCut " +
+            "draft as a placeholder, or to hand the audio to a music-recognition app. Reusing another creator's footage " +
+            "in a published video is their call, not the tool's — prefer remaking the shot.",
+        ]
+          .filter(Boolean)
+          .join("\n")
       )
     })
   )

@@ -13,6 +13,7 @@ export interface ClipPayload {
   localPath?: string | null
   script: string
   analysis: string
+  template?: string
   metadata?: unknown
 }
 
@@ -28,6 +29,7 @@ export async function upsertClip(payload: ClipPayload): Promise<ClipRow> {
     localPath: payload.localPath ?? null,
     script: payload.script,
     analysis: payload.analysis,
+    template: payload.template ?? "",
     metadata: payload.metadata ?? null,
     analyzedAt: new Date(),
   }
@@ -46,6 +48,7 @@ export async function upsertClip(payload: ClipPayload): Promise<ClipRow> {
         localPath: insert.localPath,
         script: insert.script,
         analysis: insert.analysis,
+        template: insert.template,
         metadata: insert.metadata,
         analyzedAt: insert.analyzedAt,
       },

@@ -1,5 +1,5 @@
 /**
- * Gemini access for the MCP server.
+ * Gemini video analysis, shared by the web routes and the MCP server.
  *
  * Two input paths, same prompt contract:
  *  - a public YouTube URL, handed to the model as a fileData part (no download)
@@ -9,7 +9,6 @@
 import { GoogleGenAI } from "@google/genai"
 import { statSync } from "node:fs"
 import { basename, extname } from "node:path"
-import { requireEnv } from "../env"
 
 /** Matches the model the web analyzer uses; override to experiment. */
 export const DEFAULT_MODEL = process.env.GEMINI_MODEL?.trim() || "gemini-3.5-flash"
@@ -17,7 +16,11 @@ export const DEFAULT_MODEL = process.env.GEMINI_MODEL?.trim() || "gemini-3.5-fla
 let client: GoogleGenAI | null = null
 
 function getClient(): GoogleGenAI {
-  if (!client) client = new GoogleGenAI({ apiKey: requireEnv("GEMINI_API_KEY") })
+  if (!client) {
+    const apiKey = process.env.GEMINI_API_KEY?.trim()
+    if (!apiKey) throw new Error("GEMINI_API_KEY is not set — add it to .env.local.")
+    client = new GoogleGenAI({ apiKey })
+  }
   return client
 }
 
@@ -63,10 +66,7 @@ export async function analyzeYouTubeUrl(
     contents: [
       {
         role: "user",
-        parts: [
-          { fileData: { fileUri: url, mimeType: "video/*" } },
-          { text: prompt },
-        ],
+        parts: [{ fileData: { fileUri: url, mimeType: "video/*" } }, { text: prompt }],
       },
     ],
   })
@@ -105,9 +105,7 @@ export async function analyzeLocalVideo(
     file = await ai.files.get({ name })
   }
   if (file.state === "FAILED") {
-    throw new Error(
-      `Gemini could not process ${basename(path)}: ${JSON.stringify(file.error ?? {})}`
-    )
+    throw new Error(`Gemini could not process ${basename(path)}: ${JSON.stringify(file.error ?? {})}`)
   }
   if (!file.uri) throw new Error("Files API returned no URI for the upload")
 
@@ -128,10 +126,7 @@ export async function analyzeLocalVideo(
 }
 
 /** Plain text generation, for the writing and planning tools. */
-export async function generateText(
-  prompt: string,
-  model = DEFAULT_MODEL
-): Promise<string> {
+export async function generateText(prompt: string, model = DEFAULT_MODEL): Promise<string> {
   const result = await getClient().models.generateContent({
     model,
     contents: [{ role: "user", parts: [{ text: prompt }] }],
