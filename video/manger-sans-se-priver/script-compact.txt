@@ -1,210 +1,313 @@
 
-## 1. La baignoire qui fuit  —  0:00
+==============================================================
+VIDÉO 1 — POURQUOI ÇA REVIENT   (9:08)
+==============================================================
+
+## 1. Ce n'est pas ta volonté  —  0:00
 
 [0:00 — camera] Tu as déjà perdu du poids. Deux kilos, cinq kilos, peut-être plus.
-[0:04 — animation] Et tu les as tenus. Trois semaines.
-[0:06 — camera] Ce n'est pas ta volonté qui a lâché. C'est ta règle.
-[0:10 — camera] Pour comprendre pourquoi, il faut une seule image.
-[0:13 — animation] Imagine une baignoire. Le niveau de l'eau, c'est ton poids.
-[0:16 — animation] Au-dessus, un robinet. Et ce robinet, c'est un aliment.
-[0:20 — animation] Le pain, l'huile, ton dessert : chaque chose que tu manges est un robinet.
-[0:24 — animation] Tu n'en ouvres pas un. Tu en ouvres vingt par jour.
-[0:28 — animation] Et en bas, la baignoire fuit. Tout le temps, même quand tu dors.
-[0:32 — animation] Cette fuite, c'est ce que ton corps brûle rien que pour te faire vivre.
-[0:37 — animation] Si tes robinets donnent plus que ce qui fuit, le niveau monte.
-[0:41 — camera] Et un régime, là-dedans, c'est quoi ?
-[0:43 — animation] Un régime, c'est une règle qui te dit quels robinets fermer.
-[0:47 — animation] Sans sucre : tu fermes le sucre. Sans gras : tu fermes le gras.
-[0:52 — animation] Sauf que si tu fermes un robinet et que tu ouvres les autres un peu plus…
-[0:57 — animation] il coule toujours autant. Et le niveau ne bouge pas.
-[1:01 — camera] Alors le régime que tu choisis, est-ce qu'il change vraiment quelque chose ?
-[1:05 — animation] Deux mille cinq. Cent soixante personnes, suivies un an.
-[1:08 — animation] Chacune tire au sort un régime parmi quatre : Atkins, la Zone, Weight Watchers, Ornish.
-[1:13 — animation] Au bout d'un an : Atkins, deux kilos. La Zone, trois kilos deux. Weight Watchers, trois. Ornish, trois kilos trois.
-[1:19 — animation] Quatre régimes qui n'ont rien à voir. Un kilo d'écart entre le premier et le dernier.
-[1:24 — camera] Donc tout se joue sur la volonté. Tu en choisis un, et tu tiens.
-[1:29 — camera] Sauf que regarde qui est resté.
-[1:30 — animation] Sur quarante personnes par groupe, chez Ornish, vingt ont fini l'année.
-[1:34 — animation] Chez Atkins, vingt-et-un. Chez les deux autres, vingt-six.
-[1:37 — animation] La moitié des gens ont quitté les deux régimes les plus durs.
-[1:41 — animation] Et le plus dur de tous, c'est celui qui a fait perdre le moins.
-[1:45 — camera] Ils n'ont pas manqué de volonté. La règle était intenable.
-[1:49 — camera] Donc la vraie question, ce n'est pas quel robinet fermer.
-[1:52 — camera] C'est lequel coule le plus fort sans que tu le voies.
-[1:56 — camera] Et ce n'est pas ton dessert.
+[0:04 — camera] Et tu les as tenus. Trois semaines, un mois.
+[0:07 — camera] Et puis c'est revenu.
+[0:09 — camera] Et tu t'es dit : j'ai pas assez de volonté.
+[0:12 — camera] Moi aussi je me suis dit ça, pendant des années. C'est faux.
+[0:16 — camera] Avant de parler de ce que tu manges, il faut voir une chose. Une seule.
+[0:21 — animation] Ton corps, c'est une baignoire. Ce que tu manges, ça la remplit.
+[0:25 — animation] Ce que tu brûles dans la journée, ça la vide.
+[0:29 — animation] Si ça se remplit plus vite que ça se vide, le niveau monte.
+[0:33 — animation] Si c'est l'inverse, il descend.
+[0:35 — animation] Voilà. C'est ça, un déficit calorique. Rien d'autre.
+[0:38 — camera] Et maintenant qu'on a dit ça, on peut oublier la baignoire.
+[0:42 — camera] Parce que la vraie question, elle est pas là.
+[0:45 — animation] Est-ce que le régime que tu choisis change vraiment quelque chose ?
+[0:50 — animation] On a pris cent soixante personnes, et on leur a donné quatre régimes qui se détestent.
+[0:56 — animation] Atkins, Weight Watchers, la Zone, Ornish. Pendant un an.
+[0:59 — camera] Au bout d'un an ?
+[1:00 — animation] Deux kilos. Trois. Trois. Trois et demi.
+[1:02 — animation] Quatre méthodes qui n'ont rien à voir, et un kilo d'écart entre la meilleure et la pire.
+[1:08 — camera] Donc le régime que tu choisis, il change presque rien.
+[1:12 — camera] Alors on se dit : d'accord. C'est juste une question de tenir.
+[1:16 — camera] Sauf que regarde qui a tenu.
+[1:18 — animation] Sur quarante personnes par groupe, chez Ornish, vingt ont fini l'année.
+[1:21 — animation] Chez Atkins, vingt-et-un. Chez les deux autres, vingt-six.
+[1:24 — animation] La moitié des gens ont lâché les deux régimes les plus durs.
+[1:28 — animation] Et le plus dur de tous, c'est celui qui a fait perdre le moins.
+[1:33 — camera] Ils manquaient pas de volonté. On leur avait demandé un truc que personne ne tient.
+[1:38 — camera] Donc la question, c'est pas quoi supprimer.
+[1:41 — animation] C'est : où est-ce que ça se remplit le plus, sans que tu le voies passer ?
+[1:46 — camera] Et c'est pas dans ton dessert.
 
-## 2. Le levier que tu ne mâches jamais  —  1:58
+## 2. Le levier que tu ne mâches jamais  —  1:48
 
-[0:00 — camera] Le dessert, c'est le gros robinet. Celui que tout le monde surveille.
-[0:04 — camera] Sauf qu'il coule moins vite qu'il en a l'air.
-[0:07 — broll] Le plus petit robinet, tu ne le mâches pas : tu le verses.
-[0:10 — animation] Un gramme d'huile vaut neuf calories. Un gramme de protéine en vaut quatre.
-[0:14 — animation] Plus du double.
-[0:15 — animation] À l'entrée, il y a un péage. Digérer cent calories de protéine t'en coûte vingt à trente.
-[0:21 — animation] Cent calories d'huile : zéro à trois. C'est comme ça que le gras passe sans ralentir.
-[0:26 — camera] Tu en verses combien ?
-[0:27 — animation] Cent grammes d'huile d'olive, c'est huit cent quatre-vingt-dix-neuf calories.
-[0:30 — animation] Une cuillère à soupe pèse dix à quinze grammes.
-[0:33 — animation] Entre quatre-vingt-dix et cent trente-cinq calories. Sans rien mâcher.
-[0:36 — camera] Et ton dessert ?
-[0:37 — animation] Cent grammes de crème dessert au chocolat : cent vingt et une calories.
-[0:41 — animation] Ta cuillère d'huile bien remplie : cent trente-cinq.
-[0:43 — animation] Le sucre est à quatre calories par gramme, l'huile à neuf.
-[0:47 — camera] Et ton verre de rouge, tu le mets de quel côté ?
-[0:50 — animation] Sept. Il se range du côté de l'huile.
-[0:53 — animation] Et ce robinet-là, tu ne l'entends pas couler.
-[0:55 — animation] Une cuillère d'huile en moins te rapporte plus que le dessert entier.
-[0:59 — camera] Tu viens d'en tirer une conclusion : il faut supprimer le gras.
-[1:02 — camera] Alors explique-moi pourquoi ceux qui font exactement ça finissent par craquer.
-[1:06 — animation] Parce que tu as retiré des calories sans rien retirer à la faim.
-[1:10 — animation] Le gras est le seul nutriment corrélé négativement à la satiété.
-[1:14 — animation] Une cuillère à soupe ne remplit rien du tout.
-[1:17 — animation] Ce qui remplit, ce n'est pas ce que ton assiette contient en calories.
-[1:21 — camera] C'est ce qu'elle pèse. Et ça, ton estomac le mesure vraiment.
+[0:00 — camera] Le dessert, tout le monde le surveille. Toi, ta mère, ton collègue.
+[0:05 — camera] L'huile dans la poêle, personne.
+[0:07 — broll] Et pourtant celle-là, tu ne la mâches même pas. Tu la verses.
+[0:11 — camera] Moi, pendant des années, je surveillais le sucre. Le gras, je le voyais pas.
+[0:16 — animation] Un gramme de gras, c'est neuf calories. Un gramme de sucre, c'est quatre.
+[0:21 — animation] Plus du double, pour la même quantité.
+[0:24 — animation] Et digérer, ça coûte de l'énergie. Mais pas pareil selon ce que tu manges.
+[0:29 — animation] Cent calories de protéines, ton corps en dépense vingt à trente rien que pour les digérer.
+[0:34 — animation] Cent calories d'huile ? Zéro à trois. Elle passe presque entière.
+[0:38 — camera] Et tu en verses combien ?
+[0:41 — animation] Cent grammes d'huile d'olive, c'est presque neuf cents calories.
+[0:45 — animation] Et une cuillère à soupe, ça fait dix à quinze grammes. Pas plus.
+[0:50 — animation] Donc ta cuillère, c'est entre quatre-vingt-dix et cent trente-cinq calories. Sans rien mâcher.
+[0:54 — camera] Et ton dessert, alors ?
+[0:56 — animation] Cent grammes de crème dessert au chocolat : cent vingt et une calories.
+[1:02 — animation] Ta cuillère d'huile bien remplie : cent trente-cinq. Elle fait plus que le pot entier.
+[1:06 — camera] Et ton verre de rouge, tu le mets de quel côté ?
+[1:10 — animation] Sept calories par gramme. Bien plus près de l'huile que du sucre.
+[1:15 — animation] Et lui non plus, tu ne le mâches pas.
+[1:18 — animation] Une cuillère d'huile en moins, ça te fait gagner plus que le dessert entier.
+[1:23 — camera] Alors on se dit : d'accord, il faut supprimer le gras.
+[1:27 — camera] Sauf que regarde ceux qui font exactement ça.
+[1:30 — camera] Ils tiennent, ils tiennent... et au bout de trois semaines, ils craquent.
+[1:35 — animation] Parce qu'ils ont enlevé des calories, sans rien enlever à la faim.
+[1:39 — animation] En quatre-vingt-quinze, on a testé des aliments pour voir lesquels calaient le mieux.
+[1:44 — animation] Le gras, c'est le seul qui va dans l'autre sens.
+[1:48 — animation] Plus il y en avait dans le plat, moins les gens se sentaient calés.
+[1:53 — animation] Une cuillère d'huile, ça ne prend presque aucune place dans ton estomac.
+[1:57 — animation] Il l'a bien reçue. Mais pas assez pour te le signaler.
+[2:01 — animation] Ton estomac, il ne compte pas les calories. Il sent quand ça s'étire.
+[2:06 — animation] Donc ce qui te cale, c'est pas ce que ton assiette contient en calories.
+[2:11 — camera] C'est ce qu'elle pèse. Et ça, ton estomac le sent vraiment.
 
-## 3. Le compteur de millilitres  —  3:22
+## 3. Ton estomac sent le volume  —  4:03
 
 [0:00 — camera] Tu n'as pas craqué par faiblesse.
-[0:02 — camera] Tu as craqué parce que ton estomac n'a jamais su que tu avais mangé.
-[0:06 — animation] Ton estomac n'a pas de compteur de calories.
-[0:09 — animation] Il a un compteur de millilitres. Il réagit à l'étirement.
-[0:12 — animation] On gonfle un ballon dedans, juste avant le repas. Zéro calorie.
-[0:16 — animation] À quatre cents millilitres, les volontaires mangent déjà significativement moins.
-[0:19 — animation] Quatre cents millilitres, c'est deux petits verres. Sauf qu'ils restent là tout le repas.
-[0:23 — camera] Huit sujets. Je te le dis tout de suite : huit.
-[0:27 — camera] Alors tu viens de conclure qu'il suffit d'un grand verre d'eau avant de manger.
-[0:31 — camera] Vas-y, essaie.
-[0:32 — animation] Même plat, mêmes calories.
-[0:34 — animation] Servi solide, avec un verre d'eau à côté : mille six cent cinquante-sept kilojoules.
-[0:38 — animation] Servi solide tout seul : mille six cent trente-neuf.
-[0:40 — camera] Autrement dit, rien.
-[0:42 — animation] Le même volume d'eau, mixé dans l'assiette : mille deux cent neuf kilojoules.
-[0:45 — animation] Entre vingt-et-un et trente-cinq ans, l'eau avant le repas ne te fait rigoureusement rien.
-[0:50 — animation] P égale zéro virgule soixante-cinq.
-[0:52 — animation] Tous les résultats positifs concernent des plus de cinquante-cinq ans.
-[0:55 — animation] L'eau ne compte que si elle est dans l'assiette.
-[0:58 — broll] Et si tu veux la preuve extrême que le volume gouverne la faim,
-[1:02 — animation] regarde les gens à qui on a retiré les quatre cinquièmes de l'estomac.
-[1:06 — camera] Sauf que cette preuve-là dit l'inverse de ce que tout le monde croit.
+[0:03 — camera] Moi aussi j'ai cru ça pendant des années. Que j'étais juste pas assez solide.
+[0:08 — camera] Ton estomac, lui, savait très bien que tu avais mangé.
+[0:12 — camera] Le problème, c'est que ça prenait tellement peu de place.
+[0:16 — camera] Du coup il n'a jamais eu de raison de te dire stop.
+[0:20 — animation] Ton estomac ne compte pas les calories. Il n'a rien pour ça.
+[0:25 — animation] Ce qu'il sent, c'est la place que ça prend.
+[0:29 — animation] Quand ses parois s'étirent, il prévient le cerveau. C'est ça, se sentir plein.
+[0:33 — animation] Alors imagine un truc. On te fait avaler une poche vide.
+[0:37 — animation] Une fois dans ton estomac, on la remplit d'eau, juste avant le repas.
+[0:42 — animation] Ça remplit, et il n'y a pas une seule calorie dedans.
+[0:46 — animation] Deux grands verres d'eau là-dedans, et les gens mangent nettement moins au repas.
+[0:50 — animation] Et cette eau-là, elle ne s'en va pas pendant que tu manges.
+[0:55 — animation] Elle prend de la place du début à la fin du repas.
+[0:59 — camera] Bon, ils étaient huit. Honnêtement, huit personnes, c'est pas grand-chose.
+[1:03 — camera] Alors on se dit : d'accord, c'est simple.
+[1:06 — camera] Un grand verre d'eau avant de manger, et c'est réglé.
+[1:10 — camera] Vas-y, essaie.
+[1:12 — animation] On donne le même plat, avec exactement les mêmes calories.
+[1:16 — animation] La première fois, avec un grand verre d'eau posé à côté de l'assiette.
+[1:20 — animation] Au repas d'après, ils sont à trois cent quatre-vingt-seize calories.
+[1:24 — animation] La deuxième fois, sans le verre : trois cent quatre-vingt-douze.
+[1:28 — camera] Autrement dit, rien.
+[1:31 — animation] Maintenant, la même eau, mais versée dans l'assiette. Le plat devient une soupe.
+[1:35 — animation] Là, ils tombent à deux cent quatre-vingt-neuf. Cent calories de moins.
+[1:39 — camera] Et si tu as entre vingt-et-un et trente-cinq ans ?
+[1:43 — camera] L'eau avant le repas ne te fait rien.
+[1:47 — animation] Chez les jeunes, avec l'eau, il y a même vingt-et-une calories de plus.
+[1:52 — camera] Autant dire rien.
+[1:53 — animation] Les seuls résultats positifs concernent des gens de plus de cinquante-cinq ans.
+[1:58 — camera] L'eau ne compte que si elle est dans l'assiette.
+[2:02 — broll] Et si tu veux la preuve que c'est vraiment le volume qui commande,
+[2:06 — animation] regarde les gens à qui on a retiré les quatre cinquièmes de l'estomac.
+[2:11 — camera] Sauf que cette preuve-là dit l'inverse de ce que tout le monde croit.
 
-## 4. Ce n'est pas la place, c'est le signal  —  4:32
+## 4. Ce n'est pas la place, c'est le signal  —  6:18
 
 [0:00 — camera] Un estomac plus petit, forcément, ça règle le problème.
-[0:03 — camera] C'est logique, c'est dessinable, et c'est ce que les chirurgiens ont cru pendant vingt ans.
-[0:08 — animation] Une sleeve retire environ quatre-vingts pour cent de l'estomac. Une bouteille d'eau devient un verre.
-[0:13 — animation] Soixante-cinq mille patients : vingt-cinq pour cent du poids en un an. Trente kilos sur cent vingt.
-[0:18 — animation] Le volume restant ne prédit rien. Corrélation : moins zéro virgule zéro quatre.
-[0:22 — animation] Cent trente-trois millilitres d'estomac, ou le double : même perte de poids.
-[0:26 — animation] L'anneau, c'est la restriction pure. À cinq ans : onze virgule sept pour cent du poids.
-[0:31 — animation] Le bypass, lui, réécrit tes hormones. Cinq ans aussi : vingt-cinq virgule cinq pour cent. Le double.
-[0:36 — camera] Tu vas me dire : moins de place, donc le repas reste plus longtemps ?
-[0:40 — animation] C'est pourtant l'inverse : il file deux fois plus vite.
-[0:43 — animation] Il quitte l'estomac en trente-huit minutes, contre soixante-dix-huit minutes avant.
-[0:46 — animation] Certaines souris n'ont aucune hormone de la faim.
-[0:49 — animation] Puis on opère : la souris maigrit quand même.
-[0:51 — camera] Donc tu viens de te dire que remplir ton ventre de légumes ne sert à rien.
-[0:56 — animation] Non.
-[0:58 — animation] Essai randomisé sur un an : avec plus d'aliments riches en eau, sept virgule neuf kilos perdus.
-[1:03 — animation] L'autre groupe : six virgule quatre kilos. Deux cent vingt-cinq grammes de nourriture en plus par jour.
-[1:08 — animation] Et moins de faim. Ça marche. Mais ça pèse un kilo et demi sur un an.
-[1:13 — animation] Pas trente kilos. Ça n'exige ni privation, ni ventre vide, ni chirurgie.
-[1:17 — camera] Reste la seule chose que tu attends depuis le début : l'assiette.
+[0:04 — camera] Moi aussi je l'ai cru. Et les chirurgiens l'ont cru pendant vingt ans.
+[0:08 — animation] Quand on opère quelqu'un, on lui enlève environ quatre-vingts pour cent de l'estomac.
+[0:13 — animation] Ce qui tenait presque une grande bouteille d'eau tient maintenant dans un verre.
+[0:17 — animation] Et ça marche. On a suivi soixante-cinq mille personnes opérées.
+[0:21 — animation] En un an, elles perdent trente kilos, quand elles en pesaient cent vingt.
+[0:26 — camera] Sauf qu'il y a un chiffre que personne ne raconte.
+[0:29 — animation] La taille de l'estomac qui reste, elle ne prédit rien du tout.
+[0:34 — animation] Un patient garde l'équivalent d'un verre. Un autre en garde deux.
+[0:38 — animation] Deux fois plus de place. Ils perdent la même chose.
+[0:41 — camera] Alors si c'est pas la place, c'est quoi ? Et comment le savoir ?
+[0:46 — camera] En comparant deux opérations : une qui serre, et une qui change autre chose.
+[0:50 — animation] L'anneau, il serre le haut de l'estomac. Et il ne fait que ça.
+[0:55 — animation] Au bout de cinq ans, quatorze kilos perdus. Sur quelqu'un de cent vingt.
+[0:60 — animation] Le bypass, lui, il change tes hormones.
+[1:03 — animation] C'est-à-dire les messages que ton ventre envoie à ton cerveau.
+[1:07 — animation] Même durée, cinq ans : trente kilos. Pour la même personne. Le double.
+[1:11 — camera] Tu vas me dire : moins de place, donc le repas reste plus longtemps ?
+[1:16 — animation] C'est l'inverse : le repas quitte l'estomac en trente-huit minutes, contre soixante-dix-huit avant.
+[1:20 — animation] Deux fois plus vite.
+[1:22 — animation] Et il y a des souris qui ne fabriquent pas l'hormone de la faim.
+[1:27 — animation] On les opère, elles maigrissent quand même.
+[1:30 — camera] Donc c'est même pas une hormone. C'est tout le message qui change.
+[1:34 — camera] Alors on se dit : d'accord, tout est hormonal.
+[1:38 — camera] « Remplir mon assiette de légumes, ça sert à rien. »
+[1:42 — animation] Non.
+[1:44 — animation] Ton estomac, il mesure pas. Il sent quand ça s'étire, et il prévient.
+[1:49 — animation] On a suivi deux groupes pendant un an, tirés au sort.
+[1:53 — animation] Le premier mange plus de légumes, de fruits, de soupes.
+[1:57 — animation] Au bout d'un an, presque huit kilos perdus.
+[2:00 — animation] L'autre groupe, six kilos et demi. Un kilo et demi d'écart.
+[2:04 — animation] Et le premier, celui qui a perdu le plus, il mangeait plus.
+[2:09 — animation] Deux cent vingt-cinq grammes de nourriture en plus chaque jour.
+[2:13 — animation] Et il avait moins faim, pas plus.
+[2:16 — camera] Alors honnêtement, un kilo et demi sur un an, c'est pas trente kilos.
+[2:20 — camera] C'est pas le même outil.
+[2:23 — camera] Mais ça ne demande ni de te priver, ni de te faire opérer.
+[2:27 — camera] Alors qu'est-ce qui reste ? Honnêtement, je viens surtout de te dire ce que c'est pas.
+[2:33 — camera] C'est pas ta volonté. C'est pas ton dessert non plus.
+[2:37 — camera] Ce qui tient, c'est ça. Ton estomac ne compte pas les calories.
+[2:42 — camera] Il sent juste ce que ton assiette pèse.
+[2:45 — camera] Reste à savoir ce qui pèse. Et ça, c'est dans ta cuisine.
 
-## 5. Le poids de l'assiette  —  5:53
+==============================================================
+VIDÉO 2 — QUOI METTRE DANS L'ASSIETTE   (9:30)
+==============================================================
 
-[0:00 — camera] Tu attends une liste d'aliments. Je te la donne.
-[0:03 — animation] Mais elle tient dans une seule colonne. Cette colonne ne s'appelle pas sain ou pas sain.
-[0:08 — animation] Cette colonne s'appelle calories par gramme.
-[0:10 — broll] Ton estomac ne lit pas d'étiquette. Il pèse.
-[0:13 — article] Dix-huit femmes, trois versions du même menu pendant deux jours, et le même poids d'assiette.
-[0:18 — animation] Mille huit cents kilocalories dans la version dense. Mille trois cent soixante-seize dans la diluée.
-[0:23 — animation] Quatre cent vingt-quatre kilocalories d'écart. Aucune différence de faim.
-[0:26 — camera] C'est un déjeuner entier en moins, et rien n'a quitté la table.
-[0:30 — animation] Donc tu remplis avec ce qui contient de l'eau, et tu pèses le reste.
-[0:35 — animation] Une soupe en entrée : le total du repas tombe de cent trente-quatre kilocalories.
-[0:40 — camera] Tu viens d'en déduire que la soupe fait maigrir.
-[0:43 — animation] Regarde bien le détail que personne ne te cite.
-[0:46 — animation] Un an, deux cents personnes en surpoids. Deux soupes par jour : sept kilos deux perdus.
-[0:51 — animation] Deux snacks denses, à calories fournies égales : quatre kilos huit. La soupe gagne.
-[0:56 — animation] Sauf que le groupe sans aucun aliment imposé a perdu huit kilos un.
-[1:01 — camera] La soupe bat le snack. Elle ne bat pas le fait de ne rien ajouter.
-[1:06 — animation] Voilà. Ça, c'est ce qui tient.
-[1:08 — camera] Maintenant, je te parle de ce qu'on te vend à côté. Et d'un chercheur à qui on a retiré treize articles.
+## 5. Le poids de l'assiette  —  0:00
 
-## 6. Le levier fantôme  —  7:08
+[0:00 — camera] Il y a une liste que tout le monde cherche.
+[0:04 — animation] Les aliments à supprimer. Le truc à rayer, une bonne fois.
+[0:08 — animation] Sauf qu'on a comparé quatre régimes pendant un an.
+[0:11 — animation] Un kilo d'écart entre le meilleur et le pire.
+[0:14 — camera] Alors elle est où, cette liste ?
+[0:17 — camera] Moi aussi je l'ai cherchée, cette liste. Pendant des années. Elle existe pas.
+[0:22 — animation] Parce que la vraie question, c'est pas : bon aliment, mauvais aliment.
+[0:26 — camera] Ton estomac, lui, il lit pas les étiquettes. Il sent juste la place que ça prend.
+[0:32 — broll] Alors prends deux trucs que tu as dans ta cuisine. Des brocolis, et de l'huile.
+[0:37 — broll] Cent calories de brocolis, c'est un gros saladier.
+[0:41 — broll] Cent calories d'huile, c'est à peine une cuillère à soupe. Tu la vois même pas passer.
+[0:46 — animation] Les mêmes cent calories. Trente-huit fois moins de nourriture dans l'assiette.
+[0:51 — animation] Voilà. Des calories pour la place que ça prend. C'est ça, la densité.
+[0:56 — camera] Et ça marche pas par aliment interdit. Regarde la pomme de terre.
+[1:00 — broll] À l'eau, en frites, en chips. Même assiette, même légume, et presque sept fois plus de calories.
+[1:06 — broll] Et la même assiette de riz cuit, c'est deux fois moins de calories que de riz cru.
+[1:11 — camera] Tu n'as rien enlevé. Tu as ajouté de l'eau.
+[1:15 — article] Dix-huit femmes, dans un labo. Trois versions du même menu, deux jours chacune.
+[1:20 — animation] À chaque fois, exactement le même poids de nourriture dans l'assiette.
+[1:24 — animation] Dans une version, mille huit cents calories par jour. Dans l'autre, mille trois cent soixante-seize.
+[1:30 — animation] Quatre cent vingt-quatre calories d'écart. Et elles n'ont pas eu plus faim.
+[1:35 — camera] Quatre cent vingt-quatre calories, c'est un déjeuner entier.
+[1:39 — camera] Et rien n'a quitté la table.
+[1:42 — animation] Donc tu remplis avec ce qui contient de l'eau. Et l'huile, tu la comptes.
+[1:47 — broll] Et tu mets une soupe avant le plat.
+[1:50 — animation] Et à la fin du repas, le total descend de cent trente-quatre calories. Environ un cinquième en moins.
+[1:57 — camera] Alors on se dit : d'accord, la soupe, ça fait maigrir.
+[2:01 — camera] Sauf que regarde le groupe que personne ne te cite.
+[2:05 — animation] Un an. Deux cents personnes en surpoids.
+[2:08 — animation] Deux bols de soupe par jour : sept kilos deux en moins.
+[2:13 — animation] Deux snacks par jour, avec autant de calories fournies : quatre kilos huit. La soupe gagne.
+[2:18 — animation] Sauf que le groupe sans aucun aliment imposé, lui, il est à huit kilos un.
+[2:24 — camera] La soupe bat le snack. Elle bat pas le fait de ne rien imposer du tout.
+[2:30 — camera] Honnêtement, la première fois que j'ai lu ça, ça m'a énervé.
+[2:34 — animation] Alors ce qui tient, c'est ça. Remplir avec l'eau. Compter l'huile.
+[2:39 — camera] Maintenant, je te parle de ce qu'on te vend à côté.
+[2:43 — camera] Et d'un chercheur à qui on a retiré treize articles.
 
-[0:00 — camera] La petite assiette, la petite fourchette, l'eau pétillante. Ces conseils ne sont pas idiots.
-[0:04 — camera] Ils sont juste presque tous nés au même endroit.
-[0:07 — animation] Brian Wansink, de Cornell, a treize articles rétractés.
-[0:10 — article] Dont le bol de service, rétracté par le JAMA.
-[0:13 — animation] Toute la vulgarisation petite assiette vient de là.
-[0:15 — animation] Étude pré-enregistrée, cent trente-quatre personnes, vingt-trois centimètres contre vingt-neuf centimètres…
-[0:18 — animation] Dix-neuf kilocalories d'écart. Moins d'une demi-cuillère à café d'huile, pour quarante-six pour cent de surface en plus.
-[0:24 — animation] Les bulles ? À l'IRM, l'estomac gonfle plus qu'avec l'eau plate.
-[0:27 — animation] À table ? Neuf kilocalories d'écart. Sur dix personnes.
-[0:29 — camera] Donc tu viens de ranger tous les ustensiles au rayon folklore.
-[0:33 — camera] Petite fourchette, tu manges moins ? Non.
-[0:35 — animation] Vrai restaurant : petite fourchette, cent vingt-six grammes laissés. Grande fourchette, deux cent vingt-quatre grammes.
-[0:39 — animation] Ils ont mangé plus avec la petite.
-[0:41 — animation] Tu juges ton repas aux restes, pas à ce que tu avales.
-[0:45 — animation] L'assiette ne descend pas, alors tu forces.
-[0:48 — animation] Et dans le même article, en laboratoire, l'effet s'inverse.
-[0:50 — animation] Pas un conseil : une question ouverte.
-[0:52 — animation] Ce qui reste debout est plus bête que ça…
-[0:55 — animation] Bol et cuillère : zéro virgule quarante-huit. Assiette : zéro virgule zéro trois.
-[0:58 — animation] Seize fois moins. Ralentir, zéro virgule quarante-cinq. La portion, zéro virgule quarante-six.
-[1:02 — camera] Donc il ne te reste ni objet magique, ni interdit.
-[1:06 — camera] Il te reste une seule question, posée trois fois par jour.
+## 6. Le levier fantôme  —  2:47
 
-## 7. L'aliment que tu as rayé de ta liste  —  8:17
+[0:00 — camera] On t'a dit de prendre une assiette plus petite.
+[0:03 — camera] De prendre une petite fourchette. De boire de l'eau pétillante avant de manger.
+[0:08 — camera] Honnêtement, ces conseils sont pas idiots. Moi aussi je les ai suivis.
+[0:12 — camera] Ils viennent juste, presque tous, du même endroit.
+[0:15 — animation] Un chercheur américain, Brian Wansink.
+[0:17 — animation] Treize de ses études ont été effacées des revues scientifiques. Six le même jour.
+[0:22 — article] Dont celle sur le grand plat dans lequel tout le monde se sert.
+[0:26 — animation] Et tout ce qu'on te répète sur la petite assiette part de là.
+[0:31 — animation] Alors d'autres chercheurs ont refait l'expérience. Proprement, cette fois.
+[0:34 — animation] Ils ont annoncé à l'avance ce qu'ils allaient mesurer.
+[0:37 — animation] Cent trente-quatre personnes. Une assiette de vingt-trois centimètres, contre une de vingt-neuf centimètres.
+[0:41 — animation] Et à la fin, l'écart, c'est dix-neuf calories.
+[0:44 — animation] Même pas une demi-cuillère à café d'huile.
+[0:47 — animation] Pour une assiette dont le fond est presque moitié plus grand.
+[0:50 — animation] Et un écart aussi petit, franchement, ça peut n'être que du hasard.
+[0:55 — camera] Et les bulles ? Là, il se passe vraiment quelque chose.
+[0:58 — animation] On a regardé, à l'IRM, l'estomac de gens qui buvaient de l'eau gazeuse.
+[1:03 — animation] Il s'étire plus qu'avec de l'eau plate. Ça, c'est vrai.
+[1:06 — animation] Sauf qu'à table, ces mêmes gens ont mangé neuf calories de moins.
+[1:10 — animation] Neuf calories, sur dix personnes. Autant dire rien du tout.
+[1:14 — camera] Alors on se dit : d'accord, tout ça, c'est du folklore.
+[1:17 — camera] Et la fourchette avec. Petite fourchette, tu manges moins.
+[1:21 — camera] Sauf que va voir au restaurant.
+[1:23 — animation] Deux mille douze, un vrai restaurant, deux jours de service.
+[1:26 — animation] La moitié des clients reçoit des petites fourchettes, l'autre moitié des grandes.
+[1:31 — animation] Et à la fin, on pèse ce qui reste dans les assiettes.
+[1:35 — animation] Avec la petite fourchette, les gens ont laissé cent vingt-six grammes.
+[1:39 — animation] Avec la grande, deux cent vingt-quatre grammes.
+[1:41 — animation] Donc ils ont mangé plus avec la petite.
+[1:44 — animation] Cent grammes de plus, à peu près. Une pomme de terre entière.
+[1:48 — animation] Parce que tu ne regardes pas ce que tu avales.
+[1:52 — animation] Tu regardes ce qu'il reste dans l'assiette.
+[1:54 — animation] Petite fourchette, l'assiette descend pas. Alors tu forces.
+[1:57 — animation] Et dans le même article, en laboratoire, c'est l'inverse qui se passe.
+[2:01 — animation] Quand un résultat s'inverse dans une seule et même étude...
+[2:04 — animation] ...tu n'as pas un conseil. Tu as une question ouverte.
+[2:08 — animation] Ce qui reste debout, c'est plus bête que tout ça.
+[2:11 — animation] Un bol plus petit, une cuillère plus petite : ça, ça change quelque chose.
+[2:16 — animation] L'assiette, à côté, ne pèse presque rien.
+[2:18 — animation] Et tu sais ce qui pèse autant que le bol ? Manger plus lentement.
+[2:23 — animation] Presque autant que la taille de la portion qu'on te sert.
+[2:27 — camera] Donc il ne te reste ni objet magique, ni interdit.
+[2:30 — camera] Il te reste une question. Et tu te la poses trois fois par jour.
+
+## 7. L'aliment que tu as rayé de ta liste  —  5:22
 
 [0:00 — camera] Il y a un aliment que tu as rayé de ta liste.
 [0:04 — camera] Et depuis, c'est à lui que tu penses.
-[0:07 — animation] Et ce n'est pas un manque de volonté.
-[0:09 — animation] On a posé une cloche en verre devant des enfants.
-[0:13 — animation] Dessous, un aliment qu'ils adorent. Consigne : interdiction d'y toucher.
-[0:16 — animation] Résultat : ils s'agitent davantage, et ils réclament cet aliment précis.
-[0:19 — animation] Et dès que l'accès rouvre, ils le choisissent et en mangent davantage.
-[0:23 — article] Les auteurs concluent noir sur blanc : restreindre l'accès n'obtient pas la modération.
-[0:26 — camera] Des enfants en laboratoire, d'accord. Et chez l'adulte ?
-[0:29 — animation] Une semaine sans chocolat, chez cent trois étudiantes.
-[0:32 — animation] Celles qui se contrôlaient déjà, privées de chocolat, en ont mangé le plus.
-[0:36 — animation] Et celles privées de vanille, qu'on remplace facilement ? Rien.
-[0:39 — animation] Ce n'est pas l'idée de se priver. C'est l'aliment qu'aucun autre ne remplace.
-[0:43 — camera] Et pendant ce temps, ta tête fait quoi ?
-[0:45 — animation] Cent six femmes qui venaient de perdre dix kilos.
-[0:48 — animation] Plus le contrôle était rigide, plus l'attention accrochait sur les images de nourriture.
-[0:53 — animation] Corrélation : zéro virgule quarante-trois. Sur la silhouette, elle monte à quarante-neuf.
-[0:56 — animation] Sur la même échelle, le type de régime plafonne à zéro virgule zéro sept.
-[1:01 — animation] La règle stricte ne fait pas oublier le gâteau. Elle te le remet sous les yeux.
-[1:06 — camera] Et là, tu viens de conclure tout seul : je ne m'interdis plus rien.
-[1:10 — camera] Sauf que l'expérience suivante ne te donne pas raison.
-[1:13 — animation] Cinquante-huit personnes, deux semaines sans chocolat. L'envie monte chez les privés.
-[1:16 — animation] Mais ceux qui en ont le plus mangé au labo,
-[1:19 — animation] ce sont les gros amateurs qu'on n'avait privés de rien.
-[1:23 — animation] La rigidité est associée à plus de crises. Associée, pas coupable.
-[1:26 — camera] Ce n'est pas l'interdit qui décide seul. C'est qui tu es devant cet aliment.
-[1:31 — camera] La question n'est plus ce que tu t'autorises, mais ce que tu peux tenir.
+[0:07 — camera] Moi aussi j'ai eu cet aliment-là. Et plus je me l'interdisais, plus j'y pensais.
+[0:12 — camera] Et c'est pas une question de volonté.
+[0:14 — animation] Regarde ce qu'on a fait à des enfants, dans un labo.
+[0:18 — animation] Une assiette de biscuits, posée sous une cloche en verre.
+[0:22 — animation] Des biscuits qu'ils adorent. Et une consigne : on n'y touche pas.
+[0:26 — animation] Alors ils tournent autour. Ils bougent plus. Et ils réclament ces biscuits-là.
+[0:30 — animation] Et quand on enlève la cloche, ils se jettent dessus et en mangent plus.
+[0:35 — article] Les chercheurs l'écrivent noir sur blanc : interdire l'accès, ça n'apprend pas la modération.
+[0:40 — camera] Bon. Des enfants, dans un labo. Et nous ?
+[0:43 — animation] Cent trois étudiantes. Une semaine sans chocolat pour les unes,
+[0:46 — animation] une semaine sans vanille pour les autres.
+[0:49 — animation] Et celles qui se surveillaient déjà beaucoup,
+[0:52 — animation] privées de chocolat, c'est elles qui en ont mangé le plus.
+[0:55 — animation] Privées de vanille ? Rien du tout.
+[0:58 — animation] Parce que la vanille, tu la remplaces sans y penser. Le chocolat, rien ne le remplace.
+[1:03 — camera] Cette ligne que tu as barrée, c'est une règle que tu t'es donnée.
+[1:08 — camera] Et pendant qu'elle tient, ta tête fait quoi ?
+[1:11 — animation] Cent six femmes qui venaient de perdre dix kilos.
+[1:14 — animation] On leur montre des images, et on regarde où leurs yeux s'accrochent.
+[1:18 — animation] Plus la règle qu'elles s'imposaient était stricte, plus leur regard restait collé à la nourriture.
+[1:23 — animation] L'aliment que tu t'interdis, il disparaît pas. Tu le vois partout.
+[1:27 — camera] Alors que le régime que tu choisis, on l'a vu :
+[1:31 — animation] un kilo d'écart au bout d'un an.
+[1:33 — camera] Ce qui te travaille la tête, c'est pas le régime. C'est l'interdit.
+[1:37 — camera] Alors on se dit : d'accord, j'arrête, je m'interdis plus rien.
+[1:42 — camera] Sauf que regarde qui a le plus mangé.
+[1:44 — animation] Cinquante-huit personnes, deux semaines sans chocolat. Chez les privés, l'envie monte, c'est vrai.
+[1:49 — animation] Mais ceux qui en ont mangé le plus au labo,
+[1:53 — animation] c'est les gros amateurs. Ceux qu'on n'avait privés de rien.
+[1:56 — camera] Les règles trop strictes vont avec plus de crises.
+[1:60 — camera] Ça va ensemble. Ça veut pas dire que l'une cause l'autre.
+[2:04 — camera] Ce qui décide, c'est pas seulement l'interdit. C'est qui tu es devant cet aliment.
+[2:09 — camera] Donc la question, c'est plus ce que tu t'autorises. C'est ce que tu peux tenir.
 
-## 8. On ne vit qu'une fois  —  9:52
+## 8. On ne vit qu'une fois  —  7:36
 
-[0:00 — camera] Alors on récapitule. Ce qui survit tient en trois lignes.
-[0:03 — animation] Un. Le débit décide, pas le robinet.
-[0:05 — animation] Deux. Ce qui le remplit, tu ne le mâches pas.
-[0:09 — animation] Trois. Ce qui te cale, c'est le poids.
-[0:11 — animation] Et ça tient comment ?
-[0:13 — animation] Ajuster au lieu d'interdire.
-[0:14 — animation] Contrôle souple : dix personnes sur onze reprennent du muscle. Contrôle rigide : une sur quatre.
-[0:18 — camera] Et là tu te dis : parfait, Nutella tous les soirs.
-[0:22 — camera] Souple ne veut pas dire aveugle.
-[0:24 — animation] Le curseur, tu le déplaces ; la règle, c'est toi qui l'écris.
-[0:27 — animation] L'eau ne fait pas de politique. Elle monte ou elle descend.
-[0:30 — animation] Je te concède tout. C'est lent.
-[0:32 — animation] Plus de la moitié du poids perdu revient en deux ans.
-[0:36 — article] Cinquante-sept pour cent de ceux qui commencent un programme minceur
-[0:39 — animation] ne perdent même pas cinq pour cent de leur poids.
-[0:42 — animation] Ce qui survit : sept pour cent de poids en moins. Cinq kilos six.
-[0:46 — animation] Cinquante-huit pour cent de diabètes en moins. Même en ayant repris la moitié.
-[0:50 — animation] On ne vit qu'une fois.
-[0:52 — camera] C'est exactement pour ça que ça ne vaut pas le coup de te priver,
-[0:57 — camera] ni de faire semblant de ne pas savoir ce que tu manges.
+[0:00 — camera] Alors on récapitule. Tout ça, ça tient en trois phrases.
+[0:04 — animation] Un. Ce qui compte, c'est combien tu manges dans la journée.
+[0:09 — animation] Pas l'aliment que tu supprimes.
+[0:11 — animation] Deux. Les calories qui rentrent le plus vite, tu ne les mâches même pas.
+[0:17 — animation] L'huile dans la poêle. Ce que tu bois.
+[0:20 — animation] Trois. Ce qui te cale, c'est le poids de ce que tu as dans l'assiette.
+[0:25 — animation] Ton estomac sent le volume. Il ne compte pas les calories.
+[0:29 — animation] Et ça tient comment ?
+[0:31 — animation] Tu ajustes ce que tu manges. Tu ne l'interdis pas.
+[0:35 — animation] On a suivi des gens qui sortaient d'un régime, pendant dix semaines.
+[0:40 — animation] Ceux qui s'autorisaient à ajuster : dix sur onze ont repris du muscle.
+[0:45 — animation] Ceux qui s'interdisaient tout : une sur quatre.
+[0:48 — camera] Et honnêtement, vingt-trois personnes, c'est pas grand-chose. Mais l'écart est énorme.
+[0:53 — camera] Alors on se dit : parfait, du Nutella tous les soirs.
+[0:57 — camera] Ajuster, ça ne veut pas dire fermer les yeux.
+[1:00 — animation] Tu peux te lâcher un soir. Mais c'est toi qui décides jusqu'où.
+[1:05 — animation] Ton corps, lui, ne négocie pas.
+[1:07 — animation] Ce que tu manges, il le prend. Que tu te sois autorisé ou pas.
+[1:12 — animation] Et je te concède tout le reste. C'est lent.
+[1:16 — animation] Plus de la moitié des kilos perdus reviennent en deux ans.
+[1:20 — article] Sur cent personnes qui commencent un programme minceur,
+[1:23 — animation] cinquante-sept n'arrivent même pas à perdre quatre kilos, quand elles en pèsent quatre-vingts.
+[1:28 — animation] Et voilà ce qui reste quand même : cinq kilos six en moins, sur quatre-vingts.
+[1:33 — animation] Sur dix personnes qui seraient devenues diabétiques, il n'y en a plus que quatre.
+[1:39 — animation] Même chez ceux qui en ont repris la moitié.
+[1:42 — animation] On ne vit qu'une fois.
+[1:44 — camera] C'est exactement pour ça que ça vaut pas le coup de te priver.
+[1:49 — camera] Ni de faire semblant de pas savoir ce que tu manges.
