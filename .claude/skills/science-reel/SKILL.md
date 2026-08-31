@@ -604,6 +604,92 @@ French.
 
 ---
 
+## Scaling to long form — what breaks at 9 minutes
+
+Everything above was measured on 69-90s reels. Pushing the same spine to a 9-minute YouTube
+video does **not** mean writing more of the same: the reel settings actively produce an
+unwatchable long-form script. The eight rules below all come from a native speaker reading a
+finished 8-minute draft aloud and rejecting it — *« la rédaction est très robotique, très
+inhumaine »*, *« on dirait écrit par un enfant »*.
+
+**The root cause is the density.** 185 wpm and 3-second shots work when the viewer already
+knows the creator and the topic, and when rewatching is normal. On nine minutes they watch
+**once, linearly, and have to be taught.** There is literally no room to explain. Drop to
+**~160-175 wpm and 3-5s shots**, and accept the runtime that follows.
+
+### 1. A metaphor is a micro-module, not a set
+
+This is the failure that cost the most rewrites. The bathtub image was installed in chapter 1
+and then used for the rest of the video — *« quel robinet coule le plus vite ? »* — which
+replaces a real question about calories with a riddle about a metaphor.
+
+**Install it in 15-20 seconds, then close it out loud and never return:**
+
+> ✅ « Voilà. C'est ça, un déficit calorique. Rien d'autre. »
+> ✅ « Et maintenant qu'on a dit ça, **on peut oublier la baignoire.** »
+
+After that line: calories, food, stomach, in plain words. Grep the remaining chapters for the
+metaphor's nouns before shipping — three survived the first pass.
+
+### 2. Anchor every term of the metaphor out loud
+
+Never assume the mapping is obvious. *« un robinet : ce que tu manges »* is not an anchor;
+it's a label. The anchors that actually worked are full sentences: « le niveau de l'eau,
+**c'est** ton poids », « ce robinet, **c'est** un aliment », « cette fuite, **c'est** ce que
+ton corps brûle ». Without them the viewer cannot connect the image to their own life, and
+every later callback lands on nothing.
+
+### 3. Never tell the viewer what they concluded
+
+*« Et là tu viens de conclure tout seul… »* — banned. It tells them what they think, and if
+they didn't think it, you have lost them. **Voice the thought in their place, quietly**, and
+show it in quotation marks on screen so no isolated frame reads as the video's own claim:
+
+> ✅ « Alors on se dit : d'accord. C'est juste une question de tenir. »
+> ✅ « Sauf que regarde qui a tenu. »
+
+### 4. No word without context
+
+*« Ce n'est pas ta volonté qui a lâché. C'est ta règle. »* — at six seconds in, no rule has
+been established. The viewer has no idea what rule is meant. Before using a term, check it
+has been introduced in this video; otherwise introduce it or pick another word.
+
+### 5. No laboratory units
+
+Nobody says millilitres, kilojoules, or grams of lipid out loud. **400 mL is two big glasses
+of water. 1.5 L is a large bottle.** Keep calories and kilos; convert everything else to an
+object the viewer has held. And a stomach does not *count* anything — it senses volume, it
+reacts when it stretches.
+
+### 6. Every sentence literally true
+
+Compression produces sentences that scan and mean nothing. *« Tu as craqué parce que ton
+estomac n'a jamais su que tu avais mangé »* is false: it knew. What did not happen is that it
+was never filled enough to signal it. Read each line at face value and ask whether it is true
+as written, even when it sounds good.
+
+### 7. Write like someone talking, not like a fact sheet
+
+The creator speaks from their own experience — « moi aussi je me suis dit ça, pendant des
+années » — concedes when the evidence is thin — « honnêtement, huit personnes, c'est pas
+grand-chose » — and drops a short sentence after a long one. The viewer has been lied to for
+years; they are not stupid, and you are not lecturing them. **Warmth, not authority.** Ban
+stacked noun phrases, dry enumerations, and the impersonal *il faut*.
+
+### 8. Split before you compress
+
+A 10-minute target and "explain properly" are usually incompatible, and the honest resolution
+is a **split, not a squeeze**. In practice: 8 chapters that needed 18 minutes became two
+9-minute videos, cut at the seam where the argument already turned (why it fails / what to do
+instead). The cost is exactly two seams, and they are the same two the shorts need anyway —
+a landing that **concludes** instead of opening the next chapter, and an opening that works
+**cold** for someone who has not seen part one.
+
+Watch for the scope error that makes the split necessary in the first place. Named plainly by
+the author: *« on était trop gourmand dans le premier sujet »*.
+
+---
+
 ## Production
 
 Animation is done in **HyperFrames** (HTML compositions with `data-*` timing, rendered to
