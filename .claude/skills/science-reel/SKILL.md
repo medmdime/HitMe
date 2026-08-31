@@ -226,6 +226,34 @@ already has a feel for:
 
 Never leave a number bare. If you cannot benchmark it, cut it.
 
+**And some numbers cannot be benchmarked at all — those are never spoken.** A correlation
+coefficient, a p-value, a Cohen's *d*: these have no everyday scale, so there is nothing to
+anchor them to. Caught by the native speaker reading a finished script aloud:
+
+> ❌ « Le régime choisi prédit la perte à zéro virgule zéro sept. »
+> — *"0,07 quoi ? c'est quoi l'unité ?"*
+
+The instinct is to rescue it with a second line — « même échelle, de zéro à un » — and that
+is the trap: it stacks a second technical sentence on the first, and the viewer leaves. **A
+benchmark has to be a thing the listener already owns.** They know what three kilos weigh.
+They know what half a group walking out looks like. They do not know what 0,60 is worth.
+
+The fix is never to explain the statistic. It is to say the same finding in the study's own
+countable units — people, kilos, calories, minutes:
+
+> ✅ « Quatre régimes, un an. Atkins deux virgule un kilos, la Zone trois virgule deux,
+> Weight Watchers trois, Ornish trois virgule trois. » — *the same r=0,07, in kilos*
+> ✅ « Sur quarante personnes par groupe, vingt ont fini chez Ornish. » — *the dropout, as people*
+
+The coefficient can stay on screen in a source strip, or live in the caption. It never goes
+in the mouth.
+
+**The audit is mechanical**: grep the narration for *corrélation*, *p =*, *taille d'effet*,
+and any spelled-out decimal. One pass over a finished 8-minute script turned up nine such
+shots across five chapters — every one of them written after the "benchmark every number"
+rule was already in this file. The rule was being satisfied on paper by a benchmark that
+was itself unreadable.
+
 ### 5. Validate before you correct
 
 The first host line after a react hook is agreement, not a dunk:

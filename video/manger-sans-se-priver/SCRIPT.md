@@ -7,133 +7,199 @@ Les seules lignes à dire sont celles qui suivent un bracket ; le reste est de l
 
 ## 1. La baignoire qui fuit
 
-> **0:00 → 1:08** · 68 s · 207 mots · 183 mots/min
+> **0:00 → 1:58** · 118 s · 347 mots · 176 mots/min
 
 `[0:00 — camera · 3.9s]`
 **Tu as déjà perdu du poids. Deux kilos, cinq kilos, peut-être plus.**
 - ÉCRAN — TU AS DÉJÀ [PERDU:jaune] DU POIDS
-- VISUEL — Plan poitrine, fond neutre, regard caméra franc. Très léger punch-in de trois pour cent sur toute la durée. Aucun accessoire dans le cadre.
+- VISUEL — Plan poitrine, fond neutre, regard caméra franc. Très léger punch-in de trois pour cent.
 - SON — clic doux d'apparition du texte
 
-`[0:04 — animation · 2.6s]`
-**Et tu les as tenus — pendant trois semaines.**
+`[0:04 — animation · 2.3s]`
+**Et tu les as tenus. Trois semaines.**
 - ÉCRAN — TENU [TROIS SEMAINES:jaune]
-- VISUEL — Courbe de poids qui descend proprement sur trois cases de calendrier, puis s'arrête net à l'entrée de la quatrième case, qui reste vide. La courbe reste suspendue, elle ne remonte pas. Aucun chiffre sur l'axe.
-- SON — trait qui se trace (whoosh court), puis clic sec à l'arrêt de la courbe
+- VISUEL — Courbe de poids qui descend sur trois cases de calendrier, puis s'arrête net à l'entrée de la quatrième, qui reste vide. La courbe ne remonte pas. Aucun chiffre sur l'axe.
+- SON — trait qui se trace, puis clic sec à l'arrêt
 
-`[0:06 — camera · 3.7s]`
+`[0:06 — camera · 3.9s]`
 **Ce n'est pas ta volonté qui a lâché. C'est ta règle.**
 - ÉCRAN — PAS TA [VOLONTÉ:rouge] — puis : TA [RÈGLE:jaune]
-- VISUEL — Retour caméra, même axe, cadre un cran plus serré. Sur la deuxième phrase, recadrage sec d'un demi-pas vers la gauche.
-- SON — petit whoosh de bascule au changement d'incrustation
+- VISUEL — Retour caméra, cadre un cran plus serré. Recadrage sec d'un demi-pas sur la deuxième phrase.
+- SON — petit whoosh de bascule
 
-`[0:10 — animation · 4.5s]`
-**Ton poids, c'est un niveau d'eau. En haut, un robinet : ce que tu manges.**
-- ÉCRAN — UN [NIVEAU:jaune] D'EAU
-- VISUEL — Fond sombre uni, toile 1080x1920. Une baignoire vue de profil, en coupe, dessinée au trait clair, remonte du bas du cadre et se cale au centre. L'eau la remplit jusqu'à mi-hauteur en une demi-seconde, puis une fine ligne horizontale blanche vient se poser sur la surface et y reste : c'est le repère de niveau, il servira jusqu'à la fin du chapitre. Un robinet descend du haut du cadre, s'ouvre d'un quart de tour, et un jet large et continu tombe dans l'eau. IMPÉRATIF : aucune graduation, aucun chiffre, ni sur la baignoire ni à côté.
-- SON — remontée grave (whoosh) pour la baignoire, clic du robinet, puis nappe d'eau qui coule
+`[0:10 — camera · 2.6s]`
+**Pour comprendre pourquoi, il faut une seule image.**
+- ÉCRAN — UNE SEULE [IMAGE:jaune]
+- VISUEL — Même axe. Il lève un doigt, tient le regard une demi-seconde après le dernier mot.
+- SON — silence tenu, puis whoosh grave d'entrée
 
-`[0:15 — animation · 2.9s]`
-**En bas, bonne nouvelle : ta baignoire fuit, en permanence.**
-- ÉCRAN — ÇA [FUIT:vert] EN PERMANENCE
-- VISUEL — La caméra glisse vers le bas et cadre le dessous de la baignoire. Par le fond s'échappe un filet fin et régulier qui tombe hors du cadre. IMPÉRATIF : le filet est visiblement trois à quatre fois plus mince que le jet du robinet, et il ne s'interrompt jamais. Le jet reste visible en haut du cadre, légèrement flou, pour que la comparaison d'épaisseur se lise d'un coup d'œil.
-- SON — descente douce (whoosh bas) puis filet d'eau fin et continu, très présent
+`[0:13 — animation · 3.6s]`
+**Imagine une baignoire. Le niveau de l'eau, c'est ton poids.**
+- ÉCRAN — LE NIVEAU = TON [POIDS:jaune]
+- VISUEL — Baignoire vue de profil, en coupe, trait clair sur fond sombre. L'eau monte à mi-hauteur. Une étiquette TON POIDS se colle sur la ligne de surface et y reste tout le chapitre.
+- SON — remontée grave, puis pose de l'étiquette
 
-`[0:18 — animation · 3.2s]`
-**Même quand tu dors. C'est ce que ton corps dépense.**
-- ÉCRAN — MÊME QUAND TU [DORS:vert]
-- VISUEL — Le fond passe du jour à la nuit en un fondu lent, quelques étoiles apparaissent derrière la baignoire. Le filet de la fuite continue exactement au même rythme, sans une variation d'épaisseur. Au mot dépense, un halo chaud pulse une seule fois autour du filet.
-- SON — nappe de nuit qui monte, filet d'eau inchangé, pulsation sourde sur le halo
+`[0:16 — animation · 3.2s]`
+**Au-dessus, un robinet. Et ce robinet, c'est un aliment.**
+- ÉCRAN — UN ROBINET = UN [ALIMENT:jaune]
+- VISUEL — Un robinet descend du haut du cadre. Une étiquette UN ALIMENT vient se coller dessus, reliée au robinet par un trait. C'est l'ancrage : sans lui, tout le reste du chapitre ne se raccorde à rien.
+- SON — clic du robinet, puis clac de l'étiquette
 
-`[0:21 — animation · 3.8s]`
-**Si le robinet donne plus que ce qui fuit, le niveau monte.**
-- ÉCRAN — SI ÇA DONNE PLUS, LE NIVEAU [MONTE:rouge]
-- VISUEL — Retour sur l'ensemble, jet en haut et fuite en bas visibles dans le même cadre. Le robinet s'ouvre en grand : le jet double d'épaisseur. La ligne de repère grimpe par paliers nets vers le haut de la baignoire, vite. Le filet de la fuite ne change pas d'un cheveu. Le contraste gros jet / mince filet doit se voir sans aucun texte pour l'expliquer.
-- SON — robinet qu'on ouvre (grincement court), débit qui enfle, montée tonale sur le niveau
+`[0:20 — animation · 4.5s]`
+**Le pain, l'huile, ton dessert : chaque chose que tu manges est un robinet.**
+- ÉCRAN — PAIN · HUILE · [DESSERT:jaune]
+- VISUEL — Trois robinets supplémentaires descendent en cascade, chacun étiqueté d'un aliment. Les quatre coulent ensemble dans la baignoire.
+- SON — trois clics de robinet en rythme
 
-`[0:25 — animation · 4.2s]`
-**Change de robinet : tant que ça coule pareil, le niveau ne bouge pas.**
-- ÉCRAN — MÊME DÉBIT, MÊME [NIVEAU:jaune]
-- VISUEL — Quatre robinets identiques s'alignent au-dessus de la baignoire. Le premier se ferme d'un geste sec, le deuxième s'ouvre dans le même mouvement, avec très exactement la même épaisseur de jet ; puis le troisième, puis le quatrième, de plus en plus vite. La ligne de repère est soulignée d'un trait blanc épais qui ne bouge pas d'un pixel pendant toute la bascule.
-- SON — quatre clics de robinet en rythme, le son de l'eau ne change jamais de volume
+`[0:24 — animation · 3.9s]`
+**Tu n'en ouvres pas un. Tu en ouvres vingt par jour.**
+- ÉCRAN — TU EN OUVRES [VINGT:jaune] PAR JOUR
+- VISUEL — La caméra recule : une rangée de vingt robinets s'aligne au-dessus de la baignoire, tous ouverts, débits inégaux. Un compteur monte de un à vingt.
+- SON — rafale de clics qui s'accélère
 
-`[0:29 — animation · 4.2s]`
-**En deux mille cinq, un essai suit cent soixante personnes pendant un an.**
-- ÉCRAN — DEUX MILLE CINQ — [CENT SOIXANTE:jaune] PERSONNES
-- VISUEL — Bascule sur un carton d'étude, fond sombre. L'année deux mille cinq s'inscrit en grand puis recule vers le haut du cadre. Cent soixante silhouettes apparaissent en grille par vagues rapides et se stabilisent. Une barre de temps se déroule d'un bord à l'autre et se referme sur la mention un an. Mention de source discrète en bas : essai Dansinger, deux mille cinq.
-- SON — whoosh de transition sec, puis grésillement rapide pour l'apparition de la grille
+`[0:28 — animation · 4.5s]`
+**Et en bas, la baignoire fuit. Tout le temps, même quand tu dors.**
+- ÉCRAN — ÇA [FUIT:vert] TOUT LE TEMPS
+- VISUEL — La caméra glisse sous la baignoire : un filet fin et régulier s'échappe du fond. Le filet est visiblement trois fois plus mince que le jet du dessus. Le fond passe du jour à la nuit, quelques étoiles ; le filet ne varie pas d'un cheveu.
+- SON — descente douce, filet d'eau continu, nappe de nuit
 
-`[0:33 — animation · 2.6s]`
-**Chacune tire au sort l'un des quatre régimes.**
-- ÉCRAN — [QUATRE:jaune] RÉGIMES TIRÉS AU SORT
-- VISUEL — La grille se casse en quatre paquets égaux qui glissent chacun sous un robinet étiqueté : Atkins, la Zone, Weight Watchers, Ornish. Un dé roule une seule fois au centre du cadre pour dire le tirage au sort. Les quatre jets sortent avec exactement la même épaisseur.
-- SON — dé qui roule, puis quatre clics de robinet très serrés
+`[0:32 — animation · 4.9s]`
+**Cette fuite, c'est ce que ton corps brûle rien que pour te faire vivre.**
+- ÉCRAN — LA FUITE = CE QUE TU [BRÛLES:vert]
+- VISUEL — Étiquette CE QUE TON CORPS BRÛLE qui se colle sur le filet, reliée par un trait, comme les deux étiquettes précédentes. Un halo chaud pulse une fois autour du filet.
+- SON — pulsation sourde sur le halo
 
-`[0:36 — animation · 3.5s]`
-**Le régime choisi prédit la perte à zéro virgule zéro sept.**
-- ÉCRAN — LE RÉGIME CHOISI : [ZÉRO VIRGULE ZÉRO SEPT:rouge]
-- VISUEL — Écran de résultat, fond sombre, la baignoire disparaît. Une réglette horizontale graduée de zéro à un occupe toute la largeur. Une barre rouge part de zéro et s'arrête presque aussitôt, minuscule, sous l'étiquette LE RÉGIME CHOISI. La valeur zéro virgule zéro sept se pose au bout de la barre.
-- SON — trait qui se trace très court, puis clic sec d'arrêt
+`[0:37 — animation · 3.9s]`
+**Si tes robinets donnent plus que ce qui fuit, le niveau monte.**
+- ÉCRAN — PLUS QUE LA FUITE : ÇA [MONTE:rouge]
+- VISUEL — Vue d'ensemble, jet et fuite dans le même cadre. Les robinets s'ouvrent en grand, la ligne TON POIDS grimpe par paliers nets. Le filet ne change pas.
+- SON — débit qui enfle, montée tonale
 
-`[0:39 — animation · 2.9s]`
-**S'y tenir prédit cette perte à zéro virgule soixante.**
-- ÉCRAN — S'Y TENIR : [ZÉRO VIRGULE SOIXANTE:vert]
-- VISUEL — Sous la première, une seconde barre verte part de zéro sur exactement la même réglette et pousse jusqu'aux trois cinquièmes, étiquetée S'Y TENIR. La valeur zéro virgule soixante se pose au bout. La barre rouge reste visible juste au-dessus, sans bouger, pour que la comparaison se fasse sur la même règle graduée.
-- SON — trait qui se trace long, montée tonale, impact doux à l'arrêt
-
-`[0:42 — animation · 3.5s]`
-**Même échelle, de zéro à un : du bruit contre du signal.**
-- ÉCRAN — DU BRUIT CONTRE DU [SIGNAL:vert]
-- VISUEL — Les deux barres restent en place. La réglette clignote une fois, d'un bout à l'autre, pour rappeler qu'elle est la même pour les deux. Le mot BRUIT tombe sur la petite barre, qui se met à grésiller légèrement ; le mot SIGNAL tombe sur la grande, qui devient parfaitement nette.
-- SON — souffle de grésillement sur BRUIT, note claire et tenue sur SIGNAL
-
-`[0:46 — camera · 2.6s]`
-**Et là, tu viens de conclure tout seul :**
-- ÉCRAN — TU VIENS DE [CONCLURE:jaune]
-- VISUEL — Retour caméra, cadre poitrine, un pas de côté par rapport à l'axe précédent. Regard qui vient chercher l'objectif sur le dernier mot, puis léger arrêt.
+`[0:41 — camera · 2.3s]`
+**Et un régime, là-dedans, c'est quoi ?**
+- ÉCRAN — UN [RÉGIME:jaune], C'EST QUOI ?
+- VISUEL — Retour caméra, question posée franchement à l'objectif, sourcil levé.
 - SON — coupe sèche, respiration laissée en clair
 
-`[0:48 — animation · 3.5s]`
-**si le régime ne change rien, mesurer ne sert à rien.**
-- ÉCRAN — MESURER NE SERT À [RIEN:rouge]
-- VISUEL — Retour baignoire. Une main entre dans le cadre et gomme le repère de niveau : la ligne blanche posée sur l'eau s'efface d'un bout à l'autre, et la baignoire se retrouve sans aucun repère. La liste d'interdits punaisée à côté de la baignoire, elle, reste intacte. Le raccourci est volontairement bancal : c'est la mauvaise chose qu'on efface.
-- SON — frottement de gomme, puis silence net d'une demi-seconde
+`[0:43 — animation · 3.9s]`
+**Un régime, c'est une règle qui te dit quels robinets fermer.**
+- ÉCRAN — UNE RÈGLE : QUELS ROBINETS [FERMER:rouge]
+- VISUEL — Retour sur la rangée de vingt robinets. Une main gantée entre et pose des étiquettes INTERDIT sur certains. C'est le deuxième ancrage du chapitre : régime égale fermeture sélective de robinets.
+- SON — clacs d'étiquettes, un par robinet
 
-`[0:52 — camera · 2.5s]`
-**Attends. Ce n'est pas la même phrase.**
-- ÉCRAN — PAS LA MÊME [PHRASE:jaune]
-- VISUEL — Caméra, cadre le plus serré du chapitre, arrivée en coupe franche sur Attends. Aucun mouvement d'appareil : l'image se fige pendant que la voix reprend la main.
-- SON — impact grave court sur Attends, puis fond musical baissé d'un cran
+`[0:47 — animation · 4.5s]`
+**Sans sucre : tu fermes le sucre. Sans gras : tu fermes le gras.**
+- ÉCRAN — SANS SUCRE · SANS [GRAS:rouge]
+- VISUEL — Deux robinets se ferment l'un après l'autre, étiquetés SUCRE puis GRAS, avec une croix rouge sur chacun. Les dix-huit autres continuent de couler.
+- SON — deux fermetures sèches
 
-`[0:54 — animation · 3.8s]`
-**Ce qui ne sert à rien, c'est la règle, pas la mesure.**
-- ÉCRAN — LA [RÈGLE:rouge] — puis : PAS LA [MESURE:vert]
-- VISUEL — La ligne de repère se retrace toute seule sur la surface de l'eau, nette et blanche. C'est la liste d'interdits punaisée à côté de la baignoire qui se déchire en deux et tombe hors du cadre. Le niveau d'eau, lui, ne bouge pas d'un pixel pendant toute l'opération.
-- SON — trait qui se retrace, puis déchirure de papier et chute hors champ
+`[0:52 — animation · 5.5s]`
+**Sauf que si tu fermes un robinet et que tu ouvres les autres un peu plus…**
+- ÉCRAN — TU FERMES UN, TU OUVRES LES [AUTRES:rouge]
+- VISUEL — Le robinet SUCRE se ferme. Immédiatement, les autres s'ouvrent chacun d'un cran. Un compteur de débit total, en haut, ne bouge pas d'un pixel pendant toute l'opération.
+- SON — une fermeture, puis dix-neuf petits crans d'ouverture
 
-`[0:58 — animation · 4.1s]`
-**Le niveau se moque du robinet que tu fermes. Pas du débit.**
-- ÉCRAN — LE NIVEAU REGARDE LE [DÉBIT:jaune]
-- VISUEL — Gros plan sur la rampe de quatre robinets. On en ferme un, on en ouvre un autre au même débit : le repère de niveau ne bouge pas. Puis, sans changer de robinet, on referme d'un tiers celui qui coule — le jet maigrit visiblement, passe sous l'épaisseur du filet de fuite, et le repère se met à descendre lentement. La descente est nettement plus lente que la montée du plan précédent.
-- SON — deux clics de robinet sans changement du son d'eau, puis débit qui faiblit et descente tonale lente
+`[0:57 — animation · 3.2s]`
+**il coule toujours autant. Et le niveau ne bouge pas.**
+- ÉCRAN — MÊME DÉBIT, MÊME [NIVEAU:jaune]
+- VISUEL — La ligne TON POIDS est soulignée d'un trait blanc épais, parfaitement immobile, pendant que les robinets continuent de basculer les uns dans les autres.
+- SON — note grave tenue, aucun son d'eau qui change
 
-`[1:02 — camera · 3.5s]`
-**Quel robinet coule le plus vite sans que tu le voies ?**
-- ÉCRAN — QUEL ROBINET COULE LE PLUS [VITE:jaune] ?
-- VISUEL — Retour caméra, cadre poitrine, léger punch-in continu jusqu'à la fin. La question est posée directement à l'objectif, sans geste.
-- SON — musique qui remonte doucement sous la question
+`[1:01 — camera · 4.2s]`
+**Alors le régime que tu choisis, est-ce qu'il change vraiment quelque chose ?**
+- ÉCRAN — EST-CE QUE ÇA [CHANGE:jaune] QUELQUE CHOSE ?
+- VISUEL — Retour caméra, il se penche vers l'objectif. C'est la transition : la question est posée AVANT que l'étude arrive, sinon l'étude tombe du ciel.
+- SON — coupe sèche, silence avant la question
 
-`[1:06 — camera · 2.5s]`
-**Ce n'est pas ton dessert.**
-- ÉCRAN — PAS TON [DESSERT:rouge]
-- VISUEL — Même axe, coupe d'un demi-pas en avant sur la phrase. Un temps d'arrêt d'une demi-seconde sur le regard avant la fin du chapitre.
-- SON — impact sourd sur DESSERT, coupure nette de la musique juste après
+`[1:05 — animation · 2.9s]`
+**Deux mille cinq. Cent soixante personnes, suivies un an.**
+- ÉCRAN — 2005 · [160:jaune] PERSONNES · 1 AN
+- VISUEL — Carton d'étude, fond sombre. L'année s'inscrit, puis cent soixante silhouettes apparaissent en grille. Une barre de temps se déroule et se referme sur UN AN. Bandeau discret en bas : essai Dansinger, deux mille cinq.
+- SON — grésillement rapide d'apparition de la grille
+
+`[1:08 — animation · 4.9s]`
+**Chacune tire au sort un régime parmi quatre : Atkins, la Zone, Weight Watchers, Ornish.**
+- ÉCRAN — TIRÉ AU [SORT:jaune] · 4 RÉGIMES
+- VISUEL — La grille se casse en quatre paquets de quarante, chacun glissant sous une étiquette de régime. Un dé roule une fois au centre pour dire le tirage au sort.
+- SON — dé qui roule, puis quatre pops de paquets
+
+`[1:13 — animation · 6.2s]`
+**Au bout d'un an : Atkins, deux kilos. La Zone, trois kilos deux. Weight Watchers, trois. Ornish, trois kilos trois.**
+- ÉCRAN — −2 · −3,2 · −3 · [−3,3:jaune] KG
+- VISUEL — Quatre barres descendantes poussent côte à côte, à la même échelle, en KILOGRAMMES. Chaque valeur s'inscrit au bout de sa barre. Les quatre barres arrivent presque à la même hauteur — c'est ça, l'image du chapitre.
+- SON — quatre pops de barres, très rapprochés
+
+`[1:19 — animation · 5.2s]`
+**Quatre régimes qui n'ont rien à voir. Un kilo d'écart entre le premier et le dernier.**
+- ÉCRAN — [UN KILO:jaune] D'ÉCART
+- VISUEL — Une accolade relie le sommet de la plus petite barre au sommet de la plus grande, étiquetée UN KILO. Les quatre noms de régime restent lisibles en dessous.
+- SON — trait d'accolade qui se trace, clic d'arrêt
+
+`[1:24 — camera · 4.5s]`
+**Donc tout se joue sur la volonté. Tu en choisis un, et tu tiens.**
+- ÉCRAN — TA CONCLUSION : LA [VOLONTÉ:rouge]
+- VISUEL — Retour caméra. La mention TA CONCLUSION reste en petit au-dessus pendant tout le plan, pour qu'aucune capture isolée ne se lise comme l'affirmation de la vidéo.
+- SON — riser qui démarre sous la phrase
+
+`[1:29 — camera · 1.9s]`
+**Sauf que regarde qui est resté.**
+- ÉCRAN — REGARDE QUI EST [RESTÉ:jaune]
+- VISUEL — Coupe franche, cadre serré. Il incline la tête vers l'écran.
+- SON — IMPACT sur « Sauf que », chute du riser
+
+`[1:30 — animation · 3.6s]`
+**Sur quarante personnes par groupe, chez Ornish, vingt ont fini l'année.**
+- ÉCRAN — ORNISH : [20:rouge] SUR 40
+- VISUEL — Retour aux quatre paquets de quarante silhouettes. Sous Ornish, vingt silhouettes s'éteignent une par une et tombent hors du cadre ; vingt restent allumées.
+- SON — vingt petits clics d'extinction
+
+`[1:34 — animation · 2.6s]`
+**Chez Atkins, vingt-et-un. Chez les deux autres, vingt-six.**
+- ÉCRAN — ATKINS [21:rouge] · LES AUTRES [26:vert]
+- VISUEL — Les trois autres paquets se vident à leur tour, chacun à son rythme. Les compteurs de survivants s'inscrivent sous chaque colonne.
+- SON — trois rafales d'extinction décalées
+
+`[1:37 — animation · 3.9s]`
+**La moitié des gens ont quitté les deux régimes les plus durs.**
+- ÉCRAN — LA [MOITIÉ:rouge] SONT PARTIS
+- VISUEL — Les colonnes Ornish et Atkins se surlignent. Une accolade les relie, étiquetée LES DEUX PLUS STRICTS.
+- SON — surlignage, puis note grave
+
+`[1:41 — animation · 4.5s]`
+**Et le plus dur de tous, c'est celui qui a fait perdre le moins.**
+- ÉCRAN — LE PLUS DUR = LE [MOINS:rouge] DE KILOS
+- VISUEL — Les barres de kilos reviennent au-dessus des colonnes de survivants. La barre Atkins, la plus courte, se surligne en rouge en même temps que sa colonne d'abandons.
+- SON — double surlignage synchronisé
+
+`[1:45 — camera · 3.6s]`
+**Ils n'ont pas manqué de volonté. La règle était intenable.**
+- ÉCRAN — PAS LA VOLONTÉ. LA [RÈGLE:jaune]
+- VISUEL — Retour caméra, plus posé, débit ralenti. C'est la phrase qui referme sur l'ouverture du chapitre et qui arme toute la suite de la vidéo.
+- SON — silence, aucun bruitage
+
+`[1:49 — camera · 3.6s]`
+**Donc la vraie question, ce n'est pas quel robinet fermer.**
+- ÉCRAN — PAS QUEL ROBINET [FERMER:rouge]
+- VISUEL — Même axe. Une rangée de robinets barrés s'efface d'un balayage derrière lui.
+- SON — balayage de gomme
+
+`[1:52 — camera · 3.9s]`
+**C'est lequel coule le plus fort sans que tu le voies.**
+- ÉCRAN — LEQUEL COULE LE PLUS [FORT:jaune] ?
+- VISUEL — Il se penche. Derrière lui, un seul robinet reste, minuscule, avec un débit énorme.
+- SON — filet d'eau qui enfle sous la phrase
+
+`[1:56 — camera · 1.9s]`
+**Et ce n'est pas ton dessert.**
+- ÉCRAN — PAS TON [DESSERT:vert]
+- VISUEL — Plan tenu. Une part de gâteau entre dans le cadre par le bas, puis sort.
+- SON — pop d'entrée, coupe sèche
 
 ---
 
 ## 2. Le levier que tu ne mâches jamais
 
-> **1:08 → 2:32** · 84 s · 263 mots · 187 mots/min
+> **1:58 → 3:22** · 84 s · 263 mots · 187 mots/min
 
 `[0:00 — camera · 3.8s]`
 **Le dessert, c'est le gros robinet. Celui que tout le monde surveille.**
@@ -290,7 +356,7 @@ Les seules lignes à dire sont celles qui suivent un bracket ; le reste est de l
 
 ## 3. Le compteur de millilitres
 
-> **2:32 → 3:42** · 70 s · 216 mots · 185 mots/min
+> **3:22 → 4:32** · 70 s · 216 mots · 185 mots/min
 
 `[0:00 — camera · 1.9s]`
 **Tu n'as pas craqué par faiblesse.**
@@ -424,7 +490,7 @@ Les seules lignes à dire sont celles qui suivent un bracket ; le reste est de l
 
 ## 4. Ce n'est pas la place, c'est le signal
 
-> **3:42 → 5:03** · 81 s · 245 mots · 181 mots/min
+> **4:32 → 5:53** · 81 s · 245 mots · 181 mots/min
 
 `[0:00 — camera · 3.0s]`
 **Un estomac plus petit, forcément, ça règle le problème.**
@@ -548,7 +614,7 @@ Les seules lignes à dire sont celles qui suivent un bracket ; le reste est de l
 
 ## 5. Le poids de l'assiette
 
-> **5:03 → 6:18** · 75 s · 218 mots · 174 mots/min
+> **5:53 → 7:08** · 75 s · 218 mots · 174 mots/min
 
 `[0:00 — camera · 3.0s]`
 **Tu attends une liste d'aliments. Je te la donne.**
@@ -662,7 +728,7 @@ Les seules lignes à dire sont celles qui suivent un bracket ; le reste est de l
 
 ## 6. Le levier fantôme
 
-> **6:18 → 7:27** · 69 s · 218 mots · 190 mots/min
+> **7:08 → 8:17** · 69 s · 218 mots · 190 mots/min
 
 `[0:00 — camera · 4.4s]`
 **La petite assiette, la petite fourchette, l'eau pétillante. Ces conseils ne sont pas idiots.**
@@ -796,7 +862,7 @@ Les seules lignes à dire sont celles qui suivent un bracket ; le reste est de l
 
 ## 7. L'aliment que tu as rayé de ta liste
 
-> **7:27 → 9:02** · 95 s · 295 mots · 186 mots/min
+> **8:17 → 9:52** · 95 s · 295 mots · 186 mots/min
 
 `[0:00 — camera · 4.2s]`
 **Il y a un aliment que tu as rayé de ta liste.**
@@ -964,7 +1030,7 @@ Les seules lignes à dire sont celles qui suivent un bracket ; le reste est de l
 
 ## 8. On ne vit qu'une fois
 
-> **9:02 → 10:03** · 60 s · 189 mots · 188 mots/min
+> **9:52 → 10:53** · 60 s · 189 mots · 188 mots/min
 
 `[0:00 — camera · 3.2s]`
 **Alors on récapitule. Ce qui survit tient en trois lignes.**
@@ -1088,7 +1154,7 @@ Les seules lignes à dire sont celles qui suivent un bracket ; le reste est de l
 
 ### 1. La baignoire qui fuit
 
-Tu as déjà perdu du poids. Deux kilos, cinq kilos, peut-être plus. Et tu les as tenus — pendant trois semaines. Ce n'est pas ta volonté qui a lâché. C'est ta règle. Ton poids, c'est un niveau d'eau. En haut, un robinet : ce que tu manges. En bas, bonne nouvelle : ta baignoire fuit, en permanence. Même quand tu dors. C'est ce que ton corps dépense. Si le robinet donne plus que ce qui fuit, le niveau monte. Change de robinet : tant que ça coule pareil, le niveau ne bouge pas. En deux mille cinq, un essai suit cent soixante personnes pendant un an. Chacune tire au sort l'un des quatre régimes. Le régime choisi prédit la perte à zéro virgule zéro sept. S'y tenir prédit cette perte à zéro virgule soixante. Même échelle, de zéro à un : du bruit contre du signal. Et là, tu viens de conclure tout seul : si le régime ne change rien, mesurer ne sert à rien. Attends. Ce n'est pas la même phrase. Ce qui ne sert à rien, c'est la règle, pas la mesure. Le niveau se moque du robinet que tu fermes. Pas du débit. Quel robinet coule le plus vite sans que tu le voies ? Ce n'est pas ton dessert.
+Tu as déjà perdu du poids. Deux kilos, cinq kilos, peut-être plus. Et tu les as tenus. Trois semaines. Ce n'est pas ta volonté qui a lâché. C'est ta règle. Pour comprendre pourquoi, il faut une seule image. Imagine une baignoire. Le niveau de l'eau, c'est ton poids. Au-dessus, un robinet. Et ce robinet, c'est un aliment. Le pain, l'huile, ton dessert : chaque chose que tu manges est un robinet. Tu n'en ouvres pas un. Tu en ouvres vingt par jour. Et en bas, la baignoire fuit. Tout le temps, même quand tu dors. Cette fuite, c'est ce que ton corps brûle rien que pour te faire vivre. Si tes robinets donnent plus que ce qui fuit, le niveau monte. Et un régime, là-dedans, c'est quoi ? Un régime, c'est une règle qui te dit quels robinets fermer. Sans sucre : tu fermes le sucre. Sans gras : tu fermes le gras. Sauf que si tu fermes un robinet et que tu ouvres les autres un peu plus… il coule toujours autant. Et le niveau ne bouge pas. Alors le régime que tu choisis, est-ce qu'il change vraiment quelque chose ? Deux mille cinq. Cent soixante personnes, suivies un an. Chacune tire au sort un régime parmi quatre : Atkins, la Zone, Weight Watchers, Ornish. Au bout d'un an : Atkins, deux kilos. La Zone, trois kilos deux. Weight Watchers, trois. Ornish, trois kilos trois. Quatre régimes qui n'ont rien à voir. Un kilo d'écart entre le premier et le dernier. Donc tout se joue sur la volonté. Tu en choisis un, et tu tiens. Sauf que regarde qui est resté. Sur quarante personnes par groupe, chez Ornish, vingt ont fini l'année. Chez Atkins, vingt-et-un. Chez les deux autres, vingt-six. La moitié des gens ont quitté les deux régimes les plus durs. Et le plus dur de tous, c'est celui qui a fait perdre le moins. Ils n'ont pas manqué de volonté. La règle était intenable. Donc la vraie question, ce n'est pas quel robinet fermer. C'est lequel coule le plus fort sans que tu le voies. Et ce n'est pas ton dessert.
 
 ### 2. Le levier que tu ne mâches jamais
 
@@ -1121,8 +1187,6 @@ Alors on récapitule. Ce qui survit tient en trois lignes. Un. Le débit décide
 ---
 
 ## Annexe — à tourner en plus pour les formats courts
-
-Chaque chapitre est déjà un mini-reel. Il ne lui manque qu'un hook et une chute autonomes.
 
 ### Short 1 — La cuillère qui coûte plus cher que ton dessert  *(92 s · potentiel fort)*
 
