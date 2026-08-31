@@ -40,19 +40,30 @@ poids. Le scénario est **écrit et vérifié** ; rien n'est encore tourné ni a
 ```
 video/manger-sans-se-priver/
   scenario.json        LA SOURCE DE VÉRITÉ. Tout le reste en dérive.
-  scenario.html        document de production complet (généré)
+  scenario.html        document de production complet (généré, ne pas éditer)
   SCRIPT-video-1.md    bracket + voix seule + hooks/chutes de shorts à tourner
   SCRIPT-video-2.md    idem
   script-compact.txt   narration nue, pour le prompteur
+  tools/               les deux générateurs + le mode d'emploi
 ```
 
 `scenario.json` contient : `videos`, `chapitres` (avec `plans`), `architecture`
 (mécanismes, turns, `risques`), `production` (compositions, b-roll, articles),
 `shorts`, `shorts_par_video`, `sources`.
 
-**Les générateurs HTML ne sont pas versionnés** — ils vivaient dans le scratchpad de la
-session. Si `scenario.html` doit être régénéré, il faut les réécrire depuis `scenario.json`,
-ou éditer le HTML à la main. Le JSON reste la source.
+**Pour régénérer le document** après toute modification du JSON :
+
+```bash
+python tools/build_1_scenario.py
+python tools/build_2_annexes.py
+```
+
+Les deux, dans cet ordre. Aucune dépendance, chemins relatifs, ça marche depuis n'importe
+quel clone. `tools/README.md` donne en plus une passe de contrôle prête à coller qui vérifie
+les règles de rédaction — métaphore confinée au chapitre 1, aucun jargon dans la bouche,
+aucun plan indicible, aucun chapitre revenu sans accents.
+
+**Ne jamais éditer `scenario.html` à la main** : il est écrasé à chaque génération.
 
 ---
 
