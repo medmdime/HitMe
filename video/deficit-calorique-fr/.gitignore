@@ -1,0 +1,12 @@
+# Sorties de rendu et dépendances
+renders/
+node_modules/
+.hyperframes/
+.thumbnails/
+
+# Médias : les rushes et les animations rendues restent hors du dépôt.
+# 136 Mo dont 111 Mo de plans bruts — ils vivent sur le disque, pas dans git.
+# Les sources qui les fabriquent (compositions HTML, kit, SplitBar) sont versionnées.
+assets/originaux/
+assets/rushes/
+assets/anim/

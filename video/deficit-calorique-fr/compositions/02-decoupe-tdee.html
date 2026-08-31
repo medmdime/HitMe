@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="fr" data-resolution="portrait">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=1080, height=1920">
+    <link rel="stylesheet" href="compositions/components/kit.css">
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.14.2/dist/gsap.min.js"></script>
+    <script src="compositions/components/splitbar.js"></script>
+    <style>
+      /* Déclarée dans le document, pas dans kit.css : les HTML sont servis
+         avec la racine du projet comme base, donc ce chemin est le seul que
+         le lint et le runtime résolvent pareil (cf. commentaire kit.css). */
+      @font-face {
+        font-family: "Archivo";
+        src: url("assets/fonts/Archivo.woff2") format("woff2");
+        font-weight: 400 900;
+        font-display: block;
+      }
+      #d2-head {
+        position: absolute;
+        top: 190px;
+        left: 90px;
+        right: 90px;
+        text-align: center;
+      }
+      #d2-bars-wrap {
+        position: absolute;
+        top: 470px;
+        left: 0;
+        width: 1080px;
+        height: 1080px;
+      }
+      #d2-bars {
+        position: absolute;
+        left: 300px;
+        bottom: 0;
+      }
+      /* Le sport est le plus petit segment : son étiquette doit rester lisible
+         même quand la barre ne fait que 50 px de haut. */
+      /* Le sport ne fait que 48 px de haut : son étiquette porte le chiffre
+         qui doit rester lisible, donc elle est agrandie. */
+      #d2-bars .sb-seg-label[data-key="sport"] {
+        font-size: 36px;
+      }
+      #d2-bars .sb-seg-label[data-key="sport"] .sb-seg-value {
+        font-size: 68px;
+        color: var(--sport);
+      }
+      #d2-foot {
+        position: absolute;
+        top: 1610px;
+        left: 90px;
+        right: 90px;
+        text-align: center;
+        font-size: 50px;
+        font-weight: 800;
+        opacity: 0;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="d2-root" data-composition-id="decoupe-tdee" data-start="0" data-duration="16" data-width="1080" data-height="1920">
+      <div id="d2-scene" class="clip" data-start="0" data-duration="16" data-track-index="0">
+        <div class="stage">
+          <div id="d2-head">
+            <div class="kicker">Ton TDEE</div>
+            <div class="title" style="margin-top: 18px">se découpe en quatre</div>
+          </div>
+
+          <div id="d2-bars-wrap"><div id="d2-bars"></div></div>
+
+          <div id="d2-foot">presque tout se brûle<br /><span class="hl">ailleurs qu'à la salle</span></div>
+        </div>
+      </div>
+    </div>
+
+    <script>
+      (function () {
+      window.__timelines = window.__timelines || {};
+      const tl = gsap.timeline({ paused: true });
+
+      // Ordre DOM = bas vers haut (le conteneur est en column-reverse).
+      const bar = SplitBar.mount("#d2-bars", {
+        layout: "stack",
+        width: 240,
+        height: 960,
+        gap: 16,
+        segments: [
+          { key: "bmr", label: "MÉTABOLISME DE BASE", value: "70 %", pct: 70, color: "var(--bmr)" },
+          { key: "neat", label: "EN DEHORS DU SPORT", value: "15 %", pct: 15, color: "var(--neat)" },
+          { key: "tef", label: "DIGESTION", value: "10 %", pct: 10, color: "var(--tef)" },
+          { key: "sport", label: "SPORT", value: "5 %", pct: 5, color: "var(--sport)", labelDy: 52 },
+        ],
+      });
+
+      // État de départ : une seule barre bleue pleine, sans jointure visible.
+      const fills = {};
+      ["bmr", "neat", "tef", "sport"].forEach((k) => {
+        const n = bar.nodes[k];
+        fills[k] = n.fill;
+        n.seg.style.height = Number(n.seg.dataset.targetH) + "px";
+        n.seg.style.borderRadius = "0";
+        fills[k].style.borderRadius = "0";
+        fills[k].style.background = "var(--out)";
+      });
+      bar.nodes.bmr.seg.style.borderRadius = "0 0 18px 18px";
+      bar.nodes.bmr.fill.style.borderRadius = "0 0 18px 18px";
+      bar.nodes.sport.seg.style.borderRadius = "18px 18px 0 0";
+      bar.nodes.sport.fill.style.borderRadius = "18px 18px 0 0";
+
+      tl.from("#d2-head .kicker", { opacity: 0, y: 22, duration: 0.45 }, 0);
+      tl.from("#d2-head .title", { opacity: 0, y: 28, duration: 0.5 }, 0.1);
+
+      // ---- 0:00-0:03 — la découpe : les segments s'écartent et prennent leur couleur
+      const CUT = 0.9;
+      bar.split(tl, CUT, { gap: 16, duration: 0.6 });
+      ["bmr", "neat", "tef", "sport"].forEach((k, i) => {
+        tl.to(fills[k], { backgroundColor: getVar(k), duration: 0.4 }, CUT + i * 0.08);
+        tl.to(bar.nodes[k].seg, { borderRadius: 14, duration: 0.4 }, CUT + i * 0.08);
+        tl.to(fills[k], { borderRadius: 14, duration: 0.4 }, CUT + i * 0.08);
+      });
+
+      // ---- 0:03 — « le sport, c'est la plus petite part. Cinq pour cent. »
+      bar.focus(tl, 2.9, "sport", { dim: 0.18 });
+      bar.labels(tl, 3.15, ["sport"]);
+
+      // ---- 0:05 — 70 %
+      bar.focus(tl, 4.4, "bmr", { dim: 0.18 });
+      bar.labels(tl, 4.65, ["bmr"]);
+      tl.to(bar.nodes.sport.label, { opacity: 0.25, duration: 0.3 }, 4.4);
+
+      // ---- 0:08 — 15 %
+      bar.focus(tl, 6.9, "neat", { dim: 0.18 });
+      bar.labels(tl, 7.15, ["neat"]);
+      tl.to(bar.nodes.bmr.label, { opacity: 0.25, duration: 0.3 }, 6.9);
+
+      // ---- 0:10 — 10 %
+      bar.focus(tl, 10.4, "tef", { dim: 0.18 });
+      bar.labels(tl, 10.65, ["tef"]);
+      tl.to(bar.nodes.neat.label, { opacity: 0.25, duration: 0.3 }, 10.4);
+
+      // ---- 0:12 — l'accolade : les trois grosses parts contre le sport
+      const B = 11.8;
+      bar.clearFocus(tl, B, { duration: 0.4 });
+      tl.to([bar.nodes.tef.label, bar.nodes.neat.label, bar.nodes.bmr.label], { opacity: 1, duration: 0.4 }, B);
+      tl.to(bar.nodes.sport.seg, { opacity: 0.22, duration: 0.4 }, B);
+      tl.to(bar.nodes.sport.label, { opacity: 0.22, duration: 0.4 }, B);
+      bar.bracket(tl, B + 0.25, ["bmr", "neat", "tef"], "95 %");
+      tl.to("#d2-foot", { opacity: 1, duration: 0.45 }, B + 0.6);
+      tl.from("#d2-foot", { y: 20, duration: 0.45 }, B + 0.6);
+
+      function getVar(key) {
+        const map = { bmr: "#3d7bf7", neat: "#16b8a6", tef: "#f5a524", sport: "#e5484d" };
+        return map[key];
+      }
+
+      window.__timelines["decoupe-tdee"] = tl;
+      })();
+    </script>
+  </body>
+</html>

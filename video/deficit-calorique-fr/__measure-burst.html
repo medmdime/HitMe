@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="fr"><head><meta charset="UTF-8">
+<link rel="stylesheet" href="compositions/components/kit.css">
+<style>
+@font-face{font-family:"Archivo";src:url("assets/fonts/Archivo.woff2") format("woff2");font-weight:400 900;font-display:block;}
+.stage{position:absolute;inset:0;display:flex;flex-direction:column;align-items:center;padding:190px 90px 240px;}
+#d3-burst{position:absolute;left:560px;top:1250px;}
+</style></head>
+<body>
+<div class="clip"><div class="stage">
+  <div id="d3-burst"><span class="burst" style="font-size:52px;white-space:nowrap">+300 à 500 cal/jour</span></div>
+</div></div>
+<pre id="out" style="position:absolute;top:20px;left:20px;font:24px monospace;z-index:9"></pre>
+<script>
+document.fonts.ready.then(()=>{
+  const b=document.getElementById('d3-burst');
+  const p=b.querySelector('.burst');
+  const r=b.getBoundingClientRect(), pr=p.getBoundingClientRect();
+  // measure raw text width
+  const c=document.createElement('canvas').getContext('2d');
+  c.font='900 52px Archivo';
+  const tw=c.measureText('+300 à 500 cal/jour').width;
+  const res={burstBox:[r.left,r.right,r.width],pillBox:[pr.left,pr.right,pr.width],
+    canvasTextW:tw, fontLoaded:document.fonts.check('900 52px Archivo'),
+    stageW:document.querySelector('.stage').getBoundingClientRect().width};
+  document.getElementById('out').textContent=JSON.stringify(res,null,1);
+  window.__res=res;
+});
+</script>
+</body></html>
