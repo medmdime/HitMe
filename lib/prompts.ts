@@ -167,6 +167,23 @@ Then a topic-agnostic blueprint of this video that a creator can fill with a DIF
 **Reproduction checklist:** 5-8 short imperative steps to shoot and edit this format for a new topic`
 
 /**
+ * Finds a section marker line, tolerating how the model actually writes it.
+ *
+ * The prompt asks for `---FORMAT TEMPLATE---`, and the model frequently answers
+ * with `# FORMAT TEMPLATE`, `### Format template`, or `---Format Template---`
+ * instead. An exact `indexOf` silently dropped the whole section — three of the
+ * first twelve short-form teardowns lost their template that way, which only
+ * shows up as an empty tab much later. So match the marker's *words* on their
+ * own line and ignore whatever decoration surrounds them.
+ */
+function findMarkerLine(text: string, marker: string): { start: number; end: number } | null {
+  const words = marker.replace(/-/g, " ").trim().replace(/\s+/g, "[ _-]+")
+  const re = new RegExp(`^[ \\t]*(?:#{1,6}|-{2,}|\\*{1,2})?[ \\t]*${words}[ \\t]*(?:-{2,}|\\*{1,2}|:)?[ \\t]*$`, "im")
+  const m = re.exec(text)
+  return m ? { start: m.index, end: m.index + m[0].length } : null
+}
+
+/**
  * Splits model output into its three parts. The markers are optional — a
  * long-form teardown has no template section and older rows have neither.
  */
@@ -175,9 +192,9 @@ export function splitSections(text: string): {
   analysis: string
   template: string
 } {
-  const tIdx = text.indexOf(TEMPLATE_MARKER)
-  const beforeTemplate = tIdx === -1 ? text : text.slice(0, tIdx)
-  const template = tIdx === -1 ? "" : text.slice(tIdx + TEMPLATE_MARKER.length).trim()
+  const hit = findMarkerLine(text, TEMPLATE_MARKER)
+  const beforeTemplate = hit ? text.slice(0, hit.start) : text
+  const template = hit ? text.slice(hit.end).trim() : ""
   const { script, analysis } = splitScriptAndAnalysis(beforeTemplate)
   return { script, analysis, template }
 }
@@ -187,11 +204,10 @@ export function splitScriptAndAnalysis(text: string): {
   script: string
   analysis: string
 } {
-  const marker = ANALYSIS_MARKER
-  const idx = text.indexOf(marker)
-  if (idx === -1) return { script: text.trim(), analysis: "" }
+  const hit = findMarkerLine(text, ANALYSIS_MARKER)
+  if (!hit) return { script: text.trim(), analysis: "" }
   return {
-    script: text.slice(0, idx).trim(),
-    analysis: text.slice(idx + marker.length).trim(),
+    script: text.slice(0, hit.start).trim(),
+    analysis: text.slice(hit.end).trim(),
   }
 }

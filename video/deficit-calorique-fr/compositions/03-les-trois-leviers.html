@@ -1,0 +1,322 @@
+<!doctype html>
+<html lang="fr" data-resolution="portrait">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=1080, height=1920" />
+    <link rel="stylesheet" href="compositions/components/kit.css" />
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.14.2/dist/gsap.min.js"></script>
+    <script src="compositions/components/splitbar.js"></script>
+    <style>
+      /* Déclarée dans le document, pas dans kit.css : les HTML sont servis
+         avec la racine du projet comme base, donc ce chemin est le seul que
+         le lint et le runtime résolvent pareil (cf. commentaire kit.css). */
+      @font-face {
+        font-family: "Archivo";
+        src: url("assets/fonts/Archivo.woff2") format("woff2");
+        font-weight: 400 900;
+        font-display: block;
+      }
+      #d3-head {
+        position: absolute;
+        top: 200px;
+        left: 90px;
+        right: 90px;
+        text-align: center;
+        opacity: 0;
+      }
+      #d3-bars-wrap {
+        position: absolute;
+        top: 500px;
+        left: 0;
+        width: 1080px;
+        height: 1080px;
+      }
+      #d3-bars {
+        position: absolute;
+        left: 300px;
+        bottom: 0;
+      }
+
+      /* Les trois leviers partagent le même panneau : même position, même
+         gabarit, seuls le titre, la couleur de pastille et les points changent.
+         C'est la répétition qui fait comprendre qu'on énumère trois choses de
+         même nature. */
+      #d3-panel {
+        position: absolute;
+        left: 560px;
+        top: 760px;
+        width: 470px;
+        opacity: 0;
+      }
+      #d3-panel .panel-kicker {
+        font-size: 30px;
+        font-weight: 900;
+        letter-spacing: 0.06em;
+        text-transform: uppercase;
+        margin-bottom: 26px;
+      }
+      .panel-body {
+        position: absolute;
+        left: 0;
+        top: 96px;
+        width: 470px;
+        opacity: 0;
+      }
+      #d3-p-bmr {
+        --dot: var(--bmr);
+      }
+      #d3-p-neat {
+        --dot: var(--neat);
+      }
+      #d3-burst {
+        position: absolute;
+        left: 560px;
+        top: 1250px;
+        opacity: 0;
+      }
+
+      /* ----- écran final : on reprend les deux barres de la composition 01,
+              en ne changeant que leurs tailles. Le spectateur les a déjà
+              apprises, la bascule se lit sans qu'on ait à l'expliquer. ----- */
+      #d3-endcard {
+        position: absolute;
+        inset: 0;
+        opacity: 0;
+      }
+      #d3-end-state {
+        position: absolute;
+        top: 460px;
+        left: 0;
+        right: 0;
+        text-align: center;
+        font-size: 68px;
+        font-weight: 900;
+        letter-spacing: -0.02em;
+      }
+      #d3-end-bars {
+        position: absolute;
+        top: 610px;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 724px;
+        height: 620px;
+        display: flex;
+        align-items: flex-end;
+        gap: 244px;
+      }
+      .end-bar {
+        width: 240px;
+        border-radius: 18px;
+      }
+      #d3-end-in {
+        background: var(--in);
+        height: 512px;
+      }
+      #d3-end-out {
+        background: var(--out);
+        height: 300px;
+      }
+      #d3-end-labels {
+        position: absolute;
+        top: 1256px;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 724px;
+        display: flex;
+        gap: 244px;
+      }
+      .end-label {
+        width: 240px;
+        text-align: center;
+        font-size: 28px;
+        font-weight: 800;
+        line-height: 1.15;
+      }
+      #d3-endline {
+        position: absolute;
+        top: 1400px;
+        left: 0;
+        right: 0;
+        text-align: center;
+        font-size: 112px;
+        font-weight: 900;
+        letter-spacing: -0.045em;
+        line-height: 0.98;
+        opacity: 0;
+      }
+    </style>
+  </head>
+  <body>
+    <div
+      id="d3-root"
+      data-composition-id="trois-leviers"
+      data-start="0"
+      data-duration="32"
+      data-width="1080"
+      data-height="1920"
+    >
+      <div id="d3-scene" class="clip" data-start="0" data-duration="32" data-track-index="0">
+        <div class="stage">
+          <div id="d3-head">
+            <div class="title">la muscu n'est pas<br />dans les <span class="hl-bad">5 %</span></div>
+          </div>
+
+          <div id="d3-bars-wrap"><div id="d3-bars"></div></div>
+
+          <div id="d3-panel">
+            <div class="panel-kicker"></div>
+
+            <div class="panel-body" id="d3-p-bmr">
+              <div class="cl">
+                <div class="cl-item"><span class="cl-dot"></span>plus de masse musculaire</div>
+                <div class="cl-item"><span class="cl-dot"></span>mieux dormir</div>
+                <div class="cl-item"><span class="cl-dot"></span>gérer le stress</div>
+                <div class="cl-item"><span class="cl-dot"></span>s'hydrater</div>
+              </div>
+            </div>
+
+            <div class="panel-body" id="d3-p-neat">
+              <div class="cl">
+                <div class="cl-item"><span class="cl-dot"></span>10 min de marche après chaque repas</div>
+                <div class="cl-item"><span class="cl-dot"></span>rester debout</div>
+                <div class="cl-item"><span class="cl-dot"></span>prendre les escaliers</div>
+              </div>
+            </div>
+
+            <div class="panel-body" id="d3-p-tef">
+              <div style="font-size: 96px; font-weight: 900; letter-spacing: -0.04em; color: var(--tef-ink)">
+                3 à 10×
+              </div>
+              <div class="caption" style="margin-top: 14px">
+                plus de calories brûlées<br />rien qu'à les digérer
+              </div>
+            </div>
+          </div>
+
+          <div id="d3-burst">
+            <span class="burst" style="font-size: 52px; white-space: nowrap">+300 à 500 cal/jour</span>
+          </div>
+
+          <div id="d3-endcard">
+            <div id="d3-end-state">SURPLUS</div>
+            <div id="d3-end-bars">
+              <div class="end-bar" id="d3-end-in"></div>
+              <div class="end-bar" id="d3-end-out"></div>
+            </div>
+            <div id="d3-end-labels">
+              <div class="end-label">CALORIES<br />QUI RENTRENT</div>
+              <div class="end-label">CALORIES<br />QUI SORTENT</div>
+            </div>
+            <div id="d3-endline">sans manger<br />moins</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script>
+      (function () {
+        window.__timelines = window.__timelines || {};
+        const tl = gsap.timeline({ paused: true });
+
+        const bar = SplitBar.mount("#d3-bars", {
+          layout: "stack",
+          width: 240,
+          height: 960,
+          gap: 16,
+          segments: [
+            { key: "bmr", label: "MÉTABOLISME DE BASE", value: "70 %", pct: 70, color: "var(--bmr)" },
+            { key: "neat", label: "EN DEHORS DU SPORT", value: "15 %", pct: 15, color: "var(--neat)" },
+            // digestion reste centrée sur son segment ; seul le sport, minuscule,
+            // est remonté pour ne pas coller à l'étiquette du dessous
+            { key: "tef", label: "DIGESTION", value: "10 %", pct: 10, color: "var(--tef)" },
+            { key: "sport", label: "SPORT", value: "5 %", pct: 5, color: "var(--sport)", labelDy: 52 },
+          ],
+        });
+
+        // On reprend la barre exactement où la composition 02 l'a laissée :
+        // découpée, à taille, étiquettes masquées.
+        const N = bar.nodes;
+        ["bmr", "neat", "tef", "sport"].forEach((k, i) => {
+          N[k].seg.style.height = Number(N[k].seg.dataset.targetH) + "px";
+          if (i > 0) N[k].seg.style.marginBottom = "16px";
+        });
+
+        const panelKicker = document.querySelector("#d3-panel .panel-kicker");
+        const allLabels = bar.layer.querySelectorAll(".sb-seg-label");
+        const endState = document.querySelector("#d3-end-state");
+
+        // Aucun segment ne se déplace de toute la séquence : la mise en avant
+        // passe uniquement par l'opacité des autres.
+
+        // ---- 0:00-0:03.7 — « la muscu, elle est pas dans les cinq pour cent »
+        tl.to("#d3-head", { opacity: 1, duration: 0.4 }, 0);
+        tl.from("#d3-head .title", { y: 22, opacity: 0, duration: 0.5 }, 0);
+        bar.focus(tl, 0.5, "sport", { dim: 0.2 });
+        // croix blanche : en rouge, elle disparaissait dans l'aplat du segment
+        bar.mark(tl, 1.0, "sport", "x", { color: "#fff" });
+
+        // ---- 0:03.7-0:07.6 — elle agit sur la plus grosse part, qui grossit
+        const A = 3.7;
+        tl.to("#d3-head", { opacity: 0, duration: 0.35 }, A);
+        tl.to(N.sport.mark, { opacity: 0, scale: 0.6, duration: 0.3 }, A);
+        bar.focus(tl, A + 0.3, "bmr", { dim: 0.2 });
+        tl.to(N.bmr.seg, { height: 830, duration: 0.9, ease: "power3.out" }, A + 0.6);
+        tl.to(N.bmr.label, { y: -79, duration: 0.9, ease: "power3.out" }, A + 0.6);
+        bar.labels(tl, A + 0.8, ["bmr"]);
+
+        // ---- 0:07.6-0:13.4 — LEVIER 1 : ce qui fait monter le métabolisme de base
+        const L1 = 7.6;
+        tl.to(allLabels, { opacity: 0, duration: 0.3 }, L1);
+        tl.set(panelKicker, { color: "#2f5fd0" }, L1 + 0.1);
+        tl.call(() => { panelKicker.textContent = "monter ton métabolisme"; }, null, L1 + 0.1);
+        tl.to("#d3-panel", { opacity: 1, duration: 0.35 }, L1 + 0.2);
+        tl.to("#d3-p-bmr", { opacity: 1, duration: 0.3 }, L1 + 0.35);
+        tl.from("#d3-p-bmr .cl-item", { opacity: 0, x: 34, duration: 0.4, stagger: 1.1 }, L1 + 0.35);
+
+        // ---- 0:13.4-0:17.8 — LEVIER 2 : le NEAT
+        const L2 = 13.4;
+        tl.to("#d3-p-bmr", { opacity: 0, duration: 0.3 }, L2);
+        tl.to(N.bmr.seg, { height: 700, duration: 0.5, ease: "power2.inOut" }, L2);
+        tl.to(N.bmr.label, { y: 0, duration: 0.5, ease: "power2.inOut" }, L2);
+        bar.focus(tl, L2 + 0.2, "neat", { dim: 0.18 });
+        tl.set(panelKicker, { color: "#0d7f73" }, L2 + 0.3);
+        tl.call(() => { panelKicker.textContent = "hors de la salle"; }, null, L2 + 0.3);
+        tl.to("#d3-p-neat", { opacity: 1, duration: 0.3 }, L2 + 0.45);
+        tl.from("#d3-p-neat .cl-item", { opacity: 0, x: 34, duration: 0.4, stagger: 0.85 }, L2 + 0.45);
+
+        // ---- 0:17.8-0:20.9 — l'ordre de grandeur
+        tl.to("#d3-burst", { opacity: 1, duration: 0.35 }, 18.0);
+        tl.from("#d3-burst .burst", { scale: 0.65, duration: 0.5, ease: "back.out(2)" }, 18.0);
+
+        // ---- 0:20.9-0:26.3 — LEVIER 3 : la digestion
+        const L3 = 20.9;
+        tl.to(["#d3-burst", "#d3-p-neat"], { opacity: 0, duration: 0.3 }, L3);
+        bar.focus(tl, L3 + 0.2, "tef", { dim: 0.18 });
+        tl.set(panelKicker, { color: "#9a6200" }, L3 + 0.3);
+        tl.call(() => { panelKicker.textContent = "monter les protéines"; }, null, L3 + 0.3);
+        tl.to("#d3-p-tef", { opacity: 1, duration: 0.35 }, L3 + 0.5);
+        tl.from("#d3-p-tef", { x: 30, duration: 0.45, ease: "power3.out" }, L3 + 0.5);
+
+        // ---- 0:26.3-0:30.4 — la bascule, sur les deux barres du début
+        const D = 26.3;
+        tl.to(["#d3-panel", "#d3-bars-wrap"], { opacity: 0, duration: 0.45 }, D);
+        tl.set(endState, { color: "var(--bad)" }, D + 0.3);
+        tl.to("#d3-endcard", { opacity: 1, duration: 0.4 }, D + 0.35);
+        tl.from("#d3-end-bars", { scaleY: 0.82, duration: 0.5, ease: "power3.out", transformOrigin: "50% 100%" }, D + 0.35);
+        // les entrées descendent, les sorties montent : le déficit se voit sans un mot
+        tl.to("#d3-end-in", { height: 300, duration: 0.9, ease: "power2.inOut" }, D + 1.4);
+        tl.to("#d3-end-out", { height: 560, duration: 0.9, ease: "power2.inOut" }, D + 1.4);
+        tl.to(endState, { opacity: 0, duration: 0.25 }, D + 1.5);
+        tl.call(() => { endState.textContent = "DÉFICIT"; }, null, D + 1.78);
+        tl.set(endState, { color: "var(--good-ink)" }, D + 1.78);
+        tl.to(endState, { opacity: 1, duration: 0.3 }, D + 1.8);
+
+        // ---- 0:30.4 — la chute
+        tl.to("#d3-endline", { opacity: 1, duration: 0.35 }, 30.3);
+        tl.from("#d3-endline", { scale: 0.85, y: 18, duration: 0.5, ease: "back.out(1.7)" }, 30.3);
+
+        window.__timelines["trois-leviers"] = tl;
+      })();
+    </script>
+  </body>
+</html>

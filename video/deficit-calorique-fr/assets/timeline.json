@@ -1,0 +1,74 @@
+{
+ "total": 75.46,
+ "clips": [
+  {
+   "kind": "split",
+   "label": "hook",
+   "start": 0.0,
+   "dur": 7.0,
+   "top": "C:\\Users\\melmdim\\HitMe\\video\\deficit-calorique-fr\\assets\\rushes\\video-5.mp4",
+   "top_in": 2.0,
+   "bottom": "C:\\Users\\melmdim\\HitMe\\.hitme\\media\\TikTok-7339185328399355169.mp4",
+   "bottom_in": 14.0
+  },
+  {
+   "kind": "face",
+   "label": "video-1-final",
+   "start": 7.0,
+   "dur": 3.8,
+   "src": "C:\\Users\\melmdim\\HitMe\\video\\deficit-calorique-fr\\assets\\rushes\\video-1-final.mp4",
+   "src_in": 0.31
+  },
+  {
+   "kind": "anim",
+   "label": "01-deux-cotes",
+   "start": 10.8,
+   "dur": 11.97,
+   "src": "C:\\Users\\melmdim\\HitMe\\video\\deficit-calorique-fr\\assets\\anim\\01-deux-cotes.mp4",
+   "vo": "C:\\Users\\melmdim\\HitMe\\video\\deficit-calorique-fr\\assets\\rushes\\audio-A.m4a",
+   "vo_in": 0.0
+  },
+  {
+   "kind": "face",
+   "label": "video-2-final",
+   "start": 22.77,
+   "dur": 3.3,
+   "src": "C:\\Users\\melmdim\\HitMe\\video\\deficit-calorique-fr\\assets\\rushes\\video-2-final.mp4",
+   "src_in": 0.05
+  },
+  {
+   "kind": "anim",
+   "label": "02-decoupe-tdee",
+   "start": 26.07,
+   "dur": 13.9,
+   "src": "C:\\Users\\melmdim\\HitMe\\video\\deficit-calorique-fr\\assets\\anim\\02-decoupe-tdee.mp4",
+   "vo": "C:\\Users\\melmdim\\HitMe\\video\\deficit-calorique-fr\\assets\\rushes\\audio-b.m4a",
+   "vo_in": 0.0
+  },
+  {
+   "kind": "face",
+   "label": "video-3",
+   "start": 39.97,
+   "dur": 3.86,
+   "src": "C:\\Users\\melmdim\\HitMe\\video\\deficit-calorique-fr\\assets\\rushes\\video-3.mp4",
+   "src_in": 0.25
+  },
+  {
+   "kind": "anim",
+   "label": "03-les-trois-leviers",
+   "start": 43.83,
+   "dur": 25.4,
+   "src": "C:\\Users\\melmdim\\HitMe\\video\\deficit-calorique-fr\\assets\\anim\\03-les-trois-leviers.mp4",
+   "vo": "C:\\Users\\melmdim\\HitMe\\video\\deficit-calorique-fr\\assets\\rushes\\AUDIO-c.m4a",
+   "vo_in": 0.57
+  },
+  {
+   "kind": "face",
+   "label": "video-4",
+   "start": 69.23,
+   "dur": 6.23,
+   "src": "C:\\Users\\melmdim\\HitMe\\video\\deficit-calorique-fr\\assets\\rushes\\video-4.mp4",
+   "src_in": 0.0
+  }
+ ]
+}

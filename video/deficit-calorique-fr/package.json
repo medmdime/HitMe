@@ -1,0 +1,19 @@
+{
+  "name": "deficit-calorique-fr",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "npx --yes hyperframes@0.8.16 preview",
+    "check": "npx --yes hyperframes@0.8.16 check",
+
+    "draft": "npx --yes hyperframes@0.8.16 render -o renders/00-reel-relecture.mp4 -q draft",
+    "draft:01": "npx --yes hyperframes@0.8.16 render -c compositions/01-deux-cotes.html -o renders/01-deux-cotes.mp4 -q draft",
+    "draft:02": "npx --yes hyperframes@0.8.16 render -c compositions/02-decoupe-tdee.html -o renders/02-decoupe-tdee.mp4 -q draft",
+    "draft:03": "npx --yes hyperframes@0.8.16 render -c compositions/03-les-trois-leviers.html -o renders/03-les-trois-leviers.mp4 -q draft",
+
+    "render": "npx --yes hyperframes@0.8.16 render -o renders/00-reel-relecture.mp4 -q standard",
+    "render:01": "npx --yes hyperframes@0.8.16 render -c compositions/01-deux-cotes.html -o renders/01-deux-cotes.mp4 -q high",
+    "render:02": "npx --yes hyperframes@0.8.16 render -c compositions/02-decoupe-tdee.html -o renders/02-decoupe-tdee.mp4 -q high",
+    "render:03": "npx --yes hyperframes@0.8.16 render -c compositions/03-les-trois-leviers.html -o renders/03-les-trois-leviers.mp4 -q high"
+  }
+}

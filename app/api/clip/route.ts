@@ -66,29 +66,31 @@ export async function POST(req: Request) {
   }
 }
 
-/** Recent clips, DB first with the local sidecars as the fallback. */
+interface ClipListRow {
+  id: string
+  platform: string
+  url: string | null
+  title: string | null
+  author: string | null
+  durationSeconds: number | null
+  analyzedAt: string
+  hasTemplate: boolean
+}
+
+/**
+ * Recent clips: local sidecars merged with the shared DB, newest wins per id.
+ *
+ * Transcription writes the sidecar unconditionally and the DB best effort, so a
+ * DB that is stale, unreachable, or rejecting rows must not make local work
+ * invisible — that failure mode hid eleven clips once already. The DB still
+ * contributes, so teardowns someone else ran on the same DATABASE_URL show up
+ * here too.
+ */
 export async function GET() {
-  try {
-    if (process.env.DATABASE_URL) {
-      const rows = await listClips(100)
-      return NextResponse.json({
-        clips: rows.map((r) => ({
-          id: r.id,
-          platform: r.platform,
-          url: r.url,
-          title: r.title,
-          author: r.author,
-          durationSeconds: r.durationSeconds,
-          analyzedAt: r.analyzedAt.toISOString(),
-          hasTemplate: Boolean(r.template),
-        })),
-      })
-    }
-  } catch (err) {
-    console.error("[clip] list from DB failed, falling back to local:", err)
-  }
-  return NextResponse.json({
-    clips: listLocalClips().map((c) => ({
+  const byId = new Map<string, ClipListRow>()
+
+  for (const c of listLocalClips()) {
+    byId.set(c.id, {
       id: c.id,
       platform: c.platform,
       url: c.url,
@@ -97,6 +99,31 @@ export async function GET() {
       durationSeconds: c.durationSeconds,
       analyzedAt: c.analyzedAt,
       hasTemplate: Boolean(c.template),
-    })),
-  })
+    })
+  }
+
+  if (process.env.DATABASE_URL) {
+    try {
+      for (const r of await listClips(100)) {
+        const analyzedAt = r.analyzedAt.toISOString()
+        const local = byId.get(r.id)
+        if (local && local.analyzedAt >= analyzedAt) continue
+        byId.set(r.id, {
+          id: r.id,
+          platform: r.platform,
+          url: r.url,
+          title: r.title,
+          author: r.author,
+          durationSeconds: r.durationSeconds,
+          analyzedAt,
+          hasTemplate: Boolean(r.template),
+        })
+      }
+    } catch (err) {
+      console.error("[clip] list from DB failed, showing local clips only:", err)
+    }
+  }
+
+  const clips = [...byId.values()].sort((a, b) => b.analyzedAt.localeCompare(a.analyzedAt))
+  return NextResponse.json({ clips })
 }

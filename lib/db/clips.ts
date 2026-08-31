@@ -25,7 +25,10 @@ export async function upsertClip(payload: ClipPayload): Promise<ClipRow> {
     title: payload.title ?? null,
     author: payload.author ?? null,
     caption: payload.caption ?? null,
-    durationSeconds: payload.durationSeconds ?? null,
+    // duration_seconds is an integer column, but ffprobe reports a float
+    // (76.299365). Postgres rejects that outright, and because the DB write is
+    // best effort the whole row would vanish with only a line on stderr.
+    durationSeconds: payload.durationSeconds == null ? null : Math.round(payload.durationSeconds),
     localPath: payload.localPath ?? null,
     script: payload.script,
     analysis: payload.analysis,
