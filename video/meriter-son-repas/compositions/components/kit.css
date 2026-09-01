@@ -1,0 +1,308 @@
+/* ============================================================
+   Kit visuel — format science-reel FR
+   Dialecte "vecteur plat sur fond clair" (cf. DXeuUoYDuOK).
+   Tout est en px absolus sur une toile 1080x1920 : le rendu
+   HyperFrames est déterministe, donc pas d'unités relatives
+   au viewport, pas de media queries.
+   ============================================================ */
+
+/* La règle @font-face vit dans le <style> de chaque composition, pas ici.
+   Les documents HTML sont servis avec la racine du projet comme base, mais
+   une url() dans une feuille de style se résout relativement À LA FEUILLE :
+   depuis compositions/components/, "assets/..." partait chercher
+   compositions/components/assets/ et renvoyait 404 au rendu. Et "../../"
+   fait échouer le lint (invalid_parent_traversal_in_asset_path). Déclarer la
+   police dans le document est la seule forme que les deux résolveurs
+   interprètent pareil. */
+
+:root {
+  --bg: #f4f2f7;
+  --card: #ffffff;
+  --ink: #16131f;
+  --ink-soft: #5c5470;
+  /* Assez sombre pour passer 3:1 sur --bg : le poste Contrast de
+     `hyperframes check` refuse le gris clair d'origine (2,66:1). */
+  --ink-faint: #6f6885;
+
+  /* Les deux côtés de l'équation */
+  --in: #e8578a; /* calories qui rentrent */
+  --out: #3d7bf7; /* calories qui sortent */
+
+  /* Les quatre parts du TDEE — une couleur par segment, jamais réattribuée */
+  --bmr: #3d7bf7; /* métabolisme de base  70 % */
+  --neat: #16b8a6; /* NEAT                 15 % */
+  --tef: #f5a524; /* digestion            10 % */
+  --sport: #e5484d; /* sport                 5 % */
+
+  /* Variantes assombries : les couleurs de segment sont réglées pour un
+     aplat de 240 px de large, pas pour du texte. Toute étiquette qui reprend
+     la couleur d'un segment prend la variante -ink. */
+  --neat-ink: #0d7f73;
+  --good-ink: #0e7a37;
+  --tef-ink: #9a6200;
+
+  /* Sémantique */
+  --good: #16a34a;
+  --bad: #e5484d;
+  --key: #f5c518; /* surbrillance jaune du terme clé */
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  width: 1080px;
+  height: 1920px;
+  overflow: hidden;
+  background: var(--bg);
+  font-family: "Archivo", "Segoe UI", system-ui, sans-serif;
+  color: var(--ink);
+  -webkit-font-smoothing: antialiased;
+}
+
+/* La règle .clip donne à chaque scène sa boîte plein cadre.
+   Le runtime pilote la visibilité via data-start, pas via cette classe,
+   mais lint le réclame et Studio s'en sert comme repère de montage. */
+.clip {
+  position: absolute;
+  inset: 0;
+  width: 1080px;
+  height: 1920px;
+}
+
+/* ---------- Typographie ---------- */
+
+.title {
+  font-size: 76px;
+  font-weight: 800;
+  letter-spacing: -0.03em;
+  line-height: 1;
+}
+
+.kicker {
+  font-size: 34px;
+  font-weight: 700;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--ink-faint);
+}
+
+.caption {
+  font-size: 44px;
+  font-weight: 600;
+  line-height: 1.22;
+  color: var(--ink-soft);
+}
+
+.huge {
+  font-size: 190px;
+  font-weight: 900;
+  letter-spacing: -0.055em;
+  line-height: 0.9;
+}
+
+.tabular {
+  font-variant-numeric: tabular-nums;
+}
+
+/* Surbrillance : un seul mot par phrase, comme dans le script. */
+.hl {
+  padding: 0 14px;
+  border-radius: 12px;
+  background: var(--key);
+  color: var(--ink);
+}
+.hl-good {
+  background: var(--good);
+  color: #fff;
+}
+.hl-bad {
+  background: var(--bad);
+  color: #fff;
+}
+
+/* ---------- Mise en page ---------- */
+
+.stage {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 190px 90px 240px; /* marge basse : zone des sous-titres CapCut */
+}
+
+/* Rien de lisible sous y = 1680 : c'est là que passent les sous-titres. */
+.safe-bottom {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height: 240px;
+}
+
+.center {
+  text-align: center;
+}
+
+/* ---------- SplitBar ---------- */
+
+.sb {
+  position: relative;
+  display: flex;
+}
+
+/* Une colonne = un segment. La hauteur est pilotée par GSAP,
+   jamais par une transition CSS : le rendu doit être seekable. */
+.sb-seg {
+  position: relative;
+  flex: none;
+  border-radius: 18px;
+  transform-origin: 50% 100%;
+}
+
+.sb-seg-fill {
+  position: absolute;
+  inset: 0;
+  border-radius: inherit;
+  background: var(--seg);
+}
+
+/* Calque des étiquettes : hors du flux et surtout hors des blocs colorés.
+   Un texte qui déborde de son aplat fait échouer le poste Layout de
+   `hyperframes check`, et un `bottom: 100%` sur un segment dont la hauteur
+   est animée place mal l'étiquette de toute façon. La géométrie est
+   calculée dans splitbar.js à partir des pourcentages. */
+.sb-label-layer {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 820px;
+  height: 100%;
+  pointer-events: none;
+}
+
+.sb-seg-label {
+  position: absolute;
+  white-space: nowrap;
+  font-size: 30px;
+  font-weight: 800;
+  letter-spacing: -0.01em;
+  line-height: 1.12;
+  color: var(--ink);
+}
+
+/* Le pourcentage reste en encre, jamais dans la couleur du segment :
+   ces couleurs sont réglées pour un aplat de 240 px, pas pour du texte. */
+.sb-seg-value {
+  display: block;
+  margin-top: 4px;
+  font-size: 46px;
+  font-weight: 900;
+  letter-spacing: -0.03em;
+  color: var(--ink);
+  font-variant-numeric: tabular-nums;
+}
+
+/* Marqueurs croix / coche posés au centre d'un segment */
+.sb-mark {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 96px;
+  height: 96px;
+}
+.sb-mark {
+  --mark: #fff;
+}
+.sb-mark path {
+  fill: none;
+  stroke: var(--mark);
+  stroke-width: 17;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+
+/* Accolade verticale, à gauche du groupe de segments qu'elle réunit */
+.sb-bracket {
+  position: absolute;
+  width: 30px;
+  border: 8px solid var(--ink);
+  border-right: none;
+  border-radius: 18px 0 0 18px;
+  transform-origin: 50% 50%;
+}
+.sb-bracket-label {
+  position: absolute;
+  top: 50%;
+  right: calc(100% + 22px);
+  transform: translateY(-50%);
+  white-space: nowrap;
+  font-size: 52px;
+  font-weight: 900;
+  letter-spacing: -0.03em;
+  color: var(--ink);
+  font-variant-numeric: tabular-nums;
+}
+
+/* ---------- Checklist ---------- */
+
+.cl {
+  display: flex;
+  flex-direction: column;
+  gap: 26px;
+}
+.cl-item {
+  display: flex;
+  align-items: center;
+  gap: 22px;
+  font-size: 42px;
+  font-weight: 700;
+  color: var(--ink);
+}
+.cl-dot {
+  width: 46px;
+  height: 46px;
+  border-radius: 14px;
+  /* la pastille prend la couleur du segment que le panneau détaille */
+  background: var(--dot, var(--neat));
+  flex: none;
+}
+
+/* ---------- Éclat de statistique ---------- */
+
+.burst {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 26px 46px;
+  border-radius: 28px;
+  background: var(--in);
+  color: #fff;
+  font-size: 76px;
+  font-weight: 900;
+  letter-spacing: -0.03em;
+  font-variant-numeric: tabular-nums;
+}
+
+/* ---------- Divers ---------- */
+
+.arrow path {
+  fill: none;
+  stroke: var(--ink);
+  stroke-width: 12;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+
+.plate {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  border: 12px solid var(--in);
+}

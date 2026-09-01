@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="fr" data-resolution="portrait">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=1080, height=1920">
+    <link rel="stylesheet" href="compositions/components/kit.css">
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.14.2/dist/gsap.min.js"></script>
+    <script src="compositions/components/splitbar.js"></script>
+    <style>
+      @font-face {
+        font-family: "Archivo";
+        src: url("assets/fonts/Archivo.woff2") format("woff2");
+        font-weight: 400 900;
+        font-display: block;
+      }
+      #t1-head { position: absolute; top: 180px; left: 90px; right: 90px; text-align: center; }
+      #t1-bars-wrap { position: absolute; top: 460px; left: 0; width: 1080px; height: 1080px; }
+      #t1-bars { position: absolute; left: 300px; bottom: 0; }
+      /* Le sport ne fait que 48 px de haut : son étiquette porte le chiffre
+         qui doit rester lisible, donc elle est agrandie. */
+      #t1-bars .sb-seg-label[data-key="sport"] { font-size: 36px; }
+      #t1-bars .sb-seg-label[data-key="sport"] .sb-seg-value { font-size: 68px; color: var(--sport); }
+      #t1-foot {
+        position: absolute; top: 1600px; left: 90px; right: 90px;
+        text-align: center; font-size: 50px; font-weight: 800; opacity: 0;
+      }
+    </style>
+  </head>
+  <body>
+    <div data-hf-id="hf-f9q0" id="t1-root" data-composition-id="decoupe-tdee" data-start="0" data-duration="17.5" data-width="1080" data-height="1920">
+      <div data-hf-id="hf-yry9" id="t1-scene" class="clip" data-start="0" data-duration="17.5" data-track-index="0">
+        <div data-hf-id="hf-tan6" class="stage">
+          <div data-hf-id="hf-qhkf" id="t1-head">
+            <div data-hf-id="hf-rjq7" class="kicker">Ce que tu brûles en 24 h</div>
+            <div data-hf-id="hf-i2bq" class="title" style="margin-top: 18px">ton TDEE</div>
+          </div>
+
+          <div data-hf-id="hf-0rbc" id="t1-bars-wrap"><div data-hf-id="hf-xf3n" id="t1-bars"></div></div>
+
+          <div data-hf-id="hf-8ed9" id="t1-foot">te maintenir<br data-hf-id="hf-x5px"><span data-hf-id="hf-di0m" class="hl">en vie</span></div>
+        </div>
+      </div>
+
+      <!-- ============================================================
+           SON — un événement par élément qui entre.
+           Volumes repris tels quels du skill montage-capcut (§6).
+           Le trio riser / whoosh / impact n'est PAS ici : il tombe sur
+           les coupes, donc il se pose dans CapCut. Voir SON.md.
+           Supprimer ce bloc entier donne un rendu muet.
+           ============================================================ -->
+      <audio data-hf-id="hf-kbqt" id="sfx-t1-01-pop" src="assets/sfx/pop.mp3" data-start="5.35" data-duration="0.14" data-track-index="10" data-volume="0.95"></audio>
+      <audio data-hf-id="hf-ws5c" id="sfx-t1-02-pop" src="assets/sfx/pop.mp3" data-start="5.45" data-duration="0.14" data-track-index="11" data-volume="0.95"></audio>
+      <audio data-hf-id="hf-5rfn" id="sfx-t1-03-pop" src="assets/sfx/pop.mp3" data-start="5.55" data-duration="0.14" data-track-index="12" data-volume="0.95"></audio>
+      <audio data-hf-id="hf-ooh2" id="sfx-t1-04-pop" src="assets/sfx/pop.mp3" data-start="5.65" data-duration="0.14" data-track-index="13" data-volume="0.95"></audio>
+      <audio data-hf-id="hf-yzsy" id="sfx-t1-05-click" src="assets/sfx/click.mp3" data-start="6.45" data-duration="0.05" data-track-index="14" data-volume="0.95"></audio>
+      <audio data-hf-id="hf-srp7" id="sfx-t1-06-wrong" src="assets/sfx/wrong.mp3" data-start="6.70" data-duration="0.35" data-track-index="15" data-volume="0.24"></audio>
+      <audio data-hf-id="hf-h2bz" id="sfx-t1-07-click" src="assets/sfx/click.mp3" data-start="9.25" data-duration="0.05" data-track-index="16" data-volume="0.95"></audio>
+      <audio data-hf-id="hf-3hab" id="sfx-t1-08-click" src="assets/sfx/click.mp3" data-start="11.35" data-duration="0.05" data-track-index="17" data-volume="0.95"></audio>
+      <audio data-hf-id="hf-ymd8" id="sfx-t1-09-drone" src="assets/sfx/drone.mp3" data-start="12.80" data-duration="2.2" data-track-index="18" data-volume="0.30"></audio>
+      <audio data-hf-id="hf-hlme" id="sfx-t1-10-correct" src="assets/sfx/correct.mp3" data-start="13.05" data-duration="0.55" data-track-index="19" data-volume="0.55"></audio>
+    </div>
+
+    <script>
+      (function () {
+        window.__timelines = window.__timelines || {};
+        const tl = gsap.timeline({ paused: true });
+
+        // Ordre DOM = bas vers haut (le conteneur est en column-reverse).
+        const bar = SplitBar.mount("#t1-bars", {
+          layout: "stack",
+          width: 240,
+          height: 960,
+          gap: 16,
+          segments: [
+            { key: "bmr", label: "MÉTABOLISME DE BASE", value: "70 %", pct: 70, color: "var(--bmr)" },
+            { key: "neat", label: "EN DEHORS DU SPORT", value: "15 %", pct: 15, color: "var(--neat)" },
+            { key: "tef", label: "DIGESTION", value: "10 %", pct: 10, color: "var(--tef)" },
+            { key: "sport", label: "SPORT", value: "5 %", pct: 5, color: "var(--sport)", labelDy: 52 },
+          ],
+        });
+
+        const COLORS = { bmr: "#3d7bf7", neat: "#16b8a6", tef: "#f5a524", sport: "#e5484d" };
+        const KEYS = ["bmr", "neat", "tef", "sport"];
+
+        // État de départ : une seule barre bleue pleine, sans jointure visible.
+        const fills = {};
+        KEYS.forEach((k) => {
+          const n = bar.nodes[k];
+          fills[k] = n.fill;
+          n.seg.style.height = Number(n.seg.dataset.targetH) + "px";
+          n.seg.style.borderRadius = "0";
+          fills[k].style.borderRadius = "0";
+          fills[k].style.background = "var(--out)";
+        });
+        bar.nodes.bmr.seg.style.borderRadius = "0 0 18px 18px";
+        bar.nodes.bmr.fill.style.borderRadius = "0 0 18px 18px";
+        bar.nodes.sport.seg.style.borderRadius = "18px 18px 0 0";
+        bar.nodes.sport.fill.style.borderRadius = "18px 18px 0 0";
+
+        tl.from("#t1-head .kicker", { opacity: 0, y: 22, duration: 0.45 }, 0);
+        tl.from("#t1-head .title", { opacity: 0, y: 28, duration: 0.5 }, 0.1);
+
+        // 0:00-0:04 — « ça s'appelle ton TDEE » : la barre existe, entière, une seule couleur.
+
+        // 0:04 — « et ça se découpe en quatre » : les quatre pops
+        const CUT = 5.35;
+        bar.split(tl, CUT, { gap: 16, duration: 0.6 });
+        KEYS.forEach((k, i) => {
+          tl.to(fills[k], { backgroundColor: COLORS[k], duration: 0.4 }, CUT + i * 0.1);
+          tl.to(bar.nodes[k].seg, { borderRadius: 14, duration: 0.4 }, CUT + i * 0.1);
+          tl.to(fills[k], { borderRadius: 14, duration: 0.4 }, CUT + i * 0.1);
+        });
+
+        // 0:05 — « le sport, tout en haut : cinq pour cent »
+        bar.focus(tl, 6.42, "sport", { dim: 0.18 });
+        bar.labels(tl, 6.62, ["sport"]);
+
+        // 0:09 — « ce que tu dépenses en bougeant à côté : quinze »
+        bar.focus(tl, 9.2, "neat", { dim: 0.18 });
+        bar.labels(tl, 9.4, ["neat"]);
+        tl.to(bar.nodes.sport.label, { opacity: 0.25, duration: 0.3 }, 9.2);
+
+        // 0:11 — « la digestion : dix »
+        bar.focus(tl, 11.3, "tef", { dim: 0.18 });
+        bar.labels(tl, 11.5, ["tef"]);
+        tl.to(bar.nodes.neat.label, { opacity: 0.25, duration: 0.3 }, 11.3);
+
+        // 0:13 — « le gros bloc, en bas : soixante-dix pour cent »
+        bar.focus(tl, 12.74, "bmr", { dim: 0.18 });
+        bar.labels(tl, 12.94, ["bmr"]);
+        tl.to(bar.nodes.tef.label, { opacity: 0.25, duration: 0.3 }, 12.74);
+        tl.to("#t1-foot", { opacity: 1, duration: 0.45 }, 15.0);
+        tl.from("#t1-foot", { y: 20, duration: 0.45 }, 15.0);
+
+        window.__timelines["decoupe-tdee"] = tl;
+      })();
+    </script>
+  </body>
+</html>

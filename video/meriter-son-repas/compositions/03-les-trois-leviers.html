@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="fr" data-resolution="portrait">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=1080, height=1920">
+    <link rel="stylesheet" href="compositions/components/kit.css">
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.14.2/dist/gsap.min.js"></script>
+    <style>
+      @font-face {
+        font-family: "Archivo";
+        src: url("assets/fonts/Archivo.woff2") format("woff2");
+        font-weight: 400 900;
+        font-display: block;
+      }
+      #l-head { position: absolute; top: 150px; left: 90px; right: 90px; text-align: center; }
+      #l-95 { font-size: 190px; font-weight: 900; color: var(--good-ink); line-height: 1; opacity: 0; }
+      #l-95-sub { font-size: 48px; font-weight: 800; margin-top: 6px; opacity: 0; }
+
+      #l-panels {
+        position: absolute; top: 560px; left: 70px; right: 70px;
+        display: flex; flex-direction: column; gap: 30px;
+      }
+      .l-panel {
+        background: var(--card); border-radius: 30px; padding: 34px 40px 38px;
+        box-shadow: 0 12px 40px rgba(22, 19, 31, 0.09);
+        opacity: 0; position: relative;
+      }
+      .l-rank { font-size: 34px; font-weight: 900; color: var(--ink); letter-spacing: 0.06em; }
+      .l-title { font-size: 58px; font-weight: 900; line-height: 1.1; margin-top: 6px; opacity: 0; }
+      .l-item { font-size: 40px; font-weight: 700; color: var(--ink-soft); margin-top: 16px; opacity: 0; }
+      .l-badge {
+        position: absolute; right: 34px; top: 34px;
+        font-size: 46px; font-weight: 900; color: #fff;
+        padding: 14px 26px; border-radius: 999px; opacity: 0;
+      }
+    </style>
+  </head>
+  <body>
+    <div data-hf-id="hf-1j8f" id="l-root" data-composition-id="trois-leviers" data-start="0" data-duration="26.5" data-width="1080" data-height="1920">
+      <div data-hf-id="hf-2lhk" id="l-scene" class="clip" data-start="0" data-duration="26.5" data-track-index="0">
+        <div data-hf-id="hf-tan6" class="stage">
+          <div data-hf-id="hf-9jai" id="l-head">
+            <div data-hf-id="hf-8byr" id="l-95">95 %</div>
+            <div data-hf-id="hf-we2e" id="l-95-sub">qui, eux, <span data-hf-id="hf-79rf" class="hl-good">bougent</span></div>
+          </div>
+
+          <div data-hf-id="hf-0qhd" id="l-panels">
+            <div data-hf-id="hf-mf2j" class="l-panel" id="l-p1">
+              <div data-hf-id="hf-hlgm" class="l-rank" id="l-p1-r">LEVIER 1</div>
+              <div data-hf-id="hf-vdhf" class="l-title" id="l-p1-t">Bouger hors<br data-hf-id="hf-x5px">de la salle</div>
+              <div data-hf-id="hf-f4pk" class="l-item" id="l-p1-i1">marcher après les repas</div>
+              <div data-hf-id="hf-t978" class="l-item" id="l-p1-i2">rester debout</div>
+              <div data-hf-id="hf-29za" class="l-item" id="l-p1-i3">prendre les escaliers</div>
+              <div data-hf-id="hf-d1g1" class="l-badge" id="l-p1-b" style="background: var(--good-ink)">+ 300 à 500 cal / jour</div>
+            </div>
+
+            <div data-hf-id="hf-bjkw" class="l-panel" id="l-p2">
+              <div data-hf-id="hf-p6w8" class="l-rank" id="l-p2-r">LEVIER 2</div>
+              <div data-hf-id="hf-loqa" class="l-title" id="l-p2-t">Les protéines</div>
+              <div data-hf-id="hf-o2hs" class="l-item" id="l-p2-i1">à digérer, elles coûtent plus cher<br data-hf-id="hf-rsrt">que les glucides ou le gras</div>
+              <div data-hf-id="hf-pn8q" class="l-badge" id="l-p2-b" style="background: var(--tef-ink)">×3 à ×10</div>
+            </div>
+
+            <div data-hf-id="hf-cb8p" class="l-panel" id="l-p3">
+              <div data-hf-id="hf-zabu" class="l-rank" id="l-p3-r">LEVIER 3</div>
+              <div data-hf-id="hf-6yqu" class="l-title" id="l-p3-t">Le plus gros bloc</div>
+              <div data-hf-id="hf-t9wn" class="l-item" id="l-p3-i1">du muscle</div>
+              <div data-hf-id="hf-891h" class="l-item" id="l-p3-i2">du sommeil</div>
+              <div data-hf-id="hf-28im" class="l-item" id="l-p3-i3">moins de stress</div>
+              <div data-hf-id="hf-60hs" class="l-badge" id="l-p3-b" style="background: #2456c4">70 %</div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- SON — l'escalade wrong/correct du skill montage-capcut (§4) se termine
+           ici : 1.00 puis 1.15 puis 1.37. La dernière réussite est la plus forte
+           de toute la vidéo, et elle tombe sur le levier 3. Ne pas égaliser.
+           Chaque marque est calée sur la syllabe, pas sur l'animation. -->
+      <audio data-hf-id="hf-bye1" id="sfx-l-01-pop" src="assets/sfx/pop.mp3" data-start="0.35" data-duration="0.14" data-track-index="30" data-volume="0.95"></audio>
+      <audio data-hf-id="hf-4aw2" id="sfx-l-02-click" src="assets/sfx/click.mp3" data-start="1.60" data-duration="0.05" data-track-index="31" data-volume="0.95"></audio>
+      <audio data-hf-id="hf-viha" id="sfx-l-03-soft-click" src="assets/sfx/soft-click.mp3" data-start="3.30" data-duration="0.05" data-track-index="32" data-volume="1.0"></audio>
+      <audio data-hf-id="hf-ccs5" id="sfx-l-04-soft-click" src="assets/sfx/soft-click.mp3" data-start="3.42" data-duration="0.05" data-track-index="33" data-volume="1.0"></audio>
+      <audio data-hf-id="hf-896s" id="sfx-l-05-soft-click" src="assets/sfx/soft-click.mp3" data-start="3.54" data-duration="0.05" data-track-index="34" data-volume="1.0"></audio>
+      <audio data-hf-id="hf-k0b8" id="sfx-l-06-click" src="assets/sfx/click.mp3" data-start="4.25" data-duration="0.05" data-track-index="35" data-volume="0.95"></audio>
+      <audio data-hf-id="hf-ysfs" id="sfx-l-07-soft-click" src="assets/sfx/soft-click.mp3" data-start="5.65" data-duration="0.05" data-track-index="36" data-volume="1.0"></audio>
+      <audio data-hf-id="hf-26as" id="sfx-l-08-soft-click" src="assets/sfx/soft-click.mp3" data-start="6.85" data-duration="0.05" data-track-index="37" data-volume="1.0"></audio>
+      <audio data-hf-id="hf-objj" id="sfx-l-09-soft-click" src="assets/sfx/soft-click.mp3" data-start="7.95" data-duration="0.05" data-track-index="38" data-volume="1.0"></audio>
+      <audio data-hf-id="hf-ip5t" id="sfx-l-10-correct" src="assets/sfx/correct.mp3" data-start="9.65" data-duration="0.55" data-track-index="39" data-volume="1.00"></audio>
+      <audio data-hf-id="hf-f185" id="sfx-l-11-click" src="assets/sfx/click.mp3" data-start="11.95" data-duration="0.05" data-track-index="40" data-volume="0.95"></audio>
+      <audio data-hf-id="hf-1yik" id="sfx-l-12-correct" src="assets/sfx/correct.mp3" data-start="14.05" data-duration="0.55" data-track-index="41" data-volume="1.15"></audio>
+      <audio data-hf-id="hf-twyw" id="sfx-l-13-click" src="assets/sfx/click.mp3" data-start="16.60" data-duration="0.05" data-track-index="42" data-volume="0.95"></audio>
+      <audio data-hf-id="hf-8uvj" id="sfx-l-14-click" src="assets/sfx/click.mp3" data-start="19.55" data-duration="0.05" data-track-index="43" data-volume="0.95"></audio>
+      <audio data-hf-id="hf-pbfy" id="sfx-l-15-soft-click" src="assets/sfx/soft-click.mp3" data-start="20.55" data-duration="0.05" data-track-index="44" data-volume="1.0"></audio>
+      <audio data-hf-id="hf-ycdo" id="sfx-l-16-soft-click" src="assets/sfx/soft-click.mp3" data-start="21.35" data-duration="0.05" data-track-index="45" data-volume="1.0"></audio>
+      <audio data-hf-id="hf-a6nu" id="sfx-l-17-soft-click" src="assets/sfx/soft-click.mp3" data-start="22.25" data-duration="0.05" data-track-index="46" data-volume="1.0"></audio>
+      <audio data-hf-id="hf-dgmn" id="sfx-l-18-drone" src="assets/sfx/drone.mp3" data-start="24.35" data-duration="2.2" data-track-index="47" data-volume="0.30"></audio>
+      <audio data-hf-id="hf-fvj1" id="sfx-l-19-correct" src="assets/sfx/correct.mp3" data-start="24.55" data-duration="0.55" data-track-index="48" data-volume="1.37"></audio>
+    </div>
+
+    <script>
+      (function () {
+        window.__timelines = window.__timelines || {};
+        const tl = gsap.timeline({ paused: true });
+
+        const panelIn = (sel, at) => {
+          tl.fromTo(sel, { opacity: 0, y: 34 }, { opacity: 1, y: 0, duration: 0.45, ease: "power3.out" }, at);
+        };
+        const itemIn = (sel, at) => {
+          tl.fromTo(sel, { opacity: 0, x: -18 }, { opacity: 1, x: 0, duration: 0.3, ease: "power2.out" }, at);
+        };
+        const headIn = (rank, title, at) => {
+          tl.fromTo(title, { opacity: 0, y: 20 }, { opacity: 1, y: 0, duration: 0.4, ease: "power3.out" }, at);
+        };
+        const badgeIn = (sel, at) => {
+          tl.fromTo(sel, { opacity: 0, scale: 0.6 }, { opacity: 1, scale: 1, duration: 0.4, ease: "back.out(2.4)" }, at);
+        };
+
+        // Calé sur la voix. Chaque commentaire est la syllabe qui déclenche le plan.
+        // « Parce que les quatre-vingt-quinze qui restent, eux, ils bougent. »
+        tl.fromTo("#l-95", { opacity: 0, scale: 0.7 }, { opacity: 1, scale: 1, duration: 0.5, ease: "back.out(2)" }, 0.3);
+        tl.to("#l-95-sub", { opacity: 1, duration: 0.35 }, 1.55);
+        tl.from("#l-95-sub", { y: 16, duration: 0.35 }, 1.55);
+
+        // « Trois leviers. » — les trois cartons se posent, numérotés et vides
+        tl.fromTo(["#l-p1", "#l-p2", "#l-p3"], { opacity: 0, y: 34 }, { opacity: 1, y: 0, duration: 0.4, stagger: 0.12, ease: "power3.out" }, 3.25);
+
+        // « Un : bouger hors de la salle. »
+        headIn("#l-p1-r", "#l-p1-t", 4.20);
+        itemIn("#l-p1-i1", 5.60);   // « Marcher après les repas, »
+        itemIn("#l-p1-i2", 6.80);   // « rester debout, »
+        itemIn("#l-p1-i3", 7.90);   // « prendre les escaliers. »
+        badgeIn("#l-p1-b", 9.60);  // « Trois cents à cinq cents calories par jour. »
+
+        // « Deux : les protéines. »
+        headIn("#l-p2-r", "#l-p2-t", 11.90);
+        badgeIn("#l-p2-b", 14.00);  // « trois à dix fois plus »
+        itemIn("#l-p2-i1", 16.55);  // « qu'à digérer des glucides ou du gras »
+
+        // « Trois : le plus gros bloc. »
+        headIn("#l-p3-r", "#l-p3-t", 19.50);
+        itemIn("#l-p3-i1", 20.50);  // « Du muscle, »
+        itemIn("#l-p3-i2", 21.30);  // « du sommeil, »
+        itemIn("#l-p3-i3", 22.20);  // « moins de stress. »
+        badgeIn("#l-p3-b", 24.50);  // « c'est là qu'il y a le plus à prendre »
+
+        window.__timelines["trois-leviers"] = tl;
+      })();
+    </script>
+  </body>
+</html>

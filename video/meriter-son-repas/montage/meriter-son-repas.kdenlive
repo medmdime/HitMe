@@ -1,0 +1,632 @@
+<?xml version="1.0" ?>
+<mlt LC_NUMERIC="C" version="7.36.1" root="/home/elmdimegh/Documents/hitMe/video/meriter-son-repas" title="meriter-son-repas" producer="main_bin">
+ <profile description="1080x1920 30fps" width="1080" height="1920" progressive="1" sample_aspect_num="1" sample_aspect_den="1" display_aspect_num="1080" display_aspect_den="1920" frame_rate_num="30" frame_rate_den="1" colorspace="709"/>
+ <producer id="black" in="0" out="2667">
+  <property name="length">2668</property>
+  <property name="eof">pause</property>
+  <property name="resource">0</property>
+  <property name="aspect_ratio">1</property>
+  <property name="mlt_service">color</property>
+  <property name="mlt_image_format">rgba</property>
+  <property name="set.test_audio">0</property>
+ </producer>
+ <playlist id="black_track">
+  <entry producer="black" in="0" out="2667"/>
+ </playlist>
+ <producer id="producer_lit" in="0" out="151">
+  <property name="length">152</property>
+  <property name="eof">pause</property>
+  <property name="resource">/home/elmdimegh/Documents/hitMe/video/meriter-son-repas/assets/broll/lit-A.mp4</property>
+  <property name="mlt_service">avformat-novalidate</property>
+  <property name="audio_index">0</property>
+  <property name="video_index">0</property>
+  <property name="kdenlive:id">2</property>
+  <property name="kdenlive:clipname">lit-A.mp4</property>
+  <property name="kdenlive:duration">152</property>
+ </producer>
+ <producer id="producer_cam1" in="0" out="422">
+  <property name="length">423</property>
+  <property name="eof">pause</property>
+  <property name="resource">/run/media/elmdimegh/Storage/videos/2026-09-01 00-26-00.mp4</property>
+  <property name="mlt_service">avformat-novalidate</property>
+  <property name="audio_index">-1</property>
+  <property name="video_index">0</property>
+  <property name="kdenlive:id">3</property>
+  <property name="kdenlive:clipname">2026-09-01 00-26-00.mp4</property>
+  <property name="kdenlive:duration">423</property>
+ </producer>
+ <producer id="producer_cam1_audio" in="0" out="422">
+  <property name="length">423</property>
+  <property name="eof">pause</property>
+  <property name="resource">/run/media/elmdimegh/Storage/videos/2026-09-01 00-26-00.mp4</property>
+  <property name="mlt_service">avformat-novalidate</property>
+  <property name="audio_index">0</property>
+  <property name="video_index">-1</property>
+  <property name="set.test_image">1</property>
+  <property name="kdenlive:id">4</property>
+  <property name="kdenlive:clipname">2026-09-01 00-26-00.mp4</property>
+  <property name="kdenlive:duration">423</property>
+ </producer>
+ <producer id="producer_cam2" in="0" out="127">
+  <property name="length">128</property>
+  <property name="eof">pause</property>
+  <property name="resource">/run/media/elmdimegh/Storage/videos/2026-09-01 00-26-53.mp4</property>
+  <property name="mlt_service">avformat-novalidate</property>
+  <property name="audio_index">-1</property>
+  <property name="video_index">0</property>
+  <property name="kdenlive:id">5</property>
+  <property name="kdenlive:clipname">2026-09-01 00-26-53.mp4</property>
+  <property name="kdenlive:duration">128</property>
+ </producer>
+ <producer id="producer_cam2_audio" in="0" out="127">
+  <property name="length">128</property>
+  <property name="eof">pause</property>
+  <property name="resource">/run/media/elmdimegh/Storage/videos/2026-09-01 00-26-53.mp4</property>
+  <property name="mlt_service">avformat-novalidate</property>
+  <property name="audio_index">0</property>
+  <property name="video_index">-1</property>
+  <property name="set.test_image">1</property>
+  <property name="kdenlive:id">6</property>
+  <property name="kdenlive:clipname">2026-09-01 00-26-53.mp4</property>
+  <property name="kdenlive:duration">128</property>
+ </producer>
+ <producer id="producer_cam3" in="0" out="200">
+  <property name="length">201</property>
+  <property name="eof">pause</property>
+  <property name="resource">/run/media/elmdimegh/Storage/videos/2026-09-01 00-28-18.mp4</property>
+  <property name="mlt_service">avformat-novalidate</property>
+  <property name="audio_index">-1</property>
+  <property name="video_index">0</property>
+  <property name="kdenlive:id">7</property>
+  <property name="kdenlive:clipname">2026-09-01 00-28-18.mp4</property>
+  <property name="kdenlive:duration">201</property>
+ </producer>
+ <producer id="producer_cam3_audio" in="0" out="200">
+  <property name="length">201</property>
+  <property name="eof">pause</property>
+  <property name="resource">/run/media/elmdimegh/Storage/videos/2026-09-01 00-28-18.mp4</property>
+  <property name="mlt_service">avformat-novalidate</property>
+  <property name="audio_index">0</property>
+  <property name="video_index">-1</property>
+  <property name="set.test_image">1</property>
+  <property name="kdenlive:id">8</property>
+  <property name="kdenlive:clipname">2026-09-01 00-28-18.mp4</property>
+  <property name="kdenlive:duration">201</property>
+ </producer>
+ <producer id="producer_vx_hook" in="0" out="94">
+  <property name="length">95</property>
+  <property name="eof">pause</property>
+  <property name="resource">/run/media/elmdimegh/Storage/videos/2026-09-01 00-17-20.mp4</property>
+  <property name="mlt_service">avformat-novalidate</property>
+  <property name="audio_index">0</property>
+  <property name="video_index">-1</property>
+  <property name="set.test_image">1</property>
+  <property name="kdenlive:id">9</property>
+  <property name="kdenlive:clipname">2026-09-01 00-17-20.mp4</property>
+  <property name="kdenlive:duration">95</property>
+ </producer>
+ <producer id="producer_vx_A" in="0" out="522">
+  <property name="length">523</property>
+  <property name="eof">pause</property>
+  <property name="resource">/run/media/elmdimegh/Storage/videos/2026-09-01 00-26-19.mp4</property>
+  <property name="mlt_service">avformat-novalidate</property>
+  <property name="audio_index">0</property>
+  <property name="video_index">-1</property>
+  <property name="set.test_image">1</property>
+  <property name="kdenlive:id">10</property>
+  <property name="kdenlive:clipname">2026-09-01 00-26-19.mp4</property>
+  <property name="kdenlive:duration">523</property>
+ </producer>
+ <producer id="producer_vx_B" in="0" out="255">
+  <property name="length">256</property>
+  <property name="eof">pause</property>
+  <property name="resource">/run/media/elmdimegh/Storage/videos/2026-09-01 00-27-19.mp4</property>
+  <property name="mlt_service">avformat-novalidate</property>
+  <property name="audio_index">0</property>
+  <property name="video_index">-1</property>
+  <property name="set.test_image">1</property>
+  <property name="kdenlive:id">11</property>
+  <property name="kdenlive:clipname">2026-09-01 00-27-19.mp4</property>
+  <property name="kdenlive:duration">256</property>
+ </producer>
+ <producer id="producer_vx_C" in="0" out="823">
+  <property name="length">824</property>
+  <property name="eof">pause</property>
+  <property name="resource">/run/media/elmdimegh/Storage/videos/2026-09-01 00-28-39.mp4</property>
+  <property name="mlt_service">avformat-novalidate</property>
+  <property name="audio_index">0</property>
+  <property name="video_index">-1</property>
+  <property name="set.test_image">1</property>
+  <property name="kdenlive:id">12</property>
+  <property name="kdenlive:clipname">2026-09-01 00-28-39.mp4</property>
+  <property name="kdenlive:duration">824</property>
+ </producer>
+ <producer id="producer_anim1" in="0" out="525">
+  <property name="length">526</property>
+  <property name="eof">pause</property>
+  <property name="resource">/home/elmdimegh/Documents/hitMe/video/meriter-son-repas/renders/01-decoupe-tdee.mp4</property>
+  <property name="mlt_service">avformat-novalidate</property>
+  <property name="audio_index">0</property>
+  <property name="video_index">0</property>
+  <property name="kdenlive:id">13</property>
+  <property name="kdenlive:clipname">01-decoupe-tdee.mp4</property>
+  <property name="kdenlive:duration">526</property>
+ </producer>
+ <producer id="producer_anim2" in="0" out="240">
+  <property name="length">241</property>
+  <property name="eof">pause</property>
+  <property name="resource">/home/elmdimegh/Documents/hitMe/video/meriter-son-repas/renders/02-digestion-vs-sport.mp4</property>
+  <property name="mlt_service">avformat-novalidate</property>
+  <property name="audio_index">0</property>
+  <property name="video_index">0</property>
+  <property name="kdenlive:id">14</property>
+  <property name="kdenlive:clipname">02-digestion-vs-sport.mp4</property>
+  <property name="kdenlive:duration">241</property>
+ </producer>
+ <producer id="producer_anim3" in="0" out="795">
+  <property name="length">796</property>
+  <property name="eof">pause</property>
+  <property name="resource">/home/elmdimegh/Documents/hitMe/video/meriter-son-repas/renders/03-les-trois-leviers.mp4</property>
+  <property name="mlt_service">avformat-novalidate</property>
+  <property name="audio_index">0</property>
+  <property name="video_index">0</property>
+  <property name="kdenlive:id">15</property>
+  <property name="kdenlive:clipname">03-les-trois-leviers.mp4</property>
+  <property name="kdenlive:duration">796</property>
+ </producer>
+ <producer id="producer_music" in="0" out="3565">
+  <property name="length">3566</property>
+  <property name="eof">pause</property>
+  <property name="resource">/run/media/elmdimegh/Storage/editing_audio/LoVibe. - a good man with a broken heart.mp3</property>
+  <property name="mlt_service">avformat-novalidate</property>
+  <property name="audio_index">0</property>
+  <property name="video_index">-1</property>
+  <property name="set.test_image">1</property>
+  <property name="kdenlive:id">16</property>
+  <property name="kdenlive:clipname">LoVibe. - a good man with a broken heart.mp3</property>
+  <property name="kdenlive:duration">3566</property>
+ </producer>
+ <producer id="producer_riser" in="0" out="56">
+  <property name="length">57</property>
+  <property name="eof">pause</property>
+  <property name="resource">/run/media/elmdimegh/Storage/editing_audio/rizer-mettalic.mp3</property>
+  <property name="mlt_service">avformat-novalidate</property>
+  <property name="audio_index">0</property>
+  <property name="video_index">-1</property>
+  <property name="set.test_image">1</property>
+  <property name="kdenlive:id">17</property>
+  <property name="kdenlive:clipname">rizer-mettalic.mp3</property>
+  <property name="kdenlive:duration">57</property>
+ </producer>
+ <producer id="producer_impact" in="0" out="122">
+  <property name="length">123</property>
+  <property name="eof">pause</property>
+  <property name="resource">/run/media/elmdimegh/Storage/editing_audio/impacts.mp3</property>
+  <property name="mlt_service">avformat-novalidate</property>
+  <property name="audio_index">0</property>
+  <property name="video_index">-1</property>
+  <property name="set.test_image">1</property>
+  <property name="kdenlive:id">18</property>
+  <property name="kdenlive:clipname">impacts.mp3</property>
+  <property name="kdenlive:duration">123</property>
+ </producer>
+ <producer id="producer_woosh" in="0" out="70">
+  <property name="length">71</property>
+  <property name="eof">pause</property>
+  <property name="resource">/run/media/elmdimegh/Storage/editing_audio/air-woosh.wav</property>
+  <property name="mlt_service">avformat-novalidate</property>
+  <property name="audio_index">0</property>
+  <property name="video_index">-1</property>
+  <property name="set.test_image">1</property>
+  <property name="kdenlive:id">19</property>
+  <property name="kdenlive:clipname">air-woosh.wav</property>
+  <property name="kdenlive:duration">71</property>
+ </producer>
+ <playlist id="main_bin">
+  <property name="kdenlive:docproperties.version">1.1</property>
+  <property name="kdenlive:docproperties.kdenliveversion">25.12.3</property>
+  <property name="kdenlive:docproperties.uuid">{4f9c5427-e21c-522e-9c17-bd59ecfa347f}</property>
+  <property name="kdenlive:docproperties.activetimeline">{4f9c5427-e21c-522e-9c17-bd59ecfa347f}</property>
+  <property name="kdenlive:docproperties.profile">1080x1920 30fps</property>
+  <property name="kdenlive:docproperties.documentid">1756700000000</property>
+  <property name="kdenlive:docproperties.seekOffset">30000</property>
+  <property name="xml_retain">1</property>
+  <entry producer="producer_lit" in="0" out="-1"/>
+  <entry producer="producer_cam1" in="0" out="-1"/>
+  <entry producer="producer_cam2" in="0" out="-1"/>
+  <entry producer="producer_cam3" in="0" out="-1"/>
+  <entry producer="producer_vx_hook" in="0" out="-1"/>
+  <entry producer="producer_vx_A" in="0" out="-1"/>
+  <entry producer="producer_vx_B" in="0" out="-1"/>
+  <entry producer="producer_vx_C" in="0" out="-1"/>
+  <entry producer="producer_anim1" in="0" out="-1"/>
+  <entry producer="producer_anim2" in="0" out="-1"/>
+  <entry producer="producer_anim3" in="0" out="-1"/>
+  <entry producer="producer_music" in="0" out="-1"/>
+  <entry producer="producer_riser" in="0" out="-1"/>
+  <entry producer="producer_impact" in="0" out="-1"/>
+  <entry producer="producer_woosh" in="0" out="-1"/>
+  <property name="kdenlive:docproperties.subtitleFile">/home/elmdimegh/Documents/hitMe/video/meriter-son-repas/montage/sous-titres.srt</property>
+  <entry producer="{4f9c5427-e21c-522e-9c17-bd59ecfa347f}" in="0" out="2667"/>
+ </playlist>
+ <playlist id="playlist0">
+  <property name="kdenlive:audio_track">1</property>
+  <blank length="147"/>
+  <entry producer="producer_woosh" in="0" out="26">
+   <filter id="vol0_147">
+    <property name="mlt_service">volume</property>
+    <property name="level">-20.92</property>
+    <property name="kdenlive_id">volume</property>
+    <property name="kdenlive:collapsed">0</property>
+   </filter>
+  </entry>
+  <blank length="1287"/>
+  <entry producer="producer_woosh" in="0" out="26">
+   <filter id="vol0_1461">
+    <property name="mlt_service">volume</property>
+    <property name="level">-20.92</property>
+    <property name="kdenlive_id">volume</property>
+    <property name="kdenlive:collapsed">0</property>
+   </filter>
+  </entry>
+  <blank length="814"/>
+  <entry producer="producer_woosh" in="0" out="26">
+   <filter id="vol0_2302">
+    <property name="mlt_service">volume</property>
+    <property name="level">-20.92</property>
+    <property name="kdenlive_id">volume</property>
+    <property name="kdenlive:collapsed">0</property>
+   </filter>
+  </entry>
+ </playlist>
+ <playlist id="playlist1">
+  <property name="kdenlive:audio_track">1</property>
+  <blank length="2668"/>
+ </playlist>
+ <tractor id="tractor0" in="0" out="2667">
+  <property name="kdenlive:trackName">A5</property>
+  <property name="kdenlive:timeline_active">1</property>
+  <property name="kdenlive:audio_track">1</property>
+  <track producer="playlist0"/>
+  <track producer="playlist1"/>
+  <transition id="tr_mix0">
+   <property name="a_track">0</property>
+   <property name="b_track">1</property>
+   <property name="mlt_service">mix</property>
+   <property name="always_active">1</property>
+   <property name="sum">1</property>
+   <property name="accepts_blanks">1</property>
+   <property name="internal_added">237</property>
+  </transition>
+ </tractor>
+ <playlist id="playlist2">
+  <property name="kdenlive:audio_track">1</property>
+  <blank length="151"/>
+  <entry producer="producer_impact" in="0" out="44">
+   <filter id="vol2_151">
+    <property name="mlt_service">volume</property>
+    <property name="level">-7.33</property>
+    <property name="kdenlive_id">volume</property>
+    <property name="kdenlive:collapsed">0</property>
+   </filter>
+  </entry>
+  <blank length="1271"/>
+  <entry producer="producer_impact" in="0" out="44">
+   <filter id="vol2_1467">
+    <property name="mlt_service">volume</property>
+    <property name="level">-7.33</property>
+    <property name="kdenlive_id">volume</property>
+    <property name="kdenlive:collapsed">0</property>
+   </filter>
+  </entry>
+  <blank length="795"/>
+  <entry producer="producer_impact" in="0" out="44">
+   <filter id="vol2_2307">
+    <property name="mlt_service">volume</property>
+    <property name="level">-7.33</property>
+    <property name="kdenlive_id">volume</property>
+    <property name="kdenlive:collapsed">0</property>
+   </filter>
+  </entry>
+ </playlist>
+ <playlist id="playlist3">
+  <property name="kdenlive:audio_track">1</property>
+  <blank length="2668"/>
+ </playlist>
+ <tractor id="tractor1" in="0" out="2667">
+  <property name="kdenlive:trackName">A4</property>
+  <property name="kdenlive:timeline_active">1</property>
+  <property name="kdenlive:audio_track">1</property>
+  <track producer="playlist2"/>
+  <track producer="playlist3"/>
+  <transition id="tr_mix2">
+   <property name="a_track">0</property>
+   <property name="b_track">1</property>
+   <property name="mlt_service">mix</property>
+   <property name="always_active">1</property>
+   <property name="sum">1</property>
+   <property name="accepts_blanks">1</property>
+   <property name="internal_added">237</property>
+  </transition>
+ </tractor>
+ <playlist id="playlist4">
+  <property name="kdenlive:audio_track">1</property>
+  <blank length="121"/>
+  <entry producer="producer_riser" in="0" out="55">
+   <filter id="vol4_121">
+    <property name="mlt_service">volume</property>
+    <property name="level">-12.40</property>
+    <property name="kdenlive_id">volume</property>
+    <property name="kdenlive:collapsed">0</property>
+   </filter>
+  </entry>
+  <blank length="1260"/>
+  <entry producer="producer_riser" in="0" out="55">
+   <filter id="vol4_1437">
+    <property name="mlt_service">volume</property>
+    <property name="level">-12.40</property>
+    <property name="kdenlive_id">volume</property>
+    <property name="kdenlive:collapsed">0</property>
+   </filter>
+  </entry>
+  <blank length="775"/>
+  <entry producer="producer_riser" in="0" out="55">
+   <filter id="vol4_2268">
+    <property name="mlt_service">volume</property>
+    <property name="level">-12.40</property>
+    <property name="kdenlive_id">volume</property>
+    <property name="kdenlive:collapsed">0</property>
+   </filter>
+  </entry>
+ </playlist>
+ <playlist id="playlist5">
+  <property name="kdenlive:audio_track">1</property>
+  <blank length="2668"/>
+ </playlist>
+ <tractor id="tractor2" in="0" out="2667">
+  <property name="kdenlive:trackName">A3</property>
+  <property name="kdenlive:timeline_active">1</property>
+  <property name="kdenlive:audio_track">1</property>
+  <track producer="playlist4"/>
+  <track producer="playlist5"/>
+  <transition id="tr_mix4">
+   <property name="a_track">0</property>
+   <property name="b_track">1</property>
+   <property name="mlt_service">mix</property>
+   <property name="always_active">1</property>
+   <property name="sum">1</property>
+   <property name="accepts_blanks">1</property>
+   <property name="internal_added">237</property>
+  </transition>
+ </tractor>
+ <playlist id="playlist6">
+  <property name="kdenlive:audio_track">1</property>
+  <blank length="151"/>
+  <entry producer="producer_music" in="0" out="1243">
+   <filter id="vol6_151">
+    <property name="mlt_service">volume</property>
+    <property name="level">-19.17</property>
+    <property name="kdenlive_id">volume</property>
+    <property name="kdenlive:collapsed">0</property>
+   </filter>
+  </entry>
+  <entry producer="producer_music" in="1800" out="3089">
+   <filter id="vol6_1395">
+    <property name="mlt_service">volume</property>
+    <property name="level">-12.40</property>
+    <property name="kdenlive_id">volume</property>
+    <property name="kdenlive:collapsed">0</property>
+   </filter>
+  </entry>
+ </playlist>
+ <playlist id="playlist7">
+  <property name="kdenlive:audio_track">1</property>
+  <blank length="2668"/>
+ </playlist>
+ <tractor id="tractor3" in="0" out="2667">
+  <property name="kdenlive:trackName">A2</property>
+  <property name="kdenlive:timeline_active">1</property>
+  <property name="kdenlive:audio_track">1</property>
+  <track producer="playlist6"/>
+  <track producer="playlist7"/>
+  <transition id="tr_mix6">
+   <property name="a_track">0</property>
+   <property name="b_track">1</property>
+   <property name="mlt_service">mix</property>
+   <property name="always_active">1</property>
+   <property name="sum">1</property>
+   <property name="accepts_blanks">1</property>
+   <property name="internal_added">237</property>
+  </transition>
+ </tractor>
+ <playlist id="playlist8">
+  <property name="kdenlive:audio_track">1</property>
+  <blank length="38"/>
+  <entry producer="producer_vx_hook" in="0" out="92"/>
+  <blank length="20"/>
+  <entry producer="producer_cam1_audio" in="8" out="261"/>
+  <blank length="135"/>
+  <entry producer="producer_vx_A" in="1" out="525"/>
+  <entry producer="producer_cam2_audio" in="22" out="88"/>
+  <blank length="7"/>
+  <entry producer="producer_vx_B" in="0" out="232"/>
+  <entry producer="producer_cam3_audio" in="12" out="151"/>
+  <entry producer="producer_vx_C" in="19" out="813"/>
+ </playlist>
+ <playlist id="playlist9">
+  <property name="kdenlive:audio_track">1</property>
+  <blank length="2668"/>
+ </playlist>
+ <tractor id="tractor4" in="0" out="2667">
+  <property name="kdenlive:trackName">A1</property>
+  <property name="kdenlive:timeline_active">1</property>
+  <property name="kdenlive:audio_track">1</property>
+  <track producer="playlist8"/>
+  <track producer="playlist9"/>
+  <transition id="tr_mix8">
+   <property name="a_track">0</property>
+   <property name="b_track">1</property>
+   <property name="mlt_service">mix</property>
+   <property name="always_active">1</property>
+   <property name="sum">1</property>
+   <property name="accepts_blanks">1</property>
+   <property name="internal_added">237</property>
+  </transition>
+ </tractor>
+ <playlist id="playlist10">
+  <entry producer="producer_lit" in="0" out="150"/>
+ </playlist>
+ <playlist id="playlist11">
+  <blank length="2668"/>
+ </playlist>
+ <tractor id="tractor5" in="0" out="2667">
+  <property name="kdenlive:trackName">main</property>
+  <property name="kdenlive:timeline_active">1</property>
+  <track producer="playlist10"/>
+  <track producer="playlist11"/>
+  <transition id="tr_mix10">
+   <property name="a_track">0</property>
+   <property name="b_track">1</property>
+   <property name="mlt_service">mix</property>
+   <property name="always_active">1</property>
+   <property name="sum">1</property>
+   <property name="accepts_blanks">1</property>
+   <property name="internal_added">237</property>
+  </transition>
+ </tractor>
+ <playlist id="playlist12">
+  <blank length="151"/>
+  <entry producer="producer_cam1" in="8" out="261"/>
+  <blank length="135"/>
+  <entry producer="producer_anim1" in="0" out="524"/>
+  <entry producer="producer_cam2" in="22" out="88"/>
+  <entry producer="producer_anim2" in="0" out="239"/>
+  <entry producer="producer_cam3" in="12" out="151"/>
+  <entry producer="producer_anim3" in="0" out="794"/>
+  <blank length="360"/>
+ </playlist>
+ <playlist id="playlist13">
+  <blank length="2668"/>
+ </playlist>
+ <tractor id="tractor6" in="0" out="2667">
+  <property name="kdenlive:trackName">incrustation</property>
+  <property name="kdenlive:timeline_active">1</property>
+  <track producer="playlist12"/>
+  <track producer="playlist13"/>
+  <transition id="tr_mix12">
+   <property name="a_track">0</property>
+   <property name="b_track">1</property>
+   <property name="mlt_service">mix</property>
+   <property name="always_active">1</property>
+   <property name="sum">1</property>
+   <property name="accepts_blanks">1</property>
+   <property name="internal_added">237</property>
+  </transition>
+ </tractor>
+ <tractor id="{4f9c5427-e21c-522e-9c17-bd59ecfa347f}" in="0" out="2667" global_feed="1">
+  <property name="kdenlive:uuid">{4f9c5427-e21c-522e-9c17-bd59ecfa347f}</property>
+  <property name="kdenlive:clipname">Sequence 1</property>
+  <property name="kdenlive:producer_type">17</property>
+  <property name="kdenlive:id">1</property>
+  <property name="kdenlive:duration">2668</property>
+  <property name="kdenlive:maxduration">2668</property>
+  <property name="kdenlive:sequenceproperties.hasAudio">1</property>
+  <property name="kdenlive:sequenceproperties.hasVideo">1</property>
+  <property name="kdenlive:sequenceproperties.activeTrack">6</property>
+  <property name="kdenlive:sequenceproperties.tracksCount">7</property>
+  <property name="kdenlive:sequenceproperties.documentuuid">{4f9c5427-e21c-522e-9c17-bd59ecfa347f}</property>
+  <property name="kdenlive:sequenceproperties.position">0</property>
+  <track producer="black_track"/>
+  <track producer="tractor0"/>
+  <track producer="tractor1"/>
+  <track producer="tractor2"/>
+  <track producer="tractor3"/>
+  <track producer="tractor4"/>
+  <track producer="tractor5"/>
+  <track producer="tractor6"/>
+  <transition id="main_mix1">
+   <property name="a_track">0</property>
+   <property name="b_track">1</property>
+   <property name="mlt_service">mix</property>
+   <property name="always_active">1</property>
+   <property name="sum">1</property>
+   <property name="accepts_blanks">1</property>
+   <property name="internal_added">237</property>
+  </transition>
+  <transition id="main_mix2">
+   <property name="a_track">0</property>
+   <property name="b_track">2</property>
+   <property name="mlt_service">mix</property>
+   <property name="always_active">1</property>
+   <property name="sum">1</property>
+   <property name="accepts_blanks">1</property>
+   <property name="internal_added">237</property>
+  </transition>
+  <transition id="main_mix3">
+   <property name="a_track">0</property>
+   <property name="b_track">3</property>
+   <property name="mlt_service">mix</property>
+   <property name="always_active">1</property>
+   <property name="sum">1</property>
+   <property name="accepts_blanks">1</property>
+   <property name="internal_added">237</property>
+  </transition>
+  <transition id="main_mix4">
+   <property name="a_track">0</property>
+   <property name="b_track">4</property>
+   <property name="mlt_service">mix</property>
+   <property name="always_active">1</property>
+   <property name="sum">1</property>
+   <property name="accepts_blanks">1</property>
+   <property name="internal_added">237</property>
+  </transition>
+  <transition id="main_mix5">
+   <property name="a_track">0</property>
+   <property name="b_track">5</property>
+   <property name="mlt_service">mix</property>
+   <property name="always_active">1</property>
+   <property name="sum">1</property>
+   <property name="accepts_blanks">1</property>
+   <property name="internal_added">237</property>
+  </transition>
+  <transition id="main_mix6">
+   <property name="a_track">0</property>
+   <property name="b_track">6</property>
+   <property name="mlt_service">mix</property>
+   <property name="always_active">1</property>
+   <property name="sum">1</property>
+   <property name="accepts_blanks">1</property>
+   <property name="internal_added">237</property>
+  </transition>
+  <transition id="main_blend6">
+   <property name="a_track">0</property>
+   <property name="b_track">6</property>
+   <property name="mlt_service">qtblend</property>
+   <property name="always_active">1</property>
+   <property name="disable">1</property>
+   <property name="accepts_blanks">1</property>
+   <property name="internal_added">237</property>
+  </transition>
+  <transition id="main_mix7">
+   <property name="a_track">0</property>
+   <property name="b_track">7</property>
+   <property name="mlt_service">mix</property>
+   <property name="always_active">1</property>
+   <property name="sum">1</property>
+   <property name="accepts_blanks">1</property>
+   <property name="internal_added">237</property>
+  </transition>
+  <transition id="main_blend7">
+   <property name="a_track">0</property>
+   <property name="b_track">7</property>
+   <property name="mlt_service">qtblend</property>
+   <property name="always_active">1</property>
+   <property name="disable">0</property>
+   <property name="accepts_blanks">1</property>
+   <property name="internal_added">237</property>
+  </transition>
+  <property name="kdenlive:guide.405">["PICKUP A — « Sauf que le sport, c'est cinq pour cent de ce que tu brules. Cinq. »",0]</property>
+  <property name="kdenlive:guide.1372">["LE TURN — bascule musicale + riser/whoosh/impact",1]</property>
+  <property name="kdenlive:guide.2307">["PICKUP B — la chute, 12 s, A REFILMER",2]</property>
+ </tractor>
+</mlt>

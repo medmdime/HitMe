@@ -4,8 +4,22 @@
     {
       "name": "hitme-dev",
       "runtimeExecutable": "bun",
-      "runtimeArgs": ["run", "dev"],
+      "runtimeArgs": [
+        "run",
+        "dev"
+      ],
       "port": 3000
+    },
+    {
+      "name": "hyperframes-meriter",
+      "runtimeExecutable": "npm",
+      "runtimeArgs": [
+        "--prefix",
+        "video/meriter-son-repas",
+        "run",
+        "dev"
+      ],
+      "port": 3002
     }
   ]
 }
