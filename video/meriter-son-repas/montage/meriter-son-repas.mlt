@@ -284,13 +284,37 @@
   <property name="shotcut:video">1</property>
   <property name="shotcut:name">V2 montage</property>
   <blank length="151"/>
-  <entry producer="chain1" in="8" out="261"/>
+  <entry producer="chain1" in="8" out="261">
+   <filter id="zoom6_151">
+    <property name="mlt_service">qtblend</property>
+    <property name="rect">-880 0 3413 1920 1</property>
+    <property name="rotation">0</property>
+    <property name="compositing">0</property>
+    <property name="shotcut:filter">affineSizePosition</property>
+   </filter>
+  </entry>
   <blank length="135"/>
   <entry producer="chain11" in="0" out="524"/>
-  <entry producer="chain3" in="22" out="88"/>
+  <entry producer="chain3" in="22" out="88">
+   <filter id="zoom6_1065">
+    <property name="mlt_service">qtblend</property>
+    <property name="rect">-880 0 3413 1920 1</property>
+    <property name="rotation">0</property>
+    <property name="compositing">0</property>
+    <property name="shotcut:filter">affineSizePosition</property>
+   </filter>
+  </entry>
   <entry producer="chain12" in="0" out="164"/>
   <blank length="1"/>
-  <entry producer="chain5" in="12" out="151"/>
+  <entry producer="chain5" in="12" out="151">
+   <filter id="zoom6_1298">
+    <property name="mlt_service">qtblend</property>
+    <property name="rect">-880 0 3413 1920 1</property>
+    <property name="rotation">0</property>
+    <property name="compositing">0</property>
+    <property name="shotcut:filter">affineSizePosition</property>
+   </filter>
+  </entry>
   <entry producer="chain13" in="0" out="764"/>
   <blank length="360"/>
  </playlist>

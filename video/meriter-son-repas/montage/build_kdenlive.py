@@ -163,6 +163,14 @@ def make_track(name, items, is_audio):
         if key is None:
             ET.SubElement(pl,"blank",{"length":str(f(tout)-sf)}); cur = f(tout); continue
         e = ET.SubElement(pl,"entry",{"producer":pid[key],"in":str(inf),"out":str(outf)})
+        if key.startswith("cam") and not key.endswith("_a"):
+            # Zoom/recadrage : ta prise 1280x720 agrandie 2,667x, decalee de -880 px,
+            # ce qui garde une fenetre de 405x720 prise a x=330. Un seul chiffre a
+            # bouger si tu veux plus serre : le 3413 (largeur), et -880 = -330 x zoom.
+            tf = ET.SubElement(e,"filter",{"id":f"zoom{tid}_{cur}"})
+            prop(tf,"mlt_service","qtblend"); prop(tf,"rect","-880 0 3413 1920 1")
+            prop(tf,"rotation","0"); prop(tf,"compositing","0")
+            prop(tf,"kdenlive_id","qtblend"); prop(tf,"kdenlive:collapsed","0")
         if vol is not None and vol != 1.0:
             fl = ET.SubElement(e,"filter",{"id":f"vol{tid}_{cur}"})
             prop(fl,"mlt_service","volume"); prop(fl,"level",f"{20*__import__('math').log10(vol):.2f}")

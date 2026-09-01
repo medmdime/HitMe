@@ -68,6 +68,11 @@ for t,name in enumerate(ORDER):
         if sf>cur: ET.SubElement(pl,"blank",{"length":str(sf-cur)}); cur=sf
         if key is None: ET.SubElement(pl,"blank",{"length":str(f(tout)-sf)}); cur=f(tout); continue
         e=ET.SubElement(pl,"entry",{"producer":pid[key],"in":str(f(tin)),"out":str(f(tout)-1)})
+        if key.startswith("cam") and not key.endswith("_a"):
+            tf=ET.SubElement(e,"filter",{"id":f"zoom{t}_{cur}"})
+            prop(tf,"mlt_service","qtblend"); prop(tf,"rect","-880 0 3413 1920 1")
+            prop(tf,"rotation","0"); prop(tf,"compositing","0")
+            prop(tf,"shotcut:filter","affineSizePosition")
         if vol not in (None,1.0):
             fl=ET.SubElement(e,"filter",{"id":f"flt{t}_{cur}"})
             prop(fl,"mlt_service","volume"); prop(fl,"level",f"{20*math.log10(vol):.2f}")

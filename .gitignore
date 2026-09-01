@@ -47,3 +47,6 @@ next-env.d.ts
 # caches générés par le serveur de preview HyperFrames
 .thumbnails/
 .waveform-cache/
+
+# clips détourés : trop lourds pour git, ils se régénèrent
+video/*/assets/detoure/
