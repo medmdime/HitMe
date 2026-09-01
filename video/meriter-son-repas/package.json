@@ -1,0 +1,16 @@
+{
+  "name": "meriter-son-repas",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "npx --yes hyperframes@0.8.21 preview --port 3002 --no-open",
+    "check": "npx --yes hyperframes@0.8.21 check",
+    "draft": "npx --yes hyperframes@0.8.21 render -o renders/00-relecture.mp4 -q draft",
+    "draft:01": "npx --yes hyperframes@0.8.21 render -c compositions/01-decoupe-tdee.html -o renders/01-decoupe-tdee.mp4 -q draft",
+    "draft:02": "npx --yes hyperframes@0.8.21 render -c compositions/02-digestion-vs-sport.html -o renders/02-digestion-vs-sport.mp4 -q draft",
+    "draft:03": "npx --yes hyperframes@0.8.21 render -c compositions/03-les-trois-leviers.html -o renders/03-les-trois-leviers.mp4 -q draft",
+    "render:01": "npx --yes hyperframes@0.8.21 render -c compositions/01-decoupe-tdee.html -o renders/01-decoupe-tdee.mp4 -q high",
+    "render:02": "npx --yes hyperframes@0.8.21 render -c compositions/02-digestion-vs-sport.html -o renders/02-digestion-vs-sport.mp4 -q high",
+    "render:03": "npx --yes hyperframes@0.8.21 render -c compositions/03-les-trois-leviers.html -o renders/03-les-trois-leviers.mp4 -q high"
+  }
+}

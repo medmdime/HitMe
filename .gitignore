@@ -40,3 +40,10 @@ next-env.d.ts
 
 # Claude Code local machine settings
 .claude/settings.local.json
+
+# clés API locales — ne jamais publier
+.env
+
+# caches générés par le serveur de preview HyperFrames
+.thumbnails/
+.waveform-cache/

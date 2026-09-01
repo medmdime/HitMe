@@ -1,0 +1,35 @@
+[Script Info]
+ScriptType: v4.00+
+PlayResX: 1080
+PlayResY: 1920
+WrapStyle: 0
+ScaledBorderAndShadow: yes
+
+[V4+ Styles]
+Format: Name, Fontname, Fontsize, PrimaryColour, OutlineColour, BackColour, Bold, Italic, BorderStyle, Outline, Shadow, Alignment, MarginL, MarginR, MarginV, Encoding
+Style: Reel,DejaVu Sans,62,&H00FFFFFF,&H00000000,&H80000000,-1,0,1,5,2,2,90,90,215,1
+
+[Events]
+Format: Layer, Start, End, Style, Name, MarginL, MarginR, MarginV, Effect, Text
+Dialogue: 0,0:00:18.31,0:00:21.75,Reel,,0,0,0,,Ce que ton corps brûle sur 24 heures ça s'appelle ton TDEE.
+Dialogue: 0,0:00:22.77,0:00:25.31,Reel,,0,0,0,,Et ça, ça se découpe en quatre. Le sport tout en haut,
+Dialogue: 0,0:00:25.49,0:00:29.11,Reel,,0,0,0,,5 %, ce que tu dépenses en bougeant à côté 15 %,
+Dialogue: 0,0:00:29.11,0:00:31.65,Reel,,0,0,0,,la digestion 10 % et le gros bloc en bas,
+Dialogue: 0,0:00:31.79,0:00:34.65,Reel,,0,0,0,,70 %, ton corps qui te maintient en vie finalement.
+Dialogue: 0,0:00:35.76,0:00:37.40,Reel,,0,0,0,,Mais regarde les deux au milieu.
+Dialogue: 0,0:00:39.05,0:00:40.59,Reel,,0,0,0,,Sur une journée entière,
+Dialogue: 0,0:00:40.77,0:00:44.05,Reel,,0,0,0,,tu brûles deux fois plus de calories à digérer ce que tu manges qu'à t'entraîner.
+Dialogue: 0,0:00:46.00,0:00:47.42,Reel,,0,0,0,,Donc je mange le gâteau,
+Dialogue: 0,0:00:47.52,0:00:49.40,Reel,,0,0,0,,je fais rien et c'est réglé. Enfin,
+Dialogue: 0,0:00:49.68,0:00:50.06,Reel,,0,0,0,,pas vraiment.
+Dialogue: 0,0:00:50.71,0:00:52.73,Reel,,0,0,0,,Parce que les 95 qui restent,
+Dialogue: 0,0:00:52.75,0:00:54.39,Reel,,0,0,0,,eux ils bougent. Trois leviers.
+Dialogue: 0,0:00:54.73,0:00:56.21,Reel,,0,0,0,,Un : bouger hors de la salle,
+Dialogue: 0,0:00:56.49,0:00:58.19,Reel,,0,0,0,,marcher après les repas, rester debout,
+Dialogue: 0,0:00:58.31,0:01:01.29,Reel,,0,0,0,,prendre des escaliers, 300 à 500 calories par jour,
+Dialogue: 0,0:01:01.79,0:01:03.67,Reel,,0,0,0,,Deux : les protéines. Ton corps brûle
+Dialogue: 0,0:01:03.75,0:01:06.99,Reel,,0,0,0,,trois à dix fois plus de calories à digérer des protéines qu'à digérer des
+Dialogue: 0,0:01:06.99,0:01:08.63,Reel,,0,0,0,,glucides ou du gras. Trois :
+Dialogue: 0,0:01:08.99,0:01:10.79,Reel,,0,0,0,,le plus gros bloc, finalement,
+Dialogue: 0,0:01:11.11,0:01:12.59,Reel,,0,0,0,,du muscle, du sommeil,
+Dialogue: 0,0:01:12.73,0:01:15.93,Reel,,0,0,0,,moins de stress, c'est long mais c'est là où il y a le plus à prendre.
