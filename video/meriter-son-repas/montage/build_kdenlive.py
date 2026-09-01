@@ -17,15 +17,16 @@ def f(s): return int(round(s * FPS))
 R = lambda p: os.path.join(PROJ, p)
 RUSH = "/run/media/elmdimegh/Storage/videos"
 T = lambda n: os.path.join(RUSH, f"2026-09-01 {n}.mp4")
+F = lambda n: os.path.join(RUSH, n)
 CLIPS = {
     "lit":     R("assets/broll/lit-A.mp4"),
-    "cam1":    T("00-26-00"),
+    "cam1":    F("video-2.mp4"),
     "cam2":    T("00-26-53"),
     "cam3":    T("00-28-18"),
-    "vx_hook": T("00-17-20"),
-    "vx_A":    T("00-26-19"),
-    "vx_B":    T("00-27-19"),
-    "vx_C":    T("00-28-39"),
+    "vx_hook": F("lit-audio-1.mp4"),
+    "vx_A":    F("01-decoupe-tdee.mp4"),
+    "vx_B":    F("02-digestion-vs-sport.mp4"),
+    "vx_C":    F("03-les-trois-leviers.mp4"),
     "anim1":   R("renders/01-decoupe-tdee.mp4"),
     "anim2":   R("renders/02-digestion-vs-sport.mp4"),
     "anim3":   R("renders/03-les-trois-leviers.mp4"),
@@ -42,49 +43,49 @@ TIMELINE = {
  ],
  "incrustation": [                              # tout le montage
    ("cam1",  5.04, 0.28, 8.75, None),
-   (None,   13.51, 0.00, 18.01, None),          # TROU — pickup A
+   (None,   13.51, 0.00, 18.01, None),
    ("anim1",18.01, 0.00, 17.50, None),
    ("cam2", 35.51, 0.73, 2.97, None),
-   ("anim2",37.75, 0.00, 8.00, None),
-   ("cam3", 45.75, 0.41, 5.07, None),
-   ("anim3",50.41, 0.00, 26.50, None),
-   (None,   76.91, 0.00, 88.91, None),          # TROU — pickup B (la chute)
+   ("anim2",37.75, 0.00, 5.50, None),
+   ("cam3", 43.25, 0.41, 5.07, None),
+   ("anim3",47.91, 0.00, 25.50, None),
+   (None,   73.41, 0.00, 85.41, None),          # TROU — pickup B (la chute)
  ],
  "A1": [                                        # voix seule
-   ("vx_hook", 1.26, 0.00, 3.10, 1.0),
-   ("cam1_a",  5.04, 0.28, 8.75, 1.0),
-   ("vx_A",   18.01, 0.04, 17.54, 1.0),
-   ("cam2_a", 35.51, 0.73, 2.97, 1.0),
-   ("vx_B",   37.98, 0.00, 7.77, 1.0),
-   ("cam3_a", 45.75, 0.41, 5.07, 1.0),
-   ("vx_C",   50.41, 0.64, 27.14, 1.0),
+   ("vx_hook", 0.31, 0.00, 3.90, 1.0),
+   ("cam1_a",   5.04, 0.28, 8.75, 1.0),
+   ("vx_A",    18.01, 0.04, 17.54, 1.0),
+   ("cam2_a",  35.51, 0.73, 2.97, 1.0),
+   ("vx_B",    38.01, 0.00, 5.24, 1.0),
+   ("cam3_a",  43.25, 0.41, 5.07, 1.0),
+   ("vx_C",    47.91, 0.04, 24.90, 1.0),
  ],
  "A2": [                                        # musique — deux mouvements
-   ("music",  5.04, 0.00, 41.46, 0.11),         # avant le turn
-   ("music", 46.20, 60.00, 103.00, 0.24),       # après le turn, plus fort
+   ("music",  5.04, 0.00, 41.96, 0.11),
+   ("music", 46.00, 60.00, 99.41, 0.24),
  ],
  "A3": [                                        # risers — 3 emplois, pas un de plus
    ("riser",  4.04, 0.00, 1.88, 0.24),
-   ("riser", 47.90, 0.00, 1.88, 0.24),
-   ("riser", 75.60, 0.00, 1.88, 0.24),
+   ("riser", 45.60, 0.00, 1.88, 0.24),
+   ("riser", 72.40, 0.00, 1.88, 0.24),
  ],
  "A4": [                                        # impacts
    ("impact",  5.04, 0.00, 1.50, 0.43),
-   ("impact", 48.90, 0.00, 1.50, 0.43),
-   ("impact", 76.91, 0.00, 1.50, 0.43),
+   ("impact", 46.62, 0.00, 1.50, 0.43),
+   ("impact", 73.41, 0.00, 1.50, 0.43),
  ],
  "A5": [                                        # whoosh — à peine audible, il lisse la coupe
    ("woosh",  4.90, 0.00, 0.90, 0.09),
-   ("woosh", 48.70, 0.00, 0.90, 0.09),
-   ("woosh", 76.75, 0.00, 0.90, 0.09),
+   ("woosh", 46.40, 0.00, 0.90, 0.09),
+   ("woosh", 73.25, 0.00, 0.90, 0.09),
  ],
 }
 TRACK_ORDER = ["A5", "A4", "A3", "A2", "A1", "main", "incrustation"]  # bas -> haut
-TOTAL = f(88.91)
+TOTAL = f(85.41)
 
 MARKERS = [(13.51, "PICKUP A — « Sauf que le sport, c'est cinq pour cent de ce que tu brules. Cinq. »"),
-           (45.75, "LE TURN — bascule musicale + riser/whoosh/impact"),
-           (76.91, "PICKUP B — la chute, 12 s, A REFILMER")]
+           (43.25, "LE TURN — bascule musicale + riser/whoosh/impact"),
+           (73.41, "PICKUP B — la chute, 12 s, A REFILMER")]
 
 def prop(parent, name, value):
     p = ET.SubElement(parent, "property", {"name": name}); p.text = str(value); return p

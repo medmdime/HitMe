@@ -39,8 +39,8 @@
     </style>
   </head>
   <body>
-    <div data-hf-id="hf-o5x7" id="b-root" data-composition-id="digestion-vs-sport" data-start="0" data-duration="8" data-width="1080" data-height="1920">
-      <div data-hf-id="hf-e0t1" id="b-scene" class="clip" data-start="0" data-duration="8" data-track-index="0">
+    <div data-hf-id="hf-o5x7" id="b-root" data-composition-id="digestion-vs-sport" data-start="0" data-duration="5.5" data-width="1080" data-height="1920">
+      <div data-hf-id="hf-e0t1" id="b-scene" class="clip" data-start="0" data-duration="5.5" data-track-index="0">
         <div data-hf-id="hf-tan6" class="stage">
           <div data-hf-id="hf-zz3s" id="b-head">
             <div data-hf-id="hf-5y0c" class="kicker">Sur une journée entière</div>
@@ -70,12 +70,12 @@
 
       <!-- SON — volumes du skill montage-capcut (§6). Le « correct » du ×2 est
            le troisième palier de l'escalade wrong/correct de la vidéo (§4). -->
-      <audio data-hf-id="hf-f0k1" id="sfx-b-01-pop" src="assets/sfx/pop.mp3" data-start="0.60" data-duration="0.14" data-track-index="20" data-volume="0.95"></audio>
-      <audio data-hf-id="hf-buom" id="sfx-b-02-pop" src="assets/sfx/pop.mp3" data-start="0.85" data-duration="0.14" data-track-index="21" data-volume="0.95"></audio>
-      <audio data-hf-id="hf-70mg" id="sfx-b-03-click" src="assets/sfx/click.mp3" data-start="1.95" data-duration="0.05" data-track-index="22" data-volume="0.95"></audio>
-      <audio data-hf-id="hf-xxap" id="sfx-b-04-click" src="assets/sfx/click.mp3" data-start="2.15" data-duration="0.05" data-track-index="23" data-volume="0.95"></audio>
-      <audio data-hf-id="hf-tmx6" id="sfx-b-05-correct" src="assets/sfx/correct.mp3" data-start="3.35" data-duration="0.55" data-track-index="24" data-volume="0.75"></audio>
-      <audio data-hf-id="hf-m7hw" id="sfx-b-06-click" src="assets/sfx/click.mp3" data-start="4.30" data-duration="0.05" data-track-index="25" data-volume="0.95"></audio>
+      <audio data-hf-id="hf-f0k1" id="sfx-b-01-pop" src="assets/sfx/pop.mp3" data-start="0.40" data-duration="0.14" data-track-index="20" data-volume="0.95"></audio>
+      <audio data-hf-id="hf-buom" id="sfx-b-02-pop" src="assets/sfx/pop.mp3" data-start="0.60" data-duration="0.14" data-track-index="21" data-volume="0.95"></audio>
+      <audio data-hf-id="hf-70mg" id="sfx-b-03-click" src="assets/sfx/click.mp3" data-start="1.30" data-duration="0.05" data-track-index="22" data-volume="0.95"></audio>
+      <audio data-hf-id="hf-xxap" id="sfx-b-04-click" src="assets/sfx/click.mp3" data-start="1.50" data-duration="0.05" data-track-index="23" data-volume="0.95"></audio>
+      <audio data-hf-id="hf-tmx6" id="sfx-b-05-correct" src="assets/sfx/correct.mp3" data-start="2.05" data-duration="0.55" data-track-index="24" data-volume="0.75"></audio>
+      <audio data-hf-id="hf-m7hw" id="sfx-b-06-click" src="assets/sfx/click.mp3" data-start="2.95" data-duration="0.05" data-track-index="25" data-volume="0.95"></audio>
     </div>
 
     <script>
@@ -96,23 +96,23 @@
         tl.to("#b-floor", { opacity: 0.35, duration: 0.3 }, 0.3);
 
         // Les deux blocs se posent sur le sol commun pendant « sur une journée entière »
-        tl.to("#b-bar-tef", { height: H_TEF, duration: 0.5, ease: "power3.out" }, 0.55);
-        tl.to("#b-bar-sport", { height: H_SPORT, duration: 0.5, ease: "power3.out" }, 0.8);
+        tl.to("#b-bar-tef", { height: H_TEF, duration: 0.5, ease: "power3.out" }, 0.35);
+        tl.to("#b-bar-sport", { height: H_SPORT, duration: 0.5, ease: "power3.out" }, 0.55);
 
-        tl.to("#b-name-tef", { opacity: 1, duration: 0.3 }, 1.9);
-        tl.to("#b-name-sport", { opacity: 1, duration: 0.3 }, 2.1);
-        tl.to("#b-num-tef", { opacity: 1, duration: 0.35 }, 1.9);
-        tl.from("#b-num-tef", { y: 18, duration: 0.35 }, 1.9);
-        tl.to("#b-num-sport", { opacity: 1, duration: 0.35 }, 2.1);
-        tl.from("#b-num-sport", { y: 18, duration: 0.35 }, 2.1);
-        tl.to("#b-unit", { opacity: 1, duration: 0.35 }, 2.5);
+        tl.to("#b-name-tef", { opacity: 1, duration: 0.3 }, 1.25);
+        tl.to("#b-name-sport", { opacity: 1, duration: 0.3 }, 1.45);
+        tl.to("#b-num-tef", { opacity: 1, duration: 0.35 }, 1.25);
+        tl.from("#b-num-tef", { y: 18, duration: 0.35 }, 1.25);
+        tl.to("#b-num-sport", { opacity: 1, duration: 0.35 }, 1.45);
+        tl.from("#b-num-sport", { y: 18, duration: 0.35 }, 1.45);
+        tl.to("#b-unit", { opacity: 1, duration: 0.35 }, 1.75);
 
         // « deux fois plus » — le ×2 tombe exactement sur ces trois mots
-        tl.fromTo("#b-x2", { opacity: 0, scale: 0.55 }, { opacity: 1, scale: 1, duration: 0.45, ease: "back.out(2.4)" }, 3.3);
+        tl.fromTo("#b-x2", { opacity: 0, scale: 0.55 }, { opacity: 1, scale: 1, duration: 0.45, ease: "back.out(2.4)" }, 2.00);
 
         // « à digérer ce que tu manges » puis « qu'à t'entraîner »
-        tl.to("#b-line", { opacity: 1, duration: 0.4 }, 4.25);
-        tl.from("#b-line", { y: 22, duration: 0.4 }, 4.25);
+        tl.to("#b-line", { opacity: 1, duration: 0.4 }, 2.90);
+        tl.from("#b-line", { y: 22, duration: 0.4 }, 2.90);
 
         window.__timelines["digestion-vs-sport"] = tl;
       })();

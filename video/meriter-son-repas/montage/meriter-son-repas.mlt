@@ -1,1110 +1,375 @@
-<?xml version="1.0" standalone="no"?>
-<mlt LC_NUMERIC="C" version="7.36.1" title="Shotcut version 26.2.16" producer="main_bin">
-  <profile description="1080x1920 30fps" width="1080" height="1920" progressive="1" sample_aspect_num="1" sample_aspect_den="1" display_aspect_num="1080" display_aspect_den="1920" frame_rate_num="30" frame_rate_den="1" colorspace="709"/>
-  <playlist id="main_bin">
-    <property name="xml_retain">1</property>
-  </playlist>
-  <producer id="black" in="00:00:00.000" out="00:01:29.467">
-    <property name="length">00:01:29.500</property>
-    <property name="eof">pause</property>
-    <property name="resource">/home/elmdimegh/Documents/hitMe/video/meriter-son-repas/0</property>
-    <property name="aspect_ratio">1</property>
-    <property name="mlt_service">color</property>
-    <property name="mlt_image_format">rgba</property>
-    <property name="set.test_audio">0</property>
-  </producer>
-  <playlist id="background">
-    <entry producer="black" in="00:00:00.000" out="00:01:29.467"/>
-  </playlist>
-  <chain id="chain17" out="00:00:02.333">
-    <property name="length">71</property>
-    <property name="eof">pause</property>
-    <property name="resource">/run/media/elmdimegh/Storage/editing_audio/air-woosh.wav</property>
-    <property name="mlt_service">avformat-novalidate</property>
-    <property name="audio_index">0</property>
-    <property name="video_index">-1</property>
-    <property name="shotcut:caption">air-woosh.wav</property>
-    <property name="meta.media.nb_streams">1</property>
-    <property name="meta.media.0.stream.type">audio</property>
-    <property name="meta.media.0.codec.sample_fmt">s32</property>
-    <property name="meta.media.0.codec.sample_rate">44100</property>
-    <property name="meta.media.0.codec.channels">2</property>
-    <property name="meta.media.0.codec.layout">stereo</property>
-    <property name="meta.media.0.codec.name">pcm_s24le</property>
-    <property name="meta.media.0.codec.long_name">PCM signed 24-bit little-endian</property>
-    <property name="meta.media.0.codec.bit_rate">2116800</property>
-    <property name="seekable">1</property>
-    <property name="astream">0</property>
-    <property name="shotcut:hash">7237076096e8772ecc9219f79dcf4315</property>
-  </chain>
-  <playlist id="playlist0">
-    <property name="shotcut:audio">1</property>
-    <property name="shotcut:name">A5 whoosh</property>
-    <blank length="00:00:04.900"/>
-    <entry producer="chain17" in="00:00:00.000" out="00:00:00.867">
-      <filter id="flt0_147">
-        <property name="window">75</property>
-        <property name="max_gain">20dB</property>
-        <property name="level">-20.92</property>
-        <property name="channel_mask">-1</property>
-        <property name="mlt_service">volume</property>
-        <property name="shotcut:filter">volumeGain</property>
-      </filter>
-    </entry>
-    <blank length="00:00:42.900"/>
-    <entry producer="chain17" in="00:00:00.000" out="00:00:00.867">
-      <filter id="flt0_1461">
-        <property name="window">75</property>
-        <property name="max_gain">20dB</property>
-        <property name="level">-20.92</property>
-        <property name="channel_mask">-1</property>
-        <property name="mlt_service">volume</property>
-        <property name="shotcut:filter">volumeGain</property>
-      </filter>
-    </entry>
-    <blank length="00:00:27.133"/>
-    <entry producer="chain17" in="00:00:00.000" out="00:00:00.867">
-      <filter id="flt0_2302">
-        <property name="window">75</property>
-        <property name="max_gain">20dB</property>
-        <property name="level">-20.92</property>
-        <property name="channel_mask">-1</property>
-        <property name="mlt_service">volume</property>
-        <property name="shotcut:filter">volumeGain</property>
-      </filter>
-    </entry>
-  </playlist>
-  <chain id="chain16" out="00:00:04.067">
-    <property name="length">123</property>
-    <property name="eof">pause</property>
-    <property name="resource">/run/media/elmdimegh/Storage/editing_audio/impacts.mp3</property>
-    <property name="mlt_service">avformat-novalidate</property>
-    <property name="audio_index">0</property>
-    <property name="video_index">-1</property>
-    <property name="shotcut:caption">impacts.mp3</property>
-    <property name="meta.media.nb_streams">1</property>
-    <property name="meta.media.0.stream.type">audio</property>
-    <property name="meta.media.0.codec.sample_fmt">fltp</property>
-    <property name="meta.media.0.codec.sample_rate">44100</property>
-    <property name="meta.media.0.codec.channels">2</property>
-    <property name="meta.media.0.codec.layout">stereo</property>
-    <property name="meta.media.0.codec.name">mp3float</property>
-    <property name="meta.media.0.codec.long_name">MP3 (MPEG audio layer 3)</property>
-    <property name="meta.media.0.codec.bit_rate">320000</property>
-    <property name="meta.attr.TSS.markup">Logic Pro 9.1.8</property>
-    <property name="meta.attr.iTunNORM.markup"> 000000AC 000000BA 0000052F 000006F3 00000224 00000224 00007A95 000073F8 0000020A 00000224</property>
-    <property name="meta.attr.iTunSMPB.markup"> 00000000 00000210 00000AE0 000000000002B110 00000000 00025C15 00000000 00000000 00000000 00000000 00000000 00000000</property>
-    <property name="seekable">1</property>
-    <property name="astream">0</property>
-    <property name="shotcut:hash">f8e24cd6ac52a7d37134591ad2f163f7</property>
-  </chain>
-  <playlist id="playlist1">
-    <property name="shotcut:audio">1</property>
-    <property name="shotcut:name">A4 impacts</property>
-    <blank length="00:00:05.033"/>
-    <entry producer="chain16" in="00:00:00.000" out="00:00:01.467">
-      <filter id="flt1_151">
-        <property name="window">75</property>
-        <property name="max_gain">20dB</property>
-        <property name="level">-7.33</property>
-        <property name="channel_mask">-1</property>
-        <property name="mlt_service">volume</property>
-        <property name="shotcut:filter">volumeGain</property>
-      </filter>
-    </entry>
-    <blank length="00:00:42.367"/>
-    <entry producer="chain16" in="00:00:00.000" out="00:00:01.467">
-      <filter id="flt1_1467">
-        <property name="window">75</property>
-        <property name="max_gain">20dB</property>
-        <property name="level">-7.33</property>
-        <property name="channel_mask">-1</property>
-        <property name="mlt_service">volume</property>
-        <property name="shotcut:filter">volumeGain</property>
-      </filter>
-    </entry>
-    <blank length="00:00:26.500"/>
-    <entry producer="chain16" in="00:00:00.000" out="00:00:01.467">
-      <filter id="flt1_2307">
-        <property name="window">75</property>
-        <property name="max_gain">20dB</property>
-        <property name="level">-7.33</property>
-        <property name="channel_mask">-1</property>
-        <property name="mlt_service">volume</property>
-        <property name="shotcut:filter">volumeGain</property>
-      </filter>
-    </entry>
-  </playlist>
-  <chain id="chain15" out="00:00:01.867">
-    <property name="length">57</property>
-    <property name="eof">pause</property>
-    <property name="resource">/run/media/elmdimegh/Storage/editing_audio/rizer-mettalic.mp3</property>
-    <property name="mlt_service">avformat-novalidate</property>
-    <property name="audio_index">0</property>
-    <property name="video_index">-1</property>
-    <property name="shotcut:caption">rizer-mettalic.mp3</property>
-    <property name="meta.media.nb_streams">1</property>
-    <property name="meta.media.0.stream.type">audio</property>
-    <property name="meta.media.0.codec.sample_fmt">fltp</property>
-    <property name="meta.media.0.codec.sample_rate">44100</property>
-    <property name="meta.media.0.codec.channels">2</property>
-    <property name="meta.media.0.codec.layout">stereo</property>
-    <property name="meta.media.0.codec.name">mp3float</property>
-    <property name="meta.media.0.codec.long_name">MP3 (MPEG audio layer 3)</property>
-    <property name="meta.media.0.codec.bit_rate">256000</property>
-    <property name="seekable">1</property>
-    <property name="astream">0</property>
-    <property name="shotcut:hash">fe6395e86da9dfadf3cf5ddf1467b89d</property>
-  </chain>
-  <playlist id="playlist2">
-    <property name="shotcut:audio">1</property>
-    <property name="shotcut:name">A3 risers</property>
-    <blank length="00:00:04.033"/>
-    <entry producer="chain15" in="00:00:00.000" out="00:00:01.833">
-      <filter id="flt2_121">
-        <property name="window">75</property>
-        <property name="max_gain">20dB</property>
-        <property name="level">-12.40</property>
-        <property name="channel_mask">-1</property>
-        <property name="mlt_service">volume</property>
-        <property name="shotcut:filter">volumeGain</property>
-      </filter>
-    </entry>
-    <blank length="00:00:42.000"/>
-    <entry producer="chain15" in="00:00:00.000" out="00:00:01.833">
-      <filter id="flt2_1437">
-        <property name="window">75</property>
-        <property name="max_gain">20dB</property>
-        <property name="level">-12.40</property>
-        <property name="channel_mask">-1</property>
-        <property name="mlt_service">volume</property>
-        <property name="shotcut:filter">volumeGain</property>
-      </filter>
-    </entry>
-    <blank length="00:00:25.833"/>
-    <entry producer="chain15" in="00:00:00.000" out="00:00:01.833">
-      <filter id="flt2_2268">
-        <property name="window">75</property>
-        <property name="max_gain">20dB</property>
-        <property name="level">-12.40</property>
-        <property name="channel_mask">-1</property>
-        <property name="mlt_service">volume</property>
-        <property name="shotcut:filter">volumeGain</property>
-      </filter>
-    </entry>
-  </playlist>
-  <chain id="chain14" out="00:01:58.833">
-    <property name="length">3566</property>
-    <property name="eof">pause</property>
-    <property name="resource">/run/media/elmdimegh/Storage/editing_audio/LoVibe. - a good man with a broken heart.mp3</property>
-    <property name="mlt_service">avformat-novalidate</property>
-    <property name="audio_index">0</property>
-    <property name="video_index">-1</property>
-    <property name="shotcut:caption">LoVibe. - a good man with a broken heart.mp3</property>
-    <property name="meta.media.nb_streams">1</property>
-    <property name="meta.media.0.stream.type">audio</property>
-    <property name="meta.media.0.codec.sample_fmt">fltp</property>
-    <property name="meta.media.0.codec.sample_rate">44100</property>
-    <property name="meta.media.0.codec.channels">2</property>
-    <property name="meta.media.0.codec.layout">stereo</property>
-    <property name="meta.media.0.codec.name">mp3float</property>
-    <property name="meta.media.0.codec.long_name">MP3 (MPEG audio layer 3)</property>
-    <property name="meta.media.0.codec.bit_rate">192000</property>
-    <property name="meta.attr.0.stream.encoder.markup">Lavc60.31</property>
-    <property name="meta.attr.major_brand.markup">dash</property>
-    <property name="meta.attr.minor_version.markup">0</property>
-    <property name="meta.attr.compatible_brands.markup">iso6mp41</property>
-    <property name="meta.attr.encoder.markup">Lavf60.16.100</property>
-    <property name="seekable">1</property>
-    <property name="astream">0</property>
-    <property name="shotcut:hash">3d9e5b8930ba259e362a2d21b3f9acac</property>
-  </chain>
-  <playlist id="playlist3">
-    <property name="shotcut:audio">1</property>
-    <property name="shotcut:name">A2 musique</property>
-    <blank length="00:00:05.033"/>
-    <entry producer="chain14" in="00:00:00.000" out="00:00:41.433">
-      <filter id="flt3_151">
-        <property name="window">75</property>
-        <property name="max_gain">20dB</property>
-        <property name="level">-19.17</property>
-        <property name="channel_mask">-1</property>
-        <property name="mlt_service">volume</property>
-        <property name="shotcut:filter">volumeGain</property>
-      </filter>
-    </entry>
-    <entry producer="chain14" in="00:01:00.000" out="00:01:42.967">
-      <filter id="flt3_1395">
-        <property name="window">75</property>
-        <property name="max_gain">20dB</property>
-        <property name="level">-12.40</property>
-        <property name="channel_mask">-1</property>
-        <property name="mlt_service">volume</property>
-        <property name="shotcut:filter">volumeGain</property>
-      </filter>
-    </entry>
-  </playlist>
-  <chain id="chain7" out="00:00:03.133">
-    <property name="length">95</property>
-    <property name="eof">pause</property>
-    <property name="resource">/run/media/elmdimegh/Storage/videos/2026-09-01 00-17-20.mp4</property>
-    <property name="mlt_service">avformat-novalidate</property>
-    <property name="audio_index">1</property>
-    <property name="video_index">-1</property>
-    <property name="shotcut:caption">2026-09-01 00-17-20.mp4</property>
-    <property name="meta.media.nb_streams">2</property>
-    <property name="meta.media.0.stream.type">video</property>
-    <property name="meta.media.0.stream.frame_rate">30</property>
-    <property name="meta.media.0.stream.sample_aspect_ratio">1</property>
-    <property name="meta.media.0.codec.width">1280</property>
-    <property name="meta.media.0.codec.height">720</property>
-    <property name="meta.media.0.codec.rotate">0</property>
-    <property name="meta.media.0.codec.pix_fmt">yuv420p</property>
-    <property name="meta.media.0.codec.sample_aspect_ratio">1</property>
-    <property name="meta.media.0.codec.colorspace">709</property>
-    <property name="meta.media.0.codec.color_trc">1</property>
-    <property name="meta.media.0.codec.name">h264</property>
-    <property name="meta.media.0.codec.long_name">H.264 / AVC / MPEG-4 AVC / MPEG-4 part 10</property>
-    <property name="meta.media.0.codec.bit_rate">5842789</property>
-    <property name="meta.attr.0.stream.creation_time.markup">2026-08-31T22:17:20.000000Z</property>
-    <property name="meta.attr.0.stream.handler_name.markup">OBS Video Handler</property>
-    <property name="meta.attr.0.stream.vendor_id.markup">[0][0][0][0]</property>
-    <property name="meta.attr.0.stream.encoder.markup">obs_x264</property>
-    <property name="meta.media.1.stream.type">audio</property>
-    <property name="meta.media.1.codec.sample_fmt">fltp</property>
-    <property name="meta.media.1.codec.sample_rate">48000</property>
-    <property name="meta.media.1.codec.channels">2</property>
-    <property name="meta.media.1.codec.layout">stereo</property>
-    <property name="meta.media.1.codec.name">aac</property>
-    <property name="meta.media.1.codec.long_name">AAC (Advanced Audio Coding)</property>
-    <property name="meta.media.1.codec.bit_rate">160327</property>
-    <property name="meta.attr.1.stream.creation_time.markup">2026-08-31T22:17:20.000000Z</property>
-    <property name="meta.attr.1.stream.handler_name.markup">OBS Audio Handler</property>
-    <property name="meta.attr.1.stream.vendor_id.markup">[0][0][0][0]</property>
-    <property name="meta.attr.major_brand.markup">iso4</property>
-    <property name="meta.attr.minor_version.markup">0</property>
-    <property name="meta.attr.compatible_brands.markup">iso4isomobs1iso2avc1mp41</property>
-    <property name="meta.attr.creation_time.markup">2026-08-31T22:17:20.000000Z</property>
-    <property name="meta.attr.encoder.markup">OBS Studio (32.2.2)</property>
-    <property name="seekable">1</property>
-    <property name="meta.media.sample_aspect_num">1</property>
-    <property name="meta.media.sample_aspect_den">1</property>
-    <property name="format">3</property>
-    <property name="astream">0</property>
-    <property name="vstream">-1</property>
-    <property name="shotcut:hash">6f7bd83f3952cc8aaa266dbaa64d9dcd</property>
-  </chain>
-  <chain id="chain2" out="00:00:14.067">
-    <property name="length">423</property>
-    <property name="eof">pause</property>
-    <property name="resource">/run/media/elmdimegh/Storage/videos/2026-09-01 00-26-00.mp4</property>
-    <property name="mlt_service">avformat-novalidate</property>
-    <property name="audio_index">1</property>
-    <property name="video_index">-1</property>
-    <property name="shotcut:caption">2026-09-01 00-26-00.mp4</property>
-    <property name="meta.media.nb_streams">2</property>
-    <property name="meta.media.0.stream.type">video</property>
-    <property name="meta.media.0.stream.frame_rate">30</property>
-    <property name="meta.media.0.stream.sample_aspect_ratio">1</property>
-    <property name="meta.media.0.codec.width">1280</property>
-    <property name="meta.media.0.codec.height">720</property>
-    <property name="meta.media.0.codec.rotate">0</property>
-    <property name="meta.media.0.codec.pix_fmt">yuv420p</property>
-    <property name="meta.media.0.codec.sample_aspect_ratio">1</property>
-    <property name="meta.media.0.codec.colorspace">709</property>
-    <property name="meta.media.0.codec.color_trc">1</property>
-    <property name="meta.media.0.codec.name">h264</property>
-    <property name="meta.media.0.codec.long_name">H.264 / AVC / MPEG-4 AVC / MPEG-4 part 10</property>
-    <property name="meta.media.0.codec.bit_rate">5957840</property>
-    <property name="meta.attr.0.stream.creation_time.markup">2026-08-31T22:26:00.000000Z</property>
-    <property name="meta.attr.0.stream.handler_name.markup">OBS Video Handler</property>
-    <property name="meta.attr.0.stream.vendor_id.markup">[0][0][0][0]</property>
-    <property name="meta.attr.0.stream.encoder.markup">obs_x264</property>
-    <property name="meta.media.1.stream.type">audio</property>
-    <property name="meta.media.1.codec.sample_fmt">fltp</property>
-    <property name="meta.media.1.codec.sample_rate">48000</property>
-    <property name="meta.media.1.codec.channels">2</property>
-    <property name="meta.media.1.codec.layout">stereo</property>
-    <property name="meta.media.1.codec.name">aac</property>
-    <property name="meta.media.1.codec.long_name">AAC (Advanced Audio Coding)</property>
-    <property name="meta.media.1.codec.bit_rate">160056</property>
-    <property name="meta.attr.1.stream.creation_time.markup">2026-08-31T22:26:00.000000Z</property>
-    <property name="meta.attr.1.stream.handler_name.markup">OBS Audio Handler</property>
-    <property name="meta.attr.1.stream.vendor_id.markup">[0][0][0][0]</property>
-    <property name="meta.attr.major_brand.markup">iso4</property>
-    <property name="meta.attr.minor_version.markup">0</property>
-    <property name="meta.attr.compatible_brands.markup">iso4isomobs1iso2avc1mp41</property>
-    <property name="meta.attr.creation_time.markup">2026-08-31T22:26:00.000000Z</property>
-    <property name="meta.attr.encoder.markup">OBS Studio (32.2.2)</property>
-    <property name="seekable">1</property>
-    <property name="meta.media.sample_aspect_num">1</property>
-    <property name="meta.media.sample_aspect_den">1</property>
-    <property name="format">3</property>
-    <property name="astream">0</property>
-    <property name="vstream">-1</property>
-    <property name="shotcut:hash">7b5c488beba8a72dbfc0fab2cbbfeffd</property>
-  </chain>
-  <chain id="chain8" out="00:00:17.400">
-    <property name="length">523</property>
-    <property name="eof">pause</property>
-    <property name="resource">/run/media/elmdimegh/Storage/videos/2026-09-01 00-26-19.mp4</property>
-    <property name="mlt_service">avformat-novalidate</property>
-    <property name="audio_index">1</property>
-    <property name="video_index">-1</property>
-    <property name="shotcut:caption">2026-09-01 00-26-19.mp4</property>
-    <property name="meta.media.nb_streams">2</property>
-    <property name="meta.media.0.stream.type">video</property>
-    <property name="meta.media.0.stream.frame_rate">30</property>
-    <property name="meta.media.0.stream.sample_aspect_ratio">1</property>
-    <property name="meta.media.0.codec.width">1280</property>
-    <property name="meta.media.0.codec.height">720</property>
-    <property name="meta.media.0.codec.rotate">0</property>
-    <property name="meta.media.0.codec.pix_fmt">yuv420p</property>
-    <property name="meta.media.0.codec.sample_aspect_ratio">1</property>
-    <property name="meta.media.0.codec.colorspace">709</property>
-    <property name="meta.media.0.codec.color_trc">1</property>
-    <property name="meta.media.0.codec.name">h264</property>
-    <property name="meta.media.0.codec.long_name">H.264 / AVC / MPEG-4 AVC / MPEG-4 part 10</property>
-    <property name="meta.media.0.codec.bit_rate">5970149</property>
-    <property name="meta.attr.0.stream.creation_time.markup">2026-08-31T22:26:19.000000Z</property>
-    <property name="meta.attr.0.stream.handler_name.markup">OBS Video Handler</property>
-    <property name="meta.attr.0.stream.vendor_id.markup">[0][0][0][0]</property>
-    <property name="meta.attr.0.stream.encoder.markup">obs_x264</property>
-    <property name="meta.media.1.stream.type">audio</property>
-    <property name="meta.media.1.codec.sample_fmt">fltp</property>
-    <property name="meta.media.1.codec.sample_rate">48000</property>
-    <property name="meta.media.1.codec.channels">2</property>
-    <property name="meta.media.1.codec.layout">stereo</property>
-    <property name="meta.media.1.codec.name">aac</property>
-    <property name="meta.media.1.codec.long_name">AAC (Advanced Audio Coding)</property>
-    <property name="meta.media.1.codec.bit_rate">160049</property>
-    <property name="meta.attr.1.stream.creation_time.markup">2026-08-31T22:26:19.000000Z</property>
-    <property name="meta.attr.1.stream.handler_name.markup">OBS Audio Handler</property>
-    <property name="meta.attr.1.stream.vendor_id.markup">[0][0][0][0]</property>
-    <property name="meta.attr.major_brand.markup">iso4</property>
-    <property name="meta.attr.minor_version.markup">0</property>
-    <property name="meta.attr.compatible_brands.markup">iso4isomobs1iso2avc1mp41</property>
-    <property name="meta.attr.creation_time.markup">2026-08-31T22:26:19.000000Z</property>
-    <property name="meta.attr.encoder.markup">OBS Studio (32.2.2)</property>
-    <property name="seekable">1</property>
-    <property name="meta.media.sample_aspect_num">1</property>
-    <property name="meta.media.sample_aspect_den">1</property>
-    <property name="format">3</property>
-    <property name="astream">0</property>
-    <property name="vstream">-1</property>
-    <property name="shotcut:hash">86f5b45a3475df551063fc9473ae48b4</property>
-  </chain>
-  <chain id="chain4" out="00:00:04.233">
-    <property name="length">128</property>
-    <property name="eof">pause</property>
-    <property name="resource">/run/media/elmdimegh/Storage/videos/2026-09-01 00-26-53.mp4</property>
-    <property name="mlt_service">avformat-novalidate</property>
-    <property name="audio_index">1</property>
-    <property name="video_index">-1</property>
-    <property name="shotcut:caption">2026-09-01 00-26-53.mp4</property>
-    <property name="meta.media.nb_streams">2</property>
-    <property name="meta.media.0.stream.type">video</property>
-    <property name="meta.media.0.stream.frame_rate">30</property>
-    <property name="meta.media.0.stream.sample_aspect_ratio">1</property>
-    <property name="meta.media.0.codec.width">1280</property>
-    <property name="meta.media.0.codec.height">720</property>
-    <property name="meta.media.0.codec.rotate">0</property>
-    <property name="meta.media.0.codec.pix_fmt">yuv420p</property>
-    <property name="meta.media.0.codec.sample_aspect_ratio">1</property>
-    <property name="meta.media.0.codec.colorspace">709</property>
-    <property name="meta.media.0.codec.color_trc">1</property>
-    <property name="meta.media.0.codec.name">h264</property>
-    <property name="meta.media.0.codec.long_name">H.264 / AVC / MPEG-4 AVC / MPEG-4 part 10</property>
-    <property name="meta.media.0.codec.bit_rate">5875506</property>
-    <property name="meta.attr.0.stream.creation_time.markup">2026-08-31T22:26:53.000000Z</property>
-    <property name="meta.attr.0.stream.handler_name.markup">OBS Video Handler</property>
-    <property name="meta.attr.0.stream.vendor_id.markup">[0][0][0][0]</property>
-    <property name="meta.attr.0.stream.encoder.markup">obs_x264</property>
-    <property name="meta.media.1.stream.type">audio</property>
-    <property name="meta.media.1.codec.sample_fmt">fltp</property>
-    <property name="meta.media.1.codec.sample_rate">48000</property>
-    <property name="meta.media.1.codec.channels">2</property>
-    <property name="meta.media.1.codec.layout">stereo</property>
-    <property name="meta.media.1.codec.name">aac</property>
-    <property name="meta.media.1.codec.long_name">AAC (Advanced Audio Coding)</property>
-    <property name="meta.media.1.codec.bit_rate">160494</property>
-    <property name="meta.attr.1.stream.creation_time.markup">2026-08-31T22:26:53.000000Z</property>
-    <property name="meta.attr.1.stream.handler_name.markup">OBS Audio Handler</property>
-    <property name="meta.attr.1.stream.vendor_id.markup">[0][0][0][0]</property>
-    <property name="meta.attr.major_brand.markup">iso4</property>
-    <property name="meta.attr.minor_version.markup">0</property>
-    <property name="meta.attr.compatible_brands.markup">iso4isomobs1iso2avc1mp41</property>
-    <property name="meta.attr.creation_time.markup">2026-08-31T22:26:53.000000Z</property>
-    <property name="meta.attr.encoder.markup">OBS Studio (32.2.2)</property>
-    <property name="seekable">1</property>
-    <property name="meta.media.sample_aspect_num">1</property>
-    <property name="meta.media.sample_aspect_den">1</property>
-    <property name="format">3</property>
-    <property name="astream">0</property>
-    <property name="vstream">-1</property>
-    <property name="shotcut:hash">cb4e530793bae7fe1a5ca5147d8da65a</property>
-  </chain>
-  <chain id="chain9" out="00:00:08.500">
-    <property name="length">256</property>
-    <property name="eof">pause</property>
-    <property name="resource">/run/media/elmdimegh/Storage/videos/2026-09-01 00-27-19.mp4</property>
-    <property name="mlt_service">avformat-novalidate</property>
-    <property name="audio_index">1</property>
-    <property name="video_index">-1</property>
-    <property name="shotcut:caption">2026-09-01 00-27-19.mp4</property>
-    <property name="meta.media.nb_streams">2</property>
-    <property name="meta.media.0.stream.type">video</property>
-    <property name="meta.media.0.stream.frame_rate">30</property>
-    <property name="meta.media.0.stream.sample_aspect_ratio">1</property>
-    <property name="meta.media.0.codec.width">1280</property>
-    <property name="meta.media.0.codec.height">720</property>
-    <property name="meta.media.0.codec.rotate">0</property>
-    <property name="meta.media.0.codec.pix_fmt">yuv420p</property>
-    <property name="meta.media.0.codec.sample_aspect_ratio">1</property>
-    <property name="meta.media.0.codec.colorspace">709</property>
-    <property name="meta.media.0.codec.color_trc">1</property>
-    <property name="meta.media.0.codec.name">h264</property>
-    <property name="meta.media.0.codec.long_name">H.264 / AVC / MPEG-4 AVC / MPEG-4 part 10</property>
-    <property name="meta.media.0.codec.bit_rate">6034650</property>
-    <property name="meta.attr.0.stream.creation_time.markup">2026-08-31T22:27:19.000000Z</property>
-    <property name="meta.attr.0.stream.handler_name.markup">OBS Video Handler</property>
-    <property name="meta.attr.0.stream.vendor_id.markup">[0][0][0][0]</property>
-    <property name="meta.attr.0.stream.encoder.markup">obs_x264</property>
-    <property name="meta.media.1.stream.type">audio</property>
-    <property name="meta.media.1.codec.sample_fmt">fltp</property>
-    <property name="meta.media.1.codec.sample_rate">48000</property>
-    <property name="meta.media.1.codec.channels">2</property>
-    <property name="meta.media.1.codec.layout">stereo</property>
-    <property name="meta.media.1.codec.name">aac</property>
-    <property name="meta.media.1.codec.long_name">AAC (Advanced Audio Coding)</property>
-    <property name="meta.media.1.codec.bit_rate">160104</property>
-    <property name="meta.attr.1.stream.creation_time.markup">2026-08-31T22:27:19.000000Z</property>
-    <property name="meta.attr.1.stream.handler_name.markup">OBS Audio Handler</property>
-    <property name="meta.attr.1.stream.vendor_id.markup">[0][0][0][0]</property>
-    <property name="meta.attr.major_brand.markup">iso4</property>
-    <property name="meta.attr.minor_version.markup">0</property>
-    <property name="meta.attr.compatible_brands.markup">iso4isomobs1iso2avc1mp41</property>
-    <property name="meta.attr.creation_time.markup">2026-08-31T22:27:19.000000Z</property>
-    <property name="meta.attr.encoder.markup">OBS Studio (32.2.2)</property>
-    <property name="seekable">1</property>
-    <property name="meta.media.sample_aspect_num">1</property>
-    <property name="meta.media.sample_aspect_den">1</property>
-    <property name="format">3</property>
-    <property name="astream">0</property>
-    <property name="vstream">-1</property>
-    <property name="shotcut:hash">9f40441a3b8f1163fbca13def911629a</property>
-  </chain>
-  <chain id="chain6" out="00:00:06.667">
-    <property name="length">201</property>
-    <property name="eof">pause</property>
-    <property name="resource">/run/media/elmdimegh/Storage/videos/2026-09-01 00-28-18.mp4</property>
-    <property name="mlt_service">avformat-novalidate</property>
-    <property name="audio_index">1</property>
-    <property name="video_index">-1</property>
-    <property name="shotcut:caption">2026-09-01 00-28-18.mp4</property>
-    <property name="meta.media.nb_streams">2</property>
-    <property name="meta.media.0.stream.type">video</property>
-    <property name="meta.media.0.stream.frame_rate">30</property>
-    <property name="meta.media.0.stream.sample_aspect_ratio">1</property>
-    <property name="meta.media.0.codec.width">1280</property>
-    <property name="meta.media.0.codec.height">720</property>
-    <property name="meta.media.0.codec.rotate">0</property>
-    <property name="meta.media.0.codec.pix_fmt">yuv420p</property>
-    <property name="meta.media.0.codec.sample_aspect_ratio">1</property>
-    <property name="meta.media.0.codec.colorspace">709</property>
-    <property name="meta.media.0.codec.color_trc">1</property>
-    <property name="meta.media.0.codec.name">h264</property>
-    <property name="meta.media.0.codec.long_name">H.264 / AVC / MPEG-4 AVC / MPEG-4 part 10</property>
-    <property name="meta.media.0.codec.bit_rate">5944023</property>
-    <property name="meta.attr.0.stream.creation_time.markup">2026-08-31T22:28:18.000000Z</property>
-    <property name="meta.attr.0.stream.handler_name.markup">OBS Video Handler</property>
-    <property name="meta.attr.0.stream.vendor_id.markup">[0][0][0][0]</property>
-    <property name="meta.attr.0.stream.encoder.markup">obs_x264</property>
-    <property name="meta.media.1.stream.type">audio</property>
-    <property name="meta.media.1.codec.sample_fmt">fltp</property>
-    <property name="meta.media.1.codec.sample_rate">48000</property>
-    <property name="meta.media.1.codec.channels">2</property>
-    <property name="meta.media.1.codec.layout">stereo</property>
-    <property name="meta.media.1.codec.name">aac</property>
-    <property name="meta.media.1.codec.long_name">AAC (Advanced Audio Coding)</property>
-    <property name="meta.media.1.codec.bit_rate">160133</property>
-    <property name="meta.attr.1.stream.creation_time.markup">2026-08-31T22:28:18.000000Z</property>
-    <property name="meta.attr.1.stream.handler_name.markup">OBS Audio Handler</property>
-    <property name="meta.attr.1.stream.vendor_id.markup">[0][0][0][0]</property>
-    <property name="meta.attr.major_brand.markup">iso4</property>
-    <property name="meta.attr.minor_version.markup">0</property>
-    <property name="meta.attr.compatible_brands.markup">iso4isomobs1iso2avc1mp41</property>
-    <property name="meta.attr.creation_time.markup">2026-08-31T22:28:18.000000Z</property>
-    <property name="meta.attr.encoder.markup">OBS Studio (32.2.2)</property>
-    <property name="seekable">1</property>
-    <property name="meta.media.sample_aspect_num">1</property>
-    <property name="meta.media.sample_aspect_den">1</property>
-    <property name="format">3</property>
-    <property name="astream">0</property>
-    <property name="vstream">-1</property>
-    <property name="shotcut:hash">54fe635627912b7a5a92f5c321d197a2</property>
-  </chain>
-  <chain id="chain10" out="00:00:27.433">
-    <property name="length">824</property>
-    <property name="eof">pause</property>
-    <property name="resource">/run/media/elmdimegh/Storage/videos/2026-09-01 00-28-39.mp4</property>
-    <property name="mlt_service">avformat-novalidate</property>
-    <property name="audio_index">1</property>
-    <property name="video_index">-1</property>
-    <property name="shotcut:caption">2026-09-01 00-28-39.mp4</property>
-    <property name="meta.media.nb_streams">2</property>
-    <property name="meta.media.0.stream.type">video</property>
-    <property name="meta.media.0.stream.frame_rate">30</property>
-    <property name="meta.media.0.stream.sample_aspect_ratio">1</property>
-    <property name="meta.media.0.codec.width">1280</property>
-    <property name="meta.media.0.codec.height">720</property>
-    <property name="meta.media.0.codec.rotate">0</property>
-    <property name="meta.media.0.codec.pix_fmt">yuv420p</property>
-    <property name="meta.media.0.codec.sample_aspect_ratio">1</property>
-    <property name="meta.media.0.codec.colorspace">709</property>
-    <property name="meta.media.0.codec.color_trc">1</property>
-    <property name="meta.media.0.codec.name">h264</property>
-    <property name="meta.media.0.codec.long_name">H.264 / AVC / MPEG-4 AVC / MPEG-4 part 10</property>
-    <property name="meta.media.0.codec.bit_rate">5978414</property>
-    <property name="meta.attr.0.stream.creation_time.markup">2026-08-31T22:28:39.000000Z</property>
-    <property name="meta.attr.0.stream.handler_name.markup">OBS Video Handler</property>
-    <property name="meta.attr.0.stream.vendor_id.markup">[0][0][0][0]</property>
-    <property name="meta.attr.0.stream.encoder.markup">obs_x264</property>
-    <property name="meta.media.1.stream.type">audio</property>
-    <property name="meta.media.1.codec.sample_fmt">fltp</property>
-    <property name="meta.media.1.codec.sample_rate">48000</property>
-    <property name="meta.media.1.codec.channels">2</property>
-    <property name="meta.media.1.codec.layout">stereo</property>
-    <property name="meta.media.1.codec.name">aac</property>
-    <property name="meta.media.1.codec.long_name">AAC (Advanced Audio Coding)</property>
-    <property name="meta.media.1.codec.bit_rate">160043</property>
-    <property name="meta.attr.1.stream.creation_time.markup">2026-08-31T22:28:39.000000Z</property>
-    <property name="meta.attr.1.stream.handler_name.markup">OBS Audio Handler</property>
-    <property name="meta.attr.1.stream.vendor_id.markup">[0][0][0][0]</property>
-    <property name="meta.attr.major_brand.markup">iso4</property>
-    <property name="meta.attr.minor_version.markup">0</property>
-    <property name="meta.attr.compatible_brands.markup">iso4isomobs1iso2avc1mp41</property>
-    <property name="meta.attr.creation_time.markup">2026-08-31T22:28:39.000000Z</property>
-    <property name="meta.attr.encoder.markup">OBS Studio (32.2.2)</property>
-    <property name="seekable">1</property>
-    <property name="meta.media.sample_aspect_num">1</property>
-    <property name="meta.media.sample_aspect_den">1</property>
-    <property name="format">3</property>
-    <property name="astream">0</property>
-    <property name="vstream">-1</property>
-    <property name="shotcut:hash">ab1f0f79e213813d2ab74db402b474d4</property>
-  </chain>
-  <playlist id="playlist4">
-    <property name="shotcut:audio">1</property>
-    <property name="shotcut:name">A1 voix</property>
-    <blank length="00:00:01.267"/>
-    <entry producer="chain7" in="00:00:00.000" out="00:00:03.067"/>
-    <blank length="00:00:00.667"/>
-    <entry producer="chain2" in="00:00:00.267" out="00:00:08.700"/>
-    <blank length="00:00:04.500"/>
-    <entry producer="chain8" in="00:00:00.033" out="00:00:17.400"/>
-    <entry producer="chain4" in="00:00:00.733" out="00:00:02.933"/>
-    <blank length="00:00:00.233"/>
-    <entry producer="chain9" in="00:00:00.000" out="00:00:07.733"/>
-    <entry producer="chain6" in="00:00:00.400" out="00:00:05.033"/>
-    <entry producer="chain10" in="00:00:00.633" out="00:00:27.100"/>
-  </playlist>
-  <chain id="chain0" out="00:00:05.033">
-    <property name="length">152</property>
-    <property name="eof">pause</property>
-    <property name="resource">/home/elmdimegh/Documents/hitMe/video/meriter-son-repas/assets/broll/lit-A.mp4</property>
-    <property name="mlt_service">avformat-novalidate</property>
-    <property name="audio_index">0</property>
-    <property name="video_index">0</property>
-    <property name="shotcut:caption">lit-A.mp4</property>
-    <property name="meta.media.nb_streams">1</property>
-    <property name="meta.media.0.stream.type">video</property>
-    <property name="meta.media.0.stream.frame_rate">24</property>
-    <property name="meta.media.0.stream.sample_aspect_ratio">0</property>
-    <property name="meta.media.0.codec.width">1080</property>
-    <property name="meta.media.0.codec.height">1920</property>
-    <property name="meta.media.0.codec.rotate">0</property>
-    <property name="meta.media.0.codec.pix_fmt">yuv420p</property>
-    <property name="meta.media.0.codec.sample_aspect_ratio">0</property>
-    <property name="meta.media.0.codec.colorspace">709</property>
-    <property name="meta.media.0.codec.name">h264</property>
-    <property name="meta.media.0.codec.long_name">H.264 / AVC / MPEG-4 AVC / MPEG-4 part 10</property>
-    <property name="meta.media.0.codec.bit_rate">10443878</property>
-    <property name="meta.attr.0.stream.handler_name.markup">VideoHandler</property>
-    <property name="meta.attr.0.stream.vendor_id.markup">[0][0][0][0]</property>
-    <property name="meta.attr.0.stream.encoder.markup">Lavc60.31.102 h264_slapi</property>
-    <property name="meta.attr.minor_version.markup">512</property>
-    <property name="meta.attr.major_brand.markup">isom</property>
-    <property name="meta.attr.compatible_brands.markup">isomiso2avc1mp41</property>
-    <property name="meta.attr.encoder.markup">Lavf60.16.100</property>
-    <property name="seekable">1</property>
-    <property name="meta.media.sample_aspect_num">1</property>
-    <property name="meta.media.sample_aspect_den">1</property>
-    <property name="format">3</property>
-    <property name="vstream">0</property>
-    <property name="meta.media.frame_rate_num">24</property>
-    <property name="meta.media.frame_rate_den">1</property>
-    <property name="meta.media.colorspace">709</property>
-    <property name="meta.media.color_trc">2</property>
-    <property name="meta.media.has_b_frames">0</property>
-    <property name="meta.media.width">1080</property>
-    <property name="meta.media.height">1920</property>
-    <property name="meta.media.aspect_ratio">1</property>
-    <property name="meta.media.color_range">mpeg</property>
-    <property name="shotcut:hash">19f0351fc78e1e8f79250703b7156c9c</property>
-  </chain>
-  <playlist id="playlist5">
-    <property name="shotcut:video">1</property>
-    <property name="shotcut:name">V1 hook</property>
-    <entry producer="chain0" in="00:00:00.000" out="00:00:05.000"/>
-  </playlist>
-  <chain id="chain1" out="00:00:14.067">
-    <property name="length">423</property>
-    <property name="eof">pause</property>
-    <property name="resource">/run/media/elmdimegh/Storage/videos/2026-09-01 00-26-00.mp4</property>
-    <property name="mlt_service">avformat-novalidate</property>
-    <property name="audio_index">-1</property>
-    <property name="video_index">0</property>
-    <property name="shotcut:caption">2026-09-01 00-26-00.mp4</property>
-    <property name="meta.media.nb_streams">2</property>
-    <property name="meta.media.0.stream.type">video</property>
-    <property name="meta.media.0.stream.frame_rate">30</property>
-    <property name="meta.media.0.stream.sample_aspect_ratio">1</property>
-    <property name="meta.media.0.codec.width">1280</property>
-    <property name="meta.media.0.codec.height">720</property>
-    <property name="meta.media.0.codec.rotate">0</property>
-    <property name="meta.media.0.codec.pix_fmt">yuv420p</property>
-    <property name="meta.media.0.codec.sample_aspect_ratio">1</property>
-    <property name="meta.media.0.codec.colorspace">709</property>
-    <property name="meta.media.0.codec.color_trc">1</property>
-    <property name="meta.media.0.codec.name">h264</property>
-    <property name="meta.media.0.codec.long_name">H.264 / AVC / MPEG-4 AVC / MPEG-4 part 10</property>
-    <property name="meta.media.0.codec.bit_rate">5957840</property>
-    <property name="meta.attr.0.stream.creation_time.markup">2026-08-31T22:26:00.000000Z</property>
-    <property name="meta.attr.0.stream.handler_name.markup">OBS Video Handler</property>
-    <property name="meta.attr.0.stream.vendor_id.markup">[0][0][0][0]</property>
-    <property name="meta.attr.0.stream.encoder.markup">obs_x264</property>
-    <property name="meta.media.1.stream.type">audio</property>
-    <property name="meta.media.1.codec.sample_fmt">fltp</property>
-    <property name="meta.media.1.codec.sample_rate">48000</property>
-    <property name="meta.media.1.codec.channels">2</property>
-    <property name="meta.media.1.codec.layout">stereo</property>
-    <property name="meta.media.1.codec.name">aac</property>
-    <property name="meta.media.1.codec.long_name">AAC (Advanced Audio Coding)</property>
-    <property name="meta.media.1.codec.bit_rate">160056</property>
-    <property name="meta.attr.1.stream.creation_time.markup">2026-08-31T22:26:00.000000Z</property>
-    <property name="meta.attr.1.stream.handler_name.markup">OBS Audio Handler</property>
-    <property name="meta.attr.1.stream.vendor_id.markup">[0][0][0][0]</property>
-    <property name="meta.attr.major_brand.markup">iso4</property>
-    <property name="meta.attr.minor_version.markup">0</property>
-    <property name="meta.attr.compatible_brands.markup">iso4isomobs1iso2avc1mp41</property>
-    <property name="meta.attr.creation_time.markup">2026-08-31T22:26:00.000000Z</property>
-    <property name="meta.attr.encoder.markup">OBS Studio (32.2.2)</property>
-    <property name="seekable">1</property>
-    <property name="meta.media.sample_aspect_num">1</property>
-    <property name="meta.media.sample_aspect_den">1</property>
-    <property name="format">3</property>
-    <property name="vstream">0</property>
-    <property name="meta.media.frame_rate_num">30</property>
-    <property name="meta.media.frame_rate_den">1</property>
-    <property name="meta.media.colorspace">709</property>
-    <property name="meta.media.color_trc">1</property>
-    <property name="meta.media.has_b_frames">2</property>
-    <property name="meta.media.width">1280</property>
-    <property name="meta.media.height">720</property>
-    <property name="meta.media.aspect_ratio">1</property>
-    <property name="meta.media.color_range">mpeg</property>
-    <property name="astream">-1</property>
-    <property name="shotcut:hash">7b5c488beba8a72dbfc0fab2cbbfeffd</property>
-  </chain>
-  <chain id="chain11" out="00:00:17.500">
-    <property name="length">526</property>
-    <property name="eof">pause</property>
-    <property name="resource">/home/elmdimegh/Documents/hitMe/video/meriter-son-repas/renders/01-decoupe-tdee.mp4</property>
-    <property name="mlt_service">avformat-novalidate</property>
-    <property name="audio_index">1</property>
-    <property name="video_index">0</property>
-    <property name="shotcut:caption">01-decoupe-tdee.mp4</property>
-    <property name="meta.media.nb_streams">2</property>
-    <property name="meta.media.0.stream.type">video</property>
-    <property name="meta.media.0.stream.frame_rate">30</property>
-    <property name="meta.media.0.stream.sample_aspect_ratio">1</property>
-    <property name="meta.media.0.codec.width">1080</property>
-    <property name="meta.media.0.codec.height">1920</property>
-    <property name="meta.media.0.codec.rotate">0</property>
-    <property name="meta.media.0.codec.pix_fmt">yuv420p</property>
-    <property name="meta.media.0.codec.sample_aspect_ratio">1</property>
-    <property name="meta.media.0.codec.colorspace">709</property>
-    <property name="meta.media.0.codec.color_trc">1</property>
-    <property name="meta.media.0.codec.name">h264</property>
-    <property name="meta.media.0.codec.long_name">H.264 / AVC / MPEG-4 AVC / MPEG-4 part 10</property>
-    <property name="meta.media.0.codec.bit_rate">277278</property>
-    <property name="meta.attr.0.stream.handler_name.markup">VideoHandler</property>
-    <property name="meta.attr.0.stream.vendor_id.markup">[0][0][0][0]</property>
-    <property name="meta.attr.0.stream.encoder.markup">Lavc62.11.100 libx264</property>
-    <property name="meta.media.1.stream.type">audio</property>
-    <property name="meta.media.1.codec.sample_fmt">fltp</property>
-    <property name="meta.media.1.codec.sample_rate">48000</property>
-    <property name="meta.media.1.codec.channels">2</property>
-    <property name="meta.media.1.codec.layout">stereo</property>
-    <property name="meta.media.1.codec.name">aac</property>
-    <property name="meta.media.1.codec.long_name">AAC (Advanced Audio Coding)</property>
-    <property name="meta.media.1.codec.bit_rate">37978</property>
-    <property name="meta.attr.1.stream.handler_name.markup">SoundHandler</property>
-    <property name="meta.attr.1.stream.vendor_id.markup">[0][0][0][0]</property>
-    <property name="meta.attr.minor_version.markup">512</property>
-    <property name="meta.attr.major_brand.markup">isom</property>
-    <property name="meta.attr.compatible_brands.markup">isomiso2avc1mp41</property>
-    <property name="meta.attr.hyperframes_version.markup">0.0.0-dev</property>
-    <property name="meta.attr.hyperframes_renderer.markup">hyperframes</property>
-    <property name="meta.attr.encoder.markup">Lavf62.3.100</property>
-    <property name="seekable">1</property>
-    <property name="meta.media.sample_aspect_num">1</property>
-    <property name="meta.media.sample_aspect_den">1</property>
-    <property name="format">3</property>
-    <property name="vstream">0</property>
-    <property name="meta.media.frame_rate_num">30</property>
-    <property name="meta.media.frame_rate_den">1</property>
-    <property name="meta.media.colorspace">709</property>
-    <property name="meta.media.color_trc">1</property>
-    <property name="meta.media.has_b_frames">0</property>
-    <property name="meta.media.width">1080</property>
-    <property name="meta.media.height">1920</property>
-    <property name="meta.media.aspect_ratio">1</property>
-    <property name="meta.media.color_range">mpeg</property>
-    <property name="astream">0</property>
-    <property name="shotcut:hash">ede5aefe160feccd070920228803f96f</property>
-  </chain>
-  <chain id="chain3" out="00:00:04.233">
-    <property name="length">128</property>
-    <property name="eof">pause</property>
-    <property name="resource">/run/media/elmdimegh/Storage/videos/2026-09-01 00-26-53.mp4</property>
-    <property name="mlt_service">avformat-novalidate</property>
-    <property name="audio_index">-1</property>
-    <property name="video_index">0</property>
-    <property name="shotcut:caption">2026-09-01 00-26-53.mp4</property>
-    <property name="meta.media.nb_streams">2</property>
-    <property name="meta.media.0.stream.type">video</property>
-    <property name="meta.media.0.stream.frame_rate">30</property>
-    <property name="meta.media.0.stream.sample_aspect_ratio">1</property>
-    <property name="meta.media.0.codec.width">1280</property>
-    <property name="meta.media.0.codec.height">720</property>
-    <property name="meta.media.0.codec.rotate">0</property>
-    <property name="meta.media.0.codec.pix_fmt">yuv420p</property>
-    <property name="meta.media.0.codec.sample_aspect_ratio">1</property>
-    <property name="meta.media.0.codec.colorspace">709</property>
-    <property name="meta.media.0.codec.color_trc">1</property>
-    <property name="meta.media.0.codec.name">h264</property>
-    <property name="meta.media.0.codec.long_name">H.264 / AVC / MPEG-4 AVC / MPEG-4 part 10</property>
-    <property name="meta.media.0.codec.bit_rate">5875506</property>
-    <property name="meta.attr.0.stream.creation_time.markup">2026-08-31T22:26:53.000000Z</property>
-    <property name="meta.attr.0.stream.handler_name.markup">OBS Video Handler</property>
-    <property name="meta.attr.0.stream.vendor_id.markup">[0][0][0][0]</property>
-    <property name="meta.attr.0.stream.encoder.markup">obs_x264</property>
-    <property name="meta.media.1.stream.type">audio</property>
-    <property name="meta.media.1.codec.sample_fmt">fltp</property>
-    <property name="meta.media.1.codec.sample_rate">48000</property>
-    <property name="meta.media.1.codec.channels">2</property>
-    <property name="meta.media.1.codec.layout">stereo</property>
-    <property name="meta.media.1.codec.name">aac</property>
-    <property name="meta.media.1.codec.long_name">AAC (Advanced Audio Coding)</property>
-    <property name="meta.media.1.codec.bit_rate">160494</property>
-    <property name="meta.attr.1.stream.creation_time.markup">2026-08-31T22:26:53.000000Z</property>
-    <property name="meta.attr.1.stream.handler_name.markup">OBS Audio Handler</property>
-    <property name="meta.attr.1.stream.vendor_id.markup">[0][0][0][0]</property>
-    <property name="meta.attr.major_brand.markup">iso4</property>
-    <property name="meta.attr.minor_version.markup">0</property>
-    <property name="meta.attr.compatible_brands.markup">iso4isomobs1iso2avc1mp41</property>
-    <property name="meta.attr.creation_time.markup">2026-08-31T22:26:53.000000Z</property>
-    <property name="meta.attr.encoder.markup">OBS Studio (32.2.2)</property>
-    <property name="seekable">1</property>
-    <property name="meta.media.sample_aspect_num">1</property>
-    <property name="meta.media.sample_aspect_den">1</property>
-    <property name="format">3</property>
-    <property name="vstream">0</property>
-    <property name="meta.media.frame_rate_num">30</property>
-    <property name="meta.media.frame_rate_den">1</property>
-    <property name="meta.media.colorspace">709</property>
-    <property name="meta.media.color_trc">1</property>
-    <property name="meta.media.has_b_frames">2</property>
-    <property name="meta.media.width">1280</property>
-    <property name="meta.media.height">720</property>
-    <property name="meta.media.aspect_ratio">1</property>
-    <property name="meta.media.color_range">mpeg</property>
-    <property name="astream">-1</property>
-    <property name="shotcut:hash">cb4e530793bae7fe1a5ca5147d8da65a</property>
-  </chain>
-  <chain id="chain12" out="00:00:08.000">
-    <property name="length">241</property>
-    <property name="eof">pause</property>
-    <property name="resource">/home/elmdimegh/Documents/hitMe/video/meriter-son-repas/renders/02-digestion-vs-sport.mp4</property>
-    <property name="mlt_service">avformat-novalidate</property>
-    <property name="audio_index">1</property>
-    <property name="video_index">0</property>
-    <property name="shotcut:caption">02-digestion-vs-sport.mp4</property>
-    <property name="meta.media.nb_streams">2</property>
-    <property name="meta.media.0.stream.type">video</property>
-    <property name="meta.media.0.stream.frame_rate">30</property>
-    <property name="meta.media.0.stream.sample_aspect_ratio">1</property>
-    <property name="meta.media.0.codec.width">1080</property>
-    <property name="meta.media.0.codec.height">1920</property>
-    <property name="meta.media.0.codec.rotate">0</property>
-    <property name="meta.media.0.codec.pix_fmt">yuv420p</property>
-    <property name="meta.media.0.codec.sample_aspect_ratio">1</property>
-    <property name="meta.media.0.codec.colorspace">709</property>
-    <property name="meta.media.0.codec.color_trc">1</property>
-    <property name="meta.media.0.codec.name">h264</property>
-    <property name="meta.media.0.codec.long_name">H.264 / AVC / MPEG-4 AVC / MPEG-4 part 10</property>
-    <property name="meta.media.0.codec.bit_rate">422253</property>
-    <property name="meta.attr.0.stream.handler_name.markup">VideoHandler</property>
-    <property name="meta.attr.0.stream.vendor_id.markup">[0][0][0][0]</property>
-    <property name="meta.attr.0.stream.encoder.markup">Lavc62.11.100 libx264</property>
-    <property name="meta.media.1.stream.type">audio</property>
-    <property name="meta.media.1.codec.sample_fmt">fltp</property>
-    <property name="meta.media.1.codec.sample_rate">48000</property>
-    <property name="meta.media.1.codec.channels">2</property>
-    <property name="meta.media.1.codec.layout">stereo</property>
-    <property name="meta.media.1.codec.name">aac</property>
-    <property name="meta.media.1.codec.long_name">AAC (Advanced Audio Coding)</property>
-    <property name="meta.media.1.codec.bit_rate">28794</property>
-    <property name="meta.attr.1.stream.handler_name.markup">SoundHandler</property>
-    <property name="meta.attr.1.stream.vendor_id.markup">[0][0][0][0]</property>
-    <property name="meta.attr.minor_version.markup">512</property>
-    <property name="meta.attr.major_brand.markup">isom</property>
-    <property name="meta.attr.compatible_brands.markup">isomiso2avc1mp41</property>
-    <property name="meta.attr.hyperframes_version.markup">0.0.0-dev</property>
-    <property name="meta.attr.hyperframes_renderer.markup">hyperframes</property>
-    <property name="meta.attr.encoder.markup">Lavf62.3.100</property>
-    <property name="seekable">1</property>
-    <property name="meta.media.sample_aspect_num">1</property>
-    <property name="meta.media.sample_aspect_den">1</property>
-    <property name="format">3</property>
-    <property name="vstream">0</property>
-    <property name="meta.media.frame_rate_num">30</property>
-    <property name="meta.media.frame_rate_den">1</property>
-    <property name="meta.media.colorspace">709</property>
-    <property name="meta.media.color_trc">1</property>
-    <property name="meta.media.has_b_frames">0</property>
-    <property name="meta.media.width">1080</property>
-    <property name="meta.media.height">1920</property>
-    <property name="meta.media.aspect_ratio">1</property>
-    <property name="meta.media.color_range">mpeg</property>
-    <property name="astream">0</property>
-    <property name="shotcut:hash">1d77510bca0253df26e5a3ca3d743075</property>
-  </chain>
-  <chain id="chain5" out="00:00:06.667">
-    <property name="length">201</property>
-    <property name="eof">pause</property>
-    <property name="resource">/run/media/elmdimegh/Storage/videos/2026-09-01 00-28-18.mp4</property>
-    <property name="mlt_service">avformat-novalidate</property>
-    <property name="audio_index">-1</property>
-    <property name="video_index">0</property>
-    <property name="shotcut:caption">2026-09-01 00-28-18.mp4</property>
-    <property name="meta.media.nb_streams">2</property>
-    <property name="meta.media.0.stream.type">video</property>
-    <property name="meta.media.0.stream.frame_rate">30</property>
-    <property name="meta.media.0.stream.sample_aspect_ratio">1</property>
-    <property name="meta.media.0.codec.width">1280</property>
-    <property name="meta.media.0.codec.height">720</property>
-    <property name="meta.media.0.codec.rotate">0</property>
-    <property name="meta.media.0.codec.pix_fmt">yuv420p</property>
-    <property name="meta.media.0.codec.sample_aspect_ratio">1</property>
-    <property name="meta.media.0.codec.colorspace">709</property>
-    <property name="meta.media.0.codec.color_trc">1</property>
-    <property name="meta.media.0.codec.name">h264</property>
-    <property name="meta.media.0.codec.long_name">H.264 / AVC / MPEG-4 AVC / MPEG-4 part 10</property>
-    <property name="meta.media.0.codec.bit_rate">5944023</property>
-    <property name="meta.attr.0.stream.creation_time.markup">2026-08-31T22:28:18.000000Z</property>
-    <property name="meta.attr.0.stream.handler_name.markup">OBS Video Handler</property>
-    <property name="meta.attr.0.stream.vendor_id.markup">[0][0][0][0]</property>
-    <property name="meta.attr.0.stream.encoder.markup">obs_x264</property>
-    <property name="meta.media.1.stream.type">audio</property>
-    <property name="meta.media.1.codec.sample_fmt">fltp</property>
-    <property name="meta.media.1.codec.sample_rate">48000</property>
-    <property name="meta.media.1.codec.channels">2</property>
-    <property name="meta.media.1.codec.layout">stereo</property>
-    <property name="meta.media.1.codec.name">aac</property>
-    <property name="meta.media.1.codec.long_name">AAC (Advanced Audio Coding)</property>
-    <property name="meta.media.1.codec.bit_rate">160133</property>
-    <property name="meta.attr.1.stream.creation_time.markup">2026-08-31T22:28:18.000000Z</property>
-    <property name="meta.attr.1.stream.handler_name.markup">OBS Audio Handler</property>
-    <property name="meta.attr.1.stream.vendor_id.markup">[0][0][0][0]</property>
-    <property name="meta.attr.major_brand.markup">iso4</property>
-    <property name="meta.attr.minor_version.markup">0</property>
-    <property name="meta.attr.compatible_brands.markup">iso4isomobs1iso2avc1mp41</property>
-    <property name="meta.attr.creation_time.markup">2026-08-31T22:28:18.000000Z</property>
-    <property name="meta.attr.encoder.markup">OBS Studio (32.2.2)</property>
-    <property name="seekable">1</property>
-    <property name="meta.media.sample_aspect_num">1</property>
-    <property name="meta.media.sample_aspect_den">1</property>
-    <property name="format">3</property>
-    <property name="vstream">0</property>
-    <property name="meta.media.frame_rate_num">30</property>
-    <property name="meta.media.frame_rate_den">1</property>
-    <property name="meta.media.colorspace">709</property>
-    <property name="meta.media.color_trc">1</property>
-    <property name="meta.media.has_b_frames">2</property>
-    <property name="meta.media.width">1280</property>
-    <property name="meta.media.height">720</property>
-    <property name="meta.media.aspect_ratio">1</property>
-    <property name="meta.media.color_range">mpeg</property>
-    <property name="astream">-1</property>
-    <property name="shotcut:hash">54fe635627912b7a5a92f5c321d197a2</property>
-  </chain>
-  <chain id="chain13" out="00:00:26.500">
-    <property name="length">796</property>
-    <property name="eof">pause</property>
-    <property name="resource">/home/elmdimegh/Documents/hitMe/video/meriter-son-repas/renders/03-les-trois-leviers.mp4</property>
-    <property name="mlt_service">avformat-novalidate</property>
-    <property name="audio_index">1</property>
-    <property name="video_index">0</property>
-    <property name="shotcut:caption">03-les-trois-leviers.mp4</property>
-    <property name="meta.media.nb_streams">2</property>
-    <property name="meta.media.0.stream.type">video</property>
-    <property name="meta.media.0.stream.frame_rate">30</property>
-    <property name="meta.media.0.stream.sample_aspect_ratio">1</property>
-    <property name="meta.media.0.codec.width">1080</property>
-    <property name="meta.media.0.codec.height">1920</property>
-    <property name="meta.media.0.codec.rotate">0</property>
-    <property name="meta.media.0.codec.pix_fmt">yuv420p</property>
-    <property name="meta.media.0.codec.sample_aspect_ratio">1</property>
-    <property name="meta.media.0.codec.colorspace">709</property>
-    <property name="meta.media.0.codec.color_trc">1</property>
-    <property name="meta.media.0.codec.name">h264</property>
-    <property name="meta.media.0.codec.long_name">H.264 / AVC / MPEG-4 AVC / MPEG-4 part 10</property>
-    <property name="meta.media.0.codec.bit_rate">373387</property>
-    <property name="meta.attr.0.stream.handler_name.markup">VideoHandler</property>
-    <property name="meta.attr.0.stream.vendor_id.markup">[0][0][0][0]</property>
-    <property name="meta.attr.0.stream.encoder.markup">Lavc62.11.100 libx264</property>
-    <property name="meta.media.1.stream.type">audio</property>
-    <property name="meta.media.1.codec.sample_fmt">fltp</property>
-    <property name="meta.media.1.codec.sample_rate">48000</property>
-    <property name="meta.media.1.codec.channels">2</property>
-    <property name="meta.media.1.codec.layout">stereo</property>
-    <property name="meta.media.1.codec.name">aac</property>
-    <property name="meta.media.1.codec.long_name">AAC (Advanced Audio Coding)</property>
-    <property name="meta.media.1.codec.bit_rate">34914</property>
-    <property name="meta.attr.1.stream.handler_name.markup">SoundHandler</property>
-    <property name="meta.attr.1.stream.vendor_id.markup">[0][0][0][0]</property>
-    <property name="meta.attr.minor_version.markup">512</property>
-    <property name="meta.attr.major_brand.markup">isom</property>
-    <property name="meta.attr.compatible_brands.markup">isomiso2avc1mp41</property>
-    <property name="meta.attr.hyperframes_version.markup">0.0.0-dev</property>
-    <property name="meta.attr.hyperframes_renderer.markup">hyperframes</property>
-    <property name="meta.attr.encoder.markup">Lavf62.3.100</property>
-    <property name="seekable">1</property>
-    <property name="meta.media.sample_aspect_num">1</property>
-    <property name="meta.media.sample_aspect_den">1</property>
-    <property name="format">3</property>
-    <property name="vstream">0</property>
-    <property name="meta.media.frame_rate_num">30</property>
-    <property name="meta.media.frame_rate_den">1</property>
-    <property name="meta.media.colorspace">709</property>
-    <property name="meta.media.color_trc">1</property>
-    <property name="meta.media.has_b_frames">0</property>
-    <property name="meta.media.width">1080</property>
-    <property name="meta.media.height">1920</property>
-    <property name="meta.media.aspect_ratio">1</property>
-    <property name="meta.media.color_range">mpeg</property>
-    <property name="astream">0</property>
-    <property name="shotcut:hash">63943cb0dae4a3316a3248e7aef7c3e9</property>
-  </chain>
-  <playlist id="playlist6">
-    <property name="shotcut:video">1</property>
-    <property name="shotcut:name">V2 montage</property>
-    <blank length="00:00:05.033"/>
-    <entry producer="chain1" in="00:00:00.267" out="00:00:08.700"/>
-    <blank length="00:00:04.500"/>
-    <entry producer="chain11" in="00:00:00.000" out="00:00:17.467"/>
-    <entry producer="chain3" in="00:00:00.733" out="00:00:02.933"/>
-    <entry producer="chain12" in="00:00:00.000" out="00:00:07.967"/>
-    <entry producer="chain5" in="00:00:00.400" out="00:00:05.033"/>
-    <entry producer="chain13" in="00:00:00.000" out="00:00:26.467"/>
-  </playlist>
-  <tractor id="tractor0" title="Shotcut version 26.2.16" in="00:00:00.000" out="00:01:29.467">
-    <property name="shotcut">1</property>
-    <property name="shotcut:projectAudioChannels">2</property>
-    <property name="shotcut:projectFolder">1</property>
-    <property name="shotcut:skipConvert">0</property>
-    <property name="shotcut:processingMode">Native8Cpu</property>
-    <track producer="background"/>
-    <track producer="playlist0" hide="video"/>
-    <track producer="playlist1" hide="video"/>
-    <track producer="playlist2" hide="video"/>
-    <track producer="playlist3" hide="video"/>
-    <track producer="playlist4" hide="video"/>
-    <track producer="playlist5"/>
-    <track producer="playlist6"/>
-    <transition id="tmix1">
-      <property name="a_track">0</property>
-      <property name="b_track">1</property>
-      <property name="mlt_service">mix</property>
-      <property name="always_active">1</property>
-      <property name="sum">1</property>
-    </transition>
-    <transition id="tmix2">
-      <property name="a_track">0</property>
-      <property name="b_track">2</property>
-      <property name="mlt_service">mix</property>
-      <property name="always_active">1</property>
-      <property name="sum">1</property>
-    </transition>
-    <transition id="tmix3">
-      <property name="a_track">0</property>
-      <property name="b_track">3</property>
-      <property name="mlt_service">mix</property>
-      <property name="always_active">1</property>
-      <property name="sum">1</property>
-    </transition>
-    <transition id="tmix4">
-      <property name="a_track">0</property>
-      <property name="b_track">4</property>
-      <property name="mlt_service">mix</property>
-      <property name="always_active">1</property>
-      <property name="sum">1</property>
-    </transition>
-    <transition id="tmix5">
-      <property name="a_track">0</property>
-      <property name="b_track">5</property>
-      <property name="mlt_service">mix</property>
-      <property name="always_active">1</property>
-      <property name="sum">1</property>
-    </transition>
-    <transition id="tmix6">
-      <property name="a_track">0</property>
-      <property name="b_track">6</property>
-      <property name="mlt_service">mix</property>
-      <property name="always_active">1</property>
-      <property name="sum">1</property>
-    </transition>
-    <transition id="tblend6">
-      <property name="a_track">0</property>
-      <property name="b_track">6</property>
-      <property name="compositing">0</property>
-      <property name="distort">0</property>
-      <property name="rotate_center">0</property>
-      <property name="mlt_service">qtblend</property>
-      <property name="version">0.1</property>
-      <property name="always_active">1</property>
-      <property name="disable">1</property>
-    </transition>
-    <transition id="tmix7">
-      <property name="a_track">0</property>
-      <property name="b_track">7</property>
-      <property name="mlt_service">mix</property>
-      <property name="always_active">1</property>
-      <property name="sum">1</property>
-    </transition>
-    <transition id="tblend7">
-      <property name="a_track">0</property>
-      <property name="b_track">7</property>
-      <property name="compositing">0</property>
-      <property name="distort">0</property>
-      <property name="rotate_center">0</property>
-      <property name="mlt_service">qtblend</property>
-      <property name="version">0.1</property>
-      <property name="always_active">1</property>
-      <property name="disable">0</property>
-    </transition>
-  </tractor>
+<?xml version="1.0" ?>
+<mlt LC_NUMERIC="C" version="7.36.1" title="Shotcut version 26.1" producer="background" root="/home/elmdimegh/Documents/hitMe/video/meriter-son-repas">
+ <profile description="1080x1920 30fps" width="1080" height="1920" progressive="1" sample_aspect_num="1" sample_aspect_den="1" display_aspect_num="1080" display_aspect_den="1920" frame_rate_num="30" frame_rate_den="1" colorspace="709"/>
+ <producer id="black" in="00:00:00.000" out="2562">
+  <property name="length">2563</property>
+  <property name="eof">pause</property>
+  <property name="resource">0</property>
+  <property name="aspect_ratio">1</property>
+  <property name="mlt_service">color</property>
+  <property name="mlt_image_format">rgba</property>
+ </producer>
+ <playlist id="background">
+  <entry producer="black" in="0" out="2562"/>
+ </playlist>
+ <chain id="chain0" out="151">
+  <property name="length">152</property>
+  <property name="resource">/home/elmdimegh/Documents/hitMe/video/meriter-son-repas/assets/broll/lit-A.mp4</property>
+  <property name="mlt_service">avformat-novalidate</property>
+  <property name="audio_index">0</property>
+  <property name="video_index">0</property>
+  <property name="shotcut:caption">lit-A.mp4</property>
+ </chain>
+ <chain id="chain1" out="422">
+  <property name="length">423</property>
+  <property name="resource">/run/media/elmdimegh/Storage/videos/video-2.mp4</property>
+  <property name="mlt_service">avformat-novalidate</property>
+  <property name="audio_index">-1</property>
+  <property name="video_index">0</property>
+  <property name="shotcut:caption">video-2.mp4</property>
+ </chain>
+ <chain id="chain2" out="422">
+  <property name="length">423</property>
+  <property name="resource">/run/media/elmdimegh/Storage/videos/video-2.mp4</property>
+  <property name="mlt_service">avformat-novalidate</property>
+  <property name="audio_index">0</property>
+  <property name="video_index">-1</property>
+  <property name="shotcut:caption">video-2.mp4</property>
+ </chain>
+ <chain id="chain3" out="127">
+  <property name="length">128</property>
+  <property name="resource">/run/media/elmdimegh/Storage/videos/2026-09-01 00-26-53.mp4</property>
+  <property name="mlt_service">avformat-novalidate</property>
+  <property name="audio_index">-1</property>
+  <property name="video_index">0</property>
+  <property name="shotcut:caption">2026-09-01 00-26-53.mp4</property>
+ </chain>
+ <chain id="chain4" out="127">
+  <property name="length">128</property>
+  <property name="resource">/run/media/elmdimegh/Storage/videos/2026-09-01 00-26-53.mp4</property>
+  <property name="mlt_service">avformat-novalidate</property>
+  <property name="audio_index">0</property>
+  <property name="video_index">-1</property>
+  <property name="shotcut:caption">2026-09-01 00-26-53.mp4</property>
+ </chain>
+ <chain id="chain5" out="200">
+  <property name="length">201</property>
+  <property name="resource">/run/media/elmdimegh/Storage/videos/2026-09-01 00-28-18.mp4</property>
+  <property name="mlt_service">avformat-novalidate</property>
+  <property name="audio_index">-1</property>
+  <property name="video_index">0</property>
+  <property name="shotcut:caption">2026-09-01 00-28-18.mp4</property>
+ </chain>
+ <chain id="chain6" out="200">
+  <property name="length">201</property>
+  <property name="resource">/run/media/elmdimegh/Storage/videos/2026-09-01 00-28-18.mp4</property>
+  <property name="mlt_service">avformat-novalidate</property>
+  <property name="audio_index">0</property>
+  <property name="video_index">-1</property>
+  <property name="shotcut:caption">2026-09-01 00-28-18.mp4</property>
+ </chain>
+ <chain id="chain7" out="117">
+  <property name="length">118</property>
+  <property name="resource">/run/media/elmdimegh/Storage/videos/lit-audio-1.mp4</property>
+  <property name="mlt_service">avformat-novalidate</property>
+  <property name="audio_index">0</property>
+  <property name="video_index">-1</property>
+  <property name="shotcut:caption">lit-audio-1.mp4</property>
+ </chain>
+ <chain id="chain8" out="522">
+  <property name="length">523</property>
+  <property name="resource">/run/media/elmdimegh/Storage/videos/01-decoupe-tdee.mp4</property>
+  <property name="mlt_service">avformat-novalidate</property>
+  <property name="audio_index">0</property>
+  <property name="video_index">-1</property>
+  <property name="shotcut:caption">01-decoupe-tdee.mp4</property>
+ </chain>
+ <chain id="chain9" out="180">
+  <property name="length">181</property>
+  <property name="resource">/run/media/elmdimegh/Storage/videos/02-digestion-vs-sport.mp4</property>
+  <property name="mlt_service">avformat-novalidate</property>
+  <property name="audio_index">0</property>
+  <property name="video_index">-1</property>
+  <property name="shotcut:caption">02-digestion-vs-sport.mp4</property>
+ </chain>
+ <chain id="chain10" out="762">
+  <property name="length">763</property>
+  <property name="resource">/run/media/elmdimegh/Storage/videos/03-les-trois-leviers.mp4</property>
+  <property name="mlt_service">avformat-novalidate</property>
+  <property name="audio_index">0</property>
+  <property name="video_index">-1</property>
+  <property name="shotcut:caption">03-les-trois-leviers.mp4</property>
+ </chain>
+ <chain id="chain11" out="525">
+  <property name="length">526</property>
+  <property name="resource">/home/elmdimegh/Documents/hitMe/video/meriter-son-repas/renders/01-decoupe-tdee.mp4</property>
+  <property name="mlt_service">avformat-novalidate</property>
+  <property name="audio_index">0</property>
+  <property name="video_index">0</property>
+  <property name="shotcut:caption">01-decoupe-tdee.mp4</property>
+ </chain>
+ <chain id="chain12" out="165">
+  <property name="length">166</property>
+  <property name="resource">/home/elmdimegh/Documents/hitMe/video/meriter-son-repas/renders/02-digestion-vs-sport.mp4</property>
+  <property name="mlt_service">avformat-novalidate</property>
+  <property name="audio_index">0</property>
+  <property name="video_index">0</property>
+  <property name="shotcut:caption">02-digestion-vs-sport.mp4</property>
+ </chain>
+ <chain id="chain13" out="765">
+  <property name="length">766</property>
+  <property name="resource">/home/elmdimegh/Documents/hitMe/video/meriter-son-repas/renders/03-les-trois-leviers.mp4</property>
+  <property name="mlt_service">avformat-novalidate</property>
+  <property name="audio_index">0</property>
+  <property name="video_index">0</property>
+  <property name="shotcut:caption">03-les-trois-leviers.mp4</property>
+ </chain>
+ <chain id="chain14" out="3565">
+  <property name="length">3566</property>
+  <property name="resource">/run/media/elmdimegh/Storage/editing_audio/LoVibe. - a good man with a broken heart.mp3</property>
+  <property name="mlt_service">avformat-novalidate</property>
+  <property name="audio_index">0</property>
+  <property name="video_index">-1</property>
+  <property name="shotcut:caption">LoVibe. - a good man with a broken heart.mp3</property>
+ </chain>
+ <chain id="chain15" out="56">
+  <property name="length">57</property>
+  <property name="resource">/run/media/elmdimegh/Storage/editing_audio/rizer-mettalic.mp3</property>
+  <property name="mlt_service">avformat-novalidate</property>
+  <property name="audio_index">0</property>
+  <property name="video_index">-1</property>
+  <property name="shotcut:caption">rizer-mettalic.mp3</property>
+ </chain>
+ <chain id="chain16" out="122">
+  <property name="length">123</property>
+  <property name="resource">/run/media/elmdimegh/Storage/editing_audio/impacts.mp3</property>
+  <property name="mlt_service">avformat-novalidate</property>
+  <property name="audio_index">0</property>
+  <property name="video_index">-1</property>
+  <property name="shotcut:caption">impacts.mp3</property>
+ </chain>
+ <chain id="chain17" out="70">
+  <property name="length">71</property>
+  <property name="resource">/run/media/elmdimegh/Storage/editing_audio/air-woosh.wav</property>
+  <property name="mlt_service">avformat-novalidate</property>
+  <property name="audio_index">0</property>
+  <property name="video_index">-1</property>
+  <property name="shotcut:caption">air-woosh.wav</property>
+ </chain>
+ <playlist id="playlist0">
+  <property name="shotcut:audio">1</property>
+  <property name="shotcut:name">A5 whoosh</property>
+  <blank length="147"/>
+  <entry producer="chain17" in="0" out="26">
+   <filter id="flt0_147">
+    <property name="mlt_service">volume</property>
+    <property name="level">-20.92</property>
+    <property name="shotcut:filter">volumeGain</property>
+   </filter>
+  </entry>
+  <blank length="1218"/>
+  <entry producer="chain17" in="0" out="26">
+   <filter id="flt0_1392">
+    <property name="mlt_service">volume</property>
+    <property name="level">-20.92</property>
+    <property name="shotcut:filter">volumeGain</property>
+   </filter>
+  </entry>
+  <blank length="779"/>
+  <entry producer="chain17" in="0" out="26">
+   <filter id="flt0_2198">
+    <property name="mlt_service">volume</property>
+    <property name="level">-20.92</property>
+    <property name="shotcut:filter">volumeGain</property>
+   </filter>
+  </entry>
+ </playlist>
+ <playlist id="playlist1">
+  <property name="shotcut:audio">1</property>
+  <property name="shotcut:name">A4 impacts</property>
+  <blank length="151"/>
+  <entry producer="chain16" in="0" out="44">
+   <filter id="flt1_151">
+    <property name="mlt_service">volume</property>
+    <property name="level">-7.33</property>
+    <property name="shotcut:filter">volumeGain</property>
+   </filter>
+  </entry>
+  <blank length="1203"/>
+  <entry producer="chain16" in="0" out="44">
+   <filter id="flt1_1399">
+    <property name="mlt_service">volume</property>
+    <property name="level">-7.33</property>
+    <property name="shotcut:filter">volumeGain</property>
+   </filter>
+  </entry>
+  <blank length="758"/>
+  <entry producer="chain16" in="0" out="44">
+   <filter id="flt1_2202">
+    <property name="mlt_service">volume</property>
+    <property name="level">-7.33</property>
+    <property name="shotcut:filter">volumeGain</property>
+   </filter>
+  </entry>
+ </playlist>
+ <playlist id="playlist2">
+  <property name="shotcut:audio">1</property>
+  <property name="shotcut:name">A3 risers</property>
+  <blank length="121"/>
+  <entry producer="chain15" in="0" out="55">
+   <filter id="flt2_121">
+    <property name="mlt_service">volume</property>
+    <property name="level">-12.40</property>
+    <property name="shotcut:filter">volumeGain</property>
+   </filter>
+  </entry>
+  <blank length="1191"/>
+  <entry producer="chain15" in="0" out="55">
+   <filter id="flt2_1368">
+    <property name="mlt_service">volume</property>
+    <property name="level">-12.40</property>
+    <property name="shotcut:filter">volumeGain</property>
+   </filter>
+  </entry>
+  <blank length="748"/>
+  <entry producer="chain15" in="0" out="55">
+   <filter id="flt2_2172">
+    <property name="mlt_service">volume</property>
+    <property name="level">-12.40</property>
+    <property name="shotcut:filter">volumeGain</property>
+   </filter>
+  </entry>
+ </playlist>
+ <playlist id="playlist3">
+  <property name="shotcut:audio">1</property>
+  <property name="shotcut:name">A2 musique</property>
+  <blank length="151"/>
+  <entry producer="chain14" in="0" out="1258">
+   <filter id="flt3_151">
+    <property name="mlt_service">volume</property>
+    <property name="level">-19.17</property>
+    <property name="shotcut:filter">volumeGain</property>
+   </filter>
+  </entry>
+  <entry producer="chain14" in="1800" out="2981">
+   <filter id="flt3_1410">
+    <property name="mlt_service">volume</property>
+    <property name="level">-12.40</property>
+    <property name="shotcut:filter">volumeGain</property>
+   </filter>
+  </entry>
+ </playlist>
+ <playlist id="playlist4">
+  <property name="shotcut:audio">1</property>
+  <property name="shotcut:name">A1 voix</property>
+  <blank length="9"/>
+  <entry producer="chain7" in="0" out="116"/>
+  <blank length="25"/>
+  <entry producer="chain2" in="8" out="261"/>
+  <blank length="135"/>
+  <entry producer="chain8" in="1" out="525"/>
+  <entry producer="chain4" in="22" out="88"/>
+  <blank length="8"/>
+  <entry producer="chain9" in="0" out="156"/>
+  <blank length="1"/>
+  <entry producer="chain6" in="12" out="151"/>
+  <entry producer="chain10" in="1" out="746"/>
+ </playlist>
+ <playlist id="playlist5">
+  <property name="shotcut:video">1</property>
+  <property name="shotcut:name">V1 hook</property>
+  <entry producer="chain0" in="0" out="150"/>
+ </playlist>
+ <playlist id="playlist6">
+  <property name="shotcut:video">1</property>
+  <property name="shotcut:name">V2 montage</property>
+  <blank length="151"/>
+  <entry producer="chain1" in="8" out="261"/>
+  <blank length="135"/>
+  <entry producer="chain11" in="0" out="524"/>
+  <entry producer="chain3" in="22" out="88"/>
+  <entry producer="chain12" in="0" out="164"/>
+  <blank length="1"/>
+  <entry producer="chain5" in="12" out="151"/>
+  <entry producer="chain13" in="0" out="764"/>
+  <blank length="360"/>
+ </playlist>
+ <tractor id="tractor0" title="Shotcut version 26.1" in="00:00:00.000" out="2562">
+  <property name="shotcut">1</property>
+  <property name="shotcut:projectAudioChannels">2</property>
+  <property name="shotcut:projectFolder">1</property>
+  <track producer="background"/>
+  <track producer="playlist0" hide="video"/>
+  <track producer="playlist1" hide="video"/>
+  <track producer="playlist2" hide="video"/>
+  <track producer="playlist3" hide="video"/>
+  <track producer="playlist4" hide="video"/>
+  <track producer="playlist5"/>
+  <track producer="playlist6"/>
+  <transition id="tmix1">
+   <property name="a_track">0</property>
+   <property name="b_track">1</property>
+   <property name="mlt_service">mix</property>
+   <property name="always_active">1</property>
+   <property name="sum">1</property>
+  </transition>
+  <transition id="tmix2">
+   <property name="a_track">0</property>
+   <property name="b_track">2</property>
+   <property name="mlt_service">mix</property>
+   <property name="always_active">1</property>
+   <property name="sum">1</property>
+  </transition>
+  <transition id="tmix3">
+   <property name="a_track">0</property>
+   <property name="b_track">3</property>
+   <property name="mlt_service">mix</property>
+   <property name="always_active">1</property>
+   <property name="sum">1</property>
+  </transition>
+  <transition id="tmix4">
+   <property name="a_track">0</property>
+   <property name="b_track">4</property>
+   <property name="mlt_service">mix</property>
+   <property name="always_active">1</property>
+   <property name="sum">1</property>
+  </transition>
+  <transition id="tmix5">
+   <property name="a_track">0</property>
+   <property name="b_track">5</property>
+   <property name="mlt_service">mix</property>
+   <property name="always_active">1</property>
+   <property name="sum">1</property>
+  </transition>
+  <transition id="tmix6">
+   <property name="a_track">0</property>
+   <property name="b_track">6</property>
+   <property name="mlt_service">mix</property>
+   <property name="always_active">1</property>
+   <property name="sum">1</property>
+  </transition>
+  <transition id="tblend6">
+   <property name="a_track">0</property>
+   <property name="b_track">6</property>
+   <property name="version">0.1</property>
+   <property name="mlt_service">qtblend</property>
+   <property name="always_active">1</property>
+   <property name="disable">1</property>
+  </transition>
+  <transition id="tmix7">
+   <property name="a_track">0</property>
+   <property name="b_track">7</property>
+   <property name="mlt_service">mix</property>
+   <property name="always_active">1</property>
+   <property name="sum">1</property>
+  </transition>
+  <transition id="tblend7">
+   <property name="a_track">0</property>
+   <property name="b_track">7</property>
+   <property name="version">0.1</property>
+   <property name="mlt_service">qtblend</property>
+   <property name="always_active">1</property>
+   <property name="disable">0</property>
+  </transition>
+ </tractor>
 </mlt>
