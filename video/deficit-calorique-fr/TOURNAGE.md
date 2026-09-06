@@ -62,7 +62,7 @@ part ailleurs dans la vidéo.**
 
 ### Retour 4 · la chute — 1:18 → 1:26
 
-> **« Un déficit calorique, c'est pas manger moins que ce que tu bouges. »**
+> **« Un déficit calorique, c'est pas manger moins que ce que tu dépenses. »**
 >
 > **« C'est que ta vie entière brûle plus que ce que tu manges. »**
 
