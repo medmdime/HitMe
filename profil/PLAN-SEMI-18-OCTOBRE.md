@@ -79,7 +79,7 @@ mythes et les tabous. `meriter` en est une, déjà faite.
 | **S2** | **L'huile coûte plus cher que ton dessert** | script complet, 251 mots | chiffres vérifiés sur Ciqual ou YouBud ; **l'assiette animée construite et ses sept aliments générés, en S1** |
 | **S3** | **Mange comme le corps que tu vises** | plan beat par beat | tes deux budgets dans YouBud, repos et à 70 kg ; le device population pour les deux silhouettes |
 | **S4** | **Vingt kilos sans prendre de ventre** | sujet | tes photos à 60 et à 80, ton surplus par jour, la durée, ce qui a raté. C'est la vidéo qui te rend crédible, au milieu de la série |
-| **S5** | **Les protéines : combien, et pourquoi** | sujet, ordre de grandeur | le script, une source lue. Elle répond à A2 et à la question que tout le monde pose |
+| **S5** | **Une calorie, c'est une calorie** | **script complet**, écrit le 5 septembre, `video/une-calorie-est-une-calorie/SCRIPT.md` | vérifier l'écart de 70 calories par jour, lire Westerterp 2004 et Morton 2018 cités dans le script, décider entre la version légère et la lourde. Elle répond à A2 et à la question que tout le monde pose sur les protéines |
 | **S6** | **Ta montre ne sait pas ce que t'as brûlé** | sujet | le script, Shcherbina 2017 retrouvé. Légère, elle tombe la semaine de la course |
 
 ### Les pickups de `meriter`, sous Windows
@@ -117,7 +117,7 @@ animations et une semaine.
 | **S2** | 14 → 20 sept | **A2** · tu ne perds pas ton muscle en courant | **L'huile coûte plus cher que ton dessert** | **B2** · la faim après la sortie longue | face caméra de l'huile, rendu de l'assiette, montage. Les chiffres du corps cible sortis de YouBud |
 | **S3** | 21 → 27 sept | **A3** · courir plus vite ne brûle pas plus | **Mange comme le corps que tu vises** | **B3** · un jour de course, un jour de repos | le device population. Tes photos et tes chiffres de prise de masse rassemblés |
 | **S4** | 28 sept → 4 oct | **A4** · la semaine de volume, manger assez | **Vingt kilos sans prendre de ventre** | **B4** · la séance que tu ne rates jamais | source des protéines lue, script écrit |
-| **S5** | 5 → 11 oct | **A5** · le kilo d'eau avant la course | **Les protéines : combien, et pourquoi** | **B5** · cinq semaines, la balance, la thèse | Shcherbina retrouvé, script de la montre écrit, court |
+| **S5** | 5 → 11 oct | **A5** · le kilo d'eau avant la course | **Une calorie, c'est une calorie** | **B5** · cinq semaines, la balance, la thèse | Shcherbina retrouvé, script de la montre écrit, court |
 | **S6** | 12 → 18 oct | **A6** · les trois jours avant, court | **Ta montre ne sait pas ce que t'as brûlé** | **le jour de course**, tourné sur place | rien d'autre. La semaine est à la course |
 | bilan | 19 → 25 oct | | | épisode de bilan, optionnel | relire le journal. Réécrire le yapping sur ce qui a été mesuré. Choisir les six sciences suivantes |
 
@@ -174,7 +174,7 @@ avant vingt vidéos.**
 | S4 | Vingt kilos sans prendre de ventre | | | |
 | S4 | B4 | | | |
 | S5 | A5 | | | |
-| S5 | Les protéines | | | |
+| S5 | Une calorie, c'est une calorie | | | |
 | S5 | B5 | | | |
 | S6 | A6 | | | |
 | S6 | Ta montre ne sait pas ce que t'as brûlé | | | |

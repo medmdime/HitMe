@@ -130,7 +130,7 @@ Les fondamentaux se font en légère ; les mythes et les tabous, après, en lour
 | 6 | Ce qui te cale, c'est le poids de l'assiette | manger moins = avoir faim | mêmes calories, deux fois le volume | deux assiettes de même poids, l'une à 1 800, l'autre à 1 376 | 424 calories d'écart, un déjeuner entier | table | chapitres 3 et 5 écrits, sources vérifiées |
 | 7 | Pourquoi ça revient | j'ai pas assez de volonté | la moitié lâche les régimes les plus durs, et le plus dur fait perdre le moins | quatre groupes de silhouettes, ceux qui restent | 160 personnes, 20 sur 40 finissent l'année | table ou science-reel | chapitre 1 écrit |
 | 8 | L'aliment que tu t'interdis | s'interdire, c'est se contrôler | l'interdit rend l'aliment visible partout | des biscuits sous une cloche | 103 étudiantes, chocolat contre vanille | science-reel | chapitre 7 écrit, hook et chute prêts |
-| 9 | Les protéines : combien, et pourquoi | c'est pour les bodybuilders | ton corps en perd un quart rien qu'à les digérer | le tas : ce que font 150 g de protéines en poulet, œufs, yaourt | 1,6 à 2,2 g par kilo, donc pour 80 kg… | table | ordre de grandeur à confirmer, une source déjà citée (PMID 15466943) |
+| 9 | **Une calorie, c'est une calorie** (les protéines et la taxe à la digestion) | seul le total compte, la source est un détail | l'étiquette compte ce qui entre, pas ce que le corps garde : 200 calories d'huile, tu en gardes 196 ; 200 de poulet, 150 | trois assiettes à 200 calories : le poulet, le riz, et un fond d'huile ridiculement petit | deux personnes, même total, 30 % contre 15 % de protéines : deux semaines de repas par an d'écart, à recalculer | table, ou lourde | **script complet, écrit le 5 septembre**, `video/une-calorie-est-une-calorie/SCRIPT.md`. Il donne aussi les cibles : 2 g de protéines par kilo, 1 g de lipides. À vérifier avant de tourner : l'écart de « 70 calories par jour », que le calcul de la taxe met plutôt vers 50 ; la légende dit déjà 50 à 100, la voix doit dire pareil |
 | 10 | Ce que tu bois | l'alcool, ça compte pas | sept calories le gramme, du côté de l'huile, et tu le mâches pas | un verre de vin, une bière, un soda, à côté de l'huile | un verre = … cuillères d'huile | table | insert alcool du chapitre 2 écrit |
 
 ### B · La course, par les calories
@@ -189,7 +189,7 @@ s'y intéresser. Le reel déficit est déjà sorti : c'est la rep 1, et elle com
 | S2 | L'huile coûte plus cher que ton dessert | la surprise la plus forte du lot, tout est écrit, c'est la première assiette animée |
 | S3 | Mange comme le corps que tu vises | le nom de la série. Il définit tout ce qui suit |
 | S4 | Vingt kilos sans prendre de ventre | ton histoire, avec les photos. La preuve, quand le spectateur a déjà vu trois fois que tu sais compter |
-| S5 | Les protéines : combien, et pourquoi | la question que tout le monde pose, et la réponse au yapping sur le muscle |
+| S5 | Une calorie, c'est une calorie | le script existe déjà. Les protéines, la taxe à la digestion, et la réponse au yapping sur le muscle |
 | S6 | Ta montre ne sait pas ce que t'as brûlé | légère, pour la semaine de la course |
 | après | Ce qui te cale, c'est le poids de l'assiette · Ce que tu bois · Le cardio fait fondre le muscle ? · Ma mère a essayé tous les régimes, si elle est d'accord | dans l'ordre qu'on décidera en relisant le journal |
 
@@ -405,41 +405,51 @@ chiffres sortent de YouBud avec ton profil réel.
 C'est la vidéo où YouBud a sa place naturelle : « tu tapes le corps que tu vises, il te
 donne son budget ». Pas en fin de vidéo, au moment où le spectateur a besoin du calcul.
 
-### Le trailer · épinglé, publié le même jour que la vidéo 1
+### Le trailer · épinglé, publié le même jour que la première science
 
 Trente-cinq secondes, tourné vers le spectateur. Chaque phrase sur toi est suivie d'une
-phrase sur lui. **À CONFIRMER** : « jamais repris » n'est vrai que si ton poids n'est
-jamais redescendu entre soixante et quatre-vingts ; « pas un régime » veut dire pas de
-restriction, mais tu as compté. On dit ce qui est vrai.
+phrase sur lui. Les photos existent : toi à soixante kilos, et trois Live Photos d'hier
+soir à quatre-vingts. Le plan par plan, avec les fichiers, est dans
+`video/trailer/TOURNAGE.md`. Ta mère est d'accord pour qu'on parle d'elle : la ligne
+est dedans.
 
 ```
-[00:00 — Photo : toi à 60 kg]
+[00:00 — Photo : toi à 60 kg, le miroir de la salle de bain. Plein cadre, 2 s]
 Un mètre quatre-vingt-dix. Soixante kilos.
 TEXT: "60 KG"
 
-[00:03 — Toi, aujourd'hui, même cadrage que la photo]
-Aujourd'hui, quatre-vingts. Jamais repris. Pas un régime.
-Juste des calories que je comprends.
-TEXT: "80 KG · SANS RÉGIME"
+[00:02 — Live Photo d'hier, de face, vestiaire. 1,5 s. Coupe franche]
+Aujourd'hui, quatre-vingts.
+TEXT: "80 KG"
 
-[00:10 — Assiette animée : l'assiette, l'huile, une bière, un dessert]
+[00:04 — Toi, face caméra]
+Pas un régime. Juste des calories que je comprends.
+TEXT: "SANS RÉGIME"
+
+[00:09 — Assiette animée, ou carte de texte si elle n'est pas prête : l'assiette,
+l'huile, une bière, un dessert]
 Ici, je te montre où elles sont vraiment. Dans ton assiette, dans ta bière,
-dans ton dessert. Sans jugement. Sujets tabous compris.
+dans ton dessert. Sujets tabous compris.
+TEXT: "OÙ SONT LES CALORIES"
+
+[00:17 — Toi, face caméra, plus bas]
+Ma mère a essayé tous les régimes pendant que je grandissais. Ça ne marchait jamais.
+C'est pour ça qu'ici, personne n'est jugé.
 TEXT: "SANS JUGEMENT"
 
-[00:20 — Toi, en tenue de course, dehors]
+[00:25 — Toi, en tenue de course, dehors]
 Et en attendant, je prépare un semi-marathon. Le dix-huit octobre, en une heure
 trente-cinq. Après, un Hyrox. On compte tout.
 TEXT: "SEMI · 18 OCTOBRE · 1H35"
 
-[00:30 — Assiette animée : la bouteille d'huile]
+[00:33 — L'huile, ou toi avec la bouteille]
 Première vidéo : ton huile d'olive.
 TEXT: "VIDÉO 1"
 ```
 
-Une ligne de plus est possible entre 00:10 et 00:20, **seulement avec l'accord de ta
-mère** : « J'ai vu quelqu'un que j'aime essayer tous les régimes pendant vingt ans. C'est
-pour ça que je ne juge personne. » Sans accord, elle ne se dit pas.
+« Jamais repris » a disparu : c'est un mot de perte de poids, et ton histoire est une
+prise. « Pas un régime » veut dire pas de restriction ; tu as compté, et c'est la phrase
+d'après.
 
 Dans la bio, une ligne et un lien : *Les calories, sans régime et sans jugement. Semi
 le 18 octobre. Mon calculateur : YouBud.*

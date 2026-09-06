@@ -184,10 +184,10 @@ parce que tu as jugé une fois, et que c'était elle. *Sans régime*, parce que 
 en enchaîner pendant vingt ans. *Les calories*, parce que c'est ce qui a fini par
 marcher, pour elle comme pour toi. Et YouBud, parce que tu avais besoin de l'outil.
 
-**À CONFIRMER, et à décider avec elle.** Cette histoire est privée. Elle ne se raconte
-à l'image qu'avec son accord, et au degré qu'elle choisit : l'histoire sans son nom,
-l'histoire avec son prénom, ou elle à l'image. Sans accord, elle reste ici, comme la
-raison, et ne se dit jamais.
+**Elle est d'accord pour qu'on parle d'elle**, tu l'as confirmé le 6 septembre. Son
+histoire se raconte donc, dans le trailer en une ligne et dans la vidéo « Ma mère a
+essayé tous les régimes ». Ce qui n'est pas encore décidé : si elle apparaît à l'image
+un jour. On ne le suppose pas ; on lui demandera le moment venu.
 
 Ce que les sessions précédentes ont constaté, et qui tient toujours : le format
 « mécanisme expliqué, en français, avec les sources » n'existe pas.
@@ -439,11 +439,11 @@ s'affiche à l'écran depuis la montre ou l'application, avant la première syll
 
 ## 11. Ce qui attend ta réponse
 
-Rien ici ne bloque la vidéo 1 ni les pickups.
+Rien ici ne bloque la semaine 1. Réglé le 6 septembre : ta mère est d'accord, les photos
+à soixante kilos existent, et la question du yo-yo est tombée avec la phrase qui la
+posait.
 
-1. **Ta mère.** Est-elle d'accord pour que son histoire soit racontée, et jusqu'où : sans son nom, avec son prénom, ou elle à l'image ?
-2. **Ton poids entre soixante et quatre-vingts** : est-il déjà redescendu à un moment ? Si non, le trailer peut dire « jamais repris ». C'était ma question sur le yo-yo, mal posée.
-3. **Instagram** : le compte existe-t-il déjà, ou on le crée cette semaine ?
-4. **YouBud** : où est-il disponible, avec quel lien pour la bio ?
-5. **La vidéo « 300 calories par jour »** : c'est bien le passage NEAT du reel déficit, sorti en Short ?
-6. Deux mots de ta dictée que je n'ai pas compris, et sur lesquels je pars avec une hypothèse : le format que tu cites pour le yapping, je lis « *What I did in a week* » ; et « avancer sur le B.U.K.L.E. », je lis « le build de YouBud ». Corrige-moi si c'est faux.
+1. **Instagram** : le compte existe-t-il déjà, ou on le crée cette semaine ?
+2. **YouBud** : où est-il disponible, avec quel lien pour la bio ?
+3. **La vidéo « 300 calories par jour »** : c'est bien le passage NEAT du reel déficit, sorti en Short ?
+4. Deux mots de ta dictée que je n'ai pas compris, et sur lesquels je pars avec une hypothèse : le format que tu cites pour le yapping, je lis « *What I did in a week* » ; et « avancer sur le B.U.K.L.E. », je lis « le build de YouBud ». Corrige-moi si c'est faux.

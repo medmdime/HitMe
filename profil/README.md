@@ -54,7 +54,7 @@ science qui glisse d'une semaine, jamais le yapping : la série ne peut pas avoi
 | **S2** | 14 → 20 sept | A2 · tu ne perds pas ton muscle en courant | **« L'huile coûte plus cher que ton dessert »**, la première assiette animée | B2 · la faim après la sortie longue |
 | **S3** | 21 → 27 sept | A3 · courir plus vite ne brûle pas plus | **« Mange comme le corps que tu vises »** | B3 · le corps cible, un jour de course et un jour de repos |
 | **S4** | 28 sept → 4 oct | A4 · la semaine de volume, manger assez | **« Vingt kilos sans prendre de ventre »**, ton histoire | B4 · la meilleure séance, c'est celle que tu ne rates jamais |
-| **S5** | 5 → 11 oct | A5 · le kilo d'eau avant la course | **« Les protéines : combien, et pourquoi »** | B5 · cinq semaines, la balance, la thèse |
+| **S5** | 5 → 11 oct | A5 · le kilo d'eau avant la course | **« Une calorie, c'est une calorie »**, script déjà écrit | B5 · cinq semaines, la balance, la thèse |
 | **S6** | 12 → 18 oct | A6 · ce que je mange les trois jours avant | **« Ta montre ne sait pas ce que t'as brûlé »**, légère | **le jour de course** · combien de desserts paie un semi |
 
 Dix-neuf publications. Les dix-huit autres fondamentaux de la liste, les tabous et la
@@ -68,11 +68,11 @@ version lourde « cardio et muscle » attendent le 19 octobre.
 |---|---|---|
 | A1, B1, et les dix autres yappings | les cartes en cinq lignes, hook par hook | rien : tu lis la carte avant la séance |
 | Les pickups de `meriter` | les deux répliques et le jeu | les tourner, relier le montage sous Windows |
-| Le trailer | le script, 35 secondes, `PROGRAMME-FONDAMENTAUX.md` § 7 | ta photo à 60 kg, ta confirmation sur « jamais repris », ta décision sur la phrase pour ta mère. Si l'assiette animée n'est pas prête en S1, ses deux plans deviennent des cartes de texte : il se tourne entièrement face caméra |
+| Le trailer | le script et le plan par plan avec les fichiers, `video/trailer/TOURNAGE.md`. Les photos à 60 kg, les Live Photos d'hier à 80, la plage : tout est dans `D:\videos\trailer\`. Ta mère est d'accord | trois plans face caméra à tourner, une prise chacun. Si l'assiette animée n'est pas prête, trois cartes de texte la remplacent |
 | « L'huile coûte plus cher que ton dessert » | le script complet, 251 mots | vérifier les chiffres sur Ciqual ou YouBud ; construire l'assiette animée et ses sept aliments |
 | « Mange comme le corps que tu vises » | le plan beat par beat | ton budget de repos et ton budget à 70 kg sortis de YouBud |
 | « Vingt kilos sans prendre de ventre » | le sujet | **tout** : tes photos à 60 et à 80, ton surplus par jour, la durée, ce qui a marché, ce qui a raté |
-| « Les protéines » | le sujet et l'ordre de grandeur | le script, une source lue |
+| « Une calorie, c'est une calorie » | le script complet, écrit le 5 septembre, versé dans `video/une-calorie-est-une-calorie/SCRIPT.md` | vérifier l'écart de 70 calories par jour, lire les deux sources qu'il cite |
 | « Ta montre ne sait pas ce que t'as brûlé » | le sujet | le script, la source Shcherbina 2017 retrouvée |
 
 ---
@@ -80,7 +80,6 @@ version lourde « cardio et muscle » attendent le 19 octobre.
 ## Ce qu'il me faut de toi pour la suite de l'écriture
 
 1. Ton accord pour construire l'assiette animée et générer les sept premiers aliments avec Higgsfield. Ça consomme des crédits.
-2. Pour « Vingt kilos » : les photos, les chiffres, les dates, et ce qui a raté en route.
+2. Pour « Vingt kilos » : les photos sont là. Il manque les chiffres, les dates, et ce qui a raté en route.
 3. Pour « Corps cible » : tes deux budgets dans YouBud, repos et à 70 kg, même taille, même âge, même activité.
-4. Ta mère : d'accord ou pas, et jusqu'où.
-5. Instagram : le compte existe-t-il déjà ? Et le lien YouBud pour la bio.
+4. Instagram : le compte existe-t-il déjà ? Et le lien YouBud pour la bio.
