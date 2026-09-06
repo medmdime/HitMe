@@ -63,7 +63,7 @@ qu'une rep 1 sert à trouver.
 |---|---|
 | **HitMe** (`app/`, `mcp/`) | recherche d'outliers YouTube, TikTok, Instagram ; teardown en script bracket ; projets ; plan de b-roll ; sortie CapCut |
 | **HyperFrames** | les animations. `SplitBar` et le kit visuel existent ; **le composant « Assiette » est à construire**, une fois, puis se réutilise avec des paramètres |
-| `science-reel` | le meilleur actif du dépôt : mesuré sur 12 reels, adaptation française avec les pièges de grammaire. **Un seul format, cher** : environ une semaine par reel |
+| `science-reel` | le meilleur actif du dépôt : mesuré sur 12 reels, adaptation française avec les pièges de grammaire. Un reel en version lourde te coûte **une journée** : le reel déficit a été animé, monté et publié le 27 août dans la même journée |
 | `montage-capcut` | ta chaîne de montage, de nouveau. La grammaire sonore et les volumes se recopient |
 | `video` | le pipeline de recherche. Aucune recherche par mot-clé sur TikTok et Instagram, seulement compte par compte. **La liste de comptes n'existe pas encore** |
 | `kallaway-*` (7) | des cadres solides. Les exemples DeFi sont du bruit |
@@ -262,8 +262,9 @@ soudure est mécanique et se vérifie sur chaque script.
 | **Le yapping** (le semi), mercredi et dimanche | le chiffre de la séance à l'image avant de parler, un « Si tu… », un hot take, un chiffre de nutrition à son échelle, une concession, la question d'après | raconter ce que tu as fait sans dire ce que ça prouve |
 | Le trailer, une fois, épinglé | une phrase sur toi, puis une phrase sur lui | trois vidéos de présentation à la suite |
 
-Le science-reel à trois animations est une version de production de la science, pas un
-format de plus.
+La science a deux versions qui se suivent : les fondamentaux d'abord, en version légère,
+une demi-journée ; puis les mythes et les tabous, en version lourde à trois animations,
+une journée. Même créneau, même colonne vertébrale, pas un format de plus.
 
 Les fondamentaux posent les bases, les tabous les mettent à l'épreuve, le semi les
 prouve sur toi. Un sujet, plusieurs entrées.

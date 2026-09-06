@@ -23,9 +23,16 @@ qualité qui tienne jusqu'au 18 octobre. Deux formats, et le trailer une seule f
 | **La science** | les fondamentaux : toi face caméra, et une assiette animée qui se remplit avec son compteur | 60 à 100 s | une demi-journée, une fois le composant construit | **1 par semaine**, le vendredi | ce document |
 | Le trailer | dire qui tu es et ce qu'on prépare, épinglé | 30 à 40 s | une demi-journée | une fois | § 7 |
 
-Le science-reel lourd, à trois animations, reste une **version de production** de la
-science, pas un troisième format : on la choisit quand le sujet a besoin d'un mécanisme
-dessiné en plusieurs temps, comme `meriter`. Il n'a plus de cadence à lui.
+La science a deux versions, et elles se suivent dans le temps :
+
+| Version | Quoi | Coût | Quand |
+|---|---|---|---|
+| **légère** : les fondamentaux | une question de base, toi face caméra plus l'assiette animée | une demi-journée | d'abord : la vingtaine de questions |
+| **lourde** : les debunks | un mythe démonté avec un mécanisme en trois animations, comme le reel déficit et `meriter` | **une journée**, d'après toi, et l'historique te donne raison : le reel déficit a été animé, monté et publié le 27 août dans la même journée | après les fondamentaux, au même créneau du vendredi |
+
+Les fondamentaux sont une version simplifiée du science-reel, pas un autre genre : c'est
+de la science aussi, avec la même colonne vertébrale. Quand la vingtaine est faite, le
+créneau du vendredi passe aux mythes, en version lourde, sans rien changer à la cadence.
 
 Par semaine : deux yappings et une science, entre sept et neuf heures, b-roll compris.
 Si une semaine casse, c'est la science qui glisse, jamais le yapping.
@@ -106,10 +113,10 @@ Vingt-quatre vidéos, quatre groupes. La colonne « état » dit ce qui existe d
 grande partie de la recherche est faite, elle vit dans les 69 sources du long format et
 dans les 8 shorts déjà écrits avec leur hook et leur chute.
 
-La colonne « format » ne désigne pas deux formats : elle dit la **version de
-production** de la science. « table », c'est toi face caméra plus l'assiette animée, une
-demi-journée. « science-reel », c'est trois animations et une semaine, comme `meriter`.
-On choisit la version légère chaque fois qu'elle suffit, c'est-à-dire presque toujours.
+La colonne « format » ne désigne pas deux formats : elle dit la **version** de la
+science. « table », c'est la version légère, toi face caméra plus l'assiette animée, une
+demi-journée. « science-reel », c'est la version lourde, trois animations, une journée.
+Les fondamentaux se font en légère ; les mythes et les tabous, après, en lourde.
 
 ### A · La cuisine : les calories
 

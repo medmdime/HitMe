@@ -68,9 +68,10 @@ punch-in, ou un chiffre qui apparaît. Jamais une coupe sans raison.
 
 ## 3. La science : six fondamentaux d'ici la course
 
-Un par semaine, le vendredi. Le format est celui du programme : toi face caméra, et
-l'assiette animée qui produit les chiffres. Le science-reel lourd, à trois animations,
-reste possible mais n'a plus de cadence à lui : `meriter` en est un, déjà fait.
+Un par semaine, le vendredi. D'ici la course, la version légère : toi face caméra, et
+l'assiette animée qui produit les chiffres. La version lourde à trois animations, une
+journée de travail, prend le même créneau quand les fondamentaux seront faits, pour les
+mythes et les tabous. `meriter` en est une, déjà faite.
 
 | Sem. | Vidéo | État | Ce qu'il faut |
 |---|---|---|---|

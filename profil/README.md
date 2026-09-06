@@ -17,7 +17,7 @@ Ce dossier est la source de vérité du profil. Quatre documents, à lire dans c
 ## Les décisions, en dix lignes
 
 1. **Un seul sujet : les calories.** La course et la muscu en sont les applications.
-2. **Deux formats.** Le **yapping** du semi, deux fois par semaine. La **science**, un fondamental par semaine, produit en face caméra plus une assiette animée.
+2. **Deux formats.** Le **yapping** du semi, deux fois par semaine. La **science**, une par semaine : d'abord la vingtaine de fondamentaux en version légère, face caméra plus assiette animée, une demi-journée ; ensuite les mythes et les tabous en version lourde à trois animations, une journée. Même créneau.
 3. **Trois publications par semaine** : mercredi le yapping A, vendredi la science, dimanche le yapping B. Rien d'autre, jusqu'au 18 octobre.
 4. **La thèse** : tu manges comme le corps que tu vises, pas comme quelqu'un que tu ne seras jamais. Et tu n'as jamais eu à le mériter. Ça se compte quand même.
 5. **Le semi est une expérience publique** : tout ce que tu brûles en six semaines, on le compte, et on voit combien de desserts ça paie. Verdict le 18 octobre, avec le chrono, 1h35 visé.
@@ -68,7 +68,7 @@ version lourde « cardio et muscle » attendent le 19 octobre.
 |---|---|---|
 | A1, B1, et les dix autres yappings | les cartes en cinq lignes, hook par hook | rien : tu lis la carte avant la séance |
 | Les pickups de `meriter` | les deux répliques et le jeu | les tourner, relier le montage sous Windows |
-| Le trailer | le script, 35 secondes | ta confirmation sur « jamais repris », et ta décision sur la phrase pour ta mère |
+| Le trailer | le script, 35 secondes, `PROGRAMME-FONDAMENTAUX.md` § 7 | ta photo à 60 kg, ta confirmation sur « jamais repris », ta décision sur la phrase pour ta mère. Si l'assiette animée n'est pas prête en S1, ses deux plans deviennent des cartes de texte : il se tourne entièrement face caméra |
 | « L'huile coûte plus cher que ton dessert » | le script complet, 251 mots | vérifier les chiffres sur Ciqual ou YouBud ; construire l'assiette animée et ses sept aliments |
 | « Mange comme le corps que tu vises » | le plan beat par beat | ton budget de repos et ton budget à 70 kg sortis de YouBud |
 | « Vingt kilos sans prendre de ventre » | le sujet | **tout** : tes photos à 60 et à 80, ton surplus par jour, la durée, ce qui a marché, ce qui a raté |
