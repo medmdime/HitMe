@@ -74,3 +74,38 @@ for c in d['chapitres']:
 
 Tout doit être à zéro, sauf la métaphore au chapitre 1 où elle est légitime — dix-sept
 secondes, refermée à voix haute.
+
+## Le grep de performance
+
+Décision du 7 septembre 2026 (brief § 8) : aucune performance sportive à l'image. Ni chrono,
+ni allure, ni temps visé, dans la narration, les textes à l'écran, les hooks, les chutes et
+les légendes. Le semi se dit ; le temps ne se dit pas. Cette passe lit toutes les chaînes de
+`scenario.json`, récursivement, et doit sortir « aucun ». Elle tourne avant tournage, jamais
+après : ce qui est dit à l'image ne se corrige pas. Elle ne couvre que `scenario.json` ; le
+trailer et les stories se passent à la main avec la même liste.
+
+```bash
+python -c "
+import json,io,re
+d=json.load(io.open('scenario.json',encoding='utf-8'))
+MOTIFS=[r'1\s*h\s*35',r'une heure trente(-| )cinq',r'heure trente',r'\bchrono\b',r'allure',
+ r'min/km',r'43\s*min',r'au 10 km',r'je vise',r'objectif de temps',r'temps visé',
+ r'\brecord\b',r'\bPR\b',r'\bVMA\b',r'fraction']
+def walk(x,chemin=''):
+    if isinstance(x,dict):
+        for k,v in x.items(): yield from walk(v,chemin+'/'+str(k))
+    elif isinstance(x,list):
+        for i,v in enumerate(x): yield from walk(v,chemin+'['+str(i)+']')
+    elif isinstance(x,str): yield chemin,x
+hits=[(c,m) for c,t in walk(d) for m in MOTIFS if re.search(m,t,re.I)]
+print('performance :',hits or 'aucun')
+"
+```
+
+« fraction » ne sonne que lorsqu'elle désigne un temps : si le mot désigne la séance de
+fractionné ou une fraction au sens arithmétique, on vérifie à l'œil et on passe. Tout le
+reste doit être à zéro. Au 7 septembre 2026, la passe sort deux occurrences de « fraction »,
+aucune ne désignant un temps (`production/compositions[25]/notes_3d`, le 4/5 du ballon ;
+`shorts/shorts[6]/pourquoi`, « une fraction du public »), et rien d'autre : les « chronomètres » du chapitre 4 (les
+minutes d'un repas, pas un temps de course) et les « frises chronologiques » ne sont pas
+attrapés, c'est voulu.
