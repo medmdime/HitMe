@@ -49,9 +49,9 @@ de croisière, trois fois l'ancien modèle. Le § 7 sert à ne pas dépasser 24 
 
 | Où | Quoi | État au 7 septembre |
 |---|---|---|
-| **YouTube, `@medmdim`** (« Mohamed Elmdimegh ») | 101 abonnés, 7 vidéos | le seul compte public trouvé. C'est le dépôt du long à partir du dimanche 13 |
-| **Instagram**, à ton nom | la maison du court et des stories | **À CONFIRMER** : s'il n'existe pas, il se crée lundi 7 au matin, avec la bio en trois lignes, le seul lien (YouBud) et la « à la une » SEMI. Sans lui, la sixième ligne des légendes ne renvoie nulle part |
-| « Déficit calorique ≠ manger moins », 27 août, 1:12 | 1 342 vues, 20 likes, 2 commentaires, comptés à la première rédaction, avant le 7 septembre ; non remesurés depuis | **c'est ta rep 1, et elle est bonne.** Hook en réaction à @15sdy.sport, quatre retours caméra, les trois animations. Elle ressort telle quelle sur Instagram et TikTok mardi 8 : c'est le short 1 de S1. Le projet HitMe `deficit-calorique-fr` affiche encore `broll` : il est en réalité publié |
+| **YouTube, `@medmdim`** (« Mohamed Elmdimegh ») | 101 abonnés, 7 vidéos | le seul compte public trouvé. C'est le dépôt du long à partir du dimanche 20 |
+| **Instagram**, à ton nom | la maison du court et des stories | **À CONFIRMER** : s'il n'existe pas, il se crée dans la semaine du 8, avant le premier short de mardi 15, avec la bio en trois lignes, le seul lien (YouBud) et la « à la une » SEMI. Sans lui, la sixième ligne des légendes ne renvoie nulle part |
+| « Déficit calorique ≠ manger moins », 27 août, 1:12 | 1 342 vues, 20 likes, 2 commentaires, comptés à la première rédaction, avant le 7 septembre ; non remesurés depuis | **c'est ta rep 1, et elle est bonne.** Hook en réaction à @15sdy.sport, quatre retours caméra, les trois animations. Elle ressort telle quelle sur Instagram et TikTok mardi 15 : c'est le short 1 de S1. Le projet HitMe `deficit-calorique-fr` affiche encore `broll` : il est en réalité publié |
 | « 300 calories par jour » | un format court YouTube | **hypothèse** : le passage NEAT du reel déficit, sorti en Short. À confirmer, et le fichier à retrouver. C'est le short 2 de S1 s'il est confirmé |
 | `D:\exports\POV_calorie_deficit.mov`, 27 août | un POV | à confirmer : publié ou non |
 
@@ -67,10 +67,10 @@ qu'une rep 1 sert à trouver.
 | Projet | Format | État | Ce qui manque |
 |---|---|---|---|
 | `video/manger-sans-se-priver` | deux vidéos YouTube de 9 min + 8 shorts | **scénarisé et vérifié** : 281 plans, 69 PMID. **Ce sont les longues de S1 et de S2**, plus huit shorts annexés avec leurs listes « À couper » : six sont les shorts de S2 et de S3, deux vont en réserve. Rien n'est encore découpé | vidéo 1 : une ouverture à froid de 35 s et une chute de 20 s, 52 s en tout ; vidéo 2 : une ouverture de 30 s. L'audit des sept « moi aussi ». Les huit listes « À couper » à refaire contre le bracket actuel. Quatre corrections d'annexe |
-| `video/meriter-son-repas` | reel 1:34, « Tu n'as jamais eu à le mériter » | **tourné, animé, monté, sous-titré** (`montage/01-FINAL-sans-pickups.mp4`) | deux plans à retourner : le pickup A (« Sauf que le sport, c'est cinq pour cent de ce que tu brûles. Cinq. ») et le pickup B, la chute, dont tes deux prises disent une version fausse. Short 3 de S1, samedi 12. Sa version longue, le TDEE, est la longue de S3 |
+| `video/meriter-son-repas` | reel 1:34, « Tu n'as jamais eu à le mériter » | **tourné, animé, monté, sous-titré** (`montage/01-FINAL-sans-pickups.mp4`) | deux plans à retourner : le pickup A (« Sauf que le sport, c'est cinq pour cent de ce que tu brûles. Cinq. ») et le pickup B, la chute, dont tes deux prises disent une version fausse. Short 3 de S1, samedi 19. Sa version longue, le TDEE, est la longue de S3 |
 | `video/deficit-calorique-fr` | les trois compositions, le kit visuel, `SplitBar` | publié | `SplitBar` a porté 16 des 18 inserts du reel ; il sert à toutes les longues |
 | `video/une-calorie-est-une-calorie` | le script d'un reel, 250 mots | écrit le 5 septembre | devient le chapitre 1 de la longue de S4 ; trancher 50 ou 70 calories par jour en S2 |
-| `video/trailer` | 35 s, épinglé en premier | le plan par plan, les fichiers dans `D:\videos\trailer\` | trois plans face caméra, lundi 7 en fin de session ; deux répliques réécrites ; deux exports |
+| `video/trailer` | 35 s, épinglé en premier | le plan par plan, les fichiers dans `D:\videos\trailer\` | trois plans face caméra, dimanche 13 en fin de session ; deux répliques réécrites ; deux exports |
 
 ### La machine, sous Windows
 
@@ -388,27 +388,33 @@ Une seule occurrence de « moi aussi » par short.
 ### Le rythme, calé sur tes quatre séances
 
 Ordre : **pilier d'abord, micro-contenus ensuite**, au montage comme à la publication.
-Le long se monte mardi et mercredi ; les shorts se découpent vendredi de ce montage ; le
-long sort le dimanche ; ses trois shorts sortent la semaine suivante. Côté écriture,
-l'ordre est inverse : chapitre = short + contexte, et c'est ce qui rend le vendredi
-mécanique.
+Le cycle, décidé le 8 septembre : on tourne tout le dimanche, on monte dans la semaine,
+on publie le dimanche d'après. Le long se tourne le dimanche ; il se monte du lundi au
+mercredi ; jeudi, le packaging et les inserts ; les shorts se découpent vendredi de ce
+montage ; samedi, la programmation ; le long sort le dimanche suivant à 18 h ; ses trois
+shorts sortent la semaine d'après. Chaque semaine publie donc une longue et les trois
+shorts de la longue précédente. Côté écriture, l'ordre est inverse : chapitre = short +
+contexte, et c'est ce qui rend le vendredi mécanique. Le script se termine le samedi, lu
+à voix haute le soir : le lendemain, on le tourne.
 
 | Jour | Séance | Ce que tu fais | Heures | Ce qui sort |
 |---|---|---|---|---|
-| **lundi** | | **tournage** : le long, les six hooks et chutes, les phrases de mécanisme à débit reel, la photo de miniature. Script écrit la semaine d'avant, lu à voix haute la veille | 4 h | |
-| **mardi** | renfo jambes | montage du long, partie 1 (tête parlante bout à bout, choix des prises), le soir | 3 h | **short 1** (Instagram, TikTok, Shorts) + story de séance |
-| **mercredi** | fractionné | montage du long, partie 2 (inserts posés, musique, sous-titres corrigés) | 3 h | story de séance |
-| **jeudi** | | inserts (paramètres des dispositifs, un dispositif neuf les semaines marquées) 2 h + **écriture du script de S+1** 2 h | 4 h | **short 2** |
-| **vendredi** | | **packaging** 1 h (cinq titres, trois miniatures dans un gabarit fixe, description avec les PMID) + **les trois shorts** 3 h (1 h chacun, en suivant les listes « À couper » et les marques [S]) + les trois légendes | 4 h | |
-| **samedi** | social, haut du corps | **écriture du script de S+1** 3 h (terminé le samedi) + **programmation** 1 h des dix mises en ligne de la semaine suivante (YouTube Studio, Meta Business Suite, planificateur TikTok) | 4 h | **short 3** + story de séance |
-| **dimanche** | sortie longue | publication du long à 18 h (programmée), journal (hypothèse, titre, miniature ; résultats à sept jours), lecture à voix haute du script de S+1 | 1 h | **la longue YouTube** + story de séance |
+| **dimanche** | sortie longue | **tournage** 4 h : le long, les six hooks et chutes, les phrases de mécanisme à débit reel, le b-roll, la photo de miniature. Script terminé et lu à voix haute la veille · à 18 h, la longue tournée le dimanche d'avant, programmée · journal (hypothèse, titre, miniature ; résultats à sept jours) | 5 h | **la longue YouTube** + story de séance + le tableau |
+| **lundi** | | montage du long, partie 1 (tête parlante bout à bout, choix des prises) | 3 h | |
+| **mardi** | renfo jambes | montage du long, partie 2 (musique, sous-titres corrigés), le soir | 2 h | **short 1** (Instagram, TikTok, Shorts) + story de séance |
+| **mercredi** | fractionné | montage du long, partie 3 (relecture, corrections) 1 h + **écriture du script de S+1** 2 h | 3 h | story de séance |
+| **jeudi** | | **packaging** 1 h (cinq titres, trois miniatures dans un gabarit fixe, description avec les PMID) + inserts 2 h (posés et paramétrés ; un dispositif neuf les semaines marquées) | 3 h | **short 2** |
+| **vendredi** | | **les trois shorts** 3 h (1 h chacun, en suivant les listes « À couper » et les marques [S]) + les trois légendes | 3 h | |
+| **samedi** | social, haut du corps | **écriture du script de S+1** 3 h (terminé le samedi, lu à voix haute le soir) + **programmation** 1 h : la longue du lendemain et les trois shorts de la semaine suivante (YouTube Studio, Meta Business Suite, planificateur TikTok) | 4 h | **short 3** + story de séance |
 | stories | | 10 à 15 min par jour de séance, les repas, la vie ; le tableau des kilomètres et des calories le dimanche dans la « à la une » | 1 h | |
 
 **Total : 24 h en croisière, 20 h quand le script est déjà écrit et qu'aucun dispositif
 n'est neuf.** Dix mises en ligne par semaine (une longue, trois shorts sur trois
 plateformes), toutes programmées le samedi ; en semaine il ne reste que les stories. Le
 chiffre se mesure dans le journal dès S1. Aucune de ces heures n'est mesurée au
-7 septembre : ce sont des estimations.
+8 septembre : ce sont des estimations. Le jour de course, dimanche 18 octobre, aucun
+tournage : la session de cette semaine-là se fait samedi 17, et la longue du 18 est
+programmée d'avance.
 
 **La règle de casse.** Si la semaine casse, **le long sort quand même**, en tête parlante
 pure avec quatre inserts au plus ; les trois shorts sortent quand même, en prenant dans
@@ -449,11 +455,11 @@ pas comme couverture contre l'algorithme. Question 10 du § 11.
 
 ### Le rituel du dimanche
 
-Une heure, après la sortie longue :
+Une heure, après la sortie longue et la session de tournage (§ 9) :
 
 1. La longue est en ligne à 18 h, programmée depuis samedi. Vérifier qu'elle l'est.
 2. Le journal : le titre retenu, la miniature retenue, l'hypothèse en une ligne. À sept jours, le résultat de chaque publication noté à côté de son hypothèse, et les heures réelles de la semaine. On note, on ne décide rien avant vingt vidéos.
-3. Le script de S+1, terminé samedi, lu à voix haute une fois, montre en main : 10:00 à 10:30.
+3. Le script tourné ce jour-là a été terminé samedi et lu à voix haute samedi soir, montre en main : 10:00 à 10:30. Le dimanche, on ne relit pas, on tourne.
 4. Le tableau des kilomètres, des calories et du poids du dimanche, en story, archivé dans la « à la une ». Sans colonne temps.
 5. La veille sur la liste de comptes, quand elle existera. Elle n'entre pas dans cette heure : elle se note à part dans le journal, et elle n'est pas budgétée avant le 19 octobre.
 

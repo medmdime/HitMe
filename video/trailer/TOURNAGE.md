@@ -2,7 +2,8 @@
 
 **35 secondes · épinglé en premier sur Instagram · bande-annonce de la chaîne YouTube en
 16:9 · publié le même jour que la première longue, une heure après elle.** Dimanche
-13 septembre, à 19 h, si S1 tient ; dimanche 20 si S1 déborde. Il est épinglé, pas daté :
+20 septembre, à 19 h, si S1 tient ; dimanche 27 si S1 déborde. Il se tourne dimanche 13,
+en fin de session, avec la longue. Il est épinglé, pas daté :
 c'est lui qui glisse en premier, jamais la longue, jamais les trois shorts.
 
 Le script d'origine est dans `profil/PROGRAMME-FONDAMENTAUX.md` § 7 ; ce document est le
@@ -39,11 +40,11 @@ Tout est dans `D:\videos\trailer\`. Rien de tout ça n'entre dans le dépôt.
 Les trois Live Photos portent la même date dans leurs métadonnées, EXIF et QuickTime :
 le 14 août 2021, 19 h 45. La réplique du deuxième plan dit « Aujourd'hui,
 quatre-vingts ». **À CONFIRMER** : ton poids ce soir-là. Si tu n'étais pas à
-quatre-vingts en août 2021, tu refais une Live Photo de face au vestiaire lundi 7, deux
+quatre-vingts en août 2021, tu refais une Live Photo de face au vestiaire dimanche 13, deux
 minutes, et elle prend la place de `IMG_8250.mov`. Une phrase littéralement vraie, ou
 une autre photo.
 
-Les trois plans face caméra s'ajoutent à ce dossier lundi 7 au soir, nommés comme le
+Les trois plans face caméra s'ajoutent à ce dossier dimanche 13 au soir, nommés comme le
 reste de la session (`NN-bloc-prise.mp4`) : `NN-trailer-0335-1.mp4`,
 `NN-trailer-0017-1.mp4`, `NN-trailer-0032-1.mp4`, puis `-2` et `-3` pour les deux
 autres prises.
@@ -83,7 +84,7 @@ doit s'entendre.
 
 ## 3. Le face caméra : trois plans, trois prises chacun
 
-Tournés **lundi 7 en fin de session**, après la longue, les hooks et les chutes des
+Tournés **dimanche 13 en fin de session**, après la longue, les hooks et les chutes des
 shorts : 20 min, sans toucher au réglage. Une seule caméra en 4K 16:9, sujet centré,
 plan poitrine avec de l'air autour, œil au tiers haut, micro-cravate écouté au casque,
 la lampe à gauche, le fond uni. Le recadrage fixe 9:16 sort de la même prise pour
@@ -112,7 +113,7 @@ la main, sur les dix textes. Ce qui est dit à l'image ne se corrige pas.
 
 ## 4. Le montage
 
-Vendredi 11, après les trois shorts : 3 h, dans CapCut.
+Vendredi 18, après les trois shorts : 3 h, dans CapCut.
 
 1. Les sept plans bord à bord, aux temps du tableau. Le premier plan est une image fixe : un push-in de 2 % sur deux secondes suffit.
 2. Les deux textes courts sur les deux premiers plans, gros, centrés : **60 KG**, **80 KG**. Le reste des textes plus petits, dans la zone sûre : jamais dans les 20 % du bas ni les 12 % du haut.
@@ -177,7 +178,7 @@ Dans le profil, trois publications épinglées, dans cet ordre :
 | Place | Publication | Pourquoi |
 |---|---|---|
 | 1 | le trailer | qui tu es, en 35 s |
-| 2 | le premier short (« Déficit calorique ≠ manger moins », mardi 8) | ce que tu fais, en 1:12 |
+| 2 | le premier short (« Déficit calorique ≠ manger moins », mardi 15) | ce que tu fais, en 1:12 |
 | 3 | la « à la une » SEMI, dans les stories à la une | l'expérience en cours, mise à jour chaque dimanche |
 
 ### La bande-annonce sur YouTube
@@ -199,10 +200,11 @@ Note pour ne pas retomber dans l'ancienne version.
 |---|---|---|
 | plan 0:25 : la date suivie du temps visé, dans la bouche et dans le texte à l'écran, 8 s | le semi et sa date, sans temps ; texte SEMI · 18 OCTOBRE ; 7 s | aucune performance à l'image : décision 5 du brief. Le temps visé est un fait privé : s'il reste écrit quelque part, c'est dans `profil/FONDAMENTAUX.md`, marqué « ne se dit pas à l'image » |
 | plan 0:33 : « ton huile d'olive », la bouteille en main, texte VIDÉO 1 | « pourquoi ça revient », mains libres, texte CETTE SEMAINE, désormais à 0:32 | la première longue réelle est « Pourquoi ça revient » (S1). « L'huile » est un short de réserve, plus la première vidéo |
-| plan 0:09 : l'assiette animée si elle est prête, sinon les cartes | les trois cartes de texte, comme réglage | l'assiette animée est hors du chemin critique des six semaines (brief § 3) ; le trailer se monte le 11 |
+| plan 0:09 : l'assiette animée si elle est prête, sinon les cartes | les trois cartes de texte, comme réglage | l'assiette animée est hors du chemin critique des six semaines (brief § 3) ; le trailer se monte le vendredi 18 |
 | 36 s réels pour « 35 secondes » annoncées | 35 s tout rond | la réplique de la plage est plus courte |
 | légende : la date suivie du temps visé | « le 18 octobre. » et rien après | même règle |
 | troisième épingle : le premier « yapping » du dimanche | la « à la une » SEMI | le format n'existe plus ; le sport vit en stories de 15 s, archivées dans la « à la une » |
 | un export 9:16 | deux exports, 9:16 et 16:9 | le trailer sert aussi de bande-annonce de chaîne YouTube |
-| face caméra en portrait natif 1080×1920 | 4K 16:9 centré, recadrage fixe 9:16 | une seule caméra, un seul réglage pour toute la session du lundi |
-| « publié en deuxième, le même jour que la première science » | une heure après la première longue, dimanche 13 (ou 20) | une longue par semaine, le dimanche à 18 h |
+| face caméra en portrait natif 1080×1920 | 4K 16:9 centré, recadrage fixe 9:16 | une seule caméra, un seul réglage pour toute la session du dimanche |
+| « publié en deuxième, le même jour que la première science » | une heure après la première longue, dimanche 20 (ou 27) | une longue par semaine, le dimanche à 18 h |
+| tourné le lundi 7, monté le vendredi 11, publié le dimanche 13 | tourné le dimanche 13, monté le vendredi 18, publié le dimanche 20 | le cycle du 8 septembre : on tourne le dimanche, on publie le dimanche d'après |

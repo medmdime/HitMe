@@ -136,10 +136,10 @@ ce qui est vérifié.
 
 | | |
 |---|---|
-| **État** | écrit, vérifié, 69 PMID, 9:08. Il manque 52 s : une ouverture à froid de 35 s (deuxième phrase : le titre ; puis les quatre questions) et une chute de 20 s qui conclut puis annonce « Quoi mettre dans l'assiette » : une heure d'écriture. Plus les quatre hooks (25 mots) et les quatre chutes (30 mots) de ses shorts, réécrits sans les gabarits « je te concède / ce qui survit », avec les deux corrections d'annexe de la vidéo 1 (§ 6) : ils se tournent lundi 7, à débit reel. Le détail jour par jour est dans `PLAN-SEMI-18-OCTOBRE.md` S1 |
+| **État** | écrit, vérifié, 69 PMID, 9:08. Il manque 52 s : une ouverture à froid de 35 s (deuxième phrase : le titre ; puis les quatre questions) et une chute de 20 s qui conclut puis annonce « Quoi mettre dans l'assiette » : une heure d'écriture. Plus les quatre hooks (25 mots) et les quatre chutes (30 mots) de ses shorts, réécrits sans les gabarits « je te concède / ce qui survit », avec les deux corrections d'annexe de la vidéo 1 (§ 6) : ils se tournent dimanche 13, à débit reel. Le détail jour par jour est dans `PLAN-SEMI-18-OCTOBRE.md` S1 |
 | **À auditer avant de tourner** | les quatre « moi aussi » des chapitres 1 à 4 (§ 5, règle 6) |
 | **Inserts** | 8 : la baignoire en une composition de 17 s ou trois cartes, quatre SplitBar, deux avant/après (les deux verres d'eau ; l'anneau contre le bypass), le 20 sur 40 en carte |
-| **Ses shorts** | sortent en S2 : mardi 15 · « La cuillère qui coûte plus cher que ton dessert » (ch. 2) ; jeudi 17 · « Ton estomac ne compte pas les calories. Il pèse. » (ch. 3) ; samedi 19 · « On lui a retiré 80 % de l'estomac, et ça n'explique rien » (ch. 4). Réserve : « Le régime que tu choisis ne prédit rien » (ch. 1), utilisé le samedi 3 octobre |
+| **Ses shorts** | sortent en S2 : mardi 22 · « La cuillère qui coûte plus cher que ton dessert » (ch. 2) ; jeudi 24 · « Ton estomac ne compte pas les calories. Il pèse. » (ch. 3) ; samedi 26 · « On lui a retiré 80 % de l'estomac, et ça n'explique rien » (ch. 4). Réserve : « Le régime que tu choisis ne prédit rien » (ch. 1), utilisé le samedi 10 octobre |
 | **Miniature** | un SplitBar « un kilo d'écart » |
 
 ### S2 · « Quoi mettre dans l'assiette »
@@ -158,7 +158,7 @@ La vidéo 2 (`SCRIPT-video-2.md`). Quatre chapitres, numérotés 5 à 8 dans le 
 | **État** | écrit, vérifié, 9:30. Il manque 30 s d'ouverture à froid. Six références sans PMID fiable restent signalées comme telles dans la description, jamais inventées |
 | **À auditer** | les « moi aussi » des chapitres 5, 6, 7 |
 | **Inserts** | 8 à 10 : deux avant/après (les deux assiettes de même poids ; la petite assiette), quatre SplitBar, la croix/coche, une liste en carte |
-| **Ses shorts** | sortent en S3 : mardi 22 · « La petite assiette ne t'a jamais fait maigrir » (ch. 6, sans la séquence fourchette) ; jeudi 24 · « Le même légume, sept fois plus cher » (ch. 5) ; samedi 26 · « L'aliment que tu t'interdis » (ch. 7, sans le récapitulatif ni la carte « On ne vit qu'une fois »). Réserve : « La petite fourchette te fait manger plus » (ch. 6), qui demande un beat de 10 s en plus, à tourner lundi 14 si le temps le permet |
+| **Ses shorts** | sortent en S3 : mardi 29 · « La petite assiette ne t'a jamais fait maigrir » (ch. 6, sans la séquence fourchette) ; jeudi 1er octobre · « Le même légume, sept fois plus cher » (ch. 5) ; samedi 3 octobre · « L'aliment que tu t'interdis » (ch. 7, sans le récapitulatif ni la carte « On ne vit qu'une fois »). Réserve : « La petite fourchette te fait manger plus » (ch. 6), qui demande un beat de 10 s en plus, à tourner dimanche 20 si le temps le permet |
 
 ### S3 · « Tu n'as jamais eu à le mériter » (la longue TDEE)
 
@@ -174,9 +174,9 @@ pour 1 650 à 1 750 mots nécessaires.
 
 | | |
 |---|---|
-| **Attention** | le chapitre 1 rejoue le reel `meriter` qui sort le samedi 12. Il se réécrit à 165 mots/min avec 15 % de mots en plus, son landing devient un raccord, et **son short n'est pas redécoupé** : le reel est déjà sorti. Le reel reçoit sur YouTube le champ « vidéo associée » vers cette longue |
+| **Attention** | le chapitre 1 rejoue le reel `meriter` qui sort le samedi 19. Il se réécrit à 165 mots/min avec 15 % de mots en plus, son landing devient un raccord, et **son short n'est pas redécoupé** : le reel est déjà sorti. Le reel reçoit sur YouTube le champ « vidéo associée » vers cette longue |
 | **Inserts** | les quatre animations existantes des deux reels (la découpe du TDEE, digestion contre sport, les trois leviers, la variante de `meriter`) recalées ou reparamétrées, jeudi de S3, 2 à 3 h ; plus SplitBar |
-| **Ses shorts** | sortent en S4 : mardi 29 · « Ce que tu dépenses en bougeant à côté » (ch. 2, neuf) ; jeudi 1er octobre · « Ta digestion brûle plus que ta séance » (ch. 3, neuf) ; samedi 3 · « Le régime que tu choisis ne prédit rien » (la réserve de S1) |
+| **Ses shorts** | sortent en S4 : mardi 6 octobre · « Ce que tu dépenses en bougeant à côté » (ch. 2, neuf) ; jeudi 8 · « Ta digestion brûle plus que ta séance » (ch. 3, neuf) ; samedi 10 · « Le régime que tu choisis ne prédit rien » (la réserve de S1) |
 | **Concession obligatoire** | rien de tout ça n'annule le total : si tu manges plus que tu brûles sur la durée, tu prends du poids. La découpe est une répartition typique, pas une constante |
 
 ### S4 · « Une calorie, c'est une calorie »
@@ -195,8 +195,8 @@ ses suites 02 et 05, et le chapitre 2 de la vidéo 1.
 | **Chute du short 1** | le landing d'origine, mot pour mot : « Les calories décident si tu perds du poids. Les macros décident de quoi tu le perds. » |
 | **Ce qui part après le 19 octobre** | la suite 03 « les glucides le soir » (tabou #18, à sourcer) et la suite 04 « les fibres » (sans PMID) |
 | **Inserts** | les trois assiettes à 200 calories en images fixes Higgsfield ; les trois compositions du script (barres qui se vident, deux silhouettes, liste qui se remplit) sur SplitBar et cartes |
-| **Ses shorts** | sortent en S5 : mardi 6 · « Une calorie, c'est une calorie » (le reel de 82 s, tel quel, avec son landing) ; jeudi 8 · « Le gras a neuf calories, et alors ? » (ch. 2) ; samedi 10 · « L'alcool, c'est du côté de l'huile » (ch. 3) |
-| **À CONFIRMER** | le reel « Une calorie » est écrit, pas tourné : le sortir « tel quel » demande une journée de tournage et d'animation qui n'est dans le budget d'aucune semaine. Sinon, le short du mardi 6 est le noyau [S] du chapitre 1, découpé le vendredi 2 octobre comme les deux autres, avec le landing d'origine en chute |
+| **Ses shorts** | sortent en S5 : mardi 13 octobre · « Une calorie, c'est une calorie » (le reel de 82 s, tel quel, avec son landing) ; jeudi 15 · « Le gras a neuf calories, et alors ? » (ch. 2) ; samedi 17 · « L'alcool, c'est du côté de l'huile » (ch. 3) |
+| **À CONFIRMER** | le reel « Une calorie » est écrit, pas tourné : le sortir « tel quel » demande une journée de tournage et d'animation qui n'est dans le budget d'aucune semaine. Sinon, le short du mardi 13 est le noyau [S] du chapitre 1, découpé le vendredi 9 octobre comme les deux autres, avec le landing d'origine en chute |
 
 ### S5 · « Mange comme le corps que tu vises »
 
@@ -240,7 +240,7 @@ on relit le journal et on réordonne le reste ; pas avant.
 
 | Sem. | Longue | Les trois chapitres | Source, état |
 |---|---|---|---|
-| S7 · 19 → 25 oct | **« Manger quand tu cours »**, la première après la course, pour rattraper les amis de course dans le format qui découvre | 1 · le coût du kilomètre : environ une calorie par kilo de poids de corps et par kilomètre, que tu ailles vite ou lentement ; un semi entier, c'est un repas et demi (A3 et B1) · 2 · la faim d'après n'est pas une dette : le glycogène se remplit avec du riz, pas avec du gras (B2) · 3 · le budget d'un jour de course et d'un jour de repos, avec YouBud (B3) | les anciens #11 et #12 fusionnés ; le tableau des six semaines rempli. L'approximation du kilomètre est à vérifier avant de la dire aussi net. Sans chrono, sans allure. Script écrit jeudi 15 et samedi 17 de S6 ; si tu préfères ne rien faire la veille de la course, cette longue glisse au 1er novembre : la seule glissade prévue |
+| S7 · 26 oct → 1er nov | **« Manger quand tu cours »**, la première après la course, pour rattraper les amis de course dans le format qui découvre | 1 · le coût du kilomètre : environ une calorie par kilo de poids de corps et par kilomètre, que tu ailles vite ou lentement ; un semi entier, c'est un repas et demi (A3 et B1) · 2 · la faim d'après n'est pas une dette : le glycogène se remplit avec du riz, pas avec du gras (B2) · 3 · le budget d'un jour de course et d'un jour de repos, avec YouBud (B3) | les anciens #11 et #12 fusionnés ; le tableau des six semaines rempli. L'approximation du kilomètre est à vérifier avant de la dire aussi net. Sans chrono, sans allure. Script écrit en S6, mercredi 21 et samedi 24 octobre ; tournée dimanche 25, en ligne dimanche 1er novembre, dans le cycle, sans glissade |
 | S8 | **« Ta montre ne sait pas ce que t'as brûlé »** (si non utilisée en S6) | 1 · la montre devine à partir du pouls (Shcherbina 2017 : erreur d'un quart à presque le double) · 2 · l'après-brûlage, un dixième de la séance (A1, LaForgia 2006) · 3 · ce qu'on compte à la place : la distance et le poids | ancien #13 et A1 ; Shcherbina 2017 et LaForgia 2006 à vérifier, PMID à retrouver |
 | S9 | **« Le cardio fait fondre le muscle ? »** | 1 · ce n'est pas la course, c'est le déficit sans protéines (A2, Longland 2016) · 2 · le groupe cardio de Bryner 1999 · 3 · la silhouette, c'est le rapport | ancien #15 et A2 ; teardown dans la bibliothèque ; Longland 2016 et Bryner 1999 à vérifier. Version lourde, trois animations |
 | S10 | **« Manger le soir fait grossir ? »** | le total sur 24 h d'abord ; la nuance réelle sur l'heure ; la suite 03 de « Une calorie » | tabou #18, **à sourcer avant d'écrire** |
@@ -254,12 +254,12 @@ on relit le journal et on réordonne le reste ; pas avant.
 | #1 L'huile coûte plus cher que ton dessert | short de réserve, script complet en § 7 ; sa matière est le chapitre 2 de S1 |
 | #2 Mange comme le corps que tu vises | S5, la longue entière |
 | #3 Vingt kilos sans prendre de ventre | S6 |
-| #4 Un déficit calorique, c'est pas manger moins | publié le 27 août ; short du mardi 8 septembre tel quel ; sa matière est le chapitre 1 de S3 |
-| #5 Tu n'as jamais eu à le mériter | short du samedi 12 septembre ; sa version longue est S3 |
+| #4 Un déficit calorique, c'est pas manger moins | publié le 27 août ; short du mardi 15 septembre tel quel ; sa matière est le chapitre 1 de S3 |
+| #5 Tu n'as jamais eu à le mériter | short du samedi 19 septembre ; sa version longue est S3 |
 | #6 Ce qui te cale, c'est le poids de l'assiette | chapitre 5 de S2, et chapitre 3 de S1 |
 | #7 Pourquoi ça revient | chapitre 1 de S1, et le titre de la longue |
 | #8 L'aliment que tu t'interdis | chapitre 7 de S2 |
-| #9 Une calorie, c'est une calorie | S4, chapitre 1 ; le reel sort comme short le mardi 6 octobre (**À CONFIRMER**, § 3 : il n'est pas tourné) |
+| #9 Une calorie, c'est une calorie | S4, chapitre 1 ; le reel sort comme short le mardi 13 octobre (**À CONFIRMER**, § 3 : il n'est pas tourné) |
 | #10 Ce que tu bois | l'alcool : chapitre 3 de S4 ; le reste après le 19 |
 | #11 Ce que brûle vraiment un semi, #12 Pourquoi tu maigris pas en courant | fusionnés dans S7 |
 | #13 Ta montre | S8, ou S6 si la porte de S3 se ferme |
@@ -289,12 +289,12 @@ longue TDEE est la plus facile à écrire, pas la plus facile à sortir en premi
 
 | Ordre | Longue (dimanche 18 h) | Ses trois shorts (la semaine suivante) | Pourquoi là |
 |---|---|---|---|
-| **S1** · 13 sept | « Pourquoi ça revient », **et le trailer une heure après** | les shorts de S1 viennent d'avant : mardi 8 · « Déficit calorique ≠ manger moins » (existe, zéro montage) ; jeudi 10 · « 300 calories par jour » (**À CONFIRMER** : le passage NEAT du reel déficit ? le fichier ?) ; samedi 12 · « Tu n'as jamais eu à le mériter » (deux pickups, voie Kdenlive une seule fois) | écrite, vérifiée, avec son prompteur et ses shorts annexés. Il ne manque que 52 s |
-| **S2** · 20 sept | « Quoi mettre dans l'assiette » | ceux de « Pourquoi ça revient » | écrite, vérifiée. La semaine la moins chère : aucun dispositif neuf |
-| **S3** · 27 sept | « Tu n'as jamais eu à le mériter », la longue TDEE | ceux de « Quoi mettre dans l'assiette » | écrite en S1 et S2, les animations existent |
-| **S4** · 4 oct | « Une calorie, c'est une calorie » | ceux de la longue TDEE, plus la réserve | composée de matière existante ; aucune écriture pour elle-même en S4 |
-| **S5** · 11 oct | « Mange comme le corps que tu vises » | ceux de « Une calorie » | le nom de la série, quand le spectateur a déjà vu quatre fois que tu sais compter |
-| **S6** · 18 oct | « Vingt kilos sans prendre de ventre », ou « Ta montre » | ceux de « Corps cible », programmés dès le samedi 10 | la plus légère à produire ; exportée le jeudi 15, rien à faire le jour de la course |
+| **S1** · 20 sept, tournée dim 13 | « Pourquoi ça revient », **et le trailer une heure après** | les shorts de S1 viennent d'avant : mardi 15 · « Déficit calorique ≠ manger moins » (existe, zéro montage) ; jeudi 17 · « 300 calories par jour » (**À CONFIRMER** : le passage NEAT du reel déficit ? le fichier ?) ; samedi 19 · « Tu n'as jamais eu à le mériter » (deux pickups, voie Kdenlive une seule fois) | écrite, vérifiée, avec son prompteur et ses shorts annexés. Il ne manque que 52 s |
+| **S2** · 27 sept, tournée dim 20 | « Quoi mettre dans l'assiette » | ceux de « Pourquoi ça revient » | écrite, vérifiée. La semaine la moins chère : aucun dispositif neuf |
+| **S3** · 4 oct, tournée dim 27 sept | « Tu n'as jamais eu à le mériter », la longue TDEE | ceux de « Quoi mettre dans l'assiette » | écrite en S1 et S2, les animations existent |
+| **S4** · 11 oct, tournée dim 4 | « Une calorie, c'est une calorie » | ceux de la longue TDEE, plus la réserve | composée de matière existante ; aucune écriture pour elle-même en S4 |
+| **S5** · 18 oct, le jour de course, tournée dim 11 | « Mange comme le corps que tu vises » | ceux de « Une calorie » | le nom de la série, quand le spectateur a déjà vu quatre fois que tu sais compter ; exportée et programmée le jeudi 15, rien à faire le jour de la course |
+| **S6** · 25 oct, tournée sam 17 | « Vingt kilos sans prendre de ventre », ou « Ta montre » | ceux de « Corps cible », programmés dès le samedi 17 | la plus légère à produire ; une session courte la veille de la course, la semaine d'après le semi |
 | après | S7 à S11 et ensuite (§ 3) | | dans l'ordre du § 3, réordonné après six longues en relisant le journal |
 
 **La réserve**, pour une semaine qui casse : « Le régime que tu choisis ne prédit rien »
@@ -382,7 +382,7 @@ linéairement, et doit être enseigné.
 7. **Écrire comme quelqu'un qui parle**, pas comme une fiche : chaleur, pas autorité ; concéder quand la preuve est mince (« honnêtement, huit personnes, c'est pas grand-chose ») ; une phrase courte après une longue ; bannir les groupes nominaux empilés et le « il faut » impersonnel.
 8. **Diviser avant de compresser.** Si dix minutes ne suffisent pas à expliquer proprement, on divise en deux longues à la couture où l'argument tourne déjà. On ne serre pas.
 
-Les sept « moi aussi » à auditer, avec toi, 30 min avant le lundi 7 :
+Les sept « moi aussi » à auditer, avec toi, 30 min avant le dimanche 13 :
 
 | Ch. | La phrase | Statut |
 |---|---|---|
@@ -510,9 +510,9 @@ Et le titre du short 2 de la vidéo 1 perd « il compte des millilitres » : « 
 ne compte pas les calories. Il pèse. »
 
 Chaque correction se fait avant le tournage qui l'enregistre : celles de la vidéo 1
-avant lundi 7 (ses hooks et chutes se tournent ce jour-là), celles de la vidéo 2 samedi
-12, avant lundi 14. Les huit listes « À couper » suivent le même calendrier : vidéo 1
-jeudi 10, elles servent au découpage de vendredi 11 ; vidéo 2 samedi 12, ou jeudi 17 au
+avant dimanche 13 (ses hooks et chutes se tournent ce jour-là), celles de la vidéo 2 samedi
+19, avant dimanche 20. Les huit listes « À couper » suivent le même calendrier : vidéo 1
+jeudi 17, elles servent au découpage de vendredi 18 ; vidéo 2 samedi 19, ou jeudi 24 au
 plus tard.
 
 ### Le découpage du vendredi
@@ -573,7 +573,7 @@ Le script de 82 s existe, `video/une-calorie-est-une-calorie/SCRIPT.md`, avec se
 prompts de composition et sa légende. Il devient le chapitre 1 de S4, réécrit à
 165 mots/min ; ses suites 02 (le gras à neuf calories) et 05 (l'alcool) deviennent les
 chapitres 2 et 3 (§ 3). Le reel lui-même n'est pas tourné : le sortir tel quel le mardi
-6 octobre coûte une journée non budgétée, sinon le short est le noyau [S] du chapitre 1
+13 octobre coûte une journée non budgétée, sinon le short est le noyau [S] du chapitre 1
 (**À CONFIRMER**, § 3). Deux choses à trancher avant d'écrire : 50 ou 70 calories par
 jour (le calcul de la taxe dit plutôt 50, la légende dit déjà 50 à 100 ; la voix doit
 dire pareil), et la source du « stocker coûte 3 %, convertir 25 % », sans laquelle la
@@ -708,8 +708,8 @@ revient » est en ligne)
 
 | Reel | État | Sa place |
 |---|---|---|
-| **« Déficit calorique ≠ manger moins »** | publié le 27 août sur YouTube, 1080×1920 | short du mardi 8 septembre, tel quel sur Instagram et TikTok, zéro montage, légende en cinq parties sans la sixième ligne (la longue correspondante, S3, n'existe pas encore). Vérifier la zone sûre des sous-titres en Short. Sa matière est le chapitre 1 de S3 |
-| **« Tu n'as jamais eu à le mériter »** | monté à deux plans près, `video/meriter-son-repas/montage/` | short du samedi 12 septembre. Les pickups A (« Sauf que le sport, c'est cinq pour cent de ce que tu brûles. Cinq. ») et B (la chute corrigée) tournés lundi 7 au téléphone en portrait natif, 10 min, avant l'installation 4K, pour raccorder aux rushes du 1er septembre. Voie Kdenlive, une seule fois, 2 h, détail dans `PLAN-SEMI-18-OCTOBRE.md`. Sa version longue est S3 ; son chapitre 1 n'est pas redécoupé en short |
+| **« Déficit calorique ≠ manger moins »** | publié le 27 août sur YouTube, 1080×1920 | short du mardi 15 septembre, tel quel sur Instagram et TikTok, zéro montage, légende en cinq parties sans la sixième ligne (la longue correspondante, S3, n'existe pas encore). Vérifier la zone sûre des sous-titres en Short. Sa matière est le chapitre 1 de S3 |
+| **« Tu n'as jamais eu à le mériter »** | monté à deux plans près, `video/meriter-son-repas/montage/` | short du samedi 19 septembre. Les pickups A (« Sauf que le sport, c'est cinq pour cent de ce que tu brûles. Cinq. ») et B (la chute corrigée) tournés dimanche 13 au téléphone en portrait natif, 10 min, avant l'installation 4K, pour raccorder aux rushes du 1er septembre. Voie Kdenlive, une seule fois, 2 h, détail dans `PLAN-SEMI-18-OCTOBRE.md`. Sa version longue est S3 ; son chapitre 1 n'est pas redécoupé en short |
 
 ### Le trailer
 
@@ -756,9 +756,9 @@ TEXT: "CETTE SEMAINE"
 | | |
 |---|---|
 | **Ce qui a changé** | le plan 0:25 ne dit plus de temps : le semi est une chose qu'on prépare à côté, jamais une performance qu'on annonce. Le dernier plan (0:32 ici et dans `video/trailer/TOURNAGE.md`, « plan 0:33 » dans le brief) nomme la longue réellement publiée le dimanche, sans bouteille d'huile ; la parole se règle sur la longue du jour, pas sur un ordre de document |
-| **Tournage** | les trois plans face caméra lundi 7 en fin de session, 20 min, en 4K 16:9 centré, trois prises chacun ; le plan 0:17 reste le plus important |
-| **Montage** | vendredi 11 après les shorts, 3 h. **Deux exports** : 1080×1920 pour l'épingle Instagram ; 1920×1080 pour la bande-annonce de chaîne YouTube, le portrait centré sur le fond du kit, les textes repositionnés, mise en ligne comme vidéo classique (une verticale de moins de trois minutes serait classée Short). Sous-titres dans la zone sûre. Pas de scratch : il n'y a pas de turn dans un trailer |
-| **Publication** | dimanche 13 septembre, une heure après la longue, épinglé en premier. Si S1 déborde, il glisse au dimanche 20 : il est épinglé, pas daté |
+| **Tournage** | les trois plans face caméra dimanche 13 en fin de session, 20 min, en 4K 16:9 centré, trois prises chacun ; le plan 0:17 reste le plus important |
+| **Montage** | vendredi 18 après les shorts, 3 h. **Deux exports** : 1080×1920 pour l'épingle Instagram ; 1920×1080 pour la bande-annonce de chaîne YouTube, le portrait centré sur le fond du kit, les textes repositionnés, mise en ligne comme vidéo classique (une verticale de moins de trois minutes serait classée Short). Sous-titres dans la zone sûre. Pas de scratch : il n'y a pas de turn dans un trailer |
+| **Publication** | dimanche 20 septembre, une heure après la longue, épinglé en premier. Si S1 déborde, il glisse au dimanche 27 : il est épinglé, pas daté |
 | **Higgsfield** | `plage-higgsfield-IA.mp4` reste écartée : une image de toi générée contredit « chaque phrase littéralement vraie » |
 
 « Jamais repris » a disparu : c'est un mot de perte de poids, et ton histoire est une
@@ -766,8 +766,8 @@ prise. « Pas un régime » veut dire pas de restriction ; tu as compté, et c'e
 d'après.
 
 **La bio Instagram**, en trois lignes, avec le seul lien, YouBud : *Les calories, sans
-régime et sans jugement. Semi le 18 octobre. Mon calculateur : YouBud.* À créer lundi 7
-au matin, avant tout le reste, avec la « à la une » SEMI. Sans bio, le renvoi des
+régime et sans jugement. Semi le 18 octobre. Mon calculateur : YouBud.* À créer dans la
+semaine du 8, avant le premier short de mardi 15, avec la « à la une » SEMI. Sans bio, le renvoi des
 légendes ne renvoie nulle part. Le brief propose aussi, en deuxième ligne, la preuve
 (60 → 80 kg sans régime) à la place du semi : **À CONFIRMER**, à toi de choisir.
 
