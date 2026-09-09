@@ -7,7 +7,7 @@ publient après la longue, avec la longue en « vidéo associée ».
 
 | Sortie | Short | Chapitre | Hook / cœur / chute | Durée | À tourner en plus |
 |---|---|---|---|---|---|
-| mardi 15 | **L'huile coûte plus cher que ton dessert** | 1 | 17 / 220 / 30 mots | ≈ 1:25 | le hook, la chute, la phrase du mécanisme à débit reel |
+| mardi 15 | **Le plus calorique de ton assiette, c'est pas le dessert** | 1 | 22 / 220 / 30 mots | ≈ 1:25 | le hook, la chute, la phrase du mécanisme à débit reel |
 | jeudi 17 | **Trois cents calories par jour sans t'entraîner** | 2 | 25 / 205 / 27 mots | ≈ 1:22 | le hook, la chute, la phrase du mécanisme |
 | samedi 19 | **Mange comme le corps que tu vises** | 3 | 24 / 232 / 26 mots | ≈ 1:30 | le hook, la chute, la phrase du mécanisme |
 
@@ -25,15 +25,15 @@ hook ; un seul scratch, sur le turn ; les inserts sont ceux de la longue, plein 
 
 ---
 
-## Short 1 · L'huile coûte plus cher que ton dessert · mardi 15
+## Short 1 · Le plus calorique de ton assiette, c'est pas le dessert · mardi 15
 
 Le cœur : les plans [S] du chapitre 1, de 1:05 à 2:39. Le hook est la première phrase de
 la longue, tournée une seconde fois pour le 9:16, avec l'accessoire.
 
 ```
 [00:00 — HOOK · face caméra, le pot de crème dessert dans une main, la cuillère d'huile dans l'autre]
-Sur cette assiette, il y a un truc qui coûte plus cher que le dessert. Et tu le vois même pas.
-TEXT: PLUS CHER QUE LE [DESSERT:rouge]
+Sur cette assiette, c'est quoi le plus calorique, d'après toi ? La plupart des gens répondent le dessert. Est-ce que c'est vrai ?
+TEXT: LE PLUS [CALORIQUE:jaune] ? LE DESSERT ?
 SFX: pop sur le pot, pop grave sur la cuillère
 MUSIC: rien
 
@@ -102,7 +102,7 @@ La cuillère est pleine.
 
 **La légende**
 
-> L'huile coûte plus cher que ton dessert.
+> Le plus calorique de ton assiette, c'est pas le dessert.
 >
 > Pas parce que le dessert est innocent. Parce qu'on ne compte jamais ce qu'on ne mâche pas.
 >

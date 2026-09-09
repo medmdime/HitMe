@@ -195,12 +195,12 @@ le couvre au montage, et c'est aussi le turn du short 3, le scratch tombe dessus
 Le bloc E s'arrête à 2:23, « Mais ça ne demande ni de te priver, ni
 de te faire opérer. » : la suite est le bloc 12.
 
-### Bloc 07 · Short 1 · « La cuillère qui coûte plus cher que ton dessert »
+### Bloc 07 · Short 1 · « La cuillère d'huile plus calorique que ton dessert »
 
 Le hook, posé, à débit reel. Le pot de crème dessert monte sur le premier « Ça », la
 cuillère sur le deuxième, la cuillère avance vers l'objectif sur « elle ».
 
-> Ça, tout le monde le surveille. Normal. Ça, personne. Et des deux, c'est elle qui coûte le plus cher.
+> Ça, tout le monde le surveille. Normal. Ça, personne. Et des deux, c'est elle qui a le plus de calories.
 
 La phrase du mécanisme, à débit reel, face caméra (l'image sert de secours si l'insert
 n'est pas rendu).
@@ -361,7 +361,7 @@ Les trois shorts tournés aujourd'hui sortent la semaine d'après, programmés s
 
 | Date | Short | Chapitre |
 |---|---|---|
-| **mardi 22 septembre** | « La cuillère qui coûte plus cher que ton dessert » | 2 |
+| **mardi 22 septembre** | « La cuillère d'huile plus calorique que ton dessert » | 2 |
 | **jeudi 24 septembre** | « Ton estomac ne compte pas les calories. Il pèse. » (titre **À CONFIRMER**, voir bloc 08) | 3 |
 | **samedi 26 septembre** | « On lui a retiré 80 % de l'estomac, et ça n'explique rien » | 4 |
 

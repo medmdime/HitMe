@@ -173,7 +173,7 @@ pas avant.
 | **S11** | **Ma mère a essayé tous les régimes**, après dix longues | des années de salades, ce que tu lui as dit enfant, comment tu l'as aidée, le fait qu'elle a réussi ; la raison du « sans jugement » | #24, avec son accord, au degré qu'elle choisit. Si elle apparaît à l'image, on lui demande le moment venu |
 | ensuite | les tabous en version lourde : Coca zéro contre Coca (#19) · le week-end qui annule la semaine (#22) · le jeûne intermittent (#21) · le sucre est une drogue ? (#20) · Ozempic (#23) · « Ce que l'étiquette ne compte pas » (les fibres) · « Ce que tu bois » (#10, sans l'alcool) · « Combien de calories pour prendre du muscle » (#16) si S6 ne l'a pas épuisé | `PROGRAMME-FONDAMENTAUX.md` § 3 |
 
-« L'huile coûte plus cher que ton dessert » reste un short de réserve : script complet, à
+« Le plus calorique de ton assiette, c'est pas le dessert » reste un short de réserve : script complet, à
 tourner et animer une journée quand l'assiette animée existe.
 
 ---
@@ -221,8 +221,7 @@ Jamais la longue, jamais les trois shorts.
 **La réserve** pour une semaine qui casse : « Le régime que tu choisis ne prédit rien »
 (chapitre 1 de « Pourquoi ça revient », utilisé en S4) ; « La petite fourchette te fait
 manger plus » (chapitre 6 de « Quoi mettre dans l'assiette », qui demande un beat de 10 s
-en plus à tourner dimanche 20) ; les deux reels complets « L'huile coûte plus cher que ton
-dessert » et « Une calorie, c'est une calorie », écrits, à tourner et animer une journée
+en plus à tourner dimanche 20) ; les deux reels complets « Le plus calorique de ton assiette, c'est pas le dessert » et « Une calorie, c'est une calorie », écrits, à tourner et animer une journée
 chacun ; « Une calorie » sort en S5 comme short de sa propre longue.
 
 **Les shorts, ce qui vaut pour tous.** Hook 25 mots au plus, chute 30 mots au plus, les
@@ -331,7 +330,7 @@ ce découpage : leurs timecodes datent d'une version à 70 s par chapitre.
 
 | Jour | Short | Hook | Chute | État |
 |---|---|---|---|---|
-| **mardi 22** | **La cuillère qui coûte plus cher que ton dessert** (chapitre 2, le meilleur des huit) | existant dans l'annexe, à ramener à 25 mots ; « le plus gros poste de dépense de ta journée » devient « le plus gros poste de ta journée » (l'huile se mange, une dépense se brûle) | existante, à réécrire sans les deux gabarits, 30 mots. Modèle : « Après, personne ne pèse son huile toute sa vie. Tu verses au filet, pas au glouglou. Et tu gardes ton dessert. » | bloc [S] dans les rushes de dimanche 13 ; hook et chute tournés dimanche 13 |
+| **mardi 22** | **La cuillère d'huile plus calorique que ton dessert** (chapitre 2, le meilleur des huit) | existant dans l'annexe, à ramener à 25 mots ; « le plus gros poste de dépense de ta journée » devient « le plus gros poste de ta journée » (l'huile se mange, une dépense se brûle) | existante, à réécrire sans les deux gabarits, 30 mots. Modèle : « Après, personne ne pèse son huile toute sa vie. Tu verses au filet, pas au glouglou. Et tu gardes ton dessert. » | bloc [S] dans les rushes de dimanche 13 ; hook et chute tournés dimanche 13 |
 | **jeudi 24** | **Ton estomac ne compte pas les calories. Il pèse.** (chapitre 3 ; le titre perd « il compte des millilitres » ; **À CONFIRMER** : le script vérifié de `S1-SHORTS.md` l'appelle « Il sent la place. », un seul titre avant la programmation de samedi 19) | existant, valable mot pour mot selon l'annexe, à ramener à 25 mots | existante, à réécrire sans les gabarits, 30 mots ; garder « l'eau ne compte que si elle est dans l'assiette » | idem |
 | **samedi 26** | **On lui a retiré 80 % de l'estomac, et ça n'explique rien** (chapitre 4) | existant, à ramener à 25 mots | existante, à réécrire ; garder « le sens de la flèche » | le chiffre choc de l'annexe n'a plus de rushes (il est passé en kilos dans la voix) : on le dit en kilos, comme la voix |
 
@@ -384,7 +383,7 @@ découpage de vendredi 25.
 | Jour | Short | Hook | Chute | État |
 |---|---|---|---|---|
 | **mardi 29** | **La petite assiette ne t'a jamais fait maigrir** (chapitre 6, sans la séquence fourchette) | existant, à ramener à 25 mots | **à réécrire** : « taille d'effet… quinze fois plus lourd » devient « Ralentir pèse presque autant que la portion qu'on te sert. L'assiette : dix-neuf calories. » (dix-neuf calories est bien le chiffre du chapitre 6 : l'assiette de vingt-trois centimètres contre celle de vingt-neuf, cent trente-quatre personnes) | rushes de dimanche 20 |
-| **jeudi 1er octobre** | **Le même légume, sept fois plus cher** (chapitre 5) | **à réécrire** : « Mets les deux mots à la poubelle » devient « Tu tries entre les aliments sains et ceux qui font grossir. Moi aussi, pendant des années. Sauf que ton estomac ne lit pas d'étiquette. Il pèse. » (le « moi aussi » : **À CONFIRMER** qu'il est vrai pour toi) | existante, à réécrire sans les gabarits ; garder les deux gestes : remplir avec ce qui contient de l'eau, peser ce qui n'en contient pas | le short démarre sur la pomme de terre, pas sur brocolis contre huile |
+| **jeudi 1er octobre** | **Le même légume, sept fois plus de calories** (chapitre 5) | **à réécrire** : « Mets les deux mots à la poubelle » devient « Tu tries entre les aliments sains et ceux qui font grossir. Moi aussi, pendant des années. Sauf que ton estomac ne lit pas d'étiquette. Il pèse. » (le « moi aussi » : **À CONFIRMER** qu'il est vrai pour toi) | existante, à réécrire sans les gabarits ; garder les deux gestes : remplir avec ce qui contient de l'eau, peser ce qui n'en contient pas | le short démarre sur la pomme de terre, pas sur brocolis contre huile |
 | **samedi 3** | **L'aliment que tu t'interdis** (chapitre 7, sans le récapitulatif ni la carte « On ne vit qu'une fois ») | existant, à ramener à 25 mots | existante, à réécrire ; garder « un aliment interdit ne quitte jamais ta vie. Il attend. » | une seule occurrence des dix sur onze contre une sur quatre |
 
 Sixième ligne active, « vidéo associée » vers « Quoi mettre dans l'assiette ».
@@ -621,13 +620,13 @@ vidéos non plus.
 | S1 | **longue · Pourquoi ça revient** | dim 20 sept | | | | | ≈ 33 h prévues : |
 | S1 | le trailer | dim 20 sept (ou 27) | | | | | |
 | S1 | stories · B2, la faim d'après, le tableau | dim 20 sept | | | | | |
-| S2 | short · La cuillère qui coûte plus cher que ton dessert | mar 22 sept | | | | | |
+| S2 | short · La cuillère d'huile plus calorique que ton dessert | mar 22 sept | | | | | |
 | S2 | short · Ton estomac ne compte pas les calories. Il pèse. | jeu 24 sept | | | | | |
 | S2 | short · On lui a retiré 80 % de l'estomac, et ça n'explique rien | sam 26 sept | | | | | |
 | S2 | **longue · Quoi mettre dans l'assiette** | dim 27 sept | | | | | ≈ 24 h prévues : |
 | S2 | stories · B3, un jour de course, un jour de repos, le tableau | dim 27 sept | | | | | |
 | S3 | short · La petite assiette ne t'a jamais fait maigrir | mar 29 sept | | | | | |
-| S3 | short · Le même légume, sept fois plus cher | jeu 1er oct | | | | | |
+| S3 | short · Le même légume, sept fois plus de calories | jeu 1er oct | | | | | |
 | S3 | short · L'aliment que tu t'interdis | sam 3 oct | | | | | |
 | S3 | **longue · Tu n'as jamais eu à le mériter** (version longue) | dim 4 oct | | | | | ≈ 25 h prévues : |
 | S3 | stories · B4, la séance que tu ne rates jamais, le tableau | dim 4 oct | | | | | |

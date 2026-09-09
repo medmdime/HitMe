@@ -160,7 +160,7 @@ Dansinger, 2005.
 Le 2:11 se tourne **en deux prises** : la réplique entière pour la longue, et « C'est ce
 qu'elle pèse. » seul, avec le regard tenu, pour que le short se coupe proprement.
 
-**Le cœur du short** (« La cuillère qui coûte plus cher que ton dessert », mardi 22, celui qui
+**Le cœur du short** (« La cuillère d'huile plus calorique que ton dessert », mardi 22, celui qui
 ouvre la campagne) : **[S] = 0:07 (le b-roll), 0:16, 0:29 et 0:34 (retournés à débit reel
 comme phrase du mécanisme), 0:38, 0:41, 0:45, 0:50, 0:54, 0:56, 1:02, 1:23 → 1:44, 1:53, 1:57,
 2:06, puis la première phrase de 2:11** : 21 plans, 227 mots, environ 90 s de bracket, plus le

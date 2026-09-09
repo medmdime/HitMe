@@ -90,10 +90,10 @@ puis, une fois de plus, sans l'heure :
 
 ### Bloc 07 · short 1
 
-Le hook, posé, à débit reel. Le pot monte sur « dessert », la cuillère avance vers
-l'objectif sur « tu le vois même pas ».
+Le hook, posé, à débit reel, comme une vraie question. Le pot monte sur « le dessert »,
+la cuillère avance vers l'objectif sur « Est-ce que c'est vrai ? ».
 
-> Sur cette assiette, il y a un truc qui coûte plus cher que le dessert. Et tu le vois même pas.
+> Sur cette assiette, c'est quoi le plus calorique, d'après toi ? La plupart des gens répondent le dessert. Est-ce que c'est vrai ?
 
 La phrase du mécanisme, en secours de la carte 9-4-4.
 

@@ -57,7 +57,7 @@ n'est pas sur le chemin critique des six semaines.
 | **Avant/après à échelle constante** | à construire, jeudi de S1, 3 h | les deux verres d'eau, l'anneau contre le bypass, les deux assiettes de même poids, le surplus de « Vingt kilos » |
 | **Population de silhouettes** | à construire, jeudi de S4, 3 h | le corps cible (80 contre 70) en S5 |
 | **Croix/coche, liste qui se remplit, frise** | cartes texte CapCut | tout le reste |
-| **Assiette animée** | à construire un jeudi de libre, sinon après le 19 octobre | « L'huile coûte plus cher que ton dessert » (§ 7) et les fondamentaux légers, plus tard. Les trois assiettes à 200 calories de S4 se font en images fixes Higgsfield, fond retiré |
+| **Assiette animée** | à construire un jeudi de libre, sinon après le 19 octobre | « Le plus calorique de ton assiette, c'est pas le dessert » (§ 7) et les fondamentaux légers, plus tard. Les trois assiettes à 200 calories de S4 se font en images fixes Higgsfield, fond retiré |
 
 Par longue : huit à douze inserts, trois compositions au plus par chapitre (le
 mécanisme, la preuve, la résolution), de 8 à 30 s chacune, découpées en plans de 3 à
@@ -139,7 +139,7 @@ ce qui est vérifié.
 | **État** | écrit, vérifié, 69 PMID, 9:08. Il manque 52 s : une ouverture à froid de 35 s (deuxième phrase : le titre ; puis les quatre questions) et une chute de 20 s qui conclut puis annonce « Quoi mettre dans l'assiette » : une heure d'écriture. Plus les quatre hooks (25 mots) et les quatre chutes (30 mots) de ses shorts, réécrits sans les gabarits « je te concède / ce qui survit », avec les deux corrections d'annexe de la vidéo 1 (§ 6) : ils se tournent dimanche 13, à débit reel. Le détail jour par jour est dans `PLAN-SEMI-18-OCTOBRE.md` S1 |
 | **À auditer avant de tourner** | les quatre « moi aussi » des chapitres 1 à 4 (§ 5, règle 6) |
 | **Inserts** | 8 : la baignoire en une composition de 17 s ou trois cartes, quatre SplitBar, deux avant/après (les deux verres d'eau ; l'anneau contre le bypass), le 20 sur 40 en carte |
-| **Ses shorts** | sortent en S2 : mardi 22 · « La cuillère qui coûte plus cher que ton dessert » (ch. 2) ; jeudi 24 · « Ton estomac ne compte pas les calories. Il pèse. » (ch. 3) ; samedi 26 · « On lui a retiré 80 % de l'estomac, et ça n'explique rien » (ch. 4). Réserve : « Le régime que tu choisis ne prédit rien » (ch. 1), utilisé le samedi 10 octobre |
+| **Ses shorts** | sortent en S2 : mardi 22 · « La cuillère d'huile plus calorique que ton dessert » (ch. 2) ; jeudi 24 · « Ton estomac ne compte pas les calories. Il pèse. » (ch. 3) ; samedi 26 · « On lui a retiré 80 % de l'estomac, et ça n'explique rien » (ch. 4). Réserve : « Le régime que tu choisis ne prédit rien » (ch. 1), utilisé le samedi 10 octobre |
 | **Miniature** | un SplitBar « un kilo d'écart » |
 
 ### S2 · « Quoi mettre dans l'assiette »
@@ -158,7 +158,7 @@ La vidéo 2 (`SCRIPT-video-2.md`). Quatre chapitres, numérotés 5 à 8 dans le 
 | **État** | écrit, vérifié, 9:30. Il manque 30 s d'ouverture à froid. Six références sans PMID fiable restent signalées comme telles dans la description, jamais inventées |
 | **À auditer** | les « moi aussi » des chapitres 5, 6, 7 |
 | **Inserts** | 8 à 10 : deux avant/après (les deux assiettes de même poids ; la petite assiette), quatre SplitBar, la croix/coche, une liste en carte |
-| **Ses shorts** | sortent en S3 : mardi 29 · « La petite assiette ne t'a jamais fait maigrir » (ch. 6, sans la séquence fourchette) ; jeudi 1er octobre · « Le même légume, sept fois plus cher » (ch. 5) ; samedi 3 octobre · « L'aliment que tu t'interdis » (ch. 7, sans le récapitulatif ni la carte « On ne vit qu'une fois »). Réserve : « La petite fourchette te fait manger plus » (ch. 6), qui demande un beat de 10 s en plus, à tourner dimanche 20 si le temps le permet |
+| **Ses shorts** | sortent en S3 : mardi 29 · « La petite assiette ne t'a jamais fait maigrir » (ch. 6, sans la séquence fourchette) ; jeudi 1er octobre · « Le même légume, sept fois plus de calories » (ch. 5) ; samedi 3 octobre · « L'aliment que tu t'interdis » (ch. 7, sans le récapitulatif ni la carte « On ne vit qu'une fois »). Réserve : « La petite fourchette te fait manger plus » (ch. 6), qui demande un beat de 10 s en plus, à tourner dimanche 20 si le temps le permet |
 
 ### S3 · « Tu n'as jamais eu à le mériter » (la longue TDEE)
 
@@ -251,7 +251,7 @@ on relit le journal et on réordonne le reste ; pas avant.
 
 | Ancienne entrée | Où elle vit maintenant |
 |---|---|
-| #1 L'huile coûte plus cher que ton dessert | short de réserve, script complet en § 7 ; sa matière est le chapitre 2 de S1 |
+| #1 Le plus calorique de ton assiette, c'est pas le dessert | short de réserve, script complet en § 7 ; sa matière est le chapitre 2 de S1 |
 | #2 Mange comme le corps que tu vises | S5, la longue entière |
 | #3 Vingt kilos sans prendre de ventre | S6 |
 | #4 Un déficit calorique, c'est pas manger moins | publié le 27 août ; short du mardi 15 septembre tel quel ; sa matière est le chapitre 1 de S3 |
@@ -300,7 +300,7 @@ longue TDEE est la plus facile à écrire, pas la plus facile à sortir en premi
 **La réserve**, pour une semaine qui casse : « Le régime que tu choisis ne prédit rien »
 (chapitre 1 de S1, utilisé en S4) ; « La petite fourchette te fait manger plus »
 (chapitre 6 de S2, avec son beat de 10 s en plus) ; et les deux reels complets
-« L'huile coûte plus cher que ton dessert » et « Une calorie, c'est une calorie »,
+« Le plus calorique de ton assiette, c'est pas le dessert » et « Une calorie, c'est une calorie »,
 écrits, à tourner et animer une journée chacun.
 
 **Ce qu'on ne fait jamais** : une longue sur la course avant le 19 octobre. Une seule
@@ -579,7 +579,7 @@ jour (le calcul de la taxe dit plutôt 50, la légende dit déjà 50 à 100 ; la
 dire pareil), et la source du « stocker coûte 3 %, convertir 25 % », sans laquelle la
 phrase saute.
 
-### « L'huile coûte plus cher que ton dessert », short de réserve
+### « Le plus calorique de ton assiette, c'est pas le dessert », short de réserve
 
 Script complet, écrit et validé. Il reste un short de réserve, à tourner et animer une
 journée quand l'assiette animée existe. Cible 1:20, environ 250 mots parlés, turn vers 58 %.
@@ -593,9 +593,8 @@ sont face caméra. Si tu choisis de verser l'huile pour de vrai à ton bureau, l
 ```
 [00:00 — Assiette animée : l'assiette vide, plein cadre. Les aliments arrivent un par
 un, un pop chacun : le riz, le poulet, les légumes, puis le dessert posé à côté]
-Sur cette assiette, il y a un truc qui coûte plus cher que le dessert.
-Et tu le vois même pas.
-TEXT: "PLUS CHER QUE LE DESSERT"
+Sur cette assiette, c'est quoi le plus calorique, d'après toi ? La plupart des gens répondent le dessert. Est-ce que c'est vrai ?
+TEXT: "LE PLUS CALORIQUE ? LE DESSERT ?"
 SFX: un pop par aliment posé
 MUSIC: rien. Silence jusqu'à la coupe sur toi
 
@@ -679,7 +678,7 @@ Elles resserviront aux longues qui comptent des calories.
 **La légende** (les cinq parties ; la sixième ligne s'ajoute le jour où « Pourquoi ça
 revient » est en ligne)
 
-> L'huile coûte plus cher que ton dessert.
+> Le plus calorique de ton assiette, c'est pas le dessert.
 >
 > Pas parce que le dessert est innocent. Parce qu'on ne compte jamais ce qu'on ne mâche pas.
 >

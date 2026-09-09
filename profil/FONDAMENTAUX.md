@@ -345,6 +345,8 @@ une chaîne pour le long et une autre pour le court.
 - **Rien à la première personne qui ne soit pas vrai pour toi.**
 - **Aucune performance à l'image.** Ni chrono, ni allure, ni temps visé, ni record. Le grep de la passe de contrôle, c'est-à-dire la liste de ce qui **ne se dit pas à l'image** (les motifs sont cités ici pour être cherchés, pas pour être dits) : `1h35`, `1 h 35`, `une heure trente-cinq`, `heure trente`, `chrono`, `allure`, `min/km`, `43 min`, `43 minutes`, `au 10 km`, `je vise`, `objectif de temps`, `temps visé`, `record`, `PR`, `VMA`, `allure semi`, `fraction` quand elle désigne un temps, toute durée d'épreuve. Il passe sur chaque script, chaque texte de short, chaque légende, avant tournage.
 
+- **Jamais « coûte cher » pour des calories.** Le spectateur entend un prix, et il s'en fiche du prix. On dit « calorique », « calories », ou on montre le chiffre. Le hook se pose comme une question à laquelle la plupart des gens répondent faux : « Sur cette assiette, c'est quoi le plus calorique, d'après toi ? La plupart des gens répondent le dessert. Est-ce que c'est vrai ? » Règle donnée par toi le 9 septembre, après relecture du premier script.
+
 ### La règle de réécriture des « moi aussi »
 
 Les scripts hérités posent la chaleur avec un « moi aussi » de régime : « moi aussi je

@@ -10,7 +10,7 @@ Les trois shorts de la longue « Pourquoi ça revient », tournés dimanche 13 s
 
 | Sortie | Chapitre | Titre | Mots (hook / cœur / chute) | Durée estimée | Prises à tourner en plus | Inserts réutilisés |
 |---|---|---|---|---|---|---|
-| **mardi 22 septembre** | 2 | **La cuillère qui coûte plus cher que ton dessert** | 19 / 227 / 30 = 276 | 90 s à 185 mots/min ; environ 96 s au montage | 3 : le hook (19 mots), la chute (30), la phrase du mécanisme (26) | 6 compositions du chapitre 2 (02-reglette-9-vs-4, 02-le-peage-metabolique, 02-la-balance-huile, 02-creme-vs-cuillere, 02-la-faim-intacte, 02-de-kcal-a-grammes) ; plus le b-roll maison du filet d'huile, la barre de temps du plan 1:30, l'estomac en coupe du kit pour le plan 1:57, la capture de l'article Holt 1995 |
+| **mardi 22 septembre** | 2 | **La cuillère d'huile plus calorique que ton dessert** | 19 / 227 / 30 = 276 | 90 s à 185 mots/min ; environ 96 s au montage | 3 : le hook (19 mots), la chute (30), la phrase du mécanisme (26) | 6 compositions du chapitre 2 (02-reglette-9-vs-4, 02-le-peage-metabolique, 02-la-balance-huile, 02-creme-vs-cuillere, 02-la-faim-intacte, 02-de-kcal-a-grammes) ; plus le b-roll maison du filet d'huile, la barre de temps du plan 1:30, l'estomac en coupe du kit pour le plan 1:57, la capture de l'article Holt 1995 |
 | **jeudi 24 septembre** | 3 | **Ton estomac ne compte pas les calories. Il sent la place.** | 25 / 237 / 28 = 290 | 94 s à 185 mots/min ; environ 99 s au montage | 3 : le hook (25 mots), la chute (28), la phrase du mécanisme (21) | 5 compositions du chapitre 3 (03-l-estomac-compte-des-ml, 03-le-ballon-de-geliebter, 03-rolls-eau-a-cote, 03-rolls-eau-mixee, 03-van-walleghen-age en première partie seulement) ; plus le tampon HUIT PERSONNES, l'incrustation du verre et sa croix rouge, les deux vignettes croix rouge / coche verte du kit |
 | **samedi 26 septembre** | 4 | **On lui a retiré 80 % de l'estomac, et ça n'explique rien** | 23 / 228 / 30 = 281 | 91 s à 185 mots/min ; environ 100 s au montage | 3 : le hook (23 mots), la chute (30), la phrase du mécanisme (13) | 5 compositions du chapitre 4 (04-le-volume-ne-predit-rien, 04-anneau-vs-bypass, 04-non, 04-essai-eau-dans-les-aliments, 04-un-kilo-et-demi-contre-trente sur ses 2 premières secondes) ; plus les deux chronomètres 38 et 78 minutes, la souris et la case HORMONE DE LA FAIM, la paroi d'estomac du plan 1:44 : décrits dans le bracket, sans composition dans scenario.json |
 
@@ -18,21 +18,21 @@ Pour chaque short, dans l'ordre de sortie : le script au format bracket, les pri
 
 ---
 
-## Short 1 · « La cuillère qui coûte plus cher que ton dessert »
+## Short 1 · « La cuillère d'huile plus calorique que ton dessert »
 
 Chapitre 2 de la longue, « Le levier que tu ne mâches jamais ». Sort mardi 22 septembre. Hook 19 mots, cœur 227, chute 30 : 276 mots, 90 s à 185 mots/min, environ 96 s au montage. PMID de la légende : 15507147, 7498104.
 
 ### Le script
 
 ```text
-SHORT 1 · « La cuillère qui coûte plus cher que ton dessert » · chapitre 2 de « Pourquoi ça revient »
+SHORT 1 · « La cuillère d'huile plus calorique que ton dessert » · chapitre 2 de « Pourquoi ça revient »
 Hook 19 mots (tourné en plus) + cœur [S] 227 mots (21 plans du bracket du chapitre 2, mot pour mot) + chute 30 mots (tournée en plus) = 276 mots.
 Durée : 90 s à la formule des 185 mots/min (276 ÷ 185 × 60 = 89,5 s). Durée montée : environ 96 s, somme des plans ci-dessous (le cœur tourné à 159-165 mots/min et accéléré à 1,08× au plus ; hook, phrase du mécanisme et chute à débit reel). Le turn tombe à 49 s, soit 51 % du montage.
 Cadre 9:16 fixe, un cran plus serré que le long, jamais animé. Sous-titres verbatim par blocs de 2 à 4 mots entre 70 et 78 % de la hauteur, hook et chute compris, un seul mot surligné par phrase. Une seule musique, celle du long, à −15 dB sous la voix. Un seul scratch, sur le turn. Les bandeaux de source du long sont remontés au-dessus de la zone des sous-titres : les 20 % du bas sont couverts par l'interface.
 
 [00:00 — HOOK · tourné en plus, face caméra, accessoires · 6,5 s]
-Ça, tout le monde le surveille. Normal. Ça, personne. Et des deux, c'est elle qui coûte le plus cher.
-TEXT: ÇA, TOUT LE MONDE LE [SURVEILLE:jaune] ; NORMAL. ; ÇA, [PERSONNE:rouge]. ; C'EST ELLE QUI COÛTE LE PLUS [CHER:rouge]
+Ça, tout le monde le surveille. Normal. Ça, personne. Et des deux, c'est elle qui a le plus de calories.
+TEXT: ÇA, TOUT LE MONDE LE [SURVEILLE:jaune] ; NORMAL. ; ÇA, [PERSONNE:rouge]. ; C'EST ELLE QUI A LE PLUS DE [CALORIES:rouge]
 SFX: pop sur le pot qui entre dans le cadre, pop plus grave sur la cuillère ; silence sous la dernière phrase
 MUSIC: rien
 CAM: plan poitrine, caméra verrouillée. Sur le premier « Ça », le pot de crème dessert de 100 g monté à hauteur d'objectif, main gauche ; sur le deuxième « Ça », la cuillère à soupe d'huile pleine, main droite, même hauteur ; sur « elle », la cuillère avance d'un cran vers l'objectif
@@ -198,7 +198,7 @@ Trois prises chacune, à débit reel, dimanche 13 septembre, avec la longue.
 
 | Prise | Réplique | Jeu |
 |---|---|---|
-| **Le hook** | « Ça, tout le monde le surveille. Normal. Ça, personne. Et des deux, c'est elle qui coûte le plus cher. » 19 mots, environ 6,5 s. | **Posé.** Face caméra, accessoires (le pot de crème dessert de 100 g, une cuillère à soupe d'huile pleine), à débit reel, trois prises. Le pot monte sur le premier « Ça », la cuillère sur le deuxième, la cuillère avance vers l'objectif sur « elle ». |
+| **Le hook** | « Ça, tout le monde le surveille. Normal. Ça, personne. Et des deux, c'est elle qui a le plus de calories. » 19 mots, environ 6,5 s. | **Posé.** Face caméra, accessoires (le pot de crème dessert de 100 g, une cuillère à soupe d'huile pleine), à débit reel, trois prises. Le pot monte sur le premier « Ça », la cuillère sur le deuxième, la cuillère avance vers l'objectif sur « elle ». |
 | **La chute** | « Après, personne ne pèse son huile toute sa vie. Tu verses au filet, pas au glouglou. La cuillère en moins, ton estomac la sentira pas. Et tu gardes ton dessert. » 30 mots, environ 9,7 s. | **Plus bas.** Face caméra, même axe que le hook, le pot encore dans le cadre, à débit reel, trois prises. Regard tenu une seconde après « dessert ». |
 | **La phrase du mécanisme** | « Cent calories de protéines, ton corps en dépense vingt à trente rien que pour les digérer. Cent calories d'huile ? Zéro à trois. Elle passe presque entière. » 26 mots, environ 8,4 s. | Retournée **à débit reel**, face caméra, trois prises (sa voix passe sous l'insert 02-le-peage-metabolique ; l'image face caméra sert de secours si l'insert n'est pas rendu). |
 
@@ -266,7 +266,7 @@ Liste vérifiée contre le bracket actuel du chapitre 2 (1:48 → 4:03 du bracke
 - À CONFIRMER, le plus important : le pot de crème dessert filmé pèse 100 g. « Elle fait plus que le pot entier » (plan 1:02) et le hook « des deux, c'est elle qui coûte le plus cher » ne sont vrais que pour un pot de 100 g (121 calories) face à une cuillère à soupe pleine de 15 g (135). Un pot du commerce de 125 g fait environ 150 calories et bat la cuillère : la phrase devient fausse à l'image. Soit un pot de 100 g, soit la valeur Ciqual du pot précis posé sur la table. Et la cuillère du hook doit être pleine : à 10 g (90 calories) elle coûte moins que le pot.
 - À CONFIRMER : le plan 0:11 « Moi, pendant des années, je surveillais le sucre. Le gras, je le voyais pas. » est-il vrai pour Mohamed ? Dans le short il est coupé quoi qu'il arrive (c'est le « toi aussi », marqué [L]). Pour la longue : s'il n'est pas vrai, version mère (« Ma mère surveillait le sucre, pendant des années. Le gras, elle le voyait pas. Je l'ai vue faire. ») ou la phrase saute.
 - À CONFIRMER : la troisième phrase de la chute, « La cuillère en moins, ton estomac la sentira pas », tire la conséquence des plans 1:53 et 1:57 (presque aucune place, pas assez pour signaler). Si Mohamed préfère ne pas engager l'estomac dans la chute, repli : « Une cuillère en moins, tu la sentiras pas passer. » (28 mots au total).
-- À CONFIRMER : le titre YouTube Shorts reprend d'ordinaire le hook ; ici le hook est un geste avec deux objets, pas une phrase-titre. Proposition : « La cuillère qui coûte plus cher que ton dessert » comme titre, le hook restant ce qu'il est à l'image.
+- À CONFIRMER : le titre YouTube Shorts reprend d'ordinaire le hook ; ici le hook est un geste avec deux objets, pas une phrase-titre. Proposition : « La cuillère d'huile plus calorique que ton dessert » comme titre, le hook restant ce qu'il est à l'image.
 - À CONFIRMER : le « Normal. » du hook (le temps de validation avant la correction, règle 5 du format). Un mot, il se coupe au montage sans rien casser si Mohamed le trouve de trop.
 - Le hook ne reprend pas « le plus gros poste de ta journée » de l'ancienne annexe : cette affirmation n'est vérifiée nulle part dans le chapitre (le chapitre prouve cuillère contre pot, pas huile contre journée entière). Si Mohamed y tient, elle est à sourcer avant de la dire.
 

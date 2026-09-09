@@ -31,8 +31,8 @@ Format : `[M:SS — plan]` puis la narration en gras. `ÉCRAN` est le texte à l
 ## Ouverture à froid · 0:00 → 0:35 · 90 mots
 
 `[0:00 — camera]`
-**Sur ton assiette de ce soir, il y a un truc qui coûte plus cher que le dessert. Et tu le vois même pas.**
-- ÉCRAN — PLUS CHER QUE LE [DESSERT:rouge]
+**Sur ton assiette de ce soir, c'est quoi le plus calorique, d'après toi ? La plupart des gens répondent le dessert. Est-ce que c'est vrai ?**
+- ÉCRAN — LE PLUS [CALORIQUE:jaune] ? LE DESSERT ?
 - SON — silence, aucune musique
 
 `[0:06 — camera]`
@@ -58,7 +58,7 @@ Format : `[M:SS — plan]` puis la narration en gras. `ÉCRAN` est le texte à l
 
 > Croyance : les calories sont dans le dessert. Mécanisme : neuf, quatre, quatre.
 > Preuve : l'assiette, comptée. Turn : « donc je vire l'huile ? ». Résolution : le filet.
-> Le short 1, « L'huile coûte plus cher que ton dessert », est le cœur de ce chapitre.
+> Le short 1, « Le plus calorique de ton assiette, c'est pas le dessert », est le cœur de ce chapitre.
 
 `[0:35 — camera]`
 **Quand tu surveilles ce que tu manges, tu regardes le dessert. C'est normal : c'est le seul truc qu'on t'a appris à compter.**
@@ -360,7 +360,7 @@ légendes des shorts, jamais dans la bouche.
 | Chapitre | Ce que ça soutient | Source |
 |---|---|---|
 | 1 | le gras, le seul aliment qui cale moins quand il y en a plus | Holt 1995, PMID 7498104 |
-| 1 | la digestion coûte plus pour les protéines que pour l'huile | Westerterp 2004, PMID 15507147 |
+| 1 | la digestion dépense plus pour les protéines que pour l'huile | Westerterp 2004, PMID 15507147 |
 | 2 | le sport, la plus petite part de ce que tu brûles ; la digestion des protéines | Halton et Hu 2004, PMID 15466943 |
 | 2 | jusqu'à deux mille calories d'écart entre deux personnes, le NEAT | Levine 2002, PMID 12468415 |
 | 3 | cent soixante personnes, quatre régimes, un an, un kilo d'écart, la moitié qui lâche | Dansinger 2005, PMID 15632335 |
