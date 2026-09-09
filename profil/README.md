@@ -19,6 +19,19 @@ Ce qui a changé le 6 septembre : l'ancien modèle avait deux formats de vidéo 
 « yapping » du semi et la science). Il n'y a plus qu'un type de vidéo. Le semi vit dans
 les stories. `YAPPING-SEMI.md` est remplacé par `STORIES-SEMI.md`.
 
+**Note du mercredi 9 septembre, elle prime sur le calendrier ci-dessous.** Trois choses
+ont changé. **Instagram et YouTube seulement** : plus de miroir TikTok. **La première
+longue est « Les calories, les fondamentaux »** (c'est quoi une calorie, où elles sont,
+où elles partent, le corps cible), tournée dimanche 13, en ligne dimanche 20 à 18 h ;
+ses trois shorts et le trailer sortent **la même semaine, avant elle** : le trailer lundi
+14, « L'huile coûte plus cher que ton dessert » mardi 15, « Trois cents calories par jour
+sans t'entraîner » jeudi 17, « Mange comme le corps que tu vises » samedi 19. Tout est
+dans `video/calories-fondamentaux/` (`SCRIPT.md`, `SHORTS.md`, `TOURNAGE.md`). **Les six
+longues suivantes glissent d'une semaine** : « Pourquoi ça revient » se tourne le 20 et
+sort le 27, ses fichiers `S1-*.md` se lisent plus sept jours. L'ordre de la semaine devient
+celui-ci pour toutes les suivantes : les shorts de la longue sortent mardi, jeudi, samedi,
+la longue le dimanche ; sur YouTube, les Shorts se publient après la longue.
+
 **Note du mardi 8 septembre.** Le cycle de production est fixé : **on tourne tout le
 dimanche, on monte dans la semaine, on publie le dimanche d'après.** Le dimanche, la
 longue, ses trois shorts (hooks, chutes, phrases de mécanisme) et le b-roll ; du lundi au

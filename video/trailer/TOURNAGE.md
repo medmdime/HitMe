@@ -1,10 +1,11 @@
 # Tournage : le trailer
 
 **35 secondes · épinglé en premier sur Instagram · bande-annonce de la chaîne YouTube en
-16:9 · publié le même jour que la première longue, une heure après elle.** Dimanche
-20 septembre, à 19 h, si S1 tient ; dimanche 27 si S1 déborde. Il se tourne dimanche 13,
-en fin de session, avec la longue. Il est épinglé, pas daté :
-c'est lui qui glisse en premier, jamais la longue, jamais les trois shorts.
+16:9 · c'est la présentation, la première publication de la semaine.** Il se tourne
+dimanche 13, en fin de session, avec la longue « Les calories, les fondamentaux »
+(`video/calories-fondamentaux/`), se monte lundi 14 et sort **lundi 14 au soir**, avant
+les trois shorts de la semaine et avant la longue de dimanche 20. Décision du 9 septembre :
+la présentation ouvre la semaine, elle ne suit plus la longue.
 
 Le script d'origine est dans `profil/PROGRAMME-FONDAMENTAUX.md` § 7 ; ce document est le
 plan par plan, avec les fichiers. Le 7 septembre, deux répliques ont changé (plans 0:25 et
@@ -61,7 +62,7 @@ autres prises.
 | 0:09 → 0:17 | trois cartes de texte qui se succèdent : TON ASSIETTE · TA BIÈRE · TON DESSERT | cartes CapCut | « Ici, je te montre où elles sont vraiment. Dans ton assiette, dans ta bière, dans ton dessert. Sujets tabous compris. » | OÙ SONT LES CALORIES | un pop par carte |
 | 0:17 → 0:25 | **toi, face caméra**, plus bas, plus lent | à tourner | « Ma mère a essayé tous les régimes pendant que je grandissais. Ça ne marchait jamais. C'est pour ça qu'ici, personne n'est jugé. » | SANS JUGEMENT | la musique baisse d'un cran sous la phrase |
 | 0:25 → 0:32 | la plage, toi en tenue | `course\plage-reel.mp4` | « Et en attendant, je prépare un semi-marathon. Le dix-huit octobre. Après, un Hyrox. Tout ce que je brûle, on le compte. » | SEMI · 18 OCTOBRE | la musique remonte |
-| 0:32 → 0:35 | **toi, face caméra**, les mains libres | à tourner | « Première vidéo : pourquoi ça revient. » | CETTE SEMAINE | fin nette, pas de fondu long |
+| 0:32 → 0:35 | **toi, face caméra**, les mains libres | à tourner | « Première vidéo : les calories, les fondamentaux. » | CETTE SEMAINE | fin nette, pas de fondu long |
 
 Le plan de la plage est ramené à 7 s : la réplique a perdu son chrono, elle est plus
 courte. Le trailer fait 35 s tout rond.
@@ -96,7 +97,7 @@ bouger la caméra.
 |---|---|---|
 | 0:03,5 | « Pas un régime. Juste des calories que je comprends. » | posé, pas triomphant. Tu constates. La photo d'avant vient de passer : tu n'as rien à prouver, elle l'a fait |
 | 0:17 | « Ma mère a essayé tous les régimes pendant que je grandissais. Ça ne marchait jamais. C'est pour ça qu'ici, personne n'est jugé. » | **le plan le plus important du trailer.** Plus bas, plus lent. Tu ne racontes pas une anecdote, tu dis d'où tu viens. Un temps après « jamais ». La dernière phrase se dit presque comme une promesse |
-| 0:32 | « Première vidéo : pourquoi ça revient. » | léger, un demi-sourire, les mains libres. Coupe sur le mot « revient » |
+| 0:32 | « Première vidéo : les calories, les fondamentaux. » | léger, un demi-sourire, les mains libres. Coupe sur le mot « fondamentaux » |
 
 Lis les trois à voix haute avant de tourner. Si « pendant que je grandissais » ne te
 vient pas naturellement, dis-le avec tes mots : « toute mon enfance », « depuis que je

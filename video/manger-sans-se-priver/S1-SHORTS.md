@@ -1,5 +1,11 @@
 # S1 · « Pourquoi ça revient » : les trois shorts
 
+> **Reporté d'une semaine, décision du 9 septembre.** La première longue est devenue
+> « Les calories, les fondamentaux » (`video/calories-fondamentaux/`), tournée dimanche 13.
+> « Pourquoi ça revient » se tourne **dimanche 20** et sort **dimanche 27** ; ses shorts la
+> semaine du 21. Toutes les dates de ce document se lisent **plus sept jours**. Rien
+> d'autre ne change.
+
 Les trois shorts de la longue « Pourquoi ça revient », tournés dimanche 13 septembre 2026 avec elle et publiés après elle, la semaine du 21 septembre : mardi 22, jeudi 24, samedi 26, dans cet ordre le chapitre 2, le chapitre 3, le chapitre 4. Ce qui se tourne en plus le 13, à débit reel et en trois prises : les trois hooks, les trois chutes, les trois phrases du mécanisme. Le cœur de chaque short est le bloc [S] de son chapitre, repris mot pour mot des rushes de la longue. Ce fichier met en forme les trois scripts vérifiés contre le bracket actuel de `SCRIPT-video-1.md` ; il ne réécrit rien. La méthode est dans `profil/PROGRAMME-FONDAMENTAUX.md` § 6 ; le script de plateau de la longue, dans `S1-LONGUE.md`.
 
 | Sortie | Chapitre | Titre | Mots (hook / cœur / chute) | Durée estimée | Prises à tourner en plus | Inserts réutilisés |

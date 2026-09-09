@@ -1,5 +1,11 @@
 # S1 · Dimanche 13 septembre 2026 : la feuille de tournage
 
+> **Reporté d'une semaine, décision du 9 septembre.** La première longue est devenue
+> « Les calories, les fondamentaux » (`video/calories-fondamentaux/`), tournée dimanche 13.
+> « Pourquoi ça revient » se tourne **dimanche 20** et sort **dimanche 27** ; ses shorts la
+> semaine du 21. Toutes les dates de ce document se lisent **plus sept jours**. Rien
+> d'autre ne change.
+
 C'est le document que tu as sous les yeux sur le plateau, seul, avec une caméra sur pied.
 Tout ce qui se tourne aujourd'hui est ici, dans l'ordre. Les répliques nouvelles ou
 remplacées sont écrites en toutes lettres dans la section 3 ; les quatre chapitres se
