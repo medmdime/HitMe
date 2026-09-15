@@ -110,7 +110,7 @@ feuille de plateau et la direction de montage.
 | [[Les calories, les fondamentaux]] | la première longue et ses trois shorts | écrite, feuille de plateau prête |
 | [[Pourquoi ça revient]] | la deuxième longue, quatre chapitres | écrite, ouverture et chute écrites, trois shorts découpés |
 | [[Quoi mettre dans l'assiette]] | la troisième longue | écrite, l'ouverture à écrire |
-| [[Tu n'as jamais eu à le mériter]] | le reel monté, et la longue TDEE | deux pickups, puis la longue à écrire |
+| [[Tu n'as jamais eu à le mériter]] | le reel monté, et la longue TDEE | **deux pickups cette semaine**, la carte du levier 2 à masquer, puis la longue à écrire |
 | [[Une calorie, c'est une calorie]] | la longue des macros | un chapitre écrit |
 | [[Déficit calorique]] | le reel déjà publié sur YouTube, ta rep 1 | publié le 27 août |
 | [[Vingt kilos sans prendre de ventre]] | ton histoire | à écrire |
