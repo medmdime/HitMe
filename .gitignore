@@ -50,3 +50,10 @@ next-env.d.ts
 
 # clips détourés : trop lourds pour git, ils se régénèrent
 video/*/assets/detoure/
+
+# obsidian : l'état de fenêtre et la corbeille ne se versionnent pas, la config oui
+.obsidian/workspace.json
+.obsidian/workspace-mobile.json
+.obsidian/workspace/
+.obsidian/cache
+.trash/

@@ -1,0 +1,7 @@
+{
+  "shouldConfirmBeforeCreate": false,
+  "weekStart": "monday",
+  "wordsPerDot": 250,
+  "showWeeklyNote": false,
+  "localeOverride": "fr"
+}

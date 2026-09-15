@@ -1,0 +1,6 @@
+{
+  "folder": "calendrier",
+  "format": "YYYY-MM-DD",
+  "template": "modeles/Jour",
+  "autorun": false
+}

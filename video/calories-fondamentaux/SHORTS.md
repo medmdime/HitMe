@@ -1,15 +1,15 @@
 # Les trois shorts de « Les calories, les fondamentaux »
 
-Tournés dimanche 13 septembre avec la longue, dans la même session. Publiés sur
-Instagram la semaine du 14, **avant** la longue : ils l'annoncent. Leur légende reçoit la
-ligne YouTube le dimanche 20, quand la longue est en ligne. Sur YouTube Shorts, ils se
+Tournés dimanche 20 septembre avec la longue, dans la même session. Publiés sur
+Instagram la semaine du 21, **avant** la longue : ils l'annoncent. Leur légende reçoit la
+ligne YouTube le dimanche 27, quand la longue est en ligne. Sur YouTube Shorts, ils se
 publient après la longue, avec la longue en « vidéo associée ».
 
 | Sortie | Short | Chapitre | Hook / cœur / chute | Durée | À tourner en plus |
 |---|---|---|---|---|---|
-| mardi 15 | **Le plus calorique de ton assiette, c'est pas le dessert** | 1 | 22 / 220 / 30 mots | ≈ 1:25 | le hook, la chute, la phrase du mécanisme à débit reel |
-| jeudi 17 | **Trois cents calories par jour sans t'entraîner** | 2 | 25 / 205 / 27 mots | ≈ 1:22 | le hook, la chute, la phrase du mécanisme |
-| samedi 19 | **Mange comme le corps que tu vises** | 3 | 24 / 232 / 26 mots | ≈ 1:30 | le hook, la chute, la phrase du mécanisme |
+| mardi 22 | **Le plus calorique de ton assiette, c'est pas le dessert** | 1 | 22 / 220 / 30 mots | ≈ 1:25 | le hook, la chute, la phrase du mécanisme à débit reel |
+| jeudi 24 | **Trois cents calories par jour sans t'entraîner** | 2 | 25 / 205 / 27 mots | ≈ 1:22 | le hook, la chute, la phrase du mécanisme |
+| samedi 26 | **Mange comme le corps que tu vises** | 3 | 24 / 232 / 26 mots | ≈ 1:30 | le hook, la chute, la phrase du mécanisme |
 
 Le cœur de chaque short est **repris mot pour mot** des plans marqués **[S]** dans
 `SCRIPT.md`. Au montage du vendredi, on ne réécrit rien : on coupe ce qui renvoie aux
@@ -25,7 +25,7 @@ hook ; un seul scratch, sur le turn ; les inserts sont ceux de la longue, plein 
 
 ---
 
-## Short 1 · Le plus calorique de ton assiette, c'est pas le dessert · mardi 15
+## Short 1 · Le plus calorique de ton assiette, c'est pas le dessert · mardi 22
 
 Le cœur : les plans [S] du chapitre 1, de 1:05 à 2:39. Le hook est la première phrase de
 la longue, tournée une seconde fois pour le 9:16, avec l'accessoire.
@@ -115,11 +115,11 @@ La cuillère est pleine.
 > PMID 7498104 · PMID 15507147
 > #nutrition #calories #pertedepoids
 >
-> Le mécanisme entier, dix minutes : Mohamed Elmdimegh sur YouTube. *(cette ligne s'ajoute dimanche 20, quand la longue est en ligne)*
+> Le mécanisme entier, dix minutes : Mohamed Elmdimegh sur YouTube. *(cette ligne s'ajoute dimanche 27, quand la longue est en ligne)*
 
 ---
 
-## Short 2 · Trois cents calories par jour sans t'entraîner · jeudi 17
+## Short 2 · Trois cents calories par jour sans t'entraîner · jeudi 24
 
 Le cœur : les plans [S] du chapitre 2, de 4:45 à 5:31.
 
@@ -190,11 +190,11 @@ que ce soit du sport. »
 > PMID 12468415 · PMID 15466943
 > #nutrition #calories #neat
 >
-> Le mécanisme entier, dix minutes : Mohamed Elmdimegh sur YouTube. *(dimanche 20)*
+> Le mécanisme entier, dix minutes : Mohamed Elmdimegh sur YouTube. *(dimanche 27)*
 
 ---
 
-## Short 3 · Mange comme le corps que tu vises · samedi 19
+## Short 3 · Mange comme le corps que tu vises · samedi 26
 
 Le cœur : les plans [S] du chapitre 3, de 6:50 à 8:04. Le short de la série : c'est
 lui qui donne son nom à tout ce qui suit.
@@ -274,4 +274,4 @@ semaine », sinon « lentement ».
 > PMID 15632335 · PMID 16002798
 > #nutrition #calories #corpscible
 >
-> Le mécanisme entier, dix minutes : Mohamed Elmdimegh sur YouTube. *(dimanche 20)*
+> Le mécanisme entier, dix minutes : Mohamed Elmdimegh sur YouTube. *(dimanche 27)*

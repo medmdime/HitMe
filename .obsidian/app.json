@@ -1,0 +1,27 @@
+{
+  "userIgnoreFilters": [
+    "node_modules/",
+    ".next/",
+    ".hitme/",
+    "app/",
+    "components/",
+    "lib/",
+    "mcp/",
+    "scripts/",
+    "public/",
+    "hooks/",
+    "video/manger-sans-se-priver/tools/",
+    "video/deficit-calorique-fr/compositions/",
+    "video/meriter-son-repas/compositions/"
+  ],
+  "showUnsupportedFiles": false,
+  "alwaysUpdateLinks": true,
+  "newFileLocation": "current",
+  "attachmentFolderPath": "pieces-jointes",
+  "useMarkdownLinks": false,
+  "strictLineBreaks": false,
+  "spellcheck": true,
+  "spellcheckLanguages": [
+    "fr-FR"
+  ]
+}

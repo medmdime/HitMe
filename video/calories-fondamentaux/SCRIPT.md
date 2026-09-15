@@ -1,7 +1,7 @@
 # « Les calories, les fondamentaux »
 
-**La première longue YouTube · dix minutes · tournée dimanche 13 septembre 2026 · en ligne
-dimanche 20 à 18 h.** Trois shorts en sortent, tournés le même jour : `SHORTS.md`. La
+**La première longue YouTube · dix minutes · tournée dimanche 20 septembre 2026 · en ligne
+dimanche 27 à 18 h.** Trois shorts en sortent, tournés le même jour : `SHORTS.md`. La
 feuille de plateau est `TOURNAGE.md`.
 
 Ce que la vidéo dit, en une phrase : une calorie, c'est de l'énergie, et tout le monde
@@ -320,7 +320,7 @@ Format : `[M:SS — plan]` puis la narration en gras. `ÉCRAN` est le texte à l
 **Dimanche prochain, dix-huit heures : « Pourquoi ça revient ». Pourquoi le poids que tu as perdu est revenu, et pourquoi ce n'est pas ta volonté.**
 - ÉCRAN — DIMANCHE · « POURQUOI ÇA REVIENT »
 - JEU — tu te recules, tu tiens le regard une seconde. Pas d'abonnement, pas de lien
-- **À CONFIRMER** — « dix-huit heures » n'est vrai que si la suivante sort dimanche 27 à 18 h ; tourne aussi la ligne sans l'heure
+- **À CONFIRMER** — « dix-huit heures » n'est vrai que si la suivante sort dimanche 4 octobre à 18 h ; tourne aussi la ligne sans l'heure
 
 ---
 

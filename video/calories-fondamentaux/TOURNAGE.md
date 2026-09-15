@@ -1,4 +1,4 @@
-# Tournage : dimanche 13 septembre 2026
+# Tournage : dimanche 20 septembre 2026
 
 Tout se tourne aujourd'hui : la longue « Les calories, les fondamentaux », ses trois
 shorts, le trailer, les deux pickups de « Tu n'as jamais eu à le mériter », la photo de
@@ -153,13 +153,13 @@ Les photos de l'assiette dans `D:\videos\calories-fondamentaux\assiette\`.
 
 | Jour | Ce que tu fais | Ce qui sort |
 |---|---|---|
-| lundi 14 | le trailer monté, deux exports : 9:16 pour Instagram, 16:9 pour YouTube | **le trailer**, le soir, épinglé sur Instagram ; bande-annonce de la chaîne YouTube |
-| mardi 15 | short 1 monté le matin · montage de la longue, partie 1 | **short 1, L'huile** |
-| mercredi 16 | short 2 monté · montage de la longue, partie 2 | |
-| jeudi 17 | short 3 monté · les inserts : la carte 9-4-4, les quatre barres, les cartes | **short 2, Trois cents calories** |
-| vendredi 18 | montage de la longue, partie 3 : relecture, sous-titres, miniature, description | (la longue peut sortir ce soir si elle est prête ; sinon dimanche) |
-| samedi 19 | programmation · l'écriture de « Pourquoi ça revient » est déjà faite : relire `S1-LONGUE.md` à voix haute | **short 3, Corps cible** |
-| dimanche 20 | **la longue à 18 h** · les trois shorts publiés sur YouTube Shorts après elle, avec la longue en vidéo associée · la ligne YouTube ajoutée aux trois légendes Instagram · tournage de « Pourquoi ça revient » | **la longue** |
+| lundi 21 | le trailer monté, deux exports : 9:16 pour Instagram, 16:9 pour YouTube | **le trailer**, le soir, épinglé sur Instagram ; bande-annonce de la chaîne YouTube |
+| mardi 22 | short 1 monté le matin · montage de la longue, partie 1 | **short 1, L'huile** |
+| mercredi 23 | short 2 monté · montage de la longue, partie 2 | |
+| jeudi 24 | short 3 monté · les inserts : la carte 9-4-4, les quatre barres, les cartes | **short 2, Trois cents calories** |
+| vendredi 25 | montage de la longue, partie 3 : relecture, sous-titres, miniature, description | (la longue peut sortir ce soir si elle est prête ; sinon dimanche) |
+| samedi 26 | programmation · l'écriture de « Pourquoi ça revient » est déjà faite : relire `S1-LONGUE.md` à voix haute | **short 3, Corps cible** |
+| dimanche 27 | **la longue à 18 h** · les trois shorts publiés sur YouTube Shorts après elle, avec la longue en vidéo associée · la ligne YouTube ajoutée aux trois légendes Instagram · tournage de « Pourquoi ça revient » | **la longue** |
 
 Tu as proposé vendredi soir ou dimanche soir pour la longue. Dimanche tient le rythme de
 toutes les semaines suivantes : la longue, c'est le dimanche à 18 h. Vendredi reste

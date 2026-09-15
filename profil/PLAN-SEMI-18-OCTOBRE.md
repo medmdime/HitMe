@@ -181,10 +181,10 @@ tourner et animer une journée quand l'assiette animée existe.
 ## 4. Le calendrier
 
 > **Note du 9 septembre, elle prime sur ce qui suit.** La première longue est
-> « Les calories, les fondamentaux » (`video/calories-fondamentaux/`), tournée dimanche 13,
-> en ligne dimanche 20 à 18 h ; ses trois shorts sortent la même semaine, avant elle, avec
-> le trailer lundi 14. Toutes les longues suivantes glissent d'une semaine : « Pourquoi ça
-> revient » se tourne le 20 et sort le 27. Plus de miroir TikTok : Instagram et YouTube.
+> « Les calories, les fondamentaux » (`video/calories-fondamentaux/`), tournée dimanche 20,
+> en ligne dimanche 27 à 18 h ; ses trois shorts sortent la même semaine, avant elle, avec
+> le trailer lundi 21. Toutes les longues suivantes glissent : « Pourquoi ça revient » se
+> tourne le 27 et sort le 4 octobre. **Les dates de référence sont dans `calendrier/`, une note par jour, depuis [[HUB]].** Plus de miroir TikTok : Instagram et YouTube.
 > Le tableau ci-dessous se lit avec ce décalage jusqu'à sa réécriture.
 
 ### La semaine type

@@ -1,9 +1,9 @@
 # S1 · « Pourquoi ça revient » : le script de plateau
 
 > **Reporté d'une semaine, décision du 9 septembre.** La première longue est devenue
-> « Les calories, les fondamentaux » (`video/calories-fondamentaux/`), tournée dimanche 13.
-> « Pourquoi ça revient » se tourne **dimanche 20** et sort **dimanche 27** ; ses shorts la
-> semaine du 21. Toutes les dates de ce document se lisent **plus sept jours**. Rien
+> « Les calories, les fondamentaux » (`video/calories-fondamentaux/`), tournée dimanche 20.
+> « Pourquoi ça revient » se tourne **dimanche 27 septembre** et sort **dimanche 4 octobre** ; ses
+> shorts la semaine du 28. Toutes les dates de ce document se lisent **plus quatorze jours**. Rien
 > d'autre ne change.
 
 Le script des quatre chapitres est dans `SCRIPT-video-1.md`, vérifié, 9:08, 69 PMID. Il ne
