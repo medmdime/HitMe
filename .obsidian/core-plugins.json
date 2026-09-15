@@ -17,5 +17,17 @@
   "file-recovery": true,
   "bookmarks": true,
   "canvas": true,
-  "bases": true
+  "bases": true,
+  "footnotes": false,
+  "slash-command": false,
+  "editor-status": true,
+  "markdown-importer": false,
+  "zk-prefixer": false,
+  "random-note": false,
+  "slides": false,
+  "audio-recorder": false,
+  "workspaces": false,
+  "publish": false,
+  "sync": true,
+  "webviewer": false
 }
