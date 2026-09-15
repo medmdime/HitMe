@@ -1,5 +1,12 @@
 # HitMe
 
+> **Où tu es.** `outils/hitme/` est le code du dépôt : l'app Next.js et le serveur MCP.
+> Le dépôt lui-même est un coffre Obsidian dont tout part de [`HUB.md`](../../HUB.md).
+> HitMe tourne **en local seulement** ; la seule chose distante est la base Postgres sur
+> Neon, `DATABASE_URL` dans le `.env.local` de ce dossier. Les commandes ci-dessous se
+> lancent depuis ce dossier ; Claude Code démarre le serveur MCP depuis le `.mcp.json` de
+> la racine.
+
 A YouTube script reverse-engineering tool with two halves:
 
 1. **Discover** — find outlier videos in any channel or niche, ranked by `views ÷ channel median`.
@@ -141,7 +148,7 @@ lib/
 
 Everything above is also available to an AI assistant over MCP, plus clip transcription,
 a saved-work library, and video projects. Claude Code picks it up automatically from
-`.mcp.json` when this folder is the working directory.
+the repo root's `.mcp.json` when the repo root is the working directory.
 
 ```bash
 bun run mcp:smoke     # boot it, list tools, sanity-check

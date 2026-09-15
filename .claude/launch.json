@@ -5,6 +5,8 @@
       "name": "hitme-dev",
       "runtimeExecutable": "bun",
       "runtimeArgs": [
+        "--cwd",
+        "outils/hitme",
         "run",
         "dev"
       ],

@@ -86,7 +86,7 @@ qu'une rep 1 sert à trouver.
 
 | | Verdict |
 |---|---|
-| **HitMe** (`app/`, `mcp/`) | recherche d'outliers YouTube, TikTok, Instagram ; teardown en script bracket ; projets ; plan de b-roll ; sortie CapCut |
+| **HitMe** (`outils/hitme/`) | recherche d'outliers YouTube, TikTok, Instagram ; teardown en script bracket ; projets ; plan de b-roll ; sortie CapCut |
 | **HyperFrames** | les animations. `SplitBar` et le kit visuel existent ; la carte 9-4-4 se rend une fois ; l'avant/après se construit jeudi de S1, la population de silhouettes jeudi de S4. **Le composant « Assiette » reste à construire**, hors du chemin critique des six semaines |
 | `science-reel` | le meilleur actif du dépôt : mesuré sur 12 reels, adaptation française avec les pièges de grammaire. Sa section « Scaling to long form » fixe le débit et les plans du long. Un reel en version lourde te coûte **une journée** : le reel déficit a été animé, monté et publié le 27 août dans la même journée |
 | `montage-capcut` | ta chaîne de montage, de nouveau. La grammaire sonore et les volumes se recopient ; la zone des sous-titres change (§ 6) |

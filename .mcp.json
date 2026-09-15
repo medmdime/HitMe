@@ -2,7 +2,7 @@
   "mcpServers": {
     "hitme": {
       "command": "node",
-      "args": ["node_modules/tsx/dist/cli.mjs", "mcp/server.ts"],
+      "args": ["outils/hitme/node_modules/tsx/dist/cli.mjs", "outils/hitme/mcp/server.ts"],
       "env": {}
     }
   }

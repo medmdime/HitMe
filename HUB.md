@@ -1,7 +1,8 @@
 # HUB
 
-**Tout part d'ici.** Ce coffre Obsidian est le dépôt HitMe lui-même : les mêmes fichiers
-que Claude lit et écrit, ouverts comme des notes. Une page par vidéo, une note par jour
+**Tout part d'ici.** Ce coffre Obsidian est le dépôt lui-même : les mêmes fichiers que
+Claude lit et écrit, ouverts comme des notes. La documentation d'abord ; le code n'est
+qu'un outil, rangé dans `outils/` et masqué ici. Une page par vidéo, une note par jour
 où il se passe quelque chose, la méthode à côté. Ce que tu changes ici, Claude le voit ;
 ce que Claude écrit, tu le vois ici.
 
@@ -15,6 +16,12 @@ ce que Claude écrit, tu le vois ici.
 Avant dimanche, cinq choses à trancher, elles sont listées en bas de
 [[Les calories, les fondamentaux#À confirmer avant de tourner|la page de la vidéo]].
 
+**Cette semaine, du lundi 14 au dimanche 20 : trois vidéos à sortir.** Deux sont déjà sur
+YouTube, [[Déficit calorique]] et « Trois cents calories par jour ». La troisième se tourne
+au téléphone, en dix minutes : les deux pickups de [[Tu n'as jamais eu à le mériter]], dont
+le montage attend depuis le 6 septembre. Comment le finir dans CapCut :
+[[video/meriter-son-repas/montage/CAPCUT-PICKUPS|CAPCUT-PICKUPS]].
+
 ---
 
 ## 1. Le profil : les fondamentaux
@@ -22,13 +29,13 @@ Avant dimanche, cinq choses à trancher, elles sont listées en bas de
 Qui tu es, ce que tu défends, à qui tu parles, comment tu parles. À relire avant d'écrire
 un script ou une légende.
 
-| Note | Ce qu'elle contient |
-|---|---|
-| [[profil/README\|Le topo]] | les décisions en dix lignes, la semaine type, ce qui est écrit et ce qui manque |
-| [[profil/FONDAMENTAUX\|Les fondamentaux du profil]] | le Brand Journey, le Brand Story, les deux spectateurs, le ton, la signature, le tournage, ce qu'on ne fait pas |
-| [[profil/PROGRAMME-FONDAMENTAUX\|Le programme]] | les vidéos longues chapitre par chapitre, la méthode d'écriture d'une longue, la méthode du short, le packaging YouTube, la règle YouBud |
-| [[profil/STORIES-SEMI\|Les stories]] | le sport et la vie dans les stories, sans chrono ; le b-roll par séance ; la réserve « Manger quand tu cours » |
-| [[profil/PLAN-SEMI-18-OCTOBRE\|Le plan des six semaines]] | la charge par semaine, les recherches à faire, le journal. **Pour les dates, c'est le [[Calendrier]] qui fait foi**, pas ce plan |
+| Note                                                      | Ce qu'elle contient                                                                                                                      |
+| --------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------- |
+| [[profil/README\|Le topo]]                                | les décisions en dix lignes, la semaine type, ce qui est écrit et ce qui manque                                                          |
+| [[profil/FONDAMENTAUX\|Les fondamentaux du profil]]       | le Brand Journey, le Brand Story, les deux spectateurs, le ton, la signature, le tournage, ce qu'on ne fait pas                          |
+| [[profil/PROGRAMME-FONDAMENTAUX\|Le programme]]           | les vidéos longues chapitre par chapitre, la méthode d'écriture d'une longue, la méthode du short, le packaging YouTube, la règle YouBud |
+| [[profil/STORIES-SEMI\|Les stories]]                      | le sport et la vie dans les stories, sans chrono ; le b-roll par séance ; la réserve « Manger quand tu cours »                           |
+| [[profil/PLAN-SEMI-18-OCTOBRE\|Le plan des six semaines]] | la charge par semaine, les recherches à faire, le journal. **Pour les dates, c'est le [[Calendrier]] qui fait foi**, pas ce plan         |
 
 Les dix décisions, en une ligne chacune : un seul type de vidéo, les calories ; une longue
 YouTube par semaine, dix minutes ; trois shorts Instagram tirés du même script ; le sport
@@ -146,7 +153,7 @@ toi. Elles sont dans [[profil/FONDAMENTAUX#6. Le ton et la signature|les fondame
 
 | Outil | Ce qu'il fait | Où |
 |---|---|---|
-| HitMe | recherche d'outliers YouTube, TikTok, Instagram ; teardown d'une vidéo en script ; projets ; b-roll ; sortie CapCut | `app/`, `mcp/`, ce dépôt |
+| HitMe | recherche d'outliers YouTube, TikTok, Instagram ; teardown d'une vidéo en script ; projets ; b-roll ; sortie CapCut | `outils/hitme/` : l'app et le serveur MCP. En local seulement ; la base de données sur Neon |
 | HyperFrames | les animations en HTML rendu en vidéo | `.agents/skills/hyperframes*` |
 | Higgsfield | images, vidéos, décors ; jamais toi | par Claude |
 | CapCut | le montage | installé |
@@ -164,8 +171,8 @@ toi. Elles sont dans [[profil/FONDAMENTAUX#6. Le ton et la signature|les fondame
 
 ## 9. Ce coffre Obsidian
 
-- **Le coffre est le dépôt** : `C:\Users\melmdim\HitMe`. Les dossiers de code (`app`, `lib`, `mcp`, `node_modules`, `.next`, `.hitme`) sont exclus de l'affichage dans les réglages du coffre. Les dossiers qui commencent par un point (`.claude`, `.agents`) ne s'affichent jamais dans Obsidian : c'est pour ça que `methode/` existe.
-- **Les dossiers** : `profil/` le profil ; `video/` une page et des fichiers par vidéo ; `calendrier/` une note par jour ; `methode/` la méthode ; `modeles/` les modèles de notes ; `pieces-jointes/` ce que tu glisses dans une note.
+- **Le coffre est le dépôt** : `C:\Users\melmdim\HitMe`. Le code vit dans `outils/`, exclu de l'affichage dans les réglages du coffre, comme les compositions HyperFrames rangées à côté de leurs vidéos. Les dossiers qui commencent par un point (`.claude`, `.agents`) ne s'affichent jamais dans Obsidian : c'est pour ça que `methode/` existe.
+- **Les dossiers** : `profil/` le profil ; `video/` une page et des fichiers par vidéo ; `calendrier/` une note par jour ; `methode/` la méthode ; `modeles/` les modèles de notes ; `pieces-jointes/` ce que tu glisses dans une note ; `outils/` le code, invisible ici.
 - **Le plugin Calendar** : Réglages → Plugins communautaires → Parcourir → « Calendar » (Liam Cain) → Installer → Activer. Il est déjà réglé pour lire `calendrier/` au format `YYYY-MM-DD`, la semaine commençant le lundi. C'est le seul plugin ; rien d'autre à installer.
 - **Git** : les notes sont versionnées comme le reste. Après une session d'écriture, un commit. L'état de fenêtre d'Obsidian (`.obsidian/workspace.json`) est ignoré.
 - **Les liens** entre notes sont des liens Obsidian, `[[Nom de la note]]`. Un nom de vidéo suffit : les noms sont uniques dans le coffre.

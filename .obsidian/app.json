@@ -1,15 +1,7 @@
 {
   "userIgnoreFilters": [
-    "node_modules/",
-    ".next/",
-    ".hitme/",
-    "app/",
-    "components/",
-    "lib/",
-    "mcp/",
-    "scripts/",
-    "public/",
-    "hooks/",
+    "outils/",
+    "/node_modules\\//",
     "video/manger-sans-se-priver/tools/",
     "video/deficit-calorique-fr/compositions/",
     "video/meriter-son-repas/compositions/"

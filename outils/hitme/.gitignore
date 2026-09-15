@@ -1,0 +1,29 @@
+# HitMe, l'app Next.js et le serveur MCP : ce qui se régénère ou ne se partage pas
+
+# dependencies
+/node_modules
+/.pnp
+.pnp.*
+
+# next.js
+/.next/
+/out/
+/build
+/coverage
+next-env.d.ts
+
+# typescript
+*.tsbuildinfo
+
+# env files : les clés API, jamais publiées
+.env
+.env*.local
+
+# espace de travail du MCP : clips téléchargés, segments, exports
+/.hitme/
+
+# debug
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
