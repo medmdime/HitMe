@@ -2,7 +2,7 @@ filters:
   and:
     - file.inFolder("video")
     - file.ext == "md"
-    - 'type == "longue" || type == "reel" || type == "trailer"'
+    - type == "longue" || type == "reel" || type == "trailer"
 properties:
   quoi:
     displayName: Quoi
@@ -19,20 +19,20 @@ views:
     name: Tableau
     order:
       - file.name
-      - note.quoi
-      - note.etat
-      - note.tournage
-      - note.sortie
+      - quoi
+      - etat
+      - tournage
+      - sortie
     sort:
-      - property: note.sortie
+      - property: sortie
         direction: ASC
   - type: cards
     name: Cartes
     order:
       - file.name
-      - note.quoi
-      - note.etat
-      - note.sortie
+      - quoi
+      - etat
+      - sortie
     sort:
-      - property: note.sortie
+      - property: sortie
         direction: ASC

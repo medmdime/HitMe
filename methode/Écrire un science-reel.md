@@ -13,20 +13,20 @@ benchmark number. Never "5 tips for X."
 
 ## The corpus
 
-| Reel | Topic | Likes | Views | Hook |
-|---|---|---|---|---|
-| `DTdVpZljqZh` | Twinkie diet | 780K | 7.5M (21.8x) | react — Sam Sulek |
-| `DUTagjXDqAa` | Muscle memory | 285K | — | react — post-ACL atrophy |
-| `DW6rQ6PDiGs` | Cardio vs lifting | 118K | — | react — peer claim |
-| `DXeuUoYDuOK` | Calorie deficit ≠ eat less | 106K | — | prop — Chipotle |
-| `DYm0eCYOr72` | Metabolic adaptation | 96K | — | react — stitch |
-| `DcRIpQBO1Mu` | Diet vs regular Coke | 94K | 1.3M (3.9x) | prop — two cans |
-| `Dak_KxmOjM9` | Nicotine | 66K | — | prop — pedestal |
-| `DbV6ZsRObEW` | Ashwagandha | 47K | — | react — comedy skit |
-| `Db_HH_9uaow` | Skinny-fat | 35K | 586K (1.7x) | react — peer claim |
-| `DZK5jErOZL5` | "Processed" (sponsored) | 28K | — | prop — swap |
-| `DbtFjC6OqBG` | VO2 max | 26K | 387K (1.1x) | react — authority mashup |
-| `DcL_FY6O--p` | Vitamin D | 14K | 141K (0.4x) | react — testimonial |
+| Reel          | Topic                      | Likes | Views        | Hook                     |
+| ------------- | -------------------------- | ----- | ------------ | ------------------------ |
+| `DTdVpZljqZh` | Twinkie diet               | 780K  | 7.5M (21.8x) | react — Sam Sulek        |
+| `DUTagjXDqAa` | Muscle memory              | 285K  | —            | react — post-ACL atrophy |
+| `DW6rQ6PDiGs` | Cardio vs lifting          | 118K  | —            | react — peer claim       |
+| `DXeuUoYDuOK` | Calorie deficit ≠ eat less | 106K  | —            | prop — Chipotle          |
+| `DYm0eCYOr72` | Metabolic adaptation       | 96K   | —            | react — stitch           |
+| `DcRIpQBO1Mu` | Diet vs regular Coke       | 94K   | 1.3M (3.9x)  | prop — two cans          |
+| `Dak_KxmOjM9` | Nicotine                   | 66K   | —            | prop — pedestal          |
+| `DbV6ZsRObEW` | Ashwagandha                | 47K   | —            | react — comedy skit      |
+| `Db_HH_9uaow` | Skinny-fat                 | 35K   | 586K (1.7x)  | react — peer claim       |
+| `DZK5jErOZL5` | "Processed" (sponsored)    | 28K   | —            | prop — swap              |
+| `DbtFjC6OqBG` | VO2 max                    | 26K   | 387K (1.1x)  | react — authority mashup |
+| `DcL_FY6O--p` | Vitamin D                  | 14K   | 141K (0.4x)  | react — testimonial      |
 
 Full teardowns are cached: `library_get ref=instagram:SHORTCODE`. Outlier scores come from a
 12-post lookback on views; likes are the only metric comparable across the whole set.
