@@ -8,19 +8,20 @@ ce que Claude écrit, tu le vois ici.
 
 ## Aujourd'hui
 
-**Prochain tournage : dimanche 20 septembre**, tout d'un coup : la longue
-[[Les calories, les fondamentaux]], ses trois shorts, [[Le trailer]], les deux pickups de
-[[Tu n'as jamais eu à le mériter]]. La feuille de plateau, à avoir sous les yeux :
-[[video/calories-fondamentaux/TOURNAGE|TOURNAGE]]. La note du jour : [[2026-09-20 🎬 Tournage · Les calories, les fondamentaux|dimanche 20]].
+**Cette semaine, trois vidéos sur Instagram, une par jour, et rien ne se décale.**
 
-Avant dimanche, cinq choses à trancher, elles sont listées en bas de
+| | Sur Instagram | À faire |
+|---|---|---|
+| **jeudi 17** | [[Déficit calorique]], le reel du 27 août, tel quel | poster, la description YouTube en légende : [[2026-09-17 📱 Déficit calorique\|la note]] |
+| **vendredi 18** | « Trois cents calories par jour », le Short déjà sur YouTube, tel quel | **le matin, dix minutes au téléphone : les deux pickups** de [[Tu n'as jamais eu à le mériter]], puis une heure dans CapCut. La feuille : [[video/meriter-son-repas/montage/CAPCUT-PICKUPS\|CAPCUT-PICKUPS]] · [[2026-09-18 🎬 Pickups · Tu n'as jamais eu à le mériter\|la note]] |
+| **samedi 19** | [[Tu n'as jamais eu à le mériter]], fini la veille | Instagram, et YouTube en Short. Légende : [[video/meriter-son-repas/SCRIPT#4. La légende\|SCRIPT § 4]] · [[2026-09-19 📱 Tu n'as jamais eu à le mériter\|la note]] |
+
+**Puis dimanche 20 septembre, la première grande session**, tout d'un coup : la longue
+[[Les calories, les fondamentaux]], ses trois shorts, [[Le trailer]]. La feuille de plateau,
+à avoir sous les yeux : [[video/calories-fondamentaux/TOURNAGE|TOURNAGE]]. La note du jour :
+[[2026-09-20 🎬 Tournage · Les calories, les fondamentaux|dimanche 20]]. Avant dimanche,
+cinq choses à trancher, listées en bas de
 [[Les calories, les fondamentaux#À confirmer avant de tourner|la page de la vidéo]].
-
-**Cette semaine, du lundi 14 au dimanche 20 : trois vidéos à sortir.** Deux sont déjà sur
-YouTube, [[Déficit calorique]] et « Trois cents calories par jour ». La troisième se tourne
-au téléphone, en dix minutes : les deux pickups de [[Tu n'as jamais eu à le mériter]], dont
-le montage attend depuis le 6 septembre. Comment le finir dans CapCut :
-[[video/meriter-son-repas/montage/CAPCUT-PICKUPS|CAPCUT-PICKUPS]].
 
 ---
 

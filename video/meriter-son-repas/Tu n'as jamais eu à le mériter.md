@@ -1,7 +1,7 @@
 ---
 type: longue
 quoi: "le reel monté, et la longue TDEE"
-etat: "deux pickups cette semaine, la carte du levier 2 à masquer, puis la longue à écrire"
+etat: "pickups vendredi 18 au matin, montage l'après-midi, sortie samedi 19 ; puis la longue à écrire"
 tournage: 2026-10-11
 sortie: 2026-10-18
 ---
@@ -13,7 +13,7 @@ brûles. Le TDEE en quatre, la digestion qui bat le sport sur la journée, les t
 
 | | |
 |---|---|
-| Le reel | 1:29, **tourné, animé, monté, sous-titré** à deux plans près : `montage/01-FINAL-sans-pickups.mp4`, deux trous noirs de 4,5 s et de 12 s. Les deux pickups se tournent au téléphone **cette semaine**, en portrait natif, dix minutes, et se posent par-dessus le rendu dans CapCut : [[video/meriter-son-repas/montage/CAPCUT-PICKUPS\|CAPCUT-PICKUPS]]. **À corriger dans le même montage** : la carte du levier 2 dit « coûtent plus cher », rendu du 6 septembre, d'avant la règle |
+| Le reel | 1:29, **tourné, animé, monté, sous-titré** à deux plans près : `montage/01-FINAL-sans-pickups.mp4`, deux trous noirs de 4,5 s et de 12 s. Les deux pickups se tournent au téléphone [[2026-09-18 🎬 Pickups · Tu n'as jamais eu à le mériter\|vendredi 18 au matin]], en portrait natif, dix minutes, et se posent par-dessus le rendu dans CapCut : [[video/meriter-son-repas/montage/CAPCUT-PICKUPS\|CAPCUT-PICKUPS]]. **À corriger dans le même montage** : la carte du levier 2 dit « coûtent plus cher », rendu du 6 septembre, d'avant la règle |
 | La longue | **à écrire** : trois chapitres, le sport à cinq pour cent, le NEAT, la digestion. Sa matière est dans ce reel et dans [[Déficit calorique]] |
 | Tournage de la longue | [[2026-10-11 🎬 Tournage · Tu n'as jamais eu à le mériter\|dimanche 11 octobre]] |
 | Sortie de la longue | [[2026-10-18 📺 Sortie 18 h · Tu n'as jamais eu à le mériter\|dimanche 18 octobre]] à 18 h, jour de course, **programmée d'avance** |
@@ -52,8 +52,8 @@ Les deux autres voies restent dans [[profil/PLAN-SEMI-18-OCTOBRE#Les pickups de 
 | jeudi 15 oct | **Ta digestion brûle plus que ta séance** |
 | samedi 17 oct | **Le régime que tu choisis ne prédit rien**, de réserve |
 
-À décider quand la longue s'écrira : le reel lui-même peut sortir sur Instagram comme
-short de réserve, une fois les pickups posés.
+Le reel sort [[2026-09-19 📱 Tu n'as jamais eu à le mériter|samedi 19 septembre]] sur
+Instagram et en Short YouTube : la troisième vidéo de la semaine du 14.
 
 ## Le montage
 

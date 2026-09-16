@@ -1,7 +1,7 @@
 ---
 type: reel
 quoi: "le reel déjà publié sur YouTube, ta rep 1"
-etat: "publié le 27 août"
+etat: "publié le 27 août sur YouTube ; sur Instagram jeudi 17 septembre"
 sortie: 2026-08-27
 ---
 # Déficit calorique
@@ -14,7 +14,7 @@ de ce qui sort.
 |---|---|
 | État | **publié** sur YouTube le 27 août 2026, 1:12. Mille trois cent quarante-deux vues en neuf jours à la première mesure, cent une personnes abonnées à la chaîne |
 | Hook | en réaction à un clip TikTok de BANANAMO, puis « Il a raison. Mais ça, c'est que la moitié de la réponse » |
-| Sur Instagram | à publier tel quel quand le compte existe, comme short de réserve |
+| Sur Instagram | [[2026-09-17 📱 Déficit calorique\|jeudi 17 septembre]], tel quel : la première des trois vidéos de la semaine du 14 |
 
 ## Les fichiers
 
