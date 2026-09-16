@@ -8,8 +8,8 @@ plateforme: Instagram
 
 # 📱 La petite assiette ne t'a jamais fait maigrir
 
-**mardi 6 octobre 2026, Instagram.** Le short sort avant la longue, qui arrive le dimanche à 18 h. La ligne « Le mécanisme entier, dix minutes : Mohamed Elmdimegh sur YouTube » s'ajoute à la légende le dimanche soir.
+**mardi 6 octobre 2026.** **À écrire**, à partir de [[Quoi mettre dans l'assiette]] : un hook, un cœur de deux cents mots, une chute, la méthode de [[methode/Écrire un science-reel|Écrire un science-reel]]. Tourné [[2026-10-04 🎬 Tournage · les shorts du 6 au 10 octobre|dimanche 4]], monté lundi 5, une heure.
 
-![[Quoi mettre dans l'assiette#Les shorts]]
+![[Quoi mettre dans l'assiette]]
 
 [[Calendrier]] · [[HUB]]

@@ -1,5 +1,7 @@
 # Les trois shorts de « Les calories, les fondamentaux »
 
+> **Changement du 17 septembre.** Pas de longue avant le semi : ces trois shorts se tournent **seuls**, tête parlante, le texte d'une traite puis le hook et la chute à part ; les inserts deviennent des cartes texte CapCut. Les shorts 1 et 3 se tournent vendredi 18 et sortent mardi 22 et samedi 26 ; le short 2 se tourne dimanche 27 et sort mardi 29. Le prompteur du 18 : [[Tournage du vendredi 18 septembre]]. La ligne YouTube de la légende ne s'ajoute pas.
+
 Tournés dimanche 20 septembre avec la longue, dans la même session. Publiés sur
 Instagram la semaine du 21, **avant** la longue : ils l'annoncent. Leur légende reçoit la
 ligne YouTube le dimanche 27, quand la longue est en ligne. Sur YouTube Shorts, ils se

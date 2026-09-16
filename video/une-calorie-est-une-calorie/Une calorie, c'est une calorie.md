@@ -1,11 +1,14 @@
 ---
 type: longue
 quoi: "la longue des macros"
-etat: "un chapitre écrit"
-tournage: 2026-10-17
-sortie: 2026-10-25
+etat: "un chapitre écrit ; ses trois shorts pour la semaine du 19 octobre ; la longue après le semi"
 ---
 # Une calorie, c'est une calorie
+
+> **Changement du 17 septembre.** Jusqu'au dimanche 18 octobre, pas de longue YouTube : trois
+> shorts Instagram par semaine, sujets libres, et la vie dans les stories. Les shorts de cette
+> page se tournent seuls, tête parlante et cartes texte, aux dates du [[Calendrier]] ; la longue
+> reprend après le semi. Les dates de tournage et de sortie ci-dessous ne font plus foi.
 
 **La cinquième longue, celle des macros.** Sur l'étiquette, une calorie, c'est une calorie.
 Mais ton corps n'en garde pas la même part : la taxe à la digestion. Puis le gras à neuf
@@ -14,8 +17,8 @@ calories, puis l'alcool.
 | | |
 |---|---|
 | État | le chapitre 1 est **écrit** : un reel de 250 mots, format science-reel, trois assiettes à deux cents calories. Les chapitres 2 et 3 sont à écrire |
-| Tournage | [[2026-10-17 🎬 Tournage · Une calorie, c'est une calorie\|samedi 17 octobre]], session courte, la veille de la course. Pas de tournage le 18 |
-| Sortie | [[2026-10-25 📺 Sortie 18 h · Une calorie, c'est une calorie\|dimanche 25 octobre]] à 18 h |
+| Tournage | **après le semi**. Ses shorts se tournent seuls [[2026-10-17 🎬 Tournage léger · les shorts du 20 au 24 octobre\|samedi 17 octobre]], session légère |
+| Sortie | **après le semi** |
 | Ses shorts | mardi 20, jeudi 22, samedi 24 octobre |
 
 ## Les fichiers

@@ -1,11 +1,14 @@
 ---
 type: longue
 quoi: "la troisième longue"
-etat: "écrite, l'ouverture à écrire"
-tournage: 2026-10-04
-sortie: 2026-10-11
+etat: "écrite, l'ouverture à écrire ; ses trois shorts à écrire pour dimanche 4 ; la longue après le semi"
 ---
 # Quoi mettre dans l'assiette
+
+> **Changement du 17 septembre.** Jusqu'au dimanche 18 octobre, pas de longue YouTube : trois
+> shorts Instagram par semaine, sujets libres, et la vie dans les stories. Les shorts de cette
+> page se tournent seuls, tête parlante et cartes texte, aux dates du [[Calendrier]] ; la longue
+> reprend après le semi. Les dates de tournage et de sortie ci-dessous ne font plus foi.
 
 **La troisième longue. Neuf minutes trente, dix avec l'ouverture.** Le poids de l'assiette,
 le levier fantôme, l'aliment que tu t'interdis, on ne vit qu'une fois. Quatre chapitres,
@@ -14,8 +17,8 @@ le levier fantôme, l'aliment que tu t'interdis, on ne vit qu'une fois. Quatre c
 | | |
 |---|---|
 | État | **écrite et vérifiée.** L'ouverture à froid de 30 s reste à écrire ; les hooks et chutes de ses shorts sont annexés, à réécrire sans les gabarits |
-| Tournage | [[2026-10-04 🎬 Tournage · Quoi mettre dans l'assiette\|dimanche 4 octobre]] |
-| Sortie | [[2026-10-11 📺 Sortie 18 h · Quoi mettre dans l'assiette\|dimanche 11 octobre]] à 18 h |
+| Tournage | **après le semi** |
+| Sortie | **après le semi** |
 | Ses shorts | mardi 6, jeudi 8, samedi 10 octobre |
 
 ## Les fichiers

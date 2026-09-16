@@ -9,6 +9,6 @@ plateforme: Instagram
 
 **vendredi 18 septembre 2026.** La deuxième vidéo de la semaine sur Instagram : le Short déjà sur YouTube, tel quel, avec sa description en légende. Le fichier est à retrouver sur le disque ; sinon YouTube Studio le télécharge.
 
-Le [[2026-09-24 📱 Trois cents calories par jour sans t'entraîner|short du jeudi 24]] reprend le même sujet, le NEAT, tiré de la longue tournée dimanche : deux images différentes du même chiffre, à une semaine d'écart.
+Le [[2026-09-29 📱 Trois cents calories par jour sans t'entraîner|short du mardi 29]] reprend le même sujet, le NEAT, tourné seul dimanche 27 : deux images différentes du même chiffre, à onze jours d'écart.
 
 [[Calendrier]] · [[HUB]]

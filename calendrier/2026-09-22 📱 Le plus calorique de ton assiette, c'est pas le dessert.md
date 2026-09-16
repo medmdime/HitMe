@@ -8,8 +8,8 @@ plateforme: Instagram
 
 # 📱 Le plus calorique de ton assiette, c'est pas le dessert
 
-**mardi 22 septembre 2026, Instagram.** Le short sort avant la longue, qui arrive le dimanche à 18 h. La ligne « Le mécanisme entier, dix minutes : Mohamed Elmdimegh sur YouTube » s'ajoute à la légende le dimanche soir.
+**mardi 22 septembre 2026.** Écrit : [[video/calories-fondamentaux/SHORTS#Short 1 · Le plus calorique de ton assiette, c'est pas le dessert · mardi 22|SHORTS § Short 1]]. Tourné [[2026-09-18 🎬 Tournage · la semaine du 22, et le trailer|vendredi 18]], seul, tête parlante et cartes texte ; monté lundi 21 dans CapCut, une heure. La légende est dans le script, sans la ligne YouTube.
 
-![[Les calories, les fondamentaux#Les shorts]]
+![[Les calories, les fondamentaux]]
 
 [[Calendrier]] · [[HUB]]

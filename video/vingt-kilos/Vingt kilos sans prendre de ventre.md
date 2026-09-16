@@ -1,11 +1,14 @@
 ---
 type: longue
 quoi: "ton histoire"
-etat: "à écrire"
-tournage: 2026-10-25
-sortie: 2026-11-01
+etat: "à écrire, après le semi"
 ---
 # Vingt kilos sans prendre de ventre
+
+> **Changement du 17 septembre.** Jusqu'au dimanche 18 octobre, pas de longue YouTube : trois
+> shorts Instagram par semaine, sujets libres, et la vie dans les stories. Les shorts de cette
+> page se tournent seuls, tête parlante et cartes texte, aux dates du [[Calendrier]] ; la longue
+> reprend après le semi. Les dates de tournage et de sortie ci-dessous ne font plus foi.
 
 **La sixième longue. Ton histoire.** Un mètre quatre-vingt-dix pour soixante kilos, la
 muscu, une prise de masse progressive, vingt kilos, sec. Le surplus se dose comme un
@@ -14,8 +17,8 @@ déficit : le même mécanisme, dans l'autre sens.
 | | |
 |---|---|
 | État | **à écrire.** Les photos existent, à soixante et à quatre-vingts, dans `D:\videos\trailer\` |
-| Tournage | [[2026-10-25 🎬 Tournage · Vingt kilos sans prendre de ventre\|dimanche 25 octobre]], la semaine d'après la course |
-| Sortie | [[2026-11-01 📺 Sortie 18 h · Vingt kilos sans prendre de ventre\|dimanche 1er novembre]] à 18 h |
+| Tournage | **après le semi** |
+| Sortie | **après le semi** |
 | Ses shorts | mardi 27, jeudi 29, samedi 31 octobre |
 
 ## Ce qu'il faut de toi avant d'écrire

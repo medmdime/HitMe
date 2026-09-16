@@ -41,11 +41,11 @@ Tout est dans `D:\videos\trailer\`. Rien de tout ça n'entre dans le dépôt.
 Les trois Live Photos portent la même date dans leurs métadonnées, EXIF et QuickTime :
 le 14 août 2021, 19 h 45. La réplique du deuxième plan dit « Aujourd'hui,
 quatre-vingts ». **À CONFIRMER** : ton poids ce soir-là. Si tu n'étais pas à
-quatre-vingts en août 2021, tu refais une Live Photo de face au vestiaire dimanche 20, deux
+quatre-vingts en août 2021, tu refais une Live Photo de face au miroir vendredi 18, deux
 minutes, et elle prend la place de `IMG_8250.mov`. Une phrase littéralement vraie, ou
 une autre photo.
 
-Les trois plans face caméra s'ajoutent à ce dossier dimanche 20 au soir, nommés comme le
+Les trois plans face caméra s'ajoutent à ce dossier vendredi 18 au soir, nommés comme le
 reste de la session (`NN-bloc-prise.mp4`) : `NN-trailer-0335-1.mp4`,
 `NN-trailer-0017-1.mp4`, `NN-trailer-0032-1.mp4`, puis `-2` et `-3` pour les deux
 autres prises.
@@ -62,7 +62,7 @@ autres prises.
 | 0:09 → 0:17 | trois cartes de texte qui se succèdent : TON ASSIETTE · TA BIÈRE · TON DESSERT | cartes CapCut | « Ici, je te montre où elles sont vraiment. Dans ton assiette, dans ta bière, dans ton dessert. Sujets tabous compris. » | OÙ SONT LES CALORIES | un pop par carte |
 | 0:17 → 0:25 | **toi, face caméra**, plus bas, plus lent | à tourner | « Ma mère a essayé tous les régimes pendant que je grandissais. Ça ne marchait jamais. C'est pour ça qu'ici, personne n'est jugé. » | SANS JUGEMENT | la musique baisse d'un cran sous la phrase |
 | 0:25 → 0:32 | la plage, toi en tenue | `course\plage-reel.mp4` | « Et en attendant, je prépare un semi-marathon. Le dix-huit octobre. Après, un Hyrox. Tout ce que je brûle, on le compte. » | SEMI · 18 OCTOBRE | la musique remonte |
-| 0:32 → 0:35 | **toi, face caméra**, les mains libres | à tourner | « Première vidéo : les calories, les fondamentaux. » | CETTE SEMAINE | fin nette, pas de fondu long |
+| 0:32 → 0:35 | **toi, face caméra**, les mains libres | à tourner | « Trois vidéos par semaine, sur les calories. On commence. » | TROIS PAR SEMAINE | fin nette, pas de fondu long |
 
 Le plan de la plage est ramené à 7 s : la réplique a perdu son chrono, elle est plus
 courte. Le trailer fait 35 s tout rond.
@@ -85,8 +85,8 @@ doit s'entendre.
 
 ## 3. Le face caméra : trois plans, trois prises chacun
 
-Tournés **dimanche 20 en fin de session**, après la longue, les hooks et les chutes des
-shorts : 20 min, sans toucher au réglage. Une seule caméra en 4K 16:9, sujet centré,
+Tournés **vendredi 18 septembre**, après les pickups et avant les trois shorts : 20 min, sans
+toucher au réglage. Une seule caméra en 4K 16:9, sujet centré,
 plan poitrine avec de l'air autour, œil au tiers haut, micro-cravate écouté au casque,
 la lampe à gauche, le fond uni. Le recadrage fixe 9:16 sort de la même prise pour
 Instagram : 3840×2160 recadré donne 1215×2160, au-dessus de 1080×1920, sans
@@ -97,7 +97,7 @@ bouger la caméra.
 |---|---|---|
 | 0:03,5 | « Pas un régime. Juste des calories que je comprends. » | posé, pas triomphant. Tu constates. La photo d'avant vient de passer : tu n'as rien à prouver, elle l'a fait |
 | 0:17 | « Ma mère a essayé tous les régimes pendant que je grandissais. Ça ne marchait jamais. C'est pour ça qu'ici, personne n'est jugé. » | **le plan le plus important du trailer.** Plus bas, plus lent. Tu ne racontes pas une anecdote, tu dis d'où tu viens. Un temps après « jamais ». La dernière phrase se dit presque comme une promesse |
-| 0:32 | « Première vidéo : les calories, les fondamentaux. » | léger, un demi-sourire, les mains libres. Coupe sur le mot « fondamentaux » |
+| 0:32 | « Trois vidéos par semaine, sur les calories. On commence. » | léger, un demi-sourire, les mains libres. Coupe sur « commence ». Remplace « Première vidéo : les calories, les fondamentaux » depuis le 17 septembre : pas de longue avant le semi, et un trailer épinglé ne doit pas dater |
 
 Lis les trois à voix haute avant de tourner. Si « pendant que je grandissais » ne te
 vient pas naturellement, dis-le avec tes mots : « toute mon enfance », « depuis que je

@@ -1,11 +1,14 @@
 ---
 type: longue
 quoi: "la deuxième longue, quatre chapitres"
-etat: "écrite, ouverture et chute écrites, trois shorts découpés"
-tournage: 2026-09-27
-sortie: 2026-10-04
+etat: "écrite ; son short « Ton estomac » se tourne vendredi 18, les deux autres dimanche 27 ; la longue après le semi"
 ---
 # Pourquoi ça revient
+
+> **Changement du 17 septembre.** Jusqu'au dimanche 18 octobre, pas de longue YouTube : trois
+> shorts Instagram par semaine, sujets libres, et la vie dans les stories. Les shorts de cette
+> page se tournent seuls, tête parlante et cartes texte, aux dates du [[Calendrier]] ; la longue
+> reprend après le semi. Les dates de tournage et de sortie ci-dessous ne font plus foi.
 
 **La deuxième longue. Dix minutes.** Pourquoi le poids que tu as perdu est revenu, et
 pourquoi ce n'est pas ta volonté. Quatre chapitres, écrits et vérifiés, soixante-neuf
@@ -14,8 +17,8 @@ sources.
 | | |
 |---|---|
 | État | **écrite et vérifiée.** L'ouverture à froid et la chute sont écrites, les trois shorts découpés, la feuille de plateau prête |
-| Tournage | [[2026-09-27 🎬 Tournage · Pourquoi ça revient\|dimanche 27 septembre]] |
-| Sortie | [[2026-10-04 📺 Sortie 18 h · Pourquoi ça revient\|dimanche 4 octobre]] à 18 h |
+| Tournage | **après le semi** |
+| Sortie | **après le semi** |
 | Ses shorts | mardi 29 septembre, jeudi 1er, samedi 3 octobre |
 | Attention | les fichiers `S1-*` ont été écrits pour un tournage le 13 : **leurs dates se lisent plus quatorze jours** |
 

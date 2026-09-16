@@ -1,11 +1,14 @@
 ---
 type: longue
 quoi: "le reel monté, et la longue TDEE"
-etat: "pickups vendredi 18 au matin, montage l'après-midi, sortie samedi 19 ; puis la longue à écrire"
-tournage: 2026-10-11
-sortie: 2026-10-18
+etat: "pickups vendredi 18 au matin, montage l'après-midi, sortie samedi 19 ; ses shorts dimanche 11 ; la longue après le semi"
 ---
 # Tu n'as jamais eu à le mériter
+
+> **Changement du 17 septembre.** Jusqu'au dimanche 18 octobre, pas de longue YouTube : trois
+> shorts Instagram par semaine, sujets libres, et la vie dans les stories. Les shorts de cette
+> page se tournent seuls, tête parlante et cartes texte, aux dates du [[Calendrier]] ; la longue
+> reprend après le semi. Les dates de tournage et de sortie ci-dessous ne font plus foi.
 
 **Un reel monté, et la quatrième longue à écrire.** Il faut brûler ce qu'on mange ? En
 dormant, tu brûles plus qu'à ta séance d'hier. Le sport, c'est cinq pour cent de ce que tu
@@ -15,9 +18,9 @@ brûles. Le TDEE en quatre, la digestion qui bat le sport sur la journée, les t
 |---|---|
 | Le reel | 1:29, **tourné, animé, monté, sous-titré** à deux plans près : `montage/01-FINAL-sans-pickups.mp4`, deux trous noirs de 4,5 s et de 12 s. Les deux pickups se tournent au téléphone [[2026-09-18 🎬 Pickups · Tu n'as jamais eu à le mériter\|vendredi 18 au matin]], en portrait natif, dix minutes, et se posent par-dessus le rendu dans CapCut : [[video/meriter-son-repas/montage/CAPCUT-PICKUPS\|CAPCUT-PICKUPS]]. **À corriger dans le même montage** : la carte du levier 2 dit « coûtent plus cher », rendu du 6 septembre, d'avant la règle |
 | La longue | **à écrire** : trois chapitres, le sport à cinq pour cent, le NEAT, la digestion. Sa matière est dans ce reel et dans [[Déficit calorique]] |
-| Tournage de la longue | [[2026-10-11 🎬 Tournage · Tu n'as jamais eu à le mériter\|dimanche 11 octobre]] |
-| Sortie de la longue | [[2026-10-18 📺 Sortie 18 h · Tu n'as jamais eu à le mériter\|dimanche 18 octobre]] à 18 h, jour de course, **programmée d'avance** |
-| Ses shorts | mardi 13, jeudi 15, samedi 17 octobre |
+| Tournage de la longue | **après le semi** |
+| Sortie de la longue | **après le semi** |
+| Ses shorts | mardi 13, jeudi 15, samedi 17 octobre, tournés seuls [[2026-10-11 🎬 Tournage · les shorts du 13 au 17 octobre\|dimanche 11]] |
 
 ## Les fichiers du reel
 
