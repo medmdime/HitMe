@@ -14,8 +14,6 @@
   "useMarkdownLinks": false,
   "strictLineBreaks": false,
   "spellcheck": true,
-  "spellcheckLanguages": [
-    "fr-FR"
-  ],
+  "spellcheckLanguages": null,
   "readableLineLength": false
 }
