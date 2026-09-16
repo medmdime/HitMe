@@ -6,6 +6,8 @@ video: "[[Déficit calorique]]"
 plateforme: YouTube
 ---
 
+# 📺 Déficit calorique ≠ manger moins
+
 **Publié.** Le premier reel, ta rep 1, sur YouTube.
 
 ![[Déficit calorique]]

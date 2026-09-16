@@ -1,4 +1,5 @@
 {
+  "showInlineTitle": false,
   "userIgnoreFilters": [
     "outils/",
     "/node_modules\\//",
@@ -15,5 +16,6 @@
   "spellcheck": true,
   "spellcheckLanguages": [
     "fr-FR"
-  ]
+  ],
+  "readableLineLength": false
 }

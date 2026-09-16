@@ -1,3 +1,10 @@
+---
+type: longue
+quoi: "la troisième longue"
+etat: "écrite, l'ouverture à écrire"
+tournage: 2026-10-04
+sortie: 2026-10-11
+---
 # Quoi mettre dans l'assiette
 
 **La troisième longue. Neuf minutes trente, dix avec l'ouverture.** Le poids de l'assiette,

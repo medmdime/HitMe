@@ -108,17 +108,11 @@ comme les autres.
 Chaque page dit l'état, les dates, ce qu'il faut filmer, où sont le script, les shorts, la
 feuille de plateau et la direction de montage.
 
-| Page | Quoi | État |
-|---|---|---|
-| [[Le trailer]] | 35 s, la présentation, épinglé | plan par plan écrit, fichiers prêts, trois plans à tourner le 20 |
-| [[Les calories, les fondamentaux]] | la première longue et ses trois shorts | écrite, feuille de plateau prête |
-| [[Pourquoi ça revient]] | la deuxième longue, quatre chapitres | écrite, ouverture et chute écrites, trois shorts découpés |
-| [[Quoi mettre dans l'assiette]] | la troisième longue | écrite, l'ouverture à écrire |
-| [[Tu n'as jamais eu à le mériter]] | le reel monté, et la longue TDEE | **deux pickups cette semaine**, la carte du levier 2 à masquer, puis la longue à écrire |
-| [[Une calorie, c'est une calorie]] | la longue des macros | un chapitre écrit |
-| [[Déficit calorique]] | le reel déjà publié sur YouTube, ta rep 1 | publié le 27 août |
-| [[Vingt kilos sans prendre de ventre]] | ton histoire | à écrire |
-| [[Manger quand tu cours]] | la course, par les calories | en réserve |
+![[Vidéos.base#Tableau]]
+
+Les propriétés en tête de chaque page, type, quoi, état, tournage, sortie, sont la source de
+ce tableau : change-les dans la page, le tableau suit. Le détail, les fichiers et la feuille
+de plateau restent dans la page.
 
 ---
 

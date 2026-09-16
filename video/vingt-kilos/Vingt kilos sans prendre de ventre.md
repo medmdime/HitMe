@@ -1,3 +1,10 @@
+---
+type: longue
+quoi: "ton histoire"
+etat: "à écrire"
+tournage: 2026-10-25
+sortie: 2026-11-01
+---
 # Vingt kilos sans prendre de ventre
 
 **La sixième longue. Ton histoire.** Un mètre quatre-vingt-dix pour soixante kilos, la

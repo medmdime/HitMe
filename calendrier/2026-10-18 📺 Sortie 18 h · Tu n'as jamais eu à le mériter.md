@@ -6,6 +6,8 @@ video: "[[Tu n'as jamais eu à le mériter]]"
 plateforme: YouTube
 ---
 
+# 📺 Sortie 18 h · Tu n'as jamais eu à le mériter
+
 **dimanche 18 octobre 2026, 18 h, YouTube.** Puis ses trois Shorts sur YouTube, avec la longue en vidéo associée. La ligne YouTube s'ajoute aux trois légendes Instagram de la semaine.
 
 ![[Tu n'as jamais eu à le mériter]]

@@ -1,3 +1,9 @@
+---
+type: reel
+quoi: "le reel déjà publié sur YouTube, ta rep 1"
+etat: "publié le 27 août"
+sortie: 2026-08-27
+---
 # Déficit calorique
 
 **Le reel déjà publié. Ta rep 1.** « Déficit calorique ≠ manger moins » : un déficit a deux

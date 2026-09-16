@@ -6,6 +6,8 @@ video: "[[Une calorie, c'est une calorie]]"
 plateforme: Instagram
 ---
 
+# 📱 Une calorie, c'est une calorie
+
 **mardi 20 octobre 2026, Instagram.** Le short sort avant la longue, qui arrive le dimanche à 18 h.
 
 ![[Une calorie, c'est une calorie#Les shorts]]

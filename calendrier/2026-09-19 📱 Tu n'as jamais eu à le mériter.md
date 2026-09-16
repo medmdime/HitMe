@@ -6,6 +6,8 @@ video: "[[Tu n'as jamais eu à le mériter]]"
 plateforme: YouTube
 ---
 
+# 📱 Tu n'as jamais eu à le mériter · à confirmer
+
 **Proposé, à confirmer.** La troisième vidéo de la semaine : le reel fini, sur YouTube en Short, et sur Instagram si le compte existe.
 
 ![[Tu n'as jamais eu à le mériter]]

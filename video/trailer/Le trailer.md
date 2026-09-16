@@ -1,3 +1,10 @@
+---
+type: trailer
+quoi: "35 s, la présentation, épinglé"
+etat: "plan par plan écrit, fichiers prêts, trois plans à tourner le 20"
+tournage: 2026-09-20
+sortie: 2026-09-21
+---
 # Le trailer
 
 **Trente-cinq secondes. La présentation.** Qui tu es, ce que tu fais ici, ce qu'on prépare.

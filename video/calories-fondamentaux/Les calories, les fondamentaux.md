@@ -1,3 +1,10 @@
+---
+type: longue
+quoi: "la première longue et ses trois shorts"
+etat: "écrite, feuille de plateau prête"
+tournage: 2026-09-20
+sortie: 2026-09-27
+---
 # Les calories, les fondamentaux
 
 **La première longue YouTube. Dix minutes.** C'est quoi une calorie, où elles sont dans

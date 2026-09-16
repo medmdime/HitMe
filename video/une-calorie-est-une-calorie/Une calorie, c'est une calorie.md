@@ -1,3 +1,10 @@
+---
+type: longue
+quoi: "la longue des macros"
+etat: "un chapitre écrit"
+tournage: 2026-10-17
+sortie: 2026-10-25
+---
 # Une calorie, c'est une calorie
 
 **La cinquième longue, celle des macros.** Sur l'étiquette, une calorie, c'est une calorie.

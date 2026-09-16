@@ -1,3 +1,10 @@
+---
+type: longue
+quoi: "le reel monté, et la longue TDEE"
+etat: "deux pickups cette semaine, la carte du levier 2 à masquer, puis la longue à écrire"
+tournage: 2026-10-11
+sortie: 2026-10-18
+---
 # Tu n'as jamais eu à le mériter
 
 **Un reel monté, et la quatrième longue à écrire.** Il faut brûler ce qu'on mange ? En

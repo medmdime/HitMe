@@ -6,6 +6,8 @@ video: "[[Une calorie, c'est une calorie]]"
 plateforme: Instagram
 ---
 
+# 📱 Le gras a neuf calories, et alors ?
+
 **jeudi 22 octobre 2026, Instagram.** Le short sort avant la longue, qui arrive le dimanche à 18 h.
 
 ![[Une calorie, c'est une calorie#Les shorts]]

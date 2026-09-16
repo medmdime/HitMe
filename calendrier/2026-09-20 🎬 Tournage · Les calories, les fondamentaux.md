@@ -5,6 +5,8 @@ type: tournage
 video: "[[Les calories, les fondamentaux]]"
 ---
 
+# 🎬 Tournage · Les calories, les fondamentaux
+
 **dimanche 20 septembre 2026.** La longue, ses trois shorts : les hooks, les chutes, les phrases de mécanisme. Le b-roll, la photo de miniature. La feuille de plateau est dans la page de la vidéo, ci-dessous.
 
 - [[Le trailer]] : trois plans face caméra, en fin de session, vingt minutes.

@@ -1,3 +1,10 @@
+---
+type: longue
+quoi: "la deuxième longue, quatre chapitres"
+etat: "écrite, ouverture et chute écrites, trois shorts découpés"
+tournage: 2026-09-27
+sortie: 2026-10-04
+---
 # Pourquoi ça revient
 
 **La deuxième longue. Dix minutes.** Pourquoi le poids que tu as perdu est revenu, et

@@ -19,22 +19,22 @@ properties:
 views:
   - type: calendar
     name: Mois
+    order:
+      - titre
+      - video
     startDate: note.date
     endDate: note.fin
     weekStartDay: monday
-    order:
-      - note.titre
-      - note.video
   - type: table
     name: Tout
     order:
-      - note.date
-      - note.titre
-      - note.video
-      - note.plateforme
+      - date
+      - titre
+      - video
+      - plateforme
       - file.name
     sort:
-      - property: note.date
+      - property: date
         direction: ASC
   - type: table
     name: Tournages
@@ -42,11 +42,11 @@ views:
       and:
         - type == "tournage"
     order:
-      - note.date
-      - note.titre
-      - note.video
+      - date
+      - titre
+      - video
     sort:
-      - property: note.date
+      - property: date
         direction: ASC
   - type: table
     name: Sorties
@@ -56,10 +56,10 @@ views:
         - type != "montage"
         - type != "journal"
     order:
-      - note.date
-      - note.titre
-      - note.video
-      - note.plateforme
+      - date
+      - titre
+      - video
+      - plateforme
     sort:
-      - property: note.date
+      - property: date
         direction: ASC

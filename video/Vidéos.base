@@ -1,0 +1,38 @@
+filters:
+  and:
+    - file.inFolder("video")
+    - file.ext == "md"
+    - 'type == "longue" || type == "reel" || type == "trailer"'
+properties:
+  quoi:
+    displayName: Quoi
+  etat:
+    displayName: État
+  tournage:
+    displayName: Tournage
+  sortie:
+    displayName: Sortie
+  type:
+    displayName: Type
+views:
+  - type: table
+    name: Tableau
+    order:
+      - file.name
+      - note.quoi
+      - note.etat
+      - note.tournage
+      - note.sortie
+    sort:
+      - property: note.sortie
+        direction: ASC
+  - type: cards
+    name: Cartes
+    order:
+      - file.name
+      - note.quoi
+      - note.etat
+      - note.sortie
+    sort:
+      - property: note.sortie
+        direction: ASC

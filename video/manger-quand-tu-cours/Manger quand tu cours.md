@@ -1,3 +1,10 @@
+---
+type: longue
+quoi: "la course, par les calories"
+etat: "en réserve"
+tournage: 2026-11-01
+sortie: 2026-11-08
+---
 # Manger quand tu cours
 
 **La septième longue. La course, par les calories.** Ce que brûle vraiment une sortie, la
