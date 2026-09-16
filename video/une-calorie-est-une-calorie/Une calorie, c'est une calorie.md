@@ -7,8 +7,8 @@ calories, puis l'alcool.
 | | |
 |---|---|
 | État | le chapitre 1 est **écrit** : un reel de 250 mots, format science-reel, trois assiettes à deux cents calories. Les chapitres 2 et 3 sont à écrire |
-| Tournage | [[calendrier/2026-10-17\|samedi 17 octobre]], session courte, la veille de la course. Pas de tournage le 18 |
-| Sortie | [[calendrier/2026-10-25\|dimanche 25 octobre]] à 18 h |
+| Tournage | [[2026-10-17 🎬 Tournage · Une calorie, c'est une calorie\|samedi 17 octobre]], session courte, la veille de la course. Pas de tournage le 18 |
+| Sortie | [[2026-10-25 📺 Sortie 18 h · Une calorie, c'est une calorie\|dimanche 25 octobre]] à 18 h |
 | Ses shorts | mardi 20, jeudi 22, samedi 24 octobre |
 
 ## Les fichiers

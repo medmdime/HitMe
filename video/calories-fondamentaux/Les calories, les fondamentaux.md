@@ -6,8 +6,8 @@ ton assiette, où elles partent, et comment tu t'en sers sans régime : le corps
 | | |
 |---|---|
 | État | **écrite.** Feuille de plateau prête. Rien de tourné |
-| Tournage | [[calendrier/2026-09-20\|dimanche 20 septembre]], tout d'un coup, avec [[Le trailer]] et les pickups de [[Tu n'as jamais eu à le mériter]] |
-| Sortie | [[calendrier/2026-09-27\|dimanche 27 septembre]] à 18 h, YouTube |
+| Tournage | [[2026-09-20 🎬 Tournage · Les calories, les fondamentaux\|dimanche 20 septembre]], tout d'un coup, avec [[Le trailer]] et les pickups de [[Tu n'as jamais eu à le mériter]] |
+| Sortie | [[2026-09-27 📺 Sortie 18 h · Les calories, les fondamentaux\|dimanche 27 septembre]] à 18 h, YouTube |
 | Ses shorts | mardi 22, jeudi 24, samedi 26, Instagram, avant la longue |
 | Durée | 1 560 mots parlés, dix minutes passées avec les inserts |
 

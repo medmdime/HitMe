@@ -8,8 +8,8 @@ brûles. Le TDEE en quatre, la digestion qui bat le sport sur la journée, les t
 |---|---|
 | Le reel | 1:29, **tourné, animé, monté, sous-titré** à deux plans près : `montage/01-FINAL-sans-pickups.mp4`, deux trous noirs de 4,5 s et de 12 s. Les deux pickups se tournent au téléphone **cette semaine**, en portrait natif, dix minutes, et se posent par-dessus le rendu dans CapCut : [[video/meriter-son-repas/montage/CAPCUT-PICKUPS\|CAPCUT-PICKUPS]]. **À corriger dans le même montage** : la carte du levier 2 dit « coûtent plus cher », rendu du 6 septembre, d'avant la règle |
 | La longue | **à écrire** : trois chapitres, le sport à cinq pour cent, le NEAT, la digestion. Sa matière est dans ce reel et dans [[Déficit calorique]] |
-| Tournage de la longue | [[calendrier/2026-10-11\|dimanche 11 octobre]] |
-| Sortie de la longue | [[calendrier/2026-10-18\|dimanche 18 octobre]] à 18 h, jour de course, **programmée d'avance** |
+| Tournage de la longue | [[2026-10-11 🎬 Tournage · Tu n'as jamais eu à le mériter\|dimanche 11 octobre]] |
+| Sortie de la longue | [[2026-10-18 📺 Sortie 18 h · Tu n'as jamais eu à le mériter\|dimanche 18 octobre]] à 18 h, jour de course, **programmée d'avance** |
 | Ses shorts | mardi 13, jeudi 15, samedi 17 octobre |
 
 ## Les fichiers du reel

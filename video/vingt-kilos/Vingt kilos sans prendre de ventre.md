@@ -7,8 +7,8 @@ déficit : le même mécanisme, dans l'autre sens.
 | | |
 |---|---|
 | État | **à écrire.** Les photos existent, à soixante et à quatre-vingts, dans `D:\videos\trailer\` |
-| Tournage | [[calendrier/2026-10-25\|dimanche 25 octobre]], la semaine d'après la course |
-| Sortie | [[calendrier/2026-11-01\|dimanche 1er novembre]] à 18 h |
+| Tournage | [[2026-10-25 🎬 Tournage · Vingt kilos sans prendre de ventre\|dimanche 25 octobre]], la semaine d'après la course |
+| Sortie | [[2026-11-01 📺 Sortie 18 h · Vingt kilos sans prendre de ventre\|dimanche 1er novembre]] à 18 h |
 | Ses shorts | mardi 27, jeudi 29, samedi 31 octobre |
 
 ## Ce qu'il faut de toi avant d'écrire

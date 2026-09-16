@@ -1,9 +1,11 @@
+---
+date: {{date:YYYY-MM-DD}}
+titre: "📓 Journal"
+type: journal
+---
 # {{date:dddd D MMMM YYYY}}
 
-## Tournage
-
-
-## Sorties
+## Ce qui s'est passé
 
 
 ## Notes

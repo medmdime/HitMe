@@ -7,8 +7,8 @@ le levier fantôme, l'aliment que tu t'interdis, on ne vit qu'une fois. Quatre c
 | | |
 |---|---|
 | État | **écrite et vérifiée.** L'ouverture à froid de 30 s reste à écrire ; les hooks et chutes de ses shorts sont annexés, à réécrire sans les gabarits |
-| Tournage | [[calendrier/2026-10-04\|dimanche 4 octobre]] |
-| Sortie | [[calendrier/2026-10-11\|dimanche 11 octobre]] à 18 h |
+| Tournage | [[2026-10-04 🎬 Tournage · Quoi mettre dans l'assiette\|dimanche 4 octobre]] |
+| Sortie | [[2026-10-11 📺 Sortie 18 h · Quoi mettre dans l'assiette\|dimanche 11 octobre]] à 18 h |
 | Ses shorts | mardi 6, jeudi 8, samedi 10 octobre |
 
 ## Les fichiers

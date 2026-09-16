@@ -7,8 +7,8 @@ sans allure : ce que ça change dans l'assiette.
 | | |
 |---|---|
 | État | **en réserve.** Les douze hot takes écrits pour le semi sont conservés, avec leurs sources à vérifier, dans [[profil/STORIES-SEMI#9. La réserve : « Manger quand tu cours »|les stories, § 9]] |
-| Tournage | [[calendrier/2026-11-01\|dimanche 1er novembre]] |
-| Sortie | [[calendrier/2026-11-08\|dimanche 8 novembre]] à 18 h |
+| Tournage | [[2026-11-01 🎬 Tournage · Manger quand tu cours\|dimanche 1er novembre]] |
+| Sortie | [[2026-11-08 📺 Sortie 18 h · Manger quand tu cours\|dimanche 8 novembre]] à 18 h |
 | Ses shorts | mardi 3, jeudi 5, samedi 7 novembre |
 
 ## Les chapitres, proposition

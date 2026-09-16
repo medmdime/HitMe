@@ -1,0 +1,65 @@
+filters:
+  and:
+    - file.inFolder("calendrier")
+    - file.ext == "md"
+    - file.name != "Calendrier"
+properties:
+  date:
+    displayName: Date
+  fin:
+    displayName: Fin
+  titre:
+    displayName: Quoi
+  type:
+    displayName: Type
+  video:
+    displayName: Vidéo
+  plateforme:
+    displayName: Où
+views:
+  - type: calendar
+    name: Mois
+    startDate: note.date
+    endDate: note.fin
+    weekStartDay: monday
+    order:
+      - note.titre
+      - note.video
+  - type: table
+    name: Tout
+    order:
+      - note.date
+      - note.titre
+      - note.video
+      - note.plateforme
+      - file.name
+    sort:
+      - property: note.date
+        direction: ASC
+  - type: table
+    name: Tournages
+    filters:
+      and:
+        - type == "tournage"
+    order:
+      - note.date
+      - note.titre
+      - note.video
+    sort:
+      - property: note.date
+        direction: ASC
+  - type: table
+    name: Sorties
+    filters:
+      and:
+        - type != "tournage"
+        - type != "montage"
+        - type != "journal"
+    order:
+      - note.date
+      - note.titre
+      - note.video
+      - note.plateforme
+    sort:
+      - property: note.date
+        direction: ASC

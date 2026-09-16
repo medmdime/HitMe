@@ -10,7 +10,7 @@ racine. Le code n'est qu'un outil, rangé dans `outils/`.
 |---|---|
 | `HUB.md` | la porte d'entrée : le profil, la direction, la semaine type, le calendrier, les vidéos, la méthode, les outils |
 | `profil/` | qui je suis, ce que je défends, à qui je parle : les fondamentaux, le programme, les stories, le plan |
-| `calendrier/` | une note par jour où il se passe quelque chose : ce qui se tourne, ce qui sort |
+| `calendrier/` | une note par événement, tournage ou sortie, avec sa date en propriété ; `Calendrier.base` les pose sur la grille du mois, comme dans Notion |
 | `video/` | un dossier par vidéo : sa page, le script, les shorts, la feuille de plateau, le montage, les rendus |
 | `methode/` | la méthode en copie de lecture ; la source est `.claude/skills/` |
 | `modeles/` | les modèles de notes Obsidian |

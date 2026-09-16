@@ -7,8 +7,8 @@ sources.
 | | |
 |---|---|
 | État | **écrite et vérifiée.** L'ouverture à froid et la chute sont écrites, les trois shorts découpés, la feuille de plateau prête |
-| Tournage | [[calendrier/2026-09-27\|dimanche 27 septembre]] |
-| Sortie | [[calendrier/2026-10-04\|dimanche 4 octobre]] à 18 h |
+| Tournage | [[2026-09-27 🎬 Tournage · Pourquoi ça revient\|dimanche 27 septembre]] |
+| Sortie | [[2026-10-04 📺 Sortie 18 h · Pourquoi ça revient\|dimanche 4 octobre]] à 18 h |
 | Ses shorts | mardi 29 septembre, jeudi 1er, samedi 3 octobre |
 | Attention | les fichiers `S1-*` ont été écrits pour un tournage le 13 : **leurs dates se lisent plus quatorze jours** |
 

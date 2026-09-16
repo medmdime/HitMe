@@ -6,8 +6,8 @@
 | | |
 |---|---|
 | État | plan par plan écrit, les fichiers rangés dans `D:\videos\trailer\`. Trois plans face caméra à tourner |
-| Tournage | [[calendrier/2026-09-20\|dimanche 20 septembre]], en fin de session, vingt minutes |
-| Sortie | [[calendrier/2026-09-21\|lundi 21 septembre]] au soir, Instagram et YouTube, avant les shorts et avant la longue |
+| Tournage | [[2026-09-20 🎬 Tournage · Les calories, les fondamentaux\|dimanche 20 septembre]], en fin de session, vingt minutes |
+| Sortie | [[2026-09-21 🎞️ Le trailer\|lundi 21 septembre]] au soir, Instagram et YouTube, avant les shorts et avant la longue |
 
 ## Le fichier
 

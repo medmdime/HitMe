@@ -11,7 +11,7 @@ ce que Claude écrit, tu le vois ici.
 **Prochain tournage : dimanche 20 septembre**, tout d'un coup : la longue
 [[Les calories, les fondamentaux]], ses trois shorts, [[Le trailer]], les deux pickups de
 [[Tu n'as jamais eu à le mériter]]. La feuille de plateau, à avoir sous les yeux :
-[[video/calories-fondamentaux/TOURNAGE|TOURNAGE]]. La note du jour : [[calendrier/2026-09-20|dimanche 20]].
+[[video/calories-fondamentaux/TOURNAGE|TOURNAGE]]. La note du jour : [[2026-09-20 🎬 Tournage · Les calories, les fondamentaux|dimanche 20]].
 
 Avant dimanche, cinq choses à trancher, elles sont listées en bas de
 [[Les calories, les fondamentaux#À confirmer avant de tourner|la page de la vidéo]].
@@ -88,14 +88,18 @@ dans le [[profil/PLAN-SEMI-18-OCTOBRE#6. Le journal|journal]].
 
 ## 3. Le calendrier
 
-Le dossier `calendrier/` contient une note par jour où il se passe quelque chose, nommée
-par sa date. Dans chaque note : ce qui se tourne, ce qui sort, avec le lien vers la page de
-la vidéo. La vue d'ensemble : [[Calendrier]].
+Comme dans Notion : la grille du mois, et dans chaque case les pages du jour. Le dossier
+`calendrier/` contient **une note par événement** : un tournage, une sortie, un short, une
+semaine de montage. Chaque note porte sa date en propriété, dit ce qui se passe, et affiche
+la page de la vidéo en entier. La grille et les listes sont dans [[Calendrier]], qui lit
+`Calendrier.base` : la vue **Mois** pose chaque événement à sa date, cliquer ouvre sa note,
+le nom de la vidéo dans la case ouvre la page de la vidéo, et glisser un événement change
+sa date. Les vues **Tout**, **Tournages** et **Sorties** listent les mêmes notes en tableau.
 
-Avec le plugin **Calendar** (voir § 9), la grille du mois apparaît à droite : cliquer une
-date ouvre sa note, et un point sous la date dit qu'il s'y passe quelque chose. Les notes
-quotidiennes sont réglées sur ce dossier et ce format ; une date sans note s'en crée une
-depuis le modèle [[modeles/Jour|Jour]].
+La vue Mois demande le plugin **Calendar Bases** (voir § 9) ; sans lui, les tableaux
+marchent déjà. Les notes quotidiennes restent sur ce dossier pour le journal : une date sans
+note s'en crée une depuis le modèle [[modeles/Jour|Jour]], et elle apparaît dans la grille
+comme les autres.
 
 ---
 
@@ -172,7 +176,7 @@ toi. Elles sont dans [[profil/FONDAMENTAUX#6. Le ton et la signature|les fondame
 ## 9. Ce coffre Obsidian
 
 - **Le coffre est le dépôt** : `C:\Users\melmdim\HitMe`. Le code vit dans `outils/`, exclu de l'affichage dans les réglages du coffre, comme les compositions HyperFrames rangées à côté de leurs vidéos. Les dossiers qui commencent par un point (`.claude`, `.agents`) ne s'affichent jamais dans Obsidian : c'est pour ça que `methode/` existe.
-- **Les dossiers** : `profil/` le profil ; `video/` une page et des fichiers par vidéo ; `calendrier/` une note par jour ; `methode/` la méthode ; `modeles/` les modèles de notes ; `pieces-jointes/` ce que tu glisses dans une note ; `outils/` le code, invisible ici.
-- **Le plugin Calendar** : Réglages → Plugins communautaires → Parcourir → « Calendar » (Liam Cain) → Installer → Activer. Il est déjà réglé pour lire `calendrier/` au format `YYYY-MM-DD`, la semaine commençant le lundi. C'est le seul plugin ; rien d'autre à installer.
+- **Les dossiers** : `profil/` le profil ; `video/` une page et des fichiers par vidéo ; `calendrier/` une note par événement et la base du calendrier ; `methode/` la méthode ; `modeles/` les modèles de notes ; `pieces-jointes/` ce que tu glisses dans une note ; `outils/` le code, invisible ici.
+- **Le plugin Calendar Bases**, d'Edrick Leong : Réglages → Plugins communautaires → Parcourir → « Calendar Bases » → Installer → Activer. Il ajoute la vue Mois à Bases ; `Calendrier.base` est déjà réglé dessus, la semaine commençant le lundi. C'est le seul plugin ; rien d'autre à installer.
 - **Git** : les notes sont versionnées comme le reste. Après une session d'écriture, un commit. L'état de fenêtre d'Obsidian (`.obsidian/workspace.json`) est ignoré.
 - **Les liens** entre notes sont des liens Obsidian, `[[Nom de la note]]`. Un nom de vidéo suffit : les noms sont uniques dans le coffre.

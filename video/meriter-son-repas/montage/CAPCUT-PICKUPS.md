@@ -108,7 +108,7 @@ qui télécharge HyperFrames), et remonter les pièces dans CapCut depuis
   de [[video/meriter-son-repas/SCRIPT#4. La légende|SCRIPT § 4]], sources comprises. Vidéo
   associée : [[Déficit calorique]].
 - **Instagram**, la même légende, si le compte existe ; sinon YouTube seulement cette semaine.
-- Le jour se choisit dans le [[Calendrier]] : la note du jour dit « Sortie : Tu n'as jamais
-  eu à le mériter ».
+- Le jour se choisit dans le [[Calendrier]] : l'événement est posé au samedi 19, à
+  confirmer, et se glisse à la souris sur un autre jour.
 
 [[Tu n'as jamais eu à le mériter]] · [[HUB]]
