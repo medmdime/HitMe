@@ -31,11 +31,13 @@ neuve qui ouvre là-dessus ne parle à personne. Ils prennent **les trois éping
 SEMI raconte la prépa, en stories, sans chrono : ouverte
 [[2026-09-20 📲 Stories · la « à la une » SEMI s'ouvre|dimanche 20]] avec la première série.
 
-**La semaine prochaine**, tout tourné vendredi, monté une heure chacun la veille de sa sortie :
-[[2026-09-22 📱 Le plus calorique de ton assiette, c'est pas le dessert|mardi 22]],
-[[2026-09-24 📱 Ton estomac ne compte pas les calories|jeudi 24]],
-[[2026-09-26 📱 Mange comme le corps que tu vises|samedi 26]]. Puis chaque dimanche, après la
-sortie longue, les trois shorts de la semaine d'après : [[Calendrier]].
+**La semaine prochaine**, tout tourné vendredi. Chaque short a son dossier, comme meriter : le
+scénario, le tournage avec la tonalité, le prompteur. [[Le plus calorique de ton assiette, c'est pas le dessert]] mardi 22,
+[[Ton estomac ne compte pas les calories]] jeudi 24, [[Mange comme le corps que tu vises]] samedi 26. Puis chaque
+dimanche, après la sortie longue, les trois shorts de la semaine d'après : [[Calendrier]].
+
+**Les comptes** : le nom, la bio, la photo, le lien, les épingles, et la liste pour publier une
+vidéo, Instagram d'abord, TikTok et YouTube Shorts en miroir : [[profil/COMPTES|Les comptes]].
 
 ---
 
@@ -51,12 +53,13 @@ un script ou une légende.
 | [[profil/PROGRAMME-FONDAMENTAUX\|Le programme]]           | les vidéos longues chapitre par chapitre, la méthode d'écriture d'une longue, la méthode du short, le packaging YouTube, la règle YouBud |
 | [[profil/STORIES-SEMI\|Les stories]]                      | le sport et la vie dans les stories, sans chrono ; le b-roll par séance ; la réserve « Manger quand tu cours »                           |
 | [[profil/PLAN-SEMI-18-OCTOBRE\|Le plan des six semaines]] | la charge par semaine, les recherches à faire, le journal. **Pour les dates, c'est le [[Calendrier]] qui fait foi**, pas ce plan         |
+| [[profil/COMPTES\|Les comptes]] | Instagram, TikTok, YouTube : le nom, la bio, la photo, le lien, les épingles, la liste pour publier une vidéo |
 
 Les dix décisions, en une ligne chacune : un seul type de vidéo, les calories ; jusqu'au 18
 octobre, trois shorts Instagram par semaine, sujets libres, et la vie dans les stories ; les
 longues YouTube après le semi, quand le rythme tient ; aucune performance à l'image ; tenir
 longtemps ; chaque chiffre à échelle humaine ; sans jugement, à cause de ta mère ; Instagram
-et YouTube, rien d'autre ; aucune décision sur les vues avant vingt vidéos.
+d'abord, TikTok et YouTube Shorts en miroir ; aucune décision sur les vues avant vingt vidéos.
 
 ---
 
@@ -182,7 +185,8 @@ toi. Elles sont dans [[profil/FONDAMENTAUX#6. Le ton et la signature|les fondame
 ## 8. Ce qui est publié
 
 - **YouTube** `@medmdim`, « Mohamed Elmdimegh » : le dépôt du long. [[Déficit calorique]] y est depuis le 27 août.
-- **Instagram**, à ton nom : la maison du court et des stories. **À confirmer** : le compte existe-t-il, avec la bio en trois lignes et le lien YouBud ? Il doit exister jeudi 17, avant la première vidéo ; le trailer s'épingle lundi 21.
+- **Instagram**, à ton nom : la maison du court et des stories. Première vidéo jeudi 17 septembre. Le profil, la bio, les épingles : [[profil/COMPTES|Les comptes]].
+- **TikTok**, en miroir depuis le 17 septembre : le même fichier, la même légende, zéro production en plus.
 
 ---
 

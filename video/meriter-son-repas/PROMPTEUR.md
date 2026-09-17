@@ -4,6 +4,10 @@ Narration nue, dans l'ordre. 262 mots · 1:34.
 Les `//` sont des silences tenus, pas des respirations.
 Le jeu et le placement caméra sont dans `TOURNAGE.md`.
 
+**Vendredi 18 septembre, il ne reste que deux prises à tourner**, les deux pickups : la fin du
+bloc 2, de « Sauf que » à « Cinq. », et le bloc 8 en entier. Tout le reste est déjà monté. La
+feuille : [[video/meriter-son-repas/montage/CAPCUT-PICKUPS|CAPCUT-PICKUPS]].
+
 ---
 
 ### 1 · DERRIÈRE LA CAMÉRA — sur le plan du lit · 0:00
@@ -30,7 +34,7 @@ Moi aussi.
 
 //
 
-Sauf que ce calcul-là, il porte sur cinq pour cent de ce que tu brûles.
+Sauf que le sport, c'est cinq pour cent de ce que tu brûles.
 
 //
 
