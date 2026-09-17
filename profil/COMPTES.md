@@ -85,7 +85,8 @@ Trois ou quatre tags précis, toujours dans cet ordre, sans accent :
 | le terme que la vidéo installe | #tdee |
 | la niche | #nutrition |
 | ce que cherche le spectateur | #pertedepoids |
-| sur TikTok seulement, le tag éducatif français | #apprendresurtiktok |
+| sur Instagram, un deuxième terme de la vidéo | #metabolisme |
+| sur TikTok, à sa place, le tag éducatif français | #apprendresurtiktok |
 
 Jamais de tag de sport dans une vidéo de nutrition, jamais de tag attrape-tout du type #fyp ou #pourtoi. Higgsfield n'a pas d'outil de tags : il a un prédicteur de viralité, qui note le hook et la rétention d'une vidéo envoyée, à utiliser sur un montage avant de le publier si tu veux un avis.
 

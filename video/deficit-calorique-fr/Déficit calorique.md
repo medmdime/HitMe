@@ -20,7 +20,7 @@ de ce qui sort.
 
 **L'export d'origine est sur le disque** : `D:\exports\dfd_cat_1787865385_3cb3784e(2)\dfd_cat_1787865385_3cb3784e(2).mov`, 2160×3840, 30 images par seconde, 1:11, avec sa couverture et ses sous-titres `.srt` à côté. C'est lui qui part sur Instagram et TikTok, pas un téléchargement de YouTube. Les deux autres exports de `D:\exports\` sont des essais de la même nuit, dont un en 60 images par seconde.
 
-Le clip du hook a été téléchargé depuis le compte TikTok `@15sdy.sport`, un compte qui reposte des extraits à la chaîne. Le crédit va à l'auteur d'origine, BANANAMO d'après tes notes, pas au compte qui reposte.
+Le clip du hook vient du compte TikTok `@15sdy.sport`, celui que ta description crédite.
 
 **Le projet CapCut**, `dfd_cat_1787865385_3cb3784e`, reste bloqué sur « Interface is being loaded » : son fichier est intact, mais cinq de ses sources ont été déplacées depuis le 28 août. Deux rushes sont passés dans `D:\videos\old\` : `video-5.mp4` et `2026-08-28 00-26-29.mp4`. Trois téléchargements ont été rangés dans `Downloads\Audio\` et `Downloads\Videos\` : les deux musiques, « Careless Wandering » et « Particle Emission », et le clip du hook. Pour le rouvrir : recopier ces cinq fichiers à leur ancienne place, `D:\videos\` et `Downloads\`, ou les relier dans CapCut à l'ouverture. Pour une retouche légère, la méthode de meriter suffit : un projet neuf, l'export en base, la retouche par-dessus.
 
@@ -34,26 +34,47 @@ Le clip du hook a été téléchargé depuis le compte TikTok `@15sdy.sport`, un
 
 ## La légende, Instagram et TikTok
 
-> Un déficit calorique, c'est pas « manger moins ».
->
-> Pas seulement, en tout cas. Un déficit a deux côtés : les calories qui rentrent, et celles qui sortent. Tout le monde travaille le premier, et s'arrête là.
->
-> Ce qui sort, c'est ton TDEE : tout ce que ton corps brûle en une journée. En répartition typique : 70 % pour te maintenir en vie, 15 % pour ce que tu dépenses en bougeant hors du sport, 10 % pour digérer. Et le sport : 5 %.
->
-> Les trois leviers du deuxième côté :
-> 1. Le métabolisme de base : du muscle, du sommeil, moins de stress. C'est lent, et c'est le plus gros morceau.
-> 2. Bouger hors de la salle : marcher après les repas, rester debout, les escaliers. 300 à 500 calories par jour.
-> 3. Les protéines : ton corps brûle 3 à 10 fois plus de calories à les digérer que les glucides ou le gras.
->
-> Ce que ça ne dit pas : que ce que tu manges ne compte pas. Si tu manges plus que ce que tu brûles, tu prends du poids, avec ou sans ces trois leviers. Et cette découpe est une moyenne : si tu t'entraînes six fois par semaine, ta part « sport » monte bien au-dessus de 5 %.
->
-> Le clip du début : BANANAMO, sur TikTok. Il a raison. C'est juste la moitié de la réponse.
->
-> PMID 15507147 · PMID 12468415 · PMID 15466943
->
-> #deficitcalorique #tdee #nutrition #pertedepoids
+**C'est ta description YouTube, reprise telle quelle**, 1751 caractères sur les 2 200 d'Instagram, avec deux retouches : la ligne du NEAT dit « ce que tu dépenses en bougeant » au lieu de « ce que tu bouges », une des trois tournures relevées sur cette vidéo ; et la ligne de tags remplace « #calories ».
 
-Sur TikTok, les mêmes tags plus #apprendresurtiktok. Identifie le compte de BANANAMO dans la publication plutôt que d'écrire son nom à la main. Sur YouTube, ta description actuelle reste.
+> Déficit calorique ≠ manger moins
+>
+> @15sdy.sport a raison. Mais ça, c'est la moitié de la réponse.
+>
+> Un déficit, c'est deux côtés : les calories qui rentrent, et les calories qui sortent. Tout le monde travaille le premier. Personne ne parle du second.
+>
+> Le second, c'est ton TDEE - tout ce que ton corps brûle en une journée. Il se découpe en quatre :
+>
+> → Métabolisme de base : ~70 %. Ce que tu brûles juste en existant.
+> → Ce que tu dépenses en bougeant hors du sport (NEAT) : ~15 %
+> → Digestion : ~10 %
+> → Le sport : ~5 %
+>
+> Oui, 5 %. C'est pour ça qu'ajouter une séance ne change presque rien à la balance, alors que marcher tous les jours change tout.
+>
+> Mais attention : la muscu ne se juge pas sur ces 5 %. Elle construit du muscle, donc elle augmente ton métabolisme de base — la plus grosse part. Elle agit par un autre canal.
+>
+> Les 3 leviers :
+>
+> 1. Du muscle → ton métabolisme de base monte, même en dormant
+> 2. Bouger hors de la salle → 10 min de marche après chaque repas, rester debout, prendre les escaliers
+> 3. Plus de protéines → ton corps brûle 3 à 10 fois plus de calories rien qu'à les digérer
+>
+> ⚠️ Les nuances, parce qu'elles comptent :
+>
+> - Ces pourcentages sont des moyennes. Le NEAT est ce qui varie le plus d'une personne à l'autre, et il baisse tout seul quand tu manges moins : c'est l'adaptation métabolique.
+>
+> - 300 à 500 cal/jour, c'est ce qu'on peut réellement ajouter en bougeant plus. Pas un chiffre garanti.
+>
+> - « Sans manger moins » ne veut pas dire « manger n'importe quoi ». Si tu es très au-dessus de ta maintenance, augmenter la dépense ne suffira pas.
+>
+> Sources :
+> PMID 12468415 - Levine, NEAT
+> PMID 42537543 - composantes du TDEE
+> PMID 15466943 - thermogenèse des protéines
+>
+> #deficitcalorique #tdee #metabolisme #nutrition #pertedepoids
+
+Sur TikTok, la même, avec cette ligne de tags : `#deficitcalorique #tdee #nutrition #pertedepoids #apprendresurtiktok`. Les quatre PMID ont été vérifiés dans PubMed le 18 septembre : Levine 2002 pour le NEAT, Nie 2026 pour les composantes de la dépense totale, Halton et Hu 2004 pour les protéines. Sur Instagram, le « @15sdy.sport » devient une mention : vérifie que le compte de ce nom existe et que c'est bien lui, sinon écris son nom sans le @.
 
 ## Ce que cette vidéo a appris
 
