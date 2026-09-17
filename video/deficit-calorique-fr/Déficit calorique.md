@@ -16,6 +16,14 @@ de ce qui sort.
 | Hook          | en réaction à un clip TikTok de BANANAMO, puis « Il a raison. Mais ça, c'est que la moitié de la réponse »                                                    |
 | Sur Instagram | [[2026-09-17 📱 Déficit calorique\|jeudi 17 septembre]], tel quel : la première des trois vidéos de la semaine du 14. **Épinglé en deuxième**, « ce que je fais ici », jusqu'à ce qu'un meilleur short le remplace                                          |
 
+## Le fichier publié, et le projet CapCut
+
+**L'export d'origine est sur le disque** : `D:\exports\dfd_cat_1787865385_3cb3784e(2)\dfd_cat_1787865385_3cb3784e(2).mov`, 2160×3840, 30 images par seconde, 1:11, avec sa couverture et ses sous-titres `.srt` à côté. C'est lui qui part sur Instagram et TikTok, pas un téléchargement de YouTube. Les deux autres exports de `D:\exports\` sont des essais de la même nuit, dont un en 60 images par seconde.
+
+Le clip du hook a été téléchargé depuis le compte TikTok `@15sdy.sport`, un compte qui reposte des extraits à la chaîne. Le crédit va à l'auteur d'origine, BANANAMO d'après tes notes, pas au compte qui reposte.
+
+**Le projet CapCut**, `dfd_cat_1787865385_3cb3784e`, reste bloqué sur « Interface is being loaded » : son fichier est intact, mais cinq de ses sources ont été déplacées depuis le 28 août. Deux rushes sont passés dans `D:\videos\old\` : `video-5.mp4` et `2026-08-28 00-26-29.mp4`. Trois téléchargements ont été rangés dans `Downloads\Audio\` et `Downloads\Videos\` : les deux musiques, « Careless Wandering » et « Particle Emission », et le clip du hook. Pour le rouvrir : recopier ces cinq fichiers à leur ancienne place, `D:\videos\` et `Downloads\`, ou les relier dans CapCut à l'ouverture. Pour une retouche légère, la méthode de meriter suffit : un projet neuf, l'export en base, la retouche par-dessus.
+
 ## Les fichiers
 
 | Fichier                                           | Ce que c'est                                                                                       |

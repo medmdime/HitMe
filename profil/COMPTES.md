@@ -8,13 +8,13 @@ Les mêmes quatre choses partout, pour qu'on te reconnaisse d'une appli à l'aut
 
 ## 1. Instagram
 
-| Réglage | Quoi mettre | Pourquoi |
-|---|---|---|
-| Type de compte | **professionnel, « Créateur »**. Catégorie : « Créateur digital », ou « Éducation » | les statistiques, et la programmation des publications. **Aucun titre de santé** : tu n'es ni diététicien ni médecin, tu montres des calories avec des sources |
-| Nom d'utilisateur | `medmdim`, le même que YouTube, s'il est libre | un seul nom à taper partout |
-| Nom affiché | **Mohamed Elmdimegh** | une marque personnelle porte ton nom, rien d'autre |
-| Photo | ton visage, plein cercle, la casquette et les lunettes des vidéos, fond uni. La même sur les trois comptes | on te reconnaît dans les commentaires à la taille d'un pouce |
-| Lien | **un seul : YouBud.** S'il n'y a pas de page qui marche aujourd'hui, aucun lien plutôt qu'un lien mort. Jamais un lien YouTube | la règle YouBud, [[profil/PROGRAMME-FONDAMENTAUX#8. YouBud, sans vendre\|le programme, § 8]] |
+| Réglage           | Quoi mettre                                                                                                                    | Pourquoi                                                                                                                                                       |
+| ----------------- | ------------------------------------------------------------------------------------------------------------------------------ | -------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Type de compte    | **professionnel, « Créateur »**. Catégorie : « Créateur digital », ou « Éducation »                                            | les statistiques, et la programmation des publications. **Aucun titre de santé** : tu n'es ni diététicien ni médecin, tu montres des calories avec des sources |
+| Nom d'utilisateur | `medmdim`, le même que YouTube, s'il est libre                                                                                 | un seul nom à taper partout                                                                                                                                    |
+| Nom affiché       | **Mohamed Elmdimegh**                                                                                                          | une marque personnelle porte ton nom, rien d'autre                                                                                                             |
+| Photo             | ton visage, plein cercle, la casquette et les lunettes des vidéos, fond uni. La même sur les trois comptes                     | on te reconnaît dans les commentaires à la taille d'un pouce                                                                                                   |
+| Lien              | **un seul : YouBud.** S'il n'y a pas de page qui marche aujourd'hui, aucun lien plutôt qu'un lien mort. Jamais un lien YouTube | la règle YouBud, [[profil/PROGRAMME-FONDAMENTAUX#8. YouBud, sans vendre\|le programme, § 8]]                                                                   |
 
 **La bio**, 142 caractères sur 150. Décision du 17 septembre : **une marque personnelle, pas une bio de compte nutrition.** Elle parle de toi, et le mot calories n'y est plus : YouBud s'y présente comme un suivi nutritionnel, ton choix.
 
@@ -66,7 +66,7 @@ Pas trois vidéos de présentation à la suite : [[profil/FONDAMENTAUX#10. Ce qu
 
 ## 4. Publier une vidéo : la liste
 
-1. **Le fichier d'origine**, l'export de CapCut. Un téléchargement depuis YouTube Studio dépanne, mais il est souvent en 720p : garde toujours tes exports dans `D:\videos\`.
+1. **Le fichier d'origine**, l'export de CapCut. Tes exports CapCut sont dans `D:\exports\`, un dossier par projet, avec la couverture et les sous-titres. Un téléchargement depuis YouTube Studio ne sert qu'en dépannage : la qualité y est réduite.
 2. **La couverture** : une image où le texte tient au centre, lisible dans la grille du profil. Toujours une image de nutrition, jamais de sport.
 3. **La légende** du script, entière : la thèse, le qualificatif, le mécanisme, la réserve honnête, les sources. Trois hashtags au plus.
 4. **Instagram d'abord.** Puis **une story** : le reel partagé, avec sa phrase en texte. Puis TikTok et YouTube Shorts, le même fichier.

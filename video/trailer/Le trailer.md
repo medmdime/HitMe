@@ -10,11 +10,11 @@ sortie: 2026-09-21
 **Trente-cinq secondes. La présentation.** Qui tu es, ce que tu fais ici, ce qu'on prépare.
 Épinglé en premier sur Instagram, bande-annonce de la chaîne YouTube.
 
-| | |
-|---|---|
-| État | plan par plan écrit, les fichiers rangés dans `D:\videos\trailer\`. Trois plans face caméra à tourner |
-| Tournage | [[2026-09-18 🎬 Tournage · la semaine du 22, et le trailer\|vendredi 18 septembre]], après les pickups, vingt minutes. Le prompteur : [[Tournage du vendredi 18 septembre]] |
-| Sortie | [[2026-09-21 🎞️ Le trailer\|lundi 21 septembre]] au soir, Instagram, épinglé en premier : « qui je suis » et « pourquoi ». La version 16:9 pour YouTube attend la reprise des longues |
+|          |                                                                                                                                                                                        |
+| -------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| État     | plan par plan écrit, les fichiers rangés dans `D:\videos\trailer\`. Trois plans face caméra à tourner                                                                                  |
+| Tournage | [[2026-09-18 🎬 Tournage · la semaine du 22, et le trailer\|vendredi 18 septembre]], après les pickups, vingt minutes. Le prompteur : [[Tournage du vendredi 18 septembre]]            |
+| Sortie   | [[2026-09-21 🎞️ Le trailer\|lundi 21 septembre]] au soir, Instagram, épinglé en premier : « qui je suis » et « pourquoi ». La version 16:9 pour YouTube attend la reprise des longues |
 
 ## Le fichier
 
