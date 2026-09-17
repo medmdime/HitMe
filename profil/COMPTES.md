@@ -12,19 +12,25 @@ Les mêmes quatre choses partout, pour qu'on te reconnaisse d'une appli à l'aut
 |---|---|---|
 | Type de compte | **professionnel, « Créateur »**. Catégorie : « Créateur digital », ou « Éducation » | les statistiques, et la programmation des publications. **Aucun titre de santé** : tu n'es ni diététicien ni médecin, tu montres des calories avec des sources |
 | Nom d'utilisateur | `medmdim`, le même que YouTube, s'il est libre | un seul nom à taper partout |
-| Nom affiché | **Mohamed Elmdimegh · Calories sans régime** | ce champ est cherchable : le mot « calories » y travaille pour toi. 40 caractères sur 64 |
+| Nom affiché | **Mohamed Elmdimegh** | une marque personnelle porte ton nom, rien d'autre |
 | Photo | ton visage, plein cercle, la casquette et les lunettes des vidéos, fond uni. La même sur les trois comptes | on te reconnaît dans les commentaires à la taille d'un pouce |
 | Lien | **un seul : YouBud.** S'il n'y a pas de page qui marche aujourd'hui, aucun lien plutôt qu'un lien mort. Jamais un lien YouTube | la règle YouBud, [[profil/PROGRAMME-FONDAMENTAUX#8. YouBud, sans vendre\|le programme, § 8]] |
 
-**La bio**, 132 caractères sur 150 :
+**La bio**, 134 caractères sur 150. Décision du 17 septembre : **une marque personnelle, pas une bio de compte nutrition.** Elle parle de toi ; le mot calories n'y apparaît qu'une fois, par YouBud.
 
 ```
-Les calories, sans régime et sans jugement.
+Dev freelance. Muscu, course, cuisine.
 1 m 90, de 60 à 80 kg. Semi-marathon le 18 octobre.
-Mon calculateur de calories : YouBud
+Créateur de YouBud, calculateur de calories
 ```
 
-La première ligne est la promesse, la deuxième est la preuve et le fil en cours, la troisième est le seul renvoi. Pas de chrono, pas d'objectif de temps. Si tu préfères la version courte du programme : « Semi le 18 octobre. » seul en deuxième ligne.
+La première ligne dit qui tu es et de quoi ta vie est faite, la deuxième est ta preuve et ton fil en cours, la troisième est ce que tu as construit. Pas de chrono, pas d'objectif de temps. Si tu ne veux pas ton métier dans la bio, la variante, 134 caractères :
+
+```
+Muscu, course, cuisine. Sans jugement.
+1 m 90, de 60 à 80 kg. Semi-marathon le 18 octobre.
+Créateur de YouBud, calculateur de calories
+```
 
 **Les trois épingles**, dans cet ordre :
 
@@ -45,7 +51,7 @@ Pas trois vidéos de présentation à la suite : [[profil/FONDAMENTAUX#10. Ce qu
 | Nom d'utilisateur | `medmdim`, le même |
 | Nom affiché | Mohamed Elmdimegh |
 | Photo | la même |
-| Bio, 78 caractères sur 80 | Les calories, sans régime et sans jugement. De 60 à 80 kg. Semi le 18 octobre. |
+| Bio, 78 caractères sur 80 | Muscu, course, cuisine. De 60 à 80 kg. Semi le 18 octobre. Créateur de YouBud. |
 | Lien | TikTok ne donne le lien en bio qu'aux comptes professionnels ou à partir d'un certain nombre d'abonnés : s'il n'est pas proposé, rien. Le nom « YouBud » suffit dans une légende qui a besoin du calcul |
 
 **Le miroir, en pratique** : tu postes **le fichier d'origine**, jamais une vidéo retéléchargée depuis Instagram, qui porte un filigrane. La même légende, les mêmes trois hashtags. Pas de son TikTok ajouté : la musique est dans ton montage. Aucune vidéo pensée pour TikTok seulement.
