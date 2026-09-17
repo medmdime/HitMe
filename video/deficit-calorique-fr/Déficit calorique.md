@@ -51,9 +51,9 @@ Le clip du hook a été téléchargé depuis le compte TikTok `@15sdy.sport`, un
 >
 > PMID 15507147 · PMID 12468415 · PMID 15466943
 >
-> #nutrition #calories #deficitcalorique
+> #deficitcalorique #tdee #nutrition #pertedepoids
 
-Identifie le compte de BANANAMO dans la publication plutôt que d'écrire son nom à la main. Sur YouTube, ta description actuelle reste.
+Sur TikTok, les mêmes tags plus #apprendresurtiktok. Identifie le compte de BANANAMO dans la publication plutôt que d'écrire son nom à la main. Sur YouTube, ta description actuelle reste.
 
 ## Ce que cette vidéo a appris
 

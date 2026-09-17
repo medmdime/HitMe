@@ -80,7 +80,7 @@ La méthode et les volumes : [[methode/Monter un reel Train Bloom dans CapCut|Mo
 >
 > PMID 3237852 · PMID 10500012 · PMID 17228036
 >
-> #nutrition #satiété #perdredupoids
+> #nutrition #satiete #perdredupoids
 
 La ligne YouTube ne s'ajoute pas : il n'y a pas de longue en ligne. Même légende sur TikTok et sur YouTube Shorts.
 

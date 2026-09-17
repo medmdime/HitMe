@@ -104,32 +104,23 @@ Chacun une seule fois.
 
 ## 4. La légende
 
-> Cette nuit, en dormant, t'as brûlé plus de calories qu'à ta dernière séance.
+> Tu n'as jamais eu à « mériter » ton repas.
 >
-> Et non, c'est pas une punchline.
+> Pas parce que les calories ne comptent pas. Parce que le calcul qu'on fait dans sa tête, un dessert contre une séance, porte sur la plus petite part de ce qu'on brûle.
 >
-> Le sport, c'est environ 5 % de ce que tu brûles dans une journée. Ta digestion, sur
-> la journée entière, c'est le double. Presque tout le reste part dans le simple fait
-> de te maintenir en vie.
+> Le sport, c'est environ 5 % de ce que ton corps brûle en une journée. Digérer ce que tu manges, sur la journée entière, c'est à peu près le double. Et te maintenir en vie, nuit comprise, c'est autour de 70 % : voilà pourquoi une nuit de sommeil brûle plus que ta séance d'hier.
 >
-> Les trois leviers qui bougent vraiment les 95 % :
-> 1. Bouger hors de la salle — marcher après les repas, rester debout, les escaliers. 300 à 500 calories par jour.
-> 2. Les protéines — ton corps brûle 3 à 10 fois plus de calories à les digérer que les glucides ou le gras.
-> 3. Le métabolisme de base — muscle, sommeil, stress. C'est lent, et c'est le plus gros morceau.
+> Donc la culpabilité d'après le dessert vise la mauvaise cible. Ce n'est pas la séance qui « rattrape » le dessert. C'est ta journée entière qui compte, et ta nuit.
 >
-> Ce que je te dois en retour, et c'est le plus important : **rien de tout ça n'annule
-> le total.** Si tu manges plus que ce que tu brûles sur la durée, tu prends du poids —
-> le sport à 5 % n'y change rien, et cette vidéo ne dit pas le contraire. Ce qu'elle
-> conteste, c'est l'idée que la dette se rembourse à la salle.
+> Ce que ça ne dit pas : que le dessert est gratuit. Si tu manges plus que ce que tu brûles sur la durée, ça finit par se voir, avec ou sans sport. Ces parts sont une répartition typique, pas une constante : si tu t'entraînes six fois par semaine, ta part « sport » monte nettement, et une grosse séance bat une nuit de sommeil. Et le rapport digestion contre sport vaut sur une journée, jamais sur un aliment isolé.
 >
-> Et **cette découpe est une répartition typique, pas une constante.** Si tu t'entraînes six fois par semaine, ta part « sport » monte nettement
-> au-dessus de 5 % et peut dépasser ta digestion — et la nuit de sommeil ne battra pas
-> une grosse séance. L'ordre des grandeurs tient ; le chiffre exact dépend de toi. Le
-> rapport digestion/sport vaut **sur une journée**, jamais sur un aliment isolé.
+> Les trois leviers qui bougent le reste, je les détaille dans la vidéo d'avant : « Déficit calorique ».
 >
 > PMID 15507147 · PMID 12468415 · PMID 15466943
 >
-> #nutrition #fitnessfrance
+> #nutrition #tdee #culpabilitealimentaire #pertedepoids
+
+Refaite le 18 septembre : l'ancienne légende reprenait la liste des trois leviers mot pour mot, comme celle de [[Déficit calorique]]. Chaque vidéo garde son angle : ici la culpabilité et la nuit, là-bas les deux côtés du déficit et les trois leviers. Sur TikTok, les mêmes tags plus #apprendresurtiktok.
 
 ---
 

@@ -68,10 +68,28 @@ Pas trois vidéos de présentation à la suite : [[profil/FONDAMENTAUX#10. Ce qu
 
 1. **Le fichier d'origine**, l'export de CapCut. Tes exports CapCut sont dans `D:\exports\`, un dossier par projet, avec la couverture et les sous-titres. Un téléchargement depuis YouTube Studio ne sert qu'en dépannage : la qualité y est réduite.
 2. **La couverture** : une image où le texte tient au centre, lisible dans la grille du profil. Toujours une image de nutrition, jamais de sport.
-3. **La légende** du script, entière : la thèse, le qualificatif, le mécanisme, la réserve honnête, les sources. Trois hashtags au plus.
+3. **La légende** du script, entière : la thèse, le qualificatif, le mécanisme, la réserve honnête, les sources. Puis les tags : voir ci-dessous.
 4. **Instagram d'abord.** Puis **une story** : le reel partagé, avec sa phrase en texte. Puis TikTok et YouTube Shorts, le même fichier.
 5. **Si la vidéo contient le clip de quelqu'un**, son nom est dans la légende, sur les trois plateformes.
 6. **Les commentaires de la première heure** : tu réponds, avec le chiffre ou la source. C'est là que se gagne le « sans jugement ».
+
+### Les tags
+
+**Cinq au plus, sur les deux plateformes.** Instagram plafonne à cinq hashtags par publication depuis décembre 2025, et TikTok ne lit que les cinq premiers depuis août 2025. Les deux disent la même chose : un tag range la vidéo, il ne lui donne pas de portée. Ce qui compte davantage : le sujet écrit en clair dans la première ligne de la légende et dans le texte à l'écran.
+
+Trois ou quatre tags précis, toujours dans cet ordre, sans accent :
+
+| Rôle | Exemple pour « Déficit calorique » |
+|---|---|
+| le sujet exact de la vidéo | #deficitcalorique |
+| le terme que la vidéo installe | #tdee |
+| la niche | #nutrition |
+| ce que cherche le spectateur | #pertedepoids |
+| sur TikTok seulement, le tag éducatif français | #apprendresurtiktok |
+
+Jamais de tag de sport dans une vidéo de nutrition, jamais de tag attrape-tout du type #fyp ou #pourtoi. Higgsfield n'a pas d'outil de tags : il a un prédicteur de viralité, qui note le hook et la rétention d'une vidéo envoyée, à utiliser sur un montage avant de le publier si tu veux un avis.
+
+**Deux vidéos, deux textes.** Une légende ne reprend jamais un bloc d'une autre : chaque vidéo garde son angle, même quand deux vidéos partagent un chiffre.
 
 ---
 
