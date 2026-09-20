@@ -23,7 +23,8 @@ sortie: 2026-09-20
 | [[video/creatine-gummies/SCRIPT\|SCRIPT]] | l'écriture : le hook, les quatre boucles, ce qu'on voit, le montage, la légende, le contrôle |
 | [[video/creatine-gummies/TOURNAGE\|TOURNAGE]] | **la tonalité, bloc par bloc** : ce que tu dis, comment tu le dis, ce qui s'affiche, les réglages, l'ordre des prises |
 | [[video/creatine-gummies/PROMPTEUR\|PROMPTEUR]] | **la narration nue**, à lire, avec les silences et les pièges de diction |
-| MONTAGE | à écrire après le tournage, avec tes prises retenues |
+| [[video/creatine-gummies/PLAN-DE-MONTAGE\|PLAN-DE-MONTAGE]] | **à monter avant de tourner** : la timeline seconde par seconde, qui est à l'image, les quatre inserts, le b-roll, le son |
+| [[video/creatine-gummies/INSERTS-HYPERFRAMES\|INSERTS-HYPERFRAMES]] | le brief à donner tel quel à l'autre modèle pour générer les quatre inserts |
 
 ## D'où vient le texte
 

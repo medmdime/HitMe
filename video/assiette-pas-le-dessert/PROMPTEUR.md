@@ -1,6 +1,6 @@
 # Prompteur · « Le plus calorique de ton assiette, c'est pas le dessert »
 
-Narration nue, dans l'ordre. 275 mots · 1:34.
+Narration nue, dans l'ordre. 294 mots · 1:35.
 Les `//` sont des silences tenus, pas des respirations.
 Le jeu, bloc par bloc, est dans [[video/assiette-pas-le-dessert/TOURNAGE|TOURNAGE]]. Ici, rien que ce que tu dis.
 
@@ -10,121 +10,93 @@ Tu tournes le texte d'une traite, trois prises. Puis le bloc 1 seul, trois prise
 
 ### 1 · FACE CAMÉRA · le hook · 0:00
 
-*(le pot dans une main, la cuillère dans l'autre)*
+*(le pot dans une main, la cuillère dans l'autre, à la même hauteur)*
 
-Sur cette assiette, c'est quoi le plus calorique, d'après toi ?
-
-La plupart des gens répondent le dessert.
-
-Est-ce que c'est vrai ?
+Entre ce dessert et cette cuillère d'huile, lequel est le plus calorique ?
 
 //
 
----
-
-### 2 · FACE CAMÉRA · l'assiette · 0:06
-
-Alors on prend une assiette normale. Du riz, du poulet, des légumes, un filet d'huile, et un dessert.
-
-Et on compte.
+C'est quasiment pareil.
 
 ---
 
-### 3 · FACE CAMÉRA · le compte · 0:12
+### 2 · FACE CAMÉRA · le pivot · 0:08
 
-Le riz, cent cinquante grammes : deux cents calories.
+Et pourtant, le dessert, tu le comptes.
 
-Le poulet, cent cinquante grammes : deux cent trente.
+La cuillère, jamais.
 
-Les légumes, deux cents grammes : soixante.
-
-Le dessert, le pot entier : cent cinquante.
+Pourquoi ?
 
 ---
 
-### 4 · FACE CAMÉRA · l'huile · 0:26
+### 3 · FACE CAMÉRA · le mécanisme · 9 · 4 · 4 · 0:14
 
-*(la cuillère monte dans le cadre)*
+Parce que le gras, c'est ce qu'il y a de plus concentré en calories.
 
-Et l'huile.
+Un gramme de sucre ou de protéines, c'est quatre calories. Un gramme de gras, c'est neuf.
 
-Verse-la comme tu fais d'habitude.
+Plus du double, pour le même poids.
+
+Donc une cuillère d'huile ne prend aucune place dans ton assiette, et elle apporte presque autant de calories qu'un dessert entier.
 
 ---
 
-### 5 · FACE CAMÉRA · la balance · 0:29
+### 4 · FACE CAMÉRA · la preuve · 0:33
 
-Trente grammes. Neuf calories le gramme.
+Et ça, personne ne le voit.
 
-Deux cent soixante-dix.
+Des chercheurs ont demandé à des gens d'estimer ce que contenaient des plats de restaurant.
+
+Dans les plats les plus riches, il y avait deux fois plus de gras que ce qu'ils pensaient. Et presque deux fois plus de calories.
+
+Comme si tu mangeais deux assiettes en croyant en manger une.
+
+---
+
+### 5 · FACE CAMÉRA · ton assiette · 0:46
+
+Prends une assiette normale : du riz, du poulet, des légumes. À peu près cinq cents calories.
+
+Maintenant, verse l'huile au jugé. Tu arrives vite à trente grammes.
+
+Deux cent soixante-dix calories de plus.
+
+Tu viens d'ajouter la moitié de ton assiette, et dedans, tu ne vois rien de plus.
+
+---
+
+### 6 · FACE CAMÉRA · LE TURN · 0:58
+
+Donc on enlève l'huile, et c'est réglé ?
 
 //
 
----
-
-### 6 · FACE CAMÉRA · le constat · 0:35
-
-Le truc le plus léger de l'assiette. Et le plus gros chiffre.
-
-Presque deux fois le dessert. Plus que le poulet.
-
-Et personne ne la compte. Parce que tu ne la mâches pas. Tu la verses.
+Enfin… pas vraiment.
 
 ---
 
-### 7 · FACE CAMÉRA · LE TURN · 0:46
+### 7 · FACE CAMÉRA · la résolution · la balance · 1:03
 
-Alors on se dit : d'accord, je vire l'huile.
+L'huile n'est pas le problème. Le problème, c'est que tu ne sais pas combien tu en verses.
 
-//
+Alors fais-le une fois. Pose ta poêle sur une balance, et verse comme d'habitude. Regarde le chiffre.
 
-Pas vraiment.
+Ensuite, verse une cuillère à soupe. Quinze grammes. La moitié.
 
----
-
-### 8 · FACE CAMÉRA · pas la supprimer · 0:51
-
-Ton corps a besoin de gras. Et manger sans une goutte d'huile, personne ne tient longtemps.
-
-Le sujet, c'est pas l'huile. C'est la quantité.
+Tu viens d'enlever l'équivalent d'un dessert. Et dans l'assiette, tu ne verras aucune différence.
 
 ---
 
-### 9 · FACE CAMÉRA · l'étude · 0:59
+### 8 · FACE CAMÉRA · la chute · 1:24
 
-En quatre-vingt-quinze, on a testé des aliments pour voir lesquels calaient le mieux.
-
-Le gras, c'est le seul qui va dans l'autre sens : plus il y en avait dans le plat, moins les gens se sentaient calés.
-
----
-
-### 10 · FACE CAMÉRA · le dessert et l'huile · 1:10
-
-Le dessert que tu t'interdis, tu y penses toute la soirée. L'huile, tu l'as jamais sentie passer.
-
-C'est pour ça que c'est elle qu'on ajuste. Pas le dessert.
-
----
-
-### 11 · FACE CAMÉRA · la cuillère · 1:18
-
-*(la cuillère revient dans le cadre)*
-
-Une cuillère en moins, quinze grammes, c'est quasiment ton dessert entier.
-
-Et celle-là, tu la sentiras pas passer.
-
----
-
-### 12 · FACE CAMÉRA · la chute · 1:24
-
-*(le pot encore dans le cadre)*
+*(le pot revient dans le cadre)*
 
 Après, personne ne pèse son huile toute sa vie.
 
-Ce qui reste, c'est un geste : tu verses au filet, pas au glouglou.
+Mais une fois que tu l'as vue sur la balance, tu ne la verses plus jamais pareil.
 
-Et tu gardes ton dessert.
+Et ton dessert, tu le gardes.
 
 *(laisse tourner deux secondes avant de couper)*
 
@@ -132,11 +104,11 @@ Et tu gardes ton dessert.
 
 ## Les pièges de diction
 
-1. **Les quatre chiffres du compte**, deux cents, deux cent trente, soixante, cent cinquante : chacun en entier, au même rythme. Si tu accélères, l'oreille perd le total.
-2. **« Deux cent soixante-dix. »** : silence avant, silence après. C'est le point d'appui de la vidéo.
-3. **« Cent cinquante »** est le chiffre d'un pot de cent vingt-cinq grammes. Dis le chiffre de l'étiquette de ton pot, arrondi à la dizaine.
-4. **« Pas vraiment. »** : beaucoup plus bas, presque désolé. Jamais satisfait.
-5. **« Au filet, pas au glouglou »** : articule « glouglou », ne le joue pas.
-6. **« Après, personne ne pèse son huile »** : ne l'escamote pas. Sans cette concession, la vidéo demande de peser son huile à vie.
+1. **« Quatre » et « neuf »** : les deux chiffres du mécanisme. Un temps avant chacun.
+2. **« Deux fois plus de gras… presque deux fois plus de calories »** : ne fusionne pas les deux. Ce sont deux résultats.
+3. **« Deux cent soixante-dix »** : en entier, silence après.
+4. **« Enfin… pas vraiment. »** : beaucoup plus bas. Jamais satisfait.
+5. **« Quinze grammes. La moitié. »** : deux phrases, pas une.
+6. **« C'est quasiment pareil »** vaut pour un pot de cent vingt-cinq grammes autour de cent cinquante calories. Lis l'étiquette du tien : au-dessus de cent soixante-dix, dis « c'est presque pareil ».
 
 [[Le plus calorique de ton assiette, c'est pas le dessert]] · [[HUB]]

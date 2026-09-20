@@ -1,44 +1,44 @@
 # Le plus calorique de ton assiette, c'est pas le dessert
 
-Reel français · **1:34** · 275 mots · turn à 49 % · **aucun clip emprunté, aucune animation**
+Reel français · **1:35** · 294 mots · turn à 61 % · **aucun clip emprunté · quatre inserts prévus, remplaçables par des cartes texte**
 
 > **Ce document porte l'écriture** : pourquoi ce hook, quelles boucles, quelle légende.
 > Le jeu, bloc par bloc, est dans [[video/assiette-pas-le-dessert/TOURNAGE|TOURNAGE]] ; la narration nue dans
 > [[video/assiette-pas-le-dessert/PROMPTEUR|PROMPTEUR]]. Une seule source de vérité par sujet : si un mot diverge, c'est le
 > PROMPTEUR qui a raison.
 
-Croyance contestée : **le plus calorique de l'assiette, c'est le dessert.** En fait c'est l'huile, qu'on verse sans la compter parce qu'on ne la mâche pas. Et c'est elle qu'on ajuste, pas le dessert.
+Croyance contestée : **je sais à peu près ce que je mange, et le plus calorique de mon assiette, c'est le dessert.** En fait personne ne voit le gras : à poids égal il apporte plus du double de calories, il ne prend aucune place, et quand on demande à des gens d'estimer un plat, il y en a deux fois plus que ce qu'ils pensent. On ne le supprime pas : on le regarde une fois sur une balance.
 
 | | |
 |---|---|
-| D'où vient le texte | le short 1 de [[video/calories-fondamentaux/SHORTS|SHORTS]], chapitre 1 de [[Les calories, les fondamentaux]], repris mot pour mot. Écrit et vérifié le 9 septembre, hook refait en question le même jour |
+| D'où vient le texte | réécrit le 20 septembre sur la colonne du skill `science-reel`, après ton retour : l'ancienne version était une suite d'affirmations, sans preuve ni mécanisme nommé. Étude ajoutée : Burton 2006, lue dans PubMed |
 | Format d'écriture | skill `science-reel` : on valide avant de corriger, un turn, une chute qui concède |
-| Ce qui change le 17 septembre | il se tourne **seul**, sans la longue : tête parlante et cartes texte |
+| La colonne | hook · pivot · **mécanisme 9 · 4 · 4** · **preuve, Burton 2006** · turn · résolution · chute |
 
 ---
 
 ## 1. Le hook retenu
 
 ```
-PAROLE   : « Sur cette assiette, c'est quoi le plus calorique, d'après toi ?
-           La plupart des gens répondent le dessert. Est-ce que c'est vrai ? »
-TEXTE    : « LE PLUS CALORIQUE ? » puis « LE DESSERT ? »
-VISUEL   : toi, le pot de crème dessert dans une main, la cuillère d'huile dans l'autre
-SON      : aucune musique ; un pop sur le pot, un pop grave sur la cuillère
-BOUCLE   : « si c'est pas le dessert, c'est quoi ? »
-SUJET    : l'huile qu'on verse sans la compter
+PAROLE   : « Entre ce dessert et cette cuillère d'huile, lequel est le plus calorique ?
+           C'est quasiment pareil. »
+TEXTE    : « LEQUEL EST LE PLUS CALORIQUE ? » puis « PAREIL »
+VISUEL   : toi, le pot de crème dessert dans une main, la cuillère d'huile dans l'autre, à la même hauteur
+SON      : aucune musique ; un pop sur le pot, un pop sur la cuillère, un impact sur « pareil »
+BOUCLE   : « une cuillère, autant qu'un dessert ? et pourquoi je ne la compte jamais ? »
+SUJET    : le gras qu'on verse sans le voir
 ```
 
 ### Les quatre boucles
 
-1. **0:00 → 0:35** c'est quoi le plus calorique ? → l'huile : deux cent soixante-dix, presque deux fois le dessert
-2. **0:35 → 0:46** pourquoi personne ne la compte ? → on ne la mâche pas, on la verse · **turn**
-3. **0:46 → 1:10** alors on la supprime ? → non : ton corps en a besoin, le sujet c'est la quantité
-4. **1:10 → 1:34** donc on fait quoi ? → une cuillère en moins, au filet, et tu gardes ton dessert
+1. **0:00 → 0:14** lequel est le plus calorique ? → pareil ; et pourtant tu ne comptes que le dessert
+2. **0:14 → 0:33** pourquoi ? → le mécanisme, **9 · 4 · 4** : le gras apporte plus du double à poids égal, et ne prend aucune place
+3. **0:33 → 0:58** et ça se voit ? → la preuve : deux fois plus de gras que ce que les gens estiment ; puis ton assiette, deux cent soixante-dix calories de plus sans rien voir
+4. **0:58 → 1:35** donc on enlève l'huile ? → **turn** : non, on la regarde une fois sur la balance ; une cuillère au lieu du jugé, un dessert d'écart, et tu gardes le tien
 
 Chaque transition est un **mais**, un **donc** ou un **alors**. Aucun « et puis ».
 
-Les verrous d'attention : Thought Narration sur le turn, la question du hook posée au spectateur, la chute qui rend le dessert.
+Les verrous d'attention : la question du hook posée au spectateur, Term Branding (9 · 4 · 4), la comparaison des deux assiettes, Thought Narration sur le turn, la chute qui rend le dessert du hook.
 
 ---
 
@@ -66,19 +66,21 @@ La méthode et les volumes : [[methode/Monter un reel Train Bloom dans CapCut|Mo
 
 ## 4. La légende
 
-> Le plus calorique de ton assiette, c'est pas le dessert.
+> Le plus calorique de ton assiette, ce n'est pas le dessert.
 >
-> Pas parce que le dessert est innocent. Parce qu'on ne compte jamais ce qu'on ne mâche pas.
+> C'est ce que tu ne vois pas. Une cuillère à soupe d'huile, 15 grammes : environ 135 calories. Un pot de crème dessert de 125 grammes : environ 150.
 >
-> Un gramme de gras, c'est 9 calories. Un gramme de sucre ou de protéines, 4. Cent grammes d'huile d'olive : environ 900 calories. Une cuillère à soupe, 10 à 15 grammes, donc 90 à 135 calories. Cent grammes de crème dessert : environ 120 calories ; un pot de 125 grammes, environ 150.
+> Le mécanisme tient en trois chiffres : 9 · 4 · 4. Un gramme de gras apporte 9 calories, un gramme de sucre ou de protéines, 4. Le gras ne prend aucune place et ne se mâche pas : on le verse, on ne le compte pas.
 >
-> Pourquoi on ajuste l'huile et pas le dessert : dans une étude de 1995 qui comparait ce qui cale le mieux, le gras est le seul aliment qui allait dans l'autre sens. Plus il y en avait dans le plat, moins les gens se sentaient calés. Une cuillère en moins ne crée pas de faim. Un dessert en moins crée une envie.
+> Et on se trompe tous. Dans une étude de 2006, on a demandé à des gens d'estimer des plats de restaurant : dans les plats les plus riches, il y avait deux fois plus de gras que leur estimation, et presque deux fois plus de calories.
 >
-> Ce que ça ne dit pas : ton corps a besoin de gras, et l'huile d'olive en est une bonne source. On parle de la quantité versée sans la voir, pas de la supprimer. Et un dessert reste un dessert : ça se compte quand même.
+> À faire une fois : ta poêle sur une balance, verse comme d'habitude, regarde le chiffre. Puis une cuillère à soupe. L'écart vaut souvent un dessert.
 >
-> PMID 7498104 · PMID 15507147
+> Ce que ça ne dit pas : que l'huile est mauvaise. Ton corps a besoin de gras, et l'huile d'olive en est une bonne source. On parle de la quantité versée sans la voir. Et l'étude porte sur des plats de restaurant décrits à des clients américains, pas sur ta cuisine : elle montre qu'on sous-estime le gras, pas de combien toi tu te trompes.
 >
-> #nutrition #calories #pertedepoids
+> PMID 16873758
+>
+> #calories #nutrition #huile #pertedepoids
 
 La ligne YouTube ne s'ajoute pas : il n'y a pas de longue en ligne. Même légende sur TikTok et sur YouTube Shorts.
 
@@ -88,15 +90,16 @@ La ligne YouTube ne s'ajoute pas : il n'y a pas de longue en ligne. Même légen
 
 **À vérifier avant de dire**
 
-- [ ] **Le pot de crème dessert.** Pèse-le et lis l'étiquette. Tu dis « le pot entier : cent cinquante » : dis le chiffre de l'étiquette, arrondi à la dizaine. Entre cent trente et cent soixante, « presque deux fois le dessert » reste vrai ; en dessous, dis « plus de deux fois le dessert ». La ligne du pot dans la légende suit le même chiffre.
+- [ ] **Le pot de crème dessert.** Lis l'étiquette : autour de cent cinquante calories, « quasiment pareil » tient face aux cent trente-cinq de la cuillère. Au-dessus de cent soixante-dix, dis « presque pareil ».
 - [ ] **La cuillère est pleine**, à ras : quinze grammes.
+- [ ] **L'étude** : Burton et collègues, 2006, PMID 16873758, lue dans PubMed le 20 septembre. Elle dit : « le gras réel était le double de l'estimation, les calories approchaient le double », pour les plats les moins sains. Tu ne dis rien de plus qu'elle.
 
 **Format `science-reel`**
 
-- [x] 275 mots · 1:34 · débit reel
+- [x] 294 mots · 1:35 · débit reel
 - [x] Une croyance contestée, pas une liste de conseils
 - [x] On valide avant de corriger : la croyance est dite à la place du spectateur, entre guillemets à l'écran
-- [x] Un turn, à 0:46, un seul scratch
+- [x] Un turn, à 0:58, un seul scratch
 - [x] La chute concède (« Après, … ») avant de nommer ce qui reste
 - [x] Chaque chiffre a une échelle humaine ; les deux côtés de chaque comparaison sont en calories
 - [x] Aucune unité de laboratoire, aucune valeur p dans la bouche

@@ -1,8 +1,8 @@
 # Tournage · « Le plus calorique de ton assiette, c'est pas le dessert »
 
-Reel **1:34** · 275 mots · turn à 49 % · sort mardi 22 septembre
+Reel **1:35** · 294 mots · turn à 61 % · sort mardi 22 septembre
 
-Tout se tourne face caméra, sans animation : les chiffres et les mots-clés deviennent des cartes texte au montage. Trois enregistrements, et rien d'autre :
+Tu tournes tout face caméra, d'une traite. Au montage, les blocs 3, 4, 5 et 7 passent sous des inserts ou des plans d'objet : ta voix continue, on ne te voit plus. Sans insert prêt, une carte texte par chiffre. Trois enregistrements, et rien d'autre :
 
 | | Quoi | Prises | Pourquoi |
 |---|---|---|---|
@@ -20,10 +20,10 @@ La narration nue est dans [[video/assiette-pas-le-dessert/PROMPTEUR|PROMPTEUR]],
 | | |
 |---|---|
 | Cadre | 9:16, plan poitrine, l'œil au tiers haut. Portrait natif si tu tournes au téléphone ; si la caméra reste en 4K 16:9, toi centré, le recadrage fixe se fait au montage |
-| Fond | uni, le même que pour le trailer, la lampe à gauche |
+| Fond | uni, la lampe à gauche |
 | Son | micro-cravate, écouté au casque sur la première prise. Jamais le micro de la caméra |
 | Débit | débit reel, environ 180 mots par minute. Rapide mais articulé : ne cours pas |
-| Accessoires | le pot de crème dessert, une cuillère à soupe pleine d'huile. Si tu as une assiette de riz, poulet, légumes sous la main, pose-la devant toi : « sur cette assiette » la montre du doigt. Sinon l'assiette sera une image au montage |
+| Accessoires | le pot de crème dessert, une cuillère à soupe pleine d'huile. Pour les plans d'objet : la balance de cuisine, un bol ou une poêle froide, la bouteille d'huile |
 | Prompteur | tu peux le regarder entre deux phrases, jamais pendant : on coupe sur les regards |
 
 Tu ne bouges pas la caméra entre les prises. Les punch-in se fabriquent au recadrage dans CapCut.
@@ -34,159 +34,129 @@ Tu ne bouges pas la caméra entre les prises. Les punch-in se fabriquent au reca
 
 ### 1 · le hook · 0:00
 
-> *(le pot dans une main, la cuillère dans l'autre)*
+> *(le pot dans une main, la cuillère dans l'autre, à la même hauteur)*
 >
-> **« Sur cette assiette, c'est quoi le plus calorique, d'après toi ? »**
->
-> **« La plupart des gens répondent le dessert. »**
->
-> **« Est-ce que c'est vrai ? »**
->
-> *(silence)*
-
-**Tonalité.** Une vraie question, pas un piège : tu la poses comme à quelqu'un assis en face de toi. Le pot se lève sur « le dessert », la cuillère reste basse, on ne la regarde pas encore. « Est-ce que c'est vrai ? » : sourcil levé, puis une demi-seconde de silence. Si tu la joues « attends de voir ça », le spectateur se méfie.
-
-**À l'écran.** LE PLUS CALORIQUE ? puis LE DESSERT ? Un carton, aucun sous-titre mot à mot sur le hook.
-
-**Montage.** Plan poitrine. Aucune musique. Un pop sur le pot, un pop grave sur la cuillère.
-
-### 2 · l'assiette · 0:06
-
-> **« Alors on prend une assiette normale. Du riz, du poulet, des légumes, un filet d'huile, et un dessert. »**
->
-> **« Et on compte. »**
-
-**Tonalité.** Simple et concret, tu poses le décor. « Et on compte. » se détache : c'est la promesse de la vidéo.
-
-**À l'écran.** L'assiette en insert : une photo ou une image, le riz, le poulet, les légumes, le filet d'huile, le pot.
-
-**Montage.** La musique entre à plein volume sur la coupe après le hook, puis se range sous la voix.
-
-### 3 · le compte · 0:12
-
-> **« Le riz, cent cinquante grammes : deux cents calories. »**
->
-> **« Le poulet, cent cinquante grammes : deux cent trente. »**
->
-> **« Les légumes, deux cents grammes : soixante. »**
->
-> **« Le dessert, le pot entier : cent cinquante. »**
-
-**Tonalité.** Une énumération régulière, comme des cases qu'on coche. Les quatre lignes au même rythme. Ne ralentis pas sur le dessert : il ne doit pas avoir l'air coupable.
-
-**À l'écran.** Le compteur 200 → 430 → 490 → 640, un pop par chiffre.
-
-### 4 · l'huile · 0:26
-
-> *(la cuillère monte dans le cadre)*
->
-> **« Et l'huile. »**
->
-> **« Verse-la comme tu fais d'habitude. »**
-
-**Tonalité.** Un temps net après « Et l'huile. ». Tu lèves la cuillère maintenant. « Comme tu fais d'habitude » se dit sans reproche : c'est le geste de tout le monde.
-
-**À l'écran.** COMME D'HABITUDE.
-
-**Montage.** Léger punch-in.
-
-### 5 · la balance · 0:29
-
-> **« Trente grammes. Neuf calories le gramme. »**
->
-> **« Deux cent soixante-dix. »**
->
-> *(silence)*
-
-**Tonalité.** Trois phrases sèches. « Deux cent soixante-dix. » se pose, silence après : c'est le chiffre de la vidéo.
-
-**À l'écran.** 30 g, puis 270 en rouge. Un pop grave.
-
-### 6 · le constat · 0:35
-
-> **« Le truc le plus léger de l'assiette. Et le plus gros chiffre. »**
->
-> **« Presque deux fois le dessert. Plus que le poulet. »**
->
-> **« Et personne ne la compte. Parce que tu ne la mâches pas. Tu la verses. »**
-
-**Tonalité.** Tu constates, sans triomphe. Des phrases courtes, une idée chacune. « Parce que tu ne la mâches pas. Tu la verses. » : plus bas, c'est le mécanisme, pas une pique.
-
-**À l'écran.** PLUS QUE LE POULET, puis TU LA VERSES.
-
-### 7 · LE TURN · 0:46
-
-> **« Alors on se dit : d'accord, je vire l'huile. »**
+> **« Entre ce dessert et cette cuillère d'huile, lequel est le plus calorique ? »**
 >
 > *(silence)*
 >
-> **« Pas vraiment. »**
+> **« C'est quasiment pareil. »**
 
-**Tonalité.** La phrase du spectateur, dite à sa place : décidée, un peu naïve. C'est sa conclusion, pas la tienne, d'où les guillemets à l'écran. Une demi-seconde de silence. « Pas vraiment. » beaucoup plus bas, presque désolé pour lui, jamais satisfait de le prendre en défaut.
+**Tonalité.** Une vraie question, posée à quelqu'un en face de toi. Tu lèves les deux mains à la même hauteur, comme une balance. Un silence d'une seconde : laisse-le répondre dans sa tête. « C'est quasiment pareil. » tombe à plat, sans effet : c'est le chiffre qui surprend, pas toi.
 
-**À l'écran.** « JE VIRE L'HUILE » entre guillemets, puis Pas vraiment.
+**À l'écran.** LEQUEL EST LE PLUS CALORIQUE ? Puis PAREIL, en jaune. Un carton, aucun sous-titre mot à mot sur le hook.
 
-**Montage.** Punch-in serré. Le scratch tombe ici et nulle part ailleurs dans la vidéo.
+**Montage.** Plan poitrine. Aucune musique. Un pop sur le pot, un pop sur la cuillère, un impact sur « pareil ».
 
-### 8 · pas la supprimer · 0:51
+### 2 · le pivot · 0:08
 
-> **« Ton corps a besoin de gras. Et manger sans une goutte d'huile, personne ne tient longtemps. »**
+> **« Et pourtant, le dessert, tu le comptes. »**
 >
-> **« Le sujet, c'est pas l'huile. C'est la quantité. »**
-
-**Tonalité.** Simple, sans leçon. La première phrase rassure : personne ne te demande de supprimer le gras. « C'est la quantité. » se pose, c'est elle qui relance la vidéo.
-
-**À l'écran.** LE SUJET, C'EST LA QUANTITÉ.
-
-### 9 · l'étude · 0:59
-
-> **« En quatre-vingt-quinze, on a testé des aliments pour voir lesquels calaient le mieux. »**
+> **« La cuillère, jamais. »**
 >
-> **« Le gras, c'est le seul qui va dans l'autre sens : plus il y en avait dans le plat, moins les gens se sentaient calés. »**
+> **« Pourquoi ? »**
 
-**Tonalité.** Posé, didactique. « En quatre-vingt-quinze » sans emphase. Le point d'appui est « dans l'autre sens » : ralentis dessus.
+**Tonalité.** Tu es de son côté : tout le monde fait ça. Aucun reproche dans « jamais ». « Pourquoi ? » est une vraie question, sourcil levé, et tu coupes dessus.
 
-**À l'écran.** LE GRAS VA DANS L'AUTRE SENS, et un bandeau de source discret : Holt, 1995.
+**À l'écran.** LE DESSERT : COMPTÉ. LA CUILLÈRE : JAMAIS.
 
-### 10 · le dessert et l'huile · 1:10
+**Montage.** La musique entre à plein volume sur la coupe après « pareil », puis se range sous la voix.
 
-> **« Le dessert que tu t'interdis, tu y penses toute la soirée. L'huile, tu l'as jamais sentie passer. »**
+### 3 · le mécanisme · 9 · 4 · 4 · 0:14
+
+> **« Parce que le gras, c'est ce qu'il y a de plus concentré en calories. »**
 >
-> **« C'est pour ça que c'est elle qu'on ajuste. Pas le dessert. »**
-
-**Tonalité.** La première phrase est complice, un demi-sourire est permis : tout le monde a pensé à un dessert toute une soirée. Puis net : « C'est elle qu'on ajuste. Pas le dessert. »
-
-**À l'écran.** C'EST ELLE QU'ON AJUSTE, « elle » en vert.
-
-### 11 · la cuillère · 1:18
-
-> *(la cuillère revient dans le cadre)*
+> **« Un gramme de sucre ou de protéines, c'est quatre calories. Un gramme de gras, c'est neuf. »**
 >
-> **« Une cuillère en moins, quinze grammes, c'est quasiment ton dessert entier. »**
+> **« Plus du double, pour le même poids. »**
 >
-> **« Et celle-là, tu la sentiras pas passer. »**
+> **« Donc une cuillère d'huile ne prend aucune place dans ton assiette, et elle apporte presque autant de calories qu'un dessert entier. »**
 
-**Tonalité.** Tu montres la cuillère. C'est la seule promesse de la vidéo : elle monte légèrement, sans vendre.
+**Tonalité.** Didactique, posé. « Quatre » et « neuf » se détachent, au même rythme. « Plus du double, pour le même poids » est le point d'appui : ralentis. La dernière phrase s'enchaîne d'un souffle, c'est la conséquence.
 
-**À l'écran.** 15 g ≈ LE DESSERT.
+**À l'écran.** INSERT 1 : la réglette 9 · 4 · 4. Trois barres à la même échelle, SUCRE 4, PROTÉINES 4, GRAS 9 en rouge. Puis le pot et la cuillère côte à côte, 150 et 135.
 
-### 12 · la chute · 1:24
+**Montage.** Voix seule sur l'insert. Un pop par barre.
 
-> *(le pot encore dans le cadre)*
+### 4 · la preuve · 0:33
+
+> **« Et ça, personne ne le voit. »**
+>
+> **« Des chercheurs ont demandé à des gens d'estimer ce que contenaient des plats de restaurant. »**
+>
+> **« Dans les plats les plus riches, il y avait deux fois plus de gras que ce qu'ils pensaient. Et presque deux fois plus de calories. »**
+>
+> **« Comme si tu mangeais deux assiettes en croyant en manger une. »**
+
+**Tonalité.** Tu racontes une expérience, sans jargon. « Deux fois plus de gras » puis « presque deux fois plus de calories » : deux marches, la deuxième un peu plus forte. La comparaison des deux assiettes se dit lentement, c'est l'image qu'on retient.
+
+**À l'écran.** INSERT 2 : deux barres, CE QU'ILS PENSAIENT et CE QU'IL Y AVAIT, la deuxième deux fois plus haute. Puis une assiette qui se dédouble. Bandeau de source discret : Burton, 2006.
+
+**Montage.** Voix seule sur l'insert. Un ding sur la deuxième barre.
+
+### 5 · ton assiette · 0:46
+
+> **« Prends une assiette normale : du riz, du poulet, des légumes. À peu près cinq cents calories. »**
+>
+> **« Maintenant, verse l'huile au jugé. Tu arrives vite à trente grammes. »**
+>
+> **« Deux cent soixante-dix calories de plus. »**
+>
+> **« Tu viens d'ajouter la moitié de ton assiette, et dedans, tu ne vois rien de plus. »**
+
+**Tonalité.** Concret, rapide sur la liste, puis tu ralentis sur « Deux cent soixante-dix ». La dernière phrase est le constat : pas de reproche, de l'étonnement partagé.
+
+**À l'écran.** INSERT 3 : l'assiette et son compteur, 500. Un filet d'huile tombe : le compteur passe à 770, l'assiette ne change pas.
+
+**Montage.** Voix seule sur l'insert. Le compteur qui défile, un pop grave à l'arrêt.
+
+### 6 · LE TURN · 0:58
+
+> **« Donc on enlève l'huile, et c'est réglé ? »**
+>
+> *(silence)*
+>
+> **« Enfin… pas vraiment. »**
+
+**Tonalité.** La conclusion du spectateur, dite à sa place : décidée, un peu naïve, entre guillemets à l'écran. Une demi-seconde de silence. « Enfin… pas vraiment. » beaucoup plus bas, presque désolé pour lui, jamais satisfait.
+
+**À l'écran.** « ON ENLÈVE L'HUILE » entre guillemets, puis Pas vraiment.
+
+**Montage.** Retour face caméra, punch-in serré. Le scratch tombe ici et nulle part ailleurs. La musique bascule sur le second morceau, un cran plus fort.
+
+### 7 · la résolution · la balance · 1:03
+
+> **« L'huile n'est pas le problème. Le problème, c'est que tu ne sais pas combien tu en verses. »**
+>
+> **« Alors fais-le une fois. Pose ta poêle sur une balance, et verse comme d'habitude. Regarde le chiffre. »**
+>
+> **« Ensuite, verse une cuillère à soupe. Quinze grammes. La moitié. »**
+>
+> **« Tu viens d'enlever l'équivalent d'un dessert. Et dans l'assiette, tu ne verras aucune différence. »**
+
+**Tonalité.** Tu donnes une chose à faire ce soir, une seule. « Fais-le une fois » : léger, presque un jeu. « Quinze grammes. La moitié. » : deux phrases sèches. La dernière phrase referme la boucle du hook : le dessert revient.
+
+**À l'écran.** INSERT 4 ou plans d'objet : la poêle sur la balance, 30 g ; puis la cuillère, 15 g. Puis l'équivalence : 15 g D'HUILE = UN DESSERT, en vert.
+
+**Montage.** Voix seule. Un pop à 30, un ding vert à 15.
+
+### 8 · la chute · 1:24
+
+> *(le pot revient dans le cadre)*
 >
 > **« Après, personne ne pèse son huile toute sa vie. »**
 >
-> **« Ce qui reste, c'est un geste : tu verses au filet, pas au glouglou. »**
+> **« Mais une fois que tu l'as vue sur la balance, tu ne la verses plus jamais pareil. »**
 >
-> **« Et tu gardes ton dessert. »**
+> **« Et ton dessert, tu le gardes. »**
 >
 > *(silence)*
 
-**Tonalité.** On redescend. « Après, » se dit comme on se reprend à voix haute, pas comme une réserve qu'on annonce. « Au filet, pas au glouglou » est le seul moment léger. « Et tu gardes ton dessert. » se pose, sans sourire de fin, puis deux secondes de silence avant de couper.
+**Tonalité.** On redescend. « Après, » comme on se reprend à voix haute. La deuxième phrase est la vérité qui reste. « Et ton dessert, tu le gardes. » se pose, chaleureux, sans sourire de fin. Deux secondes de silence.
 
-**À l'écran.** AU FILET, PAS AU GLOUGLOU.
+**À l'écran.** TON DESSERT, TU LE GARDES, « gardes » en vert.
 
-**Montage.** La musique redescend. Pas de carte de fin, pas d'appel à l'action.
+**Montage.** Face caméra, le pot encore dans le cadre. La musique redescend. Pas de carte de fin, pas d'appel à l'action.
 
 ---
 
@@ -206,18 +176,14 @@ Les fichiers vont dans `D:\videos\2026-09-20\`, nommés `assiette-pas-le-dessert
 
 | Temps | Bloc | Ce qu'on voit |
 |---|---|---|
-| 0:00 → 0:06 | 1 · le hook | toi, face caméra · LE PLUS CALORIQUE ? puis LE DESSERT ? Un carton, aucun sous-titre mot à mot sur le hook |
-| 0:06 → 0:12 | 2 · l'assiette | toi, face caméra · L'assiette en insert : une photo ou une image, le riz, le poulet, les légumes, le filet d'huile, le pot |
-| 0:12 → 0:26 | 3 · le compte | toi, face caméra · Le compteur 200 → 430 → 490 → 640, un pop par chiffre |
-| 0:26 → 0:29 | 4 · l'huile | toi, face caméra · COMME D'HABITUDE |
-| 0:29 → 0:35 | 5 · la balance | toi, face caméra · 30 g, puis 270 en rouge |
-| 0:35 → 0:46 | 6 · le constat | toi, face caméra · PLUS QUE LE POULET, puis TU LA VERSES |
-| 0:46 → 0:51 | 7 · LE TURN | toi, face caméra · « JE VIRE L'HUILE » entre guillemets, puis Pas vraiment |
-| 0:51 → 0:59 | 8 · pas la supprimer | toi, face caméra · LE SUJET, C'EST LA QUANTITÉ |
-| 0:59 → 1:10 | 9 · l'étude | toi, face caméra · LE GRAS VA DANS L'AUTRE SENS, et un bandeau de source discret : Holt, 1995 |
-| 1:10 → 1:18 | 10 · le dessert et l'huile | toi, face caméra · C'EST ELLE QU'ON AJUSTE, « elle » en vert |
-| 1:18 → 1:24 | 11 · la cuillère | toi, face caméra · 15 g ≈ LE DESSERT |
-| 1:24 → 1:34 | 12 · la chute | toi, face caméra · AU FILET, PAS AU GLOUGLOU |
+| 0:00 → 0:08 | 1 · le hook | toi, face caméra · LEQUEL EST LE PLUS CALORIQUE ? Puis PAREIL, en jaune |
+| 0:08 → 0:14 | 2 · le pivot | toi, face caméra · LE DESSERT : COMPTÉ |
+| 0:14 → 0:33 | 3 · le mécanisme · 9 · 4 · 4 | toi, face caméra · INSERT 1 : la réglette 9 · 4 · 4 |
+| 0:33 → 0:46 | 4 · la preuve | toi, face caméra · INSERT 2 : deux barres, CE QU'ILS PENSAIENT et CE QU'IL Y AVAIT, la deuxième deux fois plus haute |
+| 0:46 → 0:58 | 5 · ton assiette | toi, face caméra · INSERT 3 : l'assiette et son compteur, 500 |
+| 0:58 → 1:03 | 6 · LE TURN | toi, face caméra · « ON ENLÈVE L'HUILE » entre guillemets, puis Pas vraiment |
+| 1:03 → 1:24 | 7 · la résolution · la balance | toi, face caméra · INSERT 4 ou plans d'objet : la poêle sur la balance, 30 g ; puis la cuillère, 15 g |
+| 1:24 → 1:35 | 8 · la chute | toi, face caméra · TON DESSERT, TU LE GARDES, « gardes » en vert |
 
 Les temps sont ceux du script ; ta traite réelle fixera les vrais. Vise la durée annoncée, plafond dix secondes de plus.
 
@@ -227,9 +193,9 @@ Les temps sont ceux du script ; ta traite réelle fixera les vrais. Vise la dur�
 
 Au téléphone, en portrait, sur la table, dix secondes chacun. Pas de cuisine à l'image : une table, un fond neutre.
 
-- le pot de crème posé seul sur la table, trois secondes
-- la cuillère qu'on remplit d'huile à ras
-- l'huile versée dans un bol, une fois « au glouglou », une fois « au filet »
-- la balance de cuisine qui affiche 30 g, un bol dessus
+- le pot et la cuillère côte à côte sur la table
+- la poêle froide sur la balance : l'huile versée au jugé, le chiffre qui monte vers 30 g
+- la même poêle, une cuillère à soupe : 15 g
+- l'assiette riz, poulet, légumes, vue de dessus, si tu en as une
 
 [[Le plus calorique de ton assiette, c'est pas le dessert]] · [[2026-09-20 🎬 Tournage · quatre shorts et les pickups|la session du dimanche 20]] · [[HUB]]
