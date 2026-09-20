@@ -33,7 +33,7 @@ SUJET    : l'huile qu'on verse sans la compter
 
 1. **0:00 → 0:35** c'est quoi le plus calorique ? → l'huile : deux cent soixante-dix, presque deux fois le dessert
 2. **0:35 → 0:46** pourquoi personne ne la compte ? → on ne la mâche pas, on la verse · **turn**
-3. **0:46 → 1:10** alors on la supprime ? → non : enlever le gras n'enlève rien à la faim
+3. **0:46 → 1:10** alors on la supprime ? → non : ton corps en a besoin, le sujet c'est la quantité
 4. **1:10 → 1:34** donc on fait quoi ? → une cuillère en moins, au filet, et tu gardes ton dessert
 
 Chaque transition est un **mais**, un **donc** ou un **alors**. Aucun « et puis ».

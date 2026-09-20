@@ -82,11 +82,11 @@ Pas vraiment.
 
 ---
 
-### 8 · FACE CAMÉRA · ceux qui suppriment · 0:51
+### 8 · FACE CAMÉRA · pas la supprimer · 0:51
 
-Ceux qui suppriment le gras tiennent trois semaines, et ils craquent.
+Ton corps a besoin de gras. Et manger sans une goutte d'huile, personne ne tient longtemps.
 
-Parce qu'ils ont enlevé des calories, sans rien enlever à la faim.
+Le sujet, c'est pas l'huile. C'est la quantité.
 
 ---
 

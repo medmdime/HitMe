@@ -128,15 +128,15 @@ Tu ne bouges pas la caméra entre les prises. Les punch-in se fabriquent au reca
 
 **Montage.** Punch-in serré. Le scratch tombe ici et nulle part ailleurs dans la vidéo.
 
-### 8 · ceux qui suppriment · 0:51
+### 8 · pas la supprimer · 0:51
 
-> **« Ceux qui suppriment le gras tiennent trois semaines, et ils craquent. »**
+> **« Ton corps a besoin de gras. Et manger sans une goutte d'huile, personne ne tient longtemps. »**
 >
-> **« Parce qu'ils ont enlevé des calories, sans rien enlever à la faim. »**
+> **« Le sujet, c'est pas l'huile. C'est la quantité. »**
 
-**Tonalité.** Tu es de leur côté. « Ils craquent » n'est pas une moquerie : c'est ce qui arrive à n'importe qui, et la phrase suivante dit pourquoi.
+**Tonalité.** Simple, sans leçon. La première phrase rassure : personne ne te demande de supprimer le gras. « C'est la quantité. » se pose, c'est elle qui relance la vidéo.
 
-**À l'écran.** SANS RIEN ENLEVER À LA FAIM.
+**À l'écran.** LE SUJET, C'EST LA QUANTITÉ.
 
 ### 9 · l'étude · 0:59
 
@@ -213,7 +213,7 @@ Les fichiers vont dans `D:\videos\2026-09-20\`, nommés `assiette-pas-le-dessert
 | 0:29 → 0:35 | 5 · la balance | toi, face caméra · 30 g, puis 270 en rouge |
 | 0:35 → 0:46 | 6 · le constat | toi, face caméra · PLUS QUE LE POULET, puis TU LA VERSES |
 | 0:46 → 0:51 | 7 · LE TURN | toi, face caméra · « JE VIRE L'HUILE » entre guillemets, puis Pas vraiment |
-| 0:51 → 0:59 | 8 · ceux qui suppriment | toi, face caméra · SANS RIEN ENLEVER À LA FAIM |
+| 0:51 → 0:59 | 8 · pas la supprimer | toi, face caméra · LE SUJET, C'EST LA QUANTITÉ |
 | 0:59 → 1:10 | 9 · l'étude | toi, face caméra · LE GRAS VA DANS L'AUTRE SENS, et un bandeau de source discret : Holt, 1995 |
 | 1:10 → 1:18 | 10 · le dessert et l'huile | toi, face caméra · C'EST ELLE QU'ON AJUSTE, « elle » en vert |
 | 1:18 → 1:24 | 11 · la cuillère | toi, face caméra · 15 g ≈ LE DESSERT |
