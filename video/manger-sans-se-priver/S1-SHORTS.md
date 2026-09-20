@@ -1,6 +1,6 @@
 # S1 · « Pourquoi ça revient » : les trois shorts
 
-> **Changement du 17 septembre.** Pas de longue avant le semi : ces shorts se tournent seuls, tête parlante et cartes texte, sans les compositions. Le short 2, « Ton estomac ne compte pas les calories », se tourne vendredi 18 et sort jeudi 24 ; les shorts 3 et 1 se tournent dimanche 27 et sortent jeudi 1er et samedi 3 octobre. **Le short 2 a maintenant son dossier, qui fait foi** : [[Ton estomac ne compte pas les calories]], avec son SCRIPT, son TOURNAGE et son PROMPTEUR. La ligne YouTube de la légende ne s'ajoute pas.
+> **Changement du 17 septembre.** Pas de longue avant le semi : ces shorts se tournent seuls, tête parlante et cartes texte, sans les compositions. Le short 2, « Ton estomac ne compte pas les calories », se tourne dimanche 20 et sort jeudi 24 ; les shorts 3 et 1 se tournent dimanche 27 et sortent jeudi 1er et samedi 3 octobre. **Le short 2 a maintenant son dossier, qui fait foi** : [[Ton estomac ne compte pas les calories]], avec son SCRIPT, son TOURNAGE et son PROMPTEUR. La ligne YouTube de la légende ne s'ajoute pas.
 
 > **Reporté d'une semaine, décision du 9 septembre.** La première longue est devenue
 > « Les calories, les fondamentaux » (`video/calories-fondamentaux/`), tournée dimanche 20.

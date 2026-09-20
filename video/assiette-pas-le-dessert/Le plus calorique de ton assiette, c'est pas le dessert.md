@@ -1,8 +1,8 @@
 ---
 type: reel
 quoi: "short de la semaine du 21, 1:34, tête parlante"
-etat: "écrit, vérifié ; à tourner vendredi 18, à monter lundi 21"
-tournage: 2026-09-18
+etat: "écrit, vérifié ; à tourner dimanche 20, à monter lundi 21"
+tournage: 2026-09-20
 sortie: 2026-09-22
 ---
 # Le plus calorique de ton assiette, c'est pas le dessert
@@ -12,7 +12,7 @@ sortie: 2026-09-22
 | | |
 |---|---|
 | État | **écrit et vérifié**, 275 mots. À tourner, puis à monter en une heure |
-| Tournage | [[2026-09-18 🎬 Tournage · la semaine du 22, et le trailer\|vendredi 18 septembre]], le matin, seul, sans la longue |
+| Tournage | [[2026-09-20 🎬 Tournage · quatre shorts et les pickups\|dimanche 20 septembre]], le matin, seul, sans la longue |
 | Sortie | [[2026-09-22 📱 Le plus calorique de ton assiette, c'est pas le dessert\|mardi 22 septembre]], Instagram, puis TikTok et YouTube Shorts en miroir |
 | Accessoires | le pot de crème dessert, une cuillère à soupe pleine d'huile. Si tu as une assiette de riz, poulet, légumes sous la main, pose-la devant toi : « sur cette assiette » la montre du doigt. Sinon l'assiette sera une image au montage |
 

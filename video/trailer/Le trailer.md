@@ -1,9 +1,7 @@
 ---
 type: trailer
 quoi: "35 s, la présentation, épinglé"
-etat: "trois plans à tourner vendredi 18, montage 9:16 le week-end, épinglé lundi 21"
-tournage: 2026-09-18
-sortie: 2026-09-21
+etat: "en attente : seul le format Train Bloom se tourne pour l'instant"
 ---
 # Le trailer
 
@@ -13,8 +11,8 @@ sortie: 2026-09-21
 |          |                                                                                                                                                                                        |
 | -------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | État     | plan par plan écrit, les fichiers rangés dans `D:\videos\trailer\`. Trois plans face caméra à tourner                                                                                  |
-| Tournage | [[2026-09-18 🎬 Tournage · la semaine du 22, et le trailer\|vendredi 18 septembre]], après les pickups, vingt minutes. Le prompteur : [[Tournage du vendredi 18 septembre]]            |
-| Sortie   | [[2026-09-21 🎞️ Le trailer\|lundi 21 septembre]] au soir, Instagram, épinglé en premier : « qui je suis » et « pourquoi ». La version 16:9 pour YouTube attend la reprise des longues |
+| Tournage | [[2026-09-20 🎬 Tournage · quatre shorts et les pickups\|dimanche 20 septembre]], après les pickups, vingt minutes. Le prompteur : [[Tournage du dimanche 20 septembre]]            |
+| Sortie   | plus tard au soir, Instagram, épinglé en premier : « qui je suis » et « pourquoi ». La version 16:9 pour YouTube attend la reprise des longues |
 
 ## Le fichier
 

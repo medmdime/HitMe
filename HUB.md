@@ -8,36 +8,25 @@ ce que Claude écrit, tu le vois ici.
 
 ## Aujourd'hui
 
-**Le format jusqu'au dimanche 18 octobre, décidé le 17 septembre : trois shorts Instagram par
-semaine, mardi, jeudi et samedi, sur des sujets libres ; ta vie de tous les jours dans les
-stories ; une session de tournage par semaine. Pas de longue YouTube avant le semi : elles
-reprennent quand le rythme tient.** Le calendrier est reposé là-dessus.
+**Le format jusqu'au dimanche 18 octobre : trois shorts par semaine au format Train Bloom, mardi,
+jeudi et samedi, sujets libres ; ta vie de tous les jours dans les stories ; un tournage par
+semaine, le dimanche. Pas de longue YouTube avant le semi, et le trailer attend.**
 
-**Cette semaine, une vidéo par jour de jeudi à samedi, rien ne se décale.**
+**Dimanche 20 septembre : le tournage, et un short ce soir.** Le planning heure par heure :
+[[Tournage du dimanche 20 septembre]]. Dans l'ordre : les deux pickups de meriter avec la casquette, puis
+[[Les gummies de créatine, c'est pas de la créatine]] qui sort ce soir, puis les trois de la semaine.
 
-| | Sur Instagram | À faire |
+| Sort | Short | Dossier |
 |---|---|---|
-| **jeudi 17** | [[Déficit calorique]], le reel du 27 août, tel quel | poster, la description YouTube en légende : [[2026-09-17 📱 Déficit calorique\|la note]]. L'épingler en deuxième : c'est « ce que je fais ici » |
-| **vendredi 18** | « Trois cents calories par jour », le Short déjà sur YouTube, tel quel | **le matin, tout ce qui sort jusqu'au 26 :** les deux pickups, le trailer, les trois shorts de la semaine prochaine. La feuille et le prompteur : [[Tournage du vendredi 18 septembre]] · [[2026-09-18 🎬 Tournage · la semaine du 22, et le trailer\|la note]] |
-| **samedi 19** | [[Tu n'as jamais eu à le mériter]], fini la veille dans CapCut | Instagram, et YouTube en Short. Légende : [[video/meriter-son-repas/SCRIPT#4. La légende\|SCRIPT § 4]] |
+| **dimanche 20**, le soir | [[Les gummies de créatine, c'est pas de la créatine]] | [[video/creatine-gummies/TOURNAGE\|tonalité]] · [[video/creatine-gummies/PROMPTEUR\|texte]] |
+| **mardi 22** | [[Le plus calorique de ton assiette, c'est pas le dessert]] | [[video/assiette-pas-le-dessert/TOURNAGE\|tonalité]] · [[video/assiette-pas-le-dessert/PROMPTEUR\|texte]] |
+| **jeudi 24** | [[Ton estomac ne compte pas les calories]] | [[video/estomac-sent-la-place/TOURNAGE\|tonalité]] · [[video/estomac-sent-la-place/PROMPTEUR\|texte]] |
+| **samedi 26** | [[Mange comme le corps que tu vises]] | [[video/corps-cible/TOURNAGE\|tonalité]] · [[video/corps-cible/PROMPTEUR\|texte]] |
+| en réserve | [[Tu n'as jamais eu à le mériter]] | les pickups d'aujourd'hui, une heure de CapCut |
 
-**Les trois messages, « qui je suis », « pourquoi je fais ça », « ce qu'on prépare », ne font
-pas trois vidéos de présentation à la suite** : c'est dans
-[[profil/FONDAMENTAUX#10. Ce qu'on ne fait pas avant le 18 octobre|ce qu'on ne fait pas, § 10]], une chaîne
-neuve qui ouvre là-dessus ne parle à personne. Ils prennent **les trois épingles du profil**.
-[[Le trailer]] dit qui tu es et pourquoi, avec ta mère : tourné vendredi, épinglé
-[[2026-09-21 🎞️ Le trailer|lundi 21]]. Un short épinglé montre ce que tu fais ici :
-[[Déficit calorique]] dès jeudi, remplacé par un meilleur quand il existe. La « à la une »
-SEMI raconte la prépa, en stories, sans chrono : ouverte
-[[2026-09-20 📲 Stories · la « à la une » SEMI s'ouvre|dimanche 20]] avec la première série.
-
-**La semaine prochaine**, tout tourné vendredi. Chaque short a son dossier, comme meriter : le
-scénario, le tournage avec la tonalité, le prompteur. [[Le plus calorique de ton assiette, c'est pas le dessert]] mardi 22,
-[[Ton estomac ne compte pas les calories]] jeudi 24, [[Mange comme le corps que tu vises]] samedi 26. Puis chaque
-dimanche, après la sortie longue, les trois shorts de la semaine d'après : [[Calendrier]].
-
-**Les comptes** : le nom, la bio, la photo, le lien, les épingles, et la liste pour publier une
-vidéo, Instagram d'abord, TikTok et YouTube Shorts en miroir : [[profil/COMPTES|Les comptes]].
+**Les trois épingles du profil** : un short qui montre ce que tu fais, la « à la une » SEMI pour la
+prépa, et le trailer quand il existera. **Les comptes**, la bio, les tags, la liste pour publier :
+[[profil/COMPTES|Les comptes]].
 
 ---
 
@@ -101,8 +90,7 @@ leur sortie. Les stories tous les jours : les séances, les repas, la prépa, ja
 | vendredi | montage du short 3 ; les trois scripts de dimanche lus à voix haute | |
 | **samedi** | | short 3 |
 
-Cette semaine fait exception : le tournage est vendredi 18, les sorties jeudi, vendredi et
-samedi. Le trailer sort une fois, lundi 21, épinglé. La ligne YouTube ne s'ajoute pas aux
+Le trailer attend : seul le format Train Bloom se tourne pour l'instant. La ligne YouTube ne s'ajoute pas aux
 légendes tant que les longues n'ont pas repris. Les heures réelles se notent dans le
 [[profil/PLAN-SEMI-18-OCTOBRE#6. Le journal|journal]].
 
@@ -162,7 +150,7 @@ toi. Elles sont dans [[profil/FONDAMENTAUX#6. Le ton et la signature|les fondame
 ## 6. Le tournage et le montage
 
 - **Le réglage**, fait une fois : [[profil/FONDAMENTAUX#9. Le tournage|les fondamentaux, § 9]]. Une seule caméra en 4K 16:9, toi centré, recadrage fixe 9:16 pour les shorts, micro-cravate, la lampe à gauche.
-- **La feuille de plateau** de chaque session, avec le prompteur : [[Tournage du vendredi 18 septembre]] pour la première ; les suivantes se font sur ce modèle, le samedi soir.
+- **La feuille de plateau** de chaque session, avec le prompteur : [[Tournage du dimanche 20 septembre]] pour la première ; les suivantes se font sur ce modèle, le samedi soir.
 - **Les rushes** vont sur `D:\videos\`, un dossier par vidéo, nommés `NN-bloc-prise.mp4`. Les sons dans `D:\editing_audio\`. Rien de tout ça n'entre dans le dépôt.
 - **Le montage** se fait dans CapCut. Un short seul : la meilleure traite, cartes texte, sous-titres, une heure. La grammaire sonore et les volumes : [[methode/Monter un reel Train Bloom dans CapCut\|la méthode]]. Pour la longue : tête parlante à 70 % au moins, huit à douze inserts, les rendus existants de `meriter` en colonne, sous-titres entre 70 et 78 % de la hauteur.
 - **Les inserts** : `SplitBar` existe (`video/deficit-calorique-fr/compositions/`), la carte 9-4-4 se rend une fois, le reste en cartes CapCut ou en photos.

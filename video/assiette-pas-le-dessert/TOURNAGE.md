@@ -198,7 +198,7 @@ Tu ne bouges pas la caméra entre les prises. Les punch-in se fabriquent au reca
 4. **C, la chute seule**, trois prises, plus bas. Laisse tourner deux secondes après le dernier mot.
 5. D, les plans d'objet, si tu as dix minutes.
 
-Les fichiers vont dans `D:\videos\2026-09-18\`, nommés `assiette-pas-le-dessert-traite-1.mp4`, `assiette-pas-le-dessert-hook-1.mp4`, `assiette-pas-le-dessert-chute-1.mp4`. Rien n'entre dans le dépôt.
+Les fichiers vont dans `D:\videos\2026-09-20\`, nommés `assiette-pas-le-dessert-traite-1.mp4`, `assiette-pas-le-dessert-hook-1.mp4`, `assiette-pas-le-dessert-chute-1.mp4`. Rien n'entre dans le dépôt.
 
 ---
 
@@ -232,4 +232,4 @@ Au téléphone, en portrait, sur la table, dix secondes chacun. Pas de cuisine �
 - l'huile versée dans un bol, une fois « au glouglou », une fois « au filet »
 - la balance de cuisine qui affiche 30 g, un bol dessus
 
-[[Le plus calorique de ton assiette, c'est pas le dessert]] · [[2026-09-18 🎬 Tournage · la semaine du 22, et le trailer|la session du vendredi 18]] · [[HUB]]
+[[Le plus calorique de ton assiette, c'est pas le dessert]] · [[2026-09-20 🎬 Tournage · quatre shorts et les pickups|la session du dimanche 20]] · [[HUB]]

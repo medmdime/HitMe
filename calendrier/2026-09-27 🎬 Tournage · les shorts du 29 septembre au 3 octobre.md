@@ -12,6 +12,6 @@ type: tournage
 - [[2026-10-01 📱 On lui a retiré 80 % de l'estomac, et ça n'explique rien|jeudi 1er · On lui a retiré 80 % de l'estomac, et ça n'explique rien]]
 - [[2026-10-03 📱 La cuillère d'huile plus calorique que ton dessert|samedi 3 · La cuillère d'huile plus calorique que ton dessert]]
 
-La feuille du 18, pour le réglage et la façon de tourner un short seul : [[Tournage du vendredi 18 septembre]].
+La feuille du 18, pour le réglage et la façon de tourner un short seul : [[Tournage du dimanche 20 septembre]].
 
 [[Calendrier]] · [[HUB]]

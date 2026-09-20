@@ -182,7 +182,7 @@ Tu ne bouges pas la caméra entre les prises. Les punch-in se fabriquent au reca
 4. **C, la chute seule**, trois prises, plus bas. Laisse tourner deux secondes après le dernier mot.
 5. D, les plans d'objet, si tu as dix minutes.
 
-Les fichiers vont dans `D:\videos\2026-09-18\`, nommés `estomac-sent-la-place-traite-1.mp4`, `estomac-sent-la-place-hook-1.mp4`, `estomac-sent-la-place-chute-1.mp4`. Rien n'entre dans le dépôt.
+Les fichiers vont dans `D:\videos\2026-09-20\`, nommés `estomac-sent-la-place-traite-1.mp4`, `estomac-sent-la-place-hook-1.mp4`, `estomac-sent-la-place-chute-1.mp4`. Rien n'entre dans le dépôt.
 
 ---
 
@@ -213,4 +213,4 @@ Au téléphone, en portrait, sur la table, dix secondes chacun. Pas de cuisine �
 - le même verre versé dans un bol : le plat devient une soupe
 - le verre seul, plein, sur la table
 
-[[Ton estomac ne compte pas les calories]] · [[2026-09-18 🎬 Tournage · la semaine du 22, et le trailer|la session du vendredi 18]] · [[HUB]]
+[[Ton estomac ne compte pas les calories]] · [[2026-09-20 🎬 Tournage · quatre shorts et les pickups|la session du dimanche 20]] · [[HUB]]

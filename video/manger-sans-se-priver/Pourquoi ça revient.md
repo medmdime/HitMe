@@ -1,7 +1,7 @@
 ---
 type: longue
 quoi: "la deuxième longue, quatre chapitres"
-etat: "écrite ; son short « Ton estomac » se tourne vendredi 18, les deux autres dimanche 27 ; la longue après le semi"
+etat: "écrite ; son short « Ton estomac » se tourne dimanche 20, les deux autres dimanche 27 ; la longue après le semi"
 ---
 # Pourquoi ça revient
 

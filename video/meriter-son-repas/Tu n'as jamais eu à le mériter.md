@@ -1,7 +1,7 @@
 ---
 type: longue
 quoi: "le reel monté, et la longue TDEE"
-etat: "pickups vendredi 18 au matin, montage l'après-midi, sortie samedi 19 ; ses shorts dimanche 11 ; la longue après le semi"
+etat: "pickups dimanche 20 au matin, montage l'après-midi, sortie dimanche 27 ; ses shorts dimanche 11 ; la longue après le semi"
 ---
 # Tu n'as jamais eu à le mériter
 
@@ -16,7 +16,7 @@ brûles. Le TDEE en quatre, la digestion qui bat le sport sur la journée, les t
 
 | | |
 |---|---|
-| Le reel | 1:29, **tourné, animé, monté, sous-titré** à deux plans près : `montage/01-FINAL-sans-pickups.mp4`, deux trous noirs de 4,5 s et de 12 s. Les deux pickups se tournent au téléphone [[2026-09-18 🎬 Pickups · Tu n'as jamais eu à le mériter\|vendredi 18 au matin]], en portrait natif, dix minutes, et se posent par-dessus le rendu dans CapCut : [[video/meriter-son-repas/montage/CAPCUT-PICKUPS\|CAPCUT-PICKUPS]]. **À corriger dans le même montage** : la carte du levier 2 dit « coûtent plus cher », rendu du 6 septembre, d'avant la règle |
+| Le reel | 1:29, **tourné, animé, monté, sous-titré** à deux plans près : `montage/01-FINAL-sans-pickups.mp4`, deux trous noirs de 4,5 s et de 12 s. Les deux pickups se tournent au téléphone [[2026-09-20 🎬 Pickups · Tu n'as jamais eu à le mériter\|dimanche 20 au matin]], en portrait natif, dix minutes, et se posent par-dessus le rendu dans CapCut : [[video/meriter-son-repas/montage/CAPCUT-PICKUPS\|CAPCUT-PICKUPS]]. **À corriger dans le même montage** : la carte du levier 2 dit « coûtent plus cher », rendu du 6 septembre, d'avant la règle |
 | La longue | **à écrire** : trois chapitres, le sport à cinq pour cent, le NEAT, la digestion. Sa matière est dans ce reel et dans [[Déficit calorique]] |
 | Tournage de la longue | **après le semi** |
 | Sortie de la longue | **après le semi** |
@@ -55,7 +55,7 @@ Les deux autres voies restent dans [[profil/PLAN-SEMI-18-OCTOBRE#Les pickups de 
 | jeudi 15 oct | **Ta digestion brûle plus que ta séance** |
 | samedi 17 oct | **Le régime que tu choisis ne prédit rien**, de réserve |
 
-Le reel sort [[2026-09-19 📱 Tu n'as jamais eu à le mériter|samedi 19 septembre]] sur
+Le reel sort [[2026-09-27 📱 Tu n'as jamais eu à le mériter|dimanche 27 septembre]] sur
 Instagram et en Short YouTube : la troisième vidéo de la semaine du 14.
 
 ## Le montage

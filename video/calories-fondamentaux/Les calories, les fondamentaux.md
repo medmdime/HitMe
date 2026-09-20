@@ -1,7 +1,7 @@
 ---
 type: longue
 quoi: "la première longue et ses trois shorts"
-etat: "écrite ; ses shorts 1 et 3 se tournent vendredi 18, le 2 dimanche 27 ; la longue après le semi"
+etat: "écrite ; ses shorts 1 et 3 se tournent dimanche 20, le 2 dimanche 27 ; la longue après le semi"
 ---
 # Les calories, les fondamentaux
 
@@ -16,7 +16,7 @@ ton assiette, où elles partent, et comment tu t'en sers sans régime : le corps
 | | |
 |---|---|
 | État | **écrite.** Feuille de plateau prête. Rien de tourné |
-| Tournage | **après le semi**. Ses shorts se tournent seuls : le 1 et le 3 [[2026-09-18 🎬 Tournage · la semaine du 22, et le trailer\|vendredi 18]], le 2 [[2026-09-27 🎬 Tournage · les shorts du 29 septembre au 3 octobre\|dimanche 27]] |
+| Tournage | **après le semi**. Ses shorts se tournent seuls : le 1 et le 3 [[2026-09-20 🎬 Tournage · quatre shorts et les pickups\|dimanche 20]], le 2 [[2026-09-27 🎬 Tournage · les shorts du 29 septembre au 3 octobre\|dimanche 27]] |
 | Sortie | **après le semi**, YouTube |
 | Ses shorts | mardi 22, jeudi 24, samedi 26, Instagram, avant la longue |
 | Durée | 1 560 mots parlés, dix minutes passées avec les inserts |

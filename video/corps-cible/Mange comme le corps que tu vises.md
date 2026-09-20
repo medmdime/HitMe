@@ -1,8 +1,8 @@
 ---
 type: reel
 quoi: "short de la semaine du 21, 1:30, tête parlante"
-etat: "écrit, vérifié ; à tourner vendredi 18, à monter vendredi 25"
-tournage: 2026-09-18
+etat: "écrit, vérifié ; à tourner dimanche 20, à monter vendredi 25"
+tournage: 2026-09-20
 sortie: 2026-09-26
 ---
 # Mange comme le corps que tu vises
@@ -12,7 +12,7 @@ sortie: 2026-09-26
 | | |
 |---|---|
 | État | **écrit et vérifié**, 257 mots. À tourner, puis à monter en une heure |
-| Tournage | [[2026-09-18 🎬 Tournage · la semaine du 22, et le trailer\|vendredi 18 septembre]], le matin, seul, sans la longue |
+| Tournage | [[2026-09-20 🎬 Tournage · quatre shorts et les pickups\|dimanche 20 septembre]], le matin, seul, sans la longue |
 | Sortie | [[2026-09-26 📱 Mange comme le corps que tu vises\|samedi 26 septembre]], Instagram, puis TikTok et YouTube Shorts en miroir |
 | Accessoires | la balance de salle de bain posée devant toi, un papier « 70 » dessus. La photo à soixante kilos s'ajoute au montage : `D:\videos\trailer\avant\` |
 

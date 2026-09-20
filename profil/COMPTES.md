@@ -36,7 +36,7 @@ Créateur de YouBud, suivi nutritionnel
 
 | Place | Publication | Ce qu'elle dit | Quand |
 |---|---|---|---|
-| 1 | [[Le trailer]] | qui tu es, et pourquoi, avec ta mère | lundi 21 septembre |
+| 1 | [[Le trailer]] | qui tu es, et pourquoi, avec ta mère | quand il sera tourné, il n'est pas dans le format du moment |
 | 2 | [[Déficit calorique]], puis un meilleur short quand il existe | ce que tu fais ici | jeudi 17 septembre |
 | 3 | la « à la une » SEMI, dans les stories à la une | ce qu'on prépare, sans chrono | dimanche 20 septembre |
 

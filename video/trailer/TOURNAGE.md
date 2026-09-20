@@ -41,11 +41,11 @@ Tout est dans `D:\videos\trailer\`. Rien de tout ça n'entre dans le dépôt.
 Les trois Live Photos portent la même date dans leurs métadonnées, EXIF et QuickTime :
 le 14 août 2021, 19 h 45. La réplique du deuxième plan dit « Aujourd'hui,
 quatre-vingts ». **À CONFIRMER** : ton poids ce soir-là. Si tu n'étais pas à
-quatre-vingts en août 2021, tu refais une Live Photo de face au miroir vendredi 18, deux
+quatre-vingts en août 2021, tu refais une Live Photo de face au miroir dimanche 20, deux
 minutes, et elle prend la place de `IMG_8250.mov`. Une phrase littéralement vraie, ou
 une autre photo.
 
-Les trois plans face caméra s'ajoutent à ce dossier vendredi 18 au soir, nommés comme le
+Les trois plans face caméra s'ajoutent à ce dossier dimanche 20 au soir, nommés comme le
 reste de la session (`NN-bloc-prise.mp4`) : `NN-trailer-0335-1.mp4`,
 `NN-trailer-0017-1.mp4`, `NN-trailer-0032-1.mp4`, puis `-2` et `-3` pour les deux
 autres prises.
@@ -85,7 +85,7 @@ doit s'entendre.
 
 ## 3. Le face caméra : trois plans, trois prises chacun
 
-Tournés **vendredi 18 septembre**, après les pickups et avant les trois shorts : 20 min, sans
+Tournés **dimanche 20 septembre**, après les pickups et avant les trois shorts : 20 min, sans
 toucher au réglage. Une seule caméra en 4K 16:9, sujet centré,
 plan poitrine avec de l'air autour, œil au tiers haut, micro-cravate écouté au casque,
 la lampe à gauche, le fond uni. Le recadrage fixe 9:16 sort de la même prise pour

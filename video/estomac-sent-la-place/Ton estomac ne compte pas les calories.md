@@ -1,8 +1,8 @@
 ---
 type: reel
 quoi: "short de la semaine du 21, 1:38, tête parlante"
-etat: "écrit, vérifié ; à tourner vendredi 18, à monter mercredi 23"
-tournage: 2026-09-18
+etat: "écrit, vérifié ; à tourner dimanche 20, à monter mercredi 23"
+tournage: 2026-09-20
 sortie: 2026-09-24
 ---
 # Ton estomac ne compte pas les calories
@@ -12,7 +12,7 @@ sortie: 2026-09-24
 | | |
 |---|---|
 | État | **écrit et vérifié**, 290 mots. À tourner, puis à monter en une heure |
-| Tournage | [[2026-09-18 🎬 Tournage · la semaine du 22, et le trailer\|vendredi 18 septembre]], le matin, seul, sans la longue |
+| Tournage | [[2026-09-20 🎬 Tournage · quatre shorts et les pickups\|dimanche 20 septembre]], le matin, seul, sans la longue |
 | Sortie | [[2026-09-24 📱 Ton estomac ne compte pas les calories\|jeudi 24 septembre]], Instagram, puis TikTok et YouTube Shorts en miroir |
 | Accessoires | un grand verre d'eau, plein. Rien d'autre |
 

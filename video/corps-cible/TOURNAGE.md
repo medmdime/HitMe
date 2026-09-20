@@ -164,7 +164,7 @@ Tu ne bouges pas la caméra entre les prises. Les punch-in se fabriquent au reca
 4. **C, la chute seule**, trois prises, plus bas. Laisse tourner deux secondes après le dernier mot.
 5. D, les plans d'objet, si tu as dix minutes.
 
-Les fichiers vont dans `D:\videos\2026-09-18\`, nommés `corps-cible-traite-1.mp4`, `corps-cible-hook-1.mp4`, `corps-cible-chute-1.mp4`. Rien n'entre dans le dépôt.
+Les fichiers vont dans `D:\videos\2026-09-20\`, nommés `corps-cible-traite-1.mp4`, `corps-cible-hook-1.mp4`, `corps-cible-chute-1.mp4`. Rien n'entre dans le dépôt.
 
 ---
 
@@ -194,4 +194,4 @@ Au téléphone, en portrait, sur la table, dix secondes chacun. Pas de cuisine �
 - ta main qui pose le papier
 - la photo à soixante kilos, déjà dans `D:\videos\trailer\avant\`
 
-[[Mange comme le corps que tu vises]] · [[2026-09-18 🎬 Tournage · la semaine du 22, et le trailer|la session du vendredi 18]] · [[HUB]]
+[[Mange comme le corps que tu vises]] · [[2026-09-20 🎬 Tournage · quatre shorts et les pickups|la session du dimanche 20]] · [[HUB]]

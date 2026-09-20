@@ -16,7 +16,7 @@ Les deux trous, mesurés sur le rendu par détection des plans noirs :
 
 ---
 
-## 1. Tourner les deux pickups : vendredi 18 au matin, dix minutes, au téléphone
+## 1. Tourner les deux pickups : dimanche 20 au matin, dix minutes, au téléphone
 
 **Le raccord d'abord.** Tes retours ont été tournés le 1er septembre. Les pickups se
 coupent au milieu d'eux, donc même endroit, même lumière, même toi :
@@ -110,6 +110,6 @@ qui télécharge HyperFrames), et remonter les pièces dans CapCut depuis
   associée : [[Déficit calorique]].
 - **Instagram**, la même légende.
 - **Samedi 19 septembre**, la troisième vidéo de la semaine :
-  [[2026-09-19 📱 Tu n'as jamais eu à le mériter|l'événement]] est dans le [[Calendrier]].
+  [[2026-09-27 📱 Tu n'as jamais eu à le mériter|l'événement]] est dans le [[Calendrier]].
 
 [[Tu n'as jamais eu à le mériter]] · [[HUB]]

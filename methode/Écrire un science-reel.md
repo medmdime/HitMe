@@ -532,10 +532,18 @@ native speaker on first listen. Fluency is not the test; **grammatical role is.*
 | « Ce que tu **bouges** en dehors du sport » | *bouger* is not transitive like that — *ce que tu bouges* = "the thing you move". | « ce que tu **dépenses** en bougeant » |
 | « **Dix minutes de marche**, rester debout, prendre les escaliers. » | A verbless list. English carries it; spoken French sounds like reading a slide. **This is what makes the delivery feel strange.** | Govern it: « bouger hors de la salle : **marcher** dix minutes après les repas, **rester** debout, **prendre** les escaliers » |
 | « trois à cinq cents calories » | Spoken, this is 3–500 or 300–500. The ear cannot tell. | « **trois cents** à cinq cents » |
+| « c'est **même pas** le pire » | Dropped *ne*. Oral French drops it constantly, but in an educational video it reads as a fault, not as style — the viewer hears someone who does not master the language, and trust drops with it. | « **ce n'est** même pas le pire » |
 
 Keep the list items grammatically parallel — all infinitives, or all noun phrases, never a
 mix. And read every line aloud before it goes in the script: the verbless-list problem is
 inaudible on the page and obvious in the mouth.
+
+**Register is oral, grammar is not — in narration and légende.** Tutoiement, short sentences, spoken word order —
+yes. Dropped negations (*c'est pas*, *y a pas*, *faut pas*), missing elisions (*si il*
+for *s'il*), and approximate agreements — never in a spoken line or a caption. A line can sound spoken and still be
+fully grammatical; if it cannot, rewrite it. Titles and hook cards keep the short oral
+pattern already established on the account (*c'est pas X*), so the series stays consistent.
+Grep every finished script for `c'est même pas`, `y a pas`, `si il`, `si ils` before it ships.
 
 ### Timing
 
