@@ -1,17 +1,16 @@
 # Tournage · « Ton estomac ne compte pas les calories »
 
-Reel **1:38** · 290 mots · turn à 49 % · sort jeudi 24 septembre
+Reel **1:28** · 276 mots · turn à 58 %
 
-Tout se tourne face caméra, sans animation : les chiffres et les mots-clés deviennent des cartes texte au montage. Trois enregistrements, et rien d'autre :
+Tu tournes tout face caméra, d'une traite. Au montage, les blocs 2, 3, 5 et 6 passent en partie sous des inserts ou du b-roll : ta voix continue. Trois enregistrements, rien d'autre :
 
 | | Quoi | Prises | Pourquoi |
 |---|---|---|---|
 | **A** | le texte entier, d'une traite | 3 | c'est la meilleure traite qu'on monte |
-| **B** | le hook seul, les accessoires en main | 3 | il remplace le début de la traite s'il est meilleur |
+| **B** | le hook seul, le verre en main et le bol devant toi | 3 | il remplace le début de la traite s'il est meilleur ; c'est lui qui porte le geste |
 | **C** | la chute seule, plus bas | 3 | elle remplace la fin de la traite si elle est meilleure |
-| D | des plans d'objet au téléphone, en option | 1 | de quoi couper la tête parlante : § F |
 
-La narration nue est dans [[video/estomac-sent-la-place/PROMPTEUR|PROMPTEUR]], l'écriture et la légende dans [[video/estomac-sent-la-place/SCRIPT|SCRIPT]]. Si un mot diverge, c'est le PROMPTEUR qui a raison.
+À côté, je génère trois plans de b-roll qui ne demandent rien à la caméra : § G. La narration nue est dans [[video/estomac-sent-la-place/PROMPTEUR|PROMPTEUR]], l'écriture et la légende dans [[video/estomac-sent-la-place/SCRIPT|SCRIPT]], les animations dans [[video/estomac-sent-la-place/INSERTS-HYPERFRAMES|INSERTS-HYPERFRAMES]]. Si un mot diverge, c'est le PROMPTEUR qui a raison.
 
 ---
 
@@ -19,14 +18,14 @@ La narration nue est dans [[video/estomac-sent-la-place/PROMPTEUR|PROMPTEUR]], l
 
 | | |
 |---|---|
-| Cadre | 9:16, plan poitrine, l'œil au tiers haut. Portrait natif si tu tournes au téléphone ; si la caméra reste en 4K 16:9, toi centré, le recadrage fixe se fait au montage |
-| Fond | uni, le même que pour le trailer, la lampe à gauche |
+| Cadre | 9:16, plan poitrine, l'œil au tiers haut. Si la caméra reste en 4K 16:9, toi centré, le recadrage fixe se fait au montage. Le bol doit entrer dans le cadre en bas |
+| Fond | uni, la lampe à gauche, le même cadre que les autres shorts. Une table devant toi, à hauteur de ceinture |
 | Son | micro-cravate, écouté au casque sur la première prise. Jamais le micro de la caméra |
-| Débit | débit reel, environ 180 mots par minute. Rapide mais articulé : ne cours pas |
-| Accessoires | un grand verre d'eau, plein. Rien d'autre |
+| Débit | débit reel, environ 190 mots par minute. Rapide mais articulé : ne cours pas |
+| Accessoires | un grand verre d'eau transparent, plein ; un grand bol vide, clair, posé sur la table ; une carafe d'eau pour remplir le verre entre les prises ; un torchon |
 | Prompteur | tu peux le regarder entre deux phrases, jamais pendant : on coupe sur les regards |
 
-Tu ne bouges pas la caméra entre les prises. Les punch-in se fabriquent au recadrage dans CapCut.
+Tu ne bouges pas la caméra entre les prises. Les punch-in se fabriquent au recadrage dans CapCut. Entre deux prises du hook, vide le bol et remplis le verre.
 
 ---
 
@@ -34,155 +33,133 @@ Tu ne bouges pas la caméra entre les prises. Les punch-in se fabriquent au reca
 
 ### 1 · le hook · 0:00
 
-> *(le verre levé, posé sur « pour caler »)*
+> *(le grand verre d'eau en main, à hauteur de poitrine ; le bol vide sur la table)*
 >
-> **« Un grand verre d'eau avant de manger, pour caler. »**
+> **« Le grand verre d'eau pour caler ? »**
 >
-> **« Tout le monde te l'a dit. »**
+> **« Avec ton plat, tu le bois pour rien. »**
 >
-> **« Mais ton estomac ne sait pas compter. »**
+> *(tu verses le verre dans le bol)*
 >
-> **« Pas une calorie. »**
+> **« Mais la même eau, mise dans ton plat, te cale. »**
 >
 > *(silence)*
 
-**Tonalité.** Posé. Tu lèves le verre à hauteur d'objectif et tu le poses sur « pour caler ». Tu regardes l'objectif sans jouer. « Tout le monde te l'a dit » : tu valides, on te l'a dit à toi aussi, ce n'est pas bête de l'avoir cru. Silence net après « Pas une calorie ».
+**Tonalité.** La question, le verre levé, comme on répète un conseil qu'on a entendu cent fois. « Tu le bois pour rien » : sec, sans sourire. Puis tu verses, d'un geste calme, pendant « Mais la même eau » : l'eau coule pendant que tu parles. « Te cale » tombe quand le verre est vide.
 
-**À l'écran.** « UN GRAND VERRE D'EAU POUR CALER » entre guillemets : c'est la pensée du spectateur, pas l'affirmation de la vidéo. Puis PAS UNE CALORIE sur la dernière phrase. Aucun sous-titre mot à mot sur le hook.
+**À l'écran.** Un carton : À CÔTÉ ✗ sur « tu le bois pour rien », puis DEDANS ✓ sur « te cale ». Aucun sous-titre mot à mot sur le hook.
 
-**Montage.** Plan poitrine. La musique est basse sous le hook et passe à plein volume sur la coupe qui suit.
+**Montage.** Plan poitrine. Aucune musique : le bruit de l'eau qui coule, c'est le son du hook. Un pop quand le verre se pose.
 
 ### 2 · le mécanisme · 0:08
 
 > **« Ton estomac ne compte pas les calories. Il n'a rien pour ça. »**
 >
-> **« Ce qu'il sent, c'est la place que ça prend. »**
+> **« Ce qu'il sent, c'est la place. Quand ses parois s'étirent, il prévient ton cerveau : c'est ça, se sentir plein. »**
 >
-> **« Quand ses parois s'étirent, il prévient le cerveau. C'est ça, se sentir plein. »**
-
-**Tonalité.** Didactique, calme. Tes deux mains peuvent montrer l'étirement, une fois, sur « s'étirent ». Le hook et la première phrase se répondent exprès ; si à voix haute ça bégaie, commence ce bloc à « Ce qu'il sent, c'est la place que ça prend. »
-
-**À l'écran.** AUCUN COMPTEUR DE CALORIES, puis IL SENT LA PLACE, puis ÇA S'ÉTIRE, IL PRÉVIENT.
-
-### 3 · la poche d'eau · 0:19
-
-> **« Alors imagine un truc. On te fait avaler une poche vide. »**
+> **« Sauf que l'eau seule ne reste pas. »**
 >
-> **« Une fois dans ton estomac, on la remplit d'eau, juste avant le repas. »**
+> **« Un verre d'eau : en moins d'un quart d'heure, la moitié a déjà quitté ton estomac. »**
 >
-> **« Ça remplit, et il n'y a pas une seule calorie dedans. »**
+> **« Dans une soupe, elle reste bien plus longtemps. »**
+
+**Tonalité.** Le titre de la vidéo, dit franchement. « Il n'a rien pour ça » : court, presque amusé. Puis didactique. « Sauf que » relance : un cran plus fort. « La moitié » se détache.
+
+**À l'écran.** La première phrase face caméra, puis **INSERT E1** : l'estomac, Calories barré, les parois, le cerveau ; le verre qui se vide, la soupe qui reste.
+
+**Montage.** La musique entre à plein volume sur la coupe après le hook, puis se range sous la voix.
+
+### 3 · la preuve · 0:27
+
+> **« Des chercheurs ont servi le même plat, avec exactement les mêmes calories. »**
 >
-> **« Deux grands verres d'eau là-dedans, et les gens mangent nettement moins au repas. »**
+> **« Une fois avec un grand verre d'eau à côté. Une fois sans. Et une fois avec la même eau mise dedans : le plat devient une soupe. »**
 >
-> **« Et cette eau-là, elle ne s'en va pas pendant que tu manges. »**
-
-**Tonalité.** Tu racontes une expérience un peu folle : un léger amusement sur « imagine un truc », puis précis. « Pas une seule calorie dedans » et « elle ne s'en va pas » sont les deux phrases qui préparent le turn : ne les avale pas.
-
-**À l'écran.** UNE POCHE VIDE, ON LA REMPLIT D'EAU, ZÉRO CALORIE, DEUX GRANDS VERRES · ILS MANGENT MOINS, ELLE NE S'EN VA PAS. Un bandeau de source discret : Geliebter, 1988, huit personnes.
-
-### 4 · la concession · 0:37
-
-> **« Bon, ils étaient huit. »**
+> **« Au repas d'après ? »**
 >
-> **« Honnêtement, huit personnes, c'est pas grand-chose. »**
-
-**Tonalité.** Tu concèdes, sans te justifier. « Honnêtement » est sincère : c'est la phrase qui fait qu'on te croit sur le reste.
-
-**À l'écran.** Un tampon HUIT PERSONNES qui s'écrase à côté de ton visage.
-
-### 5 · LE TURN · 0:41
-
-> **« Alors on se dit : d'accord, c'est simple. Un grand verre d'eau avant de manger, et c'est réglé. »**
+> **« Avec le verre ou sans le verre : pareil, à quatre calories près. »**
 >
-> *(silence)*
+> **« En soupe : cent calories de moins. L'équivalent d'une cuillère d'huile, sans rien enlever du plat. »**
 >
-> **« Vas-y, essaie. »**
+> **« Et le soir, ils n'ont pas rattrapé. »**
 
-**Tonalité.** La voix baisse : tu dis à voix haute ce que le spectateur vient de conclure, à sa place, sans ironie. Un silence court. « Vas-y, essaie. » tombe sec, presque un défi, sans méchanceté : tu sais ce que ça donne, et tu vas le lui montrer.
+**Tonalité.** Tu racontes l'expérience, trois cas au même rythme. « Au repas d'après ? » : une vraie question, un temps. « Pareil » à plat, puis « cent calories de moins » plus fort, et « sans rien enlever du plat » détaché : c'est le « wow ». « Et le soir, ils n'ont pas rattrapé » : plus bas, comme un bonus qu'on glisse.
 
-**À l'écran.** « D'ACCORD, C'EST SIMPLE » puis « UN GRAND VERRE D'EAU AVANT DE MANGER », entre guillemets, puis VAS-Y, ESSAIE.
+**À l'écran.** Le b-roll **G1** (le plat) sur la première phrase, puis **INSERT E2** : les trois plateaux, les trois barres, −100, la lune.
 
-**Montage.** Un riser monte sous les deux premières phrases. Coupe sèche sur un plan plus serré : le scratch, le seul de la vidéo, tombe sur « Vas-y, essaie ». La musique bascule sur la deuxième piste au même endroit.
+**Montage.** Voix seule sur l'insert, ses bruitages reposés un par un.
 
-### 6 · le même plat · 0:49
+### 4 · LE TURN · 0:51
 
-> **« On donne le même plat, avec exactement les mêmes calories. »**
->
-> **« La première fois, avec un grand verre d'eau posé à côté de l'assiette. Au repas d'après, ils sont à trois cent quatre-vingt-seize calories. »**
->
-> **« La deuxième fois, sans le verre : trois cent quatre-vingt-douze. »**
->
-> **« Autrement dit, rien. »**
-
-**Tonalité.** Les deux chiffres au même rythme, articulés en entier : l'écart de quatre doit s'entendre. « Autrement dit, rien. » : très serré, un haussement d'épaules minimal.
-
-**À l'écran.** MÊME PLAT, MÊMES CALORIES, UN VERRE À CÔTÉ, 396, SANS EAU : 392, AUTREMENT DIT, RIEN. Un bandeau de source : Rolls, 1999, vingt-quatre personnes.
-
-### 7 · dans l'assiette · 1:05
-
-> **« Maintenant, la même eau, mais versée dans l'assiette. Le plat devient une soupe. »**
->
-> **« Là, ils tombent à deux cent quatre-vingt-neuf. »**
->
-> **« Cent calories de moins. »**
-
-**Tonalité.** Le renversement. Tu ralentis sur « versée dans l'assiette ». « Cent calories de moins. » se pose : c'est la validation que la vidéo promettait.
-
-**À l'écran.** LA MÊME EAU, DANS L'ASSIETTE, puis 289 · CENT DE MOINS en vert.
-
-### 8 · l'âge · 1:13
-
-> **« Et si tu as entre vingt-et-un et trente-cinq ans ? »**
+> **« Donc le verre d'eau, ça ne sert à rien ? »**
 >
 > *(silence)*
 >
-> **« L'eau avant le repas ne te fait rien. »**
+> **« Pas si vite. »**
+
+**Tonalité.** La conclusion du spectateur, dite à sa place : un peu déçu. Une demi-seconde de silence. « Pas si vite. » beaucoup plus bas, franc : tu reprends la main.
+
+**À l'écran.** Les sous-titres seuls, « Pas si vite » surligné en jaune.
+
+**Montage.** Retour face caméra, punch-in serré. Le scratch tombe ici et nulle part ailleurs. La musique bascule sur le second morceau, un cran plus fort.
+
+### 5 · le moment · 0:55
+
+> **« Tout dépend d'où est l'eau quand tu manges. »**
 >
-> **« Chez les jeunes, avec l'eau, il y a même vingt-et-une calories de plus. »**
+> **« Chez des moins de trente-cinq ans, un grand verre bu une demi-heure avant le repas : rien. »**
 >
-> **« Autant dire rien. »**
+> **« Chez des jeunes hommes, une bouteille d'un demi-litre bue juste avant de manger : cent quarante calories de moins. »**
+>
+> **« Ce n'est pas l'eau qui cale. C'est l'eau qui est dans ton estomac quand tu manges. »**
 
-**Tonalité.** Sourcil levé sur la question, un silence tenu. La réponse est posée, sans triomphe : tu ne te moques pas de ceux qui boivent leur verre d'eau.
+**Tonalité.** Deux cas, même construction, comme deux plateaux d'une balance. « Rien » à plat. « Cent quarante calories de moins » plus fort. La dernière phrase, lente : c'est celle qu'on retient.
 
-**À l'écran.** 21-35 ANS ?, ÇA NE TE FAIT RIEN, +21 CALORIES, AUTANT DIRE RIEN. Un bandeau de source : Van Walleghen, 2007.
+**À l'écran.** **INSERT E3** : la frise du repas, −30 min barré, 0 min et −140.
 
-### 9 · la résolution · 1:25
+**Montage.** Voix seule sur l'insert.
 
-> **« L'eau ne compte que si elle est dans l'assiette. »**
+### 6 · la résolution · 1:13
 
-**Tonalité.** La phrase à retenir. Lente, une seule fois, sans appuyer.
+> **« Alors mets-la dans ton assiette : une soupe, des légumes, des fruits. »**
+>
+> **« Ou bois-la au moment de t'asseoir. Pas une demi-heure avant. »**
 
-**À l'écran.** DANS L'ASSIETTE. Deux vignettes : le verre à côté, croix rouge ; l'eau dans l'assiette, coche verte.
+**Tonalité.** Deux choses à faire, simples. « Pas une demi-heure avant » : un doigt levé, sec.
 
-### 10 · la chute · 1:29
+**À l'écran.** Face caméra sur « Alors », puis le b-roll **G2** (soupe, légumes, fruits, une seconde chacun), puis **INSERT E4** : l'horloge, −30 min barré, 0 min coché.
 
-> *(le verre revient dans le cadre)*
+**Montage.** Un whoosh sur chaque plan de G2, une croix puis une coche sur E4.
+
+### 7 · la chute · 1:20
+
+> *(le verre vide revient dans ta main)*
 >
 > **« Après, personne ne mange de la soupe tous les soirs. »**
 >
-> **« Mais à côté, c'est un verre d'eau. Dedans, c'est de la place. »**
+> **« Mais ton estomac ne sait pas compter. »**
 >
-> **« Et ça, ton estomac le sent. »**
+> **« Alors donne-lui de la place, pas des calories. »**
 >
 > *(silence)*
 
-**Tonalité.** Même axe que le hook, le ton plus doux. Tu poses le verre à côté de toi sur « à côté », la main à plat sur le ventre sur « le sent ». Tu tiens le regard une seconde, puis tu coupes. Aucun carton de fin, aucun appel à l'action.
+**Tonalité.** On redescend. « Après, » comme on se reprend. La deuxième phrase, presque tendre. La dernière se pose, chaleureuse, sans sourire de fin. Deux secondes de silence.
 
-**À l'écran.** À CÔTÉ : UN VERRE D'EAU, puis DEDANS : DE LA PLACE.
+**À l'écran.** Les sous-titres seuls, « de la place » en vert.
 
-**Montage.** La deuxième piste descend d'un cran sous la chute et s'éteint sur le dernier mot.
+**Montage.** Face caméra, le verre vide en main. La musique redescend. Pas de carte de fin, pas d'appel à l'action.
 
 ---
 
 ## D · Ordre d'enregistrement
 
-1. **Lis le PROMPTEUR à voix haute une fois**, en entier, avant d'allumer la caméra. Ce qui accroche, tu le dis avec tes mots, sans toucher aux chiffres.
-2. **A, la traite**, trois prises. Si tu butes, reprends la phrase depuis son début et continue : on coupe au montage.
-3. **B, le hook seul**, trois prises. C'est la prise qui décide si on regarde la suite : prends le temps.
-4. **C, la chute seule**, trois prises, plus bas. Laisse tourner deux secondes après le dernier mot.
-5. D, les plans d'objet, si tu as dix minutes.
+1. **Lis le PROMPTEUR à voix haute une fois**, en entier. Ce qui accroche, tu le dis avec tes mots, sans toucher aux chiffres ni aux négations.
+2. **Répète le versement à blanc**, une fois, pour trouver l'angle où l'eau ne gicle pas.
+3. **A, la traite**, trois prises. Si tu butes, reprends la phrase depuis son début et continue.
+4. **B, le hook seul**, trois prises. Vide le bol et remplis le verre entre chaque.
+5. **C, la chute seule**, trois prises, plus bas. Laisse tourner deux secondes après le dernier mot.
 
-Les fichiers vont dans `D:\videos\2026-09-20\`, nommés `estomac-sent-la-place-traite-1.mp4`, `estomac-sent-la-place-hook-1.mp4`, `estomac-sent-la-place-chute-1.mp4`. Rien n'entre dans le dépôt.
+Les fichiers vont dans `D:\videos\<date du tournage>\`, nommés `estomac-traite-1.mp4`, `estomac-hook-1.mp4`, `estomac-chute-1.mp4`. Rien n'entre dans le dépôt.
 
 ---
 
@@ -190,27 +167,38 @@ Les fichiers vont dans `D:\videos\2026-09-20\`, nommés `estomac-sent-la-place-t
 
 | Temps | Bloc | Ce qu'on voit |
 |---|---|---|
-| 0:00 → 0:08 | 1 · le hook | toi, face caméra · « UN GRAND VERRE D'EAU POUR CALER » entre guillemets : c'est la pensée du spectateur, pas l'affirmation de la vidéo |
-| 0:08 → 0:19 | 2 · le mécanisme | toi, face caméra · AUCUN COMPTEUR DE CALORIES, puis IL SENT LA PLACE, puis ÇA S'ÉTIRE, IL PRÉVIENT |
-| 0:19 → 0:37 | 3 · la poche d'eau | toi, face caméra · UNE POCHE VIDE, ON LA REMPLIT D'EAU, ZÉRO CALORIE, DEUX GRANDS VERRES · ILS MANGENT MOINS, ELLE NE S'EN VA PAS |
-| 0:37 → 0:41 | 4 · la concession | toi, face caméra · Un tampon HUIT PERSONNES qui s'écrase à côté de ton visage |
-| 0:41 → 0:49 | 5 · LE TURN | toi, face caméra · « D'ACCORD, C'EST SIMPLE » puis « UN GRAND VERRE D'EAU AVANT DE MANGER », entre guillemets, puis VAS-Y, ESSAIE |
-| 0:49 → 1:05 | 6 · le même plat | toi, face caméra · MÊME PLAT, MÊMES CALORIES, UN VERRE À CÔTÉ, 396, SANS EAU : 392, AUTREMENT DIT, RIEN |
-| 1:05 → 1:13 | 7 · dans l'assiette | toi, face caméra · LA MÊME EAU, DANS L'ASSIETTE, puis 289 · CENT DE MOINS en vert |
-| 1:13 → 1:25 | 8 · l'âge | toi, face caméra · 21-35 ANS ?, ÇA NE TE FAIT RIEN, +21 CALORIES, AUTANT DIRE RIEN |
-| 1:25 → 1:29 | 9 · la résolution | toi, face caméra · DANS L'ASSIETTE |
-| 1:29 → 1:38 | 10 · la chute | toi, face caméra · À CÔTÉ : UN VERRE D'EAU, puis DEDANS : DE LA PLACE |
+| 0:00 → 0:08 | 1 · le hook | toi, le verre, tu le verses dans le bol · À CÔTÉ ✗ · DEDANS ✓ |
+| 0:08 → 0:27 | 2 · le mécanisme | toi, puis INSERT E1 : l'estomac, la place, le verre qui se vide |
+| 0:27 → 0:51 | 3 · la preuve | G1 le plat, puis INSERT E2 : les trois plateaux, −100 |
+| 0:51 → 0:55 | 4 · LE TURN | toi, punch-in serré · « Pas si vite » |
+| 0:55 → 1:13 | 5 · le moment | INSERT E3 : −30 min barré, 0 min et −140 |
+| 1:13 → 1:20 | 6 · la résolution | toi, G2 soupe, légumes, fruits, INSERT E4 |
+| 1:20 → 1:28 | 7 · la chute | toi, le verre vide en main |
 
-Les temps sont ceux du script ; ta traite réelle fixera les vrais. Vise la durée annoncée, plafond dix secondes de plus.
+Les temps sont ceux du script ; ta traite réelle fixera les vrais.
 
 ---
 
-## F · Plans d'objet, en option
+## G · Le b-roll, à côté de toi
 
-Au téléphone, en portrait, sur la table, dix secondes chacun. Pas de cuisine à l'image : une table, un fond neutre.
+Ce que je génère avec Higgsfield. Tu n'as rien à filmer pour ces plans. **Jamais toi, jamais un visage, jamais une marque, jamais de texte dans l'image.** Ce qui reste réel : toi, le verre, le bol, l'eau que tu verses.
 
-- le verre d'eau posé à côté d'une assiette, trois secondes
-- le même verre versé dans un bol : le plat devient une soupe
-- le verre seul, plein, sur la table
+**Comment.** Une image fixe d'abord, en 9:16, avec **FLUX.2 pro**. Tu la valides, puis elle s'anime en 5 secondes avec **Kling 3.0** (image de départ, son coupé). On en garde 1 à 2,5 secondes. La même lumière que les autres vidéos : chaude, venue de la gauche, fond sombre et neutre, table en chêne clair.
 
-[[Ton estomac ne compte pas les calories]] · [[2026-09-20 🎬 Tournage · quatre shorts et les pickups|la session du dimanche 20]] · [[HUB]]
+Le style, ajouté à la fin de chaque prompt d'image :
+
+> realistic food photography, warm natural side light from the left, dark neutral background, light oak table, shallow depth of field, vertical 9:16 composition, no text, no logo, no brand, no faces
+
+| | Sous quelle phrase | Ce qu'on voit | Garde | Prompt de l'image | Mouvement (Kling) |
+|---|---|---|---|---|---|
+| **G1** | « Des chercheurs ont servi le même **plat** » · 0:27 | un gratin de poulet au riz dans un plat en céramique, fumant | 2,5 s | Three-quarter view of a homemade chicken and rice casserole in a white ceramic baking dish, golden top, gently steaming, a serving spoon resting on the side | thin steam rises slowly, very slow push-in, no cut |
+| **G2a** | « une **soupe** » · 1:14 | un bol de soupe de légumes, une louche qui verse | 1 s | Close-up of a ladle pouring chunky vegetable and chicken soup into a white bowl, steam rising | the ladle pours, the soup settles in the bowl, slow motion |
+| **G2b** | « des **légumes** » · 1:15 | des légumes crus, pleins d'eau : concombre, tomates, courgette, coupés | 1 s | Top-down view of freshly cut cucumber, cherry tomatoes and zucchini on a wooden board, glistening with water droplets | a few water droplets roll down, very slow drift of the camera |
+| **G2c** | « des **fruits** » · 1:16 | des quartiers d'orange et de pastèque | 1 s | Close-up of juicy orange wedges and watermelon slices on a white plate, juice glistening | very slow rotation of the plate, nothing else moves |
+| **G3** | en repli de E4, « au moment de t'**asseoir** » · 1:17 | un grand verre d'eau qu'on pose à côté d'une assiette servie | 1,5 s | Close-up of a tall glass of water being set down next to a served plate of food on a dining table, the hand mostly out of frame | the glass is set down, a small ripple on the surface, static camera |
+
+**Au montage**, le b-roll se pose sur la piste au-dessus des inserts. Chaque plan prend un whoosh sur sa coupe.
+
+**Ce qui n'est jamais généré** : toi, le verre que tu tiens, l'eau que tu verses au hook. Le geste du hook est la seule preuve à l'image que la même eau change de place : il reste réel.
+
+[[Ton estomac ne compte pas les calories]] · [[HUB]]

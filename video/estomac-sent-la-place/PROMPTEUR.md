@@ -1,122 +1,98 @@
 # Prompteur · « Ton estomac ne compte pas les calories »
 
-Narration nue, dans l'ordre. 290 mots · 1:38.
+Narration nue, dans l'ordre. 276 mots · 1:28.
 Les `//` sont des silences tenus, pas des respirations.
 Le jeu, bloc par bloc, est dans [[video/estomac-sent-la-place/TOURNAGE|TOURNAGE]]. Ici, rien que ce que tu dis.
 
-Tu tournes le texte d'une traite, trois prises. Puis le bloc 1 seul, trois prises, les accessoires en main. Puis le dernier bloc seul, trois prises.
+Tu tournes le texte d'une traite, trois prises. Puis le bloc 1 seul, trois prises, le verre en main. Puis le dernier bloc seul, trois prises.
 
 ---
 
 ### 1 · FACE CAMÉRA · le hook · 0:00
 
-*(le verre levé, posé sur « pour caler »)*
+*(un grand verre d'eau en main ; un bol vide sur la table devant toi)*
 
-Un grand verre d'eau avant de manger, pour caler.
+Le grand verre d'eau pour caler ?
 
-Tout le monde te l'a dit.
+Avec ton plat, tu le bois pour rien.
 
-Mais ton estomac ne sait pas compter.
+*(tu verses le verre dans le bol)*
 
-Pas une calorie.
+Mais la même eau, mise dans ton plat, te cale.
 
 //
 
 ---
 
-### 2 · FACE CAMÉRA · le mécanisme · 0:08
+### 2 · FACE CAMÉRA, puis INSERT E1 · le mécanisme · 0:08
 
 Ton estomac ne compte pas les calories. Il n'a rien pour ça.
 
-Ce qu'il sent, c'est la place que ça prend.
+Ce qu'il sent, c'est la place. Quand ses parois s'étirent, il prévient ton cerveau : c'est ça, se sentir plein.
 
-Quand ses parois s'étirent, il prévient le cerveau. C'est ça, se sentir plein.
+Sauf que l'eau seule ne reste pas.
 
----
+Un verre d'eau : en moins d'un quart d'heure, la moitié a déjà quitté ton estomac.
 
-### 3 · FACE CAMÉRA · la poche d'eau · 0:19
-
-Alors imagine un truc. On te fait avaler une poche vide.
-
-Une fois dans ton estomac, on la remplit d'eau, juste avant le repas.
-
-Ça remplit, et il n'y a pas une seule calorie dedans.
-
-Deux grands verres d'eau là-dedans, et les gens mangent nettement moins au repas.
-
-Et cette eau-là, elle ne s'en va pas pendant que tu manges.
+Dans une soupe, elle reste bien plus longtemps.
 
 ---
 
-### 4 · FACE CAMÉRA · la concession · 0:37
+### 3 · INSERT E2 · la preuve · 0:27
 
-Bon, ils étaient huit.
+Des chercheurs ont servi le même plat, avec exactement les mêmes calories.
 
-Honnêtement, huit personnes, c'est pas grand-chose.
+Une fois avec un grand verre d'eau à côté. Une fois sans. Et une fois avec la même eau mise dedans : le plat devient une soupe.
+
+Au repas d'après ?
+
+Avec le verre ou sans le verre : pareil, à quatre calories près.
+
+En soupe : cent calories de moins. L'équivalent d'une cuillère d'huile, sans rien enlever du plat.
+
+Et le soir, ils n'ont pas rattrapé.
 
 ---
 
-### 5 · FACE CAMÉRA · LE TURN · 0:41
+### 4 · FACE CAMÉRA · LE TURN · 0:51
 
-Alors on se dit : d'accord, c'est simple. Un grand verre d'eau avant de manger, et c'est réglé.
+Donc le verre d'eau, ça ne sert à rien ?
 
 //
 
-Vas-y, essaie.
+Pas si vite.
 
 ---
 
-### 6 · FACE CAMÉRA · le même plat · 0:49
+### 5 · INSERT E3 · le moment · 0:55
 
-On donne le même plat, avec exactement les mêmes calories.
+Tout dépend d'où est l'eau quand tu manges.
 
-La première fois, avec un grand verre d'eau posé à côté de l'assiette. Au repas d'après, ils sont à trois cent quatre-vingt-seize calories.
+Chez des moins de trente-cinq ans, un grand verre bu une demi-heure avant le repas : rien.
 
-La deuxième fois, sans le verre : trois cent quatre-vingt-douze.
+Chez des jeunes hommes, une bouteille d'un demi-litre bue juste avant de manger : cent quarante calories de moins.
 
-Autrement dit, rien.
-
----
-
-### 7 · FACE CAMÉRA · dans l'assiette · 1:05
-
-Maintenant, la même eau, mais versée dans l'assiette. Le plat devient une soupe.
-
-Là, ils tombent à deux cent quatre-vingt-neuf.
-
-Cent calories de moins.
+Ce n'est pas l'eau qui cale. C'est l'eau qui est dans ton estomac quand tu manges.
 
 ---
 
-### 8 · FACE CAMÉRA · l'âge · 1:13
+### 6 · FACE CAMÉRA, puis b-roll · la résolution · 1:13
 
-Et si tu as entre vingt-et-un et trente-cinq ans ?
+Alors mets-la dans ton assiette : une soupe, des légumes, des fruits.
 
-//
-
-L'eau avant le repas ne te fait rien.
-
-Chez les jeunes, avec l'eau, il y a même vingt-et-une calories de plus.
-
-Autant dire rien.
+Ou bois-la au moment de t'asseoir. Pas une demi-heure avant.
 
 ---
 
-### 9 · FACE CAMÉRA · la résolution · 1:25
+### 7 · FACE CAMÉRA · la chute · 1:20
 
-L'eau ne compte que si elle est dans l'assiette.
-
----
-
-### 10 · FACE CAMÉRA · la chute · 1:29
-
-*(le verre revient dans le cadre)*
+*(le verre vide revient dans ta main)*
 
 Après, personne ne mange de la soupe tous les soirs.
 
-Mais à côté, c'est un verre d'eau. Dedans, c'est de la place.
+Mais ton estomac ne sait pas compter.
 
-Et ça, ton estomac le sent.
+Alors donne-lui de la place, pas des calories.
 
 *(laisse tourner deux secondes avant de couper)*
 
@@ -124,11 +100,13 @@ Et ça, ton estomac le sent.
 
 ## Les pièges de diction
 
-1. **« Trois cent quatre-vingt-seize » et « trois cent quatre-vingt-douze »** : en entier, au même rythme. Si tu les avales, on n'entend pas qu'ils sont presque égaux, et c'est tout le turn.
-2. **« Deux cent quatre-vingt-neuf. Cent calories de moins. »** : deux phrases, un silence entre les deux.
-3. **« Vingt-et-une calories de plus »** : « de plus », pas « de moins ». C'est contre-intuitif, articule-le.
-4. **« Vas-y, essaie. »** : sec, sans sourire en coin. Un défi, pas une moquerie.
-5. **« Honnêtement, huit personnes, c'est pas grand-chose. »** : ne la bâcle pas. C'est elle qui rend le reste crédible.
-6. **« Pas une calorie. »** : silence après. La boucle s'ouvre là.
+1. **« Avec ton plat, tu le bois pour rien. »** : sec, sans sourire. Puis tu verses pendant « Mais la même eau » : le geste et la phrase ensemble.
+2. **« Il n'a rien pour ça. »** : court, presque amusé. C'est la première pique.
+3. **« En moins d'un quart d'heure, la moitié… »** : détache « la moitié ». C'est le chiffre qui explique toute la vidéo.
+4. **« Pareil, à quatre calories près. »** puis **« En soupe : cent calories de moins. L'équivalent d'une cuillère d'huile, sans rien enlever du plat. »** : deux phrases, un silence entre les deux. Le contraste est tout le propos.
+5. **« Et le soir, ils n'ont pas rattrapé. »** : plus bas, comme un bonus.
+6. **« Pas si vite. »** : beaucoup plus bas, franc. Tu reprends la main.
+7. **« Cent quarante »** : en entier. Et « des jeunes hommes » : ne le saute pas, c'est la limite de l'étude.
+8. **« Ce n'est pas l'eau qui cale. C'est l'eau qui est dans ton estomac quand tu manges. »** : la phrase qu'on retient. Lente. La négation entière, « ce n'est pas ».
 
 [[Ton estomac ne compte pas les calories]] · [[HUB]]

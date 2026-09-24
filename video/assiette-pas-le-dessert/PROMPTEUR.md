@@ -1,100 +1,100 @@
-# Prompteur · « Le plus calorique de ton assiette, c'est pas le dessert »
+# Prompteur · « Le plus calorique de ton assiette, ce n'est pas le dessert »
 
-Narration nue, dans l'ordre. 294 mots · 1:35.
+Narration nue, dans l'ordre. 311 mots · 1:38.
 Les `//` sont des silences tenus, pas des respirations.
 Le jeu, bloc par bloc, est dans [[video/assiette-pas-le-dessert/TOURNAGE|TOURNAGE]]. Ici, rien que ce que tu dis.
 
-Tu tournes le texte d'une traite, trois prises. Puis le bloc 1 seul, trois prises, les accessoires en main. Puis le dernier bloc seul, trois prises.
+Tu tournes le texte d'une traite, trois prises. Puis le bloc 1 seul, trois prises, le pot en main. Puis le dernier bloc seul, trois prises.
 
 ---
 
 ### 1 · FACE CAMÉRA · le hook · 0:00
 
-*(le pot dans une main, la cuillère dans l'autre, à la même hauteur)*
+*(le pot de crème dessert en main, à hauteur de poitrine)*
 
-Entre ce dessert et cette cuillère d'huile, lequel est le plus calorique ?
+Tu enlèves le dessert pour faire attention ?
+
+*(tu poses le pot sur la table, il reste dans le cadre)*
+
+Bonne intention. Mauvaise cible.
+
+Le plus calorique de ton repas, il est déjà dans ton assiette. Et tu ne le vois même pas.
+
+---
+
+### 2 · FACE CAMÉRA, puis INSERT I1 · la réponse · 0:10
+
+C'est le gras : l'huile de cuisson, le beurre, la sauce.
+
+Une seule cuillère à soupe d'huile, c'est presque autant de calories que ce dessert.
+
+---
+
+### 3 · FACE CAMÉRA, puis INSERT I2 · le mécanisme · 9 · 4 · 4 · 0:17
+
+Pourquoi autant, dans une si petite cuillère ?
 
 //
-
-C'est quasiment pareil.
-
----
-
-### 2 · FACE CAMÉRA · le pivot · 0:08
-
-Et pourtant, le dessert, tu le comptes.
-
-La cuillère, jamais.
-
-Pourquoi ?
-
----
-
-### 3 · FACE CAMÉRA · le mécanisme · 9 · 4 · 4 · 0:14
-
-Parce que le gras, c'est ce qu'il y a de plus concentré en calories.
 
 Un gramme de sucre ou de protéines, c'est quatre calories. Un gramme de gras, c'est neuf.
 
 Plus du double, pour le même poids.
 
-Donc une cuillère d'huile ne prend aucune place dans ton assiette, et elle apporte presque autant de calories qu'un dessert entier.
+Et dans l'assiette, le gras se cache : il enrobe tout.
 
 ---
 
-### 4 · FACE CAMÉRA · la preuve · 0:33
+### 4 · INSERT I3 · la preuve · 0:30
 
-Et ça, personne ne le voit.
+C'est pour ça que tout le monde se fait avoir.
 
 Des chercheurs ont demandé à des gens d'estimer ce que contenaient des plats de restaurant.
 
 Dans les plats les plus riches, il y avait deux fois plus de gras que ce qu'ils pensaient. Et presque deux fois plus de calories.
 
-Comme si tu mangeais deux assiettes en croyant en manger une.
+---
+
+### 5 · INSERT I4 · ton assiette · 0:46
+
+Prends une assiette toute simple : du poulet et des légumes à la poêle, avec du riz.
+
+Tu mets deux cuillères d'huile pour la cuisson, et une de sauce à côté.
+
+Le plus calorique de cette assiette, ce n'est ni le poulet ni le riz. C'est le gras.
+
+Ton dessert, tu l'as enlevé. Bravo. Tu viens d'en remettre plus de deux.
 
 ---
 
-### 5 · FACE CAMÉRA · ton assiette · 0:46
+### 6 · FACE CAMÉRA · LE TURN · 1:04
 
-Prends une assiette normale : du riz, du poulet, des légumes. À peu près cinq cents calories.
-
-Maintenant, verse l'huile au jugé. Tu arrives vite à trente grammes.
-
-Deux cent soixante-dix calories de plus.
-
-Tu viens d'ajouter la moitié de ton assiette, et dedans, tu ne vois rien de plus.
-
----
-
-### 6 · FACE CAMÉRA · LE TURN · 0:58
-
-Donc on enlève l'huile, et c'est réglé ?
+Donc tu supprimes le gras ?
 
 //
 
-Enfin… pas vraiment.
+Surtout pas.
 
 ---
 
-### 7 · FACE CAMÉRA · la résolution · la balance · 1:03
+### 7 · FACE CAMÉRA, puis INSERT I5 ou tes plans du bol · la résolution · 1:07
 
-L'huile n'est pas le problème. Le problème, c'est que tu ne sais pas combien tu en verses.
+Ton corps en a besoin. Le problème, ce n'est pas le gras. C'est ta main sur la bouteille.
 
-Alors fais-le une fois. Pose ta poêle sur une balance, et verse comme d'habitude. Regarde le chiffre.
+Alors fais le test ce soir : verse ton huile comme d'habitude, mais dans un bol. Puis vide-le dans ta poêle avec une cuillère à soupe, en comptant.
 
-Ensuite, verse une cuillère à soupe. Quinze grammes. La moitié.
+Chaque cuillère, c'est presque un dessert.
 
-Tu viens d'enlever l'équivalent d'un dessert. Et dans l'assiette, tu ne verras aucune différence.
+Pour une portion, une seule suffit. Pas trois. Une. Et la sauce, pareil : à la cuillère, pas au flacon.
 
 ---
 
-### 8 · FACE CAMÉRA · la chute · 1:24
+### 8 · FACE CAMÉRA · la chute · 1:29
 
-*(le pot revient dans le cadre)*
+Après, personne ne compte ses cuillères toute sa vie.
 
-Après, personne ne pèse son huile toute sa vie.
+Mais une fois que tu les as comptées, tu ne verses plus jamais comme avant.
 
-Mais une fois que tu l'as vue sur la balance, tu ne la verses plus jamais pareil.
+*(tu reprends le pot)*
 
 Et ton dessert, tu le gardes.
 
@@ -102,13 +102,27 @@ Et ton dessert, tu le gardes.
 
 ---
 
+## La ligne en option, seulement si c'est vrai
+
+Fais le test du bol chez toi avant de tourner. Si tu comptes trois cuillères ou plus, ajoute au bloc 7, juste après « en comptant » :
+
+> Moi, la première fois, j'en ai compté trois.
+
+Avec ton vrai chiffre. En dessous de trois, ou sans le test, la ligne saute.
+
+---
+
 ## Les pièges de diction
 
-1. **« Quatre » et « neuf »** : les deux chiffres du mécanisme. Un temps avant chacun.
-2. **« Deux fois plus de gras… presque deux fois plus de calories »** : ne fusionne pas les deux. Ce sont deux résultats.
-3. **« Deux cent soixante-dix »** : en entier, silence après.
-4. **« Enfin… pas vraiment. »** : beaucoup plus bas. Jamais satisfait.
-5. **« Quinze grammes. La moitié. »** : deux phrases, pas une.
-6. **« C'est quasiment pareil »** vaut pour un pot de cent vingt-cinq grammes autour de cent cinquante calories. Lis l'étiquette du tien : au-dessus de cent soixante-dix, dis « c'est presque pareil ».
+1. **« Bonne intention. Mauvaise cible. »** : deux coups, un temps entre les deux. Le second sec, sans sourire : c'est un verdict, pas une moquerie.
+2. **« Et tu ne le vois même pas. »** : plus bas, comme un secret. C'est la question que le spectateur emporte.
+3. **« Quatre » et « neuf »** : les deux chiffres du mécanisme. Un temps avant chacun.
+4. **« Deux fois plus de gras… presque deux fois plus de calories »** : deux résultats, deux phrases. Ne les fusionne pas.
+5. **« Ce n'est ni le poulet ni le riz. C'est le gras. »** : trois appuis égaux, puis le dernier mot tombe.
+6. **« Bravo. Tu viens d'en remettre plus de deux. »** : « Bravo » sec et ironique, un demi-temps ; puis le « wow » de la vidéo, lent, les yeux dans l'objectif, silence après. Si « Bravo » sonne méchant dans ta bouche, coupe-le.
+7. **« Surtout pas. »** : beaucoup plus bas, franc, presque un sourire. Jamais satisfait.
+8. **« C'est ta main sur la bouteille. »** : direct, sans colère. Tu désignes le coupable.
+9. **« Chaque cuillère, c'est presque un dessert. »** : c'est la phrase qu'on retient. Détache « presque ».
+10. **« Pas trois. Une. »** : deux coups secs. La négation entière ailleurs, toujours : « ce n'est pas », jamais « c'est pas ».
 
-[[Le plus calorique de ton assiette, c'est pas le dessert]] · [[HUB]]
+[[Le plus calorique de ton assiette, ce n'est pas le dessert]] · [[HUB]]

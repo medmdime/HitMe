@@ -1,20 +1,20 @@
 # Prompteur · « Mange comme le corps que tu vises »
 
-Narration nue, dans l'ordre. 257 mots · 1:30.
+Narration nue, dans l'ordre. 293 mots · 1:34.
 Les `//` sont des silences tenus, pas des respirations.
 Le jeu, bloc par bloc, est dans [[video/corps-cible/TOURNAGE|TOURNAGE]]. Ici, rien que ce que tu dis.
 
-Tu tournes le texte d'une traite, trois prises. Puis le bloc 1 seul, trois prises, les accessoires en main. Puis le dernier bloc seul, trois prises.
+Tu tournes le texte d'une traite, trois prises. Puis le bloc 1 seul, trois prises, la balance devant toi. Puis le dernier bloc seul, trois prises.
 
 ---
 
 ### 1 · FACE CAMÉRA · le hook · 0:00
 
-*(tu poses le papier « 70 » sur la balance)*
+*(la balance de salle de bain devant toi ; tu poses le papier « 70 » dessus)*
 
-Tu veux peser soixante-dix.
+Tu veux peser soixante-dix ?
 
-Alors pourquoi tu manges comme quelqu'un de quatre-vingts ?
+Alors arrête le régime.
 
 Un régime, c'est manger comme quelqu'un que tu ne seras jamais.
 
@@ -22,83 +22,79 @@ Un régime, c'est manger comme quelqu'un que tu ne seras jamais.
 
 ---
 
-### 2 · FACE CAMÉRA · le nom · 0:09
+### 2 · FACE CAMÉRA · le nom · 0:06
 
-Alors voilà ce que je fais à la place, et ça a un nom : le corps cible.
-
----
-
-### 3 · FACE CAMÉRA · le budget · 0:14
-
-Chaque corps a un budget.
-
-Un corps de quatre-vingts kilos dépense, chaque jour, un peu plus qu'un corps de soixante-dix. Même taille, même âge, même vie.
-
-À peu près une cuillère d'huile de plus par jour.
-
-Pas plus que ça.
+Mange plutôt comme le corps que tu vises. J'appelle ça le corps cible.
 
 ---
 
-### 4 · FACE CAMÉRA · la règle · 0:28
+### 3 · INSERT C1 · le budget · 0:10
 
-Tu ne manges pas moins pour maigrir. Tu manges le budget du corps que tu veux.
+Chaque corps a un budget : ce qu'il dépense chaque jour pour rester comme il est.
 
-Et le corps suit.
+Plus il est lourd, plus il dépense.
 
-Lentement.
+Entre un corps de quatre-vingts kilos et un corps de soixante-dix, la différence, c'est à peu près deux cuillères d'huile par jour.
 
-Mais il suit, parce que tu ne fais rien qu'il faudra arrêter un jour.
+//
+
+Deux cuillères. Pas un régime.
 
 ---
 
-### 5 · FACE CAMÉRA · moi · 0:40
+### 4 · FACE CAMÉRA, puis INSERT C2 · la preuve · 0:26
 
-Moi, j'ai fait l'inverse.
+Un régime, lui, te fait manger comme un corps bien plus petit que celui que tu vises. Alors tu finis par lâcher.
 
-À soixante kilos, j'ai mangé comme un corps de quatre-vingts. Pendant des années.
+Des chercheurs ont mis cent soixante personnes au régime pendant un an. Quatre régimes complètement différents.
+
+Entre le meilleur et le pire : à peine plus d'un kilo d'écart.
+
+Et dans les deux plus extrêmes, la moitié avait abandonné.
+
+Ce qui comptait, ce n'était pas le régime. C'était de tenir.
+
+---
+
+### 5 · FACE CAMÉRA, puis tes photos · moi · 0:49
+
+Moi, j'ai fait le chemin inverse.
+
+À soixante kilos, je me suis mis à manger comme un corps de quatre-vingts. Pendant des années.
 
 Et le corps a suivi.
 
 ---
 
-### 6 · FACE CAMÉRA · LE TURN · 0:49
+### 6 · FACE CAMÉRA · LE TURN · 0:58
 
-Alors on se dit : d'accord, je mange comme un corps de soixante-dix dès demain, et j'attends.
+Donc tu manges comme un corps de soixante-dix, et dans un mois, c'est réglé ?
 
 //
 
-Enfin… pas vraiment.
+Même pas dans six mois.
 
 ---
 
-### 7 · FACE CAMÉRA · le volume · 0:56
+### 7 · INSERT C3, puis FACE CAMÉRA · la résolution · 1:04
 
-Ton estomac de quatre-vingts, lui, ne rétrécit pas sur commande. Le budget de soixante-dix avec le volume de quatre-vingts, ça s'organise.
+Le corps suit, mais lentement : la moitié du chemin prend à peu près un an. Presque tout, trois ans.
 
-Ce qui contient de l'eau remplit : les légumes, la soupe, les fruits.
+C'est lent, et c'est exactement pour ça que ça tient : tu ne fais rien qu'il faudra arrêter un jour.
 
-L'huile se verse au filet, tu l'as vu.
+Deux cuillères d'huile de moins par jour, ce n'est pas un régime. C'est un geste.
 
-Et les protéines calent plus longtemps que le reste.
-
----
-
-### 8 · FACE CAMÉRA · les paliers · 1:14
-
-Et par paliers.
-
-Pas dix kilos d'un coup : le budget du corps de soixante-quinze d'abord. Quand il est là, celui de soixante-dix.
+Et le budget de ton corps cible, il se calcule : ta taille, ton âge, ton activité, et le poids que tu vises.
 
 ---
 
-### 9 · FACE CAMÉRA · la chute · 1:22
+### 8 · FACE CAMÉRA · la chute · 1:28
 
-Après, c'est lent. Un demi-kilo par semaine, c'est déjà bien.
+Après, personne n'aime attendre.
 
 Mais tu ne finis jamais un régime.
 
-Parce que t'en as jamais commencé un.
+Parce que tu n'en as jamais commencé un.
 
 *(laisse tourner deux secondes avant de couper)*
 
@@ -106,11 +102,12 @@ Parce que t'en as jamais commencé un.
 
 ## Les pièges de diction
 
-1. **« Soixante-dix », « quatre-vingts », « soixante-quinze »** : les trois nombres reviennent tout le temps. Articule-les, surtout « soixante-quinze » entre les deux autres.
-2. **« Lentement. »** : seul, un silence de chaque côté. C'est la concession qui rend la règle crédible.
-3. **« Pendant des années »** : seulement si c'est la vraie durée de ta prise de masse. Sinon, le vrai chiffre.
-4. **« Un demi-kilo par semaine, c'est déjà bien »** : seulement si tu as lu une source. Sinon : « Après, c'est lent. Et c'est très bien comme ça. »
-5. **« Enfin… pas vraiment. »** : beaucoup plus bas. Jamais satisfait.
-6. **La question du hook** : curieuse, pas accusatrice. C'est la phrase la plus risquée de la vidéo.
+1. **« Alors arrête le régime. »** : sec, les yeux dans l'objectif. C'est un ordre amical, pas une leçon.
+2. **« Soixante-dix », « quatre-vingts »** : ils reviennent tout le temps. Articule-les, surtout « quatre-vingts » après « corps de ».
+3. **« Deux cuillères. Pas un régime. »** : deux coups, un temps entre les deux. C'est le « wow » de la première moitié.
+4. **« À peine plus d'un kilo d'écart »** : « plus d'un », pas « un ». Le vrai écart est d'un kilo deux.
+5. **« Pendant des années »** : seulement si c'est la vraie durée de ta prise de masse. Sinon, le vrai chiffre : « Pendant deux ans. »
+6. **« Même pas dans six mois. »** : beaucoup plus bas, franc. Pas désolé : c'est une bonne nouvelle qui arrive juste après.
+7. **« Tu n'en as jamais commencé un. »** : la négation entière, « tu n'en as ». Jamais « t'en as jamais ».
 
 [[Mange comme le corps que tu vises]] · [[HUB]]
