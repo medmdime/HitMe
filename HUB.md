@@ -8,21 +8,19 @@ ce que Claude écrit, tu le vois ici.
 
 ## Aujourd'hui
 
-**Le format jusqu'au dimanche 18 octobre : trois shorts par semaine au format Train Bloom, mardi,
-jeudi et samedi, sujets libres ; ta vie de tous les jours dans les stories ; un tournage par
-semaine, le dimanche. Pas de longue YouTube avant le semi, et le trailer attend.**
+**Le format jusqu'au dimanche 18 octobre : deux ou trois shorts par semaine selon ton temps, le samedi en priorité, au format Train Bloom passé au crible Kallaway ; une seule série, [[La série · ce qui annule ton déficit|ce qui annule ton déficit]] ; ta vie de tous les jours dans les stories. Pas de longue YouTube avant le semi, et le trailer attend.** Chaque script arrive avec ses animations et son b-roll : la méthode est dans le skill `science-reel`, § « Delivering a script to Mohamed ».
 
-**Dimanche 20 septembre : le tournage, et un short ce soir.** Le planning heure par heure :
-[[Tournage du dimanche 20 septembre]]. Dans l'ordre : les deux pickups de meriter avec la casquette, puis
-[[Les gummies de créatine, c'est pas de la créatine]] qui sort ce soir, puis les trois de la semaine.
+**Jeudi 24 au soir : une seule série, « ce qui annule ton déficit ».** Chaque épisode raconte un moment de la semaine de la personne, pour qu'elle s'y retrouve. Le plan daté, les tournages et le tableau de bord : [[La série · ce qui annule ton déficit]], à valider avant de toucher au calendrier ; le tableau ci-dessous change à ce moment-là. La prochaine session tourne [[video/assiette-pas-le-dessert/VERSION-COURTE|la version courte de l'assiette]] et [[Laisse les gens vivre]].
 
 | Sort | Short | Dossier |
 |---|---|---|
-| **dimanche 20**, le soir | [[Les gummies de créatine, c'est pas de la créatine]] | [[video/creatine-gummies/TOURNAGE\|tonalité]] · [[video/creatine-gummies/PROMPTEUR\|texte]] |
-| **mardi 22** | [[Le plus calorique de ton assiette, c'est pas le dessert]] | [[video/assiette-pas-le-dessert/TOURNAGE\|tonalité]] · [[video/assiette-pas-le-dessert/PROMPTEUR\|texte]] |
-| **jeudi 24** | [[Ton estomac ne compte pas les calories]] | [[video/estomac-sent-la-place/TOURNAGE\|tonalité]] · [[video/estomac-sent-la-place/PROMPTEUR\|texte]] |
-| **samedi 26** | [[Mange comme le corps que tu vises]] | [[video/corps-cible/TOURNAGE\|tonalité]] · [[video/corps-cible/PROMPTEUR\|texte]] |
-| en réserve | [[Tu n'as jamais eu à le mériter]] | les pickups d'aujourd'hui, une heure de CapCut |
+| jeudi 17, publiée | [[Déficit calorique]] | |
+| dimanche 20, publiée | **[[Ton week-end annule ta semaine]]**, 17 300 vues sur TikTok | ce qu'on en tire : [[Idées · ce qui annule ton déficit]] |
+| mardi 22, publiée | [[Les gummies de créatine, c'est pas de la créatine]] | |
+| **samedi 26** | [[Le plus calorique de ton assiette, ce n'est pas le dessert]] | [[video/assiette-pas-le-dessert/TOURNAGE\|tonalité et b-roll]] · [[video/assiette-pas-le-dessert/PROMPTEUR\|texte]] · [[video/assiette-pas-le-dessert/INSERTS-HYPERFRAMES\|animations]] |
+| **mardi 29**, proposé | [[Ton estomac ne compte pas les calories]] | [[video/estomac-sent-la-place/TOURNAGE\|tonalité et b-roll]] · [[video/estomac-sent-la-place/PROMPTEUR\|texte]] · [[video/estomac-sent-la-place/INSERTS-HYPERFRAMES\|animations]] |
+| **samedi 3 octobre**, proposé | [[Mange comme le corps que tu vises]] | [[video/corps-cible/TOURNAGE\|tonalité et b-roll]] · [[video/corps-cible/PROMPTEUR\|texte]] · [[video/corps-cible/INSERTS-HYPERFRAMES\|animations]] |
+| en réserve | [[Tu n'as jamais eu à le mériter]] | les pickups, une heure de CapCut |
 
 **Les trois épingles du profil** : un short qui montre ce que tu fais, la « à la une » SEMI pour la
 prépa, et le trailer quand il existera. **Les comptes**, la bio, les tags, la liste pour publier :
