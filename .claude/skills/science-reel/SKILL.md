@@ -467,6 +467,49 @@ Save with `project_update(script=...)` in bracket format.
 
 ---
 
+## Delivering a script to Mohamed — the Kallaway sieve
+
+Decided 23 September 2026 on `video/assiette-pas-le-dessert/`, which is the worked example: « J'aime
+bien ce format… je trouve cette écriture challengeante, intéressante. » Every new script goes
+through the `kallaway-hooks` and `kallaway-storytelling` skills before he sees it, and ships in
+this shape.
+
+1. **The hook keeps its question open.** A hook that answers itself in four seconds with a neutral
+   reveal (« c'est quasiment pareil ») kills the video: nothing is left to find out. Plant one
+   question, answer it at 8-10 s, and save the "wow" — the highest-shock fact, better than expected
+   or unexpected and intriguing — for just before the turn.
+2. **Three hooks, three archetypes**, in the `kallaway-hooks` output format, one retained and why.
+3. **The facts scored for shock** (out of 100 people, how many are surprised), and the video built
+   on the top two.
+4. **One sentence to take away**, said aloud and shown twice: « Chaque cuillère, c'est presque un
+   dessert. »
+5. **Kitchen units, never lab units.** Quantities in spoons, bowls and glasses, counted in the
+   hook's own object (desserts). No grams of food in the mouth, no « au jugé », no gesture that
+   needs a kitchen scale. Aim at the whole category (all fats: oil, butter, sauces), not one item.
+6. **The tone is aggressive in the body, warm in the landing.** Attack the belief and the villain
+   (the hidden fat, the hand on the bottle), never the viewer. Validation and correction in a punch
+   pair (« Bonne intention. Mauvaise cible. »), the villain made active (« le gras se cache »),
+   one ironic word at most (« Bravo. »), a dare with a date (« fais le test ce soir »), dry
+   repetitions (« Pas trois. Une. »). Every line still literally true, every negation complete.
+   The landing still concedes and ends warm: the contrast is what makes the attack land.
+7. **SCRIPT.md opens with the sieve**: a table *what did not hold / the rule / what changes*, and
+   a second table *before / now* whenever the tone is sharpened.
+8. **What is on screen ships with the text.** INSERTS-HYPERFRAMES.md syllable by syllable
+   (`inserts-youbud`), and in TOURNAGE.md a b-roll section: each generated shot, the line it sits
+   under, the image prompt (FLUX.2 pro, 9:16) and the motion prompt (Kling 3.0, image-to-video,
+   sound off), what stays real, and the fallbacks. Generated b-roll gives matter to words the
+   inserts would leave abstract (oil pouring, butter foaming); never Mohamed, never a face, a brand
+   or text in the image, never a pretty shot unrelated to the line. Images are validated before
+   they are animated, because animation spends credits.
+9. **Every video ends with a follow call** (Mohamed, 24 September 2026, after the week-end video
+   brought 17,300 views and only 14 followers). After the landing, one line in his voice, about
+   four seconds: « Moi, c'est Mohamed : je t'explique la nutrition, sans régime. Abonne-toi pour la
+   suite. » His name on screen, a follow button popping on « abonne-toi ». This overrides the
+   corpus default of a CTA-free philosophical landing for his account: the landing stays, the call
+   comes after it. The save request (« Enregistre-la… ») may stay before it.
+
+---
+
 ## French adaptation
 
 Reference: `DTdVpZljqZh` (Twinkie diet) — the account's biggest video, 21.8x / 7.5M.
@@ -492,8 +535,8 @@ into French, it collapses.
 
 Either of these works:
 
-> ✅ « c'est pas juste **bouger plus que ce que tu manges** » — keeps the original's shape
-> ✅ « c'est pas manger moins que ce que tu **dépenses** » — both sides in calories, airtight
+> ✅ « ce n'est pas juste **bouger plus que ce que tu manges** » — keeps the original's shape
+> ✅ « ce n'est pas manger moins que ce que tu **dépenses** » — both sides in calories, airtight
 
 **The check, on every line: do both sides of any comparison share a unit?** Calories against
 calories, time against time, movement against movement. If not, rewrite.
@@ -540,12 +583,18 @@ Keep the list items grammatically parallel — all infinitives, or all noun phra
 mix. And read every line aloud before it goes in the script: the verbless-list problem is
 inaudible on the page and obvious in the mouth.
 
-**Register is oral, grammar is not — in narration and légende.** Tutoiement, short sentences, spoken word order —
-yes. Dropped negations (*c'est pas*, *y a pas*, *faut pas*), missing elisions (*si il*
-for *s'il*), and approximate agreements — never in a spoken line or a caption. A line can sound spoken and still be
-fully grammatical; if it cannot, rewrite it. Titles and hook cards keep the short oral
-pattern already established on the account (*c'est pas X*), so the series stays consistent.
-Grep every finished script for `c'est même pas`, `y a pas`, `si il`, `si ils` before it ships.
+**Register is oral, grammar is not — everywhere.** Tutoiement, short sentences, spoken word
+order — yes. Dropped negations (*c'est pas*, *y a pas*, *faut pas*, *ça veut pas dire*),
+missing elisions (*si il* for *s'il*), and approximate agreements — never. Not in a spoken
+line, not on a hook card, not in a video or page title, not in a caption or description. A
+line can sound spoken and still be fully grammatical; if it cannot, rewrite it. The viewer
+hears someone who does not master the language, and trust drops with it. Mohamed's own words,
+22 September 2026: « souvent le script sent linguistiquement faux », citing the title « Le plus
+calorique de ton assiette, c'est pas le dessert » as the error to stop making — it has to be
+« ce n'est pas le dessert ». There is no "oral title" exception any more.
+
+Grep every finished script, title and caption for `c'est pas`, `c'est même pas`, `y a pas`,
+`faut pas`, `veut pas`, `si il`, `si ils` before it ships, then read it aloud once more.
 
 ### Timing
 
@@ -584,9 +633,9 @@ the caption tool, or it reads as wrong to native speakers.
 1. « Tout le monde te dit que [X] est mauvais pour toi. Et si c'était faux ? »
 2. « Ça, c'est [transformé]. Mais ça aussi ? »
 3. « [A] ou [B] — lequel est vraiment le pire ? »
-4. « Tu sais qu'un déficit calorique, ça veut pas juste dire manger moins ? »
+4. « Tu sais qu'un déficit calorique, ça ne veut pas juste dire manger moins ? »
 5. « Elle a raison… mais pourquoi ? »
-6. « Tu sais que quelqu'un l'a vraiment fait ? Et c'est pas que le poids qu'il a perdu. »
+6. « Tu sais que quelqu'un l'a vraiment fait ? Et ce n'est pas que le poids qu'il a perdu. »
 
 ### The landing, in French
 
@@ -679,7 +728,7 @@ as written, even when it sounds good.
 ### 7. Write like someone talking, not like a fact sheet
 
 The creator speaks from their own experience — « moi aussi je me suis dit ça, pendant des
-années » — concedes when the evidence is thin — « honnêtement, huit personnes, c'est pas
+années » — concedes when the evidence is thin — « honnêtement, huit personnes, ce n'est pas
 grand-chose » — and drops a short sentence after a long one. The viewer has been lied to for
 years; they are not stupid, and you are not lecturing them. **Warmth, not authority.** Ban
 stacked noun phrases, dry enumerations, and the impersonal *il faut*.
@@ -728,6 +777,16 @@ grammar every video — splitting bar, populating list, X/check pair, stick-figu
 timeline, leaderboard, before/after, absurd grid. Parameterising those eight is most of the
 production cost, and after the first video the marginal cost of an insert is writing props.
 Reusing them is the visual signature; inventing new devices each time destroys it.
+
+**Look, motion and sound of every insert are fixed by the `inserts-youbud` skill.** Load it
+before writing a composition: the YouBud palette and its `youbud.css` tokens, tinted cards with
+a solid bottom edge and **no border**, verdict badges that draw themselves, heads cut out as
+emoji, the GSAP gesture table, and the SFX baked into the render at the CapCut volumes.
+Its first rule changes how devices are written: **words, never sentences, on screen.**
+Instagram auto-translates captions, never text baked into an animation, and the market is
+French-speaking — so an insert carries numbers, units, symbols, Lucide icons, proper names and
+one word per element when that word carries the meaning (Déclaration, Vente, Contrôle). A
+phrase or a multi-word card belongs to the voice and the captions, not to the insert.
 
 The workflow stays `broll_plan_init` → decide each shot → `broll_plan_set` (record the
 rendered file on its shot) → `capcut_plan`. Read `capcut_reference` before hand-writing any
