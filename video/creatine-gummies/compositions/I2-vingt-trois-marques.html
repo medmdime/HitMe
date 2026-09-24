@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="fr" data-resolution="portrait">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=1080, height=1920">
+    <link rel="stylesheet" href="compositions/components/kit.css">
+    <link rel="stylesheet" href="compositions/components/youbud.css">
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.14.2/dist/gsap.min.js"></script>
+    <script src="assets/vendor/lucide.min.js"></script>
+    <style>
+      @font-face {
+        font-family: "Archivo";
+        src: url("assets/fonts/Archivo.woff2") format("woff2");
+        font-weight: 400 900;
+        font-display: block;
+      }
+      /* ---- A : l'enquêteur, la flèche, le labo ---- */
+      #i2-intro { position: absolute; top: 600px; left: 0; width: 1080px; height: 380px; }
+      #i2-head { left: 130px; top: 40px; width: 220px; height: 220px; opacity: 0; transform-origin: 50% 100%; }
+      #i2-head img { width: 360px; left: -80px; top: -116px; }
+      #i2-who { position: absolute; left: 40px; top: 284px; width: 400px; text-align: center; opacity: 0; }
+      #i2-who .yb-pill { background: #fff; box-shadow: 0 6px 0 #e5e5e0; font-size: 34px; color: var(--ink); }
+      #i2-arr { position: absolute; left: 470px; top: 85px; width: 140px; height: 140px; color: var(--ink); opacity: 0; }
+      #i2-now { left: 730px; top: 40px; width: 220px; height: 220px; opacity: 0; transform-origin: 50% 50%; background: #fff; }
+      #i2-now img { width: 100%; height: 100%; left: 0; top: 0; }
+      #i2-by { position: absolute; left: 805px; top: -60px; width: 70px; height: 70px; color: var(--yb-blue); opacity: 0; transform-origin: 50% 100%; }
+      #i2-nowlab { position: absolute; left: 640px; top: 284px; width: 400px; text-align: center; opacity: 0; }
+      #i2-nowlab .yb-pill { background: #fff; box-shadow: 0 6px 0 #e5e5e0; font-size: 34px; color: var(--ink); letter-spacing: 0.06em; }
+
+      /* ---- B : le pot et la question ---- */
+      #i2-potq { position: absolute; top: 520px; left: 0; width: 1080px; height: 600px; }
+      #i2-jar { position: absolute; left: 270px; top: 70px; width: 240px; height: 300px; opacity: 0; transform-origin: 50% 100%; will-change: transform; }
+      #i2-jar .lid { position: absolute; left: -12px; top: -28px; width: 264px; height: 58px; border-radius: 18px; background: #2b2b2b; box-shadow: 0 6px 0 #1a1a1a; }
+      #i2-jar .body { position: absolute; inset: 0; border-radius: 30px 30px 40px 40px; background: #3c3c3c; box-shadow: inset -22px 0 0 #2f2f2f; }
+      #i2-jar .label { position: absolute; left: 22px; right: 22px; top: 96px; height: 130px; border-radius: 18px; background: #fff; text-align: center; }
+      #i2-jar .label b { display: block; margin-top: 22px; font-size: 32px; font-weight: 900; color: var(--ink); letter-spacing: 0.02em; }
+      #i2-jar .label i { display: block; margin-top: 4px; font-size: 24px; font-style: normal; font-weight: 800; color: var(--yb-orange); }
+      #i2-jar .g { position: absolute; width: 26px; height: 28px; border-radius: 45% 55% 50% 50% / 55% 55% 45% 45%; }
+      #i2-tubes { position: absolute; left: 570px; top: 110px; width: 170px; height: 170px; color: var(--yb-blue); opacity: 0; transform-origin: 50% 100%; }
+      #i2-q { position: absolute; top: 420px; left: 0; width: 1080px; text-align: center; font-size: 84px; font-weight: 900; line-height: 1.1; opacity: 0; transform-origin: 50% 50%; }
+      #i2-q .hl { padding: 4px 44px; border-radius: 999px; box-shadow: 0 8px 0 var(--yb-yellow-edge); display: inline-block; }
+
+      /* ---- C : le classement, vingt-trois jauges contre la promesse ---- */
+      #i2-head-c { position: absolute; top: 222px; left: 0; width: 1080px; height: 64px; text-align: center; opacity: 0; }
+      #i2-head-c svg.lucide { display: inline-block; width: 48px; height: 48px; color: var(--yb-blue); vertical-align: -12px; margin-right: 12px; }
+      #i2-head-c .kicker { display: inline-block; font-size: 34px; line-height: 64px; }
+      #i2-count { position: absolute; top: 292px; left: 0; width: 1080px; height: 130px; text-align: center; }
+      #i2-n23, #i2-n8 { position: absolute; left: 0; width: 1080px; top: 0; text-align: center; opacity: 0; }
+      #i2-n23 .yb-pill { font-size: 96px; line-height: 1; padding: 8px 44px; background: var(--yb-yellow); color: var(--ink); box-shadow: 0 8px 0 var(--yb-yellow-edge); font-variant-numeric: tabular-nums; }
+      #i2-n8 .yb-pill { font-size: 96px; line-height: 1; padding: 8px 44px; background: var(--yb-green); color: var(--ink); box-shadow: 0 8px 0 var(--yb-green-edge); font-variant-numeric: tabular-nums; }
+      #i2-grid { position: absolute; top: 450px; left: 90px; width: 900px; height: 966px; }
+      .row { position: absolute; left: 0; width: 900px; height: 42px; opacity: 0; will-change: transform; }
+      .nm { position: absolute; left: 0; top: 0; width: 230px; height: 42px; text-align: right; font-size: 21px; font-weight: 800; line-height: 42px; color: var(--ink); white-space: nowrap; }
+      .track { position: absolute; left: 250px; top: 9px; width: 560px; height: 24px; background: #e6e6e1; border-radius: 12px; }
+      .fill { position: absolute; left: 0; top: 0; bottom: 0; width: 560px; border-radius: 12px; transform-origin: 0% 50%; transform: scaleX(0); will-change: transform; }
+      .row.ok .fill { background: var(--yb-green); }
+      .row.ko .fill { background: var(--yb-red); }
+      .tick { position: absolute; left: 791px; top: 2px; width: 38px; height: 38px; border-radius: 50%; background: var(--yb-green); box-shadow: 0 4px 0 var(--yb-green-edge); opacity: 0; will-change: transform; }
+      .tick svg { position: absolute; inset: 0; width: 100%; height: 100%; }
+      .tick path { fill: none; stroke: #fff; stroke-width: 5; stroke-linecap: round; stroke-linejoin: round; }
+      /* La ligne de promesse : au bout exact des jauges, jamais dépassée */
+      #i2-claim { position: absolute; top: 444px; left: 897px; width: 6px; height: 978px; border-radius: 3px;
+        background: repeating-linear-gradient(var(--ink) 0 12px, transparent 12px 22px); opacity: 0; transform-origin: 50% 0%; }
+      #i2-claimlab { position: absolute; top: 386px; left: 780px; width: 240px; text-align: center; opacity: 0; }
+      #i2-claimlab .yb-pill { padding: 8px 22px; background: var(--ink); color: #fff; font-size: 24px; line-height: 1.2; letter-spacing: 0.06em; }
+      #i2-claimlab .yb-pill svg.lucide { display: inline-block; width: 26px; height: 26px; color: #fff; vertical-align: -6px; margin-right: 8px; }
+      #i2-card, #i2-card2 { position: absolute; top: 1418px; left: 90px; right: 90px; text-align: center;
+        background: #fff; border-radius: 28px; box-shadow: 0 8px 0 #e5e5e0;
+        padding: 12px 0; font-size: 54px; font-weight: 900; opacity: 0; will-change: transform; }
+      #i2-card .mg, #i2-card2 .mg { display: inline-block; width: 64px; height: 64px; vertical-align: -14px; margin-right: 18px; background: var(--yb-orange);
+        border-radius: 46% 54% 52% 48% / 58% 60% 40% 42%; box-shadow: inset -6px -6px 0 var(--yb-orange-edge); }
+      #i2-src { position: absolute; top: 1526px; left: 0; width: 1080px; text-align: center;
+        font-size: 26px; font-weight: 700; letter-spacing: 0.1em; color: var(--ink-faint); opacity: 0; }
+    </style>
+  </head>
+  <body>
+    <div id="i2-root" data-composition-id="creatine-i2-marques" data-start="0" data-duration="11.3" data-width="1080" data-height="1920">
+      <div id="i2-scene" class="clip" data-start="0" data-duration="11.3" data-track-index="0">
+        <div class="stage">
+          <div id="i2-intro">
+            <div class="yb-emoji" id="i2-head"><img src="assets/img/james-head.png" alt=""></div>
+            <div id="i2-who"><span class="yb-pill">James Smith</span></div>
+            <div id="i2-arr"><i data-lucide="move-right"></i></div>
+            <div id="i2-by"><i data-lucide="flask-conical"></i></div>
+            <div class="yb-emoji" id="i2-now"><img src="assets/img/now-logo.png" alt=""></div>
+            <div id="i2-nowlab"><span class="yb-pill">NOW</span></div>
+          </div>
+
+          <div id="i2-potq">
+            <div id="i2-jar">
+              <div class="body"></div>
+              <div class="lid"></div>
+              <div class="label"><b>CRÉATINE</b><i>gummies</i></div>
+              <div class="g" style="left:34px;top:246px;background:var(--yb-orange)"></div>
+              <div class="g" style="left:74px;top:252px;background:var(--yb-red)"></div>
+              <div class="g" style="left:118px;top:244px;background:var(--yb-green)"></div>
+              <div class="g" style="left:160px;top:254px;background:var(--yb-yellow)"></div>
+            </div>
+            <div id="i2-tubes"><i data-lucide="test-tubes"></i></div>
+            <div id="i2-q"><span class="hl">Dedans ?</span></div>
+          </div>
+
+          <div id="i2-head-c"><i data-lucide="flask-conical"></i><span class="kicker">Labo</span></div>
+          <div id="i2-count">
+            <div id="i2-n23"><span class="yb-pill"><span class="v">0</span></span></div>
+            <div id="i2-n8"><span class="yb-pill"><span class="v">0</span></span></div>
+          </div>
+          <div id="i2-claimlab"><span class="yb-pill"><i data-lucide="tag"></i>Promesse</span></div>
+          <div id="i2-claim"></div>
+          <div id="i2-grid"></div>
+          <div id="i2-card"><span class="mg"></span>Presque <span class="hl-bad">0</span></div>
+          <div id="i2-card2"><span class="mg"></span>= <span class="hl-bad">30 €</span></div>
+          <div id="i2-src">James Smith + NOW</div>
+        </div>
+      </div>
+
+      <!-- Le son -->
+      <audio id="i2-s-01" src="assets/sfx/bloop.mp3" data-start="0.0" data-duration="0.63" data-track-index="41" data-volume="0.6"></audio>
+      <audio id="i2-s-02" src="assets/sfx/soft_click.wav" data-start="0.5" data-duration="0.22" data-track-index="42" data-volume="1"></audio>
+      <audio id="i2-s-03" src="assets/sfx/clicks.wav" data-start="0.75" data-duration="0.35" data-track-index="43" data-volume="0.95"></audio>
+      <audio id="i2-s-30" src="assets/sfx/rizer-mettalic.mp3" data-start="1.3" data-duration="0.9" data-track-index="70" data-volume="0.15"></audio>
+      <audio id="i2-s-31" src="assets/sfx/soft_click.wav" data-start="3.20" data-duration="0.12" data-track-index="71" data-volume="0.3"></audio>
+      <audio id="i2-s-32" src="assets/sfx/soft_click.wav" data-start="3.29" data-duration="0.12" data-track-index="72" data-volume="0.3"></audio>
+      <audio id="i2-s-33" src="assets/sfx/soft_click.wav" data-start="3.38" data-duration="0.12" data-track-index="73" data-volume="0.3"></audio>
+      <audio id="i2-s-34" src="assets/sfx/soft_click.wav" data-start="3.47" data-duration="0.12" data-track-index="74" data-volume="0.3"></audio>
+      <audio id="i2-s-35" src="assets/sfx/soft_click.wav" data-start="3.56" data-duration="0.12" data-track-index="75" data-volume="0.3"></audio>
+      <audio id="i2-s-36" src="assets/sfx/soft_click.wav" data-start="3.65" data-duration="0.12" data-track-index="76" data-volume="0.3"></audio>
+      <audio id="i2-s-04" src="assets/sfx/air-woosh.wav" data-start="2.35" data-duration="1.0" data-track-index="44" data-volume="0.09"></audio>
+      <audio id="i2-s-05" src="assets/sfx/soft_click.wav" data-start="2.64" data-duration="0.22" data-track-index="45" data-volume="1"></audio>
+      <audio id="i2-s-06" src="assets/sfx/clicks.wav" data-start="2.9" data-duration="0.35" data-track-index="46" data-volume="0.95"></audio>
+      <audio id="i2-s-07" src="assets/sfx/bloop.mp3" data-start="3.15" data-duration="0.63" data-track-index="47" data-volume="0.5"></audio>
+      <audio id="i2-s-08" src="assets/sfx/air-woosh.wav" data-start="4.7" data-duration="1.0" data-track-index="48" data-volume="0.09"></audio>
+      <audio id="i2-s-09" src="assets/sfx/rizer-windy.mp3" data-start="4.9" data-duration="1.2" data-media-start="1.65" data-track-index="49" data-volume="0.24"></audio>
+      <audio id="i2-s-10" src="assets/sfx/soft_click.wav" data-start="5.0" data-duration="0.22" data-track-index="50" data-volume="1"></audio>
+      <audio id="i2-s-11" src="assets/sfx/soft_click.wav" data-start="5.2" data-duration="0.22" data-track-index="51" data-volume="1"></audio>
+      <audio id="i2-s-12" src="assets/sfx/soft_click.wav" data-start="5.4" data-duration="0.22" data-track-index="52" data-volume="1"></audio>
+      <audio id="i2-s-13" src="assets/sfx/soft_click.wav" data-start="5.6" data-duration="0.22" data-track-index="53" data-volume="1"></audio>
+      <audio id="i2-s-14" src="assets/sfx/soft_click.wav" data-start="5.8" data-duration="0.22" data-track-index="54" data-volume="1"></audio>
+      <audio id="i2-s-15" src="assets/sfx/impacts.mp3" data-start="6.05" data-duration="1.3" data-media-start="0.2" data-track-index="55" data-volume="0.43"></audio>
+      <audio id="i2-s-16" src="assets/sfx/bloop.mp3" data-start="6.4" data-duration="0.5" data-track-index="56" data-volume="0.22"></audio>
+      <audio id="i2-s-17" src="assets/sfx/bloop.mp3" data-start="6.57" data-duration="0.5" data-track-index="57" data-volume="0.25"></audio>
+      <audio id="i2-s-18" src="assets/sfx/bloop.mp3" data-start="6.74" data-duration="0.5" data-track-index="58" data-volume="0.28"></audio>
+      <audio id="i2-s-19" src="assets/sfx/bloop.mp3" data-start="6.91" data-duration="0.5" data-track-index="59" data-volume="0.31"></audio>
+      <audio id="i2-s-20" src="assets/sfx/bloop.mp3" data-start="7.08" data-duration="0.5" data-track-index="60" data-volume="0.34"></audio>
+      <audio id="i2-s-21" src="assets/sfx/bloop.mp3" data-start="7.25" data-duration="0.5" data-track-index="61" data-volume="0.37"></audio>
+      <audio id="i2-s-22" src="assets/sfx/bloop.mp3" data-start="7.42" data-duration="0.5" data-track-index="62" data-volume="0.4"></audio>
+      <audio id="i2-s-23" src="assets/sfx/correct.wav" data-start="7.59" data-duration="0.5" data-track-index="63" data-volume="0.66"></audio>
+      <audio id="i2-s-24" src="assets/sfx/wrong.mp3" data-start="7.88" data-duration="0.5" data-track-index="64" data-volume="0.5"></audio>
+      <audio id="i2-s-25" src="assets/sfx/wrong.mp3" data-start="8.5" data-duration="0.5" data-track-index="65" data-volume="0.7"></audio>
+      <audio id="i2-s-26" src="assets/sfx/impacts.mp3" data-start="9.15" data-duration="1.3" data-media-start="0.2" data-track-index="66" data-volume="0.43"></audio>
+      <audio id="i2-s-27" src="assets/sfx/air-woosh.wav" data-start="9.95" data-duration="1.0" data-track-index="67" data-volume="0.09"></audio>
+      <audio id="i2-s-28" src="assets/sfx/impacts.mp3" data-start="10.22" data-duration="1.3" data-media-start="0.2" data-track-index="68" data-volume="0.43"></audio>
+    </div>
+
+    <script>
+      (function () {
+        window.__timelines = window.__timelines || {};
+        if (window.lucide) window.lucide.createIcons();
+        var ROWS = [
+          ["Myvitamins", 1], ["Wellboost", 1], ["Bear Balance", 1], ["Bod", 1],
+          ["Effective Nutra", 1], ["Iron Labs", 1], ["Peach Perfect", 1], ["Zhou", 1],
+          ["Known Nutrition", 0.4], ["Create 1", 0.3], ["Create 2", 0.5], ["Con-Cret", 0.08],
+          ["Beast Bites", 0.07], ["Astro Labs", 0.07], ["Ovrload 1", 0.07], ["Ovrload 2", 0.07],
+          ["Unique Physique", 0.07], ["Supplmnt", 0.07], ["Gains Nutrition", 0.07],
+          ["Push 1", 0.07], ["Push 2", 0.07], ["Njord", 0.07], ["Greabby", 0.07]
+        ];
+        var grid = document.getElementById("i2-grid");
+        var rows = [], fills = [], ticks = [];
+        for (var i = 0; i < ROWS.length; i++) {
+          var r = document.createElement("div");
+          r.className = "row " + (ROWS[i][1] >= 1 ? "ok" : "ko");
+          r.style.top = i * 42 + "px";
+          r.innerHTML = '<div class="nm">' + ROWS[i][0] + '</div>' +
+            '<div class="track"><div class="fill"></div></div>' +
+            '<div class="tick"><svg viewBox="0 0 38 38"><path d="M11 20 L17 26 L28 13"/></svg></div>';
+          grid.appendChild(r);
+          rows.push(r); fills.push(r.querySelector(".fill")); ticks.push(r.querySelector(".tick"));
+        }
+        var tl = gsap.timeline({ paused: true });
+
+        // 0.00 « Avec NOW » — la tête de James, la flèche, la fiole, le logo, NOW.
+        tl.fromTo("#i2-head", { opacity: 0, scale: 0, rotation: -12 }, { opacity: 1, scale: 1, rotation: 0, duration: 0.5, ease: "back.out(1.4)" }, 0);
+        tl.fromTo("#i2-who", { opacity: 0, y: 18 }, { opacity: 1, y: 0, duration: 0.3, ease: "power3.out" }, 0.25);
+        tl.fromTo("#i2-arr", { opacity: 0, x: -40 }, { opacity: 1, x: 0, duration: 0.35, ease: "power3.out" }, 0.5);
+        tl.fromTo("#i2-now", { opacity: 0, scale: 0, rotation: 12 }, { opacity: 1, scale: 1, rotation: 0, duration: 0.5, ease: "back.out(1.4)" }, 0.75);
+        tl.fromTo("#i2-by", { opacity: 0, scale: 0.4, y: 12 }, { opacity: 1, scale: 1, y: 0, duration: 0.3, ease: "back.out(1.6)" }, 0.95);
+        tl.fromTo("#i2-nowlab", { opacity: 0, y: 18 }, { opacity: 1, y: 0, duration: 0.3, ease: "power3.out" }, 1.0);
+        tl.fromTo("#i2-head", { rotation: 0 }, { rotation: 6, duration: 0.22, ease: "power1.inOut", repeat: 3, yoyo: true, immediateRender: false }, 1.2);
+        tl.fromTo("#i2-now", { rotation: 0 }, { rotation: 360, duration: 0.8, ease: "power2.inOut", immediateRender: false }, 1.3);
+
+        // 2.64 « pour voir » — le pot arrive et on le secoue, les pipettes, Dedans ?
+        tl.to("#i2-intro", { opacity: 0, y: -30, duration: 0.25, ease: "power2.in" }, 2.35);
+        tl.fromTo("#i2-jar", { opacity: 0, y: 60, scale: 0.9 }, { opacity: 1, y: 0, scale: 1, duration: 0.45, ease: "power3.out" }, 2.64);
+        tl.fromTo("#i2-jar", { rotation: 0 }, { rotation: -7, duration: 0.09, ease: "none", immediateRender: false }, 3.2);
+        tl.to("#i2-jar", { rotation: 7, duration: 0.09, ease: "none", repeat: 5, yoyo: true }, 3.29);
+        tl.to("#i2-jar", { rotation: 0, duration: 0.12, ease: "power2.out" }, 3.83);
+        tl.fromTo("#i2-tubes", { opacity: 0, scale: 0.5, rotation: 14 }, { opacity: 1, scale: 1, rotation: 0, duration: 0.4, ease: "back.out(1.5)" }, 2.9);
+        tl.fromTo("#i2-q", { opacity: 0, scale: 0.4, y: 20 }, { opacity: 1, scale: 1, y: 0, duration: 0.4, ease: "back.out(1.6)" }, 3.15);
+        tl.fromTo("#i2-q", { rotation: 0 }, { rotation: 8, duration: 0.16, ease: "power1.inOut", repeat: 3, yoyo: true, immediateRender: false }, 3.6);
+        tl.to("#i2-q", { rotation: 0, duration: 0.16 }, 4.24);
+
+        // 4.98 « Sur vingt-trois » — la grille arrive très vite, le compteur monte, la promesse se pose.
+        tl.to("#i2-potq", { opacity: 0, y: -30, duration: 0.25, ease: "power2.in" }, 4.7);
+        tl.fromTo("#i2-head-c", { opacity: 0, scale: 0.4, y: 20 }, { opacity: 1, scale: 1, y: 0, duration: 0.3, ease: "back.out(1.6)" }, 4.98);
+        tl.fromTo("#i2-n23", { opacity: 0, scale: 0.5 }, { opacity: 1, scale: 1, duration: 0.4, ease: "back.out(1.5)" }, 4.98);
+        var c23 = { v: 0 };
+        tl.to(c23, { v: 23, duration: 1.0, ease: "power2.out", onUpdate: function () {
+          document.querySelector("#i2-n23 .v").textContent = Math.round(c23.v);
+        } }, 5.1);
+        tl.fromTo("#i2-n23 .yb-pill", { scale: 1 }, { scale: 1.12, duration: 0.12, ease: "power2.out", repeat: 1, yoyo: true }, 6.05);
+        rows.forEach(function (r, i) {
+          tl.fromTo(r, { opacity: 0, x: -50 }, { opacity: 1, x: 0, duration: 0.25, ease: "power3.out" }, 5.0 + i * 0.035);
+        });
+        tl.fromTo("#i2-claimlab", { opacity: 0, y: 14 }, { opacity: 1, y: 0, duration: 0.3, ease: "power3.out" }, 5.95);
+        tl.fromTo("#i2-claim", { opacity: 0, scaleY: 0 }, { opacity: 1, scaleY: 1, duration: 0.4, ease: "power2.out" }, 6.0);
+
+        // 6.32 « huit contenaient » — huit jauges vertes jusqu'à la promesse, coche au bout, compteur 8.
+        tl.to("#i2-n23", { opacity: 0, scale: 0.6, duration: 0.2, ease: "power2.in" }, 6.2);
+        tl.fromTo("#i2-n8", { opacity: 0, scale: 0.5 }, { opacity: 1, scale: 1, duration: 0.4, ease: "back.out(1.5)" }, 6.32);
+        var c8 = { v: 0 };
+        tl.to(c8, { v: 8, duration: 1.36, ease: "none", onUpdate: function () {
+          document.querySelector("#i2-n8 .v").textContent = Math.round(c8.v);
+        } }, 6.35);
+        for (var p = 0; p < 8; p++) {
+          tl.fromTo(fills[p], { scaleX: 0 }, { scaleX: 1, duration: 0.4, ease: "power3.out" }, 6.4 + p * 0.17);
+          tl.fromTo(ticks[p], { opacity: 0, scale: 0.3 }, { opacity: 1, scale: 1, duration: 0.25, ease: "back.out(1.8)" }, 6.6 + p * 0.17);
+        }
+
+        // 7.88 « La majorité » — les quinze autres : un bout de rouge, la ligne tremble. 9.22 « presque zéro » : carton.
+        for (var f = 8; f < 23; f++) {
+          (function (idx, at) {
+            tl.fromTo(fills[idx], { scaleX: 0 }, { scaleX: ROWS[idx][1], duration: 0.35, ease: "power3.out" }, at);
+            tl.fromTo(rows[idx], { x: 0 }, { x: -5, duration: 0.05, ease: "none", repeat: 3, yoyo: true, immediateRender: false }, at);
+            tl.to(rows[idx], { x: 0, duration: 0.05, ease: "none" }, at + 0.2);
+          })(f, 7.88 + (f - 8) * 0.06);
+        }
+        tl.fromTo("#i2-card", { opacity: 0, scale: 0.85, y: 20 }, { opacity: 1, scale: 1, y: 0, duration: 0.35, ease: "back.out(1.4)" }, 9.15);
+        tl.fromTo("#i2-src", { opacity: 0 }, { opacity: 1, duration: 0.3 }, 9.25);
+
+        // 10.22 « Des bonbons normaux » — un bonbon = 30 €.
+        tl.to("#i2-card, #i2-src", { opacity: 0, y: -14, duration: 0.2, ease: "power2.in" }, 10.0);
+        tl.fromTo("#i2-card2", { opacity: 0, scale: 0.85, y: 20 }, { opacity: 1, scale: 1, y: 0, duration: 0.35, ease: "back.out(1.4)" }, 10.22);
+
+        // Tenue : rien ne bouge après 10.6.
+        window.__timelines["creatine-i2-marques"] = tl;
+      })();
+    </script>
+  </body>
+</html>

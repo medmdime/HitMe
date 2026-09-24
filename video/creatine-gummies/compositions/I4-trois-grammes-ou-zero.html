@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="fr" data-resolution="portrait">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=1080, height=1920">
+    <link rel="stylesheet" href="compositions/components/kit.css">
+    <link rel="stylesheet" href="compositions/components/youbud.css">
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.14.2/dist/gsap.min.js"></script>
+    <script src="assets/vendor/lucide.min.js"></script>
+    <style>
+      @font-face {
+        font-family: "Archivo";
+        src: url("assets/fonts/Archivo.woff2") format("woff2");
+        font-weight: 400 900;
+        font-display: block;
+      }
+      /* Deux panneaux à la même échelle, même sol. Aucun mot : l'étiquette et la loupe. */
+      .panel { position: absolute; top: 470px; width: 440px; height: 560px; text-align: center; opacity: 0; will-change: transform; }
+      #i4-left { left: 70px; }
+      #i4-right { left: 570px; }
+      .panel .yb-card { left: 0; top: 0; width: 440px; height: 440px; }
+      #i4-left .yb-card { --tint: var(--yb-yellow-2); --edge: #f0dfa0; }
+      #i4-right .yb-card { --tint: var(--yb-red-2); --edge: #f5c4c4; }
+      /* Le sachet : ce qui est écrit dessus */
+      .bigsac { position: absolute; left: 95px; top: 50px; width: 250px; height: 320px; background: var(--yb-orange);
+        border-radius: 26px 26px 40px 40px; box-shadow: 0 8px 0 var(--yb-orange-edge); }
+      .bigsac .seal { position: absolute; left: 0; right: 0; top: 0; height: 40px; border-radius: 26px 26px 0 0; background: var(--yb-orange-edge); }
+      .bigsac .seal i { position: absolute; top: 14px; left: 30px; right: 30px; height: 10px; border-radius: 5px; background: rgba(255,255,255,0.35); display: block; }
+      .bigsac .tag { position: absolute; left: 24px; right: 24px; top: 104px; height: 140px; border-radius: 18px; background: #fff;
+        display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 6px; }
+      .bigsac .tag .ti { width: 40px; height: 40px; color: var(--ink); }
+      .bigsac .tag small { display: block; font-size: 24px; font-weight: 800; color: var(--ink-soft); line-height: 1; }
+      .bigsac .tag b { display: block; font-size: 52px; font-weight: 900; line-height: 1; color: #d97a00; font-variant-numeric: tabular-nums; }
+      /* Le bonbon en coupe : ce qu'il y a dedans */
+      .cut { position: absolute; left: 95px; top: 130px; width: 250px; height: 200px; background: var(--yb-orange);
+        border-radius: 125px 125px 0 0; box-shadow: inset 0 -12px 0 var(--yb-orange-edge); transform-origin: 50% 100%; }
+      .cut .floor { position: absolute; left: -20px; right: -20px; bottom: -12px; height: 12px; border-radius: 6px; background: var(--yb-red-edge); opacity: 0.35; }
+      .gauge { position: absolute; left: 96px; bottom: 16px; width: 58px; height: 150px; background: #fff; border-radius: 16px; overflow: hidden; box-shadow: inset 0 0 0 4px rgba(0,0,0,0.06); }
+      .gauge .g-fill { position: absolute; left: 0; right: 0; bottom: 0; height: 100%; background: var(--yb-green); transform-origin: 50% 100%; will-change: transform; }
+      .gauge .g-line { position: absolute; left: 6px; right: 6px; top: 10px; height: 6px; border-radius: 3px; background: rgba(0,0,0,0.12); }
+      .gauge .g-zero { position: absolute; left: 0; right: 0; bottom: 0; height: 12px; background: var(--yb-red); opacity: 0; }
+      .plab { position: absolute; top: 470px; left: 0; right: 0; height: 90px; font-size: 52px; font-weight: 900; line-height: 90px; opacity: 0; font-variant-numeric: tabular-nums; }
+      .plab .hl, .plab .hl-bad { display: inline-block; line-height: 1.15; padding: 4px 26px; border-radius: 999px; }
+      .plab .hl { box-shadow: 0 8px 0 var(--yb-yellow-edge); }
+      .plab .hl-bad { box-shadow: 0 8px 0 var(--yb-red-edge); }
+      .plab .pi { display: inline-block; width: 52px; height: 52px; vertical-align: -10px; margin-right: 12px; color: var(--ink); }
+      #i4-right .plab { font-size: 44px; }
+      /* Mini frise : formulaire → rayon → labo. Le curseur saute à la fiole, après le rayon. */
+      #i4-mini { position: absolute; top: 1160px; left: 140px; width: 800px; height: 190px; opacity: 0; will-change: transform; }
+      #i4-mline { position: absolute; top: 30px; left: 0; width: 800px; height: 8px; background: #e6e6e1; border-radius: 4px; }
+      .mstep { position: absolute; top: -2px; width: 44px; height: 44px; border-radius: 50%; background: #fff; box-shadow: 0 5px 0 #d8d8d2; }
+      .mstep.done { background: var(--yb-green); box-shadow: 0 5px 0 var(--yb-green-edge); }
+      #i4-m1 { left: 55px; }
+      #i4-m2 { left: 378px; }
+      #i4-m3 { left: 701px; }
+      .mlab { position: absolute; top: 60px; width: 200px; text-align: center; color: var(--ink); font-size: 28px; font-weight: 900; white-space: nowrap; }
+      .mlab svg.lucide { display: block; width: 50px; height: 50px; margin: 0 auto 6px; color: inherit; }
+      #i4-l1 { left: -23px; }
+      #i4-l2 { left: 300px; }
+      #i4-l3 { left: 623px; color: var(--ink-faint); }
+      #i4-cur { position: absolute; top: -56px; left: 49px; width: 0; height: 0;
+        border-left: 28px solid transparent; border-right: 28px solid transparent; border-top: 40px solid var(--yb-red); will-change: transform; }
+    </style>
+  </head>
+  <body>
+    <div id="i4-root" data-composition-id="creatine-i4-dose" data-start="0" data-duration="7.9" data-width="1080" data-height="1920">
+      <div id="i4-scene" class="clip" data-start="0" data-duration="7.9" data-track-index="0">
+        <div class="stage">
+          <div class="panel" id="i4-left">
+            <div class="yb-card"><div class="bigsac"><div class="seal"><i></i></div><div class="tag"><div class="ti"><i data-lucide="tag"></i></div><small>Étiquette</small><b>3 g</b></div></div></div>
+            <div class="plab"><span class="hl">3 g</span></div>
+          </div>
+          <div class="panel" id="i4-right">
+            <div class="yb-card"><div class="cut"><div class="floor"></div><div class="gauge"><div class="g-fill"></div><div class="g-line"></div><div class="g-zero"></div></div></div></div>
+            <div class="plab"><span class="pi"><i data-lucide="search"></i></span>Dedans : <span class="hl-bad">0</span></div>
+          </div>
+          <div id="i4-mini">
+            <div id="i4-mline"></div>
+            <div class="mstep done" id="i4-m1"></div><div class="mstep done" id="i4-m2"></div><div class="mstep" id="i4-m3"></div>
+            <div class="mlab" id="i4-l1"><i data-lucide="file-text"></i>Déclaration</div>
+            <div class="mlab" id="i4-l2"><i data-lucide="shopping-cart"></i>Vente</div>
+            <div class="mlab" id="i4-l3"><i data-lucide="flask-conical"></i>Contrôle</div>
+            <div id="i4-cur"></div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Le son -->
+      <audio id="i4-s-01" src="assets/sfx/soft_click.wav" data-start="0.0" data-duration="0.22" data-track-index="101" data-volume="1"></audio>
+      <audio id="i4-s-02" src="assets/sfx/clicks.wav" data-start="0.35" data-duration="0.35" data-track-index="102" data-volume="0.95"></audio>
+      <audio id="i4-s-03" src="assets/sfx/soft_click.wav" data-start="2.64" data-duration="0.22" data-track-index="103" data-volume="1"></audio>
+      <audio id="i4-s-04" src="assets/sfx/wrong.mp3" data-start="3.05" data-duration="0.5" data-track-index="104" data-volume="0.6"></audio>
+      <audio id="i4-s-05" src="assets/sfx/clicks.wav" data-start="3.94" data-duration="0.35" data-track-index="105" data-volume="0.95"></audio>
+      <audio id="i4-s-06" src="assets/sfx/air-woosh.wav" data-start="5.85" data-duration="1.0" data-track-index="106" data-volume="0.09"></audio>
+      <audio id="i4-s-07" src="assets/sfx/impacts.mp3" data-start="6.5" data-duration="1.3" data-media-start="0.2" data-track-index="107" data-volume="0.43"></audio>
+    </div>
+
+    <script>
+      (function () {
+        window.__timelines = window.__timelines || {};
+        if (window.lucide) window.lucide.createIcons();
+        var tl = gsap.timeline({ paused: true });
+
+        // 0.00 « Si l'étiquette dit » — le sachet, l'étiquette, 3 g.
+        tl.fromTo("#i4-left", { opacity: 0, y: 60, scale: 0.92 }, { opacity: 1, y: 0, scale: 1, duration: 0.45, ease: "power3.out" }, 0);
+        tl.fromTo("#i4-left .plab", { opacity: 0, y: 16 }, { opacity: 1, y: 0, duration: 0.3, ease: "power3.out" }, 0.35);
+        tl.fromTo("#i4-left .bigsac", { rotation: 0 }, { rotation: -4, duration: 0.18, ease: "power1.inOut", repeat: 3, yoyo: true, immediateRender: false }, 0.6);
+        tl.to("#i4-left .bigsac", { rotation: 0, duration: 0.18 }, 1.32);
+
+        // 2.64 « le bonbon contient zéro » — le bonbon en coupe, la jauge se vide sur « zéro », la loupe.
+        tl.fromTo("#i4-right", { opacity: 0, y: 60, scale: 0.92 }, { opacity: 1, y: 0, scale: 1, duration: 0.45, ease: "power3.out" }, 2.64);
+        tl.fromTo("#i4-right .g-fill", { scaleY: 0.95 }, { scaleY: 0.02, duration: 0.5, ease: "power3.in" }, 3.0);
+        tl.to("#i4-right .g-zero", { opacity: 1, duration: 0.15 }, 3.45);
+        tl.fromTo("#i4-right .cut", { scaleY: 1, scaleX: 1 }, { scaleY: 0.92, scaleX: 1.05, duration: 0.1, ease: "power1.out", immediateRender: false }, 3.5);
+        tl.to("#i4-right .cut", { scaleY: 1, scaleX: 1, duration: 0.35, ease: "elastic.out(1, 0.5)" }, 3.6);
+        tl.fromTo("#i4-right .plab", { opacity: 0, y: 16 }, { opacity: 1, y: 0, duration: 0.3, ease: "power3.out" }, 3.4);
+
+        // 3.94 « personne ne le sait avant le contrôle » — la frise. 5.66 « les contrôles arrivent après la vente » — le curseur saute.
+        tl.fromTo("#i4-mini", { opacity: 0, y: 24 }, { opacity: 1, y: 0, duration: 0.35, ease: "power3.out" }, 3.94);
+        tl.fromTo("#i4-cur", { x: 0 }, { x: 646, duration: 0.6, ease: "power2.inOut" }, 5.9);
+        tl.fromTo("#i4-cur", { y: 0 }, { y: -90, duration: 0.3, ease: "power2.out" }, 5.9);
+        tl.to("#i4-cur", { y: 0, duration: 0.3, ease: "power2.in" }, 6.2);
+        tl.fromTo("#i4-m3", { scale: 1 }, { scale: 1.25, duration: 0.12, ease: "power2.out", repeat: 1, yoyo: true, immediateRender: false }, 6.5);
+        tl.to("#i4-l3", { color: "#d63a3a", duration: 0.2 }, 6.5);
+
+        // Tenue : rien ne bouge après 6.8, la voix finit à 7.66.
+        window.__timelines["creatine-i4-dose"] = tl;
+      })();
+    </script>
+  </body>
+</html>

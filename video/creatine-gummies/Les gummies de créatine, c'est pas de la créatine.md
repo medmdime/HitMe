@@ -1,9 +1,9 @@
 ---
 type: reel
 quoi: "short, 1:33, tête parlante"
-etat: "écrit ; tourné, monté et publié dimanche 20"
+etat: "tourné le 20, monté le 22, publié le 22 septembre"
 tournage: 2026-09-20
-sortie: 2026-09-20
+sortie: 2026-09-22
 ---
 # Les gummies de créatine, c'est pas de la créatine
 
@@ -13,7 +13,7 @@ sortie: 2026-09-20
 |---|---|
 | État | **écrit**, 295 mots. À relire à voix haute, puis à tourner |
 | Tournage | [[2026-09-20 🎬 Tournage · quatre shorts et les pickups\|dimanche 20 septembre]], 15 h 25 |
-| Sortie | [[2026-09-20 📱 Les gummies de créatine, c'est pas de la créatine\|dimanche 20 septembre]] au soir : Instagram, puis TikTok et YouTube Shorts en miroir |
+| Sortie | prévue [[2026-09-22 📱 Les gummies de créatine, c'est pas de la créatine\|dimanche 20 septembre]], **publiée mardi 22 septembre** : Instagram, puis TikTok et YouTube Shorts en miroir. La légende publiée est dans [[video/creatine-gummies/SCRIPT#4. La légende\|SCRIPT § 4]] |
 | Accessoires | un pot de créatine en poudre, un sachet de gummies. Le sachet reste fermé : on ne goûte rien à l'image |
 
 ## Les fichiers

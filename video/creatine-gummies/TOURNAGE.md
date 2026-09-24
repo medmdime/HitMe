@@ -2,7 +2,7 @@
 
 Reel **1:20** · 230 mots · turn à 70 % · sortie à planifier
 
-Tout se tourne face caméra, sans animation : les chiffres et les mots-clés deviennent des cartes texte au montage. Trois enregistrements, et rien d'autre :
+Tout se tourne face caméra, d'une traite : c'est ta voix qui porte tout, y compris sous les inserts. À l'image, on alterne : toi, puis l'insert plein cadre avec ta voix dessous, puis toi. Le détail seconde par seconde est dans [[video/creatine-gummies/PLAN-DE-MONTAGE|PLAN-DE-MONTAGE]] : 39 s de toi sur 80, le reste sous I1 à I4. Trois enregistrements, et rien d'autre :
 
 | | Quoi | Prises | Pourquoi |
 |---|---|---|---|
@@ -69,7 +69,7 @@ Tu ne bouges pas la caméra entre les prises. Les punch-in se fabriquent au reca
 
 **Tonalité.** Tu valides son monde avant de l'ouvrir : « Tout le monde sait » se dit avec lui. « Ce n'est même pas le pire » sans appuyer — la boucle reste ouverte. « Enfin… » plus bas, le doute.
 
-**À l'écran.** PAS DE CRÉATINE en rouge, puis SI VRAIMENT DEDANS ?
+**À l'écran.** LE PLUS DUR : TOUS LES JOURS, puis **INSERT I1** de 0:20 à 0:34 (ta voix continue dessous), puis SI VRAIMENT DEDANS ? sur toi à 0:34.
 
 **Montage.** La musique entre à plein volume sur la coupe après le hook, puis se range sous la voix.
 
@@ -87,7 +87,7 @@ Tu ne bouges pas la caméra entre les prises. Les punch-in se fabriquent au reca
 
 **Tonalité.** Tu nommes tes témoins : « Lui, c'est James Smith » présente quelqu'un, pas un concept. « Huit » et « presque zéro » secs, au même rythme. « Des bonbons normaux, quoi » : le mépris est dans le silence derrière, pas dans la voix.
 
-**À l'écran.** 23 MARQUES, 8 CONFORMES, PRESQUE ZÉRO, et un bandeau de source discret : Smith + NOW, 2024.
+**À l'écran.** 23 MARQUES, 8 CONFORMES, PRESQUE ZÉRO : tout est porté par **l'INSERT I2** de 0:41 à 0:59, avec son bandeau de source. Toi à 0:38 pour « Lui, c'est James Smith ».
 
 ### 4 · LE TURN · 0:59
 
@@ -115,7 +115,7 @@ Tu ne bouges pas la caméra entre les prises. Les punch-in se fabriquent au reca
 
 **Tonalité.** Net, sans colère. Chaque phrase parle du gummy et de sa dose, rien d'autre : pas d'établissements, pas de procès-verbaux. « Trois grammes… zéro » : les deux chiffres se détachent, même rythme. Pas de nom de marque, pas d'accusation.
 
-**À l'écran.** SUR DÉCLARATION, puis PERSONNE NE TESTE, 3 g OU ZÉRO.
+**À l'écran.** **INSERT I3** de 1:04 à 1:11 (déclaration, aucun test), puis **INSERT I4** de 1:11 à 1:16 (3 g ou zéro, curseur sur CONTRÔLE). Ta voix continue dessous, sans interruption.
 
 ### 6 · la chute · 1:24
 
@@ -148,12 +148,15 @@ Les fichiers vont dans `D:\videos\`, nommés `creatine-gummies-traite-1.mp4`, `c
 
 | Temps | Bloc | Ce qu'on voit |
 |---|---|---|
-| 0:00 → 0:14 | 1 · le hook | toi, face caméra · ARNAQUE AUX GUMMIES ? puis IL A RAISON. Un carton, aucun sous-titre mot à mot sur le hook |
-| 0:14 → 0:38 | 2 · le pivot | toi, face caméra · PAS DE CRÉATINE, puis SI VRAIMENT DEDANS ? |
-| 0:38 → 0:59 | 3 · la preuve | toi, face caméra · 23 MARQUES, 8 CONFORMES, PRESQUE ZÉRO, source Smith + NOW 2024 |
-| 0:59 → 1:04 | 4 · LE TURN | toi, face caméra · ET LE PLUS FOU…, puis ON PEUT ENCORE LES VENDRE |
-| 1:04 → 1:16 | 5 · la résolution | toi, face caméra · SUR DÉCLARATION, puis PERSONNE NE TESTE, 3 g OU ZÉRO |
-| 1:16 → 1:20 | 6 · la chute | toi, face caméra · LABO INDÉPENDANT, puis À SAUVEGARDER |
+| 0:00 → 0:14 | 1 · le hook | toi · ARNAQUE AUX GUMMIES ? puis IL A RAISON. Un carton, aucun sous-titre mot à mot sur le hook |
+| 0:14 → 0:20 | 2 · le pivot | toi · PAS DE CRÉATINE |
+| 0:20 → 0:34 | 2 · le pivot | **INSERT I1**, ta voix dessous · SI VRAIMENT DEDANS ? sur toi à 0:34 |
+| 0:34 → 0:41 | 2 · le pivot, 3 · la preuve | toi, le sachet revient · JAMES SMITH |
+| 0:41 → 0:59 | 3 · la preuve | **INSERT I2**, ta voix dessous |
+| 0:59 → 1:04 | 4 · LE TURN | toi, punch-in serré · ET LE PLUS FOU…, puis ON PEUT ENCORE LES VENDRE |
+| 1:04 → 1:11 | 5 · la résolution | **INSERT I3**, ta voix dessous |
+| 1:11 → 1:16 | 5 · la résolution | **INSERT I4**, ta voix dessous |
+| 1:16 → 1:20 | 6 · la chute | toi · LABO INDÉPENDANT, puis À SAUVEGARDER |
 
 Les temps sont ceux du script ; ta traite réelle fixera les vrais. Vise la durée annoncée, plafond dix secondes de plus.
 

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="fr" data-resolution="portrait">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=1080, height=1920">
+    <link rel="stylesheet" href="compositions/components/kit.css">
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.14.2/dist/gsap.min.js"></script>
+    <style>
+      @font-face {
+        font-family: "Archivo";
+        src: url("assets/fonts/Archivo.woff2") format("woff2");
+        font-weight: 400 900;
+        font-display: block;
+      }
+      html, body { background: var(--bg); }
+    </style>
+  </head>
+  <body>
+    <!--
+      Enchaînement de relecture UNIQUEMENT : les 4 inserts bout à bout,
+      pour vérifier le rythme. Le montage final se fait dans CapCut,
+      où chaque composition est rendue séparément et posée à son timecode.
+      Voir SCRIPT.md § 2 et PLAN-DE-MONTAGE.md.
+    -->
+    <div id="root" data-composition-id="main" data-start="0" data-duration="33.9" data-width="1080" data-height="1920">
+      <div id="host-i1" data-composition-id="creatine-i1-poudre" class="clip" data-start="0" data-duration="9.3" data-track-index="0" data-composition-src="compositions/I1-poudre-contre-bonbon.html"></div>
+
+      <div id="host-i2" data-composition-id="creatine-i2-marques" class="clip" data-start="9.3" data-duration="11.3" data-track-index="0" data-composition-src="compositions/I2-vingt-trois-marques.html"></div>
+
+      <div id="host-i3" data-composition-id="creatine-i3-frise" class="clip" data-start="20.6" data-duration="5.4" data-track-index="0" data-composition-src="compositions/I3-vendre-puis-controler.html"></div>
+
+      <div id="host-i4" data-composition-id="creatine-i4-dose" class="clip" data-start="26" data-duration="7.9" data-track-index="0" data-composition-src="compositions/I4-trois-grammes-ou-zero.html"></div>
+    </div>
+
+    <script>
+      window.__timelines = window.__timelines || {};
+      window.__timelines["main"] = gsap.timeline({ paused: true });
+    </script>
+  </body>
+</html>

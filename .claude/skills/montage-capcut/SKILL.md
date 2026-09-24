@@ -57,6 +57,23 @@ Durée du hook : **5 à 6 s**. Pas 10. C'est la seule durée du montage qui ne d
 la longueur totale : le hook se termine quand le clip emprunté a fini de dire la bêtise,
 et ça prend toujours à peu près le même temps.
 
+**Si la prise de Mohamed qui écoute n'a pas été filmée**, la générer avec Higgsfield plutôt
+que de la refaire tourner (fait le 22 septembre 2026 pour la créatine, `rushes/attente-hook.mp4`) :
+prendre la **première image** d'une prise face caméra (avant qu'il parle : bouche fermée, regard
+caméra, mains baissées), la recadrer en 9/16 autour de lui (`crop=1215:2160:1620:0` sur un
+rush 4K où il est à 57 %), l'envoyer par `media_upload` → `curl PUT` → `media_confirm`, puis
+`generate_video` avec `seedance_2_5`, `mode=omni_reference`, rôle `start_image`, 14 s, 1080p,
+9/16, `generate_audio=false`. **Le prompt décrit une réaction, pas une attente** : « immobile,
+bouche fermée, regard caméra » donne un clip exact mais figé et triste, que Mohamed a trouvé
+glauque. Ce qui marche : il regarde le clip hors champ (les yeux un peu à droite de l'objectif,
+en bas comme un téléphone ou en haut), le visage se détend dès la première seconde, il hoche la
+tête, lève les sourcils, sourit en coin, et **revient vers la caméra sur les deux dernières
+secondes** avec un petit signe d'approbation, pour enchaîner sur sa première phrase. Silencieux,
+mains hors champ, caméra fixe, même visage et même fond. 168 crédits, environ 4 minutes ;
+refuser le preset que le serveur propose (`declined_preset_id`). Vérifier sur une planche à
+1 i/s qu'il ne parle pas avant de la poser. Générer deux variantes (approbation / sceptique
+amusé) pour qu'il choisisse.
+
 ### Après le hook
 
 Tout passe sur `incrustation`, plein cadre, échelle 1.0, alternance caméra / animation.
@@ -273,9 +290,12 @@ Contraintes vérifiées :
 
 - `add_subtitle` **plante** sans `font` — passer `Inter_Black`
 - `save_draft` accepte un `draft_folder` non déclaré. **Sans lui, le projet s'ouvre vide.**
-- `speed` **n'est pas appliqué à l'emprise timeline** : un clip de 16 s à vitesse 1,34 occupe
-  quand même 16 s et écrase le suivant. Ré-étalonner les fichiers en amont avec ffmpeg
-  (`setpts`) plutôt que de compter sur ce paramètre.
+- `speed` **marche** dès que `start` et `end` sont donnés : l'emprise timeline vaut
+  `(end − start) / speed`, et `start`/`end` se lisent dans le fichier à vitesse normale. Sans
+  `end`, le segment part à longueur nulle et l'enregistrement le rallonge à la durée entière du
+  fichier — c'est sans doute ce qui donnait autrefois « un clip de 16 s à vitesse 1,34 qui
+  occupe quand même 16 s et écrase le suivant ». Vérifié le 22 septembre 2026 sur la créatine
+  (§ 3 de la méthode) : le plan s'ouvre dans CapCut avec « Vitesse 1,08x », modifiable.
 - Il faut un `end` et un `target_start` explicites sur chaque `add_video`, sinon le segment
   est créé à longueur nulle.
 - Deux sons qui se recouvrent sur la même piste sont refusés — répartir sur `sfx`, `sfx2`,
@@ -297,3 +317,191 @@ convertit à la première ouverture.
 
 Pour relire un montage terminé, c'est **`draft_content.json`** qu'il faut ouvrir, pas
 `draft_info.json` — ce dernier reste figé sur la version écrite par le MCP.
+
+---
+
+## La méthode de la vidéo créatine (22 septembre 2026) — à suivre telle quelle
+
+Quatre versions du projet ont été nécessaires ; celle-ci est la bonne. Elle répond à ce que
+Mohamed a demandé après avoir ouvert le projet : sa voix collée à sa vidéo et prioritaire, des
+cuts serrés, les transitions de CapCut, un zoom qui attire l'attention, chaque son réglable.
+
+### 1. La voix d'abord — mesurer avant de mixer
+
+Les prises au téléphone sortent à **−28 à −30 LUFS**, soit 12 dB sous un mixage normal. Posées
+telles quelles, tout le reste paraît trop fort. Avant tout : normaliser la voix **dans le
+fichier, sans toucher à l'image** :
+
+```
+ffmpeg -i brut/scene-1.mp4 -c:v copy -af "loudnorm=I=-16:TP=-1.5:LRA=11" -c:a aac -b:a 192k -ar 48000 scene-1.mp4
+```
+
+Vérifier avec `ffmpeg -i f.mp4 -af ebur128=peak=true -f null -` : **−16 LUFS, crête −1,5 dBFS**.
+Les originaux restent dans `rushes/brut/`. Tous les volumes du tableau du § 6 sont relatifs à
+une voix à −16 LUFS ; sur cette vidéo Mohamed a demandé les bruitages **à 80 %** de ces valeurs
+en plus, pour que sa voix domine nettement.
+
+**C'est la seule chose rendue en amont.** Un simple gain dans CapCut ne la remplace pas : les
+prises ont des crêtes à −8 dBFS (scene-2) pour −30 LUFS, +14 dB de volume les ferait saturer,
+alors que `loudnorm` limite en même temps qu'il remonte. **Tout le reste — vitesse, cadrage,
+zoom, transitions, volumes — se règle dans CapCut, jamais dans le fichier** : Mohamed continue
+le montage dessus et doit pouvoir tout changer (demande du 22 septembre 2026, après une version
+où la vitesse avait été rendue par ffmpeg).
+
+### 2. Les pistes
+
+| Piste | Contenu | Volume |
+|---|---|---|
+| `main` | le clip emprunté du hook, seul | 1.00 |
+| `incrustation` | **tous les plans face caméra, avec leur propre son**, bord à bord | 1.00 |
+| `inserts` | les animations en surimpression, **chacune encadrée d'une copie de 0,6 s du plan face caméra** | **0** |
+| `musique`, `musique2` | morceau 1 puis morceau 2 | 0.11 / 0.24 |
+| `sfx`, `sfx2`, `sfx3` | riser / whoosh / impact | 0.19 / 0.07 / 0.34 |
+| `fx1` à `fx4` | les sons des inserts, un par un | `sons-des-inserts.json` |
+| `subtitle` | le SRT, face caméra seulement | |
+
+**Jamais de piste voix séparée.** Une version posait les rushes à volume 0 et leur son sur une
+piste `voix` : CapCut ne l'affichait pas, Mohamed ne retrouvait plus sa voix, et une coupe sur
+l'image ne suivait plus le son. La voix reste dans le plan.
+
+**Les orientations.** Les rushes sont horizontaux (3840×2160), le clip emprunté vertical
+(720×1280). Le vertical remplit la toile à l'échelle 1, un rush horizontal à l'échelle **3,16**
+(`scale_x` / `scale_y` sur `add_video`). Importer tel quel, jamais de recadrage ffmpeg.
+
+### 3. Quand couper — les cuts serrés
+
+Transcrire chaque prise mot à mot (faster-whisper `medium`, `language='fr'`,
+`word_timestamps=True`, CPU int8 ; VAD et CUDA ne marchent pas sur cette machine). Puis :
+
+- début du plan = **premier mot − 0,12 s**, fin = **dernier mot + 0,15 s** ; aucune respiration ;
+- quand un insert entre sur le premier mot d'un plan, le plan commence **sur le mot** (l'insert
+  couvre l'image, seul le son compte) ;
+- l'insert entre sur le premier mot de sa ligne et sort sur le mot où la tête revient ;
+- la chute garde deux secondes de tenue ; le turn n'a pas de silence dans la prise.
+
+Les cues des inserts se recalent sur ces timestamps **avant** le rendu final (`inserts-youbud`).
+Mohamed parle plus vite que le brief : la créatine est passée de 45 s à 34 s d'inserts.
+
+**Tout ce qui est face caméra est accéléré ×1,08**, voix et image, et les inserts avec, pour
+rester calés sur la voix. 1,15 a été jugé trop rapide ; 1,08 est la bonne valeur. **La vitesse
+se règle dans CapCut, jamais dans le fichier** : Mohamed veut pouvoir la changer, et un rush
+accéléré par ffmpeg ne se rattrape plus. Sur chaque `add_video` : le fichier **à vitesse
+normale** (`rushes/normalise/`, `inserts/vitesse-normale/`), `speed=1.08`, et `start`/`end`
+lus dans ce fichier, donc **× 1,08** par rapport aux temps de la transcription accélérée.
+L'emprise timeline vaut `(end − start) / 1,08`, les positions ne bougent pas, et les timecodes
+du montage (sous-titres, sons, images clés) restent ceux de la timeline accélérée. Le clip
+emprunté du hook reste à `speed=1`. Le plus sûr : partir de la durée timeline voulue et poser
+`end = start + durée × 1,08`, pour que les clips voisins restent bord à bord.
+
+Ne jamais pré-rendre la vitesse (`setpts`/`atempo`) : fait une fois, rejeté le 22 septembre
+2026 — « tout doit être sur CapCut ».
+
+**Le cadrage.** Mohamed est à 57 % de la largeur dans ses rushes 16/9. À l'échelle 3,16, le
+rush se décale vers la gauche pour centrer sa poitrine : `transform_x` entre −0,42 et −0,51 selon
+la prise (unités : ±1 = demi-largeur de toile ; 1 px source = 0,889 px de toile). Mesurer avec
+une grille à 10 % sur une image de chaque prise, les copies-voisines prennent le même décalage.
+Vertical : impossible sans bande noire à 3,16, il faut monter l'échelle.
+
+### 4. Les transitions — celles de CapCut, pas des images clés
+
+Mohamed veut les transitions de CapCut : tête → animation `Left` (l'image part vers la gauche),
+animation → tête `Right`, 0,3 s. Une transition CapCut ne joue qu'**entre deux clips voisins
+d'une même piste**, et l'insert est en surimpression. Le voisin est donc fabriqué : sur la piste
+`inserts`, avant et après chaque insert, **une copie de 0,6 s du plan face caméra** (même rush,
+même `start`, volume 0, échelle 3,16), invisible à l'écran parce qu'elle montre exactement ce
+que le rush montre dessous. La transition se pose sur le clip qui **précède** la coupe : `Left`
+sur la copie d'avant, `Right` sur l'insert. Deux inserts qui s'enchaînent : rien entre eux.
+**Un whoosh sur chaque coupe, sans exception, et qu'on l'entende** : rush → rush, rush →
+insert, insert → insert, la reprise de la musique, la fin. 0,2 s avant la coupe, **à 0.35**. Le
+0.09 du tableau vient d'un montage où la voix n'était pas normalisée ; sous une voix à −16 LUFS
+il est inaudible, et Mohamed a demandé « un vfff » sur chaque transition. Les whoosh internes des
+inserts passent à 0.25 pour la même raison.
+
+Ne pas remplacer par des images clés de position sur l'insert : « transitions bizarres »,
+rejetées.
+
+**Le plan de présentation.** Quand Mohamed dit « Lui, c'est James Smith », on ne voit ni
+Mohamed ni la vidéo de James : **un insert HyperFrames de 1,6 s** (`I0-james-smith`), un
+bonhomme Lucide `person-standing` avec la tête détourée de James en emoji et la pilule « James
+Smith », qui bascule à mi-course (le bonhomme file à gauche, le logo NOW arrive de la droite,
+pilule « NOW »). En surimpression sur `inserts`, précédé d'une copie-voisine avec `Left`, et
+lui-même avec `Left` vers l'insert qui suit sur « Avec NOW ». Le glissement finit sur « Lui ».
+
+### 5. Le zoom — un seul par plan
+
+Le motif voulu, après deux versions rejetées : **un seul zoom par plan face caméra**. Zoom avant
+sur 2 à 3 s, puis retour à la normale, puis on garde. Sur le plan suivant, l'inverse : on arrive
+zoomé, un zoom arrière, puis un zoom avant, puis on garde. Jamais plusieurs coups de zoom
+d'affilée, jamais de reset sec répété. Base 3,16, zoom **+10 %** (3,48), punch-in du turn
+**+15 %** (3,64), courbes linéaires (ease in à la main si on veut). Le zoom se coupe aux fins de
+mots.
+
+- premier plan : 3,16 → 3,48 sur la première phrase, retour à 3,16 avant la copie-voisine ;
+- retour après un insert : la copie-voisine arrive zoomée (3,40) et zoome en arrière, le rush
+  continue le zoom arrière derrière ;
+- **le turn** : la copie-voisine commence le zoom (3,16 → 3,33), le rush monte à 3,64 sur « Et
+  le plus fou dans tout ça », retour à 3,16 sur « c'est qu'ils peuvent encore les vendre », et
+  ça reste normal ;
+- la chute : arrive zoomée (3,48), zoom arrière sur 2,5 s, un zoom avant sur 2,5 s, puis on garde.
+
+Pendant une fenêtre de copie-voisine, le rush et la copie ont la même échelle au même instant,
+sinon ça saute à la coupe.
+
+**Où écrire une image clé.** CapCut stocke `time_offset` en **temps source absolu**, en
+microsecondes du fichier, pas en décalage depuis le début du plan : pour un zoom à l'instant
+`t` de la timeline, sur un plan qui commence à `tgt_start` avec `source_start` et `speed`,
+`time_offset = source_start + (t − tgt_start) × speed`. Vérifié sur des projets faits à la
+main dans CapCut : les offsets tombent entre `source.start` et `source.end`, au-delà de la
+durée du plan. Un offset relatif au plan met le zoom en avance de `source_start` (la version
+`…92403…` de la créatine avait ce défaut).
+
+C'est la technique documentée par CapCut (image clé d'échelle au début de la phrase, seconde
+image clé 2 à 6 s plus tard à +3 à +12 %, ease in), utilisée avec un reset net au lieu d'un
+retour progressif.
+
+### 6. Les musiques et leur bascule
+
+Morceau 1 **Careless Wandering** à 0.11, entre sur la coupe qui sort du hook et **s'arrête net
+sur la coupe du turn**. Pendant « Et le plus fou dans tout ça » il n'y a plus de musique : **le
+vent** (`rizer-windy`, les 1,4 dernières secondes, 0.19) monte sous la phrase. Morceau 2
+**Particle Emission** à 0.24 **repart sur le mot suivant** (« c'est qu'ils peuvent… ») avec un
+impact à 0.34, en même temps que le retour à la normale du zoom. Whoosh 0,2 s avant la coupe et
+0,2 s avant la reprise. Fin de la vidéo : whoosh, impact, la musique s'arrête. Fichiers dans
+`C:\Users\melmdim\Downloads\Audio`, copiés dans `musique/`.
+
+### 7. Le son des inserts
+
+Les compositions décrivent leur son ; dans CapCut **l'insert est à volume 0 et chaque son est
+reposé à part**, exporté en `sons-des-inserts.json` (temps = début de l'insert + `data-start`,
+durée, `data-media-start`, volume × 0,8), réparti en glouton sur `fx1`, `fx2`… sans
+chevauchement. **Pas huit réussites d'affilée** : une liste qui se remplit prend des bulles
+(`bloop` en montant à peine) et une seule `correct` sur le dernier. **Un objet qui tourne a son
+son** (le logo NOW : `rizer-mettalic` 0,9 s à 0.15), **un objet qu'on secoue a son cliquetis**
+(le pot : six `soft_click` à 0,09 s d'écart, 0.3). Ces sons s'écrivent d'abord dans la
+composition, puis passent par l'export.
+
+### 8. Ce que le MCP ne sait pas faire
+
+- **`add_video_keyframe` cherche le segment par le temps** : une image clé pile sur une coupe
+  atterrit sur le segment qui finit là. Ne pas l'utiliser : sauvegarder, puis écrire les
+  `common_keyframes` dans `draft_info.json` (`KFTypeScaleX` + `KFTypeScaleY`, `time_offset`
+  **en temps source absolu**, voir la règle du § 5, gabarit copié d'une image clé existante).
+  CapCut Windows convertit `draft_info.json` en `draft_content.json` à l'ouverture et **garde**
+  ces images clés et les transitions (vérifié).
+- **Refaire une version** ne passe pas par 130 appels MCP : relire le `draft_content.json` de
+  la version précédente (segments, `source_timerange`, `target_timerange`, `clip`, transitions,
+  images clés, pistes audio), retrouver chaque fichier source par son md5 dans `assets/`, et
+  rejouer le tout dans un script avec le venv du MCP (`add_video_track`, `add_audio_track`,
+  `add_subtitle_impl`, `save_draft_impl(draft_id, draft_folder=…)` importés en direct), en ne
+  changeant que ce qui change. CapCut recale les segments sur ses images (30 i/s) à l'ouverture :
+  les valeurs relues sont déjà alignées.
+- `add_video` n'a pas d'animation d'entrée ni de sortie (seul `add_image` en a).
+- Un `.mp4` posé avec `add_audio` n'apparaît pas dans CapCut.
+- Les cartons texte ne se positionnent pas ; les fondus de musique non plus. À la main.
+- Transitions valides : `Left`, `Right`, `Pull_in`, `Pull_Out`, `Slide`, `Wipe_Left`,
+  `Wipe_Right`, `Mix`, `Dissolve` (liste complète :
+  `D:\editingvideo\tools\VectCutAPI\venv-capcut\Scripts\python.exe -c "import pyJianYingDraft as d; print([a for a in dir(d.CapCut_Transition_type) if not a.startswith('_')])"`).
+
+Les noms de transitions valides du MCP se listent depuis son venv :
+`D:\editingvideo\tools\VectCutAPI\venv-capcut\Scripts\python.exe -c "import pyJianYingDraft as d; print([a for a in dir(d.CapCut_Transition_type) if not a.startswith('_')])"`.
+Utiles : `Left`, `Right`, `Pull_in`, `Pull_Out`, `Slide`, `Wipe_Left`, `Wipe_Right`, `Mix`, `Dissolve`.

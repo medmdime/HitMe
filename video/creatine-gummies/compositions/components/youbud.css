@@ -1,0 +1,104 @@
+/* ============================================================
+   Kit YouBud — la direction artistique de l'appli (Ubod) posée
+   sur le kit science-reel. Chargé APRÈS kit.css : il redéfinit
+   les tokens sémantiques et ajoute les composants sans bordure.
+   Vert vif, orange, jaune, cartes teintées, rebord en ombre
+   pleine sous chaque carte (le "bouton 3D" de l'appli).
+   ============================================================ */
+
+:root {
+  --bg: #f7f7f4;
+  --card: #ffffff;
+  --ink: #3c3c3c;
+  --ink-soft: #666666;
+  --ink-faint: #767676;
+
+  /* La palette YouBud : chaque couleur, sa teinte claire, son rebord */
+  --yb-green: #58cc02;
+  --yb-green-2: #e6f7d5;
+  --yb-green-edge: #46a302;
+  --yb-orange: #ff9600;
+  --yb-orange-2: #ffefd6;
+  --yb-orange-edge: #e07f00;
+  --yb-yellow: #ffc800;
+  --yb-yellow-2: #fff5cc;
+  --yb-yellow-edge: #e0ae00;
+  --yb-blue: #1cb0f6;
+  --yb-blue-2: #dcf2fd;
+  --yb-blue-edge: #1899d6;
+  --yb-red: #ff4b4b;
+  --yb-red-2: #ffe2e2;
+  --yb-red-edge: #e03a3a;
+  --yb-purple: #ce82ff;
+  --yb-purple-2: #f3e5ff;
+  --yb-purple-edge: #b36be0;
+
+  /* Sémantique : même noms que le kit, couleurs YouBud */
+  --good: var(--yb-green);
+  --good-ink: #3f9a00;
+  --bad: var(--yb-red);
+  --bad-ink: #d63a3a;
+  --key: var(--yb-yellow);
+  --in: var(--yb-orange);
+  --out: var(--yb-blue);
+}
+
+/* Surbrillance : un seul mot par carton. Encre sur vert et jaune,
+   blanc sur rouge (lisible, et c'est la convention de l'appli). */
+.hl { background: var(--yb-yellow); color: var(--ink); }
+.hl-good { background: var(--yb-green); color: var(--ink); }
+.hl-bad { background: var(--yb-red); color: #fff; }
+
+/* ---------- Carte teintée, sans bordure, rebord plein ---------- */
+.yb-card {
+  position: absolute;
+  background: var(--tint, var(--card));
+  border-radius: 36px;
+  box-shadow: 0 10px 0 var(--edge, #e5e5e0);
+  will-change: transform;
+}
+
+/* ---------- Pastille ronde de verdict (coche ou croix) ---------- */
+.yb-badge {
+  position: absolute;
+  width: 96px;
+  height: 96px;
+  border-radius: 50%;
+  background: var(--yb-green);
+  box-shadow: 0 6px 0 var(--yb-green-edge);
+  opacity: 0;
+  will-change: transform;
+}
+.yb-badge.ko { background: var(--yb-red); box-shadow: 0 6px 0 var(--yb-red-edge); }
+.yb-badge svg { position: absolute; inset: 0; width: 100%; height: 100%; }
+.yb-badge path {
+  fill: none;
+  stroke: #fff;
+  stroke-width: 12;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+
+/* ---------- Tête façon emoji : ronde, bord blanc, rebord ---------- */
+.yb-emoji {
+  position: absolute;
+  border-radius: 50%;
+  overflow: hidden;
+  border: 10px solid #fff;
+  background: var(--yb-orange-2);
+  box-shadow: 0 10px 0 rgba(0, 0, 0, 0.08);
+  will-change: transform;
+}
+.yb-emoji img { position: absolute; display: block; }
+
+/* ---------- Étiquette pilule ---------- */
+.yb-pill {
+  display: inline-block;
+  padding: 10px 30px;
+  border-radius: 999px;
+  font-weight: 900;
+  white-space: nowrap;
+}
+
+/* Icônes Lucide : elles prennent la couleur du parent */
+svg.lucide { width: 100%; height: 100%; stroke-width: 2.25; }

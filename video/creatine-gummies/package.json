@@ -1,0 +1,13 @@
+{
+  "name": "creatine-gummies",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "check": "npx --yes hyperframes@0.8.21 check",
+    "draft:I2": "npx --yes hyperframes@0.8.21 render -c compositions/I2-vingt-trois-marques.html -o renders/I2-vingt-trois-marques-draft.mp4 -q draft",
+    "render:I1": "npx --yes hyperframes@0.8.21 render -c compositions/I1-poudre-contre-bonbon.html -o renders/I1-poudre-contre-bonbon.mp4 -q high",
+    "render:I2": "npx --yes hyperframes@0.8.21 render -c compositions/I2-vingt-trois-marques.html -o renders/I2-vingt-trois-marques.mp4 -q high",
+    "render:I3": "npx --yes hyperframes@0.8.21 render -c compositions/I3-vendre-puis-controler.html -o renders/I3-vendre-puis-controler.mp4 -q high",
+    "render:I4": "npx --yes hyperframes@0.8.21 render -c compositions/I4-trois-grammes-ou-zero.html -o renders/I4-trois-grammes-ou-zero.mp4 -q high"
+  }
+}

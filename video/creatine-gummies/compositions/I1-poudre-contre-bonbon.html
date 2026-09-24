@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="fr" data-resolution="portrait">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=1080, height=1920">
+    <link rel="stylesheet" href="compositions/components/kit.css">
+    <link rel="stylesheet" href="compositions/components/youbud.css">
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.14.2/dist/gsap.min.js"></script>
+    <script src="assets/vendor/lucide.min.js"></script>
+    <style>
+      @font-face {
+        font-family: "Archivo";
+        src: url("assets/fonts/Archivo.woff2") format("woff2");
+        font-weight: 400 900;
+        font-display: block;
+      }
+      /* ---- Scène A : la créatine marche, trois bénéfices ---- */
+      #i1-title { position: absolute; top: 300px; left: 0; width: 1080px; text-align: center;
+        font-size: 66px; font-weight: 900; letter-spacing: -0.02em; opacity: 0; will-change: transform; }
+      #i1-title .hl-good { padding: 6px 34px; border-radius: 999px; box-shadow: 0 8px 0 var(--yb-green-edge); }
+      .ben { position: absolute; top: 470px; width: 290px; height: 300px; opacity: 0; transform-origin: 50% 50%; }
+      #i1-b0 { left: 80px; --tint: var(--yb-orange-2); --edge: #f3d9ae; --ic: var(--yb-orange); }
+      #i1-b1 { left: 395px; --tint: var(--yb-purple-2); --edge: #dcc4ef; --ic: var(--yb-purple); }
+      #i1-b2 { left: 710px; --tint: var(--yb-green-2); --edge: #c9e9ab; --ic: var(--yb-green); }
+      .ben .yb-card { left: 0; top: 0; width: 290px; height: 300px; }
+      .ben .ic { position: absolute; left: 85px; top: 46px; width: 120px; height: 120px; color: var(--ic); transform-origin: 50% 50%; will-change: transform; }
+      .ben .bl { position: absolute; left: 0; right: 0; bottom: 38px; text-align: center; font-size: 40px; font-weight: 900; }
+      .ben .yb-badge { right: -18px; top: -22px; width: 88px; height: 88px; }
+
+      /* ---- Scène B : tous les jours, trois cartes calendrier ---- */
+      .dayc { position: absolute; top: 470px; width: 290px; height: 330px; opacity: 0; transform-origin: 50% 50%; }
+      #i1-d0 { left: 80px; --face: var(--yb-green); }
+      #i1-d1 { left: 395px; --face: var(--yb-orange); }
+      #i1-d2 { left: 710px; --face: var(--yb-red); }
+      .dayc .yb-card { left: 0; top: 0; width: 290px; height: 330px; --tint: var(--yb-yellow-2); --edge: #f0dfa0; }
+      .dayc .cal { position: absolute; left: 0; right: 0; top: 0; height: 58px; border-radius: 36px 36px 0 0; background: var(--yb-yellow); }
+      .dayc .cal i { position: absolute; top: -12px; width: 16px; height: 34px; border-radius: 8px; background: var(--ink); display: block; }
+      .dayc .ic { position: absolute; left: 85px; top: 82px; width: 120px; height: 120px; color: var(--face); transform-origin: 50% 50%; will-change: transform; }
+      .dayc .dl { position: absolute; left: 0; right: 0; bottom: 30px; text-align: center; font-size: 42px; font-weight: 900; font-variant-numeric: tabular-nums; }
+      .dayc .yb-badge { right: -18px; top: -22px; width: 88px; height: 88px; }
+      #i1-hard { position: absolute; top: 860px; left: 0; width: 1080px; text-align: center; opacity: 0; will-change: transform; }
+      #i1-hard .yb-pill { background: var(--yb-yellow); box-shadow: 0 8px 0 var(--yb-yellow-edge); font-size: 54px; padding: 10px 40px; }
+      #i1-hard .yb-pill svg.lucide { display: inline-block; width: 56px; height: 56px; vertical-align: -10px; margin-right: 14px; color: var(--ink); }
+
+      /* ---- Scène C : poudre contre bonbon, même échelle ---- */
+      .col { position: absolute; top: 560px; width: 440px; height: 640px; opacity: 0; will-change: transform; }
+      #i1-left { left: 70px; }
+      #i1-right { left: 570px; }
+      .col .yb-card { left: 0; top: 0; width: 440px; height: 520px; }
+      #i1-left .yb-card { --tint: var(--yb-blue-2); --edge: #b9dff2; }
+      #i1-right .yb-card { --tint: var(--yb-orange-2); --edge: #f3d9ae; }
+      .collab { position: absolute; top: 560px; left: 0; right: 0; text-align: center; font-size: 46px; font-weight: 900; opacity: 0; }
+      .collab svg.lucide { display: inline-block; width: 52px; height: 52px; vertical-align: -10px; margin-left: 12px; color: var(--ink); }
+      #i1-right .collab .hl-good { padding: 4px 30px; border-radius: 999px; box-shadow: 0 8px 0 var(--yb-green-edge); display: inline-block; }
+      .col .yb-badge { left: -20px; top: -22px; width: 110px; height: 110px; }
+      /* Le verre et la cuillère doseuse, à plat */
+      #i1-glass { position: absolute; left: 70px; top: 90px; width: 300px; height: 340px; }
+      #i1-scoop { position: absolute; left: 230px; top: 30px; width: 190px; height: 150px; transform-origin: 30% 60%; will-change: transform; }
+      /* Le bonbon gélifié */
+      #i1-gummy { position: absolute; left: 100px; top: 130px; width: 240px; height: 250px; transform-origin: 50% 100%; will-change: transform; }
+      #i1-gummy .body { position: absolute; inset: 0; background: var(--yb-orange);
+        border-radius: 46% 54% 52% 48% / 58% 60% 40% 42%; box-shadow: inset -14px -16px 0 var(--yb-orange-edge); }
+      #i1-gummy .dot { position: absolute; border-radius: 50%; background: #fff; opacity: 0.7; }
+      #i1-spark { position: absolute; left: 330px; top: 60px; width: 90px; height: 90px; color: var(--yb-yellow); opacity: 0; transform-origin: 50% 50%; will-change: transform; }
+      /* Confettis derrière la coche du bonbon */
+      #i1-field { position: absolute; left: 40px; top: 30px; width: 0; height: 0; }
+      .particle { position: absolute; left: 0; top: 0; border-radius: 3px; opacity: 0; will-change: transform, opacity; }
+    </style>
+  </head>
+  <body>
+    <div id="i1-root" data-composition-id="creatine-i1-poudre" data-start="0" data-duration="9.3" data-width="1080" data-height="1920">
+      <div id="i1-scene" class="clip" data-start="0" data-duration="9.3" data-track-index="0">
+        <div class="stage">
+          <!-- A -->
+          <div id="i1-title"><span class="hl-good">Créatine</span></div>
+          <div class="ben" id="i1-b0"><div class="yb-card"><div class="ic"><i data-lucide="dumbbell"></i></div><div class="bl">Force</div></div><div class="yb-badge"><svg viewBox="0 0 96 96"><path class="draw" d="M26 50 L42 66 L72 32"/></svg></div></div>
+          <div class="ben" id="i1-b1"><div class="yb-card"><div class="ic"><i data-lucide="brain"></i></div><div class="bl">Cerveau</div></div><div class="yb-badge"><svg viewBox="0 0 96 96"><path class="draw" d="M26 50 L42 66 L72 32"/></svg></div></div>
+          <div class="ben" id="i1-b2"><div class="yb-card"><div class="ic"><i data-lucide="heart-pulse"></i></div><div class="bl">Récup</div></div><div class="yb-badge"><svg viewBox="0 0 96 96"><path class="draw" d="M26 50 L42 66 L72 32"/></svg></div></div>
+
+          <!-- B -->
+          <div class="dayc" id="i1-d0"><div class="yb-card"><div class="cal"><i style="left:60px"></i><i style="left:214px"></i></div><div class="ic"><i data-lucide="smile"></i></div><div class="dl">Jour 1</div></div><div class="yb-badge"><svg viewBox="0 0 96 96"><path class="draw" d="M26 50 L42 66 L72 32"/></svg></div></div>
+          <div class="dayc" id="i1-d1"><div class="yb-card"><div class="cal"><i style="left:60px"></i><i style="left:214px"></i></div><div class="ic"><i data-lucide="meh"></i></div><div class="dl">Jour 7</div></div><div class="yb-badge ko"><svg viewBox="0 0 96 96"><path class="draw" d="M30 30 L66 66"/><path class="draw" d="M66 30 L30 66"/></svg></div></div>
+          <div class="dayc" id="i1-d2"><div class="yb-card"><div class="cal"><i style="left:60px"></i><i style="left:214px"></i></div><div class="ic"><i data-lucide="frown"></i></div><div class="dl">Jour 15</div></div><div class="yb-badge ko"><svg viewBox="0 0 96 96"><path class="draw" d="M30 30 L66 66"/><path class="draw" d="M66 30 L30 66"/></svg></div></div>
+          <div id="i1-hard"><span class="yb-pill"><i data-lucide="calendar-days"></i>× 30</span></div>
+
+          <!-- C -->
+          <div class="col" id="i1-left">
+            <div class="yb-card">
+              <svg id="i1-glass" viewBox="0 0 300 340">
+                <!-- le verre -->
+                <path d="M60 40 L240 40 L222 310 Q220 330 200 330 L100 330 Q80 330 78 310 Z" fill="#ffffff" stroke="#b9dff2" stroke-width="10" stroke-linejoin="round"/>
+                <clipPath id="i1-clip"><path d="M60 40 L240 40 L222 310 Q220 330 200 330 L100 330 Q80 330 78 310 Z"/></clipPath>
+                <g clip-path="url(#i1-clip)">
+                  <rect x="40" y="150" width="220" height="180" fill="#8fd3f8"/>
+                  <!-- l'eau devient trouble : un nuage de poudre -->
+                  <g id="i1-cloud" opacity="0">
+                    <ellipse cx="150" cy="240" rx="120" ry="70" fill="#e4e0d2"/>
+                    <ellipse cx="110" cy="200" rx="60" ry="35" fill="#efece2"/>
+                    <ellipse cx="190" cy="290" rx="70" ry="40" fill="#efece2"/>
+                  </g>
+                  <rect x="40" y="150" width="220" height="14" fill="#ffffff" opacity="0.5"/>
+                </g>
+              </svg>
+              <svg id="i1-scoop" viewBox="0 0 180 140">
+                <rect x="92" y="58" width="92" height="24" rx="12" fill="var(--yb-blue)" transform="rotate(-28 92 70)"/>
+                <ellipse cx="60" cy="90" rx="54" ry="36" fill="var(--yb-blue-edge)"/>
+                <ellipse cx="60" cy="78" rx="48" ry="26" fill="var(--yb-blue)"/>
+                <ellipse cx="60" cy="74" rx="40" ry="18" fill="#ffffff"/>
+                <ellipse cx="58" cy="62" rx="32" ry="16" fill="#efece2"/>
+              </svg>
+              <div class="yb-badge ko" id="i1-x"><svg viewBox="0 0 96 96"><path class="draw" d="M30 30 L66 66"/><path class="draw" d="M66 30 L30 66"/></svg></div>
+            </div>
+            <div class="collab">5 g / jour</div>
+          </div>
+          <div class="col" id="i1-right">
+            <div class="yb-card">
+              <div id="i1-field"></div>
+              <div id="i1-gummy">
+                <div class="body"></div>
+                <div class="dot" style="left:54px;top:56px;width:34px;height:34px;"></div>
+                <div class="dot" style="left:130px;top:120px;width:22px;height:22px;"></div>
+              </div>
+              <div id="i1-spark"><i data-lucide="sparkles"></i></div>
+              <div class="yb-badge" id="i1-ok"><svg viewBox="0 0 96 96"><path class="draw" d="M26 50 L42 66 L72 32"/></svg></div>
+            </div>
+            <div class="collab"><span class="hl-good">Facile</span></div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Le son -->
+      <audio id="i1-s-01" src="assets/sfx/soft_click.wav" data-start="0.0" data-duration="0.22" data-track-index="11" data-volume="1"></audio>
+      <audio id="i1-s-02" src="assets/sfx/soft_click.wav" data-start="0.2" data-duration="0.22" data-track-index="12" data-volume="1"></audio>
+      <audio id="i1-s-03" src="assets/sfx/soft_click.wav" data-start="0.3" data-duration="0.22" data-track-index="13" data-volume="1"></audio>
+      <audio id="i1-s-04" src="assets/sfx/soft_click.wav" data-start="0.4" data-duration="0.22" data-track-index="14" data-volume="1"></audio>
+      <audio id="i1-s-05" src="assets/sfx/correct.wav" data-start="0.7" data-duration="0.5" data-track-index="15" data-volume="0.24"></audio>
+      <audio id="i1-s-06" src="assets/sfx/correct.wav" data-start="0.85" data-duration="0.5" data-track-index="16" data-volume="0.3"></audio>
+      <audio id="i1-s-07" src="assets/sfx/correct.wav" data-start="1.0" data-duration="0.5" data-track-index="17" data-volume="0.36"></audio>
+      <audio id="i1-s-08" src="assets/sfx/air-woosh.wav" data-start="1.55" data-duration="1.0" data-track-index="18" data-volume="0.09"></audio>
+      <audio id="i1-s-09" src="assets/sfx/soft_click.wav" data-start="1.9" data-duration="0.22" data-track-index="19" data-volume="1"></audio>
+      <audio id="i1-s-10" src="assets/sfx/soft_click.wav" data-start="2.05" data-duration="0.22" data-track-index="20" data-volume="1"></audio>
+      <audio id="i1-s-11" src="assets/sfx/soft_click.wav" data-start="2.2" data-duration="0.22" data-track-index="21" data-volume="1"></audio>
+      <audio id="i1-s-12" src="assets/sfx/correct.wav" data-start="2.55" data-duration="0.5" data-track-index="22" data-volume="0.3"></audio>
+      <audio id="i1-s-13" src="assets/sfx/wrong.mp3" data-start="2.8" data-duration="0.5" data-track-index="23" data-volume="0.35"></audio>
+      <audio id="i1-s-14" src="assets/sfx/wrong.mp3" data-start="3.05" data-duration="0.5" data-track-index="24" data-volume="0.45"></audio>
+      <audio id="i1-s-15" src="assets/sfx/air-woosh.wav" data-start="3.6" data-duration="1.0" data-track-index="25" data-volume="0.09"></audio>
+      <audio id="i1-s-16" src="assets/sfx/soft_click.wav" data-start="3.95" data-duration="0.22" data-track-index="26" data-volume="1"></audio>
+      <audio id="i1-s-17" src="assets/sfx/bloop.mp3" data-start="4.5" data-duration="0.63" data-track-index="27" data-volume="0.5"></audio>
+      <audio id="i1-s-18" src="assets/sfx/wrong.mp3" data-start="5.84" data-duration="0.5" data-track-index="28" data-volume="0.55"></audio>
+      <audio id="i1-s-19" src="assets/sfx/air-woosh.wav" data-start="7.1" data-duration="1.0" data-track-index="29" data-volume="0.09"></audio>
+      <audio id="i1-s-20" src="assets/sfx/bloop.mp3" data-start="7.56" data-duration="0.63" data-track-index="30" data-volume="0.8"></audio>
+      <audio id="i1-s-21" src="assets/sfx/correct.wav" data-start="8.35" data-duration="0.5" data-track-index="31" data-volume="0.7"></audio>
+    </div>
+
+    <script>
+      (function () {
+        window.__timelines = window.__timelines || {};
+        if (window.lucide) window.lucide.createIcons();
+        document.querySelectorAll("path.draw").forEach(function (p) {
+          var len = p.getTotalLength() * 1.05;
+          p.style.strokeDasharray = String(len);
+          p.style.strokeDashoffset = String(len);
+        });
+        var prand = function (n) { var x = Math.sin(n * 127.1 + 311.7) * 43758.5453; return x - Math.floor(x); };
+        var field = document.getElementById("i1-field");
+        var palette = ["#58cc02", "#ff9600", "#ffc800", "#1cb0f6", "#ce82ff"];
+        var parts = [];
+        for (var i = 0; i < 16; i++) {
+          var el = document.createElement("div");
+          el.className = "particle";
+          var size = 8 + prand(i * 3 + 1) * 8;
+          el.style.width = size + "px";
+          el.style.height = (size * 0.7) + "px";
+          el.style.background = palette[i % palette.length];
+          field.appendChild(el);
+          var angle = -Math.PI / 2 + (prand(i * 5 + 2) * 2 - 1) * 0.7;
+          var speed = 320 + prand(i * 7 + 3) * 320;
+          parts.push({ el: el, vx: Math.cos(angle) * speed, vy: Math.sin(angle) * speed, spin: (prand(i * 11 + 4) * 2 - 1) * 540 });
+        }
+        var tl = gsap.timeline({ paused: true });
+        function badge(sel, at) {
+          tl.fromTo(sel, { opacity: 0, scale: 0.3 }, { opacity: 1, scale: 1, duration: 0.3, ease: "back.out(1.6)" }, at);
+          tl.to(sel + " path.draw", { strokeDashoffset: 0, duration: 0.25, ease: "power2.out", stagger: 0.08 }, at + 0.08);
+        }
+        function shake(sel, at) {
+          tl.fromTo(sel, { x: 0 }, { x: -9, duration: 0.05, ease: "none", immediateRender: false }, at);
+          tl.to(sel, { x: 9, duration: 0.05, ease: "none", repeat: 3, yoyo: true }, at + 0.05);
+          tl.to(sel, { x: 0, duration: 0.05, ease: "none" }, at + 0.25);
+        }
+
+        // 0.00 « Tout le monde sait » — titre, trois bénéfices cochés, icônes vivantes.
+        tl.fromTo("#i1-title", { opacity: 0, scale: 0.85, y: 24 }, { opacity: 1, scale: 1, y: 0, duration: 0.4, ease: "power3.out" }, 0);
+        gsap.utils.toArray(".ben").forEach(function (el, i) {
+          tl.fromTo(el, { opacity: 0, scale: 0, y: 40 }, { opacity: 1, scale: 1, y: 0, duration: 0.45, ease: "power3.out" }, 0.2 + i * 0.1);
+        });
+        badge("#i1-b0 .yb-badge", 0.7); badge("#i1-b1 .yb-badge", 0.85); badge("#i1-b2 .yb-badge", 1.0);
+        tl.fromTo("#i1-b0 .ic", { rotation: 0 }, { rotation: -14, duration: 0.16, ease: "power1.inOut", repeat: 3, yoyo: true }, 0.75);
+        tl.to("#i1-b0 .ic", { rotation: 0, duration: 0.12 }, 1.39);
+        tl.fromTo("#i1-b1 .ic", { scale: 1 }, { scale: 1.14, duration: 0.15, ease: "power1.inOut", repeat: 3, yoyo: true }, 0.85);
+        tl.fromTo("#i1-b2 .ic", { scale: 1 }, { scale: 1.18, duration: 0.14, ease: "power2.out", repeat: 3, yoyo: true }, 1.0);
+
+        // 1.90 « Le plus dur » — la scène A file, le calendrier se retourne, coche puis deux croix.
+        tl.to("#i1-title, .ben", { opacity: 0, y: -30, duration: 0.25, ease: "power2.in" }, 1.6);
+        gsap.utils.toArray(".dayc").forEach(function (el, i) {
+          tl.fromTo(el, { opacity: 0, rotationY: -90, transformPerspective: 900 }, { opacity: 1, rotationY: 0, transformPerspective: 900, duration: 0.45, ease: "power3.out" }, 1.9 + i * 0.15);
+        });
+        tl.fromTo("#i1-hard", { opacity: 0, y: 30 }, { opacity: 1, y: 0, duration: 0.35, ease: "power3.out" }, 2.25);
+        badge("#i1-d0 .yb-badge", 2.55);
+        badge("#i1-d1 .yb-badge", 2.8); shake("#i1-d1", 2.85);
+        badge("#i1-d2 .yb-badge", 3.05); shake("#i1-d2", 3.1);
+        tl.fromTo("#i1-d2 .ic", { rotation: 0 }, { rotation: -10, duration: 0.14, ease: "power1.inOut", repeat: 1, yoyo: true }, 3.15);
+
+        // 3.90 « Cinq grammes de poudre » — la colonne poudre, la cuillère verse, l'eau se trouble.
+        tl.to(".dayc, #i1-hard", { opacity: 0, y: -30, duration: 0.25, ease: "power2.in" }, 3.6);
+        tl.fromTo("#i1-left", { opacity: 0, x: -80 }, { opacity: 1, x: 0, duration: 0.45, ease: "power3.out" }, 3.9);
+        tl.fromTo("#i1-left .collab", { opacity: 0, y: 16 }, { opacity: 1, y: 0, duration: 0.3 }, 4.15);
+        tl.fromTo("#i1-scoop", { rotation: 0, x: 0, y: 0 }, { rotation: -55, x: -40, y: 30, duration: 0.4, ease: "power2.inOut" }, 4.3);
+        tl.to("#i1-cloud", { attr: { opacity: 1 }, duration: 0.5, ease: "power1.out" }, 4.6);
+        tl.to("#i1-scoop", { rotation: 0, x: 0, y: 0, duration: 0.4, ease: "power2.inOut" }, 5.05);
+
+        // 5.84 « c'est contraignant » — croix rouge, la carte encaisse.
+        badge("#i1-x", 5.84); shake("#i1-left .yb-card", 5.89);
+
+        // 7.24 « Un bonbon » — la colonne bonbon, chute, écrasement, Facile, coche, confettis.
+        tl.fromTo("#i1-right", { opacity: 0, x: 80 }, { opacity: 1, x: 0, duration: 0.45, ease: "power3.out" }, 7.24);
+        tl.fromTo("#i1-gummy", { y: -420 }, { y: 0, duration: 0.32, ease: "power2.in" }, 7.24);
+        tl.to("#i1-gummy", { scaleY: 0.78, scaleX: 1.16, duration: 0.09, ease: "power1.out" }, 7.56);
+        tl.to("#i1-gummy", { scaleY: 1, scaleX: 1, duration: 0.42, ease: "elastic.out(1, 0.45)" }, 7.65);
+        tl.fromTo("#i1-right .collab", { opacity: 0, y: 16 }, { opacity: 1, y: 0, duration: 0.3 }, 8.25);
+        badge("#i1-ok", 8.35);
+        tl.fromTo("#i1-spark", { opacity: 0, scale: 0, rotation: -40 }, { opacity: 1, scale: 1, rotation: 0, duration: 0.35, ease: "back.out(1.8)" }, 8.45);
+        var drive = { T: 0 };
+        tl.fromTo(drive, { T: 0 }, { T: 1, duration: 0.75, ease: "none", onUpdate: function () {
+          var t = drive.T * 0.75;
+          var fade = Math.min(1, (1 - drive.T) / 0.3);
+          parts.forEach(function (p) {
+            var x = p.vx * t;
+            var y = p.vy * t + 0.5 * 1300 * t * t;
+            p.el.style.transform = "translate(" + x + "px, " + y + "px) rotate(" + (p.spin * t) + "deg)";
+            p.el.style.opacity = String(drive.T === 0 ? 0 : fade);
+          });
+        } }, 8.4);
+
+        // Tenue : rien ne bouge après 9.15. Le plan face caméra revient sur « Enfin ».
+        window.__timelines["creatine-i1-poudre"] = tl;
+      })();
+    </script>
+  </body>
+</html>

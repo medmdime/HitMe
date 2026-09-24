@@ -60,7 +60,7 @@ Les verrous d'attention : ses phrases rejouées mot pour mot, Thought Narration 
 
 ## 2. Ce qu'on voit
 
-Toi, face caméra, du début à la fin : c'est le format simple jusqu'au 18 octobre. Les chiffres et les mots-clés deviennent des cartes texte au montage. Plus tard, deux inserts reprendront ce découpage : la liste déroulante des 23 marques, le pedestal pot + bonbons du turn comme chez lui.
+Toi et quatre inserts, en alternance : 39 s de toi sur 80, le reste sous I1 à I4 avec ta voix dessous. Le hook, le turn et la chute sont toi ; le pivot, la preuve et la résolution passent sous les inserts. La découpe seconde par seconde est dans [[video/creatine-gummies/PLAN-DE-MONTAGE|PLAN-DE-MONTAGE]] :
 
 ---
 
@@ -69,7 +69,7 @@ Toi, face caméra, du début à la fin : c'est le format simple jusqu'au 18 octo
 | Piste | Contenu |
 |---|---|
 | V1 | la meilleure traite, le hook et la chute remplacés par leurs meilleures prises |
-| V2 | les cartes texte |
+| V2 | les inserts I1 à I4, posés aux timecodes du PLAN-DE-MONTAGE (0:20, 0:41, 1:04, 1:11) |
 | A1 | la voix |
 | A2 | la musique : elle entre à plein volume sur la coupe après le hook, puis se range à 0,11 sous la voix ; elle bascule sur le turn, second morceau à 0,24 |
 | A3 | les bruitages : un pop par chiffre, le scratch sur le turn |
@@ -82,21 +82,80 @@ La méthode et les volumes : [[methode/Monter un reel Train Bloom dans CapCut|Mo
 
 ## 4. La légende
 
-> La plupart des gummies de créatine n'ont pas de créatine dedans.
->
-> Et la créatine manquante, ce n'est même pas le pire.
->
-> Sur vingt-trois marques testées par James Smith et NOW, huit contenaient ce que disait l'étiquette. La majorité : presque zéro. Des bonbons normaux. Et en France, un gummy se vend sur déclaration : aucun labo ne teste la dose avant la vente.
->
-> La seule vraie façon de savoir : les marques contrôlées par un labo indépendant. Sa liste, reprise ici : Legion Athletics, Thorne, Gorilla Mind, Optimum Nutrition, MuscleTech, Ghost, 1st Phorm, Dymatize, Redcon1, MyProtein.
->
-> Ce que ça ne dit pas : l'enquête labo est américaine, et aucun test équivalent n'a été publié sur des gummies vendus en France — on ne peut donc pas dire qu'ils sont vides, seulement que rien ne les vérifie avant la vente. La créatine, elle, est légale ici depuis 2017, 3 000 mg par jour maximum. Vidéo non sponsorisée.
->
-> Tests : https://bit.ly/4tU6Mss · https://bit.ly/4cBchW6 — James Smith : https://youtu.be/GhhQ2mJ6Q1c · https://youtu.be/7gLVOGJpSpE — Téléicare, déclaration des compléments (economie.gouv.fr) — ANSES NUT2023-SA-0216 (créatine, DJM 3 000 mg)
->
-> #creatine #muscu #nutrition
+Version publiée le 22 septembre 2026, vérifiée le jour même : les deux bit.ly ouvrent bien l'article
+Whole Foods Magazine sur les tests NOW et le dossier Drive des tests de James Smith ; les deux
+vidéos sont les siennes (@JamesSmithPT, mars et juillet 2025) ; l'avis Anses 2023-SA-0216 existe ;
+la créatine est autorisée par l'arrêté du 26 septembre 2016, 3 000 mg par jour.
 
-Même légende sur TikTok et sur YouTube Shorts. Pas de ligne YouTube tant que la longue correspondante n'existe pas.
+**Le chiffre de la vidéo.** « 23 marques, 8 conformes » vient du reel de Train Bloom. Dans les
+rapports publiés on trouve NOW en mars 2024, douze marques, six conformes, et James Smith en
+juillet 2025 chez Eurofins, neuf marques, quatre au-dessus de 70 % de la dose, cinq à moins de
+2 %. Soit vingt et une marques et dix conformes. La légende donne le détail vérifié et assume
+l'écart dans la réserve, comme le veut le format : la vidéo est confiante, la légende porte les
+reçus.
+
+### Instagram
+
+> Les gummies de créatine, ce n'est pas de la créatine.
+>
+> Enfin, la plupart. Et la créatine qui manque, ce n'est même pas le pire.
+>
+> Deux séries de tests, vingt et une marques :
+> → NOW, 2024 : douze marques de gummies, six conformes à l'étiquette.
+> → James Smith, 2025, labo Eurofins : neuf marques, quatre au-dessus de 70 % de la dose annoncée, cinq à moins de 2 %. Des bonbons normaux.
+>
+> Et en France, un gummy se vend sur déclaration : aucun labo ne teste la dose avant la vente. Les contrôles arrivent après.
+>
+> La seule vraie façon de savoir : une certification ou un test indépendant, publié.
+> → certifiés NSF Certified for Sport : Create, Force Factor, Beast Bites, Momentous (chews)
+> → certifiés Informed Sport : Gold's Gym Nutrition, SteelFit
+> → conformes aux tests publiés : Bear Balanced, Bod, Effective Nutra, Iron Labs, Peach Perfect, Zhou (NOW, 2024) ; Wellboost, Known Nutrition, Myvitamins (Eurofins, 2025)
+> → en France, Naturecan publie son certificat d'analyse (HTC Health)
+> Pumpy annonce un dosage certifié Eurofins à chaque lot, sans rapport en ligne. Younès, @getpumpy, je te pose la question ici : les analyses de lot, on peut les voir où ?
+> Un certificat vaut pour un lot : demande celui du tien.
+>
+> Ce que ça ne dit pas : le « 23 marques, 8 conformes » de la vidéo vient du reel d'origine ; dans les deux rapports publiés je compte vingt et une marques et dix conformes. La conclusion ne bouge pas : plus d'une sur deux ne tient pas son étiquette. Aucun test équivalent n'a été publié sur les gummies vendus en France : on ne peut pas dire qu'ils sont vides, seulement que rien ne les vérifie avant la vente. La créatine, elle, est autorisée en France depuis l'arrêté du 26 septembre 2016, 3 000 mg par jour maximum. Le « 30 € » de l'animation est un ordre de grandeur, pas le prix d'une marque. Vidéo non sponsorisée, aucune marque citée ne me paie.
+>
+> Clip d'ouverture : James Smith (@jamessmithpt).
+>
+> Sources : tests NOW bit.ly/4tU6Mss · tests James Smith bit.ly/4cBchW6 · ses vidéos youtu.be/GhhQ2mJ6Q1c et youtu.be/7gLVOGJpSpE · Téléicare (economie.gouv.fr) · Anses, avis 2023-SA-0216
+>
+> #creatine #gummies #muscu #nutrition
+
+Les deux mentions, `@getpumpy` (Pumpy, getpumpy.fr, cofondateur Younès) et `@jamessmithpt`,
+sont à vérifier dans le champ de saisie avant de publier : si Instagram ne propose pas le
+compte, écrire le nom sans le `@`.
+
+**La liste des gummies.** Trois niveaux de preuve, du plus fort au plus faible, et aucune
+recommandation :
+- **certifiés par un organisme** : NSF Certified for Sport liste (base nsfsport.com, relue le
+  22 septembre 2026) les gummies Create, Force Factor, Beast Bites et Lemme, et les chews
+  Momentous ; Informed Sport liste Gold's Gym Nutrition (certifié le 13 mai 2025) et SteelFit.
+  Beast Bites avait raté le test NOW de 2024 et s'est fait certifier depuis : une certification
+  vaut pour les lots qu'elle couvre, d'où la dernière ligne de la liste ;
+- **conformes à un test publié** : les six de NOW (mars 2024, HPLC en interne, résultats
+  publics) et les trois au-dessus de 85 % chez Eurofins pour James Smith (juillet 2025 ;
+  Create, à 72 %, n'y est pas, mais elle est certifiée NSF et publie ses rapports Eurofins) ;
+- **certificat d'analyse en ligne** : Naturecan France, labo HTC Health, sur sa page produit
+  (`Creatine_Gummies_AH00009584.pdf`).
+
+Pumpy affiche « dosage certifié par Eurofins, testé à chaque lot » sans rapport en ligne : d'où
+la question publique à Younès, posée comme une question, jamais comme une accusation.
+L'ancienne liste de Train Bloom (Legion, Thorne, ON…) était une liste de marques de poudre, pas
+de gummies : retirée.
+
+### TikTok
+
+La même, mot pour mot, avec `@pumpypov` à la place de `@getpumpy` (leur compte TikTok) et cette
+ligne de tags : `#creatine #gummies #muscu #nutrition #apprendresurtiktok`. Les liens n'y sont
+pas cliquables, ils restent en texte.
+
+### YouTube Shorts
+
+Titre : **Les gummies de créatine, ce n'est pas de la créatine**. Description : la même légende,
+liens cliquables cette fois, « Pumpy (getpumpy.fr) » à la place du `@`, tags
+`#creatine #gummies #muscu`. Pas de ligne vers une longue
+tant que celle sur la créatine n'existe pas.
 
 ---
 

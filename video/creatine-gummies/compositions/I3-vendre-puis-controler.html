@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="fr" data-resolution="portrait">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=1080, height=1920">
+    <link rel="stylesheet" href="compositions/components/kit.css">
+    <link rel="stylesheet" href="compositions/components/youbud.css">
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.14.2/dist/gsap.min.js"></script>
+    <script src="assets/vendor/lucide.min.js"></script>
+    <style>
+      @font-face {
+        font-family: "Archivo";
+        src: url("assets/fonts/Archivo.woff2") format("woff2");
+        font-weight: 400 900;
+        font-display: block;
+      }
+      /* Deux statuts face à face, sans un mot : le médicament passe par le labo avant le rayon,
+         le complément passe du formulaire au rayon, la case labo reste vide. */
+      .stat { position: absolute; top: 440px; width: 440px; height: 600px; opacity: 0; will-change: transform; }
+      #i3-med { left: 70px; }
+      #i3-sup { left: 570px; }
+      .stat .yb-card { left: 0; top: 0; width: 440px; height: 580px; }
+      #i3-med .yb-card { --tint: var(--yb-blue-2); --edge: #b9dff2; }
+      #i3-sup .yb-card { --tint: var(--yb-orange-2); --edge: #f3d9ae; }
+      .stat .ic { position: absolute; left: 155px; top: 50px; width: 130px; height: 130px; transform-origin: 50% 50%; will-change: transform; }
+      .stat .st { position: absolute; left: 0; right: 0; top: 196px; text-align: center; font-size: 44px; font-weight: 900; }
+      #i3-med .ic { color: var(--yb-blue); }
+      #i3-sup .ic { color: var(--yb-orange); }
+      .stat .yb-badge { right: -22px; top: -26px; width: 110px; height: 110px; }
+      /* La frise interne : formulaire → labo → rayon */
+      .path { position: absolute; left: 0; right: 0; top: 280px; height: 280px; }
+      .sl { position: absolute; top: 160px; width: 150px; text-align: center; font-size: 24px; font-weight: 800; color: var(--ink-soft); opacity: 0; }
+      .sl1 { left: 0; } .sl2 { left: 145px; } .sl3 { left: 290px; }
+      .step.empty ~ .sl2 { color: #b5b5ae; }
+      .step { position: absolute; top: 40px; width: 110px; height: 110px; border-radius: 50%; background: #fff; box-shadow: 0 6px 0 rgba(0,0,0,0.08); opacity: 0; transform-origin: 50% 50%; will-change: transform; }
+      .step i, .step svg.lucide { position: absolute; left: 25px; top: 25px; width: 60px; height: 60px; color: var(--ink); }
+      .step.lab svg.lucide { color: var(--yb-green); }
+      .step.empty { background: transparent; box-shadow: none; border: 6px dashed #c9c9c2; }
+      .step.empty svg.lucide { color: #c9c9c2; }
+      .s1 { left: 20px; } .s2 { left: 165px; } .s3 { left: 310px; }
+      .link { position: absolute; top: 90px; height: 10px; border-radius: 5px; background: #d9d9d2; transform-origin: 0% 50%; will-change: transform; }
+      .l1 { left: 128px; width: 40px; } .l2 { left: 273px; width: 40px; }
+      .step .mini { position: absolute; right: -14px; top: -14px; width: 46px; height: 46px; border-radius: 50%; background: var(--yb-green); box-shadow: 0 4px 0 var(--yb-green-edge); opacity: 0; will-change: transform; }
+      .step .mini.ko { background: var(--yb-red); box-shadow: 0 4px 0 var(--yb-red-edge); }
+      .step .mini svg { position: absolute; inset: 0; width: 100%; height: 100%; }
+      .step .mini path { fill: none; stroke: #fff; stroke-width: 6; stroke-linecap: round; stroke-linejoin: round; }
+      /* Toi, face au verdict, et le labo barré */
+      #i3-you { position: absolute; top: 1080px; left: 0; width: 1080px; height: 220px; }
+      #i3-me { position: absolute; left: 380px; top: 30px; width: 140px; height: 140px; color: var(--ink); opacity: 0; transform-origin: 50% 100%; }
+      #i3-qm { position: absolute; left: 500px; top: 0; width: 100px; height: 100px; color: var(--yb-red); opacity: 0; transform-origin: 50% 100%; will-change: transform; }
+      #i3-lab { position: absolute; top: 1476px; left: 0; width: 1080px; text-align: center; font-size: 44px; font-weight: 900; opacity: 0; will-change: transform; }
+      #i3-lab .hl-bad { display: inline-block; padding: 4px 30px; border-radius: 999px; box-shadow: 0 8px 0 var(--yb-red-edge); }
+      #i3-card { position: absolute; top: 1286px; left: 450px; width: 180px; height: 180px; border-radius: 50%; background: var(--yb-red-2);
+        box-shadow: 0 10px 0 #f5c4c4; opacity: 0; will-change: transform; }
+      #i3-card .ic { position: absolute; left: 40px; top: 40px; width: 100px; height: 100px; color: var(--yb-red); }
+      #i3-card .yb-badge { right: -18px; top: -18px; width: 84px; height: 84px; }
+    </style>
+  </head>
+  <body>
+    <div id="i3-root" data-composition-id="creatine-i3-frise" data-start="0" data-duration="5.4" data-width="1080" data-height="1920">
+      <div id="i3-scene" class="clip" data-start="0" data-duration="5.4" data-track-index="0">
+        <div class="stage">
+          <div class="stat" id="i3-med">
+            <div class="yb-card">
+              <div class="ic"><i data-lucide="pill"></i></div>
+              <div class="st">Médicament</div>
+              <div class="path">
+                <div class="step s1"><i data-lucide="file-text"></i></div>
+                <div class="link l1"></div>
+                <div class="step s2 lab"><i data-lucide="flask-conical"></i><div class="mini"><svg viewBox="0 0 46 46"><path class="draw" d="M13 24 L20 31 L34 16"/></svg></div></div>
+                <div class="link l2"></div>
+                <div class="step s3"><i data-lucide="shopping-cart"></i></div>
+                <div class="sl sl1">Déclaration</div><div class="sl sl2">Contrôle</div><div class="sl sl3">Vente</div>
+              </div>
+              <div class="yb-badge" id="i3-vok"><svg viewBox="0 0 96 96"><path class="draw" d="M26 50 L42 66 L72 32"/></svg></div>
+            </div>
+          </div>
+          <div class="stat" id="i3-sup">
+            <div class="yb-card">
+              <div class="ic"><i data-lucide="package"></i></div>
+              <div class="st">Complément</div>
+              <div class="path">
+                <div class="step s1"><i data-lucide="file-text"></i></div>
+                <div class="link l1"></div>
+                <div class="step s2 empty"><i data-lucide="flask-conical"></i><div class="mini ko"><svg viewBox="0 0 46 46"><path class="draw" d="M15 15 L31 31"/><path class="draw" d="M31 15 L15 31"/></svg></div></div>
+                <div class="link l2"></div>
+                <div class="step s3"><i data-lucide="shopping-cart"></i></div>
+                <div class="sl sl1">Déclaration</div><div class="sl sl2">Contrôle</div><div class="sl sl3">Vente</div>
+              </div>
+              <div class="yb-badge ko" id="i3-vko"><svg viewBox="0 0 96 96"><path class="draw" d="M30 30 L66 66"/><path class="draw" d="M66 30 L30 66"/></svg></div>
+            </div>
+          </div>
+          <div id="i3-you">
+            <div id="i3-me"><i data-lucide="user-round"></i></div>
+            <div id="i3-qm"><i data-lucide="circle-help"></i></div>
+          </div>
+          <div id="i3-card">
+            <div class="ic"><i data-lucide="flask-conical"></i></div>
+            <div class="yb-badge ko"><svg viewBox="0 0 96 96"><path class="draw" d="M30 30 L66 66"/><path class="draw" d="M66 30 L30 66"/></svg></div>
+          </div>
+          <div id="i3-lab"><span class="hl-bad">0</span> contrôle avant</div>
+        </div>
+      </div>
+
+      <!-- Le son -->
+      <audio id="i3-s-01" src="assets/sfx/soft_click.wav" data-start="0.0" data-duration="0.22" data-track-index="81" data-volume="1"></audio>
+      <audio id="i3-s-02" src="assets/sfx/soft_click.wav" data-start="0.12" data-duration="0.22" data-track-index="82" data-volume="1"></audio>
+      <audio id="i3-s-03" src="assets/sfx/soft_click.wav" data-start="0.3" data-duration="0.22" data-track-index="83" data-volume="1"></audio>
+      <audio id="i3-s-04" src="assets/sfx/soft_click.wav" data-start="0.46" data-duration="0.22" data-track-index="84" data-volume="1"></audio>
+      <audio id="i3-s-05" src="assets/sfx/soft_click.wav" data-start="0.62" data-duration="0.22" data-track-index="85" data-volume="1"></audio>
+      <audio id="i3-s-06" src="assets/sfx/correct.wav" data-start="0.8" data-duration="0.5" data-track-index="86" data-volume="0.3"></audio>
+      <audio id="i3-s-07" src="assets/sfx/soft_click.wav" data-start="1.56" data-duration="0.22" data-track-index="87" data-volume="1"></audio>
+      <audio id="i3-s-08" src="assets/sfx/soft_click.wav" data-start="1.72" data-duration="0.22" data-track-index="88" data-volume="1"></audio>
+      <audio id="i3-s-09" src="assets/sfx/soft_click.wav" data-start="1.88" data-duration="0.22" data-track-index="89" data-volume="1"></audio>
+      <audio id="i3-s-10" src="assets/sfx/wrong.mp3" data-start="2.8" data-duration="0.5" data-track-index="90" data-volume="0.55"></audio>
+      <audio id="i3-s-11" src="assets/sfx/clicks.wav" data-start="3.6" data-duration="0.35" data-track-index="91" data-volume="0.95"></audio>
+      <audio id="i3-s-12" src="assets/sfx/bloop.mp3" data-start="3.8" data-duration="0.63" data-track-index="92" data-volume="0.5"></audio>
+      <audio id="i3-s-13" src="assets/sfx/impacts.mp3" data-start="3.9" data-duration="1.3" data-media-start="0.2" data-track-index="93" data-volume="0.43"></audio>
+    </div>
+
+    <script>
+      (function () {
+        window.__timelines = window.__timelines || {};
+        if (window.lucide) window.lucide.createIcons();
+        document.querySelectorAll("path.draw").forEach(function (p) {
+          var len = p.getTotalLength() * 1.05;
+          p.style.strokeDasharray = String(len);
+          p.style.strokeDashoffset = String(len);
+        });
+        var tl = gsap.timeline({ paused: true });
+        function badge(sel, at) {
+          tl.fromTo(sel, { opacity: 0, scale: 0.3 }, { opacity: 1, scale: 1, duration: 0.3, ease: "back.out(1.6)" }, at);
+          tl.to(sel + " path.draw", { strokeDashoffset: 0, duration: 0.25, ease: "power2.out", stagger: 0.08 }, at + 0.08);
+        }
+        function shake(sel, at) {
+          tl.fromTo(sel, { x: 0 }, { x: -9, duration: 0.05, ease: "none", immediateRender: false }, at);
+          tl.to(sel, { x: 9, duration: 0.05, ease: "none", repeat: 3, yoyo: true }, at + 0.05);
+          tl.to(sel, { x: 0, duration: 0.05, ease: "none" }, at + 0.25);
+        }
+        function path(root, at) {
+          tl.fromTo(root + " .s1", { opacity: 0, scale: 0 }, { opacity: 1, scale: 1, duration: 0.3, ease: "power3.out" }, at);
+          tl.fromTo(root + " .l1", { scaleX: 0 }, { scaleX: 1, duration: 0.16, ease: "power2.out" }, at + 0.14);
+          tl.fromTo(root + " .s2", { opacity: 0, scale: 0 }, { opacity: 1, scale: 1, duration: 0.3, ease: "power3.out" }, at + 0.14);
+          tl.fromTo(root + " .l2", { scaleX: 0 }, { scaleX: 1, duration: 0.16, ease: "power2.out" }, at + 0.28);
+          tl.fromTo(root + " .s3", { opacity: 0, scale: 0 }, { opacity: 1, scale: 1, duration: 0.3, ease: "power3.out" }, at + 0.28);
+          tl.fromTo(root + " .sl", { opacity: 0, y: 10 }, { opacity: 1, y: 0, duration: 0.25, ease: "power3.out", stagger: 0.14 }, at + 0.08);
+        }
+
+        // 0.00 « En France » — les deux statuts montent, la frise du médicament se déroule, coche.
+        tl.fromTo("#i3-med", { opacity: 0, y: 70, scale: 0.92 }, { opacity: 1, y: 0, scale: 1, duration: 0.5, ease: "power3.out" }, 0);
+        tl.fromTo("#i3-sup", { opacity: 0, y: 70, scale: 0.92 }, { opacity: 1, y: 0, scale: 1, duration: 0.5, ease: "power3.out" }, 0.12);
+        path("#i3-med", 0.3);
+        badge("#i3-med .s2 .mini", 0.8); badge("#i3-vok", 0.8);
+        tl.fromTo("#i3-med .ic", { rotation: 0 }, { rotation: -16, duration: 0.15, ease: "power1.inOut", repeat: 3, yoyo: true }, 0.9);
+        tl.to("#i3-med .ic", { rotation: 0, duration: 0.15 }, 1.5);
+
+        // 1.56 « sur déclaration » — la frise du complément, la case Contrôle vide.
+        path("#i3-sup", 1.56);
+
+        // 2.80 « Aucun labo » — la case est barrée, croix rouge, la carte encaisse, le colis sursaute.
+        badge("#i3-sup .s2 .mini", 2.8); badge("#i3-vko", 2.8);
+        shake("#i3-sup .yb-card", 2.85);
+        tl.fromTo("#i3-sup .ic", { y: 0 }, { y: -18, duration: 0.14, ease: "power2.out", repeat: 1, yoyo: true, immediateRender: false }, 2.9);
+
+        // 3.60 « la dose avant la vente » — toi, le ?, la fiole barrée, 0 contrôle avant.
+        tl.fromTo("#i3-me", { opacity: 0, scale: 0, y: 20 }, { opacity: 1, scale: 1, y: 0, duration: 0.4, ease: "power3.out" }, 3.6);
+        tl.fromTo("#i3-qm", { opacity: 0, scale: 0, rotation: -20 }, { opacity: 1, scale: 1, rotation: 0, duration: 0.35, ease: "back.out(1.8)" }, 3.8);
+        tl.fromTo("#i3-qm", { rotation: 0 }, { rotation: 12, duration: 0.18, ease: "power1.inOut", repeat: 3, yoyo: true, immediateRender: false }, 4.2);
+        tl.to("#i3-qm", { rotation: 0, duration: 0.18 }, 4.92);
+        tl.fromTo("#i3-card", { opacity: 0, scale: 0.6, y: 20 }, { opacity: 1, scale: 1, y: 0, duration: 0.35, ease: "back.out(1.4)" }, 3.9);
+        badge("#i3-card .yb-badge", 4.15);
+        tl.fromTo("#i3-lab", { opacity: 0, y: 16 }, { opacity: 1, y: 0, duration: 0.3, ease: "power3.out" }, 4.2);
+
+        // Tenue : rien ne bouge après 5.1.
+        window.__timelines["creatine-i3-frise"] = tl;
+      })();
+    </script>
+  </body>
+</html>
