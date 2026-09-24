@@ -26,6 +26,19 @@ pnpm-debug.log*
 # clips détourés : trop lourds pour git, ils se régénèrent
 video/*/assets/detoure/
 
+# outils locaux : les sessions d'agents, le journal du serveur de dev
+.omo/
+.hitme-dev.log
+
+# la créatine : les images tirées d'autres vidéos (un visage, un pot, un logo de marque) et les
+# rendus qui les montrent restent sur la machine, parce que le dépôt est public
+video/creatine-gummies/assets/img/
+video/creatine-gummies/renders/
+video/creatine-gummies/snapshots/
+
+# le coffre fantôme qu'Obsidian recrée parfois dans sa propre config
+.obsidian/.obsidian/
+
 # obsidian : l'état de fenêtre et la corbeille ne se versionnent pas, la config oui
 .obsidian/workspace.json
 .obsidian/workspace-mobile.json

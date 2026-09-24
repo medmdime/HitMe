@@ -15,5 +15,6 @@
   "strictLineBreaks": false,
   "spellcheck": true,
   "spellcheckLanguages": null,
-  "readableLineLength": false
+  "readableLineLength": false,
+  "tabSize": 5
 }
