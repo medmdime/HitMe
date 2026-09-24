@@ -58,7 +58,7 @@ Format : `[M:SS — plan]` puis la narration en gras. `ÉCRAN` est le texte à l
 
 > Croyance : les calories sont dans le dessert. Mécanisme : neuf, quatre, quatre.
 > Preuve : l'assiette, comptée. Turn : « donc je vire l'huile ? ». Résolution : le filet.
-> Le short 1, « Le plus calorique de ton assiette, c'est pas le dessert », est le cœur de ce chapitre.
+> Le short 1, « Le plus calorique de ton assiette, ce n'est pas le dessert », est le cœur de ce chapitre.
 
 `[0:35 — camera]`
 **Quand tu surveilles ce que tu manges, tu regardes le dessert. C'est normal : c'est le seul truc qu'on t'a appris à compter.**

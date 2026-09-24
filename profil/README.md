@@ -24,7 +24,7 @@ ont changé. **Instagram et YouTube seulement** : plus de miroir TikTok. **La pr
 longue est « Les calories, les fondamentaux »** (c'est quoi une calorie, où elles sont,
 où elles partent, le corps cible), tournée dimanche 20, en ligne dimanche 27 à 18 h ;
 ses trois shorts et le trailer sortent **la même semaine, avant elle** : le trailer lundi
-21, « Le plus calorique de ton assiette, c'est pas le dessert » mardi 22, « Trois cents calories par jour
+21, « Le plus calorique de ton assiette, ce n'est pas le dessert » mardi 22, « Trois cents calories par jour
 sans t'entraîner » jeudi 24, « Mange comme le corps que tu vises » samedi 26. Tout est
 dans `video/calories-fondamentaux/` (`SCRIPT.md`, `SHORTS.md`, `TOURNAGE.md`). **Les six
 longues suivantes glissent d'une semaine** : « Pourquoi ça revient » se tourne le 27 et
@@ -99,7 +99,7 @@ trois shorts sortent mardi, jeudi, samedi de la semaine d'après. Chaque semaine
 donc une longue et les trois shorts de la longue précédente ; la première semaine publie
 les trois shorts qui existent déjà. Réserve pour une semaine qui casse : « Le régime que
 tu choisis ne prédit rien » (utilisé en S4), « La petite fourchette te fait manger plus »
-(un beat de 10 s à tourner dimanche 20), et les deux reels écrits « Le plus calorique de ton assiette, c'est pas le dessert » et « Une calorie, c'est une calorie ».
+(un beat de 10 s à tourner dimanche 20), et les deux reels écrits « Le plus calorique de ton assiette, ce n'est pas le dessert » et « Une calorie, c'est une calorie ».
 
 | Sem. | Dates | Tournage | La longue (dim. 18 h) | Les trois shorts (mar · jeu · sam) | Stories | Ce qui glisse si ça casse |
 |---|---|---|---|---|---|---|
@@ -137,7 +137,7 @@ essayé tous les régimes ». Le détail est dans `PLAN-SEMI-18-OCTOBRE.md` § 3
 | Les huit listes « À couper » | écrites contre une version à 70 s par chapitre | à refaire contre le bracket actuel, une heure, mécanique | vidéo 1 jeudi 17 (elles servent vendredi 18) ; vidéo 2 samedi 19, ou jeudi 24 au plus tard |
 | Les quatre corrections d'annexe | repérées | la chute du short 4 (vidéo 1), la chute du short 1 et le hook du short 3 (vidéo 2), le hook du short 1 (vidéo 1) ; le titre du short 2 (vidéo 1) sans « millilitres » | vidéo 1 avant dimanche 13 (ses hooks et chutes se tournent ce jour-là) ; vidéo 2 samedi 19, avant dimanche 20 |
 | Les dispositifs | SplitBar existe | la carte 9-4-4 (une fois) ; l'avant/après (jeudi de S1) ; la population de silhouettes (jeudi de S4) ; l'assiette animée, hors chemin critique | jeudis marqués |
-| « Le plus calorique de ton assiette, c'est pas le dessert » | le script complet | un short de réserve : à tourner et animer une journée quand l'assiette existe | après le 25 octobre |
+| « Le plus calorique de ton assiette, ce n'est pas le dessert » | le script complet | un short de réserve : à tourner et animer une journée quand l'assiette existe | après le 25 octobre |
 
 ---
 

@@ -8,7 +8,7 @@
 | 15 h 00 | Le réglage, fait une fois | | § Réglage | |
 | 15 h 15 | **Les deux pickups de meriter, avec la casquette** | la réserve | [[video/meriter-son-repas/montage/CAPCUT-PICKUPS\|CAPCUT-PICKUPS]] | ci-dessous |
 | 15 h 25 | **[[Les gummies de créatine, c'est pas de la créatine]]** | **ce soir** | [[video/creatine-gummies/TOURNAGE\|TOURNAGE]] | [[video/creatine-gummies/PROMPTEUR\|PROMPTEUR]] |
-| 16 h 00 | [[Le plus calorique de ton assiette, c'est pas le dessert]] | mardi 22 | [[video/assiette-pas-le-dessert/TOURNAGE\|TOURNAGE]] | [[video/assiette-pas-le-dessert/PROMPTEUR\|PROMPTEUR]] |
+| 16 h 00 | [[Le plus calorique de ton assiette, ce n'est pas le dessert]] | mardi 22 | [[video/assiette-pas-le-dessert/TOURNAGE\|TOURNAGE]] | [[video/assiette-pas-le-dessert/PROMPTEUR\|PROMPTEUR]] |
 | 16 h 35 | Pause, de l'eau, dix minutes | | | |
 | 16 h 45 | [[Ton estomac ne compte pas les calories]] | jeudi 24 | [[video/estomac-sent-la-place/TOURNAGE\|TOURNAGE]] | [[video/estomac-sent-la-place/PROMPTEUR\|PROMPTEUR]] |
 | 17 h 20 | [[Mange comme le corps que tu vises]] | samedi 26 | [[video/corps-cible/TOURNAGE\|TOURNAGE]] | [[video/corps-cible/PROMPTEUR\|PROMPTEUR]] |

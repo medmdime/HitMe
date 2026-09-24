@@ -173,7 +173,7 @@ pas avant.
 | **S11** | **Ma mère a essayé tous les régimes**, après dix longues | des années de salades, ce que tu lui as dit enfant, comment tu l'as aidée, le fait qu'elle a réussi ; la raison du « sans jugement » | #24, avec son accord, au degré qu'elle choisit. Si elle apparaît à l'image, on lui demande le moment venu |
 | ensuite | les tabous en version lourde : Coca zéro contre Coca (#19) · le week-end qui annule la semaine (#22) · le jeûne intermittent (#21) · le sucre est une drogue ? (#20) · Ozempic (#23) · « Ce que l'étiquette ne compte pas » (les fibres) · « Ce que tu bois » (#10, sans l'alcool) · « Combien de calories pour prendre du muscle » (#16) si S6 ne l'a pas épuisé | `PROGRAMME-FONDAMENTAUX.md` § 3 |
 
-« Le plus calorique de ton assiette, c'est pas le dessert » reste un short de réserve : script complet, à
+« Le plus calorique de ton assiette, ce n'est pas le dessert » reste un short de réserve : script complet, à
 tourner et animer une journée quand l'assiette animée existe.
 
 ---
@@ -221,7 +221,7 @@ Jamais la longue, jamais les trois shorts.
 **La réserve** pour une semaine qui casse : « Le régime que tu choisis ne prédit rien »
 (chapitre 1 de « Pourquoi ça revient », utilisé en S4) ; « La petite fourchette te fait
 manger plus » (chapitre 6 de « Quoi mettre dans l'assiette », qui demande un beat de 10 s
-en plus à tourner dimanche 20) ; les deux reels complets « Le plus calorique de ton assiette, c'est pas le dessert » et « Une calorie, c'est une calorie », écrits, à tourner et animer une journée
+en plus à tourner dimanche 20) ; les deux reels complets « Le plus calorique de ton assiette, ce n'est pas le dessert » et « Une calorie, c'est une calorie », écrits, à tourner et animer une journée
 chacun ; « Une calorie » sort en S5 comme short de sa propre longue.
 
 **Les shorts, ce qui vaut pour tous.** Hook 25 mots au plus, chute 30 mots au plus, les

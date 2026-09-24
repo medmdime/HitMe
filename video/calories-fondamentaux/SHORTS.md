@@ -1,6 +1,6 @@
 # Les trois shorts de « Les calories, les fondamentaux »
 
-> **Changement du 17 septembre.** Pas de longue avant le semi : ces trois shorts se tournent **seuls**, tête parlante, le texte d'une traite puis le hook et la chute à part ; les inserts deviennent des cartes texte CapCut. Les shorts 1 et 3 se tournent dimanche 20 et sortent mardi 22 et samedi 26 ; le short 2 se tourne dimanche 27 et sort mardi 29. **Les shorts 1 et 3 ont maintenant leur dossier, qui fait foi** : [[Le plus calorique de ton assiette, c'est pas le dessert]] et [[Mange comme le corps que tu vises]], chacun avec son SCRIPT, son TOURNAGE et son PROMPTEUR. La ligne YouTube de la légende ne s'ajoute pas.
+> **Changement du 17 septembre.** Pas de longue avant le semi : ces trois shorts se tournent **seuls**, tête parlante, le texte d'une traite puis le hook et la chute à part ; les inserts deviennent des cartes texte CapCut. Les shorts 1 et 3 se tournent dimanche 20 et sortent mardi 22 et samedi 26 ; le short 2 se tourne dimanche 27 et sort mardi 29. **Les shorts 1 et 3 ont maintenant leur dossier, qui fait foi** : [[Le plus calorique de ton assiette, ce n'est pas le dessert]] et [[Mange comme le corps que tu vises]], chacun avec son SCRIPT, son TOURNAGE et son PROMPTEUR. La ligne YouTube de la légende ne s'ajoute pas.
 
 Tournés dimanche 20 septembre avec la longue, dans la même session. Publiés sur
 Instagram la semaine du 21, **avant** la longue : ils l'annoncent. Leur légende reçoit la
@@ -9,7 +9,7 @@ publient après la longue, avec la longue en « vidéo associée ».
 
 | Sortie | Short | Chapitre | Hook / cœur / chute | Durée | À tourner en plus |
 |---|---|---|---|---|---|
-| mardi 22 | **Le plus calorique de ton assiette, c'est pas le dessert** | 1 | 22 / 220 / 30 mots | ≈ 1:25 | le hook, la chute, la phrase du mécanisme à débit reel |
+| mardi 22 | **Le plus calorique de ton assiette, ce n'est pas le dessert** | 1 | 22 / 220 / 30 mots | ≈ 1:25 | le hook, la chute, la phrase du mécanisme à débit reel |
 | jeudi 24 | **Trois cents calories par jour sans t'entraîner** | 2 | 25 / 205 / 27 mots | ≈ 1:22 | le hook, la chute, la phrase du mécanisme |
 | samedi 26 | **Mange comme le corps que tu vises** | 3 | 24 / 232 / 26 mots | ≈ 1:30 | le hook, la chute, la phrase du mécanisme |
 
@@ -27,7 +27,7 @@ hook ; un seul scratch, sur le turn ; les inserts sont ceux de la longue, plein 
 
 ---
 
-## Short 1 · Le plus calorique de ton assiette, c'est pas le dessert · mardi 22
+## Short 1 · Le plus calorique de ton assiette, ce n'est pas le dessert · mardi 22
 
 Le cœur : les plans [S] du chapitre 1, de 1:05 à 2:39. Le hook est la première phrase de
 la longue, tournée une seconde fois pour le 9:16, avec l'accessoire.
@@ -104,7 +104,7 @@ La cuillère est pleine.
 
 **La légende**
 
-> Le plus calorique de ton assiette, c'est pas le dessert.
+> Le plus calorique de ton assiette, ce n'est pas le dessert.
 >
 > Pas parce que le dessert est innocent. Parce qu'on ne compte jamais ce qu'on ne mâche pas.
 >

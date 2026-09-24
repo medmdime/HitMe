@@ -42,7 +42,7 @@ Puis la chute, qui annonce [[Pourquoi ça revient]] pour dimanche prochain.
 
 | Sortie | Short | Cœur |
 |---|---|---|
-| mardi 22 | **Le plus calorique de ton assiette, c'est pas le dessert** | le chapitre 1, avec le pot de crème dessert et la cuillère d'huile en main |
+| mardi 22 | **Le plus calorique de ton assiette, ce n'est pas le dessert** | le chapitre 1, avec le pot de crème dessert et la cuillère d'huile en main |
 | jeudi 24 | **Trois cents calories par jour sans t'entraîner** | le NEAT, chapitre 2 |
 | samedi 26 | **Mange comme le corps que tu vises** | le corps cible, chapitre 3, la balance et le papier « 70 » |
 
