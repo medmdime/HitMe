@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=1080, height=1920">
+    <link rel="stylesheet" href="compositions/components/kit.css">
+    <link rel="stylesheet" href="compositions/components/youbud.css">
+    <link rel="stylesheet" href="compositions/components/assiette.css">
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.14.2/dist/gsap.min.js"></script>
+    <script src="assets/vendor/lucide.min.js"></script>
+    <style>
+      @font-face {
+        font-family: "Archivo";
+        src: url("assets/fonts/Archivo.woff2") format("woff2");
+        font-weight: 400 900;
+        font-display: block;
+      }
+      /* Le Kallaway edit, écrit par outils/kallaway-edit (ke.py montage) depuis kallaway.toml.
+         Ne pas retoucher à la main : changer la fiche et régénérer.
+         A : lui en grand. B : l'animation en haut (1080 x 960), lui détouré devant une carte en bas. */
+      html, body { width: 1080px; height: 1920px; background: #1a1a1a; }
+      .calque { position: absolute; left: 0; top: 0; width: 1080px; height: 1920px; overflow: hidden; will-change: transform; }
+      #zoom-a { position: absolute; left: 0; top: 0; width: 1080px; height: 1920px; will-change: transform; }
+      .fond { position: absolute; left: 0; width: 1080px; height: 960px; display: block; }
+      #fond-haut { top: 0; }
+      #fond-bas { top: 960px; }
+      .hote { position: absolute; left: 0; top: 0; will-change: transform; }
+      /* La bande du visage (visage-b.mp4, 1080 x 800) couvre y 1060 -> 1860.
+         La carte n'en montre que le fond : aucune bordure, un rebord plein, les coins arrondis. */
+      #carte-visage { position: absolute; left: 60px; top: 1240px; width: 960px; height: 620px;
+        border-radius: 44px; overflow: hidden; box-shadow: 0 12px 0 rgba(0, 0, 0, 0.12); background: #222; }
+      #video-b-fond { position: absolute; left: -60px; top: -180px; width: 1080px; height: 800px; }
+      /* Lui, détouré, posé exactement sur la bande : sa tête sort de la carte par le haut. */
+      #decoupe { position: absolute; left: 0; top: 1060px; width: 1080px; height: 800px;
+        filter: drop-shadow(0 10px 18px rgba(0, 0, 0, 0.22)); }
+      #video-b-perso { position: absolute; left: 0; top: 0; width: 1080px; height: 800px; }
+      /* Les mots incrustés sur le cadre A, au-dessus de la tête. */
+      .mot { position: absolute; top: 250px; height: 110px; line-height: 110px; padding: 0 40px; border-radius: 30px;
+        font-size: 70px; font-weight: 900; white-space: nowrap; opacity: 0; will-change: transform; text-align: center; color: var(--ink); }
+      .incruste-rond { position: absolute; top: 250px; width: 110px; height: 110px; border-radius: 55px; color: var(--ink);
+        opacity: 0; will-change: transform; }
+      .incruste-rond .ico { position: absolute; left: 27px; top: 27px; width: 56px; height: 56px; }
+      .incruste-rond .ico svg.lucide { display: block; width: 100%; height: 100%; }
+      #mot-sucre { left: 330px; width: 420px; background: #ffffff; box-shadow: 0 9px 0 #d9d8d0; }
+      #mot-sucre .barre { position: absolute; left: 50px; top: 50px; width: 320px; height: 12px; border-radius: 6px; background: var(--yb-red); }
+      #mot-gras { left: 355px; width: 370px; background: var(--yb-yellow); box-shadow: 0 9px 0 var(--yb-yellow-edge); }
+      #pilule-etude { left: 250px; width: 580px; background: #ffffff; box-shadow: 0 9px 0 #d9d8d0; font-size: 60px; }
+      #pilule-120 { left: 380px; width: 320px; background: var(--yb-yellow); box-shadow: 0 9px 0 var(--yb-yellow-edge); font-variant-numeric: tabular-nums; }
+      #nom { left: 290px; width: 500px; background: #ffffff; box-shadow: 0 9px 0 #d9d8d0; }
+      #bouton-abonne { left: 250px; width: 470px; background: var(--yb-green); box-shadow: 0 9px 0 var(--yb-green-edge); }
+      #icone-enregistre { left: 750px; background: var(--yb-yellow); box-shadow: 0 9px 0 var(--yb-yellow-edge); }
+    </style>
+  </head>
+  <body>
+    <div id="root" data-composition-id="main" data-start="0" data-duration="34.98" data-width="1080" data-height="1920">
+
+      <div id="calque-b" class="calque">
+        <img class="fond" id="fond-haut" src="assets/img/toile.jpg" alt="">
+        <img class="fond" id="fond-bas" src="assets/img/toile-bas.jpg" alt="">
+        <div id="host-i1a-la-semaine" data-composition-id="assiette-i1a-semaine" class="clip hote" data-start="1.589" data-duration="4.95" data-track-index="3" data-composition-src="compositions/I1a-la-semaine.html"></div>
+        <div id="host-i1b-le-gras" data-composition-id="assiette-i1b-gras" class="clip hote" data-start="7.414" data-duration="2.6" data-track-index="4" data-composition-src="compositions/I1b-le-gras.html"></div>
+        <div id="host-i2a-quatre-contre-neuf" data-composition-id="assiette-i2a-4-9" class="clip hote" data-start="11.208" data-duration="4.3" data-track-index="5" data-composition-src="compositions/I2a-quatre-contre-neuf.html"></div>
+        <div id="host-i2b-le-ventre" data-composition-id="assiette-i2b-ventre" class="clip hote" data-start="15.14" data-duration="3.75" data-track-index="6" data-composition-src="compositions/I2b-le-ventre.html"></div>
+        <div id="host-i3-le-double" data-composition-id="assiette-i3-double" class="clip hote" data-start="24.368" data-duration="1.65" data-track-index="7" data-composition-src="compositions/I3-le-double.html"></div>
+        <div id="host-i4-la-cuillere-et-le-dessert" data-composition-id="assiette-i4-cuillere-dessert" class="clip hote" data-start="27.422" data-duration="4.1" data-track-index="8" data-composition-src="compositions/I4-la-cuillere-et-le-dessert.html"></div>
+        <div id="carte-visage">
+          <video id="video-b-fond" class="clip" data-layout-allow-overflow src="assets/rushes/visage-b.mp4" data-start="0" data-duration="34.98" data-track-index="1" muted playsinline></video>
+        </div>
+        <div id="decoupe" data-layout-allow-overflow data-layout-allow-occlusion>
+          <video id="video-b-perso" class="clip" src="assets/rushes/visage-b-detoure.webm" data-start="0" data-duration="34.98" data-track-index="2" muted playsinline></video>
+        </div>
+      </div>
+
+      <div id="calque-a" class="calque">
+        <div id="zoom-a" data-layout-allow-overflow>
+          <video id="video-a" class="clip" src="assets/rushes/voix-montage.mp4" data-start="0" data-duration="34.98" data-track-index="0" muted playsinline></video>
+        </div>
+        <div class="mot" id="mot-sucre">SUCRE<div class="barre"></div></div>
+        <div class="mot" id="mot-gras">GRAS</div>
+        <div class="mot" id="pilule-etude">ÉTUDE · 2006</div>
+        <div class="mot" id="pilule-120">120</div>
+        <div class="mot" id="nom">Mohamed</div>
+        <div class="mot" id="bouton-abonne" data-layout-allow-overlap>Abonne-toi</div>
+        <div class="incruste-rond" id="icone-enregistre"><div class="ico"><i data-lucide="bookmark"></i></div></div>
+      </div>
+
+      <div id="host-sous-titres" data-composition-id="assiette-sous-titres" class="clip hote" data-start="0" data-duration="34.98" data-track-index="9" data-composition-src="compositions/sous-titres.html"></div>
+
+      <audio id="voix" src="assets/rushes/voix-montage.mp4" data-start="0" data-duration="34.98" data-track-index="100" data-volume="1"></audio>
+      <audio id="musique-1" src="assets/musique/careless-wandering.mp3" data-start="1.75" data-duration="16.917" data-media-start="0.5" data-track-index="90" data-volume="0.15"></audio>
+      <audio id="musique-2" src="assets/musique/particle-emission.mp3" data-start="21.201" data-duration="13.779" data-media-start="0.5" data-track-index="91" data-volume="0.55"></audio>
+      <audio id="son-01" src="assets/sfx/rizer-windy.mp3" data-start="0.0" data-duration="1.85" data-media-start="1.0" data-track-index="101" data-volume="0.3"></audio>
+      <audio id="son-02" src="assets/sfx/impacts.mp3" data-start="1.4" data-duration="1.2" data-media-start="0.2" data-track-index="102" data-volume="0.45"></audio>
+      <audio id="son-03" src="assets/sfx/air-woosh.wav" data-start="7.15" data-duration="1.0" data-media-start="0.25" data-track-index="103" data-volume="0.5"></audio>
+      <audio id="son-04" src="assets/sfx/air-woosh.wav" data-start="10.95" data-duration="1.0" data-media-start="0.25" data-track-index="104" data-volume="0.5"></audio>
+      <audio id="son-05" src="assets/sfx/air-woosh.wav" data-start="24.017" data-duration="1.0" data-media-start="0.25" data-track-index="105" data-volume="0.5"></audio>
+      <audio id="son-06" src="assets/sfx/air-woosh.wav" data-start="27.05" data-duration="1.0" data-media-start="0.25" data-track-index="106" data-volume="0.5"></audio>
+      <audio id="son-07" src="assets/sfx/soft_click.wav" data-start="6.673" data-duration="0.22" data-track-index="107" data-volume="1"></audio>
+      <audio id="son-08" src="assets/sfx/soft_click.wav" data-start="7.393" data-duration="0.22" data-track-index="108" data-volume="1"></audio>
+      <audio id="son-09" src="assets/sfx/soft_click.wav" data-start="19.334" data-duration="0.22" data-track-index="109" data-volume="1"></audio>
+      <audio id="son-10" src="assets/sfx/soft_click.wav" data-start="21.201" data-duration="0.22" data-track-index="110" data-volume="1"></audio>
+      <audio id="son-11" src="assets/sfx/soft_click.wav" data-start="26.86" data-duration="0.22" data-track-index="111" data-volume="1"></audio>
+      <audio id="son-12" src="assets/sfx/soft_click.wav" data-start="31.66" data-duration="0.22" data-track-index="112" data-volume="1"></audio>
+      <audio id="son-13" src="assets/sfx/soft_click.wav" data-start="33.567" data-duration="0.22" data-track-index="113" data-volume="1"></audio>
+      <audio id="son-14" src="assets/sfx/soft_click.wav" data-start="34.347" data-duration="0.22" data-track-index="114" data-volume="1"></audio>
+      <audio id="son-15" src="assets/sfx/rizer-mettalic.mp3" data-start="25.86" data-duration="1.1" data-media-start="0.75" data-track-index="115" data-volume="0.55"></audio>
+      <audio id="son-16" src="assets/sfx/impacts.mp3" data-start="26.51" data-duration="1.2" data-media-start="0.2" data-track-index="116" data-volume="0.38"></audio>
+      <audio id="son-17" src="assets/sfx/rizer-windy.mp3" data-start="19.801" data-duration="1.5" data-media-start="1.35" data-track-index="117" data-volume="0.22"></audio>
+      <audio id="son-18" src="assets/sfx/impacts.mp3" data-start="20.851" data-duration="1.2" data-media-start="0.2" data-track-index="118" data-volume="0.4"></audio>
+      <audio id="son-19" src="assets/sfx/rizer-windy.mp3" data-start="29.98" data-duration="1.1" data-media-start="1.75" data-track-index="119" data-volume="0.2"></audio>
+      <audio id="son-20" src="assets/sfx/impacts.mp3" data-start="30.63" data-duration="1.2" data-media-start="0.2" data-track-index="120" data-volume="0.34"></audio>
+    </div>
+
+    <script>
+      (function () {
+        if (window.lucide) window.lucide.createIcons();
+        var tl = gsap.timeline({ paused: true });
+        gsap.set("#calque-b", { x: 1080 });
+        gsap.set("#zoom-a", { transformOrigin: "540px 800px" });
+
+        // Les coupes : vers l'animation, glissé vers la gauche ; vers lui, glissé vers la droite.
+        tl.fromTo("#calque-a", { x: 0 }, { x: -1080, duration: 0.28, ease: "power2.inOut", immediateRender: false }, 1.61);
+        tl.fromTo("#calque-b", { x: 1080 }, { x: 0, duration: 0.28, ease: "power2.inOut", immediateRender: false }, 1.61);
+        tl.fromTo("#calque-b", { x: 0 }, { x: 1080, duration: 0.28, ease: "power2.inOut", immediateRender: false }, 6.26);
+        tl.fromTo("#calque-a", { x: -1080 }, { x: 0, duration: 0.28, ease: "power2.inOut", immediateRender: false }, 6.26);
+        tl.fromTo("#calque-a", { x: 0 }, { x: -1080, duration: 0.28, ease: "power2.inOut", immediateRender: false }, 7.46);
+        tl.fromTo("#calque-b", { x: 1080 }, { x: 0, duration: 0.28, ease: "power2.inOut", immediateRender: false }, 7.46);
+        tl.fromTo("#calque-b", { x: 0 }, { x: 1080, duration: 0.28, ease: "power2.inOut", immediateRender: false }, 9.727);
+        tl.fromTo("#calque-a", { x: -1080 }, { x: 0, duration: 0.28, ease: "power2.inOut", immediateRender: false }, 9.727);
+        tl.fromTo("#calque-a", { x: 0 }, { x: -1080, duration: 0.28, ease: "power2.inOut", immediateRender: false }, 11.26);
+        tl.fromTo("#calque-b", { x: 1080 }, { x: 0, duration: 0.28, ease: "power2.inOut", immediateRender: false }, 11.26);
+        tl.fromTo("#host-i2a-quatre-contre-neuf", { x: 0 }, { x: -1080, duration: 0.28, ease: "power2.inOut", immediateRender: false }, 15.134);
+        tl.fromTo("#host-i2b-le-ventre", { x: 1080 }, { x: 0, duration: 0.28, ease: "power2.inOut", immediateRender: false }, 15.134);
+        tl.fromTo("#calque-b", { x: 0 }, { x: 1080, duration: 0.28, ease: "power2.inOut", immediateRender: false }, 18.527);
+        tl.fromTo("#calque-a", { x: -1080 }, { x: 0, duration: 0.28, ease: "power2.inOut", immediateRender: false }, 18.527);
+        tl.fromTo("#calque-a", { x: 0 }, { x: -1080, duration: 0.28, ease: "power2.inOut", immediateRender: false }, 24.327);
+        tl.fromTo("#calque-b", { x: 1080 }, { x: 0, duration: 0.28, ease: "power2.inOut", immediateRender: false }, 24.327);
+        tl.fromTo("#calque-b", { x: 0 }, { x: 1080, duration: 0.28, ease: "power2.inOut", immediateRender: false }, 25.66);
+        tl.fromTo("#calque-a", { x: -1080 }, { x: 0, duration: 0.28, ease: "power2.inOut", immediateRender: false }, 25.66);
+        tl.fromTo("#calque-a", { x: 0 }, { x: -1080, duration: 0.28, ease: "power2.inOut", immediateRender: false }, 27.36);
+        tl.fromTo("#calque-b", { x: 1080 }, { x: 0, duration: 0.28, ease: "power2.inOut", immediateRender: false }, 27.36);
+        tl.fromTo("#calque-b", { x: 0 }, { x: 1080, duration: 0.28, ease: "power2.inOut", immediateRender: false }, 31.127);
+        tl.fromTo("#calque-a", { x: -1080 }, { x: 0, duration: 0.28, ease: "power2.inOut", immediateRender: false }, 31.127);
+
+        // Les zooms sur lui en grand : un par plan.
+        tl.fromTo("#zoom-a", { scale: 1 }, { scale: 1.06, duration: 1.75, ease: "none", immediateRender: false }, 0);
+        tl.set("#zoom-a", { scale: 1.15 }, 6.24);
+        tl.fromTo("#zoom-a", { scale: 1 }, { scale: 1.06, duration: 1.693, ease: "none", immediateRender: false }, 9.707);
+        tl.fromTo("#zoom-a", { scale: 1 }, { scale: 1.05, duration: 2.534, ease: "none", immediateRender: false }, 18.507);
+        tl.set("#zoom-a", { scale: 1.15 }, 21.201);
+        tl.set("#zoom-a", { scale: 1 }, 25.64);
+        tl.set("#zoom-a", { scale: 1.15 }, 26.86);
+        tl.fromTo("#zoom-a", { scale: 1 }, { scale: 1.08, duration: 3.827, ease: "none", immediateRender: false }, 31.107);
+
+        // Les mots incrustés sur le cadre A.
+        tl.fromTo("#mot-sucre", { opacity: 0, scale: 0.3 }, { opacity: 1, scale: 1, duration: 0.25, ease: "back.out(1.6)" }, 6.673);
+        tl.fromTo("#mot-sucre .barre", { scaleX: 0, transformOrigin: "0% 50%" }, { scaleX: 1, duration: 0.2, ease: "power2.out", immediateRender: false }, 7.393);
+        tl.set("#mot-sucre", { opacity: 0 }, 7.8);
+        tl.fromTo("#mot-gras", { opacity: 0, scale: 0.3 }, { opacity: 1, scale: 1, duration: 0.25, ease: "back.out(1.6)" }, 19.334);
+        tl.to("#mot-gras", { opacity: 0, duration: 0.12, ease: "power2.in" }, 21.061);
+        tl.fromTo("#pilule-etude", { opacity: 0, scale: 0.3 }, { opacity: 1, scale: 1, duration: 0.25, ease: "back.out(1.6)" }, 21.201);
+        tl.set("#pilule-etude", { opacity: 0 }, 24.667);
+        tl.fromTo("#pilule-120", { opacity: 0, scale: 0.3 }, { opacity: 1, scale: 1, duration: 0.25, ease: "back.out(1.6)" }, 26.86);
+        tl.set("#pilule-120", { opacity: 0 }, 27.7);
+        tl.fromTo("#nom", { opacity: 0, scale: 0.3 }, { opacity: 1, scale: 1, duration: 0.25, ease: "back.out(1.6)" }, 31.66);
+        tl.to("#nom", { opacity: 0, duration: 0.12, ease: "power2.in" }, 33.517);
+        tl.fromTo("#bouton-abonne", { opacity: 0, scale: 0.3 }, { opacity: 1, scale: 1, duration: 0.25, ease: "back.out(1.6)" }, 33.567);
+        tl.fromTo("#icone-enregistre", { opacity: 0, scale: 0.3 }, { opacity: 1, scale: 1, duration: 0.25, ease: "back.out(1.6)" }, 34.347);
+
+        window.__timelines["main"] = tl;
+      })();
+    </script>
+  </body>
+</html>

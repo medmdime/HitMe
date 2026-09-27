@@ -1,0 +1,106 @@
+/* ============================================================
+   Les animations de l'assiette : le cadre B du format court,
+   1080 x 960, posé en haut de l'image, Mohamed en petit dessous.
+   Chargé APRÈS kit.css et youbud.css. Le fond est une toile claire
+   (assets/img/toile.jpg), posée en <img> dans chaque composition :
+   une url() ici se résoudrait depuis cette feuille, pas depuis le
+   document (voir la note en tête de kit.css).
+   Rien d'important au-dessus de y = 230 : l'appli le recouvre.
+   ============================================================ */
+
+/* Seule la scène d'une animation fait 1080 x 960. Aucune règle sur html ni body : ces feuilles
+   sont aussi chargées par le montage complet (1080 x 1920), qui accueille les animations. */
+.clip.scene-b {
+  width: 1080px;
+  height: 960px;
+}
+
+.toile {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 1080px;
+  height: 960px;
+  display: block;
+}
+
+/* Un mot sous ou dans une carte : il donne le sens, jamais une phrase. */
+.lab {
+  position: absolute;
+  font-size: 44px;
+  font-weight: 900;
+  line-height: 1;
+  color: var(--ink);
+  text-align: center;
+  white-space: nowrap;
+}
+
+/* La source, en petit : le nom et l'année. */
+.src {
+  position: absolute;
+  font-size: 26px;
+  font-weight: 800;
+  letter-spacing: 0.08em;
+  line-height: 1;
+  color: #55554f;
+  white-space: nowrap;
+}
+
+/* Une icône Lucide dans une boîte dimensionnée : la couleur vient de la boîte. */
+.ico {
+  position: absolute;
+  color: var(--ink);
+}
+.ico svg.lucide {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+/* Un chiffre en pilule : un seul coloré par carton. */
+.num {
+  position: absolute;
+  font-size: 60px;
+  font-weight: 900;
+  line-height: 1;
+  padding: 14px 32px;
+  border-radius: 999px;
+  background: var(--yb-yellow);
+  color: var(--ink);
+  box-shadow: 0 7px 0 var(--yb-yellow-edge);
+  font-variant-numeric: tabular-nums;
+  white-space: nowrap;
+  opacity: 0;
+  will-change: transform;
+}
+.num.neutre {
+  background: #ffffff;
+  box-shadow: 0 7px 0 #d9d8d0;
+}
+
+/* Le morceau de sucre, dessiné à plat. */
+.cube {
+  position: absolute;
+  width: 64px;
+  height: 64px;
+  border-radius: 14px;
+  background: #ffffff;
+  box-shadow: 0 7px 0 #d6d5cd;
+  will-change: transform;
+}
+.cube::after {
+  content: "";
+  position: absolute;
+  left: 12px;
+  top: 12px;
+  width: 16px;
+  height: 16px;
+  border-radius: 5px;
+  background: #efeee8;
+}
+
+/* Les teintes des cartes de cette vidéo, avec leur rebord plein. */
+.t-blanc { --tint: #ffffff; --edge: #dcdbd3; }
+.t-jaune { --tint: var(--yb-yellow-2); --edge: #efdc98; }
+.t-orange { --tint: var(--yb-orange-2); --edge: #f3d4a4; }
+.t-bleu { --tint: var(--yb-blue-2); --edge: #b9e1f6; }

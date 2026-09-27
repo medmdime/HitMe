@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=1080, height=960">
+    <link rel="stylesheet" href="compositions/components/kit.css">
+    <link rel="stylesheet" href="compositions/components/youbud.css">
+    <link rel="stylesheet" href="compositions/components/assiette.css">
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.14.2/dist/gsap.min.js"></script>
+    <script src="assets/vendor/lucide.min.js"></script>
+    <style>
+      @font-face {
+        font-family: "Archivo";
+        src: url("assets/fonts/Archivo.woff2") format("woff2");
+        font-weight: 400 900;
+        font-display: block;
+      }
+      /* Le résultat de l'étude : ce que les gens estiment, et le double. */
+      /* « Pour les plus gras » : les plats. Le mot dit de quoi on parle avant le double. */
+      #a3-cloche { left: 80px; top: 320px; width: 220px; height: 270px; opacity: 0; }
+      #a3-cloche .ico { left: 50px; top: 30px; width: 120px; height: 120px; color: var(--yb-orange-edge); }
+      #a3-cloche .lab { left: 0; top: 190px; width: 220px; }
+      #a3-sol { position: absolute; left: 360px; top: 858px; width: 640px; height: 10px; border-radius: 5px; background: #d4d3ca; }
+      .col { position: absolute; width: 200px; border-radius: 30px 30px 8px 8px; will-change: transform; }
+      #a3-estime { left: 420px; top: 608px; height: 250px; background: #ffffff; box-shadow: inset 0 -12px 0 #e2e1d9; }
+      #a3-reel { left: 700px; top: 358px; height: 500px; background: var(--yb-yellow); box-shadow: inset 0 -12px 0 var(--yb-yellow-edge); }
+      #a3-gens { left: 480px; top: 518px; width: 80px; height: 80px; opacity: 0; will-change: transform; }
+      .col-lab { top: 880px; width: 200px; opacity: 0; }
+      #a3-x2 { left: 906px; top: 292px; }
+      #a3-src { left: 60px; top: 908px; opacity: 0; }
+    </style>
+  </head>
+  <body>
+    <div id="a3-root" data-composition-id="assiette-i3-double" data-start="0" data-duration="1.65" data-width="1080" data-height="960">
+      <div id="a3-scene" class="clip scene-b" data-start="0" data-duration="1.65" data-track-index="0">
+        <img class="toile" src="assets/img/toile.jpg" alt="">
+
+        <div class="yb-card t-orange" id="a3-cloche"><div class="ico"><i data-lucide="hand-platter"></i></div><div class="lab">Plats</div></div>
+        <div id="a3-sol"></div>
+        <div class="col" id="a3-estime"></div>
+        <div class="col" id="a3-reel"></div>
+        <div class="ico" id="a3-gens"><i data-lucide="users"></i></div>
+        <div class="lab col-lab" id="a3-lab-e" style="left: 420px;">Estimé</div>
+        <div class="lab col-lab" id="a3-lab-r" style="left: 700px;">Réel</div>
+        <div class="num" id="a3-x2">× 2</div>
+        <div class="src" id="a3-src">BURTON · 2006</div>
+      </div>
+
+      <!-- Le son : l'entrée, la montée qui finit sur « le double ». -->
+      <audio id="a3-s-01" src="assets/sfx/soft_click.wav" data-start="0" data-duration="0.22" data-track-index="61" data-volume="1"></audio>
+      <audio id="a3-s-02" src="assets/sfx/rizer-windy.mp3" data-start="0.2" data-duration="1.1" data-media-start="1.75" data-track-index="62" data-volume="0.24"></audio>
+      <audio id="a3-s-03" src="assets/sfx/impacts.mp3" data-start="0.94" data-duration="0.7" data-media-start="0.2" data-track-index="63" data-volume="0.43"></audio>
+    </div>
+
+    <script>
+      (function () {
+        if (window.lucide) window.lucide.createIcons();
+        var tl = gsap.timeline({ paused: true });
+
+        // Recalé sur la prise du 25 septembre ; 0.00 = 0,15 s avant la coupe.
+        // 0.00 « Pour les plus gras » : le plat, et ce que les gens estiment.
+        tl.fromTo("#a3-cloche", { opacity: 0, scale: 0, y: 40 }, { opacity: 1, scale: 1, y: 0, duration: 0.3, ease: "power3.out" }, 0);
+        tl.fromTo("#a3-estime", { scaleY: 0, transformOrigin: "50% 100%" }, { scaleY: 1, duration: 0.3, ease: "power3.out" }, 0.02);
+        tl.fromTo("#a3-lab-e", { opacity: 0, y: 12 }, { opacity: 1, y: 0, duration: 0.2, ease: "power3.out" }, 0.05);
+        tl.fromTo("#a3-gens", { opacity: 0, scale: 0.3 }, { opacity: 1, scale: 1, duration: 0.25, ease: "back.out(1.6)" }, 0.3);
+        tl.fromTo("#a3-src", { opacity: 0 }, { opacity: 1, duration: 0.2, ease: "power2.out" }, 0.1);
+
+        // 0.97 « c'était » : le réel monte ; 1.29 « le double » : il arrive au double.
+        tl.fromTo("#a3-lab-r", { opacity: 0, y: 12 }, { opacity: 1, y: 0, duration: 0.2, ease: "power3.out" }, 0.97);
+        tl.fromTo("#a3-reel", { scaleY: 0, transformOrigin: "50% 100%" }, { scaleY: 1, duration: 0.32, ease: "power2.out" }, 0.97);
+        tl.fromTo("#a3-x2", { opacity: 0, scale: 0.3 }, { opacity: 1, scale: 1, duration: 0.3, ease: "back.out(1.6)" }, 1.29);
+
+        window.__timelines["assiette-i3-double"] = tl;
+      })();
+    </script>
+  </body>
+</html>

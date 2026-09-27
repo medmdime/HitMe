@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=1080, height=960">
+    <link rel="stylesheet" href="compositions/components/kit.css">
+    <link rel="stylesheet" href="compositions/components/youbud.css">
+    <link rel="stylesheet" href="compositions/components/assiette.css">
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.14.2/dist/gsap.min.js"></script>
+    <style>
+      @font-face {
+        font-family: "Archivo";
+        src: url("assets/fonts/Archivo.woff2") format("woff2");
+        font-weight: 400 900;
+        font-display: block;
+      }
+      /* Deux colonnes à la même échelle, sur le même sol : 50 px par calorie. */
+      #a2a-g { left: 306px; top: 300px; }
+      #a2a-sol { position: absolute; left: 180px; top: 858px; width: 720px; height: 10px; border-radius: 5px; background: #d4d3ca; }
+      .col { position: absolute; width: 220px; border-radius: 30px 30px 8px 8px; will-change: transform; }
+      #a2a-col-s { left: 270px; top: 658px; height: 200px; background: #ffffff; box-shadow: inset 0 -12px 0 #e2e1d9; }
+      #a2a-col-g { left: 590px; top: 408px; height: 450px; background: var(--yb-yellow); box-shadow: inset 0 -12px 0 var(--yb-yellow-edge); }
+      .chiffre { position: absolute; width: 220px; height: 100px; line-height: 100px; text-align: center; font-size: 100px;
+        font-weight: 900; color: var(--ink); font-variant-numeric: tabular-nums; opacity: 0; will-change: transform; }
+      #a2a-n4 { left: 270px; top: 548px; }
+      #a2a-n9 { left: 590px; top: 298px; }
+      .col-lab { top: 880px; width: 220px; opacity: 0; }
+    </style>
+  </head>
+  <body>
+    <div id="a2a-root" data-composition-id="assiette-i2a-4-9" data-start="0" data-duration="4.3" data-width="1080" data-height="960">
+      <div id="a2a-scene" class="clip scene-b" data-start="0" data-duration="4.3" data-track-index="0">
+        <img class="toile" src="assets/img/toile.jpg" alt="">
+
+        <div class="num neutre" id="a2a-g">1 g</div>
+        <div id="a2a-sol"></div>
+        <div class="col" id="a2a-col-s"></div>
+        <div class="col" id="a2a-col-g"></div>
+        <div class="chiffre" id="a2a-n4">4</div>
+        <div class="chiffre" id="a2a-n9">0</div>
+        <div class="lab col-lab" id="a2a-lab-s" style="left: 270px;">Sucre</div>
+        <div class="lab col-lab" id="a2a-lab-g" style="left: 590px;">Gras</div>
+      </div>
+
+      <!-- Le son : la pilule, le sucre, le 4 ; la montée qui finit sur le 9. -->
+      <audio id="a2a-s-01" src="assets/sfx/soft_click.wav" data-start="0.4" data-duration="0.22" data-track-index="31" data-volume="1"></audio>
+      <audio id="a2a-s-02" src="assets/sfx/soft_click.wav" data-start="0.8" data-duration="0.22" data-track-index="32" data-volume="1"></audio>
+      <audio id="a2a-s-03" src="assets/sfx/bloop.mp3" data-start="1.16" data-duration="0.5" data-track-index="33" data-volume="0.3"></audio>
+      <audio id="a2a-s-04" src="assets/sfx/rizer-windy.mp3" data-start="1.35" data-duration="1.55" data-media-start="1.3" data-track-index="34" data-volume="0.24"></audio>
+      <audio id="a2a-s-05" src="assets/sfx/impacts.mp3" data-start="2.55" data-duration="1.0" data-media-start="0.2" data-track-index="35" data-volume="0.43"></audio>
+    </div>
+
+    <script>
+      (function () {
+        var tl = gsap.timeline({ paused: true });
+
+        // Recalé sur la prise du 25 septembre ; 0.00 = 0,15 s avant la coupe.
+        // 0.40 « un gramme »
+        tl.fromTo("#a2a-g", { opacity: 0, scale: 0.3 }, { opacity: 1, scale: 1, duration: 0.3, ease: "back.out(1.6)" }, 0.4);
+
+        // 0.80 « de sucre » ; 1.16 « quatre »
+        tl.fromTo("#a2a-lab-s", { opacity: 0, y: 12 }, { opacity: 1, y: 0, duration: 0.2, ease: "power3.out" }, 0.8);
+        tl.fromTo("#a2a-col-s", { scaleY: 0, transformOrigin: "50% 100%" }, { scaleY: 1, duration: 0.35, ease: "power3.out" }, 1.16);
+        tl.fromTo("#a2a-n4", { opacity: 0, scale: 0.3 }, { opacity: 1, scale: 1, duration: 0.3, ease: "back.out(1.6)" }, 1.25);
+
+        // 2.48 « de gras » ; 2.90 « neuf » : la colonne monte à 9, le compteur avec.
+        tl.fromTo("#a2a-lab-g", { opacity: 0, y: 12 }, { opacity: 1, y: 0, duration: 0.2, ease: "power3.out" }, 2.48);
+        tl.fromTo("#a2a-col-g", { scaleY: 0, transformOrigin: "50% 100%" }, { scaleY: 1, duration: 0.25, ease: "power3.out" }, 2.9);
+        tl.fromTo("#a2a-n9", { opacity: 0, scale: 0.6 }, { opacity: 1, scale: 1, duration: 0.2, ease: "power3.out" }, 2.9);
+        var compteur = { v: 0 };
+        var n9 = document.getElementById("a2a-n9");
+        tl.fromTo(compteur, { v: 0 }, { v: 9, duration: 0.25, ease: "power2.out", onUpdate: function () { n9.textContent = String(Math.round(compteur.v)); } }, 2.9);
+
+        window.__timelines["assiette-i2a-4-9"] = tl;
+      })();
+    </script>
+  </body>
+</html>

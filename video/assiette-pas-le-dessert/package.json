@@ -1,0 +1,20 @@
+{
+  "name": "assiette-pas-le-dessert",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "check": "npx --yes hyperframes@0.8.21 check",
+    "draft:I1a": "npx --yes hyperframes@0.8.21 render -c compositions/I1a-la-semaine.html -o renders/I1a-la-semaine-draft.mp4 -q draft",
+    "draft:I1b": "npx --yes hyperframes@0.8.21 render -c compositions/I1b-le-gras.html -o renders/I1b-le-gras-draft.mp4 -q draft",
+    "draft:I2a": "npx --yes hyperframes@0.8.21 render -c compositions/I2a-quatre-contre-neuf.html -o renders/I2a-quatre-contre-neuf-draft.mp4 -q draft",
+    "draft:I2b": "npx --yes hyperframes@0.8.21 render -c compositions/I2b-le-ventre.html -o renders/I2b-le-ventre-draft.mp4 -q draft",
+    "draft:I3": "npx --yes hyperframes@0.8.21 render -c compositions/I3-le-double.html -o renders/I3-le-double-draft.mp4 -q draft",
+    "draft:I4": "npx --yes hyperframes@0.8.21 render -c compositions/I4-la-cuillere-et-le-dessert.html -o renders/I4-la-cuillere-et-le-dessert-draft.mp4 -q draft",
+    "render:I1a": "npx --yes hyperframes@0.8.21 render -c compositions/I1a-la-semaine.html -o renders/I1a-la-semaine.mp4 -q high",
+    "render:I1b": "npx --yes hyperframes@0.8.21 render -c compositions/I1b-le-gras.html -o renders/I1b-le-gras.mp4 -q high",
+    "render:I2a": "npx --yes hyperframes@0.8.21 render -c compositions/I2a-quatre-contre-neuf.html -o renders/I2a-quatre-contre-neuf.mp4 -q high",
+    "render:I2b": "npx --yes hyperframes@0.8.21 render -c compositions/I2b-le-ventre.html -o renders/I2b-le-ventre.mp4 -q high",
+    "render:I3": "npx --yes hyperframes@0.8.21 render -c compositions/I3-le-double.html -o renders/I3-le-double.mp4 -q high",
+    "render:I4": "npx --yes hyperframes@0.8.21 render -c compositions/I4-la-cuillere-et-le-dessert.html -o renders/I4-la-cuillere-et-le-dessert.mp4 -q high"
+  }
+}

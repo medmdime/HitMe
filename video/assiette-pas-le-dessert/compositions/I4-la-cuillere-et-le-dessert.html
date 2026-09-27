@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=1080, height=960">
+    <link rel="stylesheet" href="compositions/components/kit.css">
+    <link rel="stylesheet" href="compositions/components/youbud.css">
+    <link rel="stylesheet" href="compositions/components/assiette.css">
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.14.2/dist/gsap.min.js"></script>
+    <style>
+      @font-face {
+        font-family: "Archivo";
+        src: url("assets/fonts/Archivo.woff2") format("woff2");
+        font-weight: 400 900;
+        font-display: block;
+      }
+      /* La cuillère qu'on remplit juste au bord, puis le dessert qu'on garde. */
+      #a4-cuill { left: 80px; top: 300px; width: 420px; height: 440px; opacity: 0; }
+      #a4-cuill svg { position: absolute; left: 50px; top: 110px; width: 320px; height: 140px; will-change: transform; }
+      #a4-dessert { left: 580px; top: 300px; width: 420px; height: 440px; opacity: 0; }
+      /* Une crème dessert : un pot blanc, la crème au chocolat dedans, une volute dessus. */
+      #a4-pot { position: absolute; left: 110px; top: 140px; width: 200px; height: 160px; border-radius: 22px 22px 48px 48px;
+        background: #ffffff; box-shadow: 0 8px 0 #e3ded3; overflow: hidden; }
+      #a4-choco { position: absolute; left: 0; top: 0; width: 200px; height: 58px; background: #7b4a2b; }
+      #a4-volute { position: absolute; left: 168px; top: 104px; width: 84px; height: 50px; border-radius: 42px 42px 18px 18px; background: #8e5a37; }
+      .carte-lab { left: 0; top: 350px; width: 420px; font-size: 48px; }
+      .goutte { position: absolute; left: 225px; top: 232px; width: 30px; height: 40px; border-radius: 50% 50% 50% 50% / 60% 60% 40% 40%;
+        background: var(--yb-yellow); box-shadow: inset 0 -5px 0 var(--yb-yellow-edge); opacity: 0; will-change: transform; }
+      .ok { width: 84px; height: 84px; top: 268px; }
+      #a4-ok1 { left: 436px; }
+      #a4-ok2 { left: 936px; }
+      .conf { position: absolute; left: 972px; top: 300px; width: 14px; height: 22px; border-radius: 4px; opacity: 0; }
+    </style>
+  </head>
+  <body>
+    <div id="a4-root" data-composition-id="assiette-i4-cuillere-dessert" data-start="0" data-duration="4.1" data-width="1080" data-height="960">
+      <div id="a4-scene" class="clip scene-b" data-start="0" data-duration="4.1" data-track-index="0">
+        <img class="toile" src="assets/img/toile.jpg" alt="">
+
+        <div class="yb-card t-jaune" id="a4-cuill">
+          <svg viewBox="0 0 320 140">
+            <defs><clipPath id="a4-clip-bol"><ellipse cx="110" cy="72" rx="84" ry="42"/></clipPath></defs>
+            <rect x="196" y="60" width="120" height="24" rx="12" fill="#d8d7cf"/>
+            <ellipse cx="110" cy="76" rx="102" ry="58" fill="#cfcec6"/>
+            <ellipse cx="110" cy="70" rx="102" ry="58" fill="#ecebe5"/>
+            <ellipse cx="110" cy="72" rx="84" ry="42" fill="#dedcd4"/>
+            <g clip-path="url(#a4-clip-bol)"><rect id="a4-huile" x="20" y="28" width="180" height="88" fill="#ffc800"/></g>
+          </svg>
+          <div class="lab carte-lab">Huile</div>
+        </div>
+
+        <div class="yb-card t-orange" id="a4-dessert">
+          <div id="a4-pot"><div id="a4-choco"></div></div>
+          <div id="a4-volute"></div>
+          <div class="lab carte-lab">Dessert</div>
+        </div>
+
+        <div class="goutte" id="a4-goutte"></div>
+
+        <div class="conf"></div><div class="conf"></div><div class="conf"></div><div class="conf"></div>
+        <div class="conf"></div><div class="conf"></div><div class="conf"></div><div class="conf"></div>
+        <div class="conf"></div><div class="conf"></div><div class="conf"></div><div class="conf"></div>
+        <div class="conf"></div><div class="conf"></div><div class="conf"></div><div class="conf"></div>
+
+        <div class="yb-badge ok" id="a4-ok1"><svg viewBox="0 0 96 96"><path d="M30 50 L43 63 L68 36"/></svg></div>
+        <div class="yb-badge ok" id="a4-ok2"><svg viewBox="0 0 96 96"><path d="M30 50 L43 63 L68 36"/></svg></div>
+      </div>
+
+      <!-- Le son : deux coches qui montent, l'huile mesurée puis le dessert gagné. -->
+      <audio id="a4-s-01" src="assets/sfx/soft_click.wav" data-start="0" data-duration="0.22" data-track-index="81" data-volume="1"></audio>
+      <audio id="a4-s-02" src="assets/sfx/bloop.mp3" data-start="2.18" data-duration="0.63" data-track-index="82" data-volume="0.5"></audio>
+      <audio id="a4-s-03" src="assets/sfx/correct.wav" data-start="2.6" data-duration="0.5" data-track-index="83" data-volume="0.36"></audio>
+      <audio id="a4-s-04" src="assets/sfx/soft_click.wav" data-start="2.79" data-duration="0.22" data-track-index="84" data-volume="1"></audio>
+      <audio id="a4-s-05" src="assets/sfx/correct.wav" data-start="3.63" data-duration="0.47" data-track-index="85" data-volume="0.7"></audio>
+    </div>
+
+    <script>
+      (function () {
+        var tl = gsap.timeline({ paused: true });
+        gsap.set("#a4-huile", { scaleY: 0, transformOrigin: "50% 100%" });
+        ["#a4-ok1", "#a4-ok2"].forEach(function (sel) {
+          var p = document.querySelector(sel + " path");
+          var len = p.getTotalLength() * 1.05;
+          gsap.set(p, { strokeDasharray: len, strokeDashoffset: len });
+        });
+
+        // Recalé sur la prise du 25 septembre ; 0.00 = 0,15 s avant la coupe.
+        // 0.00 « Alors la prochaine fois » : la cuillère, vide.
+        tl.fromTo("#a4-cuill", { opacity: 0, scale: 0, y: 40 }, { opacity: 1, scale: 1, y: 0, duration: 0.35, ease: "power3.out" }, 0);
+
+        // 1.39 « prends ta cuillère » : elle bouge.
+        tl.fromTo("#a4-cuill svg", { rotation: 0 }, { rotation: -8, duration: 0.08, ease: "power1.inOut", repeat: 3, yoyo: true, immediateRender: false }, 1.39);
+        tl.to("#a4-cuill svg", { rotation: 0, duration: 0.08 }, 1.71);
+
+        // 1.98 « mesure » : une goutte tombe ; l'huile monte pile au bord.
+        tl.fromTo("#a4-goutte", { opacity: 0 }, { opacity: 1, duration: 0.04 }, 1.98);
+        tl.fromTo("#a4-goutte", { y: 0 }, { y: 200, duration: 0.22, ease: "power2.in", immediateRender: false }, 1.98);
+        tl.to("#a4-goutte", { opacity: 0, duration: 0.05 }, 2.2);
+        tl.to("#a4-huile", { scaleY: 1, duration: 0.4, ease: "power2.out" }, 2.2);
+
+        // 2.60 « ton huile » : mesurée, cochée.
+        tl.fromTo("#a4-ok1", { opacity: 0, scale: 0.3 }, { opacity: 1, scale: 1, duration: 0.25, ease: "back.out(1.6)" }, 2.6);
+        tl.to("#a4-ok1 path", { strokeDashoffset: 0, duration: 0.25, ease: "power2.out" }, 2.68);
+
+        // 2.79 « profite » : le dessert.
+        tl.fromTo("#a4-dessert", { opacity: 0, scale: 0, y: 40 }, { opacity: 1, scale: 1, y: 0, duration: 0.35, ease: "power3.out" }, 2.79);
+
+        // 3.63 « ton dessert » : coché, et une seule fois dans la vidéo, des confettis.
+        tl.fromTo("#a4-ok2", { opacity: 0, scale: 0.3 }, { opacity: 1, scale: 1, duration: 0.25, ease: "back.out(1.6)" }, 3.63);
+        tl.to("#a4-ok2 path", { strokeDashoffset: 0, duration: 0.25, ease: "power2.out" }, 3.71);
+        tl.fromTo("#a4-dessert", { scale: 1 }, { scale: 1.08, duration: 0.12, ease: "power2.out", immediateRender: false }, 3.63);
+        tl.to("#a4-dessert", { scale: 1, duration: 0.18, ease: "power2.inOut" }, 3.76);
+
+        var couleurs = ["#ffc800", "#58cc02", "#ff9600", "#1cb0f6", "#ff4b4b", "#ce82ff"];
+        var pieces = Array.prototype.slice.call(document.querySelectorAll(".conf"));
+        function prand(n) { var s = Math.sin(n * 12.9898) * 43758.5453; return s - Math.floor(s); }
+        pieces.forEach(function (el, i) { el.style.background = couleurs[i % couleurs.length]; });
+        var feu = { T: 0 };
+        tl.fromTo(feu, { T: 0 }, { T: 1, duration: 0.8, ease: "none", immediateRender: false, onUpdate: function () {
+          var T = feu.T, t = T * 0.8;
+          pieces.forEach(function (el, i) {
+            if (T <= 0) { el.style.opacity = "0"; return; }
+            var ang = -Math.PI / 2 + (prand(i + 1) - 0.5) * Math.PI * 1.2;
+            var v = 520 + prand(i + 37) * 520;
+            var x = Math.cos(ang) * v * t;
+            var y = Math.sin(ang) * v * t + 0.5 * 1300 * t * t;
+            var r = (prand(i + 71) - 0.5) * 900 * T;
+            el.style.transform = "translate(" + x.toFixed(1) + "px, " + y.toFixed(1) + "px) rotate(" + r.toFixed(1) + "deg)";
+            el.style.opacity = String(T < 0.75 ? 1 : Math.max(0, 1 - (T - 0.75) / 0.25));
+          });
+        } }, 3.63);
+
+        window.__timelines["assiette-i4-cuillere-dessert"] = tl;
+      })();
+    </script>
+  </body>
+</html>

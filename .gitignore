@@ -8,6 +8,7 @@
 
 # dépendances et caches, où qu'ils soient : outils/, les projets HyperFrames dans video/
 node_modules/
+__pycache__/
 .next/
 *.tsbuildinfo
 npm-debug.log*
@@ -45,3 +46,13 @@ video/creatine-gummies/snapshots/
 .obsidian/workspace/
 .obsidian/cache
 .trash/
+
+# le Kallaway edit (outils/kallaway-edit) : les prises montées (sa voix, son visage), les musiques
+# d'une bibliothèque tierce et les caches de travail restent sur la machine, pour toutes les vidéos ;
+# tout se refait depuis D:/videos et kallaway.toml
+video/*/assets/rushes/
+video/*/assets/musique/
+video/*/montage/cache/
+video/*/.transcode-cache/
+# et les rendus de chaque vidéo montée ainsi (`ke.py … preparer` ajoute la ligne)
+video/assiette-pas-le-dessert/renders/

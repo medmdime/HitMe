@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=1080, height=960">
+    <link rel="stylesheet" href="compositions/components/kit.css">
+    <link rel="stylesheet" href="compositions/components/youbud.css">
+    <link rel="stylesheet" href="compositions/components/assiette.css">
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.14.2/dist/gsap.min.js"></script>
+    <script src="assets/vendor/lucide.min.js"></script>
+    <style>
+      @font-face {
+        font-family: "Archivo";
+        src: url("assets/fonts/Archivo.woff2") format("woff2");
+        font-weight: 400 900;
+        font-display: block;
+      }
+      /* Temps 1 : les mêmes calories, côte à côte. */
+      #a2b-p1 { position: absolute; left: 0; top: 0; width: 1080px; height: 960px; will-change: transform; }
+      #a2b-tas { left: 90px; top: 300px; width: 400px; height: 360px; --tint: #efeee8; --edge: #d9d8cf; opacity: 0; }
+      #a2b-cuill { left: 590px; top: 300px; width: 400px; height: 360px; opacity: 0; }
+      #a2b-cuill svg { position: absolute; left: 40px; top: 110px; width: 320px; height: 140px; }
+      #a2b-egal { position: absolute; left: 505px; top: 430px; width: 70px; height: 100px; line-height: 100px; text-align: center;
+        font-size: 96px; font-weight: 900; color: var(--ink); opacity: 0; will-change: transform; }
+      .p1-lab { top: 690px; width: 400px; }
+      #a2b-demi { left: 872px; top: 262px; }
+      /* Temps 2 : les deux estomacs, dessinés à plat, sans contour, en bleu clair (l'eau, le volume) pour ressortir sur la toile. */
+      .estomac { position: absolute; top: 360px; width: 360px; height: 380px; overflow: visible; opacity: 0; will-change: transform; }
+      .p2-lab { top: 770px; width: 360px; opacity: 0; }
+      .goutte { position: absolute; left: 747px; top: 250px; width: 30px; height: 40px; border-radius: 50% 50% 50% 50% / 60% 60% 40% 40%;
+        background: var(--yb-yellow); box-shadow: inset 0 -5px 0 var(--yb-yellow-edge); opacity: 0; will-change: transform; }
+      #a2b-stop { left: 752px; top: 450px; width: 96px; height: 96px; color: var(--yb-red); opacity: 0; will-change: transform; }
+      #a2b-satiete { left: 700px; top: 556px; width: 200px; font-size: 38px; opacity: 0; }
+      #a2b-ko { width: 72px; height: 72px; left: 764px; top: 470px; }
+      #a2b-src { left: 830px; top: 908px; opacity: 0; }
+    </style>
+  </head>
+  <body>
+    <div id="a2b-root" data-composition-id="assiette-i2b-ventre" data-start="0" data-duration="3.75" data-width="1080" data-height="960">
+      <div id="a2b-scene" class="clip scene-b" data-start="0" data-duration="3.75" data-track-index="0">
+        <img class="toile" src="assets/img/toile.jpg" alt="">
+
+        <div id="a2b-p1">
+          <div class="yb-card" id="a2b-tas">
+            <div class="cube" style="left: 54px; top: 236px;"></div>
+            <div class="cube" style="left: 130px; top: 236px;"></div>
+            <div class="cube" style="left: 206px; top: 236px;"></div>
+            <div class="cube" style="left: 282px; top: 236px;"></div>
+            <div class="cube" style="left: 92px; top: 160px;"></div>
+            <div class="cube" style="left: 168px; top: 160px;"></div>
+            <div class="cube" style="left: 244px; top: 160px;"></div>
+          </div>
+          <div id="a2b-egal">=</div>
+          <div class="yb-card t-jaune" id="a2b-cuill">
+            <svg viewBox="0 0 320 140">
+              <rect x="196" y="60" width="120" height="24" rx="12" fill="#d8d7cf"/>
+              <ellipse cx="110" cy="76" rx="102" ry="58" fill="#cfcec6"/>
+              <ellipse cx="110" cy="70" rx="102" ry="58" fill="#ecebe5"/>
+              <ellipse cx="110" cy="72" rx="84" ry="42" fill="#ffc800"/>
+            </svg>
+          </div>
+          <div class="lab p1-lab" style="left: 90px;">Sucre</div>
+          <div class="lab p1-lab" style="left: 590px;">Gras</div>
+          <div class="num" id="a2b-demi">½</div>
+        </div>
+
+        <svg class="estomac" id="a2b-est-s" viewBox="0 0 360 380" style="left: 110px;">
+          <defs><clipPath id="a2b-clip-s"><path d="M130 0 L170 0 L170 58 C 228 36 330 66 342 168 C 354 270 284 352 182 362 C 92 370 26 322 38 250 C 45 210 72 190 102 192 C 126 194 136 172 133 142 C 130 112 130 84 130 58 Z"/></clipPath></defs>
+          <path d="M130 0 L170 0 L170 58 C 228 36 330 66 342 168 C 354 270 284 352 182 362 C 92 370 26 322 38 250 C 45 210 72 190 102 192 C 126 194 136 172 133 142 C 130 112 130 84 130 58 Z" fill="#b9e1f6" transform="translate(0 9)"/>
+          <path d="M130 0 L170 0 L170 58 C 228 36 330 66 342 168 C 354 270 284 352 182 362 C 92 370 26 322 38 250 C 45 210 72 190 102 192 C 126 194 136 172 133 142 C 130 112 130 84 130 58 Z" fill="#dcf2fd"/>
+          <g clip-path="url(#a2b-clip-s)">
+            <g class="a2b-cube"><rect x="74" y="307" width="46" height="46" rx="10" fill="#d6d5cd"/><rect x="74" y="302" width="46" height="46" rx="10" fill="#ffffff"/></g>
+            <g class="a2b-cube"><rect x="124" y="307" width="46" height="46" rx="10" fill="#d6d5cd"/><rect x="124" y="302" width="46" height="46" rx="10" fill="#ffffff"/></g>
+            <g class="a2b-cube"><rect x="174" y="307" width="46" height="46" rx="10" fill="#d6d5cd"/><rect x="174" y="302" width="46" height="46" rx="10" fill="#ffffff"/></g>
+            <g class="a2b-cube"><rect x="224" y="307" width="46" height="46" rx="10" fill="#d6d5cd"/><rect x="224" y="302" width="46" height="46" rx="10" fill="#ffffff"/></g>
+            <g class="a2b-cube"><rect x="99" y="257" width="46" height="46" rx="10" fill="#d6d5cd"/><rect x="99" y="252" width="46" height="46" rx="10" fill="#ffffff"/></g>
+            <g class="a2b-cube"><rect x="149" y="257" width="46" height="46" rx="10" fill="#d6d5cd"/><rect x="149" y="252" width="46" height="46" rx="10" fill="#ffffff"/></g>
+            <g class="a2b-cube"><rect x="199" y="257" width="46" height="46" rx="10" fill="#d6d5cd"/><rect x="199" y="252" width="46" height="46" rx="10" fill="#ffffff"/></g>
+          </g>
+        </svg>
+
+        <svg class="estomac" id="a2b-est-g" viewBox="0 0 360 380" style="left: 610px;">
+          <defs><clipPath id="a2b-clip-g"><path d="M130 0 L170 0 L170 58 C 228 36 330 66 342 168 C 354 270 284 352 182 362 C 92 370 26 322 38 250 C 45 210 72 190 102 192 C 126 194 136 172 133 142 C 130 112 130 84 130 58 Z"/></clipPath></defs>
+          <path d="M130 0 L170 0 L170 58 C 228 36 330 66 342 168 C 354 270 284 352 182 362 C 92 370 26 322 38 250 C 45 210 72 190 102 192 C 126 194 136 172 133 142 C 130 112 130 84 130 58 Z" fill="#b9e1f6" transform="translate(0 9)"/>
+          <path d="M130 0 L170 0 L170 58 C 228 36 330 66 342 168 C 354 270 284 352 182 362 C 92 370 26 322 38 250 C 45 210 72 190 102 192 C 126 194 136 172 133 142 C 130 112 130 84 130 58 Z" fill="#dcf2fd"/>
+          <g clip-path="url(#a2b-clip-g)">
+            <rect id="a2b-huile" x="0" y="290" width="360" height="90" fill="#ffc800"/>
+          </g>
+        </svg>
+
+        <div class="lab p2-lab" id="a2b-lab-s" style="left: 110px;">Sucre</div>
+        <div class="lab p2-lab" id="a2b-lab-g" style="left: 610px;">Gras</div>
+
+        <div class="goutte" id="a2b-g1"></div>
+        <div class="goutte" id="a2b-g2"></div>
+        <div class="goutte" id="a2b-g3"></div>
+
+        <div class="yb-badge ko" id="a2b-ko"><svg viewBox="0 0 96 96"><path d="M34 34 L62 62 M62 34 L34 62"/></svg></div>
+
+        <div class="src" id="a2b-src">HOLT · 1995</div>
+      </div>
+
+      <!-- Le son -->
+      <audio id="a2b-s-01" src="assets/sfx/soft_click.wav" data-start="0" data-duration="0.22" data-track-index="41" data-volume="1"></audio>
+      <audio id="a2b-s-02" src="assets/sfx/soft_click.wav" data-start="0.08" data-duration="0.22" data-track-index="42" data-volume="1"></audio>
+      <audio id="a2b-s-03" src="assets/sfx/soft_click.wav" data-start="0.6" data-duration="0.22" data-track-index="43" data-volume="1"></audio>
+      <audio id="a2b-s-05" src="assets/sfx/bloop.mp3" data-start="1.7" data-duration="0.63" data-track-index="45" data-volume="0.6"></audio>
+      <audio id="a2b-s-06" src="assets/sfx/bloop.mp3" data-start="1.84" data-duration="0.63" data-track-index="46" data-volume="0.5"></audio>
+      <audio id="a2b-s-07" src="assets/sfx/bloop.mp3" data-start="3" data-duration="0.24" data-track-index="47" data-volume="0.5"></audio>
+      <audio id="a2b-s-08" src="assets/sfx/bloop.mp3" data-start="3.24" data-duration="0.1" data-track-index="48" data-volume="0.6"></audio>
+      <audio id="a2b-s-09" src="assets/sfx/wrong.mp3" data-start="3.36" data-duration="0.39" data-track-index="49" data-volume="0.45"></audio>
+    </div>
+
+    <script>
+      (function () {
+        if (window.lucide) window.lucide.createIcons();
+        var tl = gsap.timeline({ paused: true });
+        var ko = document.querySelector("#a2b-ko path");
+        var koLen = ko.getTotalLength() * 1.05;
+        gsap.set(ko, { strokeDasharray: koLen, strokeDashoffset: koLen });
+
+        // Recalé sur la prise du 25 septembre ; 0.00 = 0,15 s avant la coupe.
+        // 0.00 « il prend » : le tas de sucre et la cuillère d'huile, les mêmes calories.
+        tl.fromTo("#a2b-tas", { opacity: 0, scale: 0, y: 40 }, { opacity: 1, scale: 1, y: 0, duration: 0.3, ease: "power3.out" }, 0);
+        tl.fromTo("#a2b-cuill", { opacity: 0, scale: 0, y: 40 }, { opacity: 1, scale: 1, y: 0, duration: 0.3, ease: "power3.out" }, 0.08);
+        tl.fromTo("#a2b-egal", { opacity: 0, scale: 0.3 }, { opacity: 1, scale: 1, duration: 0.25, ease: "back.out(1.6)" }, 0.2);
+        // 0.60 « deux fois moins de place » : la moitié.
+        tl.fromTo("#a2b-demi", { opacity: 0, scale: 0.3 }, { opacity: 1, scale: 1, duration: 0.3, ease: "back.out(1.6)" }, 0.6);
+        // 1.36 : le premier temps sort.
+        tl.to("#a2b-p1", { opacity: 0, y: -30, duration: 0.2, ease: "power2.in" }, 1.36);
+
+        // 1.52 « ton ventre » : les deux estomacs, leurs mots, la source.
+        tl.fromTo(".estomac", { opacity: 0, y: 40, scale: 0.9 }, { opacity: 1, y: 0, scale: 1, duration: 0.35, ease: "power3.out", stagger: 0.08 }, 1.52);
+        tl.fromTo(".p2-lab", { opacity: 0 }, { opacity: 1, duration: 0.25, ease: "power2.out" }, 1.6);
+        tl.fromTo("#a2b-src", { opacity: 0 }, { opacity: 1, duration: 0.25, ease: "power2.out" }, 1.6);
+        // Le sucre tombe dans l'estomac de gauche.
+        tl.fromTo(".a2b-cube", { y: -300 }, { y: 0, duration: 0.22, ease: "power2.in", stagger: 0.035 }, 1.58);
+        // 1.82 « se remplit » : l'huile se verse à droite, le niveau monte à peine.
+        tl.fromTo("#a2b-g1", { opacity: 0 }, { opacity: 1, duration: 0.04 }, 1.6);
+        tl.fromTo("#a2b-g1", { y: 0 }, { y: 150, duration: 0.22, ease: "power2.in", immediateRender: false }, 1.6);
+        tl.to("#a2b-g1", { opacity: 0, duration: 0.05 }, 1.82);
+        tl.fromTo("#a2b-huile", { scaleY: 0, transformOrigin: "50% 100%" }, { scaleY: 0.5, duration: 0.3, ease: "power3.out" }, 1.82);
+
+        // 2.26 « à peine » : le niveau frémit, sans monter.
+        tl.to("#a2b-huile", { y: -3, duration: 0.04, ease: "none" }, 2.26);
+        tl.to("#a2b-huile", { y: 2, duration: 0.04, ease: "none" }, 2.3);
+        tl.to("#a2b-huile", { y: -2, duration: 0.04, ease: "none" }, 2.34);
+        tl.to("#a2b-huile", { y: 0, duration: 0.04, ease: "none" }, 2.38);
+
+        // 2.80 « tu continues » : encore de l'huile ; 3.34 « de manger » : la croix.
+        tl.fromTo("#a2b-g2", { opacity: 0 }, { opacity: 1, duration: 0.04 }, 2.8);
+        tl.fromTo("#a2b-g2", { y: 0 }, { y: 150, duration: 0.2, ease: "power2.in", immediateRender: false }, 2.8);
+        tl.to("#a2b-g2", { opacity: 0, duration: 0.05 }, 3.0);
+        tl.to("#a2b-huile", { scaleY: 0.6, duration: 0.2, ease: "power3.out" }, 3.0);
+        tl.fromTo("#a2b-g3", { opacity: 0 }, { opacity: 1, duration: 0.04 }, 3.06);
+        tl.fromTo("#a2b-g3", { y: 0 }, { y: 150, duration: 0.18, ease: "power2.in", immediateRender: false }, 3.06);
+        tl.to("#a2b-g3", { opacity: 0, duration: 0.05 }, 3.24);
+        tl.to("#a2b-huile", { scaleY: 0.72, duration: 0.15, ease: "power3.out" }, 3.24);
+        tl.fromTo("#a2b-ko", { opacity: 0, scale: 0.3 }, { opacity: 1, scale: 1, duration: 0.2, ease: "back.out(1.6)" }, 3.34);
+        tl.to(ko, { strokeDashoffset: 0, duration: 0.2, ease: "power2.out" }, 3.38);
+        tl.to("#a2b-est-g", { x: -6, duration: 0.04, ease: "none" }, 3.38);
+        tl.to("#a2b-est-g", { x: 6, duration: 0.04, ease: "none" }, 3.42);
+        tl.to("#a2b-est-g", { x: 0, duration: 0.04, ease: "none" }, 3.46);
+
+        window.__timelines["assiette-i2b-ventre"] = tl;
+      })();
+    </script>
+  </body>
+</html>

@@ -10,7 +10,7 @@ ce que Claude écrit, tu le vois ici.
 
 **Le format jusqu'au dimanche 18 octobre : deux ou trois shorts par semaine selon ton temps, le samedi en priorité, au format Train Bloom passé au crible Kallaway ; une seule série, [[La série · ce qui annule ton déficit|ce qui annule ton déficit]] ; ta vie de tous les jours dans les stories. Pas de longue YouTube avant le semi, et le trailer attend.** Chaque script arrive avec ses animations et son b-roll : la méthode est dans le skill `science-reel`, § « Delivering a script to Mohamed ».
 
-**Jeudi 24 au soir : une seule série, « ce qui annule ton déficit ».** Chaque épisode raconte un moment de la semaine de la personne, pour qu'elle s'y retrouve. Le plan daté, les tournages et le tableau de bord : [[La série · ce qui annule ton déficit]], à valider avant de toucher au calendrier ; le tableau ci-dessous change à ce moment-là. La prochaine session tourne [[video/assiette-pas-le-dessert/VERSION-COURTE|la version courte de l'assiette]] et [[Laisse les gens vivre]].
+**Jeudi 24 au soir : une seule série, « ce qui annule ton déficit ».** Chaque épisode raconte un moment de la semaine de la personne, pour qu'elle s'y retrouve. Le plan daté, les tournages et le tableau de bord : [[La série · ce qui annule ton déficit]], à valider avant de toucher au calendrier ; les scénarios, à lire un par un : [[Les scénarios de la série]] ; le tableau ci-dessous change à ce moment-là. La prochaine session tourne [[video/assiette-pas-le-dessert/VERSION-COURTE|la version courte de l'assiette]] et [[Laisse les gens vivre]].
 
 | Sort | Short | Dossier |
 |---|---|---|
@@ -133,6 +133,7 @@ source, puis recopie.
 | Note | Pour quoi |
 |---|---|
 | [[methode/Écrire un science-reel\|Écrire un science-reel]] | le format mesuré sur douze reels : les sept beats, les cinq règles, le turn, la légende, l'adaptation française et ses pièges, et les huit règles du long format |
+| [[methode/Le Kallaway edit\|Le Kallaway edit]] | le montage des shorts depuis le 26 septembre, tout dans HyperFrames : coupes à chaque souffle, lèvres recalées, toi en grand / animation et toi détouré, woosh, risers et hoop, musique, sous-titres, ×1,08 ; l'outil `outils/kallaway-edit`, l'exemple de l'assiette |
 | [[methode/Monter un reel Train Bloom dans CapCut\|Monter un reel dans CapCut]] | les pistes, la bascule musicale sur le deuxième hook, riser, whoosh, impact, les volumes exacts, les sous-titres |
 | [[methode/Le pipeline vidéo HitMe\|Le pipeline HitMe]] | la recherche d'outliers, le teardown, le remix, le b-roll, la sortie CapCut |
 | [[methode/Les hooks (Kallaway)\|Les hooks]] | la formule en trois temps, les quatre composantes alignées, les archétypes |
@@ -150,7 +151,7 @@ toi. Elles sont dans [[profil/FONDAMENTAUX#6. Le ton et la signature|les fondame
 - **Le réglage**, fait une fois : [[profil/FONDAMENTAUX#9. Le tournage|les fondamentaux, § 9]]. Une seule caméra en 4K 16:9, toi centré, recadrage fixe 9:16 pour les shorts, micro-cravate, la lampe à gauche.
 - **La feuille de plateau** de chaque session, avec le prompteur : [[Tournage du dimanche 20 septembre]] pour la première ; les suivantes se font sur ce modèle, le samedi soir.
 - **Les rushes** vont sur `D:\videos\`, un dossier par vidéo, nommés `NN-bloc-prise.mp4`. Les sons dans `D:\editing_audio\`. Rien de tout ça n'entre dans le dépôt.
-- **Le montage** se fait dans CapCut. Un short seul : la meilleure traite, cartes texte, sous-titres, une heure. La grammaire sonore et les volumes : [[methode/Monter un reel Train Bloom dans CapCut\|la méthode]]. Pour la longue : tête parlante à 70 % au moins, huit à douze inserts, les rendus existants de `meriter` en colonne, sous-titres entre 70 et 78 % de la hauteur.
+- **Le montage d'un short** se fait, depuis le 26 septembre, avec [[methode/Le Kallaway edit|le Kallaway edit]] : une fiche `kallaway.toml` par vidéo, l'outil `outils/kallaway-edit` fait le reste, jusqu'à la vidéo accélérée ×1,08 (exemple : l'assiette). Avant, dans CapCut. Un short seul : la meilleure traite, cartes texte, sous-titres, une heure. La grammaire sonore et les volumes : [[methode/Monter un reel Train Bloom dans CapCut\|la méthode]]. Pour la longue : tête parlante à 70 % au moins, huit à douze inserts, les rendus existants de `meriter` en colonne, sous-titres entre 70 et 78 % de la hauteur.
 - **Les inserts** : `SplitBar` existe (`video/deficit-calorique-fr/compositions/`), la carte 9-4-4 se rend une fois, le reste en cartes CapCut ou en photos.
 
 ---

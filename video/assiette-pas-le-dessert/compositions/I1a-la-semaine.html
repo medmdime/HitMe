@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=1080, height=960">
+    <link rel="stylesheet" href="compositions/components/kit.css">
+    <link rel="stylesheet" href="compositions/components/youbud.css">
+    <link rel="stylesheet" href="compositions/components/assiette.css">
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.14.2/dist/gsap.min.js"></script>
+    <script src="assets/vendor/lucide.min.js"></script>
+    <style>
+      @font-face {
+        font-family: "Archivo";
+        src: url("assets/fonts/Archivo.woff2") format("woff2");
+        font-weight: 400 900;
+        font-display: block;
+      }
+      /* La semaine : sept pastilles, le jour allumé passe au jaune. */
+      .day { position: absolute; top: 330px; width: 128px; height: 128px; border-radius: 34px;
+        background: #ffffff; box-shadow: 0 8px 0 #dcdbd3; opacity: 0; will-change: transform; }
+      .day .on { position: absolute; left: 0; top: 0; width: 128px; height: 128px; border-radius: 34px;
+        background: var(--yb-yellow); box-shadow: 0 8px 0 var(--yb-yellow-edge); opacity: 0; }
+      .day b { position: absolute; left: 0; top: 0; width: 128px; height: 128px; line-height: 128px;
+        text-align: center; font-size: 62px; font-weight: 900; color: #767676; }
+      #a1a-d1 .on { opacity: 1; }
+      #a1a-d1 b { color: #3c3c3c; }
+      /* Sous chaque jour allumé, son sucre, barré. */
+      .item { width: 128px; height: 128px; top: 520px; opacity: 0; }
+      .item .ico { left: 24px; top: 24px; width: 80px; height: 80px; color: var(--yb-orange-edge); }
+      .item-ko { width: 64px; height: 64px; top: 494px; }
+      /* La balance du vendredi. */
+      #a1a-scale { left: 559px; top: 510px; width: 250px; height: 300px; opacity: 0; }
+      #a1a-plateau { position: absolute; left: 30px; top: 44px; width: 190px; height: 210px; border-radius: 36px;
+        background: #ffffff; box-shadow: 0 8px 0 #d6d5cd; }
+      #a1a-ecran { position: absolute; left: 30px; top: 28px; width: 130px; height: 62px; border-radius: 16px; background: #3c3c3c; }
+      #a1a-zero { position: absolute; left: 0; top: 0; width: 130px; height: 62px; line-height: 62px; text-align: center;
+        font-size: 38px; font-weight: 900; color: #ffffff; font-variant-numeric: tabular-nums; opacity: 0; will-change: transform; }
+      #a1a-pieds { position: absolute; left: 44px; top: 170px; width: 102px; height: 14px; border-radius: 7px; background: #efeee8; }
+    </style>
+  </head>
+  <body>
+    <div id="a1a-root" data-composition-id="assiette-i1a-semaine" data-start="0" data-duration="4.95" data-width="1080" data-height="960">
+      <div id="a1a-scene" class="clip scene-b" data-start="0" data-duration="4.95" data-track-index="0">
+        <img class="toile" src="assets/img/toile.jpg" alt="">
+
+        <div class="day" id="a1a-d1" style="left: 44px;"><div class="on"></div><b>L</b></div>
+        <div class="day" id="a1a-d2" style="left: 188px;"><div class="on"></div><b>M</b></div>
+        <div class="day" id="a1a-d3" style="left: 332px;"><div class="on"></div><b>M</b></div>
+        <div class="day" id="a1a-d4" style="left: 476px;"><div class="on"></div><b>J</b></div>
+        <div class="day" id="a1a-d5" style="left: 620px;"><div class="on"></div><b>V</b></div>
+        <div class="day" id="a1a-d6" style="left: 764px;"><div class="on"></div><b>S</b></div>
+        <div class="day" id="a1a-d7" style="left: 908px;"><div class="on"></div><b>D</b></div>
+
+        <div class="yb-card t-orange item" id="a1a-dessert" style="left: 44px;"><div class="ico"><i data-lucide="cake-slice"></i></div></div>
+        <div class="yb-card t-orange item" id="a1a-mardi" style="left: 188px;"><div class="ico"><i data-lucide="candy"></i></div></div>
+        <div class="yb-card t-orange item" id="a1a-mercredi" style="left: 332px;"><div class="ico"><i data-lucide="cup-soda"></i></div></div>
+
+        <div class="yb-badge ko item-ko" id="a1a-ko1" style="left: 116px;"><svg viewBox="0 0 96 96"><path d="M34 34 L62 62 M62 34 L34 62"/></svg></div>
+        <div class="yb-badge ko item-ko" id="a1a-ko2" style="left: 260px;"><svg viewBox="0 0 96 96"><path d="M34 34 L62 62 M62 34 L34 62"/></svg></div>
+        <div class="yb-badge ko item-ko" id="a1a-ko3" style="left: 404px;"><svg viewBox="0 0 96 96"><path d="M34 34 L62 62 M62 34 L34 62"/></svg></div>
+
+        <div class="yb-card t-bleu" id="a1a-scale">
+          <div id="a1a-plateau">
+            <div id="a1a-ecran"><div id="a1a-zero">0 kg</div></div>
+            <div id="a1a-pieds"></div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Le son : un clic par jour, un accent sur la balance, l'erreur sur « bougé ». -->
+      <audio id="a1a-s-01" src="assets/sfx/soft_click.wav" data-start="0" data-duration="0.22" data-track-index="11" data-volume="1"></audio>
+      <audio id="a1a-s-02" src="assets/sfx/soft_click.wav" data-start="0.24" data-duration="0.22" data-track-index="12" data-volume="1"></audio>
+      <audio id="a1a-s-03" src="assets/sfx/soft_click.wav" data-start="1.53" data-duration="0.22" data-track-index="13" data-volume="1"></audio>
+      <audio id="a1a-s-04" src="assets/sfx/clicks.wav" data-start="2.69" data-duration="0.35" data-track-index="14" data-volume="0.95"></audio>
+      <audio id="a1a-s-05" src="assets/sfx/soft_click.wav" data-start="3.51" data-duration="0.22" data-track-index="15" data-volume="1"></audio>
+      <audio id="a1a-s-06" src="assets/sfx/wrong.mp3" data-start="4.55" data-duration="0.4" data-track-index="16" data-volume="0.45"></audio>
+    </div>
+
+    <script>
+      (function () {
+        if (window.lucide) window.lucide.createIcons();
+        var tl = gsap.timeline({ paused: true });
+
+        // Les croix se dessinent : on mesure chaque trait avant de construire la timeline.
+        ["#a1a-ko1", "#a1a-ko2", "#a1a-ko3"].forEach(function (sel) {
+          var p = document.querySelector(sel + " path");
+          var len = p.getTotalLength() * 1.05;
+          gsap.set(p, { strokeDasharray: len, strokeDashoffset: len });
+        });
+
+        function croix(badge, t) {
+          tl.fromTo(badge, { opacity: 0, scale: 0.3 }, { opacity: 1, scale: 1, duration: 0.3, ease: "back.out(1.6)" }, t);
+          tl.to(badge + " path", { strokeDashoffset: 0, duration: 0.3, ease: "power2.out" }, t + 0.1);
+        }
+        function carte(sel, t) {
+          tl.fromTo(sel, { opacity: 0, scale: 0, y: 40 }, { opacity: 1, scale: 1, y: 0, duration: 0.45, ease: "power3.out" }, t);
+        }
+        function allume(day, t) {
+          tl.fromTo(day + " .on", { opacity: 0 }, { opacity: 1, duration: 0.2, ease: "power2.out" }, t);
+          tl.fromTo(day + " b", { color: "#767676" }, { color: "#3c3c3c", duration: 0.2, ease: "power2.out" }, t);
+        }
+
+        // Recalé sur la prise du 25 septembre ; 0.00 = 0,15 s avant la coupe, pendant le glissé.
+        // 0.00 : la semaine entre ; le lundi est déjà allumé, son dessert déjà barré.
+        tl.fromTo(".day", { opacity: 0, y: 30, scale: 0.6 }, { opacity: 1, y: 0, scale: 1, duration: 0.3, ease: "power3.out", stagger: 0.03 }, 0);
+        carte("#a1a-dessert", 0.05);
+        croix("#a1a-ko1", 0.2);
+
+        // 0.24 « Mardi », 1.00 « bonbons »
+        allume("#a1a-d2", 0.24);
+        carte("#a1a-mardi", 0.24);
+        croix("#a1a-ko2", 1.0);
+
+        // 1.53 « Mercredi », 2.25 « soda »
+        allume("#a1a-d3", 1.53);
+        carte("#a1a-mercredi", 1.53);
+        croix("#a1a-ko3", 2.25);
+
+        // 2.69 « vendredi » : la balance entre sous le V.
+        allume("#a1a-d5", 2.69);
+        tl.fromTo("#a1a-scale", { opacity: 0, scale: 0, y: 40 }, { opacity: 1, scale: 1, y: 0, duration: 0.45, ease: "power3.out" }, 2.69);
+
+        // 3.51 « tu te pèses » : 0 kg.
+        tl.fromTo("#a1a-zero", { opacity: 0, scale: 0.3 }, { opacity: 1, scale: 1, duration: 0.3, ease: "back.out(1.6)" }, 3.51);
+
+        // 4.55 « n'a pas bougé » : la balance encaisse, puis plus rien ne bouge.
+        tl.to("#a1a-scale", { x: -9, duration: 0.05, ease: "none" }, 4.55);
+        tl.to("#a1a-scale", { x: 9, duration: 0.05, ease: "none" }, 4.6);
+        tl.to("#a1a-scale", { x: -9, duration: 0.05, ease: "none" }, 4.65);
+        tl.to("#a1a-scale", { x: 9, duration: 0.05, ease: "none" }, 4.7);
+        tl.to("#a1a-scale", { x: 0, duration: 0.05, ease: "none" }, 4.75);
+
+        window.__timelines["assiette-i1a-semaine"] = tl;
+      })();
+    </script>
+  </body>
+</html>

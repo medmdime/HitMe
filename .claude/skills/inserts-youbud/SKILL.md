@@ -43,10 +43,19 @@ copie ce fichier tel quel d'une vidéo à l'autre, on ne le réécrit pas.
 | `--yb-red` | `#ff4b4b` | `#ffe2e2` | `#e03a3a` | le mythe, la croix, ce qui manque |
 | `--yb-purple` | `#ce82ff` | `#f3e5ff` | `#b36be0` | le cerveau, une troisième catégorie |
 | `--ink` | `#3c3c3c` | | | tout le texte, les icônes neutres |
-| `--bg` | `#f7f7f4` | | | le fond, plein, jamais transparent |
+| `--bg` | `#f7f7f4` | | | le fond, plein, jamais transparent ; depuis le 25 septembre 2026, une toile claire texturée par-dessus (voir plus bas) |
 
 Sémantique : `--good` = vert, `--bad` = rouge, `--key` = jaune. **Un seul mot ou chiffre
 coloré par carton.** Encre sur vert et jaune, blanc sur rouge.
+
+**Le fond, une toile claire** (demandé par Mohamed le 25 septembre 2026, d'après une image de
+référence) : un halo blanc en haut au centre, des bords un peu plus gris, un grain de sergé en
+diagonale. C'est `assets/img/toile.jpg`, dessinée par `assets/img/toile.py` (numpy et PIL, aucune
+image téléchargée), posée en `<img class="toile">` plein cadre, premier enfant de la scène : une
+`url()` dans une feuille se résoudrait depuis la feuille. On copie les deux fichiers d'une vidéo à
+l'autre, comme `youbud.css`. Ce qui se pose directement sur la toile doit ressortir : un objet
+beige pâle s'y perd (les estomacs de l'assiette sont passés au bleu clair). Référence :
+`video/assiette-pas-le-dessert/`, dont les inserts du cadre B font 1080 × 960.
 
 Police : Archivo 900 (locale, `assets/fonts/Archivo.woff2`, déclarée dans le `<style>` de chaque
 composition, jamais dans la feuille partagée). Chiffres en `tabular-nums`.
