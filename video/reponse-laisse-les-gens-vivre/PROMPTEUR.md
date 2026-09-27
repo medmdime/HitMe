@@ -1,6 +1,6 @@
 # Prompteur · « Laisse les gens vivre »
 
-Narration nue, dans l'ordre. 106 mots · 0:34.
+Narration nue, dans l'ordre. 108 mots · 0:35.
 Réponse en vidéo au commentaire de **zzz_llbn** sous [[Ton week-end annule ta semaine]] : « laisse les gens vivre sinon 💔💔 ». Le commentaire s'affiche à l'écran tout seul.
 Le jeu, le plan image par image et le b-roll sont dans [[video/reponse-laisse-les-gens-vivre/TOURNAGE|TOURNAGE]].
 
@@ -26,13 +26,13 @@ Des chercheurs ont suivi plus de cinquante mille personnes qui voulaient maigrir
 
 Celles qui s'interdisent des aliments craquent plus souvent, et pèsent plus lourd.
 
-Celles qui mangent de tout, en compensant d'un repas à l'autre, maigrissent mieux.
+Celles qui mangent de tout, et qui font plus léger au repas suivant, maigrissent mieux.
 
 ---
 
-### 3 · ce qui compte · 0:18
+### 3 · ce qui compte · 0:19
 
-Alors mange ce que tu veux, même pour maigrir.
+Donc mange ce que tu veux, même pour maigrir.
 
 Ce qui fait maigrir, ce n'est pas ce que tu manges. C'est la quantité.
 
@@ -44,7 +44,7 @@ Ton Nutella, garde-le : une cuillère le mardi, pas le pot le samedi.
 
 ---
 
-### 5 · l'appel · 0:29
+### 5 · l'appel · 0:30
 
 Moi, c'est Mohamed : je t'explique la nutrition, sans régime. Abonne-toi pour la suite.
 
@@ -58,7 +58,7 @@ Moi, c'est Mohamed : je t'explique la nutrition, sans régime. Abonne-toi pour l
 2. **« Tu as raison. »** : franc, un demi-sourire, un temps. C'est le « wow » : tout le monde attend que tu te défendes.
 3. **« Tu t'interdis le Nutella toute la semaine, et samedi soir, tu finis le pot. »** : complice, jamais moqueur : tu racontes une semaine que tout le monde a vécue. « tu finis le pot », plus lent.
 4. **« Celles qui s'interdisent » / « Celles qui mangent de tout »** : même début, même rythme, pour qu'on entende l'opposition.
-5. **« Alors mange ce que tu veux »** : franc. **« même pour maigrir »** : un temps avant, plus bas.
+5. **« Donc mange ce que tu veux »** : franc. **« même pour maigrir »** : un temps avant, plus bas.
 6. **« C'est la quantité. »** : seul, sec. C'est la phrase qu'on retient.
 7. **« une cuillère le mardi, pas le pot le samedi »** : les deux moitiés au même rythme ; un petit geste de la main pour la cuillère, un grand pour le pot.
 8. **La négation entière** : « ce n'est pas ce que tu manges », jamais « c'est pas ».

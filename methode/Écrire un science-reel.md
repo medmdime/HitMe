@@ -476,7 +476,11 @@ this shape.
    reveal (« c'est quasiment pareil ») kills the video: nothing is left to find out. Plant one
    question, answer it at 8-10 s, and save the "wow" — the highest-shock fact, better than expected
    or unexpected and intriguing — for just before the turn.
-2. **Three hooks, three archetypes**, in the `kallaway-hooks` output format, one retained and why.
+2. **Three hooks, three archetypes**, in the `kallaway-hooks` output format, one retained and why
+   (`methode/Les hooks (Kallaway).md`). Each hook in **three steps** — the context lean (a scene
+   from the viewer's week), the « mais » that stops the scroll, the contrarian snapback — with its
+   **four components aligned** (what is seen in 0-3 s, what he says, an on-screen text of one number
+   or one word, the sound) and the **single question** it plants.
 3. **The facts scored for shock** (out of 100 people, how many are surprised), and the video built
    on the top two.
 4. **One sentence to take away**, said aloud and shown twice: « Chaque cuillère, c'est presque un
@@ -502,9 +506,39 @@ this shape.
 9. **Every video ends with a follow call** (Mohamed, 24 September 2026, after the week-end video
    brought 17,300 views and only 14 followers). After the landing, one line in his voice, about
    four seconds: « Moi, c'est Mohamed : je t'explique la nutrition, sans régime. Abonne-toi pour la
-   suite. » His name on screen, a follow button popping on « abonne-toi ». This overrides the
+   suite, et enregistre la vidéo. » His name on screen, a follow button popping on « abonne-toi »,
+   the save icon on « enregistre ». This overrides the
    corpus default of a CTA-free philosophical landing for his account: the landing stays, the call
-   comes after it. The save request (« Enregistre-la… ») may stay before it.
+   comes after it. The save request lives inside the call, never as a line of its own (24 September, evening:
+   a standalone « Enregistre cette vidéo pour ce soir » is « pas ouf », and « Enregistre-la » after
+   « ton dessert » seemed to point at the dessert).
+10. **Direct, no filler, no numbering, French a 12-year-old understands** (Mohamed, 24 September
+   2026, evening: « je n'aime pas le un deux trois… je veux pas de fillers et sois plus direct… il
+   faut expliquer en français correct à un enfant de 12 ans »). The reasons follow one another
+   without « Un / Deux / Trois »: each sentence answers the previous one, linked by « mais » when it
+   contradicts and « donc » when it follows, never « et puis ». Cut every filler: « voici
+   pourquoi », « en fait », « du coup », « vraiment », « juste », « bien » as an intensifier,
+   « alors » when it is not a « donc », « et » opening a sentence. Short sentences, one idea each,
+   active voice, correct French, complete negations. The test: a 12-year-old understands every line
+   the first time; when a word needs explaining (« compenser », « satiété »), say the thing instead
+   (« faire plus léger au repas suivant », « ton ventre se remplit à peine »). Worked examples:
+   `video/assiette-pas-le-dessert/VERSION-COURTE.md` and `video/Les scénarios de la série.md`.
+11. **One comparison, science cited as measured, every link said** (Mohamed, same evening, on the
+   plate script). Keep the exact comparison the video is about and nothing that blurs it: a video
+   on sugar versus fat never lists bread and pasta next to dessert, because viewers do not file
+   dessert under "sugar" (for them it is just "something bad") and do not link it to bread; name
+   the category out loud (« tu arrêtes le sucre : pas de dessert… »). A study is cited the way it
+   was done and measured, never as a vague scene (« on a montré des plats à des gens »): « Dans une
+   étude de 2006, on a demandé à des gens d'estimer le gras de plats de restaurant. Pour les plus
+   gras, c'était le double », checked word for word against the abstract, said aloud first (« il y
+   en avait deux fois plus que ce qu'ils pensaient » was too hard to say), and positive (« le double »,
+   what is there, rather than « ils n'en voyaient que la moitié », what is missing): « estimer », not « mesurer »; restaurant dishes, not their own meal; an average on the
+   fattiest dishes, not each person's error. No word with a double meaning (« les plus riches »
+   sounds like expensive restaurants). The gesture is his, positive, and says why it pays off:
+   « Chaque cuillère d'huile, c'est cent vingt calories. Alors la prochaine fois, prends ta
+   cuillère, mesure bien ton huile, et profite de ton dessert. » No pronoun that can point at the wrong noun
+   (« Enregistre-la » right after « ton dessert » → « Enregistre cette vidéo »). More punch, and a
+   « mais » or a « donc » between beats so the whole text flows.
 
 ---
 

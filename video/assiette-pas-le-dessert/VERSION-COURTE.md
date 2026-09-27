@@ -1,6 +1,12 @@
 # Version courte · « Le plus calorique de ton assiette, ce n'est pas le dessert »
 
-**0:49 · 153 mots · au format de [[Ton week-end annule ta semaine]]**, la vidéo qui a percé, et ouverte comme elle sur une scène de la semaine (retenue par Mohamed le 24 au soir). La version longue (1:38, cinq inserts) reste écrite à côté : [[video/assiette-pas-le-dessert/PROMPTEUR|PROMPTEUR]].
+**0:52 · 163 mots · au format de [[Ton week-end annule ta semaine]]**, la vidéo qui a percé, ouverte comme elle sur une scène de la semaine. **Réécrite le 24 au soir et le 25**, en quatre passes, à la demande de Mohamed :
+- plus de « un, deux, trois », plus de mots de remplissage, des phrases qu'un enfant de 12 ans comprend du premier coup, et des hooks construits selon [[Les hooks (Kallaway)]] ;
+- le sucre contre le gras, et rien d'autre, avec les études citées proprement et un geste qui dit pourquoi on garde le dessert ;
+- l'appel qui porte aussi l'enregistrement, et un montage qui alterne toi en grand et toi en petit sous les animations ;
+- l'étude racontée avec ce qu'elle a fait, dans une phrase facile à dire, et le geste dit avec les deux phrases de Mohamed.
+
+**Les animations** : [[video/assiette-pas-le-dessert/INSERTS-VERSION-COURTE|INSERTS-VERSION-COURTE]]. La version longue (1:38, cinq inserts) reste écrite à côté : [[video/assiette-pas-le-dessert/PROMPTEUR|PROMPTEUR]].
 
 ## Pourquoi une version courte
 
@@ -10,179 +16,192 @@ Les chiffres du 24 septembre : sur le week-end (35 s), 70 % des gens sont encore
 
 Mohamed, le 24 septembre : « Si tu te prives, de tes desserts, de ton alimentation, et que tu ne perds rien, le premier truc que tu dois regarder, ce n'est pas le sucre, le dessert, le riz ou les pâtes. C'est le gras que tu manges dans la journée, les sauces : c'est ça qui te fait basculer d'un déficit à un surplus. C'est ça qu'il faut vérifier en premier. »
 
-**La phrase qu'on retient** : avant de te priver encore, regarde ton gras.
+**La phrase qu'on retient** : chaque cuillère d'huile, c'est cent vingt calories.
 
-## Le hook
+## Ce qui a changé, et pourquoi
 
-**La chaîne, sans trou** : le problème de la personne → où regarder d'abord → pourquoi → la preuve → quoi faire. Chaque phrase répond à la question que pose la précédente. C'est ce qui manquait aux trois hooks refusés : deux phrases justes, mais sans lien entre elles.
+| Ce qui ne tenait pas | Ce que Mohamed a dit | Ce qui change |
+|---|---|---|
+| « Lundi, tu enlèves le dessert. Mardi, le pain. Mercredi, les pâtes. » | le pain et les pâtes mélangent les notions : pour les gens, le dessert n'est pas « du sucre », c'est « un truc mauvais ». Le sujet, c'est le sucre contre le gras | « Lundi, tu arrêtes le sucre : pas de dessert. Mardi, pas de soda. Mercredi, pas de bonbons. » Le mot « sucre » arrive en premier, et les trois exemples sont du sucre évident |
+| « …que le pain ou les pâtes » | même raison | la comparaison se fait avec le sucre ; le mot **satiété** entre, expliqué : « le signal « stop » » |
+| « On a montré des plats de restaurant à des gens : ils ont vu deux fois moins de gras… » | mal formulé, « ce n'est pas du français » ; si on fait de la science, on la fait bien | une étude citée avec son année et son vrai résultat |
+| « …dans les plats de restaurant les plus riches… » | « les plus riches » ne veut rien dire pour lui (on entend « les restaurants chers »), et la phrase est trop longue | « dans certains plats de restaurant » : plus court, et toujours vrai, puisque l'étude a trouvé ce double pour les plats les moins sains, pas pour tous |
+| « Compte tes cuillères d'huile… Ton dessert, garde-le. » | on ne voit pas le lien entre compter l'huile et garder le dessert | le lien est dit : une cuillère, c'est autant de calories qu'une crème dessert, donc « enlève une cuillère d'huile, pas ton dessert » |
+| « Enregistre-la pour ce soir », puis « Enregistre cette vidéo pour ce soir » | « la » semblait renvoyer au dessert ; puis « pas ouf » en phrase à part | l'enregistrement entre dans l'appel : « Abonne-toi pour la suite, et enregistre la vidéo. » |
+| un montage en trois cadres, avec des plans sans toi | « on alterne ma tête en grand, puis ma tête en petit avec les animations » | A, B, A, B, un coup chacun ; tout ce qu'on voit est dessiné dans les animations ; plus de b-roll généré |
+| « Une étude de 2006 l'a mesuré : dans certains plats de restaurant… » | dire ce qu'a fait l'étude : on a demandé aux gens combien de gras il y avait, et ils se trompaient du double ; c'est ça qui choque | « Dans une étude de 2006, on a demandé à des gens d'estimer le gras de plats de restaurant. Dans les plus gras, il y en avait deux fois plus que ce qu'ils pensaient. » Trois choix pour rester vrai : « estimer » (personne n'a rien mesuré), « des plats de restaurant » (ce n'était pas leur propre repas), « les plus gras » (le double est la moyenne sur ces plats-là, pas l'erreur de chacun) |
+| « Pour les plus gras, ils n'en voyaient que la moitié. » | « il faut parler positif, pas négatif » : dire ce qu'il y a, pas ce qu'on ne voit pas | « Pour les plus gras, c'était le double. » Encore plus court à dire, et l'image montre le double de quoi : la barre **Réel** monte au double de la barre **Estimé** |
+| « Mais le pire : tu ne le vois pas. » | « tu ne le vois pas, on s'en fout » : on ne sait pas ce qu'on ne voit pas, et ce n'est pas un choc | « Mais le pire : du gras, tu en manges bien plus que tu crois. » Le gras est nommé, c'est un choc au « tu », et l'étude le prouve juste après. **Si la prise est déjà faite** et que tu ne refilmes pas : on coupe « tu ne le vois pas » au montage, on garde « Mais le pire » si ta pause le permet (sinon toute la phrase saute), et l'étude enchaîne |
+| « Dans les plus gras, il y en avait deux fois plus que ce qu'ils pensaient. » | « je n'arrive pas à bien prononcer cette phrase » | « Pour les plus gras, ils n'en voyaient que la moitié. » Plus courte, sans « il y en avait… que ce qu'ils », et elle répond à « tu ne le vois pas » |
+| « Donc ce soir, compte tes cuillères d'huile… Enlève une cuillère d'huile, pas ton dessert. » | le geste n'est pas à faire ; il préfère deux phrases à lui | « Chaque cuillère d'huile, c'est cent vingt calories. Alors la prochaine fois, prends ta cuillère, mesure bien ton huile, et profite de ton dessert. » |
+
+## Les hooks
+
+Chaque hook suit [[Les hooks (Kallaway)]] : **trois temps** (le contexte, le « mais » qui arrête le pouce, le retournement), **quatre éléments alignés** (ce qu'on voit, ce que tu dis, le texte à l'écran, le son), et **une seule question** dans la tête de la personne. Le texte à l'écran est un chiffre ou un mot, jamais une phrase.
 
 ```
-HOOK · retenu le 24 au soir · la scène de la semaine
-PAROLE   : « Lundi, tu enlèves le dessert. Mardi, le pain. Mercredi, les pâtes. »
-           « Et vendredi, la balance n'a pas bougé. »
-           // « Le problème n'a jamais été le sucre. C'est le gras : l'huile, le beurre, les sauces. »
-           « Voici pourquoi. »
-VISUEL   : cadre A, toi plein cadre ; en haut, la semaine L M M J V S D en petites pastilles :
-           chaque jour s'allume quand tu le dis, avec son aliment barré dessous (le dessert, le pain,
-           les pâtes) ; sur « vendredi », une balance et un =
-TEXTE    : la semaine, qui est la signature de la série ; les sous-titres mot par mot, « gras » en jaune
-POURQUOI : la vidéo du week-end a marché parce qu'elle racontait une semaine où l'on se reconnaît.
-           Ici, la personne revit sa propre semaine d'efforts avant d'entendre la réponse. Chaque
-           phrase répond à la précédente : l'effort, rien ne bouge, le vrai coupable, « voici pourquoi ».
+HOOK 1 · LE PROF · la semaine sans sucre · RETENU
+PAROLE          : « Lundi, tu arrêtes le sucre : pas de dessert. Mardi, pas de soda.
+                  Mercredi, pas de bonbons. Vendredi, la balance n'a pas bougé. »
+                  // « Mais le problème, ce n'est pas le sucre. C'est le gras :
+                  l'huile, le beurre, les sauces. »
+TEXTE À L'ÉCRAN : 0 kg, dans la balance du vendredi
+VISUEL (0-3 s)  : toi en grand sur « Lundi » ; puis, en haut, la semaine L M M J V S D :
+                  chaque jour s'allume avec son sucre barré (un dessert, un soda, des bonbons)
+SON             : un petit clic à chaque jour ; l'erreur sur « n'a pas bougé »
+LA QUESTION     : « Pourquoi le gras, et pas le sucre ? »
+POURQUOI        : la personne revit sa semaine sans sucre ; le « mais » casse ce qu'elle
+                  attend ; le coupable est celui qu'elle ne surveillait pas.
 ```
 
 ```
-L'ANCIEN HOOK · en secours (validé le 24, remplacé le soir même)
-PAROLE   : « Tu enlèves le dessert, le pain, les pâtes… et tu ne perds rien ? »
-           // « La première chose à regarder, ce n'est pas le sucre. C'est le gras :
-           l'huile, le beurre, les sauces. » « Voici pourquoi. »
-VISUEL   : toi, face caméra, les mains vides ; tu comptes sur tes doigts « le dessert, le pain,
-           les pâtes », puis tu les rabats sur « ce n'est pas le sucre »
-POURQUOI : il tient toujours, et il est un peu plus court ; mais il parle d'une liste, pas d'une
-           semaine. Tourne-le en prise B si tu as le temps : on choisira au montage.
+HOOK 2 · LE CONTRARIEN
+PAROLE          : « Arrête de supprimer le sucre. Ce n'est pas lui qui t'empêche de maigrir. »
+                  « C'est le gras : l'huile, le beurre, les sauces. »
+TEXTE À L'ÉCRAN : SUCRE ✓
+VISUEL (0-3 s)  : toi, un morceau de sucre en main, que tu poses devant toi
+SON             : un impact sec sur « Arrête »
+LA QUESTION     : « Le sucre ne fait pas grossir ? »
+POURQUOI        : un ordre à l'inverse de ce que tout le monde fait, puis le vrai coupable.
 ```
 
-Refusés le 24 septembre, parce qu'on ne comprenait pas tout de suite ou parce que les phrases ne tenaient pas ensemble : « Ta poêle te l'a déjà rendu », « Les calories que tu cherches sont dans ta poêle », « Une cuillère d'huile, c'est autant de calories que ce dessert » juste après « tu ne perds rien ».
+```
+HOOK 3 · L'ENQUÊTEUR
+PAROLE          : « Dans une étude de 2006, on a demandé à des gens d'estimer le gras de
+                  plats de restaurant. Pour les plus gras, c'était le double. »
+                  « C'est ce gras-là qui t'empêche de maigrir. »
+TEXTE À L'ÉCRAN : × 2
+VISUEL (0-3 s)  : une cloche de restaurant qui se soulève, en haut ; toi en petit, en bas
+SON             : la cloche qu'on soulève
+LA QUESTION     : « Il y a du gras que je ne vois pas dans mon assiette ? »
+POURQUOI        : ce que tu ne sais pas contre ce qu'on a mesuré ; la preuve arrive dès la
+                  première seconde.
+```
+
+**Retenu : le hook 1**, la scène de la semaine, qui est la signature de la série.
+
+Refusés le 24 septembre, parce qu'on ne comprenait pas tout de suite ou parce que les phrases ne tenaient pas ensemble : « Ta poêle te l'a déjà rendu », « Les calories que tu cherches sont dans ta poêle », « Une cuillère d'huile, c'est autant de calories que ce dessert » juste après « tu ne perds rien », et « Mardi, le pain. Mercredi, les pâtes » (le pain et les pâtes brouillent le sucre contre le gras).
 
 ## La narration
 
-### 1 · FACE CAMÉRA · le hook · 0:00
+Chaque phrase répond à la précédente : **« mais »** quand ça contredit, **« donc »** quand ça en découle.
+
+### 1 · le hook · 0:00
 
 *(face caméra, les mains vides ; tu comptes les jours sur tes doigts)*
 
-Lundi, tu enlèves le dessert. Mardi, le pain. Mercredi, les pâtes.
+Lundi, tu arrêtes le sucre : pas de dessert. Mardi, pas de soda. Mercredi, pas de bonbons.
 
-Et vendredi, la balance n'a pas bougé.
+Vendredi, la balance n'a pas bougé.
 
 //
 
-Le problème n'a jamais été le sucre. C'est le gras : l'huile, le beurre, les sauces.
+Mais le problème, ce n'est pas le sucre. C'est le gras : l'huile, le beurre, les sauces.
 
-Voici pourquoi.
+### 2 · le plus calorique · 0:12
 
-### 2 · un · le plus calorique · 0:11
+Le gras, c'est le plus calorique. Un gramme de sucre : quatre calories. Un gramme de gras : neuf.
 
-Un : c'est le plus calorique. Un gramme de sucre, c'est quatre calories. Un gramme de gras, c'est neuf.
+### 3 · il ne cale pas · 0:17
 
-### 3 · deux · il cale moins · 0:17
+Donc, pour les mêmes calories, il prend deux fois moins de place. Ton ventre se remplit à peine : la satiété, le signal « stop », est trop faible. Tu continues de manger.
 
-Deux : il te cale moins. Pour les mêmes calories, il ne prend presque pas de place : tu en manges bien plus facilement que du pain ou des pâtes.
+### 4 · tu en manges plus que tu crois · 0:27
 
-### 4 · trois · tout le monde le sous-estime · 0:26
+Mais le pire : du gras, tu en manges bien plus que tu crois. Dans une étude de 2006, on a demandé à des gens d'estimer le gras de plats de restaurant. Pour les plus gras, c'était le double.
 
-Trois : tout le monde le sous-estime. Dans une étude sur des plats de restaurant, les gens estimaient deux fois moins de gras qu'il n'y en avait.
+### 5 · le geste · 0:39
 
-### 5 · la solution · 0:34
+Chaque cuillère d'huile, c'est cent vingt calories. Alors la prochaine fois, prends ta cuillère, mesure bien ton huile, et profite de ton dessert.
 
-Alors avant de te priver encore de dessert, de Nutella ou de Haribo, compte chaque cuillère d'huile que tu verses : cent vingt calories chacune.
+### 6 · l'appel · 0:46
 
-### 6 · la chute · 0:41
-
-Et ton dessert, garde-le. Enregistre-la pour la prochaine fois.
-
-### 7 · l'appel · 0:44
-
-Moi, c'est Mohamed : je t'explique la nutrition, sans régime. Abonne-toi pour la suite.
+Moi, c'est Mohamed : je t'explique la nutrition, sans régime. Abonne-toi pour la suite, et enregistre la vidéo.
 
 ## Le jeu
 
-- **« Lundi… Mardi… Mercredi… »** : tu comptes les jours sur tes doigts, un petit temps entre chacun, comme quelqu'un qui fait des efforts depuis lundi. Le ton d'une histoire qu'on connaît, pas d'une leçon.
-- **« Et vendredi, la balance n'a pas bougé. »** : plus lent, plus bas. Tu appuies là où ça fait mal, sans moquerie. Un temps.
-- **« Le problème n'a jamais été le sucre. C'est le gras. »** : deux coups secs, les doigts rabattus sur « le sucre ». Puis la liste, l'huile, le beurre, les sauces, au rythme des jours.
-- **Un, deux, trois** : un doigt levé à chaque numéro, un vrai temps avant.
-- **« Quatre » et « neuf »** : les deux chiffres qui doivent rester. Un temps avant chacun, « neuf » plus fort.
-- **« tu en manges bien plus facilement »** : complice, tu sais de quoi tu parles.
-- **« cent vingt calories chacune »** : lent, c'est le chiffre qu'on emporte.
-- **« Et ton dessert, garde-le. »** : chaleureux, presque un sourire.
-- **« Moi, c'est Mohamed »** : simple, les yeux dans l'objectif, comme si tu te présentais à quelqu'un. « Abonne-toi pour la suite » sans insister, une fois.
+- **« Lundi, tu arrêtes le sucre… »** : tu comptes les jours sur tes doigts, un petit temps entre chacun. Le ton d'une histoire qu'on connaît, pas d'une leçon.
+- **« Vendredi, la balance n'a pas bougé. »** : plus lent, plus bas. Tu appuies là où ça fait mal, sans moquerie. Un temps.
+- **« Mais le problème, ce n'est pas le sucre. C'est le gras. »** : deux coups secs. Puis la liste, l'huile, le beurre, les sauces, au rythme des jours.
+- **« quatre » et « neuf »** : les deux chiffres qui doivent rester. Un temps avant chacun, « neuf » plus fort.
+- **« Ton ventre se remplit à peine »** : la main sur le ventre. **« le signal « stop » »** : la main levée, comme un stop.
+- **« Mais le pire : du gras, tu en manges bien plus que tu crois. »** : plus bas, puis tu appuies sur « bien plus ». C'est la relance du milieu, le choc.
+- **« Dans une étude de 2006… »** : posé, sérieux, tu cites. Puis un temps avant **« le double »** : c'est le choc, tu le laisses tomber.
+- **« Chaque cuillère d'huile, c'est cent vingt calories. »** : la phrase qu'on retient. Lente, « cent vingt » détaché.
+- **« et profite de ton dessert »** : chaleureux, un vrai sourire. Si tu as le pot de crème dessert, tu le montres là.
+- **« Moi, c'est Mohamed »** : simple, les yeux dans l'objectif. « Abonne-toi pour la suite, et enregistre la vidéo » d'une traite, sans insister.
+- **Tu regardes l'objectif sur tout le texte**, même quand l'animation est en haut : en petit, c'est ton regard qui tient.
 
 ## Le plan, image par image
 
-Tu dis tout le texte face caméra, les yeux dans l'objectif. Le montage alterne les trois cadres de [[Le format court]] : **A**, toi plein cadre ; **B**, le visuel en haut et toi en bas ; **C**, un plan plein cadre sans toi. Les temps viennent du PROMPTEUR ; ta prise réelle fixera les vrais.
+Le montage alterne **A**, toi en grand, et **B**, l'animation en haut et toi en petit en bas, un coup chacun. Le détail de chaque animation, syllabe par syllabe, est dans [[video/assiette-pas-le-dessert/INSERTS-VERSION-COURTE|INSERTS-VERSION-COURTE]]. Les temps viennent du texte ; ta prise réelle fixera les vrais.
 
-| Temps | Ce que tu dis | Cadre | Ce qu'on voit | Source |
+| # | Temps | Ce que tu dis | Cadre | À l'image |
 |---|---|---|---|---|
-| 0:00 → 0:03,5 | « Lundi, tu enlèves le dessert. Mardi, le pain. Mercredi, les pâtes. » | **A** | toi, plan poitrine. En haut du cadre, la semaine en sept petites pastilles **L M M J V S D**. Sur chaque jour, sa pastille s'allume et son aliment se pose dessous, barré en rouge : un pot de dessert sous L, une tranche de pain sous M, des pâtes sous M | toi · la semaine, CapCut |
-| 0:03,5 → 0:06,3 | « Et vendredi, la balance n'a pas bougé. » | **A** | punch-in à 115 % ; la pastille **V** s'allume, une balance se pose dessous avec un **=**. Puis plus rien : c'est la douleur, on la laisse sur ton visage | toi · CapCut |
-| 0:06,3 → 0:08,5 | « Le problème n'a jamais été le sucre. » | **A** | retour à 100 %, la semaine s'efface. Le mot **SUCRE** en haut, barré en rouge sur « le sucre » | toi · un mot, CapCut |
-| 0:08,5 → 0:09,4 | « C'est le gras : » | **A** | punch-in à 115 %, le mot **GRAS** en jaune, en pop | toi · un mot, CapCut |
-| 0:09,4 → 0:11 | « l'huile, le beurre, les sauces. » | **C** | trois plans d'une demi-seconde, calés sur les trois mots : l'huile qui coule dans la poêle, le beurre qui mousse, la sauce qui tombe | G1 · G2 · G3 |
-| 0:11 → 0:11,7 | « Voici pourquoi. » | **A** | toi, 100 % | toi |
-| 0:11,7 → 0:13,2 | « Un : c'est le plus calorique. » | **A** | un **1** en très gros en haut du cadre, un pop | toi · CapCut |
-| 0:13,2 → 0:17,3 | « Un gramme de sucre, c'est quatre calories. Un gramme de gras, c'est neuf. » | **B** | en haut, **S1** : une pilule **1 g**, puis deux colonnes à la même échelle ; **Sucre** monte à **4** sur « quatre », **Gras** monte à **9** en jaune sur « neuf », plus du double | toi en bas · insert S1 |
-| 0:17,3 → 0:18,9 | « Deux : il te cale moins. » | **A** | un **2** en très gros, un pop | toi · CapCut |
-| 0:18,9 → 0:20,2 | « Pour les mêmes calories, » | **C** | une cuillère d'huile à côté d'un bol de pâtes, vus de dessus ; un **=** entre les deux | G8 · un signe, CapCut |
-| 0:20,2 → 0:26,2 | « il ne prend presque pas de place : tu en manges bien plus facilement que du pain ou des pâtes. » | **B** | en haut, **S2 · le ventre** : deux estomacs côte à côte, un **=** au-dessus. À gauche, du pain et des pâtes tombent dedans, l'estomac se remplit, **Plein** coché en vert. À droite, une cuillère d'huile tombe, le niveau bouge à peine ; sur « tu en manges bien plus facilement », une deuxième, une troisième, une quatrième cuillère : toujours pas plein, une croix rouge | toi en bas · insert S2 |
-| 0:26,2 → 0:28,1 | « Trois : tout le monde le sous-estime. » | **A** | un **3** en très gros, un pop | toi · CapCut |
-| 0:28,1 → 0:34,4 | « Dans une étude sur des plats de restaurant, les gens estimaient deux fois moins de gras qu'il n'y en avait. » | **B** | en haut, **S3 · l'étude** : une assiette de restaurant sous cloche, puis deux barres à la même échelle, **Estimé** (courte, croix rouge) et **Réel** (deux fois plus haute, jaune), pilule **× 2** ; **BURTON · 2006** en petit | toi en bas · insert S3 |
-| 0:34,4 → 0:36,3 | « Alors avant de te priver encore… » | **A** | toi, punch-in à 115 % | toi |
-| 0:36,3 → 0:38,5 | « …de dessert, de Nutella ou de Haribo, » | **C** | trois plans de 0,6 s calés sur les trois mots : un pot de crème dessert, un pot de pâte à tartiner, des bonbons. Aucune marque à l'image : c'est ta voix qui nomme Nutella et Haribo | G9 · G12 · G13 |
-| 0:38,5 → 0:42 | « compte chaque cuillère d'huile que tu verses : cent vingt calories chacune. » | **B** | en haut, la cuillère qu'on remplit d'huile au-dessus de la poêle ; sur « cent vingt calories », une carte **≈ 13 g × 9 = 120 kcal** | toi en bas · G7 · une carte, CapCut |
-| 0:42 → 0:43,2 | « Et ton dessert, garde-le. » | **A** | toi ; si tu l'as, tu prends un pot de crème dessert dans le cadre | toi |
-| 0:43,2 → 0:44,8 | « Enregistre-la pour la prochaine fois. » | **A** | l'icône d'enregistrement en pop, en haut à droite | toi · CapCut |
-| 0:44,8 → 0:48,9 | « Moi, c'est Mohamed : je t'explique la nutrition, sans régime. Abonne-toi pour la suite. » | **A** | ton prénom en bas du cadre une seconde, puis un bouton **Abonne-toi** en pop sur « abonne-toi » | toi · CapCut |
+| 1 | 0:00 → 0:02,5 | « Lundi, tu arrêtes le sucre : pas de dessert. » | **A** | toi, plan poitrine |
+| 2 | 0:02,5 → 0:07,6 | « Mardi, pas de soda. Mercredi, pas de bonbons. Vendredi, la balance n'a pas bougé. » | **B** | la semaine : le L déjà allumé avec le dessert barré, puis le soda, les bonbons, et la balance à **0 kg** |
+| 3 | 0:07,6 → 0:10,1 | « Mais le problème, ce n'est pas le sucre. » | **A** | punch-in à 115 % ; le mot **SUCRE** barré en rouge |
+| 4 | 0:10,1 → 0:12,6 | « C'est le gras : l'huile, le beurre, les sauces. » | **B** | la carte jaune **Gras**, puis **Huile**, **Beurre**, **Sauces** |
+| 5 | 0:12,6 → 0:14,5 | « Le gras, c'est le plus calorique. » | **A** | toi, 100 % |
+| 6 | 0:14,5 → 0:18 | « Un gramme de sucre : quatre calories. Un gramme de gras : neuf. » | **B** | **1 g**, puis les colonnes **Sucre** à 4 et **Gras** à 9 |
+| 7 | 0:18 → 0:19,6 | « Donc, pour les mêmes calories, » | **A** | punch-in à 110 % |
+| 8 | 0:19,6 → 0:27,4 | « il prend deux fois moins de place. Ton ventre se remplit à peine : la satiété, le signal « stop », est trop faible. Tu continues de manger. » | **B** | sept morceaux de sucre = une cuillère d'huile ; puis les deux estomacs, le panneau stop qui n'arrive pas à s'allumer, les cuillères qui continuent de tomber |
+| 9 | 0:27,4 → 0:37,5 | « Mais le pire : du gras, tu en manges bien plus que tu crois. Dans une étude de 2006, on a demandé à des gens d'estimer le gras de plats de restaurant. » | **A** | punch-in à 115 %, plus bas ; le mot **GRAS** en jaune sur « du gras » ; retour à 100 % sur « Dans une étude », et la pilule **ÉTUDE · 2006** en pop |
+| 10 | 0:37,5 → 0:39,7 | « Pour les plus gras, c'était le double. » | **B** | la barre **Estimé** à mi-hauteur, avec l'icône des gens ; puis la barre **Réel** qui monte au double, en jaune, **× 2** |
+| 11 | 0:39,7 → 0:42 | « Chaque cuillère d'huile, c'est cent vingt calories. » | **A** | punch-in à 115 % ; la pilule **120** en pop sur « cent vingt » |
+| 12 | 0:42 → 0:47 | « Alors la prochaine fois, prends ta cuillère, mesure bien ton huile, et profite de ton dessert. » | **B** | la cuillère qu'on remplit juste au bord, cochée ; puis la crème dessert, cochée, les confettis |
+| 13 | 0:47 → 0:52,4 | « Moi, c'est Mohamed : je t'explique la nutrition, sans régime. Abonne-toi pour la suite, et enregistre la vidéo. » | **A** | ton prénom en bas une seconde ; **Abonne-toi** en pop ; l'icône d'enregistrement en pop sur « enregistre » |
 
-Dix-neuf plans en 49 secondes, un toutes les deux secondes et demie : le rythme du format.
+Treize plans en 52 secondes, un whoosh à 0,35 sur chaque coupe.
 
 ## Ce qu'il faut fabriquer
 
-**Toi, une seule prise.** Tout le texte face caméra, cadré un peu large (voir [[Le format court#Au tournage|Le format court]]). Un pot de crème dessert à portée de main pour la fin, si tu veux. Rien d'autre.
+**Toi, une seule prise.** Tout le texte face caméra, cadré un peu large pour le recadrage du cadre B (voir [[Le format court#Au tournage|Le format court]]). Un pot de crème dessert à portée de main, si tu veux le tenir à la fin. Rien d'autre.
 
-**Le b-roll généré, huit plans.** Une image FLUX.2 pro en 9:16 d'abord, que tu valides, puis Kling 3.0 en 5 secondes (image de départ, son coupé). À chaque prompt s'ajoute le style commun :
+**Les animations** : quatre scènes HyperFrames, six passages, en 1080 × 960, dans la DA de YouBud. Tout est dans [[video/assiette-pas-le-dessert/INSERTS-VERSION-COURTE|INSERTS-VERSION-COURTE]].
 
-> realistic food photography, warm natural side light from the left, dark neutral background, light oak table, shallow depth of field, vertical 9:16 composition, no text, no logo, no brand, no faces
+**Plus de b-roll généré** : le montage n'a plus de plan sans toi, et les objets se dessinent. G1, G2, G3, G7, G8 et G9 restent écrits pour la version longue.
 
-| | Ce qu'on voit | Prompt de l'image | Mouvement |
-|---|---|---|---|
-| **G1** | l'huile qui coule dans la poêle | déjà écrit : [[video/assiette-pas-le-dessert/TOURNAGE#G · Le b-roll généré, à côté de toi\|TOURNAGE § G]] | idem |
-| **G2** | le beurre qui mousse | déjà écrit, même endroit | idem |
-| **G3** | la sauce qui tombe | déjà écrit, même endroit | idem |
-| **G7** | la cuillère qu'on remplit d'huile | Close-up of a tablespoon being filled with golden olive oil from an unlabeled glass bottle, held level above a black frying pan, the hand mostly out of frame | the oil fills the spoon exactly to the brim and stops, static camera |
-| **G8** | une cuillère d'huile à côté d'un bol de pâtes | Top-down view of a tablespoon of golden olive oil next to a small white bowl of plain cooked pasta, side by side, minimalist | very slow push-in from above, nothing moves |
-| **G9** | un pot de crème dessert | Close-up of a small chocolate dessert cream in a plain white cup without any label, a teaspoon dipping into it | the teaspoon lifts a creamy spoonful, slow motion |
-| **G12** | un pot de pâte à tartiner | Close-up of an open unlabeled glass jar of chocolate hazelnut spread, a knife scooping a generous amount | the knife lifts the spread, slow motion |
-| **G13** | des bonbons | Close-up of colorful gummy candies spilling from a clear unlabeled bag onto the table | the candies tumble and settle, slow motion |
+**Les éléments CapCut**, sur les plans A : les punch-ins, le mot SUCRE barré, le mot GRAS, la pilule ÉTUDE · 2006, la pilule 120, ton prénom, le bouton Abonne-toi, l'icône d'enregistrement.
 
-G7 est le même plan que le G2 du [[Mange comme le corps que tu vises|corps cible]] : on le génère une fois, il sert aux deux.
+## Ce que disent les études
 
-**Les trois inserts du cadre B**, en **1080 × 960**, contenu utile entre y = 230 et y = 940, dans la DA de YouBud (skill `inserts-youbud`) :
+Lues dans PubMed le 24 septembre au soir, pour que chaque phrase dise ce qu'elles ont mesuré, pas plus.
 
-| | Ce qu'il montre | Sur la syllabe | Son |
-|---|---|---|---|
-| **S1 · 4 contre 9** · 4 s | une pilule **1 g** en haut ; deux colonnes à la même échelle, **Sucre** en teinte neutre, **Gras** en jaune | « un **gramme** » la pilule ; « **quatre** » la colonne Sucre monte à 4 ; « **neuf** » la colonne Gras monte à 9, compteur 0 → 9 | `soft_click`, `bloop` 0.3, `rizer-windy` 0.24 puis `impacts` 0.43 sur le 9 |
-| **S2 · le ventre** · 6 s | deux estomacs dessinés à plat, côte à côte, un **=** au-dessus ; l'estomac est le même dessin que dans les inserts de [[Ton estomac ne compte pas les calories]] | « **place** » les deux estomacs vides ; « tu en **manges** » à gauche, une tranche de pain et des pâtes tombent, le niveau monte haut, **Plein** coché ; à droite, une cuillère d'huile, le niveau bouge à peine ; « bien plus fa**ci**lement » trois autres cuillères tombent une à une, le niveau reste bas, une croix rouge | `bloop` à chaque chute, `correct` 0.5 sur Plein, `wrong` 0.45 sur la croix |
-| **S3 · l'étude** · 6 s | une assiette sous cloche (`utensils`), puis deux barres **Estimé** et **Réel** ; **BURTON · 2006** en petit | « **restaurant** » l'assiette ; « **deux** fois moins » Estimé monte, puis Réel monte au double, en jaune, pilule **× 2** ; croix rouge sur Estimé | `soft_click`, `rizer-windy` 0.24, `wrong` 0.35 |
-
-S2 est le plan que tu voulais : le ventre plein avec le pain, presque vide avec le gras, pour les mêmes calories. Il ne dit aucun chiffre, les niveaux suffisent.
-
-**Les éléments CapCut**, sans insert : la semaine du hook (sept pastilles L M M J V S D, trois icônes barrées, la balance et le =), les mots SUCRE et GRAS, les chiffres 1, 2, 3, le signe =, la carte ≈ 13 g × 9 = 120 kcal, l'icône d'enregistrement, ton prénom et le bouton Abonne-toi.
+| Ce que tu dis | L'étude | Ce qu'elle a mesuré |
+|---|---|---|
+| « Un gramme de sucre : quatre calories. Un gramme de gras : neuf. » | les coefficients d'Atwater, la base de toutes les étiquettes | 4 calories par gramme de glucides ou de protéines, 9 par gramme de lipides |
+| « il prend deux fois moins de place », « la satiété… est trop faible » | Holt 1995, PMID 7498104, Sydney | 38 aliments servis aux mêmes calories (240) : plus un aliment est gras, moins il cale ; plus la portion est lourde, plus elle cale. Le croissant est le dernier du classement, deux fois moins rassasiant que le pain blanc |
+| « Tu continues de manger. » | Lissner 1987, PMID 3687822, Cornell | 24 femmes, trois régimes de deux semaines, des plats au même aspect et au même goût : avec plus de gras caché, elles ont mangé 15,4 % de calories en plus, et leur poids a changé |
+| « Dans une étude de 2006, on a demandé à des gens d'estimer le gras de plats de restaurant. Pour les plus gras, c'était le double. » | Burton 2006, PMID 16873758, Arkansas | des consommateurs estiment les calories et le gras de plats de restaurant courants ; pour les plats les moins sains, les plus gras, le gras réel est le double de leurs estimations. Le réel valait donc le double de leur estimation. C'est une moyenne sur ces plats : on ne dit pas que chacun s'est trompé du double |
+| « Chaque cuillère d'huile, c'est cent vingt calories. » | le calcul | une cuillère à soupe, 15 millilitres, environ 13 g d'huile : 13 × 9 ≈ 120 calories |
 
 ## La légende
 
-Elle suit la forme de celle du week-end : la promesse, « voici pourquoi », trois points, le geste, une raison d'enregistrer.
+La même chaîne que la vidéo, sans numéros : la scène, le coupable, pourquoi, avec les études, puis le geste.
 
-> Lundi, tu enlèves le dessert. Mardi, le pain. Mercredi, les pâtes. Et vendredi, la balance n'a pas bougé. Le problème n'a jamais été le sucre : c'est le gras. Voici pourquoi 👇
+> Lundi, tu arrêtes le sucre : pas de dessert. Mardi, pas de soda. Mercredi, pas de bonbons. Vendredi, la balance n'a pas bougé. Le problème, ce n'est pas le sucre : c'est le gras. 👇
 >
-> 1. C'est le plus calorique. Un gramme de sucre ou de féculents, c'est 4 calories. Un gramme de gras, c'est 9. Une cuillère à soupe d'huile pèse environ 13 g : environ 120 calories, autant qu'une crème dessert de 100 g.
+> Le gras, c'est le plus calorique : un gramme de sucre, 4 calories ; un gramme de gras, 9. Une cuillère à soupe d'huile pèse environ 13 g : environ 120 calories, autant qu'une crème dessert.
 >
-> 2. Il cale moins. Pour les mêmes calories, le gras ne prend presque pas de place. Dans l'indice de satiété de 1995, à calories égales, un croissant cale deux fois moins que du pain blanc, et plus un aliment est gras, moins il cale. En 1987, quand on a caché plus de gras dans les mêmes plats, les gens ont mangé 15 % de calories en plus sans s'en rendre compte, et ont pris du poids.
+> Donc, pour les mêmes calories, il prend deux fois moins de place, et il cale moins. En 1995, des chercheurs australiens ont servi 38 aliments aux mêmes calories : plus un aliment était gras, moins il calait, et le croissant est arrivé dernier. En 1987, des chercheurs américains ont servi à 24 femmes des plats au même aspect et au même goût, mais plus gras : elles ont mangé 15 % de calories en plus, sans le choisir, et leur poids a changé.
 >
-> 3. Tout le monde le sous-estime. Dans une étude de 2006 sur des plats de restaurant, pour les plus riches, les gens estimaient deux fois moins de gras qu'il n'y en avait vraiment.
+> Mais le pire : du gras, tu en manges bien plus que tu crois. En 2006, une étude américaine a demandé à des consommateurs d'estimer le gras de plats de restaurant. Dans les plus gras, il y en avait deux fois plus que ce qu'ils pensaient.
 >
-> Le geste : avant de te priver encore de dessert, de Nutella ou de Haribo, compte chaque cuillère d'huile que tu verses. Environ 120 calories chacune. Pour une portion, une suffit.
+> Chaque cuillère d'huile, c'est environ 120 calories. Alors la prochaine fois, prends ta cuillère, mesure bien ton huile, et profite de ton dessert.
 >
-> Ce que ça ne dit pas : si tu ne perds rien, les calories peuvent aussi être ailleurs, dans ce que tu bois ou dans ton week-end. Le gras est juste le premier endroit à regarder, parce que c'est le plus calorique et le moins visible.
+> Ce que ça ne dit pas : si tu ne perds rien, les calories peuvent aussi être ailleurs, dans ce que tu bois ou dans ton week-end. Le gras est le premier endroit à regarder, parce que c'est le plus calorique et le moins visible.
 >
-> Ton dessert, garde-le. Enregistre ce reel pour la prochaine fois, et abonne-toi : je t'explique la nutrition, sans régime.
+> Moi, c'est Mohamed : je t'explique la nutrition, sans régime. Abonne-toi pour la suite, et enregistre la vidéo.
 >
-> PMID 16873758 · PMID 7498104 · PMID 3687822
+> PMID 7498104 · PMID 3687822 · PMID 16873758
 >
 > #calories #nutrition #pertedepoids #reequilibragealimentaire
 
 ## Avant de tourner
 
 - [ ] **« Cent vingt calories chacune »** : une cuillère à soupe, c'est 15 millilitres, soit environ 13 à 14 grammes d'huile, donc 13 × 9 ≈ 120 calories. Pas 105 : 15 g × 9, ça fait 135, et c'est une cuillère bien bombée. « Cent vingt » est le bon chiffre à dire.
-- [ ] **« de Haribo »** : c'est ce que j'ai compris de ta dictée (« Hanali ») ; remplace par ce que tu voulais dire.
-- [x] La première phrase est une scène de la semaine de la personne, sans react ni carton ; chaque phrase répond à la précédente ; 49 secondes, dont 4 pour l'appel à s'abonner ; trois points numérotés ; la négation entière partout.
+- [ ] **Le test des 12 ans** : lis le texte à voix haute une fois. Une phrase qui accroche, tu la dis avec tes mots, sans toucher aux chiffres ni aux négations.
+- [x] Le sucre contre le gras, sans le pain ni les pâtes ; une étude citée avec son année et son vrai résultat ; le geste dit avec tes deux phrases ; l'enregistrement dans l'appel ; pas de « un, deux, trois » ; aucun mot de remplissage ; la négation entière partout. Environ 52 secondes.
 
 [[Le plus calorique de ton assiette, ce n'est pas le dessert]] · [[HUB]]

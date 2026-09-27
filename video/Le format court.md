@@ -6,21 +6,32 @@
 
 | | Ce que c'est | Durée |
 |---|---|---|
-| **Le hook** | une scène de la semaine de la personne (un jour, un geste, un chiffre), puis la réponse, dite en mots simples ; chaque phrase répond à la précédente ; « Voici pourquoi. » Voir [[Idées · ce qui annule ton déficit#0. Le scénario de la semaine\|le scénario de la semaine]] | 7 à 12 s |
-| **Un, deux, trois** | trois raisons numérotées, une idée chacune, un chiffre dit en unités qu'on connaît | 7 à 9 s chacune |
-| **La solution** | un geste, ce soir | 5 à 8 s |
+| **Le hook** | en trois temps, selon [[Les hooks (Kallaway)]] : une scène de la semaine de la personne (un jour, un geste, un chiffre), le « mais » qui arrête le pouce, le retournement. Une seule question dans la tête de la personne. Exemples : [[Les scénarios de la série]] | 7 à 12 s |
+| **Le pourquoi** | les raisons à la suite, **sans numéros** : chaque phrase répond à la précédente, par « mais » quand elle contredit, par « donc » quand elle en découle. Un chiffre dit en unités qu'on connaît. Une relance au milieu (« Mais le pire : … ») | 15 à 25 s |
+| **Le geste** | ce qu'on change, ce soir, dans la même scène | 5 à 8 s |
 | **La chute** | chaleureuse ; « Enregistre-la » si ça sert | 2 à 3 s |
-| **L'appel** | « Moi, c'est Mohamed : je t'explique la nutrition, sans régime. Abonne-toi pour la suite. » | 4 s |
+| **L'appel** | « Moi, c'est Mohamed : je t'explique la nutrition, sans régime. Abonne-toi pour la suite, et enregistre la vidéo. » L'enregistrement se dit ici, jamais dans une phrase à part | 5 s |
 
-Entre 40 et 50 secondes au total. Toi, face caméra, sur tout le texte : tu regardes l'objectif à chaque phrase, et c'est le montage qui fait le reste.
+Entre 35 et 50 secondes au total. Toi, face caméra, sur tout le texte : tu regardes l'objectif à chaque phrase, et c'est le montage qui fait le reste.
+
+## Les mots
+
+**Décidé par Mohamed le 24 au soir** : « je n'aime pas le un deux trois… je veux pas de fillers et sois plus direct… il faut expliquer en français correct à un enfant de 12 ans ».
+
+- **Pas de numéros** : ni « un, deux, trois », ni « première raison ». Les raisons s'enchaînent.
+- **Pas de mots de remplissage** : « voici pourquoi », « en fait », « du coup », « vraiment », « juste », « bien » pour insister, « alors » quand ce n'est pas un « donc », « et » en début de phrase. « Mais » et « donc » restent : ce sont eux qui font avancer.
+- **Des phrases courtes**, une idée chacune, à la voix active, en français correct, la négation entière.
+- **Le test des 12 ans** : chaque phrase se comprend du premier coup. Si un mot demande une explication (« compenser », « satiété »), on dit la chose à la place (« faire plus léger au repas suivant », « ton ventre se remplit à peine »).
 
 ## Les trois cadres
 
 Le montage alterne trois cadres. **Un changement toutes les deux à trois secondes**, jamais plus de quatre secondes sur le même plan.
 
+**Depuis le 24 au soir** (Mohamed : « on alterne ma tête en grand, puis ma tête en petit avec les animations ») : le montage alterne **A** et **B**, un coup chacun, et tout ce qu'on voit vit dans les animations du cadre B, dessiné à plat. Le cadre **C** ne sert plus que pour une image réelle qu'on ne peut pas dessiner. Exemple : [[video/assiette-pas-le-dessert/INSERTS-VERSION-COURTE|les animations de l'assiette]].
+
 | Cadre | À l'image | Quand |
 |---|---|---|
-| **A · TOI** | toi, plein cadre, plan poitrine ; punch-in à 115 % une phrase sur deux | le hook, chaque « Un / Deux / Trois », les phrases qui piquent, la chute, l'appel |
+| **A · TOI** | toi, plein cadre, plan poitrine ; punch-in à 115 % une phrase sur deux | le hook, les phrases qui piquent, la relance, la chute, l'appel |
 | **B · PARTAGÉ** | en haut, le visuel qui explique ; en bas, toi qui continues de parler à l'objectif | toute explication : un chiffre, un mécanisme, une étude |
 | **C · VISUEL** | un plan plein cadre, sans toi, 0,4 à 1,5 s | les listes (« l'huile, le beurre, les sauces ») et les images qui claquent |
 
@@ -40,7 +51,7 @@ Le montage alterne trois cadres. **Un changement toutes les deux à trois second
 ## Le son et le texte
 
 - **Les sous-titres mot par mot**, blancs, un mot en jaune par phrase, comme sur le week-end.
-- **Les chiffres « 1 », « 2 », « 3 »** en très gros en haut du cadre, un pop à chaque fois.
+- **Le texte du hook** : un chiffre ou un mot (0 kg, +385, × 2), jamais une phrase, aligné avec ce que tu dis et ce qu'on voit.
 - **Un whoosh à 0,35 sur chaque changement de cadre.**
 - **La musique** : un fond léger dès la première seconde, très bas sous la voix. Pas de scratch : la vidéo est trop courte pour un turn.
 - **L'appel** : ton prénom en bas du cadre une seconde, puis un bouton « Abonne-toi » en pop sur « abonne-toi ».

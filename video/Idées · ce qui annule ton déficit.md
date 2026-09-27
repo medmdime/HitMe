@@ -32,11 +32,13 @@
 | **Mercredi** | « Mercredi, tu dors cinq heures. » | « Jeudi, tu manges presque quatre cents calories de plus, sans le voir. » | Al Khatib 2017 | jeudi matin |
 | **Jeudi** | « Jeudi midi, tu manges devant ton écran. » | « Une demi-heure après, tu grignotes deux fois plus. » (l'étude mesure trente minutes après le repas, pas l'après-midi) | Oldham-Cooper 2011 | jeudi midi |
 | **Vendredi** | « Vendredi soir, deux verres de vin, des chips… » | « Ton corps arrête presque de brûler du gras, pendant des heures. » | Siler 1999 | vendredi |
-| **Chaque matin** | « Ton café au lait du matin, cinq jours sur sept… » | « C'est un repas entier par semaine, et ton corps ne le compte pas. » | DiMeglio et Mattes 2000 ; cinq cafés au lait, 650 à 950 calories | un matin |
+| **Chaque matin** | « Ton grand verre de jus d'orange, chaque matin, cinq jours sur sept… » | « Sur la semaine, c'est un repas entier, et ton corps ne le compte pas. » | DiMeglio et Mattes 2000 : l'étude a testé du soda, pas du lait, d'où le jus plutôt que le café au lait prévu d'abord | un matin |
 | **Samedi** | « Samedi, tu dînes avec tes potes. » | « Le repas dure plus longtemps, et tu manges plus, sans t'en rendre compte. » | de Castro 1989 et 1994 | samedi |
 | **Dimanche soir** | « Dimanche soir, tu te dis : demain, je reprends tout. » | « Lundi, tu t'interdis tout. Samedi, tu finis le pot de Nutella. » | Westenhoefer 1999 (le tout ou rien fait craquer) | dimanche soir |
 
-**Ce qui reste à vérifier** : l'ordre de grandeur des cafés au lait (lis l'étiquette de ce que tu bois vraiment), et le « 44 % » de de Castro, jamais dit tant qu'il n'est pas lu dans le texte intégral.
+**Ce qui reste à vérifier** : les calories d'un grand verre de jus, sur l'étiquette, et le « 44 % » de de Castro, jamais dit tant qu'il n'est pas lu dans le texte intégral.
+
+**Les scénarios, rédigés un par un** : [[Les scénarios de la série]].
 
 **Et les deux vidéos en cours** : la version courte de l'assiette et la réponse à « laisse les gens vivre » ouvrent maintenant sur une scène de la semaine, retenue par Mohamed le 24 au soir (« j'aime beaucoup ces variantes »). L'ancienne version reste dans chaque fichier, en secours.
 

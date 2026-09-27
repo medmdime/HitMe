@@ -1,11 +1,11 @@
 ---
 type: reel
-quoi: "réponse en vidéo, 0:34, face caméra, au commentaire de l'opposant sous le week-end : mange ce que tu veux"
+quoi: "réponse en vidéo, 0:35, face caméra, au commentaire de l'opposant sous le week-end : mange ce que tu veux"
 etat: "réécrite le 24 septembre sur « mange ce que tu veux », ouverte sur une scène de la semaine le soir même ; à tourner"
 ---
 # Laisse les gens vivre
 
-**Réponse en vidéo, 34 secondes, face caméra**, au commentaire de zzz_llbn sous [[Ton week-end annule ta semaine]] : « laisse les gens vivre sinon 💔💔 ». Tu lui donnes raison, avec une scène que tout le monde a vécue : le Nutella interdit toute la semaine, le pot fini le samedi. Mange ce que tu veux, même pour maigrir : sur plus de 50 000 personnes, celles qui s'interdisent des aliments craquent plus ; celles qui mangent de tout, en compensant, maigrissent mieux. Ce qui fait maigrir, ce n'est pas ce que tu manges, c'est la quantité. Elle sort avec la [[video/assiette-pas-le-dessert/VERSION-COURTE|version courte de l'assiette]], sur le gras.
+**Réponse en vidéo, 35 secondes, face caméra**, au commentaire de zzz_llbn sous [[Ton week-end annule ta semaine]] : « laisse les gens vivre sinon 💔💔 ». Tu lui donnes raison, avec une scène que tout le monde a vécue : le Nutella interdit toute la semaine, le pot fini le samedi. Mange ce que tu veux, même pour maigrir : sur plus de 50 000 personnes, celles qui s'interdisent des aliments craquent plus ; celles qui mangent de tout, et qui font plus léger au repas suivant, maigrissent mieux. Ce qui fait maigrir, ce n'est pas ce que tu manges, c'est la quantité. Elle sort avec la [[video/assiette-pas-le-dessert/VERSION-COURTE|version courte de l'assiette]], sur le gras.
 
 | Fichier | Ce que c'est |
 |---|---|
