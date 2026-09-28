@@ -28,9 +28,9 @@ Les hooks et le texte de chaque épisode sont dans [[Les scénarios de la série
 | 1 | le week-end | le calcul de la semaine | dim 20 sept | fait | **publié**, 17 300 vues sur TikTok : [[Ton week-end annule ta semaine]] |
 | 2 | la semaine sans sucre | Holt 1995, Lissner 1987, Burton 2006 | **sam 26 sept** | la prochaine session | écrit : [[video/assiette-pas-le-dessert/VERSION-COURTE\|version courte]], 52 s, et ses [[video/assiette-pas-le-dessert/INSERTS-VERSION-COURTE\|animations]] |
 | 3 | le pot du samedi | Westenhoefer 1999 | **dim 27 sept** au soir, en réponse au commentaire | la prochaine session | écrit : [[Laisse les gens vivre]], 35 s |
-| 4 | la balance du lundi | Turicchi 2020, Kreitzman 1992 ; un kilo de gras, c'est 7 700 calories | **lun 28 sept** au matin | la prochaine session s'il est écrit à temps, sinon dim 27 | à écrire |
+| 4 | la balance du lundi | Turicchi 2020, Kreitzman 1992, Hall 2008 ; un kilo de gras, plus de soixante cuillères d'huile | **lun 28 sept** au matin (sinon lun 5 oct) | dim 27 | écrit le 27 et passé au crible de trois agents : [[La balance du lundi]], 34 s |
 | 5 | la séance du mardi | Willbond 2010 | **mar 29 sept** au soir | dim 27 | à écrire d'ici sam 26 |
-| 6 | l'apéro du vendredi | Siler 1999 | **ven 2 oct**, avant l'apéro | dim 27 | à écrire d'ici sam 26 |
+| 6 | l'apéro du vendredi | Siler 1999, Sonko 1994, Murgatroyd 1996, Kwok 2019 | **ven 2 oct**, avant l'apéro | cette semaine | écrit le 28 et passé au crible de trois agents : [[L'apéro du vendredi]], 33 s |
 | 7 | la nuit courte | Al Khatib 2017 | **mer 7 oct** au soir | dim 4 oct | à écrire d'ici sam 3 |
 | 8 | le déjeuner devant l'écran | Oldham-Cooper 2011 | **jeu 8 oct** à midi | dim 4 oct | à écrire d'ici sam 3 |
 | 9 | le jus du matin | DiMeglio et Mattes 2000 (du soda, d'où le jus plutôt que le café au lait) ; l'étiquette du jus, à lire | **mar 13 oct** au matin | dim 11 oct | à écrire d'ici sam 10 |

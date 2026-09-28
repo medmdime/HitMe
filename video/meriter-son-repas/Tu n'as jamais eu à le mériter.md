@@ -24,16 +24,16 @@ brûles. Le TDEE en quatre, la digestion qui bat le sport sur la journée, les t
 
 ## Les fichiers du reel
 
-| Fichier | Ce que c'est |
-|---|---|
-| [[video/meriter-son-repas/SCRIPT\|SCRIPT]] | le hook et les sources, les quatre boucles, la légende |
-| [[video/meriter-son-repas/TOURNAGE\|TOURNAGE]] | le plan par plan, le jeu, les timecodes |
-| [[video/meriter-son-repas/PROMPTEUR\|PROMPTEUR]] | la narration nue |
-| [[video/meriter-son-repas/SON\|SON]] | les quarante-cinq bruitages cuits dans les rendus, ce qui reste à poser |
-| [[video/meriter-son-repas/montage/MONTAGE\|MONTAGE]] | le montage, les prises retenues, les deux pickups |
-| [[video/meriter-son-repas/montage/KDENLIVE\|KDENLIVE]] | le mode d'emploi, écrit sous Ubuntu |
+| Fichier                                                            | Ce que c'est                                                                                                                                                         |
+| ------------------------------------------------------------------ | -------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| [[video/meriter-son-repas/SCRIPT\|SCRIPT]]                         | le hook et les sources, les quatre boucles, la légende                                                                                                               |
+| [[video/meriter-son-repas/TOURNAGE\|TOURNAGE]]                     | le plan par plan, le jeu, les timecodes                                                                                                                              |
+| [[video/meriter-son-repas/PROMPTEUR\|PROMPTEUR]]                   | la narration nue                                                                                                                                                     |
+| [[video/meriter-son-repas/SON\|SON]]                               | les quarante-cinq bruitages cuits dans les rendus, ce qui reste à poser                                                                                              |
+| [[video/meriter-son-repas/montage/MONTAGE\|MONTAGE]]               | le montage, les prises retenues, les deux pickups                                                                                                                    |
+| [[video/meriter-son-repas/montage/KDENLIVE\|KDENLIVE]]             | le mode d'emploi, écrit sous Ubuntu                                                                                                                                  |
 | [[video/meriter-son-repas/montage/CAPCUT-PICKUPS\|CAPCUT-PICKUPS]] | **la finition sous Windows** : les deux trous mesurés, le tournage des pickups avec l'image de raccord, le montage par-dessus le rendu, la carte à masquer, l'export |
-| `renders/` | les trois animations : la découpe du TDEE, digestion contre sport, les trois leviers. **Elles servent aussi dans [[Les calories, les fondamentaux]]** |
+| `renders/`                                                         | les trois animations : la découpe du TDEE, digestion contre sport, les trois leviers. **Elles servent aussi dans [[Les calories, les fondamentaux]]**                |
 
 ## Les deux pickups
 

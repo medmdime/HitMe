@@ -85,7 +85,7 @@ Deux épisodes traversent toute la semaine : **l'assiette** (2), du lundi au ven
 
 **Attention.** En moyenne, l'écart de la semaine n'est que de 0,35 % du poids, moins d'un demi-kilo (Turicchi 2020, 1 421 personnes). Le kilo de la scène, c'est un gros week-end : on ne dit jamais « en moyenne, un kilo ».
 
-**État.** À écrire.
+**État.** Écrit le 27 septembre : [[La balance du lundi]], 34 s. Trois agents l'ont relu, et le texte s'écarte de ce scénario sur trois points : le kilo est « surtout » de l'eau (un gros week-end laisse aussi un peu de gras) ; « c'est mercredi que tu craques » est retiré (rien ne le soutient) ; et une phrase dit que le week-end compte quand même : « Ton gras, lui, se compte sur toute ta semaine. »
 
 ---
 
@@ -125,7 +125,7 @@ Deux épisodes traversent toute la semaine : **l'assiette** (2), du lundi au ven
 
 **Attention.** Huit hommes seulement, et un effet de quelques heures (Siler 1999) : ça ne dit pas que l'alcool fait grossir à lui seul.
 
-**État.** À écrire.
+**État.** Écrit le 28 septembre : [[L'apéro du vendredi]], 33 s. Trois agents l'ont relu, et le texte s'écarte de ce scénario : « ce ne sont pas les calories du vin » était faux (deux verres, presque une cuillère et demie d'huile) ; le −73 % n'est pas un dégât de plus, le corps brûle l'alcool à la place du gras, et le gras des chips part plus facilement en réserve ; « ce n'est que ce soir » ; le geste vise les chips (« un bol, pas le paquet »), pas le verre.
 
 ---
 

@@ -4,13 +4,13 @@
 
 ## La structure
 
-| | Ce que c'est | Durée |
-|---|---|---|
-| **Le hook** | en trois temps, selon [[Les hooks (Kallaway)]] : une scène de la semaine de la personne (un jour, un geste, un chiffre), le « mais » qui arrête le pouce, le retournement. Une seule question dans la tête de la personne. Exemples : [[Les scénarios de la série]] | 7 à 12 s |
-| **Le pourquoi** | les raisons à la suite, **sans numéros** : chaque phrase répond à la précédente, par « mais » quand elle contredit, par « donc » quand elle en découle. Un chiffre dit en unités qu'on connaît. Une relance au milieu (« Mais le pire : … ») | 15 à 25 s |
-| **Le geste** | ce qu'on change, ce soir, dans la même scène | 5 à 8 s |
-| **La chute** | chaleureuse ; « Enregistre-la » si ça sert | 2 à 3 s |
-| **L'appel** | « Moi, c'est Mohamed : je t'explique la nutrition, sans régime. Abonne-toi pour la suite, et enregistre la vidéo. » L'enregistrement se dit ici, jamais dans une phrase à part | 5 s |
+|                 | Ce que c'est                                                                                                                                                                                                                                                        | Durée     |
+| --------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | --------- |
+| **Le hook**     | en trois temps, selon [[Les hooks (Kallaway)]] : une scène de la semaine de la personne (un jour, un geste, un chiffre), le « mais » qui arrête le pouce, le retournement. Une seule question dans la tête de la personne. Exemples : [[Les scénarios de la série]] | 7 à 12 s  |
+| **Le pourquoi** | les raisons à la suite, **sans numéros** : chaque phrase répond à la précédente, par « mais » quand elle contredit, par « donc » quand elle en découle. Un chiffre dit en unités qu'on connaît. Une relance au milieu (« Mais le pire : … »)                        | 15 à 25 s |
+| **Le geste**    | ce qu'on change, ce soir, dans la même scène                                                                                                                                                                                                                        | 5 à 8 s   |
+| **La chute**    | chaleureuse ; « Enregistre-la » si ça sert                                                                                                                                                                                                                          | 2 à 3 s   |
+| **L'appel**     | « Moi, c'est Mohamed : je t'explique la nutrition, sans régime. Abonne-toi pour la suite, et enregistre la vidéo. » L'enregistrement se dit ici, jamais dans une phrase à part                                                                                      | 5 s       |
 
 Entre 35 et 50 secondes au total. Toi, face caméra, sur tout le texte : tu regardes l'objectif à chaque phrase, et c'est le montage qui fait le reste.
 

@@ -544,6 +544,43 @@ this shape.
 
 ---
 
+## Replying to a comment
+
+Decided with Mohamed on 24 and 27 September 2026 (« ajoute les scripts où je réponds aux
+commentaires, adaptés à notre écriture principale »). Worked examples:
+`video/reponse-laisse-les-gens-vivre/` (the opponent: « laisse les gens vivre ») and
+`video/reponse-abdos/` (the question he gets all the time: « des mois de régime, et toujours pas
+d'abdos »). A reply is a short like any other: same sieve (the eleven points above), same length
+(30 to 50 s), same follow call, same edit (skill `kallaway-edit`). What changes:
+
+1. **Which comment.** Two kinds only: the **opponent** who says out loud what many think (the most
+   precious: it hands you the contested belief), and **the question that keeps coming back** (it
+   proves the audience; say so in the caption, never in the voice). Never a one-off, never a troll.
+2. **The comment is the hook's first step.** Read it aloud, word for word, as a quote (TikTok's
+   « Répondre avec une vidéo » pastes it on screen as a sticker). Then, in one line, the scene
+   from the viewer's week that the comment implies (« Tu t'interdis le Nutella toute la semaine,
+   et samedi soir, tu finis le pot »), then the « mais » and the snapback. When the comment has a
+   point, say so first (« Tu as raison. »): everyone expects you to defend yourself, and agreeing
+   is the pattern interrupt.
+3. **Talk about this comment only.** No reference to another video, another comment, the series,
+   « comme je l'ai dit ». The viewer who lands on the reply has seen nothing else.
+4. **Read an ambiguous comment the way Mohamed reads it**, and cover the other reading in one
+   sentence (« un déficit de 1100 » = per week; the per-day reading gets one line).
+5. **Answer the person, not the crowd**: « tu », her or his week, her or his gesture tonight. When
+   the question concerns women and men differently (the abs), say both in two short mirrored
+   lines, and never set a body-fat target in the voice: a health caveat, with its source, goes in
+   the caption.
+6. **The quote is exact.** The script carries a placeholder until Mohamed picks the comment on
+   the app; the checklist has « copier le commentaire mot pour mot, vérifier le pseudo » unticked
+   until then.
+7. **Publishing.** TikTok: open the comment, « Répondre avec une vidéo », import the edit; the
+   sticker small, low on the left, above the app's buttons (around y = 1450), clear of the
+   subtitles (y = 980 on the animation shots, 1320 on the face shots) and of the face. Instagram:
+   « Répondre avec un reel » if the comment is there; otherwise a normal reel, the spoken quote is
+   enough. The caption opens with the quote.
+
+---
+
 ## French adaptation
 
 Reference: `DTdVpZljqZh` (Twinkie diet) — the account's biggest video, 21.8x / 7.5M.

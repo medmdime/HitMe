@@ -13,20 +13,20 @@ benchmark number. Never "5 tips for X."
 
 ## The corpus
 
-| Reel          | Topic                      | Likes | Views        | Hook                     |
-| ------------- | -------------------------- | ----- | ------------ | ------------------------ |
-| `DTdVpZljqZh` | Twinkie diet               | 780K  | 7.5M (21.8x) | react — Sam Sulek        |
-| `DUTagjXDqAa` | Muscle memory              | 285K  | —            | react — post-ACL atrophy |
-| `DW6rQ6PDiGs` | Cardio vs lifting          | 118K  | —            | react — peer claim       |
-| `DXeuUoYDuOK` | Calorie deficit ≠ eat less | 106K  | —            | prop — Chipotle          |
-| `DYm0eCYOr72` | Metabolic adaptation       | 96K   | —            | react — stitch           |
-| `DcRIpQBO1Mu` | Diet vs regular Coke       | 94K   | 1.3M (3.9x)  | prop — two cans          |
-| `Dak_KxmOjM9` | Nicotine                   | 66K   | —            | prop — pedestal          |
-| `DbV6ZsRObEW` | Ashwagandha                | 47K   | —            | react — comedy skit      |
-| `Db_HH_9uaow` | Skinny-fat                 | 35K   | 586K (1.7x)  | react — peer claim       |
-| `DZK5jErOZL5` | "Processed" (sponsored)    | 28K   | —            | prop — swap              |
-| `DbtFjC6OqBG` | VO2 max                    | 26K   | 387K (1.1x)  | react — authority mashup |
-| `DcL_FY6O--p` | Vitamin D                  | 14K   | 141K (0.4x)  | react — testimonial      |
+| Reel | Topic | Likes | Views | Hook |
+|---|---|---|---|---|
+| `DTdVpZljqZh` | Twinkie diet | 780K | 7.5M (21.8x) | react — Sam Sulek |
+| `DUTagjXDqAa` | Muscle memory | 285K | — | react — post-ACL atrophy |
+| `DW6rQ6PDiGs` | Cardio vs lifting | 118K | — | react — peer claim |
+| `DXeuUoYDuOK` | Calorie deficit ≠ eat less | 106K | — | prop — Chipotle |
+| `DYm0eCYOr72` | Metabolic adaptation | 96K | — | react — stitch |
+| `DcRIpQBO1Mu` | Diet vs regular Coke | 94K | 1.3M (3.9x) | prop — two cans |
+| `Dak_KxmOjM9` | Nicotine | 66K | — | prop — pedestal |
+| `DbV6ZsRObEW` | Ashwagandha | 47K | — | react — comedy skit |
+| `Db_HH_9uaow` | Skinny-fat | 35K | 586K (1.7x) | react — peer claim |
+| `DZK5jErOZL5` | "Processed" (sponsored) | 28K | — | prop — swap |
+| `DbtFjC6OqBG` | VO2 max | 26K | 387K (1.1x) | react — authority mashup |
+| `DcL_FY6O--p` | Vitamin D | 14K | 141K (0.4x) | react — testimonial |
 
 Full teardowns are cached: `library_get ref=instagram:SHORTCODE`. Outlier scores come from a
 12-post lookback on views; likes are the only metric comparable across the whole set.
@@ -542,6 +542,43 @@ this shape.
 
 ---
 
+## Replying to a comment
+
+Decided with Mohamed on 24 and 27 September 2026 (« ajoute les scripts où je réponds aux
+commentaires, adaptés à notre écriture principale »). Worked examples:
+`video/reponse-laisse-les-gens-vivre/` (the opponent: « laisse les gens vivre ») and
+`video/reponse-abdos/` (the question he gets all the time: « des mois de régime, et toujours pas
+d'abdos »). A reply is a short like any other: same sieve (the eleven points above), same length
+(30 to 50 s), same follow call, same edit (skill `kallaway-edit`). What changes:
+
+1. **Which comment.** Two kinds only: the **opponent** who says out loud what many think (the most
+   precious: it hands you the contested belief), and **the question that keeps coming back** (it
+   proves the audience; say so in the caption, never in the voice). Never a one-off, never a troll.
+2. **The comment is the hook's first step.** Read it aloud, word for word, as a quote (TikTok's
+   « Répondre avec une vidéo » pastes it on screen as a sticker). Then, in one line, the scene
+   from the viewer's week that the comment implies (« Tu t'interdis le Nutella toute la semaine,
+   et samedi soir, tu finis le pot »), then the « mais » and the snapback. When the comment has a
+   point, say so first (« Tu as raison. »): everyone expects you to defend yourself, and agreeing
+   is the pattern interrupt.
+3. **Talk about this comment only.** No reference to another video, another comment, the series,
+   « comme je l'ai dit ». The viewer who lands on the reply has seen nothing else.
+4. **Read an ambiguous comment the way Mohamed reads it**, and cover the other reading in one
+   sentence (« un déficit de 1100 » = per week; the per-day reading gets one line).
+5. **Answer the person, not the crowd**: « tu », her or his week, her or his gesture tonight. When
+   the question concerns women and men differently (the abs), say both in two short mirrored
+   lines, and never set a body-fat target in the voice: a health caveat, with its source, goes in
+   the caption.
+6. **The quote is exact.** The script carries a placeholder until Mohamed picks the comment on
+   the app; the checklist has « copier le commentaire mot pour mot, vérifier le pseudo » unticked
+   until then.
+7. **Publishing.** TikTok: open the comment, « Répondre avec une vidéo », import the edit; the
+   sticker small, low on the left, above the app's buttons (around y = 1450), clear of the
+   subtitles (y = 980 on the animation shots, 1320 on the face shots) and of the face. Instagram:
+   « Répondre avec un reel » if the comment is there; otherwise a normal reel, the spoken quote is
+   enough. The caption opens with the quote.
+
+---
+
 ## French adaptation
 
 Reference: `DTdVpZljqZh` (Twinkie diet) — the account's biggest video, 21.8x / 7.5M.
@@ -809,6 +846,16 @@ grammar every video — splitting bar, populating list, X/check pair, stick-figu
 timeline, leaderboard, before/after, absurd grid. Parameterising those eight is most of the
 production cost, and after the first video the marginal cost of an insert is writing props.
 Reusing them is the visual signature; inventing new devices each time destroys it.
+
+**Look, motion and sound of every insert are fixed by the `inserts-youbud` skill.** Load it
+before writing a composition: the YouBud palette and its `youbud.css` tokens, tinted cards with
+a solid bottom edge and **no border**, verdict badges that draw themselves, heads cut out as
+emoji, the GSAP gesture table, and the SFX baked into the render at the CapCut volumes.
+Its first rule changes how devices are written: **words, never sentences, on screen.**
+Instagram auto-translates captions, never text baked into an animation, and the market is
+French-speaking — so an insert carries numbers, units, symbols, Lucide icons, proper names and
+one word per element when that word carries the meaning (Déclaration, Vente, Contrôle). A
+phrase or a multi-word card belongs to the voice and the captions, not to the insert.
 
 The workflow stays `broll_plan_init` → decide each shot → `broll_plan_set` (record the
 rendered file on its shot) → `capcut_plan`. Read `capcut_reference` before hand-writing any
