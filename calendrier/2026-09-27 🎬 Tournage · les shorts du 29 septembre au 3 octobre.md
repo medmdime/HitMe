@@ -4,6 +4,8 @@ titre: "🎬 Tournage · les shorts du 29 septembre au 3 octobre"
 type: tournage
 ---
 
+> **Pas tourné** : remplacé par le [[2026-09-29 🎬 Tournage · la semaine du 28 septembre|tournage de la semaine du 28]].
+
 # 🎬 Tournage · les shorts du 29 septembre au 3 octobre
 
 **dimanche 27 septembre 2026, après la sortie longue.** Les deux shorts de la semaine, réécrits le 23 au format Kallaway, s'ils n'ont pas été tournés le [[2026-09-24 🎬 Tournage · l'assiette, et les deux suivants si le temps|jeudi 24]]. Le texte d'une traite trois fois, puis le hook et la chute à part. Le planning, les accessoires et le réglage : [[Tournage du jeudi 24 septembre]].

@@ -1,10 +1,12 @@
 ---
-date: 2026-10-03
+etat: "sortie du calendrier le 28 septembre : en réserve, après le semi (prévue le 2026-10-03)"
 titre: "📱 La cuillère d'huile plus calorique que ton dessert"
 type: short
 video: "[[Pourquoi ça revient]]"
 plateforme: Instagram
 ---
+
+> **Sortie du calendrier le 28 septembre** : la semaine du 28 prend l'assiette, les abdos et l'apéro de [[La série · ce qui annule ton déficit|la série]]. Cette vidéo attend après le semi, comme prévu dans le plan de la série.
 
 # 📱 La cuillère d'huile plus calorique que ton dessert
 

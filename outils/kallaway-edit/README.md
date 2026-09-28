@@ -33,6 +33,7 @@ $K rendre brouillon              # 8 · rendu -q draft accéléré, puis sonie e
 $K verifier planche renders/<nom>-brouillon.mp4
 $K rendre final                  #     quand Mohamed valide : -q high
 $K rendre test 1.1               #     comparer une autre vitesse
+$K couverture                    # 9 · le titre (ZY Elegant, blanc puis jaune) + la vidéo précédée de cette image
 $K verifier synchro renders/<fichier>.mp4   # le rendu colle-t-il à la piste maître ?
 $K verifier pic assets/sfx/<son>            # où culmine un son (à ajouter à PICS dans montage.py)
 ```
@@ -57,6 +58,7 @@ Tout le reste est généré : ne jamais retoucher `index.html`, `compositions/so
 | `ke.py detourer` | 6 | `visage-b.mp4` | `assets/rushes/visage-b-detoure.webm` |
 | `montage.py` + `sous_titres.py` | 7 | fiche, carte, plans, `mots-large-v3` | `index.html`, `compositions/sous-titres.html`, `sous-titres.srt` |
 | `rendre.py` | 8 | le projet | `renders/<nom>[-brouillon].mp4` |
+| `couverture.py` | 9 | fiche `[couverture]`, maître, vidéo livrée | `renders/couverture-<nom>.png`, `renders/<nom>-couverture.mp4` |
 | `verifier.py` | — | tout | des constats |
 | `commun.py` | — | la fiche | références de mots (« H2:sucre », « TM:gras#1 », « GE@6 », « plan:turn », « fin ») |
 

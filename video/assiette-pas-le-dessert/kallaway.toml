@@ -133,6 +133,8 @@ premiere = { riser = "rizer-windy.mp3", longueur = 1.75, vol_riser = 0.3, vol_hi
 #       les temps que `ke.py … plans` affiche. decalage_anim ne sert qu'à une animation calée sur une
 #       version précédente de la piste (ici : calées avant le recalage des coupes sur la grille des
 #       images, décalées d'un bloc de −42 à +72 ms). Pour une nouvelle vidéo : 0, donc l'omettre.
+#       woosh = false : pas de woosh à l'arrivée de ce plan B, quand un hoop ([[sons]]) tombe sur la
+#       même coupe (deux sons forts à 0,5 s d'écart se marchent dessus).
 # --------------------------------------------------------------------------------------------------
 [[plans]]
 id = "hook"
@@ -214,7 +216,7 @@ zoom = { type = "lent", fin = 1.08 }
 
 # --------------------------------------------------------------------------------------------------
 # LES MOTS INCRUSTÉS sur le cadre A : une pilule par mot fort, en pop sur le mot, avec un clic.
-# Des mots, jamais des phrases (Instagram ne traduit pas le texte incrusté). Styles : blanc, jaune,
+# Des mots, jamais des phrases (Instagram ne traduit pas le texte incrusté). Styles : blanc, jaune, bleu (l'eau),
 # vert, rouge (DA YouBud : aucune bordure, un rebord plein). `left` et `largeur` en px, centrés à
 # l'œil sur 1080 : (1080 − largeur) / 2 = left.
 #   disparait = "fin_plan" (effacé quand le plan est sorti) ou un mot (fondu 0,12 s, `avance` s avant)
@@ -272,7 +274,7 @@ avance = 0.05
 [[incrustes]]
 id = "bouton-abonne"
 texte = "Abonne-toi"
-style = "vert"
+style = "blanc"                  # vert au départ ; en blanc sur le bandeau sombre (28 septembre)
 left = 250
 largeur = 470
 apparait = "GE:Abonne"
@@ -280,10 +282,20 @@ chevauchement = true             # touche l'icône d'enregistrement, voulu (sino
 
 [[incrustes]]
 id = "icone-enregistre"
-icone = "bookmark"               # une icône Lucide dans un rond jaune, sur « enregistre »
-style = "jaune"
+icone = "bookmark"               # une icône Lucide dans un rond, sur « enregistre »
+style = "rose"                   # jaune au départ ; « le save en rose » (28 septembre)
 left = 750
+rond = 130                       # 110 au départ : « pas super visible » (28 septembre)
 apparait = "GE:enregistre"
+
+# Un bandeau : un fond sombre semi-transparent et flouté derrière l'appel (Mohamed, Abonne-toi, l'icône),
+# pour qu'il ressorte sur le mur clair (« met un background transparent car ce n'est pas super visible »,
+# 28 septembre). Il arrive avec le prénom et reste jusqu'à la fin ; il couvre de `left` à `left + largeur`.
+[[bandeaux]]
+id = "bandeau-appel"
+apparait = "GE:Mohammed"
+left = 215
+largeur = 690
 
 # --------------------------------------------------------------------------------------------------
 # LES MOMENTS FORTS : un riser qui culmine sur le mot, et le « hoop » (le boum d'impacts) dessus.
@@ -346,6 +358,25 @@ top_b = 980                      # cadre B : entre le bas de l'animation (~940) 
 top_a = 1320                     # cadre A : sous le menton, au-dessus de l'interface (y > 1536)
 taille = 72
 
+[son]
+# Des facteurs sur les volumes de toute la fiche (28 septembre, après l'assiette : « réduis le bruit des
+# animations, les clics, les risers et les woosh de 40 %, la musique de 20 % »). Les animations du cadre B
+# ont leurs propres <audio> : leurs volumes s'écrivent déjà × 0,6 (voir le skill kallaway-edit, § 7).
+sfx = 0.6
+musique = 0.8
+
 [rendu]
 vitesse = 1.08                   # « 1,08, je pense, l'idéal » (1,1 testé ; 1,15 trop rapide dans CapCut)
 nom = "assiette-version-courte"  # renders/assiette-version-courte.mp4
+
+# --------------------------------------------------------------------------------------------------
+# LA COUVERTURE (`ke.py … couverture`, demandée le 28 septembre) : le titre en ZY Elegant sur une image
+# de lui prise dans la piste maître (sans sous-titres), la première partie en blanc, la seconde en
+# jaune et plus grosse ; puis cette image en toute première image de la vidéo livrée.
+# La police n'a pas d'accents : un titre sans « é » (ou écrit sans).
+# --------------------------------------------------------------------------------------------------
+[couverture]
+temps = 7.3                      # dans voix-montage.mp4 : bouche fermée, regard dans l'objectif
+blanc = ["LE PLUS CALORIQUE", "DE TON ASSIETTE,"]
+jaune = ["CE N'EST PAS", "LE DESSERT"]
+haut = 250                       # le haut du texte : dans la zone que la grille d'Instagram garde (y 240 → 1680)

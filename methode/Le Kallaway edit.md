@@ -1,5 +1,6 @@
 > **Copie de lecture.** La source, celle que Claude utilise, est `.claude/skills/kallaway-edit/SKILL.md`, et l'outil vit dans `outils/kallaway-edit/`. Si tu changes la méthode, change la source, puis recopie.
 
+
 # Le Kallaway edit
 
 **Ce que c'est.** Le montage que Mohamed a validé le 26 septembre 2026 sur la version courte de
@@ -86,6 +87,7 @@ outils/kallaway-edit/
   sous_titres.py   (utilisé par montage.py)
   rendre.py        étape 7 : rendu accéléré
   verifier.py      les contrôles
+  couverture.py    étape 9 : le titre sur une image de lui, en première image de la vidéo
   gabarit.toml     la fiche de l'assiette, commentée : le modèle de toute nouvelle fiche
   README.md        l'aide-mémoire des commandes
 ```
@@ -165,6 +167,15 @@ instants délicats (mi-glissé, un mot incrusté, un sous-titre sur le t-shirt).
 (−16 LUFS, crête sous −0,5 dBFS), `$K verifier planche …`, puis l'envoyer à Mohamed. Quand il valide :
 `$K rendre final` (`-q high`). Pour comparer une autre vitesse : `$K rendre test 1.1`.
 
+**9 · La couverture** — remplir `[couverture]` (le temps d'une image de lui dans la piste maître,
+bouche fermée ; le titre en deux parties), puis `$K couverture`. Le titre en **ZY Elegant** (la police
+de CapCut, tout en capitales, **sans accents** : pas de « é » dans la police), la première partie en
+**blanc**, la seconde en **jaune** YouBud et plus grosse, une ombre douce, un dégradé sombre en haut ;
+le haut du texte vers y = 250, dans la zone que la grille d'Instagram garde (3:4). Sorties :
+`renders/couverture-<nom>.png`, et `renders/<nom>-couverture.mp4`, la vidéo livrée précédée d'**une
+seule image**, la couverture, à choisir comme couverture dans l'appli (demandé le 28 septembre :
+« découpe une partie blanche et une autre jaune, et ajoute une frame simple avant la vidéo »).
+
 ---
 
 ## 5. Mesurer le décalage des lèvres
@@ -173,6 +184,13 @@ instants délicats (mi-glissé, un mot incrusté, un sous-titre sur le t-shirt).
 lèvres**, et pas du même écart : sur l'assiette 0,21 · 0,20 · 0,19 · 0,18 · 0,33 · 0,12 s. Il a
 repéré la prise à 0,33 s tout de suite. Le rendu HyperFrames, lui, est fidèle à l'image près
 (`verifier synchro`) : un défaut de lèvres vient toujours de la prise.
+
+**Au tournage, un clap** (ajouté le 27 septembre, pour les prises suivantes) : Mohamed frappe une
+fois dans ses mains, face caméra, au début de chaque prise. Le claquement fait un pic net dans le
+son, et l'image où les mains se touchent se voit à 60 i/s : `decalage = image du contact − pic du
+son`, lu sur une planche (`$K levres planche <prise> <temps du clap>`, recentrer `bouche` sur les
+mains pour l'occasion). Plus fiable qu'un « p », et sans chercher. Le clap tombe avant le premier
+mot : les coupes l'enlèvent d'elles-mêmes. Sans clap, la méthode des lèvres ci-dessous.
 
 **La méthode** (la seule qui a tenu) :
 1. `$K levres cadre H1 1.0` → une image quadrillée ; relever la bouche (un carreau = 90 px de la
@@ -211,11 +229,11 @@ Lire `outils/kallaway-edit/gabarit.toml` : chaque ligne est commentée avec sa r
   la tête dépasse de ~120 px. Changer `bande_top` et `carte.top` **ensemble** (même écart : 180).
 - **`[[plans]]`** : alterner A et B ; aucun plan A sous 1 s ; ne jamais quitter une animation sur
   son dernier mot (le chiffre final tient 0,5 s) ; deux B de suite sont permis (B → B) ; un zoom par
-  plan A. `decalage_anim` : 0 pour une nouvelle vidéo (l'omettre).
+  plan A. `decalage_anim` : 0 pour une nouvelle vidéo (l'omettre). `woosh = false` sur un plan B quand le hoop d'un moment fort tombe sur sa coupe (deux sons forts à 0,5 s se marchent dessus : les soixante cuillères de la balance, la jambe des abdos).
 - **`[[incrustes]]`** : des mots, jamais des phrases (Instagram ne traduit pas le texte incrusté) ;
-  un par idée forte ; style blanc, jaune (le terme clé, un chiffre), vert (l'appel) ; `barre` pour
+  un par idée forte ; style blanc, jaune (le terme clé, un chiffre), vert (l'appel), bleu clair (l'eau) ; `barre` pour
   barrer en rouge sur un mot (SUCRE) ; `disparait = "fin_plan"` ou un mot avec `avance` (pour laisser
-  la place au suivant) ; `chevauchement = true` si deux se touchent exprès.
+  la place au suivant) ; `chevauchement = true` si deux se touchent exprès. **L'appel** (prénom et Abonne-toi en blanc, icône d'enregistrement en rose : `style = "rose"`) passe sur un `[[bandeaux]]` : un fond sombre semi-transparent et flouté, sinon il se perd sur le mur clair (28 septembre : « met un background transparent car ce n'est pas super visible ») ; l'icône en `rond = 130`.
 - **`[[sons]]`** : 2 ou 3 `riser_hoop` : le chiffre fort, la relance (le turn), la chute.
 - **`[[musique]]`** : morceau 1 de la première animation au turn, morceau 2 du mot de la relance à
   `"fin"`.
@@ -226,6 +244,12 @@ Lire `outils/kallaway-edit/gabarit.toml` : chaque ligne est commentée avec sa r
 ---
 
 ## 7. La grammaire sonore
+
+**Le niveau** (28 septembre, après l'assiette : « réduis le bruit des animations, les clics, les risers
+et les woosh de 40 %, la musique de 20 % ») : `[son] sfx = 0.6` et `musique = 0.8` dans la fiche
+multiplient tous les bruitages et la musique du montage ; **dans les animations, écrire directement
+les volumes d'`inserts-youbud` × 0,6**. Mesuré ensuite : −17,0 LUFS, crête −1,4 dBFS, la voix devant.
+Les volumes du tableau ci-dessous sont ceux d'avant ce facteur.
 
 **Un son se cale sur son pic, jamais sur son départ.** Pics mesurés (`$K verifier pic <fichier>` pour
 un son nouveau, puis l'ajouter à `PICS` dans `montage.py`) :

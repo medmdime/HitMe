@@ -41,14 +41,19 @@
         opacity: 0; will-change: transform; }
       .incruste-rond .ico { position: absolute; left: 27px; top: 27px; width: 56px; height: 56px; }
       .incruste-rond .ico svg.lucide { display: block; width: 100%; height: 100%; }
+      .bandeau { position: absolute; top: 225px; height: 160px; border-radius: 48px; opacity: 0;
+        background: rgba(15, 15, 15, 0.42); backdrop-filter: blur(10px); }
       #mot-sucre { left: 330px; width: 420px; background: #ffffff; box-shadow: 0 9px 0 #d9d8d0; }
       #mot-sucre .barre { position: absolute; left: 50px; top: 50px; width: 320px; height: 12px; border-radius: 6px; background: var(--yb-red); }
       #mot-gras { left: 355px; width: 370px; background: var(--yb-yellow); box-shadow: 0 9px 0 var(--yb-yellow-edge); }
       #pilule-etude { left: 250px; width: 580px; background: #ffffff; box-shadow: 0 9px 0 #d9d8d0; font-size: 60px; }
       #pilule-120 { left: 380px; width: 320px; background: var(--yb-yellow); box-shadow: 0 9px 0 var(--yb-yellow-edge); font-variant-numeric: tabular-nums; }
       #nom { left: 290px; width: 500px; background: #ffffff; box-shadow: 0 9px 0 #d9d8d0; }
-      #bouton-abonne { left: 250px; width: 470px; background: var(--yb-green); box-shadow: 0 9px 0 var(--yb-green-edge); }
-      #icone-enregistre { left: 750px; background: var(--yb-yellow); box-shadow: 0 9px 0 var(--yb-yellow-edge); }
+      #bouton-abonne { left: 250px; width: 470px; background: #ffffff; box-shadow: 0 9px 0 #d9d8d0; }
+      #icone-enregistre { left: 750px; background: #ff8cc6; box-shadow: 0 9px 0 #e0639f; }
+      #icone-enregistre { top: 240px; width: 130px; height: 130px; border-radius: 65px; }
+      #icone-enregistre .ico { left: 32px; top: 32px; width: 65px; height: 65px; }
+      #bandeau-appel { left: 215px; width: 690px; }
     </style>
   </head>
   <body>
@@ -75,6 +80,7 @@
         <div id="zoom-a" data-layout-allow-overflow>
           <video id="video-a" class="clip" src="assets/rushes/voix-montage.mp4" data-start="0" data-duration="34.98" data-track-index="0" muted playsinline></video>
         </div>
+        <div class="bandeau" id="bandeau-appel"></div>
         <div class="mot" id="mot-sucre">SUCRE<div class="barre"></div></div>
         <div class="mot" id="mot-gras">GRAS</div>
         <div class="mot" id="pilule-etude">ÉTUDE · 2006</div>
@@ -87,28 +93,28 @@
       <div id="host-sous-titres" data-composition-id="assiette-sous-titres" class="clip hote" data-start="0" data-duration="34.98" data-track-index="9" data-composition-src="compositions/sous-titres.html"></div>
 
       <audio id="voix" src="assets/rushes/voix-montage.mp4" data-start="0" data-duration="34.98" data-track-index="100" data-volume="1"></audio>
-      <audio id="musique-1" src="assets/musique/careless-wandering.mp3" data-start="1.75" data-duration="16.917" data-media-start="0.5" data-track-index="90" data-volume="0.15"></audio>
-      <audio id="musique-2" src="assets/musique/particle-emission.mp3" data-start="21.201" data-duration="13.779" data-media-start="0.5" data-track-index="91" data-volume="0.55"></audio>
-      <audio id="son-01" src="assets/sfx/rizer-windy.mp3" data-start="0.0" data-duration="1.85" data-media-start="1.0" data-track-index="101" data-volume="0.3"></audio>
-      <audio id="son-02" src="assets/sfx/impacts.mp3" data-start="1.4" data-duration="1.2" data-media-start="0.2" data-track-index="102" data-volume="0.45"></audio>
-      <audio id="son-03" src="assets/sfx/air-woosh.wav" data-start="7.15" data-duration="1.0" data-media-start="0.25" data-track-index="103" data-volume="0.5"></audio>
-      <audio id="son-04" src="assets/sfx/air-woosh.wav" data-start="10.95" data-duration="1.0" data-media-start="0.25" data-track-index="104" data-volume="0.5"></audio>
-      <audio id="son-05" src="assets/sfx/air-woosh.wav" data-start="24.017" data-duration="1.0" data-media-start="0.25" data-track-index="105" data-volume="0.5"></audio>
-      <audio id="son-06" src="assets/sfx/air-woosh.wav" data-start="27.05" data-duration="1.0" data-media-start="0.25" data-track-index="106" data-volume="0.5"></audio>
-      <audio id="son-07" src="assets/sfx/soft_click.wav" data-start="6.673" data-duration="0.22" data-track-index="107" data-volume="1"></audio>
-      <audio id="son-08" src="assets/sfx/soft_click.wav" data-start="7.393" data-duration="0.22" data-track-index="108" data-volume="1"></audio>
-      <audio id="son-09" src="assets/sfx/soft_click.wav" data-start="19.334" data-duration="0.22" data-track-index="109" data-volume="1"></audio>
-      <audio id="son-10" src="assets/sfx/soft_click.wav" data-start="21.201" data-duration="0.22" data-track-index="110" data-volume="1"></audio>
-      <audio id="son-11" src="assets/sfx/soft_click.wav" data-start="26.86" data-duration="0.22" data-track-index="111" data-volume="1"></audio>
-      <audio id="son-12" src="assets/sfx/soft_click.wav" data-start="31.66" data-duration="0.22" data-track-index="112" data-volume="1"></audio>
-      <audio id="son-13" src="assets/sfx/soft_click.wav" data-start="33.567" data-duration="0.22" data-track-index="113" data-volume="1"></audio>
-      <audio id="son-14" src="assets/sfx/soft_click.wav" data-start="34.347" data-duration="0.22" data-track-index="114" data-volume="1"></audio>
-      <audio id="son-15" src="assets/sfx/rizer-mettalic.mp3" data-start="25.86" data-duration="1.1" data-media-start="0.75" data-track-index="115" data-volume="0.55"></audio>
-      <audio id="son-16" src="assets/sfx/impacts.mp3" data-start="26.51" data-duration="1.2" data-media-start="0.2" data-track-index="116" data-volume="0.38"></audio>
-      <audio id="son-17" src="assets/sfx/rizer-windy.mp3" data-start="19.801" data-duration="1.5" data-media-start="1.35" data-track-index="117" data-volume="0.22"></audio>
-      <audio id="son-18" src="assets/sfx/impacts.mp3" data-start="20.851" data-duration="1.2" data-media-start="0.2" data-track-index="118" data-volume="0.4"></audio>
-      <audio id="son-19" src="assets/sfx/rizer-windy.mp3" data-start="29.98" data-duration="1.1" data-media-start="1.75" data-track-index="119" data-volume="0.2"></audio>
-      <audio id="son-20" src="assets/sfx/impacts.mp3" data-start="30.63" data-duration="1.2" data-media-start="0.2" data-track-index="120" data-volume="0.34"></audio>
+      <audio id="musique-1" src="assets/musique/careless-wandering.mp3" data-start="1.75" data-duration="16.917" data-media-start="0.5" data-track-index="90" data-volume="0.12"></audio>
+      <audio id="musique-2" src="assets/musique/particle-emission.mp3" data-start="21.201" data-duration="13.779" data-media-start="0.5" data-track-index="91" data-volume="0.44"></audio>
+      <audio id="son-01" src="assets/sfx/rizer-windy.mp3" data-start="0.0" data-duration="1.85" data-media-start="1.0" data-track-index="101" data-volume="0.18"></audio>
+      <audio id="son-02" src="assets/sfx/impacts.mp3" data-start="1.4" data-duration="1.2" data-media-start="0.2" data-track-index="102" data-volume="0.27"></audio>
+      <audio id="son-03" src="assets/sfx/air-woosh.wav" data-start="7.15" data-duration="1.0" data-media-start="0.25" data-track-index="103" data-volume="0.3"></audio>
+      <audio id="son-04" src="assets/sfx/air-woosh.wav" data-start="10.95" data-duration="1.0" data-media-start="0.25" data-track-index="104" data-volume="0.3"></audio>
+      <audio id="son-05" src="assets/sfx/air-woosh.wav" data-start="24.017" data-duration="1.0" data-media-start="0.25" data-track-index="105" data-volume="0.3"></audio>
+      <audio id="son-06" src="assets/sfx/air-woosh.wav" data-start="27.05" data-duration="1.0" data-media-start="0.25" data-track-index="106" data-volume="0.3"></audio>
+      <audio id="son-07" src="assets/sfx/soft_click.wav" data-start="6.673" data-duration="0.22" data-track-index="107" data-volume="0.6"></audio>
+      <audio id="son-08" src="assets/sfx/soft_click.wav" data-start="7.393" data-duration="0.22" data-track-index="108" data-volume="0.6"></audio>
+      <audio id="son-09" src="assets/sfx/soft_click.wav" data-start="19.334" data-duration="0.22" data-track-index="109" data-volume="0.6"></audio>
+      <audio id="son-10" src="assets/sfx/soft_click.wav" data-start="21.201" data-duration="0.22" data-track-index="110" data-volume="0.6"></audio>
+      <audio id="son-11" src="assets/sfx/soft_click.wav" data-start="26.86" data-duration="0.22" data-track-index="111" data-volume="0.6"></audio>
+      <audio id="son-12" src="assets/sfx/soft_click.wav" data-start="31.66" data-duration="0.22" data-track-index="112" data-volume="0.6"></audio>
+      <audio id="son-13" src="assets/sfx/soft_click.wav" data-start="33.567" data-duration="0.22" data-track-index="113" data-volume="0.6"></audio>
+      <audio id="son-14" src="assets/sfx/soft_click.wav" data-start="34.347" data-duration="0.22" data-track-index="114" data-volume="0.6"></audio>
+      <audio id="son-15" src="assets/sfx/rizer-mettalic.mp3" data-start="25.86" data-duration="1.1" data-media-start="0.75" data-track-index="115" data-volume="0.33"></audio>
+      <audio id="son-16" src="assets/sfx/impacts.mp3" data-start="26.51" data-duration="1.2" data-media-start="0.2" data-track-index="116" data-volume="0.228"></audio>
+      <audio id="son-17" src="assets/sfx/rizer-windy.mp3" data-start="19.801" data-duration="1.5" data-media-start="1.35" data-track-index="117" data-volume="0.132"></audio>
+      <audio id="son-18" src="assets/sfx/impacts.mp3" data-start="20.851" data-duration="1.2" data-media-start="0.2" data-track-index="118" data-volume="0.24"></audio>
+      <audio id="son-19" src="assets/sfx/rizer-windy.mp3" data-start="29.98" data-duration="1.1" data-media-start="1.75" data-track-index="119" data-volume="0.12"></audio>
+      <audio id="son-20" src="assets/sfx/impacts.mp3" data-start="30.63" data-duration="1.2" data-media-start="0.2" data-track-index="120" data-volume="0.204"></audio>
     </div>
 
     <script>
@@ -166,6 +172,7 @@
         tl.to("#nom", { opacity: 0, duration: 0.12, ease: "power2.in" }, 33.517);
         tl.fromTo("#bouton-abonne", { opacity: 0, scale: 0.3 }, { opacity: 1, scale: 1, duration: 0.25, ease: "back.out(1.6)" }, 33.567);
         tl.fromTo("#icone-enregistre", { opacity: 0, scale: 0.3 }, { opacity: 1, scale: 1, duration: 0.25, ease: "back.out(1.6)" }, 34.347);
+        tl.fromTo("#bandeau-appel", { opacity: 0 }, { opacity: 1, duration: 0.2, ease: "power2.out" }, 31.61);
 
         window.__timelines["main"] = tl;
       })();

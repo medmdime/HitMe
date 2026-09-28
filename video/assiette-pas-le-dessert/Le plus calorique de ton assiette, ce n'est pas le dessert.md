@@ -15,7 +15,7 @@ sortie: 2026-09-26
 |---|---|
 | État | **réécrit le 23 septembre**, 311 mots, après ton retour sur la version du 20 : hook sans « wow », grammes et balance, huile seule. À tourner, puis cinq inserts à rendre, puis une heure de montage |
 | Tournage | [[2026-09-24 🎬 Tournage · l'assiette, et les deux suivants si le temps\|jeudi 24 septembre]], en premier ; le planning : [[Tournage du jeudi 24 septembre]] |
-| Sortie | [[2026-09-26 📱 Le plus calorique de ton assiette, ce n'est pas le dessert\|samedi 26 septembre]], Instagram, puis TikTok et YouTube Shorts en miroir |
+| Sortie | [[2026-09-28 📱 Le plus calorique de ton assiette, ce n'est pas le dessert\|samedi 26 septembre]], Instagram, puis TikTok et YouTube Shorts en miroir |
 | Accessoires | le pot de crème dessert, **130 calories ou moins**. Pour les plans du bol : la bouteille d'huile, un bol transparent, une cuillère à soupe, une poêle froide |
 
 ## Les fichiers

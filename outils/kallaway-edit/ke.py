@@ -12,6 +12,7 @@
     check                     npx hyperframes check
     rendre brouillon|final|test V     le rendu, accéléré de [rendu] vitesse sans sauter d'image
     verifier coupes|synchro|son|planche|pic   les contrôles
+    couverture                le titre (ZY Elegant, blanc puis jaune) sur une image de lui, et en première image de la vidéo
 
 L'ordre, les règles et les pièges sont dans le skill .claude/skills/kallaway-edit/SKILL.md.
 Exemple complet et réel : video/assiette-pas-le-dessert/kallaway.toml (= gabarit.toml ici).
@@ -69,6 +70,9 @@ def main():
     elif etape == "verifier":
         import verifier
         verifier.main(v, args)
+    elif etape == "couverture":
+        import couverture
+        couverture.main(v, args)
     else:
         raise SystemExit(f"étape inconnue : {etape}\n\n{__doc__}")
 

@@ -152,7 +152,8 @@ I2 = 41 à 79, I3 = 81 à 99, I4 = 101 et plus), parce que `index.html` les héb
 | une liste qui se remplit | `soft_click.wav` en rafale | 1.0 | un clic toutes les 0.2 s, six au plus |
 
 Les volumes viennent du montage mesuré dans `montage-capcut` : ils ne se discutent pas, ils se
-recopient. La liste `<audio>` de la composition est **la source de vérité** : au montage, elle
+recopient. **Dans le Kallaway edit** (le montage fait dans HyperFrames, skill `kallaway-edit`), chaque
+volume de ce tableau s'écrit **× 0,6** : Mohamed a baissé tous les bruitages de 40 % le 28 septembre. La liste `<audio>` de la composition est **la source de vérité** : au montage, elle
 s'exporte en `sons-des-inserts.json` (temps timeline, piste sans chevauchement, volume) et chaque
 son se pose dans CapCut, l'insert lui-même à volume 0. Ne jamais poser un son deux fois.
 **Jamais huit réussites d'affilée** : la cohorte de la créatine a été rejetée pour ça, les

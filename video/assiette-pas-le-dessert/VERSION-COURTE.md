@@ -178,17 +178,17 @@ Lues dans PubMed le 24 septembre au soir, pour que chaque phrase dise ce qu'elle
 
 ## La légende
 
-La même chaîne que la vidéo, sans numéros : la scène, le coupable, pourquoi, avec les études, puis le geste.
+**Publiée le lundi 28 septembre**, ajustée à la prise réelle (mardi les bonbons, mercredi le soda, « le vendredi, tu te pèses », le beurre, l'huile et les sauces) ; l'étude de 2006 y est dite en entier (« dans les plats les plus gras, il y en avait deux fois plus que ce qu'ils pensaient »), ce que la voix n'a pas pu dire. « Autant qu'une crème dessert » est retiré : la vidéo ne le dit plus et l'étiquette n'a pas été vérifiée.
 
-> Lundi, tu arrêtes le sucre : pas de dessert. Mardi, pas de soda. Mercredi, pas de bonbons. Vendredi, la balance n'a pas bougé. Le problème, ce n'est pas le sucre : c'est le gras. 👇
+> Lundi, tu arrêtes le sucre : pas de dessert. Mardi, pas de bonbons. Mercredi, pas de soda. Vendredi, tu te pèses : la balance n'a pas bougé. Le problème, ce n'est pas le sucre : c'est le gras. 👇
 >
-> Le gras, c'est le plus calorique : un gramme de sucre, 4 calories ; un gramme de gras, 9. Une cuillère à soupe d'huile pèse environ 13 g : environ 120 calories, autant qu'une crème dessert.
+> Le gras, c'est le plus calorique : un gramme de sucre, 4 calories ; un gramme de gras, 9. Une cuillère à soupe d'huile, c'est environ 120 calories.
 >
-> Donc, pour les mêmes calories, il prend deux fois moins de place, et il cale moins. En 1995, des chercheurs australiens ont servi 38 aliments aux mêmes calories : plus un aliment était gras, moins il calait, et le croissant est arrivé dernier. En 1987, des chercheurs américains ont servi à 24 femmes des plats au même aspect et au même goût, mais plus gras : elles ont mangé 15 % de calories en plus, sans le choisir, et leur poids a changé.
+> Donc, pour les mêmes calories, il prend deux fois moins de place, et il cale moins. En 1995, des chercheurs australiens ont servi 38 aliments aux mêmes calories : plus un aliment était gras, moins il calait, et le croissant est arrivé dernier. En 1987, des chercheurs américains ont servi à 24 femmes des plats au même aspect et au même goût, mais plus gras : elles ont mangé 15 % de calories en plus, sans le choisir.
 >
-> Mais le pire : du gras, tu en manges bien plus que tu crois. En 2006, une étude américaine a demandé à des consommateurs d'estimer le gras de plats de restaurant. Dans les plus gras, il y en avait deux fois plus que ce qu'ils pensaient.
+> Mais le pire : du gras, tu en manges bien plus que tu crois. En 2006, une étude américaine a demandé à des consommateurs d'estimer le gras de plats de restaurant. Dans les plats les plus gras, il y en avait deux fois plus que ce qu'ils pensaient.
 >
-> Chaque cuillère d'huile, c'est environ 120 calories. Alors la prochaine fois, prends ta cuillère, mesure bien ton huile, et profite de ton dessert.
+> Le beurre, l'huile, les sauces : chaque cuillère d'huile, c'est environ 120 calories. Alors la prochaine fois, prends ta cuillère, mesure ton huile, et profite de ton dessert.
 >
 > Ce que ça ne dit pas : si tu ne perds rien, les calories peuvent aussi être ailleurs, dans ce que tu bois ou dans ton week-end. Le gras est le premier endroit à regarder, parce que c'est le plus calorique et le moins visible.
 >

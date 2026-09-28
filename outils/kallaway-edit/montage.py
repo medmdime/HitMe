@@ -43,6 +43,8 @@ STYLES = {   # fond et rebord des pilules incrustées (DA YouBud : aucune bordur
     "jaune": ("var(--yb-yellow)", "var(--yb-yellow-edge)"),
     "vert": ("var(--yb-green)", "var(--yb-green-edge)"),
     "rouge": ("var(--yb-red-2)", "var(--yb-red)"),
+    "bleu": ("var(--yb-blue-2)", "#b9e1f6"),       # l'eau (la teinte claire : l'encre reste lisible)
+    "rose": ("#ff8cc6", "#e0639f"),                # l'icône d'enregistrement (28 septembre : « le save en rose »)
 }
 
 
@@ -132,7 +134,9 @@ def main(v, args):
                 sons.append(riser(c, pr["longueur"], pr["vol_riser"], pr.get("riser", "rizer-windy.mp3"), pr.get("pic")))
                 sons.append(hit(c, pr["vol_hit"]))
                 premiere = False
-            else:
+            elif pcfg[apres["id"]].get("woosh", True):
+                # woosh = false sur un plan B : son arrivée n'a pas de woosh, parce qu'un hoop
+                # ([[sons]] riser_hoop) tombe sur cette coupe (ex. « soixante cuillères », la balance)
                 sons.append(woosh(c, tr["woosh_volume"]))
 
     # --- les zooms du cadre A : un par plan ---
@@ -166,9 +170,13 @@ def main(v, args):
         fond, rebord = STYLES[i.get("style", "blanc")]
         sel = "#" + i["id"]
         attrs = " data-layout-allow-overlap" if i.get("chevauchement") else ""
-        if i.get("icone"):     # une icône Lucide dans un rond
+        if i.get("icone"):     # une icône Lucide dans un rond (rond = son diamètre, 110 par défaut)
             inc_html.append(f'        <div class="incruste-rond" id="{i["id"]}"{attrs}><div class="ico"><i data-lucide="{i["icone"]}"></i></div></div>')
             inc_css.append(f'      {sel} {{ left: {i["left"]}px; background: {fond}; box-shadow: 0 9px 0 {rebord}; }}')
+            if i.get("rond"):  # plus gros : « l'icône d'enregistrement n'est pas super visible » (28 septembre)
+                d = i["rond"]
+                inc_css.append(f'      {sel} {{ top: {top - (d - 110) // 2}px; width: {d}px; height: {d}px; border-radius: {d // 2}px; }}')
+                inc_css.append(f'      {sel} .ico {{ left: {d // 4}px; top: {d // 4}px; width: {d // 2}px; height: {d // 2}px; }}')
         else:
             barre = '<div class="barre"></div>' if i.get("barre") else ""
             inc_html.append(f'        <div class="mot" id="{i["id"]}"{attrs}>{i["texte"]}{barre}</div>')
@@ -188,6 +196,16 @@ def main(v, args):
             inc_js.append(f'        tl.set("{sel}", {{ opacity: 0 }}, {r3(v.plan_a(ta)["fin"] + 0.2)});')
         elif dis:                  # un fondu de 0,12 s, `avance` s avant le mot (pour laisser la place au suivant)
             inc_js.append(f'        tl.to("{sel}", {{ opacity: 0, duration: 0.12, ease: "power2.in" }}, {r3(v.t(dis) - i.get("avance", 0))});')
+
+    # --- les bandeaux : un fond sombre semi-transparent et flouté derrière des incrustes (l'appel),
+    # pour qu'ils ressortent sur le mur clair et les cheveux (« met un background transparent car ce
+    # n'est pas super visible », 28 septembre). Posés derrière les incrustes, ils restent jusqu'à la fin.
+    band_html = []
+    for b in cfg.get("bandeaux", []):
+        sel = "#" + b["id"]
+        band_html.append(f'        <div class="bandeau" id="{b["id"]}"></div>')
+        inc_css.append(f'      {sel} {{ left: {b["left"]}px; width: {b["largeur"]}px; }}')
+        inc_js.append(f'        tl.fromTo("{sel}", {{ opacity: 0 }}, {{ opacity: 1, duration: 0.2, ease: "power2.out" }}, {r3(v.t(b["apparait"]) - 0.05)});')
 
     # --- les risers et les hoops des moments forts ---
     for s in cfg.get("sons", []):
@@ -212,14 +230,17 @@ def main(v, args):
 
     # --- les pistes audio ---
     audios = [f'      <audio id="voix" src="assets/rushes/voix-montage.mp4" data-start="0" data-duration="{DUREE}" data-track-index="100" data-volume="1"></audio>']
+    # [son] : des facteurs sur TOUS les bruitages et sur la musique (28 septembre : « réduis les clics,
+    # risers et woosh de 40 %, la musique de 20 % »). Les volumes de la fiche restent ceux de la méthode.
+    fs, fm = cfg.get("son", {}).get("sfx", 1.0), cfg.get("son", {}).get("musique", 1.0)
     for n, m in enumerate(cfg.get("musique", [])):
         de, a = v.t(m["de"]), v.t(m["a"])
         audios.append(f'      <audio id="musique-{n + 1}" src="{m["fichier"]}" data-start="{r3(de)}" data-duration="{r3(a - de)}" '
-                      f'data-media-start="{m.get("media_start", 0)}" data-track-index="{90 + n}" data-volume="{m["volume"]}"></audio>')
+                      f'data-media-start="{m.get("media_start", 0)}" data-track-index="{90 + n}" data-volume="{r3(m["volume"] * fm)}"></audio>')
     for n, (src, st, du, vol, media) in enumerate(sons, 1):
         ms = f' data-media-start="{media}"' if media is not None else ""
         audios.append(f'      <audio id="son-{n:02d}" src="assets/sfx/{src}" data-start="{st}" data-duration="{du}"{ms} '
-                      f'data-track-index="{100 + n}" data-volume="{vol}"></audio>')
+                      f'data-track-index="{100 + n}" data-volume="{r3(vol * fs)}"></audio>')
 
     carte = cb["carte"]
     bande_top = cb["bande_top"]
@@ -266,6 +287,8 @@ def main(v, args):
         opacity: 0; will-change: transform; }}
       .incruste-rond .ico {{ position: absolute; left: 27px; top: 27px; width: 56px; height: 56px; }}
       .incruste-rond .ico svg.lucide {{ display: block; width: 100%; height: 100%; }}
+      .bandeau {{ position: absolute; top: {top - 25}px; height: 160px; border-radius: 48px; opacity: 0;
+        background: rgba(15, 15, 15, 0.42); backdrop-filter: blur(10px); }}
 {chr(10).join(inc_css)}
     </style>
   </head>
@@ -288,7 +311,7 @@ def main(v, args):
         <div id="zoom-a" data-layout-allow-overflow>
           <video id="video-a" class="clip" src="assets/rushes/voix-montage.mp4" data-start="0" data-duration="{DUREE}" data-track-index="0" muted playsinline></video>
         </div>
-{chr(10).join(inc_html)}
+{chr(10).join(band_html + inc_html)}
       </div>
 
       <div id="host-sous-titres" data-composition-id="{cid_st}" class="clip hote" data-start="0" data-duration="{DUREE}" data-track-index="{3 + len(hotes)}" data-composition-src="compositions/sous-titres.html"></div>
