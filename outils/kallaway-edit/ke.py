@@ -15,7 +15,7 @@
     couverture                le titre (ZY Elegant, blanc puis jaune) sur une image de lui, et en première image de la vidéo
 
 L'ordre, les règles et les pièges sont dans le skill .claude/skills/kallaway-edit/SKILL.md.
-Exemple complet et réel : video/assiette-pas-le-dessert/kallaway.toml (= gabarit.toml ici).
+Exemple complet et réel : video/old/assiette-pas-le-dessert/kallaway.toml (= gabarit.toml ici).
 """
 import os, sys, time
 

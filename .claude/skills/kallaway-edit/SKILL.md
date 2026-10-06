@@ -18,7 +18,7 @@ générée depuis une fiche, `kallaway.toml`, par l'outil `outils/kallaway-edit/
 - L'ancien montage dans CapCut : skill `montage-capcut`. Ses volumes et sa musique en deux morceaux
   ont été repris ici ; le reste ne s'applique pas.
 
-**La référence vivante.** `video/assiette-pas-le-dessert/` : sa fiche `kallaway.toml` (identique à
+**La référence vivante.** `video/old/assiette-pas-le-dessert/` : sa fiche `kallaway.toml` (identique à
 `outils/kallaway-edit/gabarit.toml`, commentée ligne par ligne), ses données de montage dans
 `montage/`, ses six animations dans `compositions/`, la vidéo livrée dans
 `renders/assiette-version-courte.mp4`. Relancer l'outil sur ce dossier refait exactement le montage

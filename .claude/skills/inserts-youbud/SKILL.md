@@ -1,6 +1,6 @@
 ---
 name: inserts-youbud
-description: Fabriquer les inserts animés HyperFrames d'un reel science-based dans la direction artistique YouBud — palette, cartes teintées sans bordure à rebord, pastilles de verdict qui se dessinent, têtes en emoji, la règle du texte (des mots, jamais des phrases : chiffres, icônes, noms propres, un mot par élément) parce qu'Instagram ne traduit pas le texte incrusté, le vocabulaire d'animation GSAP et la grammaire sonore intégrée au rendu. Extrait des quatre inserts de la vidéo créatine, rendus le 22 septembre 2026. À charger dès qu'on écrit, retouche ou juge une composition d'insert pour une vidéo de Mohamed.
+description: "Fabriquer les inserts animés HyperFrames d'un reel science-based dans la direction artistique YouBud — palette, cartes teintées sans bordure à rebord, pastilles de verdict qui se dessinent, têtes en emoji, la règle du texte (des mots, jamais des phrases : chiffres, icônes, noms propres, un mot par élément) parce qu'Instagram ne traduit pas le texte incrusté, le vocabulaire d'animation GSAP, la grammaire sonore intégrée au rendu, et les assets Higgsfield (un aliment à l'écran est une vraie photo détourée, générée puis détourée avec Higgsfield, jamais une icône : la banque, le prompt, le coût, la pose). Extrait des quatre inserts de la vidéo créatine, rendus le 22 septembre 2026, et des quatre animations « Tes questions » du 3 octobre 2026. À charger dès qu'on écrit, retouche ou juge une composition d'insert pour une vidéo de Mohamed."
 ---
 
 # Les inserts YouBud
@@ -9,7 +9,7 @@ description: Fabriquer les inserts animés HyperFrames d'un reel science-based d
 dans CapCut sous la voix de Mohamed. Ce skill fixe **à quoi ça ressemble, comment ça bouge et
 comment ça sonne**. Le script vient de `science-reel`, la timeline du montage de
 `montage-capcut`, la mécanique HyperFrames de `hyperframes-core`. La référence vivante :
-`video/creatine-gummies/compositions/` et son `PROMPTS-DETAILLES.md`.
+`video/old/creatine-gummies/compositions/` et son `PROMPTS-DETAILLES.md`.
 
 **Trois règles avant tout le reste.**
 
@@ -55,7 +55,7 @@ image téléchargée), posée en `<img class="toile">` plein cadre, premier enfa
 `url()` dans une feuille se résoudrait depuis la feuille. On copie les deux fichiers d'une vidéo à
 l'autre, comme `youbud.css`. Ce qui se pose directement sur la toile doit ressortir : un objet
 beige pâle s'y perd (les estomacs de l'assiette sont passés au bleu clair). Référence :
-`video/assiette-pas-le-dessert/`, dont les inserts du cadre B font 1080 × 960.
+`video/old/assiette-pas-le-dessert/`, dont les inserts du cadre B font 1080 × 960.
 
 Police : Archivo 900 (locale, `assets/fonts/Archivo.woff2`, déclarée dans le `<style>` de chaque
 composition, jamais dans la feuille partagée). Chiffres en `tabular-nums`.
@@ -68,12 +68,35 @@ composition, jamais dans la feuille partagée). Chiffres en `tabular-nums`.
 | `.yb-badge` / `.yb-badge.ko` | la pastille de verdict, 88 à 110 px | ronde, verte ou rouge, rebord 6 px, trait blanc 12 px qui **se dessine** |
 | `.yb-emoji` | une tête ou un logo en rond | `border: 10px solid #fff`, rebord, image détourée dedans |
 | `.yb-pill` | une pilule | fond couleur vive + rebord, pour un chiffre, un `?`, un `≈ 0` |
-| `svg.lucide` | les icônes | Lucide uniquement, colorées dans la teinte vive de leur carte |
+| `svg.lucide` | les icônes | Lucide uniquement, colorées dans la teinte vive de leur carte ; **jamais pour un aliment** (§ 7) |
+| `img` de `assets/img/aliments/` | un aliment, une assiette | une vraie photo détourée, vue de dessus, générée avec Higgsfield (§ 7) |
 
 Une tête de personne : capture du MP4 source, `npx hyperframes@0.8.21 remove-background` (ne
 détoure **que les humains**, un objet revient vide), puis `.yb-emoji` 220 px avec l'image
-sur-dimensionnée et décalée pour cadrer le visage. Un objet, un pot, un sachet : **dessiné à
-plat** en divs et SVG, jamais photographié.
+sur-dimensionnée et décalée pour cadrer le visage.
+
+**Une personne réelle dont on raconte l'histoire : sa vraie tête, prise sur le web, posée sur un corps dessiné**
+(Mohamed, 4 octobre 2026, sur Mark Haub : « take Mark's head from the internet and place it over that animation
+dude, it will be better »). C'est ce que fait Train Bloom. Prendre un portrait officiel (le site de son
+université, de son employeur), de face ; l'agrandir s'il est petit ; le détourer en local avec
+`hyperframes remove-background` (jamais un service en ligne pour le visage de quelqu'un) ; le couper le long
+de la mâchoire (ni col, ni épaules) ; garder le script dans `assets/img/tetes/` et **la photo hors du dépôt**
+(`.gitignore` : `video/**/assets/img/tetes/*.png` et `brut/`). Référence :
+`video/to-film/17-gateaux-douze-kilos/` (`detourer_tete.py`, `I1-le-professeur.html`). Les aliments, eux,
+restent générés (§ 7).
+
+**Un lieu : une vraie photo aussi** (le même jour : « le Kansas, prends une photo sur internet du Kansas », à la
+place de l'icône `university`). La prendre sur Wikimedia Commons, dans le domaine public ou sous licence libre,
+la recadrer en carré, la poser en rond à bord blanc (10 px) avec son mot dessous, et **citer l'auteur et la
+licence dans la légende**. Un objet (des vitamines à la place de l'icône `pill`) se génère et se détoure comme
+un aliment. Les icônes Lucide restent pour ce qui est abstrait.
+
+**Un aliment, une assiette : une vraie photo détourée, jamais une icône ni un dessin** (Mohamed, 3 octobre
+2026 : « à la place d'un emoji d'œuf, prends une photo d'œuf, en PNG sans background ; ça va être beaucoup plus
+stylé »). Elle se fabrique avec Higgsfield : toute la méthode est au § 7. Les icônes Lucide restent pour ce qui
+n'est pas un aliment (la flamme, la fiole, le drapeau, le soleil, la lune) et pour l'écran d'une appli. Un
+schéma (une colonne, une jauge, une ligne de temps) reste dessiné à plat en divs et SVG. Une marque, un pot, un
+sachet de produit réel : dessiné à plat, jamais généré (une image générée invente un logo ou un texte).
 
 ---
 
@@ -175,6 +198,7 @@ video/<dossier>/
   compositions/components/youbud.css     la DA, copiée telle quelle
   compositions/I1-<nom>.html … I4-<nom>.html
   assets/fonts/Archivo.woff2 · assets/vendor/lucide.min.js · assets/sfx/ · assets/img/
+  assets/img/aliments/                   les photos détourées (Higgsfield), copiées de la banque (§ 7)
   index.html                             les inserts bout à bout, relecture seulement
   renders/                               un MP4 par insert, -q high
   PROMPTS-DETAILLES.md                   tout ce qui est rendu, cote par cote
@@ -207,7 +231,8 @@ Zone sûre : rien d'important dans les 12 % du haut ni les 20 % du bas. Tout en 
   document : la police se déclare dans chaque composition.
 - **`check` sonde le contraste pendant un fondu** : un avertissement à 1.3:1 sur un texte qui
   entre en `opacity` est un faux positif. Un vrai défaut se corrige avec la couleur proposée.
-- **`remove-background` ne détoure que les humains.** Un objet se dessine.
+- **`remove-background` (HyperFrames) ne détoure que les humains.** Un aliment se détoure avec le
+  `remove_background` de Higgsfield, sur l'image qu'on vient de générer (§ 7).
 - **Le rendu haute qualité a 20 s de retard sur les brouillons** : après une retouche, refaire
   les `-q high`, la date des fichiers fait foi.
 
@@ -228,4 +253,93 @@ cote : il doit toujours décrire **ce qui est rendu**, pas ce qu'on voulait.
 
 Ce qui fait rejeter un insert : une bordure, une phrase à l'écran, deux couleurs sur un carton,
 un chiffre absent de la voix, un élément qui entre avant sa syllabe, un rendu muet, un logo ou
-une marque là où le brief les interdit.
+une marque là où le brief les interdit, **une icône ou un emoji à la place d'un aliment**.
+
+---
+
+## 7. Les assets Higgsfield : de vrais aliments
+
+**La règle.** Tout aliment à l'écran (un œuf, un steak, un croissant, une assiette et ce qu'il y a dessus) est
+une **photo détourée**, vue de dessus, sans fond. Mohamed, 3 octobre 2026 : « Prends pas une photo d'œufs,
+juste l'œuf lui-même, sans background. Ça va être un aliment réel, plus beau qu'un emoji. Pareil pour
+l'assiette : si tu mets des aliments sur l'assiette, mets de vrais aliments. » Rien ne vient du web (ni banque
+d'images, ni recherche) : le dépôt est public, et une image générée sur son compte est à lui.
+
+### La banque
+
+`D:\editingvideo\tes-questions\aliments\` : un PNG détouré par aliment, rogné au ras du sujet, 900 px au plus,
+et `planche-aliments.jpg` pour les voir d'un coup. `brut/` garde les fichiers tels que Higgsfield les rend.
+
+| Fichier | Ce que c'est | Fichier | Ce que c'est |
+|---|---|---|---|
+| `oeuf.png` | un œuf au plat | `pain.png` | un tronçon de baguette |
+| `steak.png` | un steak grillé | `gateau.png` | une part de gâteau à la fraise |
+| `cereales.png` | un bol de céréales au lait | `assiette.png` | une assiette blanche vide |
+| `croissant.png` | un croissant | `donut.png` | un donut glacé (« aliments transformés ») |
+| `cookie.png` | un cookie aux pépites | `gateau-fourre.png` | un gâteau moelleux fourré, tout en longueur (vertical : le coucher par une rotation) |
+| `biscuit-chocolat.png` | deux biscuits au chocolat fourrés à la crème | `chips.png` | trois chips triangulaires |
+| `shaker.png` | un shaker de boisson protéinée, couché, sans marque | `haricots.png` | une poignée de haricots verts |
+| `vitamines.png` | deux comprimés et une capsule de vitamines | | |
+
+**Regarder la banque avant de générer** : un aliment déjà là se réutilise, d'une vidéo à l'autre le même œuf
+reste le même œuf. La banque se copie dans `assets/img/aliments/` de chaque vidéo qui s'en sert (ces fichiers
+sont suivis par git).
+
+### Fabriquer un aliment qui manque
+
+1. **Le prix d'abord** : `generate_image` avec `get_cost: true` (0,25 crédit l'image en `gpt_image_2_5`, le
+   3 octobre), et `balance`. **Le détourage se paie aussi, et plus cher : 1 crédit par image** (constaté le
+   4 octobre 2026 : cinq images et cinq détourages, 6,25 crédits). Un aliment coûte donc 1,25 crédit : c'est
+   ce chiffre qu'on annonce. Annoncer à Mohamed ce que ça va coûter, puis ce que ça a coûté. Jamais
+   `use_unlim: true` de sa propre initiative.
+2. **Générer en lot** : `generate_image_batch`, un aliment par requête, modèle `gpt_image_2_5`, format `1:1`,
+   `use_unlim: false`. Le prompt, toujours le même cadrage :
+
+   > A single ⟨aliment, en anglais, avec son état : fried egg sunny side up / grilled beef steak with grill
+   > marks⟩, seen from directly above (flat lay), centered, isolated on a plain solid medium grey background,
+   > soft even studio light, no plate, no cutlery, no hard shadow, no text, no brand, photorealistic food
+   > photography, sharp focus
+
+   Le **fond gris moyen uni** est voulu : un blanc d'œuf ou une assiette blanche ne se détourent pas sur du
+   blanc, et un fond coloré bave sur les bords. Un bol ou une assiette : préciser sa couleur.
+3. **Attendre** : `jobs_wait` par groupes de douze au plus, jusqu'à `all_terminal`.
+4. **Détourer** : `remove_background` (`media_type: image`) avec le `job_id` de chaque image, puis `jobs_wait`.
+5. **Récupérer, rogner, vérifier** : `python outils/aliments.py nom=<url> …` télécharge chaque PNG détouré depuis
+   le compte de Mohamed vers `aliments/brut/`, le rogne, le ramène à 900 px, refait la planche, et
+   `--copier` le pose dans `assets/img/aliments/` des vidéos de `video/to-edit/`. **Regarder la planche** : un
+   bord mangé, une ombre restée, un aliment coupé se voient là.
+
+### Ce qu'on ne génère pas
+
+Mohamed, un visage, une main qui tient l'aliment, une marque, un emballage avec du texte, un logo. Pour
+« aliments transformés », un donut plutôt qu'un paquet : un paquet généré porte toujours un faux texte.
+
+### Poser un aliment dans une composition
+
+```html
+<img class="b1-food" id="b1-oeuf" src="assets/img/aliments/oeuf.png" alt="">
+```
+```css
+.b1-food { position: absolute; display: block; opacity: 0; will-change: transform; }
+#b1-oeuf { left: 52px; top: 560px; width: 236px; }          /* la largeur seule : la hauteur suit */
+#b1-assiette { left: 206px; top: 226px; width: 196px; filter: drop-shadow(0 7px 0 #cfcec5); }
+```
+
+- **La taille** : un aliment seul fait 170 à 240 px de large ; sur une assiette de 200 px, 40 à 80 px. Plus
+  petit, la photo ne se lit plus et ne vaut pas mieux qu'une icône.
+- **L'assiette blanche disparaît sur la toile claire** : toujours son rebord en `drop-shadow`.
+- **L'entrée** : `fromTo` de `opacity` et `scale` (`back.out`), ou une chute (`y: -60 → 0`, `power2.in`) pour ce
+  qui se pose sur une assiette. Une rotation se donne dans le `fromTo` (la même valeur des deux côtés), jamais en
+  CSS : un `transform` en CSS se bat avec GSAP.
+- **Sur une tuile ou une colonne** : la photo dépasse un peu de sa tuile (le croissant de J2), ou se pose sous le
+  sol de sa colonne (les trois matins de J5 bis) ; la couleur de la tuile reste celle de la DA.
+- **Le même fichier plusieurs fois** (trois cookies) : `check` signale « duplicated media nodes », un
+  avertissement sans effet sur le rendu.
+- Un aliment ne remplace pas un chiffre : la photo montre la chose, la pilule à côté dit combien.
+
+Les références : `video/done/04-tout-repris/compositions/B1-le-surplus.html` (l'assiette, le pain, le
+gâteau), `05b-grignoter-le-soir-agressif/…/B1-le-faux-conseil.html` (l'œuf, le steak, le bol, le donut, les
+cookies), `06b-reequilibrage-alimentaire/…/B1-regime-reequilibrage.html` (deux assiettes), et
+`02-mange-peu-maigris-pas/…/B1-les-petits-bouts.html` (le croissant et le cookie sur leur tuile). Ce que
+l'animation doit expliquer (chaque chose porte son chiffre, chaque phrase a son geste) est dans
+`montage-capcut`, dernières sections.

@@ -469,7 +469,7 @@ Save with `project_update(script=...)` in bracket format.
 
 ## Delivering a script to Mohamed — the Kallaway sieve
 
-Decided 23 September 2026 on `video/assiette-pas-le-dessert/`, which is the worked example: « J'aime
+Decided 23 September 2026 on `video/old/assiette-pas-le-dessert/`, which is the worked example: « J'aime
 bien ce format… je trouve cette écriture challengeante, intéressante. » Every new script goes
 through the `kallaway-hooks` and `kallaway-storytelling` skills before he sees it, and ships in
 this shape.
@@ -505,6 +505,10 @@ this shape.
    inserts would leave abstract (oil pouring, butter foaming); never Mohamed, never a face, a brand
    or text in the image, never a pretty shot unrelated to the line. Images are validated before
    they are animated, because animation spends credits.
+   **Foods inside an animation are Higgsfield assets too** (3 October 2026): a real photo cutout, seen
+   from above, never an icon or an emoji. The insert brief lists, per animation, the foods it shows and
+   whether each is already in the bank (`D:\editingvideo\tes-questions\aliments\`) or has to be
+   generated; the recipe (prompt, grey background, `remove_background`, cost) is in `inserts-youbud`, § 7.
 9. **Every video ends with a follow call** (Mohamed, 24 September 2026, after the week-end video
    brought 17,300 views and only 14 followers). After the landing, one line in his voice, about
    four seconds: « Moi, c'est Mohamed : je t'explique la nutrition, sans régime. Abonne-toi pour la
@@ -524,7 +528,7 @@ this shape.
    active voice, correct French, complete negations. The test: a 12-year-old understands every line
    the first time; when a word needs explaining (« compenser », « satiété »), say the thing instead
    (« faire plus léger au repas suivant », « ton ventre se remplit à peine »). Worked examples:
-   `video/assiette-pas-le-dessert/VERSION-COURTE.md` and `video/Les scénarios de la série.md`.
+   `video/done/02-mange-peu-maigris-pas/PROMPTEUR.md` (the simple format, since 28 September).
 11. **One comparison, science cited as measured, every link said** (Mohamed, same evening, on the
    plate script). Keep the exact comparison the video is about and nothing that blurs it: a video
    on sugar versus fat never lists bread and pasta next to dessert, because viewers do not file
@@ -548,8 +552,8 @@ this shape.
 
 Decided with Mohamed on 24 and 27 September 2026 (« ajoute les scripts où je réponds aux
 commentaires, adaptés à notre écriture principale »). Worked examples:
-`video/reponse-laisse-les-gens-vivre/` (the opponent: « laisse les gens vivre ») and
-`video/reponse-abdos/` (the question he gets all the time: « des mois de régime, et toujours pas
+`video/old/reponse-laisse-les-gens-vivre/` (the opponent: « laisse les gens vivre ») and
+`video/to-film/03-abdos/` (the question he gets all the time: « des mois de régime, et toujours pas
 d'abdos »). A reply is a short like any other: same sieve (the eleven points above), same length
 (30 to 50 s), same follow call, same edit (skill `kallaway-edit`). What changes:
 
@@ -822,6 +826,14 @@ the author: *« on était trop gourmand dans le premier sujet »*.
 
 Animation is done in **HyperFrames** (HTML compositions with `data-*` timing, rendered to
 video) or **Remotion**; the edit is assembled in **CapCut** via its MCP server.
+
+**Since 5 October 2026 the long format (1:10-1:30) is shot in blocks and cut by a fixed recipe.** The edit is
+« LA RECETTE TRAIN BLOOM », at the top of the `montage-capcut` skill: breath cuts 70 ms before his voice, his eyes at
+the same point in every piece, wide / tight at 1.2, the tracks, every sound level, the captions, the scripts and the
+checks. Mohamed asked for the next edit to be *exactly* the same: follow it to the letter, do not redesign. What it
+needs from the shoot, so write it in TOURNAGE: one file per teleprompter block, one take each, numbered like the
+PROMPTEUR; the same seat and the same distance to the camera in every block; and one extra take where he looks at
+the lens, smiling, without speaking, for ten seconds (the shot that plays under the borrowed clip).
 
 Which beats are code and which are camera:
 

@@ -8,7 +8,7 @@ carte), glissés, woosh, risers et hoops, musique, sous-titres, rendu accélér�
 [`.claude/skills/kallaway-edit/SKILL.md`](../../.claude/skills/kallaway-edit/SKILL.md) (copie de
 lecture : `methode/Le Kallaway edit.md`). Ce fichier-ci n'est que l'aide-mémoire des commandes.
 
-**L'exemple réel** : `video/assiette-pas-le-dessert/` (fiche `kallaway.toml` = `gabarit.toml`).
+**L'exemple réel** : `video/old/assiette-pas-le-dessert/` (fiche `kallaway.toml` = `gabarit.toml`).
 Relancer l'outil dessus refait exactement la vidéo livrée le 26 septembre 2026.
 
 ## Les commandes

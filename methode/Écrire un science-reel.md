@@ -467,7 +467,7 @@ Save with `project_update(script=...)` in bracket format.
 
 ## Delivering a script to Mohamed — the Kallaway sieve
 
-Decided 23 September 2026 on `video/assiette-pas-le-dessert/`, which is the worked example: « J'aime
+Decided 23 September 2026 on `video/old/assiette-pas-le-dessert/`, which is the worked example: « J'aime
 bien ce format… je trouve cette écriture challengeante, intéressante. » Every new script goes
 through the `kallaway-hooks` and `kallaway-storytelling` skills before he sees it, and ships in
 this shape.
@@ -522,7 +522,7 @@ this shape.
    active voice, correct French, complete negations. The test: a 12-year-old understands every line
    the first time; when a word needs explaining (« compenser », « satiété »), say the thing instead
    (« faire plus léger au repas suivant », « ton ventre se remplit à peine »). Worked examples:
-   `video/assiette-pas-le-dessert/VERSION-COURTE.md` and `video/Les scénarios de la série.md`.
+   `video/done/02-mange-peu-maigris-pas/PROMPTEUR.md` (the simple format, since 28 September).
 11. **One comparison, science cited as measured, every link said** (Mohamed, same evening, on the
    plate script). Keep the exact comparison the video is about and nothing that blurs it: a video
    on sugar versus fat never lists bread and pasta next to dessert, because viewers do not file
@@ -546,8 +546,8 @@ this shape.
 
 Decided with Mohamed on 24 and 27 September 2026 (« ajoute les scripts où je réponds aux
 commentaires, adaptés à notre écriture principale »). Worked examples:
-`video/reponse-laisse-les-gens-vivre/` (the opponent: « laisse les gens vivre ») and
-`video/reponse-abdos/` (the question he gets all the time: « des mois de régime, et toujours pas
+`video/old/reponse-laisse-les-gens-vivre/` (the opponent: « laisse les gens vivre ») and
+`video/to-film/03-abdos/` (the question he gets all the time: « des mois de régime, et toujours pas
 d'abdos »). A reply is a short like any other: same sieve (the eleven points above), same length
 (30 to 50 s), same follow call, same edit (skill `kallaway-edit`). What changes:
 

@@ -48,6 +48,8 @@ failing. Prefer narrowing an existing result set over re-searching.
 | `tiktok_account_summary` | Is this account worth studying? Cadence, consistency, breakout count. |
 | `instagram_account_outliers` | Same, for Instagram. Ranks on likes by default; `metric: "views"` for reels. |
 | `instagram_account_summary` | Format mix (reels vs photos), cadence, engagement. |
+| `trend_pickers` | **The only one that searches by topic, and the only one that is billed.** The last two weeks' videos past 50K views on accounts under 5K followers, on both platforms: formats that travelled without an audience. |
+| `trend_pickers_history` | Free. Lists the searches already run, from the web app or by any agent, and reads one back with its picks. **Check it before paying for a new scan.** |
 
 **The hard limit, and it shapes the whole workflow: there is no free platform-wide search
 on TikTok or Instagram.** No hashtag feed, no keyword search, no trending list, no For You.
@@ -59,8 +61,11 @@ creators in my niche just had a breakout, and why." Keep a seed list of accounts
 watching and sweep it — that is the workflow, and it is a better question anyway, because a
 breakout in your niche is a signal you can act on where a global trend usually isn't.
 
-If the user asks for trending TikToks, say plainly that it isn't available for free and
-offer the account sweep instead. Do not fake it with a guess.
+The paid way around it is `trend_pickers`: it buys the topic search from Apify
+(`APIFY_TOKEN`, billed per video returned, each scan stored for 6 hours). Use it when the
+question is "what is working right now on my subject", say that it costs money, and do not
+re-run it to re-sort or to move a threshold: those re-filter the stored scan for free. If
+there is no token, say so and offer the account sweep instead. Do not fake it with a guess.
 
 Two data caveats that matter when you report numbers:
 
@@ -219,6 +224,27 @@ edge is its named camera moves (dolly in, crash zoom, 360 orbit, whip pan, FPV d
 bullet time, hyperlapse) — name the move instead of describing it in prose.
 
 Record each finished file on its shot via `broll_plan_set` (`assetPath`, `status`).
+
+### Higgsfield stills as animation assets (cutouts)
+
+Higgsfield is not only for b-roll clips. Since 3 October 2026, every **food shown inside an animation** is a real
+photo cutout, never an icon or an emoji (Mohamed: « prends une photo d'œuf, en PNG sans background, ça va être
+beaucoup plus stylé »). These are cheap stills, not shots:
+
+1. Check the bank first: `D:\editingvideo\tes-questions\aliments\` (fried egg, steak, cereal bowl, croissant,
+   cookie, baguette, cake slice, white plate, donut, cream-filled snack cake, chocolate sandwich cookies, tortilla
+   chips, protein shaker, green beans, multivitamin pills) and its `planche-aliments.jpg`. Reuse before generating.
+2. Missing item: `generate_image` with `get_cost: true` (0.25 credit per image on `gpt_image_2_5`, plus **1 credit per
+   `remove_background`**, measured 4 October 2026: quote 1.25 credit per food), then
+   `generate_image_batch`, one food per request, `1:1`, always the same framing: *a single ⟨food⟩, seen from
+   directly above (flat lay), centered, isolated on a plain solid medium grey background, soft even studio light,
+   no plate, no hard shadow, no text, no brand, photorealistic*. Grey, not white: white food on white cannot be cut out.
+3. `remove_background` on each job id, `jobs_wait`, then `python outils/aliments.py name=<url> … --copier`
+   (trim, resize to 900 px, contact sheet, copy into each video's `assets/img/aliments/`). Look at the sheet.
+4. Never generate Mohamed, a face, a hand, a brand, or packaging with text. Nothing is taken from the web.
+5. Tell Mohamed the cost before and after; never spend his unlimited/free generations on your own initiative.
+
+How a cutout is placed, sized and animated in a composition: `inserts-youbud`, § 7.
 
 ## 5. Edit — hand it to CapCut
 

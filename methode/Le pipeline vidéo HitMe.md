@@ -46,6 +46,8 @@ failing. Prefer narrowing an existing result set over re-searching.
 | `tiktok_account_summary` | Is this account worth studying? Cadence, consistency, breakout count. |
 | `instagram_account_outliers` | Same, for Instagram. Ranks on likes by default; `metric: "views"` for reels. |
 | `instagram_account_summary` | Format mix (reels vs photos), cadence, engagement. |
+| `trend_pickers` | **The only one that searches by topic, and the only one that is billed.** The last two weeks' videos past 50K views on accounts under 5K followers, on both platforms: formats that travelled without an audience. |
+| `trend_pickers_history` | Free. Lists the searches already run, from the web app or by any agent, and reads one back with its picks. **Check it before paying for a new scan.** |
 
 **The hard limit, and it shapes the whole workflow: there is no free platform-wide search
 on TikTok or Instagram.** No hashtag feed, no keyword search, no trending list, no For You.
@@ -57,8 +59,11 @@ creators in my niche just had a breakout, and why." Keep a seed list of accounts
 watching and sweep it — that is the workflow, and it is a better question anyway, because a
 breakout in your niche is a signal you can act on where a global trend usually isn't.
 
-If the user asks for trending TikToks, say plainly that it isn't available for free and
-offer the account sweep instead. Do not fake it with a guess.
+The paid way around it is `trend_pickers`: it buys the topic search from Apify
+(`APIFY_TOKEN`, billed per video returned, each scan stored for 6 hours). Use it when the
+question is "what is working right now on my subject", say that it costs money, and do not
+re-run it to re-sort or to move a threshold: those re-filter the stored scan for free. If
+there is no token, say so and offer the account sweep instead. Do not fake it with a guess.
 
 Two data caveats that matter when you report numbers:
 
