@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=1080, height=960">
+    <link rel="stylesheet" href="compositions/components/kit.css">
+    <link rel="stylesheet" href="compositions/components/youbud.css">
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.14.2/dist/gsap.min.js"></script>
+    <script src="assets/vendor/lucide.min.js"></script>
+    <style>
+      @font-face {
+        font-family: "Archivo";
+        src: url("assets/fonts/Archivo.woff2") format("woff2");
+        font-weight: 400 900;
+        font-display: block;
+      }
+      /* J11 · Chez ta famille, on te ressert sans arrêt ? Le cadre B, 1080 x 960, posé en haut de l'image.
+         La voix (28 septembre, réécrite) : « Des chercheurs l'ont mesuré. Avec des inconnus, les gens ne
+         mangeaient pas plus que seuls. Avec des amis, environ cent soixante-dix calories de plus. Avec ta
+         famille, c'est pareil… » (Hetherington 2006 : le même buffet, seuls, avec deux inconnus, avec deux amis).
+         Deux colonnes à la même hauteur (ce qu'ils mangeaient seuls) ; chez les amis, un bloc de plus,
+         à l'échelle : 18 % de 340 px = 62 px. Rien d'important au-dessus de y = 230 (le titre fixe).
+         Tout est préfixé b1- : ces règles sont aussi chargées par le montage complet. */
+      #b1-root { width: 1080px; height: 960px; }
+      #b1-scene { width: 1080px; height: 960px; }
+      #b1-scene .toile { position: absolute; left: 0; top: 0; width: 1080px; height: 960px; display: block; }
+
+      #b1-sol { position: absolute; left: 150px; top: 800px; width: 780px; height: 10px; border-radius: 5px; background: #d4d3ca; }
+      .b1-col { position: absolute; top: 460px; width: 220px; height: 340px; border-radius: 30px 30px 8px 8px;
+        background: #ffffff; box-shadow: inset 0 -12px 0 #e2e1d9; will-change: transform; }
+      #b1-col-i { left: 230px; }
+      #b1-col-a { left: 630px; }
+
+      .b1-ico { position: absolute; top: 500px; width: 96px; height: 96px; opacity: 0; will-change: transform; }
+      .b1-ico svg.lucide { display: block; width: 100%; height: 100%; }
+      #b1-ico-i { left: 292px; color: #8c8c86; }
+      #b1-ico-a { left: 692px; color: var(--yb-orange); }
+
+      /* Le « de plus » : un bloc posé sur la colonne des amis, 8 px au-dessus. */
+      #b1-plus { position: absolute; left: 630px; top: 390px; width: 220px; height: 62px; border-radius: 18px;
+        background: var(--yb-yellow); box-shadow: inset 0 -10px 0 var(--yb-yellow-edge); will-change: transform; }
+      /* Le chiffre, le seul mot en couleur. */
+      #b1-170 { position: absolute; left: 610px; top: 272px; width: 260px; height: 92px; line-height: 92px; border-radius: 46px;
+        text-align: center; font-size: 62px; font-weight: 900; color: var(--ink); background: var(--yb-yellow);
+        box-shadow: 0 7px 0 var(--yb-yellow-edge); font-variant-numeric: tabular-nums; white-space: nowrap;
+        opacity: 0; will-change: transform; }
+
+      .b1-lab { position: absolute; top: 828px; width: 300px; font-size: 44px; font-weight: 900; line-height: 1;
+        color: var(--ink); text-align: center; white-space: nowrap; opacity: 0; will-change: transform; }
+      #b1-lab-i { left: 190px; }
+      #b1-lab-a { left: 590px; }
+
+      /* La famille rejoint les amis : sous le même mot, avec sa maison. */
+      #b1-famille { position: absolute; left: 590px; top: 886px; width: 300px; height: 48px; display: flex;
+        align-items: center; justify-content: center; gap: 12px; opacity: 0; will-change: transform; }
+      #b1-famille .b1-maison { width: 44px; height: 44px; color: var(--yb-orange-edge); }
+      #b1-famille .b1-maison svg.lucide { display: block; width: 100%; height: 100%; }
+      #b1-famille .b1-mot { font-size: 44px; font-weight: 900; line-height: 1; color: var(--ink); white-space: nowrap; }
+
+      #b1-src { position: absolute; left: 60px; top: 908px; font-size: 26px; font-weight: 800; letter-spacing: 0.08em;
+        line-height: 1; color: #55554f; white-space: nowrap; opacity: 0; }
+    </style>
+  </head>
+  <body>
+    <div id="b1-root" data-composition-id="famille-ressert-b1" data-start="0" data-duration="9.8" data-width="1080" data-height="960">
+      <div id="b1-scene" class="clip" data-start="0" data-duration="9.8" data-track-index="0">
+        <img class="toile" src="assets/img/toile.jpg" alt="">
+
+        <div id="b1-sol"></div>
+        <div class="b1-col" id="b1-col-i"></div>
+        <div class="b1-col" id="b1-col-a"></div>
+        <div class="b1-ico" id="b1-ico-i"><i data-lucide="users"></i></div>
+        <div class="b1-ico" id="b1-ico-a"><i data-lucide="users"></i></div>
+        <div id="b1-plus"></div>
+        <div id="b1-170">+ 170</div>
+        <div class="b1-lab" id="b1-lab-i">Inconnus</div>
+        <div class="b1-lab" id="b1-lab-a">Amis</div>
+        <div id="b1-famille"><span class="b1-maison"><i data-lucide="house"></i></span><span class="b1-mot">Famille</span></div>
+        <div id="b1-src">HETHERINGTON · 2006</div>
+      </div>
+
+      <!-- Un clic par élément, volume 0,6 (le Kallaway edit : × 0,6 depuis le 28 septembre).
+           Les data-start recopient CUES, plus bas : à recaler ensemble sur la prise. -->
+      <audio id="b1-s-01" src="assets/sfx/soft_click.wav" data-start="1.41" data-duration="0.22" data-track-index="11" data-volume="0.6"></audio>
+      <audio id="b1-s-02" src="assets/sfx/soft_click.wav" data-start="3.73" data-duration="0.22" data-track-index="12" data-volume="0.6"></audio>
+      <audio id="b1-s-03" src="assets/sfx/soft_click.wav" data-start="4.15" data-duration="0.22" data-track-index="13" data-volume="0.6"></audio>
+      <audio id="b1-s-04" src="assets/sfx/soft_click.wav" data-start="5.62" data-duration="0.22" data-track-index="14" data-volume="0.6"></audio>
+    </div>
+
+    <script>
+      (function () {
+        // LES REPÈRES, mot -> seconde dans la timeline de cette animation (texte B du 28 septembre, 45 mots).
+        // Repère = temps du mot depuis « Des » + 0,15 s : l'hôte démarre 0,15 s avant la coupe
+        // ([transition] avance_anim). Estimés à 4,75 mots par seconde : le mot n commence à (n - 1) / 4,75.
+        // Après le tournage : `ke.py … plans` affiche le vrai repère de chaque mot ; le recopier ici ET dans
+        // les data-start des <audio> ci-dessus, puis mettre data-duration (racine et scène) à fin + 0,3 s.
+        var CUES = {
+          chercheurs: 0.36, // mot 2, « Des chercheurs l'ont mesuré » : la source, sans clic
+          inconnus: 1.41,   // mot 7, « Avec des inconnus » : la colonne Inconnus
+          amis: 3.73,       // mot 18, « Avec des amis » : la colonne Amis, à la même hauteur
+          cent: 4.15,       // mot 20, « environ cent soixante-dix calories » : le bloc de plus et « + 170 »
+          famille: 5.62,    // mot 27, « Avec ta famille, c'est pareil » : la famille rejoint les amis
+          fin: 9.62         // mot 45, « tu es faible. » : fin de B ; tout tient depuis 5,9 s, jusqu'au glissé retour (9,8 s)
+        };
+
+        if (window.lucide) window.lucide.createIcons();
+        var tl = gsap.timeline({ paused: true });
+
+        tl.fromTo("#b1-src", { opacity: 0 }, { opacity: 1, duration: 0.2, ease: "power2.out" }, CUES.chercheurs);
+
+        // Inconnus : la colonne monte, le mot se pose, les deux personnes apparaissent dedans.
+        tl.fromTo("#b1-col-i", { scaleY: 0, transformOrigin: "50% 100%" }, { scaleY: 1, duration: 0.35, ease: "power3.out" }, CUES.inconnus);
+        tl.fromTo("#b1-lab-i", { opacity: 0, y: 12 }, { opacity: 1, y: 0, duration: 0.2, ease: "power3.out" }, CUES.inconnus);
+        tl.fromTo("#b1-ico-i", { opacity: 0, scale: 0.3 }, { opacity: 1, scale: 1, duration: 0.3, ease: "back.out(1.6)" }, CUES.inconnus + 0.2);
+
+        // Amis : la même colonne, à la même hauteur.
+        tl.fromTo("#b1-col-a", { scaleY: 0, transformOrigin: "50% 100%" }, { scaleY: 1, duration: 0.35, ease: "power3.out" }, CUES.amis);
+        tl.fromTo("#b1-lab-a", { opacity: 0, y: 12 }, { opacity: 1, y: 0, duration: 0.2, ease: "power3.out" }, CUES.amis);
+        tl.fromTo("#b1-ico-a", { opacity: 0, scale: 0.3 }, { opacity: 1, scale: 1, duration: 0.3, ease: "back.out(1.6)" }, CUES.amis + 0.2);
+
+        // « cent soixante-dix » : le bloc de plus se pose sur les amis, le chiffre au-dessus.
+        tl.fromTo("#b1-plus", { scaleY: 0, transformOrigin: "50% 100%" }, { scaleY: 1, duration: 0.3, ease: "power3.out" }, CUES.cent);
+        tl.fromTo("#b1-170", { opacity: 0, scale: 0.3 }, { opacity: 1, scale: 1, duration: 0.3, ease: "back.out(1.6)" }, CUES.cent + 0.05);
+
+        // « famille » : sous le mot Amis, la maison et Famille. Plus rien ne bouge après.
+        tl.fromTo("#b1-famille", { opacity: 0, y: 12 }, { opacity: 1, y: 0, duration: 0.25, ease: "power3.out" }, CUES.famille);
+
+        window.__timelines["famille-ressert-b1"] = tl;
+      })();
+    </script>
+  </body>
+</html>

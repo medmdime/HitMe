@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="fr" data-resolution="portrait">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=1080, height=1920">
+    <link rel="stylesheet" href="compositions/components/kit.css">
+    <link rel="stylesheet" href="compositions/components/youbud.css">
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.14.2/dist/gsap.min.js"></script>
+    <script src="assets/vendor/lucide.min.js"></script>
+    <style>
+      @font-face {
+        font-family: "Archivo";
+        src: url("assets/fonts/Archivo.woff2") format("woff2");
+        font-weight: 400 900;
+        font-display: block;
+      }
+      /* Insert 1 de « Il a perdu douze kilos en mangeant des gâteaux » : le professeur et ce qu'il a mangé. Plein cadre
+         1080 x 1920, sans Mohamed à l'image, calqué sur le plan 0:14 → 0:27 du reel de Train Bloom (DTdVpZljqZh) :
+         le bonhomme en costume, son nom et sa flèche, l'université, puis l'accolade et les trois aliments.
+         Tableau A : Mark Haub, la nutrition, l'université. Tableau B : 10 semaines, les repas remplacés, les gâteaux,
+         les biscuits, les chips, et ce qu'il prenait en plus. Tout est préfixé i1-. Zone utile : y 240 → 1500. */
+      .i1-toile { position: absolute; left: 0; top: 0; width: 1080px; height: 1920px; display: block; }
+      .i1-plan { position: absolute; left: 0; top: 0; width: 1080px; height: 1920px; will-change: transform; }
+      .i1-ico { position: absolute; }
+      .i1-ico svg.lucide { display: block; width: 100%; height: 100%; }
+      .i1-mot { position: absolute; font-weight: 900; line-height: 1; color: var(--ink); white-space: nowrap; opacity: 0; will-change: transform; }
+
+      /* Le bonhomme : le corps dessiné à plat, et sa vraie tête en photo détourée, posée dessus (comme Train Bloom ;
+         demandé par Mohamed le 4 octobre : « take Mark's head from the internet »). La photo : son portrait officiel
+         de l'université d'État du Kansas, découpé par assets/img/tetes/detourer_tete.py. */
+      #i1-prof { position: absolute; left: 345px; top: 470px; width: 390px; height: 728px; opacity: 0; will-change: transform; }
+      #i1-prof svg { display: block; width: 390px; height: 728px; }
+      #i1-prof img { position: absolute; left: 100px; top: -80px; width: 190px; display: block; }
+      /* Un trait qui se dessine reste invisible jusqu'à son repère : sinon son bout rond laisse un point. */
+      .i1-trait { opacity: 0; }
+
+      /* Tableau A · son nom et la flèche, la nutrition, l'université. */
+      #i1-nom { left: 64px; top: 300px; font-size: 80px; }
+      #i1-fleche { position: absolute; left: 318px; top: 398px; width: 120px; height: 120px; }
+      #i1-fleche path { fill: none; stroke: var(--ink); stroke-width: 7; stroke-linecap: round; stroke-linejoin: round; }
+      .i1-rond { position: absolute; width: 160px; height: 160px; border-radius: 50%; opacity: 0; will-change: transform; }
+      .i1-rond .i1-ico { left: 38px; top: 38px; width: 84px; height: 84px; }
+      #i1-nutri { left: 800px; top: 520px; background: var(--yb-blue-2); box-shadow: 0 8px 0 #b4def6; }
+      #i1-nutri .i1-ico { color: var(--yb-blue-edge); }
+      #i1-nutri-mot { left: 730px; top: 716px; width: 300px; text-align: center; font-size: 54px; }
+      /* L'université : une vraie photo, en rond à bord blanc (demandé par Mohamed le 4 octobre : « prends une photo
+         sur internet du Kansas »). Anderson Hall, université d'État du Kansas : thename915, CC BY-SA 3.0, Wikimedia
+         Commons, recadrée sur la tour. */
+      #i1-univ { left: 80px; top: 846px; width: 220px; height: 220px; overflow: hidden; border: 10px solid #ffffff;
+        background: var(--yb-blue-2); box-shadow: 0 9px 0 #dcdbd3; }
+      #i1-univ img { position: absolute; left: 0; top: 0; width: 200px; height: 200px; display: block; }
+      #i1-univ-mot { left: 40px; top: 1094px; width: 300px; text-align: center; font-size: 54px; }
+
+      /* Tableau B · la durée : une pilule jaune (le terme clé). */
+      #i1-duree { position: absolute; left: 0; top: 270px; width: 1080px; text-align: center; opacity: 0; will-change: transform; }
+      #i1-duree span.yb-pill { font-size: 80px; padding: 16px 44px 16px 36px; background: var(--yb-yellow); color: var(--ink);
+        box-shadow: 0 9px 0 var(--yb-yellow-edge); font-variant-numeric: tabular-nums; }
+      #i1-duree .i1-cal { display: inline-block; width: 70px; height: 70px; vertical-align: -10px; margin-right: 18px; }
+      #i1-duree .i1-cal svg.lucide { display: block; width: 100%; height: 100%; stroke-width: 2.6; }
+
+      /* Les repas remplacés : une assiette vide, et sa croix. */
+      #i1-assiette { position: absolute; left: 540px; top: 620px; width: 380px; display: block; opacity: 0; will-change: transform;
+        filter: drop-shadow(0 9px 0 #cfcec5); }
+      #i1-croix { left: 810px; top: 600px; width: 124px; height: 124px; }
+
+      /* L'accolade, puis les trois aliments : une tuile orange (ce qu'il mange) par aliment, la photo et son mot. */
+      #i1-accolade { position: absolute; left: 392px; top: 462px; width: 60px; height: 720px; }
+      #i1-accolade path { fill: none; stroke: var(--ink); stroke-width: 8; stroke-linecap: round; stroke-linejoin: round; }
+      .i1-tuile { position: absolute; left: 476px; width: 508px; height: 206px; border-radius: 36px; background: var(--yb-orange-2);
+        box-shadow: 0 10px 0 #f3d9ae; opacity: 0; will-change: transform; }
+      #i1-t1 { top: 470px; }
+      #i1-t2 { top: 722px; }
+      #i1-t3 { top: 974px; }
+      .i1-tuile img { position: absolute; display: block; will-change: transform; }
+      #i1-t1 img { left: 86px; top: -22px; width: 86px; }
+      #i1-t2 img { left: 16px; top: 28px; width: 228px; }
+      #i1-t3 img { left: 34px; top: 4px; width: 196px; }
+      #i1-t1 b { top: 44px; }
+      /* « les Twinkies » : le nom du gâteau, en pilule jaune sous le mot (dit dans la prise du 5 octobre). */
+      #i1-twinkies { position: absolute; left: 250px; top: 112px; font-size: 38px; padding: 8px 24px; background: var(--yb-yellow);
+        color: var(--ink); box-shadow: 0 5px 0 var(--yb-yellow-edge); opacity: 0; will-change: transform; transform-origin: 0% 50%; }
+      .i1-tuile b { position: absolute; left: 252px; top: 76px; font-size: 54px; font-weight: 900; line-height: 1; color: var(--ink); white-space: nowrap; }
+
+      /* Ce qu'il prenait en plus : le signe, puis trois ronds blancs (la boisson, les vitamines, les légumes). */
+      #i1-plus { left: 388px; top: 1292px; font-size: 120px; }
+      .i1-extra { position: absolute; top: 1270px; width: 164px; height: 164px; border-radius: 50%; background: #ffffff;
+        box-shadow: 0 8px 0 #dcdbd3; opacity: 0; will-change: transform; }
+      #i1-e1 { left: 484px; }
+      #i1-e2 { left: 664px; }
+      #i1-e3 { left: 844px; }
+      .i1-extra img { position: absolute; display: block; will-change: transform; }
+      #i1-e1 img { left: 6px; top: 51px; width: 152px; }
+      #i1-e3 img { left: 49px; top: 15px; width: 66px; }
+      #i1-e2 img { left: 28px; top: 19px; width: 108px; }
+    </style>
+  </head>
+  <body>
+    <div id="i1-root" data-composition-id="gateaux-i1-professeur" data-start="0" data-duration="10.23" data-width="1080" data-height="1920">
+      <div id="i1-scene" class="clip" data-start="0" data-duration="10.23" data-track-index="0">
+        <img class="i1-toile" src="assets/img/toile-pleine.jpg" alt="">
+
+        <div class="i1-plan" id="i1-a">
+          <div class="i1-mot" id="i1-nom">Mark Haub</div>
+          <svg id="i1-fleche" viewBox="0 0 120 120"><path class="i1-trait" d="M10 12 Q84 14 92 94"/><path class="i1-trait" d="M68 76 L94 100 L112 68"/></svg>
+          <div class="i1-rond" id="i1-nutri"><div class="i1-ico"><i data-lucide="graduation-cap"></i></div></div>
+          <div class="i1-mot" id="i1-nutri-mot">Nutrition</div>
+          <div class="i1-rond" id="i1-univ"><img src="assets/img/lieux/kansas-state.jpg" alt=""></div>
+          <div class="i1-mot" id="i1-univ-mot">Kansas</div>
+        </div>
+
+        <div id="i1-prof">
+          <svg viewBox="0 0 300 560">
+            <rect x="96" y="330" width="48" height="216" rx="20" fill="#3c3c3c"/>
+            <rect x="156" y="330" width="48" height="216" rx="20" fill="#3c3c3c"/>
+            <rect x="38" y="166" width="44" height="200" rx="22" fill="#3c3c3c"/>
+            <rect x="218" y="166" width="44" height="200" rx="22" fill="#3c3c3c"/>
+            <rect x="72" y="150" width="156" height="220" rx="42" fill="#3c3c3c"/>
+            <polygon points="118,152 182,152 150,222" fill="#ffffff"/>
+            <polygon points="143,160 157,160 162,214 150,232 138,214" fill="#1899d6"/>
+          </svg>
+          <img src="assets/img/tetes/mark-haub.png" alt="">
+        </div>
+
+        <div class="i1-plan" id="i1-b">
+          <div id="i1-duree"><span class="yb-pill"><span class="i1-cal"><i data-lucide="calendar-days"></i></span>10 semaines</span></div>
+
+          <img id="i1-assiette" src="assets/img/aliments/assiette.png" alt="">
+          <div class="yb-badge ko" id="i1-croix"><svg viewBox="0 0 96 96"><path class="i1-trait" d="M32 32 L64 64 M64 32 L32 64"/></svg></div>
+
+          <svg id="i1-accolade" viewBox="0 0 60 720"><path class="i1-trait" d="M52 8 Q22 8 22 46 L22 322 Q22 360 6 360 Q22 360 22 398 L22 674 Q22 712 52 712"/></svg>
+          <div class="i1-tuile" id="i1-t1"><img src="assets/img/aliments/gateau-fourre.png" alt=""><b>Gâteaux</b><span class="yb-pill" id="i1-twinkies">Twinkies</span></div>
+          <div class="i1-tuile" id="i1-t2"><img src="assets/img/aliments/biscuit-chocolat.png" alt=""><b>Biscuits</b></div>
+          <div class="i1-tuile" id="i1-t3"><img src="assets/img/aliments/chips.png" alt=""><b>Chips</b></div>
+
+          <div class="i1-mot" id="i1-plus">+</div>
+          <div class="i1-extra" id="i1-e1"><img src="assets/img/aliments/shaker.png" alt=""></div>
+          <div class="i1-extra" id="i1-e2"><img src="assets/img/aliments/vitamines.png" alt=""></div>
+          <div class="i1-extra" id="i1-e3"><img src="assets/img/aliments/haricots.png" alt=""></div>
+        </div>
+      </div>
+
+      <!-- Un son par élément, chacun sur son repère (les mêmes secondes que CUES, dans le script). Volumes du tableau
+           de inserts-youbud, × 0,6. -->
+      <audio id="i1-s-appelle" src="assets/sfx/soft_click.wav" data-start="0.03" data-duration="0.22" data-track-index="11" data-volume="0.6"></audio>
+      <audio id="i1-s-nom" src="assets/sfx/soft_click.wav" data-start="0.31" data-duration="0.22" data-track-index="12" data-volume="0.6"></audio>
+      <audio id="i1-s-nutrition" src="assets/sfx/soft_click.wav" data-start="0.93" data-duration="0.22" data-track-index="13" data-volume="0.6"></audio>
+      <audio id="i1-s-universite" src="assets/sfx/soft_click.wav" data-start="2.01" data-duration="0.22" data-track-index="14" data-volume="0.6"></audio>
+      <audio id="i1-s-dix" src="assets/sfx/clicks.wav" data-start="3.36" data-duration="0.35" data-track-index="15" data-volume="0.57"></audio>
+      <audio id="i1-s-remplace" src="assets/sfx/soft_click.wav" data-start="4.26" data-duration="0.22" data-track-index="16" data-volume="0.6"></audio>
+      <audio id="i1-s-repas" src="assets/sfx/wrong.mp3" data-start="4.72" data-duration="0.5" data-track-index="17" data-volume="0.21"></audio>
+      <audio id="i1-s-gateaux" src="assets/sfx/bloop.mp3" data-start="5.28" data-duration="0.5" data-track-index="18" data-volume="0.3"></audio>
+      <audio id="i1-s-biscuits" src="assets/sfx/bloop.mp3" data-start="5.64" data-duration="0.5" data-track-index="19" data-volume="0.36"></audio>
+      <audio id="i1-s-chips" src="assets/sfx/bloop.mp3" data-start="6.00" data-duration="0.5" data-track-index="20" data-volume="0.42"></audio>
+      <audio id="i1-s-twinkies" src="assets/sfx/clicks.wav" data-start="6.35" data-duration="0.35" data-track-index="24" data-volume="0.57"></audio>
+      <audio id="i1-s-boisson" src="assets/sfx/soft_click.wav" data-start="8.09" data-duration="0.22" data-track-index="21" data-volume="0.6"></audio>
+      <audio id="i1-s-vitamines" src="assets/sfx/soft_click.wav" data-start="9.07" data-duration="0.22" data-track-index="22" data-volume="0.6"></audio>
+      <audio id="i1-s-legumes" src="assets/sfx/soft_click.wav" data-start="9.69" data-duration="0.22" data-track-index="23" data-volume="0.6"></audio>
+    </div>
+
+    <script>
+      (function () {
+        // LES REPÈRES, en secondes depuis le début de l'insert, recalés sur la prise du 5 octobre par
+        // D:\\editingvideo\\tes-questions\\outils\\plan_bloom.py (ne pas les régler à la main) : chacun est attaché à un mot.
+        // Un repère qui a un son est aussi le data-start de son <audio> (#i1-s-<nom>).
+        var CUES = {
+          appelle: 0.03,     // « Il s'appelle » : le bonhomme, sa vraie tête sur un corps dessiné · clic
+          nom: 0.31,         // « Mark Haub » : son nom, et la flèche qui se dessine · clic
+          nutrition: 0.93,   // « il enseigne la nutrition » : le chapeau de diplômé, puis le mot · clic
+          universite: 2.01,  // « une université américaine » : la photo de son université, Kansas · clic
+          pendant: 3.22,     // « Pendant » : le tableau A s'en va, le bonhomme glisse à gauche
+          dix: 3.36,         // « dix semaines » : la pilule jaune · clic
+          remplace: 4.26,    // « il a remplacé » : l'assiette vide · clic
+          repas: 4.72,       // « ses repas » : la croix sur l'assiette · son d'erreur
+          par: 5.26,         // « par des » : l'assiette s'en va, l'accolade se dessine
+          gateaux: 5.28,     // « gâteaux » : la première tuile · bulle
+          biscuits: 5.64,    // « de supermarché » : la deuxième (il en mangeait aussi ; la prise ne les nomme pas) · bulle
+          chips: 6.00,       // dans la foulée : la troisième · bulle
+          twinkies: 6.35,    // « les Twinkies » : la pilule jaune sur la première tuile · clic
+          fameux: 6.98,      // « les fameux » : le gâteau de la première tuile bat une fois
+          aussi: 7.48,       // « Il prenait aussi » : le signe plus
+          boisson: 8.09,     // « une boisson protéinée » : le shaker · clic
+          vitamines: 9.07,  // « des vitamines » : les comprimés de vitamines (photo) · clic
+          legumes: 9.69     // « quelques légumes » : les haricots verts · clic
+        };
+
+        window.__timelines = window.__timelines || {};
+        if (window.lucide) window.lucide.createIcons();
+        // Chaque trait qui se dessine : sa longueur, mesurée une fois.
+        var traits = document.querySelectorAll("#i1-scene .i1-trait");
+        for (var k = 0; k < traits.length; k++) {
+          var L = traits[k].getTotalLength() * 1.05;
+          traits[k].style.strokeDasharray = L;
+          traits[k].style.strokeDashoffset = L;
+        }
+        var tl = gsap.timeline({ paused: true });
+        var dessiner = function (sel, t, d) {
+          Array.prototype.forEach.call(document.querySelectorAll(sel), function (el) {
+            tl.fromTo(el, { opacity: 0 }, { opacity: 1, duration: 0.02, ease: "none" }, t);
+            tl.fromTo(el, { strokeDashoffset: parseFloat(el.style.strokeDasharray) }, { strokeDashoffset: 0, duration: d, ease: "power2.out" }, t);
+          });
+        };
+
+        // 1 · « Il s'appelle » : le bonhomme, au centre.
+        tl.fromTo("#i1-prof", { opacity: 0, scale: 0.3, x: 0, y: 0, transformOrigin: "50% 100%" },
+          { opacity: 1, scale: 1, x: 0, y: 0, duration: 0.5, ease: "back.out(1.5)" }, CUES.appelle);
+
+        // 2 · « Mark Haub » : le nom, puis la flèche vers sa tête.
+        tl.fromTo("#i1-nom", { opacity: 0, y: 16 }, { opacity: 1, y: 0, duration: 0.3, ease: "power3.out" }, CUES.nom);
+        dessiner("#i1-fleche .i1-trait", CUES.nom + 0.15, 0.3);
+
+        // 3 · « il enseigne la nutrition » : le chapeau de diplômé, puis son mot.
+        tl.fromTo("#i1-nutri", { opacity: 0, scale: 0.3 }, { opacity: 1, scale: 1, duration: 0.4, ease: "back.out(1.6)" }, CUES.nutrition);
+        tl.fromTo("#i1-nutri-mot", { opacity: 0, y: 16 }, { opacity: 1, y: 0, duration: 0.3, ease: "power3.out" }, CUES.nutrition + 0.4);
+
+        // 4 · « une université américaine » : l'université, et où elle est.
+        tl.fromTo("#i1-univ", { opacity: 0, scale: 0.3 }, { opacity: 1, scale: 1, duration: 0.4, ease: "back.out(1.6)" }, CUES.universite);
+        tl.fromTo("#i1-univ-mot", { opacity: 0, y: 16 }, { opacity: 1, y: 0, duration: 0.3, ease: "power3.out" }, CUES.universite + 0.2);
+
+        // 5 · « Pendant » : le tableau A s'en va par le haut ; le bonhomme rétrécit et glisse à gauche de l'accolade.
+        tl.to("#i1-a", { opacity: 0, y: -30, duration: 0.25, ease: "power2.in" }, CUES.pendant - 0.1);
+        tl.to("#i1-prof", { x: -325, y: -140, scale: 0.64, duration: 0.5, ease: "power2.inOut" }, CUES.pendant);
+
+        // 6 · « dix semaines » : la durée, en haut.
+        tl.fromTo("#i1-duree", { opacity: 0, scale: 0.3 }, { opacity: 1, scale: 1, duration: 0.45, ease: "back.out(1.6)" }, CUES.dix);
+
+        // 7 · « il a remplacé ses repas » : l'assiette vide, puis la croix, et l'assiette encaisse.
+        tl.fromTo("#i1-assiette", { opacity: 0, scale: 0.3, x: 0 }, { opacity: 1, scale: 1, x: 0, duration: 0.4, ease: "back.out(1.4)" }, CUES.remplace);
+        tl.fromTo("#i1-croix", { opacity: 0, scale: 0.3 }, { opacity: 1, scale: 1, duration: 0.35, ease: "back.out(1.8)" }, CUES.repas);
+        dessiner("#i1-croix .i1-trait", CUES.repas + 0.1, 0.3);
+        tl.to("#i1-assiette", { x: -9, duration: 0.04, ease: "none" }, CUES.repas + 0.14);
+        tl.to("#i1-assiette", { x: 9, duration: 0.04, ease: "none" }, CUES.repas + 0.19);
+        tl.to("#i1-assiette", { x: -9, duration: 0.04, ease: "none" }, CUES.repas + 0.24);
+        tl.to("#i1-assiette", { x: 0, duration: 0.04, ease: "none" }, CUES.repas + 0.29);
+
+        // 8 · « par des » : l'assiette et sa croix s'en vont ; l'accolade se dessine à leur place.
+        tl.to("#i1-assiette", { opacity: 0, scale: 0.7, duration: 0.18, ease: "power2.in" }, CUES.par - 0.17);
+        tl.to("#i1-croix", { opacity: 0, scale: 0.7, duration: 0.18, ease: "power2.in" }, CUES.par - 0.17);
+        dessiner("#i1-accolade .i1-trait", CUES.par, 0.4);
+
+        // 9 · « gâteaux », « biscuits », « chips » : une tuile par aliment, la photo se pose juste après.
+        var tuiles = [["#i1-t1", CUES.gateaux, -58], ["#i1-t2", CUES.biscuits, 0], ["#i1-t3", CUES.chips, 0]];
+        tuiles.forEach(function (t) {
+          tl.fromTo(t[0], { opacity: 0, scale: 0, y: 40 }, { opacity: 1, scale: 1, y: 0, duration: 0.45, ease: "power3.out" }, t[1]);
+          tl.fromTo(t[0] + " img", { scale: 0.3, rotation: t[2] }, { scale: 1, rotation: t[2], duration: 0.4, ease: "back.out(1.7)" }, t[1] + 0.1);
+        });
+
+        // 9 bis · « les Twinkies » : leur nom se pose sur la première tuile ; « les fameux » : le gâteau bat une fois.
+        tl.fromTo("#i1-twinkies", { opacity: 0, scale: 0.3 }, { opacity: 1, scale: 1, duration: 0.35, ease: "back.out(1.8)" }, CUES.twinkies);
+        tl.to("#i1-t1 img", { scale: 1.2, duration: 0.14, ease: "power2.out" }, CUES.fameux);
+        tl.to("#i1-t1 img", { scale: 1, duration: 0.2, ease: "power2.inOut" }, CUES.fameux + 0.14);
+
+        // 10 · « Il prenait aussi » : le signe plus, puis la boisson, les vitamines, les légumes, chacun sur son mot.
+        tl.fromTo("#i1-plus", { opacity: 0, scale: 0.3 }, { opacity: 1, scale: 1, duration: 0.35, ease: "back.out(1.6)" }, CUES.aussi);
+        tl.fromTo("#i1-e1", { opacity: 0, scale: 0.3 }, { opacity: 1, scale: 1, duration: 0.4, ease: "back.out(1.6)" }, CUES.boisson);
+        tl.fromTo("#i1-e1 img", { rotation: -24 }, { rotation: -24, duration: 0.01 }, 0);
+        tl.fromTo("#i1-e2", { opacity: 0, scale: 0.3 }, { opacity: 1, scale: 1, duration: 0.4, ease: "back.out(1.6)" }, CUES.vitamines);
+        tl.fromTo("#i1-e3", { opacity: 0, scale: 0.3 }, { opacity: 1, scale: 1, duration: 0.4, ease: "back.out(1.6)" }, CUES.legumes);
+        tl.fromTo("#i1-e3 img", { rotation: 28 }, { rotation: 28, duration: 0.01 }, 0);
+
+        // Tenue : rien ne bouge après 11,2.
+        window.__timelines["gateaux-i1-professeur"] = tl;
+      })();
+    </script>
+  </body>
+</html>

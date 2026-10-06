@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=1080, height=960">
+    <link rel="stylesheet" href="compositions/components/kit.css">
+    <link rel="stylesheet" href="compositions/components/youbud.css">
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.14.2/dist/gsap.min.js"></script>
+    <script src="assets/vendor/lucide.min.js"></script>
+    <style>
+      @font-face {
+        font-family: "Archivo";
+        src: url("assets/fonts/Archivo.woff2") format("woff2");
+        font-weight: 400 900;
+        font-display: block;
+      }
+      /* J14 · « Tu sais quoi faire, mais tu n'y arrives pas ? » · le plan B, 1080 x 960.
+         La flamme de la motivation qui retombe ; la jauge de l'habitude qui passe le cran des 21
+         sans s'arrêter et se remplit jusqu'à 66 ; la croix d'un jour raté posée sur la jauge
+         pleine : rien ne redescend. Contenu utile entre y = 230 et y = 940 (au-dessus, le titre
+         fixe). Toutes les règles sont ici, préfixées s14- : cette vidéo n'a pas de feuille à elle,
+         et rien ne doit déborder sur le montage qui l'accueille. */
+      #s14-scene { width: 1080px; height: 960px; }
+      .s14-toile { position: absolute; left: 0; top: 0; width: 1080px; height: 960px; display: block; }
+      .s14-lab { position: absolute; font-size: 48px; font-weight: 900; line-height: 1; color: var(--ink);
+        text-align: center; white-space: nowrap; }
+      .s14-ico { position: absolute; }
+      .s14-ico svg.lucide { display: block; width: 100%; height: 100%; }
+
+      /* 1 · la motivation : une carte orange, la flamme, « Motivation ». La flamme retombe
+         et grise sur « pas tenir ». */
+      #s14-motiv { left: 90px; top: 250px; width: 330px; height: 250px; opacity: 0;
+        --tint: var(--yb-orange-2); --edge: #f3d4a4; }
+      #s14-flamme { left: 105px; top: 26px; width: 120px; height: 120px; color: var(--yb-orange);
+        transform-origin: 50% 100%; will-change: transform; }
+      #s14-motiv .s14-lab { left: 0; top: 178px; width: 330px; font-size: 42px; }
+
+      /* 2 · l'habitude : le mot, puis une piste blanche à rebord, le vert qui glisse dedans
+         (un x, jamais une largeur tweenée ; la piste coupe ce qui dépasse), et le cran des
+         21 jours à 21/66 de la piste (x = 286 dans la piste, 376 dans le cadre). */
+      #s14-lab-hab { left: 90px; top: 560px; text-align: left; opacity: 0; }
+      #s14-piste { position: absolute; left: 90px; top: 640px; width: 900px; height: 100px; border-radius: 50px;
+        overflow: hidden; background: #ffffff; box-shadow: 0 8px 0 #dcdbd3; opacity: 0; will-change: transform; }
+      #s14-rempli { position: absolute; left: 0; top: 0; width: 900px; height: 100px; border-radius: 50px;
+        background: var(--yb-green); box-shadow: inset 0 -12px 0 var(--yb-green-edge); will-change: transform; }
+      #s14-cran { position: absolute; left: 283px; top: 0; width: 6px; height: 100px; background: rgba(60, 60, 60, 0.32); }
+      #s14-lab-21 { left: 316px; top: 772px; width: 120px; font-size: 44px; color: #55554f; opacity: 0; will-change: transform; }
+
+      /* Le chiffre : 66 jours, en pilule jaune, calée au-dessus du bout de la jauge. */
+      #s14-66 { position: absolute; right: 90px; top: 330px; height: 132px; line-height: 132px; padding: 0 40px;
+        border-radius: 66px; background: var(--yb-yellow); box-shadow: 0 8px 0 var(--yb-yellow-edge);
+        font-size: 88px; font-weight: 900; color: var(--ink); font-variant-numeric: tabular-nums;
+        white-space: nowrap; opacity: 0; will-change: transform; }
+
+      /* 3 · le jour raté : la croix rouge posée sur la jauge pleine (vers le 45e jour),
+         « 1 jour » dessous. */
+      #s14-rate { left: 645px; top: 632px; width: 116px; height: 116px; }
+      #s14-lab-jour { left: 603px; top: 772px; width: 200px; opacity: 0; }
+
+      /* La source, en petit : le nom et l'année, comme dans l'assiette. */
+      #s14-src { position: absolute; left: 90px; top: 880px; font-size: 26px; font-weight: 800; letter-spacing: 0.08em;
+        line-height: 1; color: #55554f; white-space: nowrap; opacity: 0; }
+    </style>
+  </head>
+  <body>
+    <!-- Les bruitages : un soft_click par élément, volume 0,6 (le × 0,6 du Kallaway edit), rien d'autre.
+         Leurs data-start recopient l'objet CUES du script, plus bas. -->
+    <div id="s14-root" data-composition-id="savoir-b1" data-start="0" data-duration="15.58" data-width="1080" data-height="960">
+      <div id="s14-scene" class="clip" data-start="0" data-duration="15.58" data-track-index="0">
+        <img class="s14-toile" src="assets/img/toile.jpg" alt="">
+
+        <div class="yb-card" id="s14-motiv">
+          <div class="s14-ico" id="s14-flamme"><i data-lucide="flame"></i></div>
+          <div class="s14-lab">Motivation</div>
+        </div>
+
+        <div id="s14-66">66 jours</div>
+
+        <div class="s14-lab" id="s14-lab-hab">Habitude</div>
+        <div id="s14-piste"><div id="s14-rempli" data-layout-allow-overflow></div><div id="s14-cran"></div></div>
+        <div class="s14-lab" id="s14-lab-21">21</div>
+
+        <div class="yb-badge ko" id="s14-rate"><svg viewBox="0 0 96 96"><path d="M34 34 L62 62 M62 34 L34 62"/></svg></div>
+        <div class="s14-lab" id="s14-lab-jour">1 jour</div>
+
+        <div id="s14-src">LALLY · 2010</div>
+      </div>
+
+      <audio id="s14-s-motiv" src="assets/sfx/soft_click.wav" data-start="0.21" data-duration="0.22" data-track-index="11" data-volume="0.6"></audio>
+      <audio id="s14-s-habitude" src="assets/sfx/soft_click.wav" data-start="2.74" data-duration="0.22" data-track-index="12" data-volume="0.6"></audio>
+      <audio id="s14-s-66" src="assets/sfx/soft_click.wav" data-start="7.37" data-duration="0.22" data-track-index="13" data-volume="0.6"></audio>
+      <audio id="s14-s-rate" src="assets/sfx/soft_click.wav" data-start="9.26" data-duration="0.22" data-track-index="14" data-volume="0.6"></audio>
+    </div>
+
+    <script>
+      (function () {
+        // LES REPÈRES : mot du texte B → seconde, depuis le premier mot du plan B (« La »).
+        // Estimés à 4,75 mots par seconde ((rang du mot - 1) / 4,75), souffles coupés, avant
+        // l'accélération. À recaler sur la prise transcrite avant le rendu final (skill
+        // inserts-youbud, § 4) ; les data-start des <audio> les recopient.
+        var CUES = {
+          motivation: 0.21,   // « La motivation » (mot 2) : la carte Motivation, la flamme vive · clic
+          pas: 1.05,          // « démarrer, pas tenir » (mot 6) : la flamme retombe et grise
+          habitude: 2.74,     // « c'est l'habitude » (mot 14) : le mot Habitude, la jauge vide, le cran 21 · clic
+          combien: 5.05,      // « Combien de temps » (mot 25) : la jauge commence à se remplir
+          chercheurs: 6.74,   // « Des chercheurs » (mot 33) : la source, en fondu, sans clic
+          soixanteSix: 7.37,  // « soixante-six jours » (mot 36) : la jauge est pleine, la pilule 66 jours · clic
+          rater: 9.26,        // « Mais rater un jour » (mot 45) : la croix rouge sur la jauge pleine · clic
+          jour: 9.68,         // « un jour » (mot 47) : le mot 1 jour sous la croix
+          vingt: 11.79,       // « au bout de vingt et un jours » (mot 57) : le 21 fonce et pulse, sans clic
+          fin: 15.58          // « dans les temps. » fini (74 mots) : fin du plan B ; tout tient depuis 12,2 s
+        };
+
+        if (window.lucide) window.lucide.createIcons();
+        var tl = gsap.timeline({ paused: true });
+
+        // La croix se dessine : on mesure le trait avant de construire la timeline.
+        var trait = document.querySelector("#s14-rate path");
+        var long = trait.getTotalLength() * 1.05;
+        gsap.set(trait, { strokeDasharray: long, strokeDashoffset: long });
+
+        // « La motivation » : la carte entre ; la flamme vacille deux fois.
+        tl.fromTo("#s14-motiv", { opacity: 0, scale: 0, y: 40 }, { opacity: 1, scale: 1, y: 0, duration: 0.55, ease: "power3.out" }, CUES.motivation);
+        tl.fromTo("#s14-flamme", { scale: 1 }, { scale: 1.14, duration: 0.1, ease: "sine.inOut", repeat: 1, yoyo: true }, CUES.motivation + 0.5);
+        // « pas tenir » : la flamme retombe, rapetisse et grise.
+        tl.fromTo("#s14-flamme", { scale: 1, y: 0, color: "#ff9600" }, { scale: 0.6, y: 18, color: "#a8a79f", duration: 0.6, ease: "power2.inOut", immediateRender: false }, CUES.pas);
+
+        // « l'habitude » : le mot, la jauge vide et son cran des 21 jours.
+        tl.fromTo("#s14-lab-hab", { opacity: 0, y: 20 }, { opacity: 1, y: 0, duration: 0.35, ease: "power3.out" }, CUES.habitude);
+        tl.fromTo("#s14-piste", { opacity: 0, y: 40, scale: 0.9 }, { opacity: 1, y: 0, scale: 1, duration: 0.45, ease: "power3.out" }, CUES.habitude);
+        tl.fromTo("#s14-lab-21", { opacity: 0, y: 12 }, { opacity: 1, y: 0, duration: 0.3, ease: "power3.out" }, CUES.habitude + 0.2);
+
+        // « Combien de temps » : le vert avance, jour après jour, à vitesse constante ; il passe le
+        // cran des 21 sans s'arrêter et touche le bout sur « soixante-six ».
+        tl.fromTo("#s14-rempli", { x: -900 }, { x: 0, duration: CUES.soixanteSix - CUES.combien, ease: "none" }, CUES.combien);
+
+        // « Des chercheurs » : la source, en fondu.
+        tl.fromTo("#s14-src", { opacity: 0 }, { opacity: 1, duration: 0.3, ease: "power2.out" }, CUES.chercheurs);
+
+        // « soixante-six » : le chiffre, le seul rebond, puis une pulsation.
+        tl.fromTo("#s14-66", { opacity: 0, scale: 0.3 }, { opacity: 1, scale: 1, duration: 0.45, ease: "back.out(1.6)" }, CUES.soixanteSix);
+        tl.to("#s14-66", { scale: 1.08, duration: 0.14, ease: "power2.out" }, CUES.soixanteSix + 0.5);
+        tl.to("#s14-66", { scale: 1, duration: 0.16, ease: "power2.in" }, CUES.soixanteSix + 0.64);
+
+        // « rater » : la croix se pose sur la jauge pleine et se dessine ; « un jour » : le mot dessous.
+        // La jauge ne bouge pas : rater un jour ne change presque rien.
+        tl.fromTo("#s14-rate", { opacity: 0, scale: 0.3 }, { opacity: 1, scale: 1, duration: 0.4, ease: "back.out(1.6)" }, CUES.rater);
+        tl.to("#s14-rate path", { strokeDashoffset: 0, duration: 0.3, ease: "power2.out" }, CUES.rater + 0.1);
+        tl.fromTo("#s14-lab-jour", { opacity: 0, y: 12 }, { opacity: 1, y: 0, duration: 0.25, ease: "power3.out" }, CUES.jour);
+
+        // « vingt et un jours » : le 21 fonce et pulse une fois ; il est au premier tiers de la
+        // jauge, bien avant la fin. Puis tout tient.
+        tl.to("#s14-lab-21", { scale: 1.3, color: "#3c3c3c", duration: 0.18, ease: "power2.out" }, CUES.vingt);
+        tl.to("#s14-lab-21", { scale: 1, duration: 0.22, ease: "power2.in" }, CUES.vingt + 0.18);
+
+        window.__timelines["savoir-b1"] = tl;
+      })();
+    </script>
+  </body>
+</html>

@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=1080, height=960">
+    <link rel="stylesheet" href="compositions/components/kit.css">
+    <link rel="stylesheet" href="compositions/components/youbud.css">
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.14.2/dist/gsap.min.js"></script>
+    <script src="assets/vendor/lucide.min.js"></script>
+    <style>
+      @font-face {
+        font-family: "Archivo";
+        src: url("assets/fonts/Archivo.woff2") format("woff2");
+        font-weight: 400 900;
+        font-display: block;
+      }
+      /* Le cadre B de « Tu fais du sport, et ta balance ne descend pas ? » : 1080 x 960, en haut
+         de l'image, Mohamed en petit dessous. Rien d'important au-dessus de y = 230 (le titre fixe).
+         Trois éléments et un chiffre : la séance (une flamme), le pain au chocolat, la balance ; × 4.
+         Un seul texte à l'écran : « × 4 ». Tout est préfixé b1- : ces règles suivent la
+         composition dans le montage complet. */
+      #b1-scene { width: 1080px; height: 960px; }
+      .b1-toile { position: absolute; left: 0; top: 0; width: 1080px; height: 960px; display: block; }
+
+      /* Une icône Lucide dans une boîte dimensionnée : la couleur vient de la boîte. */
+      .b1-ico { position: absolute; color: var(--ink); will-change: transform; }
+      .b1-ico svg.lucide { display: block; width: 100%; height: 100%; }
+
+      /* Trois cartes blanches de 300 x 300 sur une ligne, 40 px d'écart : x = 50, 390, 730. */
+      .b1-carte { top: 460px; width: 300px; height: 300px; --tint: #ffffff; --edge: #dcdbd3; opacity: 0; }
+
+      /* 1 · la séance : une flamme orange, ce que la séance brûle vraiment. */
+      #b1-seance { left: 50px; }
+      #b1-flamme { left: 50px; top: 50px; width: 200px; height: 200px; color: var(--yb-orange); }
+      #b1-flamme svg.lucide { stroke-width: 2.5; }
+
+      /* Ce que les gens croyaient : trois flammes pâles de plus, dans l'espace encore vide à droite. */
+      .b1-fantome { top: 520px; width: 180px; height: 180px; color: var(--yb-orange); opacity: 0; }
+      .b1-fantome svg.lucide { stroke-width: 2.5; }
+      #b1-f1 { left: 400px; }
+      #b1-f2 { left: 620px; }
+      #b1-f3 { left: 840px; }
+
+      /* Le chiffre : × 4, la seule pilule jaune, centrée au-dessus de la carte de la séance. */
+      #b1-x4 { position: absolute; left: 100px; top: 352px; width: 200px; box-sizing: border-box; text-align: center;
+        font-size: 72px; font-weight: 900; line-height: 1; padding: 14px 0; border-radius: 999px;
+        background: var(--yb-yellow); color: var(--ink); box-shadow: 0 7px 0 var(--yb-yellow-edge);
+        font-variant-numeric: tabular-nums; white-space: nowrap; opacity: 0; will-change: transform; }
+
+      /* 2 · le pain au chocolat, dessiné à plat : la pâte dorée, le chocolat qui dépasse aux deux bouts. */
+      #b1-pain { left: 390px; }
+      #b1-pain-dessin { position: absolute; left: 30px; top: 68px; width: 240px; height: 164px; will-change: transform; }
+      #b1-pain-dessin svg { display: block; width: 100%; height: 100%; overflow: visible; }
+
+      /* 3 · la balance : un pèse-personne vu de dessus ; un écran sans aucun nombre, qui affiche « = ». */
+      #b1-balance { left: 730px; border-radius: 72px; }
+      #b1-ecran { position: absolute; left: 55px; top: 36px; width: 190px; height: 108px; border-radius: 28px;
+        background: var(--yb-blue-2); }
+      #b1-egal { left: 40px; top: -1px; width: 110px; height: 110px; color: var(--yb-blue); opacity: 0; }
+      #b1-egal svg.lucide { stroke-width: 3.5; }
+      .b1-pied { position: absolute; top: 168px; width: 96px; height: 104px; border-radius: 42px; background: #efeee8; }
+      #b1-pied-g { left: 50px; }
+      #b1-pied-d { left: 154px; }
+    </style>
+  </head>
+  <body>
+    <!-- Les bruitages : un soft_click par élément, volume 0,6 (1,0 du barème × 0,6, 28 septembre).
+         Ni woosh, ni riser, ni musique. -->
+    <div id="b1-root" data-composition-id="sport-balance-b1" data-start="0" data-duration="14.5" data-width="1080" data-height="960">
+      <div id="b1-scene" class="clip" data-start="0" data-duration="14.5" data-track-index="0">
+        <img class="b1-toile" src="assets/img/toile.jpg" alt="">
+
+        <div class="yb-card b1-carte" id="b1-seance">
+          <div class="b1-ico" id="b1-flamme"><i data-lucide="flame"></i></div>
+        </div>
+        <div class="b1-ico b1-fantome" id="b1-f1"><i data-lucide="flame"></i></div>
+        <div class="b1-ico b1-fantome" id="b1-f2"><i data-lucide="flame"></i></div>
+        <div class="b1-ico b1-fantome" id="b1-f3"><i data-lucide="flame"></i></div>
+        <div id="b1-x4">× 4</div>
+
+        <div class="yb-card b1-carte" id="b1-pain">
+          <div id="b1-pain-dessin">
+            <svg viewBox="0 0 240 164">
+              <!-- le chocolat qui dépasse aux deux bouts -->
+              <rect x="-10" y="40" width="48" height="36" rx="12" fill="#4a2e1c"/>
+              <rect x="-10" y="88" width="48" height="36" rx="12" fill="#4a2e1c"/>
+              <rect x="202" y="40" width="48" height="36" rx="12" fill="#4a2e1c"/>
+              <rect x="202" y="88" width="48" height="36" rx="12" fill="#4a2e1c"/>
+              <!-- le rebord plein, puis la pâte -->
+              <rect x="20" y="30" width="200" height="124" rx="40" fill="#d98b2b"/>
+              <rect x="20" y="20" width="200" height="124" rx="40" fill="#f6b75a"/>
+              <!-- les couches feuilletées -->
+              <path d="M52 56 Q120 40 188 56" fill="none" stroke="#fcd99c" stroke-width="10" stroke-linecap="round"/>
+              <path d="M52 100 Q120 84 188 100" fill="none" stroke="#e99a3d" stroke-width="8" stroke-linecap="round"/>
+            </svg>
+          </div>
+        </div>
+
+        <div class="yb-card b1-carte" id="b1-balance">
+          <div id="b1-ecran">
+            <div class="b1-ico" id="b1-egal"><i data-lucide="equal"></i></div>
+          </div>
+          <div class="b1-pied" id="b1-pied-g"></div>
+          <div class="b1-pied" id="b1-pied-d"></div>
+        </div>
+      </div>
+
+      <!-- Un clic par élément, chacun sur son repère (les mêmes secondes que CUES, dans le script). -->
+      <audio id="b1-s-seance" src="assets/sfx/soft_click.wav" data-start="1.26" data-duration="0.22" data-track-index="11" data-volume="0.6"></audio>
+      <audio id="b1-s-x4" src="assets/sfx/soft_click.wav" data-start="3.37" data-duration="0.22" data-track-index="12" data-volume="0.6"></audio>
+      <audio id="b1-s-pain" src="assets/sfx/soft_click.wav" data-start="5.68" data-duration="0.22" data-track-index="13" data-volume="0.6"></audio>
+      <audio id="b1-s-balance" src="assets/sfx/soft_click.wav" data-start="12.63" data-duration="0.22" data-track-index="14" data-volume="0.6"></audio>
+    </div>
+
+    <script>
+      (function () {
+        // LES REPÈRES, en secondes depuis le début du temps B (« Des chercheurs l'ont mesuré… »).
+        // Estimés à 4,75 mots par seconde avant le tournage, (n° du mot − 1) / 4,75 : à recaler sur
+        // la prise (`ke.py … plans` donne le temps de chaque mot + 0,15 s : c'est ce qu'on écrit ici).
+        // Chaque repère qui a un clic est aussi le data-start de son <audio> (#b1-s-<élément>) :
+        // changer les deux ensemble. Le plan B fait 64 mots (~13,47 s) ; data-duration du root et de
+        // la scène : 14,5 s, pour que la dernière image tienne une seconde et couvre le glissé.
+        var CUES = {
+          seance: 1.26,   // « après une séance » (mot 7) : la carte de la flamme · clic
+          quatre: 3.37,   // « quatre fois plus » (mot 17) : trois flammes pâles de plus, et × 4 · clic
+          deux: 4.42,     // « Deux cents calories » (mot 22) : les flammes pâles s'en vont, sans clic
+          pain: 5.68,     // « moins qu'un pain au chocolat » (mot 28) : la carte du pain au chocolat · clic
+          plus: 7.58,     // « un pain au chocolat de plus » (mot 37) : il pulse une fois, sans clic
+          effacee: 8.63,  // « la séance est effacée » (mot 42) : la flamme s'éteint, grise et plus petite, sans clic
+          balance: 12.63, // « Ta balance » (mot 61) : la balance · clic
+          remarque: 13.26 // « le remarque » (mot 64) : « = » dans l'écran, sans clic
+        };
+
+        if (window.lucide) window.lucide.createIcons();
+        var tl = gsap.timeline({ paused: true });
+
+        // 1 · « séance » : la carte de la flamme.
+        tl.fromTo("#b1-seance", { opacity: 0, scale: 0, y: 40 }, { opacity: 1, scale: 1, y: 0, duration: 0.55, ease: "power3.out" }, CUES.seance);
+
+        // « quatre fois plus » : ce qu'ils croyaient, trois flammes pâles de plus ; × 4 au-dessus de la carte.
+        tl.fromTo(".b1-fantome", { opacity: 0, scale: 0.3, y: 0 },
+          { opacity: 0.3, scale: 1, y: 0, duration: 0.4, ease: "back.out(1.6)", stagger: 0.1 }, CUES.quatre);
+        tl.fromTo("#b1-x4", { opacity: 0, scale: 0.3 }, { opacity: 1, scale: 1, duration: 0.45, ease: "back.out(1.6)" }, CUES.quatre);
+
+        // « Deux cents calories » : retour au réel, les flammes pâles s'en vont ; × 4 reste.
+        tl.fromTo(".b1-fantome", { opacity: 0.3, y: 0 },
+          { opacity: 0, y: -30, duration: 0.25, ease: "power2.in", stagger: 0.05, immediateRender: false }, CUES.deux);
+
+        // 2 · « pain au chocolat » : la carte, à la place des flammes pâles.
+        tl.fromTo("#b1-pain", { opacity: 0, scale: 0, y: 40 }, { opacity: 1, scale: 1, y: 0, duration: 0.55, ease: "power3.out" }, CUES.pain);
+
+        // « de plus » : le pain au chocolat pulse une fois (un aller-retour, fini à 1).
+        tl.fromTo("#b1-pain-dessin", { scale: 1 }, { scale: 1.12, duration: 0.2, ease: "power2.inOut", yoyo: true, repeat: 1, immediateRender: false }, CUES.plus);
+
+        // « effacée » : la flamme s'éteint, grise et plus petite.
+        tl.fromTo("#b1-flamme", { color: "#ff9600", scale: 1 }, { color: "#c9c8c0", scale: 0.8, duration: 0.45, ease: "power2.out", immediateRender: false }, CUES.effacee);
+
+        // 3 · « balance » : la balance ; « le remarque » : « = » dans l'écran.
+        tl.fromTo("#b1-balance", { opacity: 0, scale: 0, y: 40 }, { opacity: 1, scale: 1, y: 0, duration: 0.55, ease: "power3.out" }, CUES.balance);
+        tl.fromTo("#b1-egal", { opacity: 0, scale: 0.3 }, { opacity: 1, scale: 1, duration: 0.4, ease: "back.out(1.6)" }, CUES.remarque);
+        // Dernier geste fini à 13,66 s ; tout tient jusqu'à 14,5 s.
+
+        window.__timelines["sport-balance-b1"] = tl;
+      })();
+    </script>
+  </body>
+</html>

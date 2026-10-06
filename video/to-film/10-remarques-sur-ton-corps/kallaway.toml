@@ -1,0 +1,382 @@
+# ==================================================================================================
+# kallaway.toml — la fiche de montage d'une vidéo, lue par outils/kallaway-edit/ke.py
+#
+# CET EXEMPLE EST RÉEL : c'est la fiche de la version courte de l'assiette (« Le plus calorique de ton
+# assiette, ce n'est pas le dessert »), montée du 25 au 26 septembre 2026 et validée par Mohamed
+# (« le montage est très bien, la coupure est très bien, les transitions sont super »). Chaque valeur
+# est celle qui a été livrée ; les commentaires disent pourquoi, et ce qui avait été rejeté.
+#
+# Pour une nouvelle vidéo : `ke.py video/<nom> preparer` copie ce fichier dans le dossier ; on le
+# réécrit section par section, dans l'ordre du skill kallaway-edit. Les mots se désignent par
+# « PRISE:mot » (le premier de ce mot dans la prise), « PRISE:mot#1 » (le deuxième), « PRISE@6 »
+# (le 7e mot) ; « plan:<id> » est le début d'un plan ; « fin » la fin de la vidéo. Les mots se
+# cherchent dans la transcription des coupes (montage/mots-medium.json) : `ke.py … transcrire`
+# affiche chaque prise en « mot@index ». Whisper coupe « c'est » en « c » + « 'est » : on écrit
+# alors « H2:c ».
+# ==================================================================================================
+
+[video]
+id = "assiette"                  # préfixe des id de composition (assiette-sous-titres…)
+tampon = 0.05                    # la composition dure la piste montée + 0,05 s
+# Les feuilles chargées par index.html : la DA (kit + youbud, copiées telles quelles d'une vidéo à
+# l'autre) et la feuille des animations de CETTE vidéo (le cadre .clip.scene-b en 1080 × 960).
+feuilles = ["compositions/components/kit.css", "compositions/components/youbud.css"]
+
+[sources]
+dossier = "D:/videos"            # les prises du téléphone : 4K 16:9, 60 i/s, micro-cravate
+taille = [3840, 2160]
+
+# --------------------------------------------------------------------------------------------------
+# LES PRISES, dans l'ordre du texte. Une prise = un passage tourné d'une traite (Mohamed tourne par
+# blocs de 2 ou 3 phrases). Le texte dit peut s'écarter du script : c'est la prise qui fait foi
+# (sur l'assiette : mardi les bonbons et mercredi le soda, inversés ; « le beurre, l'huile et les
+# sauces » dans cet ordre ; « Satiété » jamais dit, donc retiré de l'animation).
+#
+#   bouche   = [x, y] de sa bouche dans la source 4K (`ke.py … levres cadre H1 1.0` : une image
+#              quadrillée, un carreau = 90 px). A et B se centrent dessus, prise par prise.
+#   decalage = de combien le son arrive AVANT les lèvres, en secondes (`ke.py … levres`). Mesuré
+#              sur un p, un b ou un m : ouverture des lèvres dans l'image − explosion dans le son.
+#              Sur ce téléphone, TOUJOURS positif, et différent à chaque prise.
+# --------------------------------------------------------------------------------------------------
+[[prises]]
+alias = "H1"
+fichier = "hook-1.mp4"           # « Lundi, tu arrêtes le sucre : pas de dessert. Mardi… la balance n'a pas bougé. »
+bouche = [2072, 1204]
+decalage = 0.21                  # « pas » : explosion du p à 2,19 s, lèvres ouvertes à 2,40 s
+
+[[prises]]
+alias = "H2"
+fichier = "hook-2.mp4"           # « Mais le problème, ce n'est pas le sucre, c'est le gras, le beurre, l'huile et les sauces. »
+bouche = [2072, 1200]
+decalage = 0.20                  # « Mais » après un blanc : voyelle à 0,81 s, lèvres ouvertes à 1,017 s
+
+[[prises]]
+alias = "PC"
+fichier = "le plus calorique .mp4"   # (l'espace avant .mp4 est dans le vrai nom du fichier)
+bouche = [2072, 1200]
+decalage = 0.19                  # « le plus » : explosion à 2,07 s, lèvres ouvertes à 2,26 s. La corrélation auto disait +17 ms : faux
+
+[[prises]]
+alias = "IC"
+fichier = "il ne cale pas.mp4"   # « Donc pour les mêmes calories, il prend deux fois moins de place… »
+bouche = [2265, 1170]
+decalage = 0.18                  # « pour » : explosion à 1,28 s, lèvres ouvertes à 1,45 s
+
+[[prises]]
+alias = "TM"
+fichier = "tu en manges plus que tu crois.mp4"   # « Mais le pire du gras… Dans une étude de 2006… c'était le double. »
+bouche = [2175, 1284]
+decalage = 0.33                  # le pire : Mohamed l'a vu « vers la 20e seconde ». « Pour » : 7,89 s → 8,233 s
+
+[[prises]]
+alias = "GE"
+fichier = "geste.mp4"            # « Chaque cuillère d'huile… profite bien sûr de ton dessert. Moi, c'est Mohamed… »
+bouche = [2310, 1185]
+decalage = 0.12                  # « et profite » : explosion à 5,28 s, lèvres ouvertes à 5,417 s
+
+[transcription]
+coupes = "medium"                # bornes de mots serrées : la carte des coupes et les références ci-dessous
+sous_titres = "large-v3"         # sans amorce : entend ce qui a vraiment été dit (sous-titres, vérifications)
+# L'amorce aide medium sur les mots du sujet ; quelques phrases du script suffisent.
+amorce = "Lundi, tu arrêtes le sucre : pas de dessert. Le gras, c'est le plus calorique. La satiété."
+
+# --------------------------------------------------------------------------------------------------
+# LES COUPES. « Coupe chaque moment de respiration… parole, parole, parole » (Mohamed, 25 septembre) ;
+# 52 s de prises sont devenues 35 s, en 27 morceaux, sans une syllabe mangée.
+# --------------------------------------------------------------------------------------------------
+[coupe]
+bruit = -34                      # dB : en dessous, c'est un silence (le micro-cravate est propre)
+duree_min = 0.12                 # un silence plus court reste (ce sont des liaisons, pas des souffles)
+avant = 0.05                     # on garde 0,05 s avant chaque mot…
+apres = 0.08                     # … 0,08 s après…
+fin = 0.14                       # … et 0,14 s après le dernier mot d'une prise
+grille = 30                      # chaque coupe sur une image exacte : sinon le son glisse (0,3 s à la fin de l'assiette)
+
+[voix]
+loudnorm = "I=-16:TP=-1.5:LRA=11"   # la voix à −16 LUFS : c'est elle qui passe avant tout
+
+# --------------------------------------------------------------------------------------------------
+# CADRE A : lui en grand. CADRE B : l'animation en haut, lui détouré devant une carte en bas.
+# --------------------------------------------------------------------------------------------------
+[cadre_a]
+zoom_origine = [540, 800]        # le point fixe des zooms : entre ses yeux et sa bouche
+incruste_top = 250               # les mots incrustés, au-dessus de sa tête (rien d'important au-dessus de y = 230)
+
+[cadre_b]
+echelle = 0.44                   # 4K × 0,44 : une tête d'environ 400 px, les épaules et les mains dans la carte
+bande_largeur = 1080             # visage-b.mp4 : la bande large dont la carte montre le fond…
+bande_hauteur = 800
+bande_top = 1060                 # … posée de y = 1060 à 1860 dans l'image
+bouche_y = 397                   # sa bouche à 397 px du haut de la bande : ses cheveux et son front sortent de la carte
+# La carte : 60 px du bas, comme sur les côtés (« réduis le bottom margin », 26 septembre ; elle était
+# à 220 px du bas). Son haut coupe le haut du front : la tête dépasse de ~120 px, comme chez Kallaway.
+carte = { left = 60, top = 1240, largeur = 960, hauteur = 620, rayon = 44 }
+fonds = ["assets/img/toile.jpg", "assets/img/toile-bas.jpg"]   # la toile claire texturée, en haut et (retournée) en bas
+
+[transition]
+duree = 0.28                     # le glissé, power2.inOut
+avance_anim = 0.15               # l'animation démarre 0,15 s avant la coupe : elle est là pendant le glissé
+woosh_volume = 0.5               # « un peu plus de woosh » : 0,35 → 0,5. UN woosh seulement vers une animation
+# La première transition (après la première phrase du hook) : pas de woosh, un riser qui monte sous
+# la phrase et le « hoop » (le boum d'impacts) pile sur la coupe. Demandé tel quel par Mohamed.
+premiere = { riser = "rizer-windy.mp3", longueur = 1.75, vol_riser = 0.3, vol_hit = 0.45 }
+
+# --------------------------------------------------------------------------------------------------
+# LES PLANS, dans l'ordre. Un plan commence à son premier mot (`de`) et finit où commence le suivant.
+#   cadre = "A" (lui en grand) ou "B" (animation + carte)
+#   A : zoom = { type = "lent", fin = 1.06 }                       lent vers l'avant sur tout le plan
+#            { type = "punch", echelle = 1.15 }                    punch-in franc dès l'arrivée
+#            { type = "lent_puis_punch", fin, mot, echelle }       lent, puis punch-in sur un mot
+#            { type = "punch_sur_mot", mot, echelle }              à 100 %, punch-in sur un mot
+#       Un seul zoom par plan (règle du montage CapCut, reprise ici).
+#   B : anim = la composition 1080 × 960 de ce plan (skill inserts-youbud), ses repères calés sur
+#       les temps que `ke.py … plans` affiche. decalage_anim ne sert qu'à une animation calée sur une
+#       version précédente de la piste (ici : calées avant le recalage des coupes sur la grille des
+#       images, décalées d'un bloc de −42 à +72 ms). Pour une nouvelle vidéo : 0, donc l'omettre.
+#       woosh = false : pas de woosh à l'arrivée de ce plan B, quand un hoop ([[sons]]) tombe sur la
+#       même coupe (deux sons forts à 0,5 s d'écart se marchent dessus).
+# --------------------------------------------------------------------------------------------------
+[[plans]]
+id = "hook"
+cadre = "A"
+de = "H1:Lundi"                  # « Lundi, tu arrêtes le sucre : pas de dessert. »
+zoom = { type = "lent", fin = 1.06 }
+
+[[plans]]
+id = "semaine"
+cadre = "B"
+de = "H1:Mardi"                  # la semaine sans sucre, la balance à 0 kg
+anim = "compositions/I1a-la-semaine.html"
+decalage_anim = -0.011
+
+[[plans]]
+id = "probleme"
+cadre = "A"
+de = "H2:Mais"                   # « Mais le problème, ce n'est pas le sucre » : le snapback du hook
+zoom = { type = "punch", echelle = 1.15 }
+
+[[plans]]
+id = "gras"
+cadre = "B"
+de = "H2:c"                      # « c'est le gras, le beurre, l'huile et les sauces »
+anim = "compositions/I1b-le-gras.html"
+decalage_anim = -0.036
+
+[[plans]]
+id = "calorique"
+cadre = "A"
+de = "PC:Le"                     # « Le gras, c'est le plus calorique. »
+zoom = { type = "lent", fin = 1.06 }
+
+[[plans]]
+id = "quatre-neuf"
+cadre = "B"
+de = "PC:Un"                     # 4 contre 9, et le 9 RESTE pendant « Donc, pour les mêmes calories » :
+anim = "compositions/I2a-quatre-contre-neuf.html"   # le plan A qui suivait (1 s) a été supprimé,
+decalage_anim = -0.042           # « quand je dis 9, t'as transitionné trop vite »
+
+[[plans]]
+id = "ventre"
+cadre = "B"                      # B -> B : seule l'animation du haut glisse, la carte ne bouge pas
+de = "IC:il"                     # « il prend deux fois moins de place, ton ventre se remplit à peine… »
+anim = "compositions/I2b-le-ventre.html"
+decalage_anim = 0.016
+
+[[plans]]
+id = "turn"
+cadre = "A"
+de = "TM:Mais"                   # « Mais le pire du gras… » : la relance. Musique coupée, le vent monte
+zoom = { type = "lent_puis_punch", fin = 1.05, mot = "TM:Dans", echelle = 1.15 }
+
+[[plans]]
+id = "double"
+cadre = "B"
+de = "TM:Pour"                   # « Pour les plus gras, c'était le double. » (le mot « repas » n'est PAS dans la prise)
+anim = "compositions/I3-le-double.html"
+decalage_anim = 0.051
+
+[[plans]]
+id = "cuillere"
+cadre = "A"
+de = "GE:Chaque"                 # « Chaque cuillère d'huile, c'est 120 calories »
+zoom = { type = "punch_sur_mot", mot = "GE:120", echelle = 1.15 }
+
+[[plans]]
+id = "dessert"
+cadre = "B"
+de = "GE:Alors"                  # le geste : la cuillère, l'huile mesurée, le dessert
+anim = "compositions/I4-la-cuillere-et-le-dessert.html"
+decalage_anim = 0.072
+
+[[plans]]
+id = "appel"
+cadre = "A"
+de = "GE:Moi"                    # « Moi, c'est Mohamed… Abonne-toi pour la suite et enregistre la vidéo. »
+zoom = { type = "lent", fin = 1.08 }
+
+# --------------------------------------------------------------------------------------------------
+# LES MOTS INCRUSTÉS sur le cadre A : une pilule par mot fort, en pop sur le mot, avec un clic.
+# Des mots, jamais des phrases (Instagram ne traduit pas le texte incrusté). Styles : blanc, jaune, bleu (l'eau),
+# vert, rouge (DA YouBud : aucune bordure, un rebord plein). `left` et `largeur` en px, centrés à
+# l'œil sur 1080 : (1080 − largeur) / 2 = left.
+#   disparait = "fin_plan" (effacé quand le plan est sorti) ou un mot (fondu 0,12 s, `avance` s avant)
+# --------------------------------------------------------------------------------------------------
+[[incrustes]]
+id = "mot-sucre"
+texte = "SUCRE"
+style = "blanc"
+left = 330
+largeur = 420
+apparait = "H2:problème"         # arrive sur « problème »…
+barre = "H2:sucre"               # … et se barre en rouge sur « sucre »
+disparait = "fin_plan"
+
+[[incrustes]]
+id = "mot-gras"
+texte = "GRAS"
+style = "jaune"
+left = 355
+largeur = 370
+apparait = "TM:gras"             # « Mais le pire du gras »
+disparait = "TM:Dans"
+avance = 0.14                    # parti avant que la pilule ÉTUDE arrive (check signalait le chevauchement)
+
+[[incrustes]]
+id = "pilule-etude"
+texte = "ÉTUDE · 2006"
+style = "blanc"
+left = 250
+largeur = 580
+taille = 60
+apparait = "TM:Dans"
+disparait = "fin_plan"
+
+[[incrustes]]
+id = "pilule-120"
+texte = "120"
+style = "jaune"
+left = 380
+largeur = 320
+chiffres = true                  # chiffres à chasse fixe
+apparait = "GE:120"
+disparait = "fin_plan"
+
+[[incrustes]]
+id = "nom"
+texte = "Mohamed"
+style = "blanc"
+left = 290
+largeur = 500
+apparait = "GE:Mohammed"         # medium a entendu « Mohammed » : la référence suit la transcription
+disparait = "GE:Abonne"
+avance = 0.05
+
+[[incrustes]]
+id = "bouton-abonne"
+texte = "Abonne-toi"
+style = "blanc"                  # vert au départ ; en blanc sur le bandeau sombre (28 septembre)
+left = 250
+largeur = 470
+apparait = "GE:Abonne"
+chevauchement = true             # touche l'icône d'enregistrement, voulu (sinon check le signale)
+
+[[incrustes]]
+id = "icone-enregistre"
+icone = "bookmark"               # une icône Lucide dans un rond, sur « enregistre »
+style = "rose"                   # jaune au départ ; « le save en rose » (28 septembre)
+left = 750
+rond = 130                       # 110 au départ : « pas super visible » (28 septembre)
+apparait = "GE:enregistre"
+
+# Un bandeau : un fond sombre semi-transparent et flouté derrière l'appel (Mohamed, Abonne-toi, l'icône),
+# pour qu'il ressorte sur le mur clair (« met un background transparent car ce n'est pas super visible »,
+# 28 septembre). Il arrive avec le prénom et reste jusqu'à la fin ; il couvre de `left` à `left + largeur`.
+[[bandeaux]]
+id = "bandeau-appel"
+apparait = "GE:Mohammed"
+left = 215
+largeur = 690
+
+# --------------------------------------------------------------------------------------------------
+# LES MOMENTS FORTS : un riser qui culmine sur le mot, et le « hoop » (le boum d'impacts) dessus.
+# « Des risers avec des hoop… pour appuyer une phrase, un hit ou une chute » (Mohamed, 26 septembre).
+# Sur l'assiette : le chiffre fort, la relance, la chute. Trois, pas plus.
+#   riser = rizer-windy.mp3 (souffle, pic à 2,75 s) ou rizer-mettalic.mp3 (plus court, pic à 1,75 s)
+# --------------------------------------------------------------------------------------------------
+[[sons]]
+type = "riser_hoop"
+mot = "GE:120"                   # le chiffre fort, avec le punch-in
+riser = "rizer-mettalic.mp3"
+longueur = 1.0
+vol_riser = 0.55                 # rizer-mettalic est faible (pic à −27 dB) : on le pousse
+vol_hit = 0.38
+
+[[sons]]
+type = "riser_hoop"
+mot = "TM:Dans"                  # la reprise après le turn : le vent monte sous « Mais le pire… », le hoop relance
+longueur = 1.4
+vol_riser = 0.22
+vol_hit = 0.4
+
+[[sons]]
+type = "riser_hoop"
+mot = "GE:dessert"               # la chute
+longueur = 1.0
+vol_riser = 0.2
+vol_hit = 0.34
+
+# --------------------------------------------------------------------------------------------------
+# LA MUSIQUE (méthode de la créatine) : rien sous le riser du hook (« la musique commence après ») ;
+# morceau 1 à partir du hoop de la première transition, coupé net sur le turn ; morceau 2, plus fort,
+# repart avec le hoop de la relance. Les volumes : Careless Wandering est forte (−14,9 LUFS), Particle
+# Emission faible (−25) : 0,15 et 0,55 les mettent à ~14 dB sous la voix, le second un peu au-dessus.
+# --------------------------------------------------------------------------------------------------
+[[musique]]
+fichier = "assets/musique/careless-wandering.mp3"
+de = "plan:semaine"
+a = "plan:turn"
+media_start = 0.5
+volume = 0.15
+
+[[musique]]
+fichier = "assets/musique/particle-emission.mp3"
+de = "TM:Dans"
+a = "fin"
+media_start = 0.5
+volume = 0.55
+
+# --------------------------------------------------------------------------------------------------
+# LES SOUS-TITRES : mot à mot, blancs, un mot en jaune par phrase (dans l'ordre du texte), un gros
+# contour sombre. Les mots viennent de large-v3 : ils s'écrivent comme large-v3 les a entendus.
+# --------------------------------------------------------------------------------------------------
+[sous_titres]
+jaunes = ["sucre", "bonbons", "soda", "pèses", "bougé", "sucre", "gras", "calorique", "4", "9", "moins",
+          "peine", "manger", "pire", "2006", "double", "120", "mesure", "dessert", "Mohamed", "abonne-toi", "enregistre"]
+# Majuscule en tête de phrase quand Whisper a mis une virgule : [mot, combien-tième dans la vidéo (0 = le premier)]
+majuscules = [["mardi", 0], ["mercredi", 0], ["le", 1], ["la", 0], ["alors", 0], ["abonne-toi", 0]]
+top_b = 980                      # cadre B : entre le bas de l'animation (~940) et sa tête (~1110)
+top_a = 1320                     # cadre A : sous le menton, au-dessus de l'interface (y > 1536)
+taille = 72
+
+[son]
+# Des facteurs sur les volumes de toute la fiche (28 septembre, après l'assiette : « réduis le bruit des
+# animations, les clics, les risers et les woosh de 40 %, la musique de 20 % »). Les animations du cadre B
+# ont leurs propres <audio> : leurs volumes s'écrivent déjà × 0,6 (voir le skill kallaway-edit, § 7).
+sfx = 0.6
+musique = 0.8
+
+[rendu]
+vitesse = 1.08                   # « 1,08, je pense, l'idéal » (1,1 testé ; 1,15 trop rapide dans CapCut)
+nom = "assiette-version-courte"  # renders/assiette-version-courte.mp4
+
+# --------------------------------------------------------------------------------------------------
+# LA COUVERTURE (`ke.py … couverture`, demandée le 28 septembre) : le titre en ZY Elegant sur une image
+# de lui prise dans la piste maître (sans sous-titres), la première partie en blanc, la seconde en
+# jaune et plus grosse ; puis cette image en toute première image de la vidéo livrée.
+# La police n'a pas d'accents : un titre sans « é » (ou écrit sans).
+# --------------------------------------------------------------------------------------------------
+[couverture]
+temps = 7.3                      # dans voix-montage.mp4 : bouche fermée, regard dans l'objectif
+blanc = ["LE PLUS CALORIQUE", "DE TON ASSIETTE,"]
+jaune = ["CE N'EST PAS", "LE DESSERT"]
+haut = 250                       # le haut du texte : dans la zone que la grille d'Instagram garde (y 240 → 1680)

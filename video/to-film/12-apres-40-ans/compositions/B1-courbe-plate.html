@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=1080, height=960">
+    <link rel="stylesheet" href="compositions/components/kit.css">
+    <link rel="stylesheet" href="compositions/components/youbud.css">
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.14.2/dist/gsap.min.js"></script>
+    <script src="assets/vendor/lucide.min.js"></script>
+    <style>
+      @font-face {
+        font-family: "Archivo";
+        src: url("assets/fonts/Archivo.woff2") format("woff2");
+        font-weight: 400 900;
+        font-display: block;
+      }
+      /* B1 · la courbe plate. « Après 40 ans, c'est fini ? », le cadre B (1080 x 960), en haut de l'image,
+         Mohamed en petit dessous. Fond toile ; rien d'utile au-dessus de y = 230 (le titre fixe) ni sous y = 940.
+         Tout est ici : la composition ne dépend d'aucune feuille propre à une autre vidéo. */
+      #b1-scene { width: 1080px; height: 960px; }
+      #b1-toile { position: absolute; left: 0; top: 0; width: 1080px; height: 960px; display: block; }
+      .b1-lab { position: absolute; font-size: 44px; font-weight: 900; line-height: 1; color: var(--ink);
+        text-align: center; white-space: nowrap; }
+      .b1-ico { position: absolute; color: var(--ink); will-change: transform; }
+      .b1-ico svg.lucide { display: block; width: 100%; height: 100%; }
+
+      /* La courbe : sur une carte blanche sans bordure, la flamme (ce que le corps brûle), une ligne plate de 20 à 60 ans. */
+      #b1-carte { left: 70px; top: 310px; width: 940px; height: 250px; --tint: #ffffff; --edge: #dcdbd3; opacity: 0; }
+      #b1-flamme { left: 112px; top: 358px; width: 96px; height: 96px; color: var(--yb-orange); opacity: 0; }
+      #b1-flamme-vie { position: absolute; left: 0; top: 0; width: 96px; height: 96px; will-change: transform; }
+      #b1-ligne { position: absolute; left: 300px; top: 396px; width: 598px; height: 20px; border-radius: 10px;
+        background: var(--yb-yellow); box-shadow: 0 5px 0 var(--yb-yellow-edge); will-change: transform; }
+      .b1-point { position: absolute; top: 380px; width: 52px; height: 52px; border-radius: 26px;
+        background: var(--yb-yellow); box-shadow: 0 6px 0 var(--yb-yellow-edge); opacity: 0; will-change: transform; }
+      #b1-p20 { left: 274px; }
+      #b1-p60 { left: 872px; }
+      #b1-l20 { left: 200px; top: 452px; width: 200px; opacity: 0; will-change: transform; }
+      #b1-l60 { left: 798px; top: 452px; width: 200px; opacity: 0; will-change: transform; }
+
+      /* Ce qui a changé : deux cartes teintées, dans l'ordre de la voix (le muscle, puis le ventre),
+         un mot et une flèche qui se dessine. */
+      .b1-change { top: 660px; width: 420px; height: 180px; opacity: 0; }
+      #b1-muscle { left: 100px; --tint: var(--yb-blue-2); --edge: #b9e1f6; }
+      #b1-ventre { left: 560px; --tint: var(--yb-orange-2); --edge: #f3d4a4; }
+      .b1-change .b1-lab { left: 40px; top: 63px; font-size: 54px; text-align: left; }
+      .b1-change .yb-badge { left: 284px; top: 42px; width: 96px; height: 96px; }
+      #b1-muscle .yb-badge { background: var(--yb-blue); box-shadow: 0 6px 0 var(--yb-blue-edge); }
+      #b1-ventre .yb-badge { background: var(--yb-orange); box-shadow: 0 6px 0 var(--yb-orange-edge); }
+    </style>
+  </head>
+  <body>
+    <div id="b1-root" data-composition-id="apres-40-ans-b1" data-start="0" data-duration="14.1" data-width="1080" data-height="960">
+      <div id="b1-scene" class="clip" data-start="0" data-duration="14.1" data-track-index="0">
+        <img id="b1-toile" src="assets/img/toile.jpg" alt="">
+
+        <div class="yb-card" id="b1-carte"></div>
+        <div class="b1-ico" id="b1-flamme"><div id="b1-flamme-vie"><i data-lucide="flame"></i></div></div>
+        <div id="b1-ligne"></div>
+        <div class="b1-point" id="b1-p20"></div>
+        <div class="b1-point" id="b1-p60"></div>
+        <div class="b1-lab" id="b1-l20">20 ans</div>
+        <div class="b1-lab" id="b1-l60">60 ans</div>
+
+        <div class="yb-card b1-change" id="b1-muscle">
+          <div class="b1-lab">Muscle</div>
+          <div class="yb-badge"><svg viewBox="0 0 96 96"><path class="b1-trait" d="M48 24 L48 70 M29 51 L48 70 L67 51"></path></svg></div>
+        </div>
+        <div class="yb-card b1-change" id="b1-ventre">
+          <div class="b1-lab">Ventre</div>
+          <div class="yb-badge"><svg viewBox="0 0 96 96"><path class="b1-trait" d="M48 72 L48 26 M29 45 L48 26 L67 45"></path></svg></div>
+        </div>
+      </div>
+
+      <!-- Un clic par élément, rien d'autre : volume 1,0 × 0,6 (les bruitages baissés de 40 % le 28 septembre). -->
+      <audio id="b1-s-01" src="assets/sfx/soft_click.wav" data-start="1.47" data-duration="0.22" data-track-index="11" data-volume="0.6"></audio>
+      <audio id="b1-s-02" src="assets/sfx/soft_click.wav" data-start="5.47" data-duration="0.22" data-track-index="12" data-volume="0.6"></audio>
+      <audio id="b1-s-03" src="assets/sfx/soft_click.wav" data-start="8.21" data-duration="0.22" data-track-index="13" data-volume="0.6"></audio>
+      <audio id="b1-s-04" src="assets/sfx/soft_click.wav" data-start="10.53" data-duration="0.22" data-track-index="14" data-volume="0.6"></audio>
+    </div>
+
+    <script>
+      (function () {
+        // LES REPÈRES : le mot qui fait entrer chaque élément → la seconde, depuis le premier mot de B
+        // (« Ton métabolisme… »). Texte du 28 septembre au soir, estimé à 4,75 mots par seconde, souffles
+        // coupés : le temps d'un mot = son rang dans B (en partant de 0) / 4,75. À recaler sur la prise
+        // transcrite avant le rendu final ; les <audio> ci-dessus portent les mêmes temps, à déplacer avec eux.
+        var CUES = {
+          brule: 1.47,     // « ce que ton corps BRÛLE chaque jour » (8e mot) : la carte et la flamme
+          vingt: 5.47,     // « on brûle autant à VINGT ans » (27e mot) : le point 20 ans ; la ligne part, plate
+          soixante: 6.11,  // « qu'à SOIXANTE » (30e mot) : la ligne arrive au point 60 ans sans monter ni descendre
+          muscle: 8.21,    // « le MUSCLE baisse un peu » (40e mot) : Muscle, la flèche descend
+          ventre: 10.53,   // « le gras se met plus sur le VENTRE » (51e mot) : Ventre, la flèche monte
+          lache: 12.63,    // « Ton métabolisme n'a pas LÂCHÉ » (61e mot) : la flamme bat, sans clic
+          fin: 14.1        // « ton corps a changé de FORME » : fin de B, 67 mots ; tout tient depuis ~13,4 s
+        };
+
+        if (window.lucide) window.lucide.createIcons();
+        var tl = gsap.timeline({ paused: true });
+
+        // La carte et la flamme : « ce que ton corps brûle ».
+        tl.fromTo("#b1-carte", { opacity: 0, scale: 0, y: 40 }, { opacity: 1, scale: 1, y: 0, duration: 0.45, ease: "power3.out" }, CUES.brule);
+        tl.fromTo("#b1-flamme", { opacity: 0, scale: 0.3 }, { opacity: 1, scale: 1, duration: 0.4, ease: "back.out(1.6)" }, CUES.brule + 0.1);
+
+        // La courbe : le point 20 ans, puis la ligne plate qui arrive sur 60 ans.
+        tl.fromTo("#b1-p20", { opacity: 0, scale: 0.3 }, { opacity: 1, scale: 1, duration: 0.3, ease: "back.out(1.6)" }, CUES.vingt);
+        tl.fromTo("#b1-l20", { opacity: 0, y: 12 }, { opacity: 1, y: 0, duration: 0.2, ease: "power3.out" }, CUES.vingt);
+        tl.fromTo("#b1-ligne", { scaleX: 0, transformOrigin: "0% 50%" }, { scaleX: 1, duration: CUES.soixante - CUES.vingt - 0.12, ease: "power1.inOut" }, CUES.vingt + 0.12);
+        tl.fromTo("#b1-p60", { opacity: 0, scale: 0.3 }, { opacity: 1, scale: 1, duration: 0.3, ease: "back.out(1.6)" }, CUES.soixante);
+        tl.fromTo("#b1-l60", { opacity: 0, y: 12 }, { opacity: 1, y: 0, duration: 0.2, ease: "power3.out" }, CUES.soixante);
+
+        // Ce qui a changé : chaque carte entre sur son mot, sa pastille, puis la flèche se dessine.
+        var traits = document.querySelectorAll(".b1-trait");
+        for (var i = 0; i < traits.length; i++) {
+          var L = traits[i].getTotalLength() * 1.05;
+          traits[i].style.strokeDasharray = L;
+          traits[i].style.strokeDashoffset = L;
+          traits[i].setAttribute("data-longueur", L);
+        }
+        [["#b1-muscle", CUES.muscle], ["#b1-ventre", CUES.ventre]].forEach(function (c) {
+          var carte = document.querySelector(c[0]);
+          var pastille = carte.querySelector(".yb-badge");
+          var trait = carte.querySelector(".b1-trait");
+          var L = parseFloat(trait.getAttribute("data-longueur"));
+          tl.fromTo(carte, { opacity: 0, scale: 0, y: 40 }, { opacity: 1, scale: 1, y: 0, duration: 0.45, ease: "power3.out" }, c[1]);
+          tl.fromTo(pastille, { opacity: 0, scale: 0.3 }, { opacity: 1, scale: 1, duration: 0.35, ease: "back.out(1.6)" }, c[1] + 0.12);
+          tl.fromTo(trait, { strokeDashoffset: L }, { strokeDashoffset: 0, duration: 0.3, ease: "power2.out" }, c[1] + 0.22);
+        });
+
+        // « n'a pas lâché » : la flamme bat deux fois (elle brûle toujours), puis revient à sa taille. Aucun clic.
+        tl.fromTo("#b1-flamme-vie", { scale: 1 }, { scale: 1.14, duration: 0.16, ease: "sine.inOut", repeat: 3, yoyo: true, immediateRender: false }, CUES.lache);
+        tl.to("#b1-flamme-vie", { scale: 1, duration: 0.1, ease: "power1.out" }, CUES.lache + 0.64);
+
+        window.__timelines["apres-40-ans-b1"] = tl;
+      })();
+    </script>
+  </body>
+</html>

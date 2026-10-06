@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=1080, height=960">
+    <link rel="stylesheet" href="compositions/components/kit.css">
+    <link rel="stylesheet" href="compositions/components/youbud.css">
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.14.2/dist/gsap.min.js"></script>
+    <script src="assets/vendor/lucide.min.js"></script>
+    <style>
+      @font-face {
+        font-family: "Archivo";
+        src: url("assets/fonts/Archivo.woff2") format("woff2");
+        font-weight: 400 900;
+        font-display: block;
+      }
+      /* Le cadre B de « Un régime, ou un rééquilibrage alimentaire » : 1080 x 960, en haut de l'image, Mohamed en bas.
+         Version du 3 octobre, selon ses deux retours : l'animation EXPLIQUE (on voit où on en est, chaque phrase a son
+         geste) et les aliments sont de VRAIES photos détourées, pas des icônes.
+         Deux lignes de temps, l'une sous l'autre.
+         En haut, le régime : une assiette dont le pain et le gâteau sont barrés, une barre qui s'arrête à un drapeau
+         (« pendant un temps ») ; on essaie de la tirer jusqu'à « toute la vie », elle revient ; au drapeau, tout retombe
+         sur l'assiette ; dessous, le poids : il descend, puis remonte dans l'année, 8 fois sur 10 (le bilan de l'Anses).
+         En bas, le rééquilibrage : la même assiette, rien de barré, la part un peu plus petite, et une barre sans
+         drapeau qui sort de l'image. PAS de courbe de poids dessous : aucune étude ne la donne.
+         Tout est préfixé b1-. */
+      #b1-scene { width: 1080px; height: 960px; }
+      .b1-toile { position: absolute; left: 0; top: 0; width: 1080px; height: 960px; display: block; }
+      .b1-rang { position: absolute; left: 0; top: 0; width: 1080px; height: 960px; will-change: transform; }
+      .b1-titre { position: absolute; left: 50px; font-size: 60px; font-weight: 900; line-height: 1; white-space: nowrap; opacity: 0; will-change: transform; }
+      .b1-lab { position: absolute; font-size: 38px; font-weight: 900; line-height: 1; color: var(--ink); white-space: nowrap; opacity: 0; will-change: transform; }
+      .b1-ico { position: absolute; color: var(--ink); }
+      .b1-ico svg.lucide { display: block; width: 100%; height: 100%; }
+      .b1-n { position: absolute; font-weight: 900; line-height: 1; border-radius: 999px; white-space: nowrap;
+        font-variant-numeric: tabular-nums; opacity: 0; will-change: transform; }
+      .b1-food { position: absolute; display: block; opacity: 0; will-change: transform; }
+      .b1-badge { position: absolute; width: 60px; height: 60px; border-radius: 50%; opacity: 0; will-change: transform; }
+      .b1-badge .b1-ico { left: 12px; top: 12px; width: 36px; height: 36px; color: #ffffff; }
+      .b1-badge .b1-ico svg.lucide { stroke-width: 4; }
+      .b1-ko { background: var(--yb-red); box-shadow: 0 4px 0 var(--yb-red-edge); }
+      .b1-ok { background: var(--yb-green); box-shadow: 0 4px 0 var(--yb-green-edge); }
+      .b1-piste { position: absolute; left: 320px; height: 56px; border-radius: 28px; background: #e2e1d9; opacity: 0; }
+      .b1-barre { position: absolute; left: 320px; height: 56px; border-radius: 28px; will-change: transform; }
+
+      /* Le régime. */
+      #b1-t1 { top: 232px; color: var(--bad-ink); }
+      #b1-a1 { left: 50px; top: 300px; width: 220px; filter: drop-shadow(0 7px 0 #cfcec5); }
+      #b1-pain1 { left: 108px; top: 336px; width: 50px; }
+      #b1-gat1 { left: 168px; top: 342px; width: 82px; }
+      #b1-x-pain { left: 84px; top: 322px; }
+      #b1-x-gat { left: 224px; top: 316px; }
+      #b1-pain1b { left: 140px; top: 362px; width: 50px; }
+      #b1-donut1 { left: 98px; top: 414px; width: 90px; }
+      #b1-gat1b { left: 186px; top: 398px; width: 74px; }
+      #b1-piste1 { top: 356px; width: 700px; }
+      #b1-barre1 { top: 356px; width: 320px; background: var(--yb-red); }
+      #b1-vie-barre { position: absolute; left: 610px; top: 356px; width: 410px; height: 56px; border-radius: 0 28px 28px 0;
+        background: #ffb3b3; will-change: transform; }
+      #b1-fin { position: absolute; left: 636px; top: 288px; width: 150px; height: 60px; opacity: 0; will-change: transform; }
+      #b1-fin .b1-ico { left: 0; top: 2px; width: 54px; height: 54px; color: var(--ink); }
+      #b1-fin span { position: absolute; left: 60px; top: 12px; font-size: 40px; font-weight: 900; line-height: 1; color: var(--ink); }
+      #b1-vie { position: absolute; left: 896px; top: 288px; width: 130px; height: 60px; opacity: 0; will-change: transform; }
+      #b1-vie .b1-ico { left: 0; top: 4px; width: 50px; height: 50px; color: var(--ink); }
+      #b1-vie span { position: absolute; left: 56px; top: 12px; font-size: 40px; font-weight: 900; line-height: 1; color: var(--ink); }
+      #b1-anses { left: 876px; top: 222px; font-size: 40px; padding: 10px 24px; background: var(--yb-blue-2); color: var(--ink); box-shadow: 0 5px 0 #b4def6; }
+      #b1-poids-lab { left: 320px; top: 428px; }
+      #b1-courbe { position: absolute; left: 320px; top: 468px; width: 600px; height: 84px; display: block; overflow: visible; }
+      #b1-huit { left: 676px; top: 404px; font-size: 54px; padding: 8px 24px; background: var(--yb-red); color: #ffffff; box-shadow: 0 6px 0 var(--yb-red-edge); }
+      #b1-an { left: 884px; top: 500px; font-size: 36px; }
+
+      /* Le rééquilibrage. */
+      #b1-t2 { top: 590px; color: #378700; }
+      #b1-a2 { left: 50px; top: 656px; width: 220px; filter: drop-shadow(0 7px 0 #cfcec5); }
+      #b1-pain2 { left: 108px; top: 692px; width: 50px; }
+      #b1-gat2 { left: 168px; top: 698px; width: 82px; }
+      #b1-ok2 { left: 226px; top: 652px; }
+      #b1-piste2 { top: 712px; width: 790px; border-radius: 28px 0 0 28px; }
+      #b1-barre2 { top: 712px; width: 790px; border-radius: 28px 0 0 28px; background: var(--yb-green); }
+      #b1-infini { position: absolute; left: 884px; top: 796px; width: 110px; height: 110px; border-radius: 50%; background: var(--yb-green);
+        box-shadow: 0 7px 0 var(--yb-green-edge); opacity: 0; will-change: transform; }
+      #b1-infini .b1-ico { left: 23px; top: 23px; width: 64px; height: 64px; color: #ffffff; }
+      #b1-infini .b1-ico svg.lucide { stroke-width: 3; }
+    </style>
+  </head>
+  <body>
+    <!-- Les bruitages : un soft_click par élément qui se pose, volume 0,6. Dans CapCut, ceux des repères « personne » et
+         « remonte » sont remplacés par le son d'erreur de Mohamed (recaler.py, « erreurs »). -->
+    <div id="b1-root" data-composition-id="reequilibrage-b1" data-start="0" data-duration="15.88" data-width="1080" data-height="960">
+      <div id="b1-scene" class="clip scene-b" data-start="0" data-duration="15.88" data-track-index="0">
+        <img class="b1-toile" src="assets/img/toile.jpg" alt="">
+
+        <div class="b1-rang" id="b1-r1">
+          <div class="b1-titre" id="b1-t1">Régime</div>
+          <img class="b1-food" id="b1-a1" src="assets/img/aliments/assiette.png" alt="">
+          <img class="b1-food" id="b1-pain1" src="assets/img/aliments/pain.png" alt="">
+          <img class="b1-food" id="b1-gat1" src="assets/img/aliments/gateau.png" alt="">
+          <img class="b1-food" id="b1-pain1b" src="assets/img/aliments/pain.png" alt="">
+          <img class="b1-food" id="b1-gat1b" src="assets/img/aliments/gateau.png" alt="">
+          <img class="b1-food" id="b1-donut1" src="assets/img/aliments/donut.png" alt="">
+          <div class="b1-badge b1-ko" id="b1-x-pain"><div class="b1-ico"><i data-lucide="x"></i></div></div>
+          <div class="b1-badge b1-ko" id="b1-x-gat"><div class="b1-ico"><i data-lucide="x"></i></div></div>
+
+          <div class="b1-piste" id="b1-piste1"></div>
+          <div id="b1-vie-barre"></div>
+          <div class="b1-barre" id="b1-barre1"></div>
+          <div id="b1-fin"><div class="b1-ico"><i data-lucide="flag"></i></div><span>Fin</span></div>
+          <div id="b1-vie"><div class="b1-ico"><i data-lucide="infinity"></i></div><span>Vie</span></div>
+
+          <div class="b1-lab" id="b1-poids-lab">Poids</div>
+          <svg id="b1-courbe" viewBox="0 0 600 84">
+            <path id="b1-descend" d="M8 12 L320 74" fill="none" stroke="#58cc02" stroke-width="14" stroke-linecap="round"/>
+            <path id="b1-remonte" d="M320 74 L590 12" fill="none" stroke="#ff4b4b" stroke-width="14" stroke-linecap="round"/>
+          </svg>
+          <div class="b1-n" id="b1-anses">Anses</div>
+          <div class="b1-n" id="b1-huit">8 / 10</div>
+          <div class="b1-lab" id="b1-an">1 an</div>
+        </div>
+
+        <div class="b1-rang" id="b1-r2">
+          <div class="b1-titre" id="b1-t2">Rééquilibrage</div>
+          <img class="b1-food" id="b1-a2" src="assets/img/aliments/assiette.png" alt="">
+          <img class="b1-food" id="b1-pain2" src="assets/img/aliments/pain.png" alt="">
+          <img class="b1-food" id="b1-gat2" src="assets/img/aliments/gateau.png" alt="">
+          <div class="b1-badge b1-ok" id="b1-ok2"><div class="b1-ico"><i data-lucide="check"></i></div></div>
+          <div class="b1-piste" id="b1-piste2"></div>
+          <div class="b1-barre" id="b1-barre2"></div>
+          <div id="b1-infini"><div class="b1-ico"><i data-lucide="infinity"></i></div></div>
+        </div>
+      </div>
+
+      <audio id="b1-s-regime" src="assets/sfx/soft_click.wav" data-start="0.36" data-duration="0.22" data-track-index="11" data-volume="0.6"></audio>
+      <audio id="b1-s-priver" src="assets/sfx/soft_click.wav" data-start="0.90" data-duration="0.22" data-track-index="12" data-volume="0.6"></audio>
+      <audio id="b1-s-temps" src="assets/sfx/soft_click.wav" data-start="1.52" data-duration="0.22" data-track-index="13" data-volume="0.6"></audio>
+      <audio id="b1-s-personne" src="assets/sfx/soft_click.wav" data-start="2.70" data-duration="0.22" data-track-index="14" data-volume="0.6"></audio>
+      <audio id="b1-s-arretes" src="assets/sfx/soft_click.wav" data-start="4.04" data-duration="0.22" data-track-index="15" data-volume="0.6"></audio>
+      <audio id="b1-s-reprends" src="assets/sfx/soft_click.wav" data-start="4.56" data-duration="0.22" data-track-index="16" data-volume="0.6"></audio>
+      <audio id="b1-s-anses" src="assets/sfx/soft_click.wav" data-start="5.82" data-duration="0.22" data-track-index="17" data-volume="0.6"></audio>
+      <audio id="b1-s-huit" src="assets/sfx/soft_click.wav" data-start="7.66" data-duration="0.22" data-track-index="18" data-volume="0.6"></audio>
+      <audio id="b1-s-remonte" src="assets/sfx/soft_click.wav" data-start="8.82" data-duration="0.22" data-track-index="19" data-volume="0.6"></audio>
+      <audio id="b1-s-reequilibrage" src="assets/sfx/soft_click.wav" data-start="9.66" data-duration="0.22" data-track-index="20" data-volume="0.6"></audio>
+      <audio id="b1-s-peu" src="assets/sfx/soft_click.wav" data-start="11.44" data-duration="0.22" data-track-index="21" data-volume="0.6"></audio>
+      <audio id="b1-s-bon" src="assets/sfx/soft_click.wav" data-start="12.88" data-duration="0.22" data-track-index="22" data-volume="0.6"></audio>
+      <audio id="b1-s-sans" src="assets/sfx/soft_click.wav" data-start="13.18" data-duration="0.22" data-track-index="23" data-volume="0.6"></audio>
+      <audio id="b1-s-pasdefin" src="assets/sfx/soft_click.wav" data-start="14.36" data-duration="0.22" data-track-index="24" data-volume="0.6"></audio>
+    </div>
+
+    <script>
+      (function () {
+        // LES REPÈRES, en secondes depuis le début du plan B. Chacun est attaché à un mot de la prise : recaler.py
+        // les réécrit quand le découpage change (ne pas les régler à la main). Chaque repère qui a un clic est aussi
+        // le data-start de son <audio> (#b1-s-<nom>).
+        var CUES = {
+          regime: 0.36,        // « Un régime » : le mot, l'assiette, le pain et le gâteau · clic
+          priver: 0.90,        // « c'est te priver » : le pain et le gâteau barrés · clic
+          temps: 1.52,         // « pendant un temps » : la barre avance jusqu'au drapeau Fin · clic
+          priver2: 2.00,       // « Se priver toute sa vie » : on tire la barre vers Vie…
+          personne: 2.70,      // « personne n'y arrive » : … elle revient au drapeau · son d'erreur
+          arretes: 4.04,       // « un jour, tu arrêtes » : le drapeau bat, les croix sautent · clic
+          reprends: 4.56,      // « tu reprends tes anciennes habitudes » : tout retombe sur l'assiette, et plus · clic
+          anses: 5.82,         // « L'Anses » : la pilule Anses · clic
+          bilan: 6.74,         // « a fait le bilan des régimes » : le mot Poids, la ligne qui descend pendant le régime
+          huit: 7.66,          // « 8 fois sur 10 » : 8 / 10 · clic
+          remonte: 8.82,       // « le poids remonte » : la ligne rouge remonte au niveau du départ · son d'erreur
+          annee: 9.26,         // « dans l'année » : 1 an
+          reequilibrage: 9.66, // « Un rééquilibrage alimentaire » : le mot et la même assiette, sous la ligne du régime · clic
+          peu: 11.44,          // « changer un peu » : la part de gâteau, un peu plus petite · clic
+          bon: 12.88,          // « pour de bon » : la barre verte part et sort de l'image, sans drapeau · clic
+          sans: 13.18,         // « sans te priver » : la coche sur l'assiette · clic
+          pasdefin: 14.36,     // « Il n'y a pas de fin » : l'infini · clic
+          rien: 15.12          // « rien à arrêter » : il bat une fois
+        };
+
+        if (window.lucide) window.lucide.createIcons();
+        var tl = gsap.timeline({ paused: true });
+        var pose = function (sel, t, d) { tl.fromTo(sel, { opacity: 0, scale: 0.3 }, { opacity: 1, scale: 1, duration: d || 0.4, ease: "back.out(1.6)" }, t); };
+        var tombe = function (sel, t, rot) { tl.fromTo(sel, { opacity: 0, y: -50, rotation: rot }, { opacity: 1, y: 0, rotation: rot, duration: 0.28, ease: "power2.in" }, t); };
+        var entre = function (sel, t) { tl.fromTo(sel, { opacity: 0, y: 14 }, { opacity: 1, y: 0, duration: 0.3, ease: "power3.out" }, t); };
+        ["#b1-descend", "#b1-remonte"].forEach(function (s) {
+          var p = document.querySelector(s), l = p.getTotalLength() * 1.02;
+          p.style.strokeDasharray = l; p.style.strokeDashoffset = l;
+        });
+
+        // Le régime · « Un régime, c'est te priver pendant un temps ».
+        entre("#b1-t1", CUES.regime);
+        pose("#b1-a1", CUES.regime + 0.08);
+        tombe("#b1-pain1", CUES.regime + 0.3, -28);
+        tombe("#b1-gat1", CUES.regime + 0.42, 14);
+        pose("#b1-x-pain", CUES.priver, 0.25);
+        pose("#b1-x-gat", CUES.priver + 0.12, 0.25);
+        tl.fromTo("#b1-piste1", { opacity: 0 }, { opacity: 1, duration: 0.2, ease: "power2.out" }, CUES.temps - 0.15);
+        tl.fromTo("#b1-barre1", { scaleX: 0, transformOrigin: "0% 50%" }, { scaleX: 1, duration: 0.45, ease: "power2.out" }, CUES.temps);
+        pose("#b1-fin", CUES.temps + 0.3, 0.3);
+
+        // « Se priver toute sa vie, personne n'y arrive » : la barre tirée vers Vie, qui revient.
+        entre("#b1-vie", CUES.priver2);
+        tl.fromTo("#b1-vie-barre", { scaleX: 0, transformOrigin: "0% 50%" }, { scaleX: 1, duration: Math.max(0.3, CUES.personne - CUES.priver2 - 0.05), ease: "power1.in" }, CUES.priver2);
+        tl.to("#b1-vie-barre", { scaleX: 0, duration: 0.22, ease: "power3.in" }, CUES.personne);
+        tl.to("#b1-vie", { opacity: 0.25, duration: 0.2, ease: "power2.out" }, CUES.personne + 0.1);
+        tl.to("#b1-fin", { x: -9, duration: 0.045, ease: "none" }, CUES.personne + 0.2);
+        tl.to("#b1-fin", { x: 9, duration: 0.045, ease: "none" }, CUES.personne + 0.245);
+        tl.to("#b1-fin", { x: -9, duration: 0.045, ease: "none" }, CUES.personne + 0.29);
+        tl.to("#b1-fin", { x: 0, duration: 0.04, ease: "none" }, CUES.personne + 0.335);
+
+        // « un jour, tu arrêtes, et tu reprends tes anciennes habitudes ».
+        tl.to("#b1-fin", { scale: 1.2, duration: 0.15, ease: "power2.out" }, CUES.arretes);
+        tl.to("#b1-fin", { scale: 1, duration: 0.2, ease: "power2.inOut" }, CUES.arretes + 0.15);
+        tl.to("#b1-x-pain", { opacity: 0, scale: 0.3, duration: 0.18, ease: "power2.in" }, CUES.arretes + 0.1);
+        tl.to("#b1-x-gat", { opacity: 0, scale: 0.3, duration: 0.18, ease: "power2.in" }, CUES.arretes + 0.2);
+        tombe("#b1-pain1b", CUES.reprends, 22);
+        tombe("#b1-donut1", CUES.reprends + 0.14, 0);
+        tombe("#b1-gat1b", CUES.reprends + 0.28, -10);
+
+        // « L'Anses a fait le bilan : 8 fois sur 10, le poids remonte dans l'année ».
+        pose("#b1-anses", CUES.anses);
+        entre("#b1-poids-lab", CUES.bilan - 0.2);
+        tl.to("#b1-descend", { strokeDashoffset: 0, duration: 0.6, ease: "power2.out" }, CUES.bilan);
+        pose("#b1-huit", CUES.huit);
+        tl.to("#b1-remonte", { strokeDashoffset: 0, duration: 0.45, ease: "power2.inOut" }, CUES.remonte);
+        entre("#b1-an", CUES.annee);
+
+        // Le rééquilibrage · la même assiette, sous la ligne du régime (qui reste : on compare).
+        entre("#b1-t2", CUES.reequilibrage);
+        pose("#b1-a2", CUES.reequilibrage + 0.15);
+        tombe("#b1-pain2", CUES.reequilibrage + 0.4, -28);
+        tombe("#b1-gat2", CUES.reequilibrage + 0.52, 14);
+        tl.to("#b1-gat2", { scale: 0.7, duration: 0.3, ease: "power2.inOut" }, CUES.peu);
+        tl.fromTo("#b1-piste2", { opacity: 0 }, { opacity: 1, duration: 0.2, ease: "power2.out" }, CUES.peu + 0.3);
+        tl.fromTo("#b1-barre2", { scaleX: 0, transformOrigin: "0% 50%" }, { scaleX: 1, duration: 0.9, ease: "power2.out" }, CUES.bon);
+        pose("#b1-ok2", CUES.sans, 0.3);
+        pose("#b1-infini", CUES.pasdefin);
+        tl.to("#b1-infini", { scale: 1.16, duration: 0.15, ease: "power2.out" }, CUES.rien);
+        tl.to("#b1-infini", { scale: 1, duration: 0.2, ease: "power2.inOut" }, CUES.rien + 0.15);
+
+        window.__timelines["reequilibrage-b1"] = tl;
+      })();
+    </script>
+  </body>
+</html>

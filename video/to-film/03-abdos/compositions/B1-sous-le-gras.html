@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=1080, height=960">
+    <link rel="stylesheet" href="compositions/components/kit.css">
+    <link rel="stylesheet" href="compositions/components/youbud.css">
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.14.2/dist/gsap.min.js"></script>
+    <style>
+      @font-face {
+        font-family: "Archivo";
+        src: url("assets/fonts/Archivo.woff2") format("woff2");
+        font-weight: 400 900;
+        font-display: block;
+      }
+      /* Le cadre B de « Toujours pas d'abdos » : 1080 x 960, en haut de l'image, Mohamed en petit
+         dessous. Rien d'important au-dessus de y = 230 (le titre fixe).
+         Une seule image : les abdos déjà là, sous une couche de gras qui baisse partout en même temps.
+         Trois éléments et un chiffre : le gras, le mot du haut (6 semaines =, puis Déficit, puis
+         Abdos), les abdos ; 6 semaines. Texte du 28 septembre au soir, après les notes de Mohamed.
+         Tout est préfixé b1- : ces règles suivent la composition dans le montage complet. */
+      #b1-root { width: 1080px; height: 960px; }
+      #b1-scene { width: 1080px; height: 960px; }
+      .b1-toile { position: absolute; left: 0; top: 0; width: 1080px; height: 960px; display: block; }
+
+      /* La rangée du haut, un mot à la fois : l'étude (6 semaines, =), puis la réponse (Déficit),
+         puis la fin (Abdos, la coche). Des mots isolés, jamais de phrase. */
+      .b1-rang { position: absolute; left: 0; width: 1080px; display: flex; justify-content: center;
+        align-items: center; gap: 28px; }
+      #b1-etude { top: 250px; height: 96px; }
+      #b1-def-rang { top: 244px; height: 108px; }
+      #b1-fin { top: 246px; height: 104px; }
+      .b1-pill { font-size: 60px; font-weight: 900; line-height: 1; padding: 14px 34px; border-radius: 999px;
+        background: #ffffff; color: var(--ink); box-shadow: 0 7px 0 #d9d8d0; font-variant-numeric: tabular-nums;
+        white-space: nowrap; opacity: 0; will-change: transform; }
+      /* Déficit : la réponse, le seul mot en couleur du tableau. Encre sur vert (ce qui marche). */
+      #b1-deficit { font-size: 72px; font-weight: 900; line-height: 1; padding: 16px 40px; border-radius: 999px;
+        background: var(--yb-green); color: var(--ink); box-shadow: 0 8px 0 var(--yb-green-edge);
+        white-space: nowrap; opacity: 0; will-change: transform; }
+      #b1-abdos-lab { font-size: 80px; font-weight: 900; line-height: 1; color: var(--ink); white-space: nowrap;
+        opacity: 0; will-change: transform; }
+      #b1-ok { position: relative; flex: 0 0 96px; }
+
+      /* Les abdos : six carrés arrondis, deux colonnes de trois, rose muscle (froid, pour ne pas virer
+         à l'orange sous le voile jaune), rebord plein. Centrés sur le gras (x 540, y 640), assez
+         petits pour que le gras les couvre encore à 0,8 : il peut baisser d'un cinquième, et ça se voit.
+         Cachés sous le gras jusqu'à « Tes abdos sont déjà là ». */
+      #b1-abdos { position: absolute; left: 392px; top: 469px; width: 296px; height: 342px; opacity: 0;
+        will-change: transform; }
+      .b1-carre { position: absolute; width: 140px; height: 102px; border-radius: 30px; background: #ff8ea3;
+        box-shadow: 0 7px 0 #e0566f; }
+
+      /* Le gras : un coussin jaune plein, sans bordure, devant les abdos. Il baisse partout en même
+         temps (il rétrécit depuis son centre), puis devient un voile : il en reste, et on voit dessous. */
+      #b1-gras { position: absolute; left: 300px; top: 380px; width: 480px; height: 520px; border-radius: 130px;
+        background: var(--yb-yellow); box-shadow: 0 12px 0 var(--yb-yellow-edge); opacity: 0; will-change: transform; }
+      #b1-gras-lab { position: absolute; left: 0; top: 212px; width: 480px; font-size: 96px; font-weight: 900;
+        line-height: 1; color: var(--ink); text-align: center; white-space: nowrap; will-change: transform; }
+    </style>
+  </head>
+  <body>
+    <!-- Les bruitages : un soft_click par élément, volume 0,6 (1,0 du barème × 0,6, 28 septembre).
+         Ni woosh, ni riser, ni musique. -->
+    <div id="b1-root" data-composition-id="abdos-b1" data-start="0" data-duration="19.16" data-width="1080" data-height="960">
+      <div id="b1-scene" class="clip" data-start="0" data-duration="19.16" data-track-index="0">
+        <img class="b1-toile" src="assets/img/toile.jpg" alt="">
+
+        <div class="b1-rang" id="b1-etude">
+          <div class="b1-pill" id="b1-semaines">6 semaines</div>
+          <div class="b1-pill" id="b1-egal">=</div>
+        </div>
+
+        <div class="b1-rang" id="b1-def-rang">
+          <div id="b1-deficit">Déficit</div>
+        </div>
+
+        <div id="b1-abdos">
+          <div class="b1-carre" style="left: 0; top: 0;"></div>
+          <div class="b1-carre" style="left: 156px; top: 0;"></div>
+          <div class="b1-carre" style="left: 0; top: 120px;"></div>
+          <div class="b1-carre" style="left: 156px; top: 120px;"></div>
+          <div class="b1-carre" style="left: 0; top: 240px;"></div>
+          <div class="b1-carre" style="left: 156px; top: 240px;"></div>
+        </div>
+
+        <div id="b1-gras"><div id="b1-gras-lab">Gras</div></div>
+
+        <div class="b1-rang" id="b1-fin">
+          <div id="b1-abdos-lab">Abdos</div>
+          <div class="yb-badge" id="b1-ok"><svg viewBox="0 0 96 96"><path d="M30 50 L43 63 L68 36"/></svg></div>
+        </div>
+      </div>
+
+      <!-- Un clic par élément, chacun sur son repère (les mêmes secondes que CUES, dans le script). -->
+      <audio id="b1-s-gras" src="assets/sfx/soft_click.wav" data-start="0.21" data-duration="0.22" data-track-index="11" data-volume="0.6"></audio>
+      <audio id="b1-s-six" src="assets/sfx/soft_click.wav" data-start="2.74" data-duration="0.22" data-track-index="12" data-volume="0.6"></audio>
+      <audio id="b1-s-pas" src="assets/sfx/soft_click.wav" data-start="3.16" data-duration="0.22" data-track-index="13" data-volume="0.6"></audio>
+      <audio id="b1-s-deficit" src="assets/sfx/soft_click.wav" data-start="5.68" data-duration="0.22" data-track-index="14" data-volume="0.6"></audio>
+      <audio id="b1-s-abdos" src="assets/sfx/soft_click.wav" data-start="18.11" data-duration="0.22" data-track-index="15" data-volume="0.6"></audio>
+    </div>
+
+    <script>
+      (function () {
+        // LES REPÈRES, en secondes depuis le début du temps B (« Des chercheurs l'ont testé… »).
+        // Estimés à 4,75 mots par seconde avant le tournage (mot n → (n − 1) / 4,75) : à recaler sur
+        // la prise (`ke.py … plans` donne le temps de chaque mot : c'est ce qu'on écrit ici).
+        // Chaque repère qui a un clic est aussi le data-start de son <audio> (#b1-s-<nom>) :
+        // changer les deux ensemble. Durée du plan B : 19,16 s (91 mots), data-duration du root
+        // et de la scène ; la dernière image tient 0,3 s au moins après le dernier geste.
+        var CUES = {
+          gras: 0.21,      // « Des chercheurs » (mot 2) : le gras, un coussin jaune, et son mot · clic
+          six: 2.74,       // « six semaines » (mot 14) : 6 semaines · clic
+          pas: 3.16,       // « Pas de ventre en moins » (mot 16) : le =, le gras n'a pas bougé · clic
+          question: 4.21,  // « Qu'est-ce qui fait partir le ventre ? » (mot 21) : 6 semaines et = s'en
+                           //   vont, sans clic
+          deficit: 5.68,   // « Le déficit » (mot 28) : Déficit, en vert, en haut · clic
+          prend: 8.42,     // « il prend ce qui manque dans tout ton gras » (mot 41) : le gras se met à
+                           //   baisser partout en même temps, lentement, un peu chaque jour, jusqu'à
+                           //   « abdos » ; sans clic
+          abdos: 18.11,    // « Tes abdos sont déjà là » (mot 87) : Déficit s'en va, le gras devient un
+                           //   voile, les abdos apparaissent dessous, et le mot Abdos · clic
+          deja: 18.53      // « déjà là » (mot 89) : la coche verte se dessine, sans clic (le même élément)
+        };
+
+        var tl = gsap.timeline({ paused: true });
+
+        // La coche se dessine : on mesure le trait avant de construire la timeline.
+        var coche = document.querySelector("#b1-ok path");
+        var longueur = coche.getTotalLength() * 1.05;
+        gsap.set(coche, { strokeDasharray: longueur, strokeDashoffset: longueur });
+
+        // 1 · « chercheurs » : le gras entre, plein, avec son mot. Les abdos sont dessous, invisibles.
+        tl.fromTo("#b1-gras", { opacity: 0, scale: 0, y: 40 }, { opacity: 1, scale: 1, y: 0, duration: 0.55, ease: "power3.out" }, CUES.gras);
+        tl.fromTo("#b1-gras-lab", { opacity: 0, y: 12 }, { opacity: 1, y: 0, duration: 0.3, ease: "power3.out" }, CUES.gras + 0.2);
+
+        // 2 · « six semaines » : le seul chiffre, dit dans la voix.
+        tl.fromTo("#b1-semaines", { opacity: 0, scale: 0.3 }, { opacity: 1, scale: 1, duration: 0.45, ease: "back.out(1.6)" }, CUES.six);
+
+        // 3 · « Pas de ventre en moins » : le =, et le gras ne bouge pas.
+        tl.fromTo("#b1-egal", { opacity: 0, scale: 0.3 }, { opacity: 1, scale: 1, duration: 0.4, ease: "back.out(1.6)" }, CUES.pas);
+
+        // « Qu'est-ce qui fait partir le ventre ? » : l'étude s'en va, il ne reste que le gras.
+        tl.fromTo(["#b1-semaines", "#b1-egal"], { opacity: 1, y: 0 },
+          { opacity: 0, y: -30, duration: 0.25, ease: "power2.in", immediateRender: false }, CUES.question);
+
+        // 4 · « Le déficit » : la réponse, en vert, à la place de l'étude.
+        tl.fromTo("#b1-deficit", { opacity: 0, scale: 0.3 }, { opacity: 1, scale: 1, duration: 0.45, ease: "back.out(1.6)" }, CUES.deficit);
+
+        // « prend » → « abdos » : le gras baisse partout en même temps, depuis son centre, pendant
+        // l'attente et homme et femme. Il couvre encore les abdos à 0,8 (384 x 416 contre 296 x 342).
+        tl.fromTo("#b1-gras", { scale: 1 },
+          { scale: 0.8, duration: CUES.abdos - CUES.prend, ease: "sine.inOut", immediateRender: false }, CUES.prend);
+
+        // 5 · « Tes abdos sont déjà là » : Déficit s'en va, le gras devient un voile (il en reste),
+        // les abdos apparaissent dessous, le mot Abdos en haut ; la coche se dessine sur « déjà ».
+        tl.fromTo("#b1-deficit", { opacity: 1, y: 0 },
+          { opacity: 0, y: -30, duration: 0.25, ease: "power2.in", immediateRender: false }, CUES.abdos);
+        tl.fromTo("#b1-gras", { opacity: 1 }, { opacity: 0.22, duration: 0.4, ease: "power2.out", immediateRender: false }, CUES.abdos);
+        tl.fromTo("#b1-gras-lab", { opacity: 1 }, { opacity: 0, duration: 0.25, ease: "power2.out", immediateRender: false }, CUES.abdos);
+        tl.fromTo("#b1-abdos", { opacity: 0, scale: 0.92 }, { opacity: 1, scale: 1, duration: 0.45, ease: "power3.out" }, CUES.abdos);
+        tl.fromTo("#b1-abdos-lab", { opacity: 0, y: 12 }, { opacity: 1, y: 0, duration: 0.3, ease: "power3.out" }, CUES.abdos + 0.25);
+        tl.fromTo("#b1-ok", { opacity: 0, scale: 0.3 }, { opacity: 1, scale: 1, duration: 0.25, ease: "back.out(1.6)" }, CUES.deja);
+        tl.to(coche, { strokeDashoffset: 0, duration: 0.2, ease: "power2.out" }, CUES.deja + 0.08);
+        // Dernier geste fini à 18,81 s ; tout tient jusqu'à 19,16 s.
+
+        window.__timelines["abdos-b1"] = tl;
+      })();
+    </script>
+  </body>
+</html>

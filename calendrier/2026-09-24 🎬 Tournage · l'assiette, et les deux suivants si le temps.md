@@ -6,7 +6,7 @@ type: tournage
 
 # 🎬 Tournage · l'assiette, et les deux suivants si le temps
 
-**jeudi 24 septembre 2026.** Une vidéo sûre, deux de plus s'il reste du temps. La veille au soir : le test du bol, le pot de crème dessert, YouBud. Le planning et les accessoires : [[Tournage du jeudi 24 septembre]].
+**jeudi 24 septembre 2026.** Une vidéo sûre, deux de plus s'il reste du temps. La veille au soir : le test du bol, le pot de crème dessert, YouBud. Le planning et les accessoires : Tournage du jeudi 24 septembre.
 
 - [[2026-09-28 📱 Le plus calorique de ton assiette, ce n'est pas le dessert|samedi 26 · Le plus calorique de ton assiette, ce n'est pas le dessert]], d'abord
 - [[2026-09-29 📱 Ton estomac ne compte pas les calories|mardi 29 · Ton estomac ne compte pas les calories]], si le temps le permet

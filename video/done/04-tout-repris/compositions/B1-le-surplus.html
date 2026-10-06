@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=1080, height=960">
+    <link rel="stylesheet" href="compositions/components/kit.css">
+    <link rel="stylesheet" href="compositions/components/youbud.css">
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.14.2/dist/gsap.min.js"></script>
+    <script src="assets/vendor/lucide.min.js"></script>
+    <style>
+      @font-face {
+        font-family: "Archivo";
+        src: url("assets/fonts/Archivo.woff2") format("woff2");
+        font-weight: 400 900;
+        font-display: block;
+      }
+      /* Le cadre B de « Tu as perdu cinq kilos, et tout repris » : 1080 x 960, en haut de l'image, Mohamed en bas.
+         Version du 3 octobre, selon ses deux retours : l'animation EXPLIQUE (chaque chose porte son chiffre, on voit où
+         on en est, chaque phrase a son geste) et les aliments sont de VRAIES photos détourées, pas des icônes.
+         L'histoire : la même assiette qu'avant (2 200), un corps cinq kilos plus léger qui dépense moins
+         (2 200 → 2 080), donc un surplus (+120), donc les cinq kilos reviennent.
+         Les chiffres : 2 200 est un exemple ; −120 vient de Hall et al., Lancet 2011 (environ 24 kcal par jour et par
+         kilo perdu). Les colonnes ne sont pas à l'échelle : l'écart est grossi pour se voir, ce sont les chiffres qui
+         disent la mesure. Tout est préfixé b1-. */
+      #b1-scene { width: 1080px; height: 960px; }
+      .b1-toile { position: absolute; left: 0; top: 0; width: 1080px; height: 960px; display: block; }
+      .b1-lab { position: absolute; font-size: 44px; font-weight: 900; line-height: 1; color: var(--ink);
+        white-space: nowrap; text-align: center; opacity: 0; will-change: transform; }
+      .b1-ico { position: absolute; color: var(--ink); }
+      .b1-ico svg.lucide { display: block; width: 100%; height: 100%; }
+      .b1-n { position: absolute; font-weight: 900; line-height: 1; border-radius: 999px; white-space: nowrap;
+        font-variant-numeric: tabular-nums; opacity: 0; will-change: transform; }
+      .b1-food { position: absolute; display: block; opacity: 0; will-change: transform; }
+      .b1-chiffre { position: absolute; width: 240px; text-align: center; font-size: 62px; font-weight: 900; line-height: 1; color: var(--ink);
+        font-variant-numeric: tabular-nums; white-space: nowrap; opacity: 0; will-change: transform; }
+
+      /* L'assiette, la vraie, avec son pain et son gâteau ; « = avant » à côté. */
+      #b1-assiette { left: 206px; top: 226px; width: 196px; filter: drop-shadow(0 7px 0 #cfcec5); }
+      #b1-pain { left: 258px; top: 262px; width: 46px; }
+      #b1-gateau { left: 316px; top: 266px; width: 76px; }
+      #b1-avant { left: 420px; top: 292px; font-size: 44px; padding: 10px 24px; background: #ffffff; color: var(--ink); box-shadow: 0 6px 0 #dcdbd3; }
+
+      /* Le sol et les deux colonnes : ce que tu manges, ce que ton corps dépense. */
+      #b1-sol { position: absolute; left: 150px; top: 858px; width: 780px; height: 10px; border-radius: 5px; background: #d4d3ca; opacity: 0; }
+      .b1-col { position: absolute; width: 240px; height: 380px; top: 478px; border-radius: 30px 30px 8px 8px; will-change: transform; }
+      #b1-mange { left: 200px; background: var(--yb-orange); box-shadow: inset 0 -10px 0 var(--yb-orange-edge); }
+      #b1-depense { left: 640px; background: var(--yb-blue); box-shadow: inset 0 -10px 0 var(--yb-blue-edge); }
+      #b1-mange-n { left: 200px; top: 404px; }
+      #b1-depense-n { left: 640px; top: 404px; }
+      #b1-mange-lab { left: 200px; top: 880px; width: 240px; }
+      #b1-depense-lab { left: 640px; top: 880px; width: 240px; }
+
+      /* Ce que le corps dépense : la flamme, puis −5 kg, puis +5 kg quand le poids revient. */
+      #b1-flamme { left: 650px; top: 250px; width: 72px; height: 72px; color: var(--yb-blue-edge); opacity: 0; will-change: transform; }
+      #b1-moins5 { left: 736px; top: 240px; font-size: 46px; padding: 10px 24px; background: var(--yb-blue-2); color: var(--ink); box-shadow: 0 6px 0 #b4def6; }
+      #b1-plus5 { left: 736px; top: 318px; font-size: 46px; padding: 10px 24px; background: var(--yb-red); color: #ffffff; box-shadow: 0 6px 0 var(--yb-red-edge); }
+
+      /* Le surplus : la tranche du haut de la colonne Assiette, au-dessus du niveau de la dépense. */
+      #b1-niveau { position: absolute; left: 180px; top: 545px; width: 720px; height: 6px; border-radius: 3px;
+        background: repeating-linear-gradient(90deg, #3c3c3c 0 18px, transparent 18px 32px); opacity: 0; will-change: transform; }
+      #b1-surplus { position: absolute; left: 200px; top: 478px; width: 240px; height: 70px; border-radius: 30px 30px 0 0;
+        background: var(--yb-red); opacity: 0; will-change: transform; }
+      #b1-surplus-lab { left: 444px; top: 470px; width: 192px; font-size: 44px; color: var(--bad-ink); }
+      #b1-surplus-n { left: 464px; top: 524px; font-size: 54px; padding: 10px 24px; background: var(--yb-red); color: #ffffff; box-shadow: 0 6px 0 var(--yb-red-edge); }
+    </style>
+  </head>
+  <body>
+    <!-- Les bruitages : un soft_click par élément qui se pose, volume 0,6. Dans CapCut, celui du repère « reprends »
+         est remplacé par le son d'erreur de Mohamed (recaler.py, « erreurs »). -->
+    <div id="b1-root" data-composition-id="tout-repris-b1" data-start="0" data-duration="9.26" data-width="1080" data-height="960">
+      <div id="b1-scene" class="clip scene-b" data-start="0" data-duration="9.26" data-track-index="0">
+        <img class="b1-toile" src="assets/img/toile.jpg" alt="">
+
+        <img class="b1-food" id="b1-assiette" src="assets/img/aliments/assiette.png" alt="">
+        <img class="b1-food" id="b1-pain" src="assets/img/aliments/pain.png" alt="">
+        <img class="b1-food" id="b1-gateau" src="assets/img/aliments/gateau.png" alt="">
+        <div class="b1-n" id="b1-avant">= avant</div>
+
+        <div id="b1-sol"></div>
+        <div class="b1-col" id="b1-mange"></div>
+        <div id="b1-surplus"></div>
+        <div class="b1-col" id="b1-depense"></div>
+        <div id="b1-niveau"></div>
+        <div class="b1-chiffre" id="b1-mange-n">2 200</div>
+        <div class="b1-chiffre" id="b1-depense-n">2 200</div>
+        <div class="b1-lab" id="b1-mange-lab">Assiette</div>
+        <div class="b1-lab" id="b1-depense-lab">Dépense</div>
+
+        <div class="b1-ico" id="b1-flamme"><i data-lucide="flame"></i></div>
+        <div class="b1-n" id="b1-moins5">−5 kg</div>
+        <div class="b1-n" id="b1-plus5">+5 kg</div>
+
+        <div class="b1-lab" id="b1-surplus-lab">Surplus</div>
+        <div class="b1-n" id="b1-surplus-n">+120</div>
+      </div>
+
+      <audio id="b1-s-meme" src="assets/sfx/soft_click.wav" data-start="0.20" data-duration="0.22" data-track-index="11" data-volume="0.6"></audio>
+      <audio id="b1-s-pain" src="assets/sfx/soft_click.wav" data-start="1.32" data-duration="0.22" data-track-index="12" data-volume="0.6"></audio>
+      <audio id="b1-s-gateaux" src="assets/sfx/soft_click.wav" data-start="1.74" data-duration="0.22" data-track-index="13" data-volume="0.6"></audio>
+      <audio id="b1-s-quantite" src="assets/sfx/soft_click.wav" data-start="2.36" data-duration="0.22" data-track-index="14" data-volume="0.6"></audio>
+      <audio id="b1-s-corps" src="assets/sfx/soft_click.wav" data-start="3.22" data-duration="0.22" data-track-index="15" data-volume="0.6"></audio>
+      <audio id="b1-s-cinq" src="assets/sfx/soft_click.wav" data-start="3.64" data-duration="0.22" data-track-index="16" data-volume="0.6"></audio>
+      <audio id="b1-s-moins" src="assets/sfx/soft_click.wav" data-start="4.50" data-duration="0.22" data-track-index="17" data-volume="0.6"></audio>
+      <audio id="b1-s-donc" src="assets/sfx/soft_click.wav" data-start="5.44" data-duration="0.22" data-track-index="18" data-volume="0.6"></audio>
+      <audio id="b1-s-reprends" src="assets/sfx/soft_click.wav" data-start="5.84" data-duration="0.22" data-track-index="19" data-volume="0.6"></audio>
+      <audio id="b1-s-celui" src="assets/sfx/soft_click.wav" data-start="7.64" data-duration="0.22" data-track-index="20" data-volume="0.6"></audio>
+    </div>
+
+    <script>
+      (function () {
+        // LES REPÈRES, en secondes depuis le début du plan B. Chacun est attaché à un mot de la prise : recaler.py
+        // les réécrit quand le découpage change (ne pas les régler à la main). Chaque repère qui a un clic est aussi
+        // le data-start de son <audio> (#b1-s-<nom>).
+        var CUES = {
+          meme: 0.20,      // « La même chose qu'avant » : l'assiette, et « = avant » · clic
+          pain: 1.32,      // « Le pain » : le pain se pose sur l'assiette · clic
+          gateaux: 1.74,   // « les gâteaux » : la part de gâteau · clic
+          quantite: 2.36,  // « la même quantité » : la colonne Assiette monte, 2 200 · clic
+          corps: 3.22,     // « Mais ton corps » : la colonne Dépense, 2 200 aussi, et la flamme · clic
+          cinq: 3.64,      // « 5 kilos plus léger » : −5 kg · clic
+          moins: 4.50,     // « dépense moins » : la colonne Dépense baisse, 2 200 → 2 080, le niveau se trace · clic
+          donc: 5.44,      // « Et donc » : ce qui dépasse devient rouge, Surplus +120 · clic
+          reprends: 5.84,  // « tu reprends ton ancien poids » : +5 kg · son d'erreur
+          celui: 7.64      // « Celui qui va avec ta façon de manger » : l'assiette et « = avant » battent · clic
+        };
+
+        if (window.lucide) window.lucide.createIcons();
+        var tl = gsap.timeline({ paused: true });
+        var pose = function (sel, t, extra) {
+          tl.fromTo(sel, Object.assign({ opacity: 0, scale: 0.3 }, extra || {}), Object.assign({ opacity: 1, scale: 1, duration: 0.4, ease: "back.out(1.6)" }, extra || {}), t);
+        };
+
+        // 1 · « La même chose qu'avant » : l'assiette, puis « = avant ».
+        pose("#b1-assiette", CUES.meme);
+        pose("#b1-avant", CUES.meme + 0.22);
+        // 2 · « Le pain, les gâteaux » : les vrais aliments tombent dessus.
+        tl.fromTo("#b1-pain", { opacity: 0, y: -60, rotation: -28 }, { opacity: 1, y: 0, rotation: -28, duration: 0.3, ease: "power2.in" }, CUES.pain);
+        tl.fromTo("#b1-gateau", { opacity: 0, y: -60, rotation: 14 }, { opacity: 1, y: 0, rotation: 14, duration: 0.3, ease: "power2.in" }, CUES.gateaux);
+
+        // 3 · « la même quantité » : ce que tu manges, en calories.
+        tl.fromTo("#b1-sol", { opacity: 0 }, { opacity: 1, duration: 0.2, ease: "power2.out" }, CUES.quantite - 0.05);
+        tl.fromTo("#b1-mange", { scaleY: 0, transformOrigin: "50% 100%" }, { scaleY: 1, duration: 0.5, ease: "power3.out" }, CUES.quantite);
+        tl.fromTo("#b1-mange-n", { opacity: 0, y: 16 }, { opacity: 1, y: 0, duration: 0.3, ease: "power3.out" }, CUES.quantite + 0.25);
+        tl.fromTo("#b1-mange-lab", { opacity: 0, y: 12 }, { opacity: 1, y: 0, duration: 0.25, ease: "power3.out" }, CUES.quantite + 0.05);
+
+        // 4 · « Mais ton corps » : ce qu'il dépense, la même hauteur : ton poids ne bougeait pas.
+        tl.fromTo("#b1-depense", { scaleY: 0, transformOrigin: "50% 100%" }, { scaleY: 1, duration: 0.4, ease: "power3.out" }, CUES.corps);
+        tl.fromTo("#b1-depense-n", { opacity: 0, y: 16 }, { opacity: 1, y: 0, duration: 0.25, ease: "power3.out" }, CUES.corps + 0.2);
+        tl.fromTo("#b1-depense-lab", { opacity: 0, y: 12 }, { opacity: 1, y: 0, duration: 0.25, ease: "power3.out" }, CUES.corps + 0.05);
+        pose("#b1-flamme", CUES.corps + 0.05);
+
+        // 5 · « 5 kilos plus léger » : la pilule.
+        pose("#b1-moins5", CUES.cinq);
+
+        // 6 · « dépense moins » : la colonne baisse, son chiffre descend avec elle et compte jusqu'à 2 080.
+        var compteur = { v: 2200 }, chiffre = document.getElementById("b1-depense-n");
+        tl.to("#b1-depense", { scaleY: 310 / 380, duration: 0.6, ease: "power2.inOut" }, CUES.moins);
+        tl.to("#b1-depense-n", { y: 70, duration: 0.6, ease: "power2.inOut" }, CUES.moins);
+        tl.fromTo(compteur, { v: 2200 }, { v: 2080, duration: 0.6, ease: "power2.inOut",
+          onUpdate: function () { var n = Math.round(compteur.v); chiffre.textContent = Math.floor(n / 1000) + " " + ("00" + (n % 1000)).slice(-3); } }, CUES.moins);
+        tl.fromTo("#b1-niveau", { opacity: 0, scaleX: 0, transformOrigin: "100% 50%" }, { opacity: 1, scaleX: 1, duration: 0.4, ease: "power2.out" }, CUES.moins + 0.45);
+
+        // 7 · « Et donc » : la tranche qui dépasse le niveau de la dépense, c'est le surplus.
+        tl.fromTo("#b1-surplus", { opacity: 0 }, { opacity: 1, duration: 0.2, ease: "power2.out" }, CUES.donc);
+        tl.fromTo("#b1-surplus-lab", { opacity: 0, y: 12 }, { opacity: 1, y: 0, duration: 0.25, ease: "power3.out" }, CUES.donc + 0.05);
+        pose("#b1-surplus-n", CUES.donc + 0.15);
+
+        // 8 · « tu reprends ton ancien poids » : les cinq kilos reviennent, et la pilule encaisse.
+        pose("#b1-plus5", CUES.reprends);
+        tl.to("#b1-plus5", { x: -9, duration: 0.045, ease: "none" }, CUES.reprends + 0.42);
+        tl.to("#b1-plus5", { x: 9, duration: 0.045, ease: "none" }, CUES.reprends + 0.465);
+        tl.to("#b1-plus5", { x: -9, duration: 0.045, ease: "none" }, CUES.reprends + 0.51);
+        tl.to("#b1-plus5", { x: 0, duration: 0.04, ease: "none" }, CUES.reprends + 0.555);
+
+        // 9 · « Celui qui va avec ta façon de manger » : le poids suit l'assiette.
+        tl.to("#b1-assiette", { scale: 1.1, duration: 0.18, ease: "power2.out" }, CUES.celui);
+        tl.to("#b1-assiette", { scale: 1, duration: 0.25, ease: "power2.inOut" }, CUES.celui + 0.18);
+        tl.to("#b1-avant", { scale: 1.14, duration: 0.18, ease: "power2.out" }, CUES.celui + 0.1);
+        tl.to("#b1-avant", { scale: 1, duration: 0.25, ease: "power2.inOut" }, CUES.celui + 0.28);
+
+        window.__timelines["tout-repris-b1"] = tl;
+      })();
+    </script>
+  </body>
+</html>

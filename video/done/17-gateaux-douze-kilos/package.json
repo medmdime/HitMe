@@ -1,0 +1,16 @@
+{
+  "name": "17-gateaux-douze-kilos",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "check": "npx --yes hyperframes@0.8.21 check",
+    "draft:I1": "npx --yes hyperframes@0.8.21 render -c compositions/I1-le-professeur.html -o renders/I1-le-professeur-draft.mp4 -q draft",
+    "draft:I2": "npx --yes hyperframes@0.8.21 render -c compositions/I2-le-deficit.html -o renders/I2-le-deficit-draft.mp4 -q draft",
+    "draft:I3": "npx --yes hyperframes@0.8.21 render -c compositions/I3-dix-semaines.html -o renders/I3-dix-semaines-draft.mp4 -q draft",
+    "draft:I4": "npx --yes hyperframes@0.8.21 render -c compositions/I4-la-prise-de-sang.html -o renders/I4-la-prise-de-sang-draft.mp4 -q draft",
+    "render:I1": "npx --yes hyperframes@0.8.21 render -c compositions/I1-le-professeur.html -o renders/I1-le-professeur.mp4 -q high",
+    "render:I2": "npx --yes hyperframes@0.8.21 render -c compositions/I2-le-deficit.html -o renders/I2-le-deficit.mp4 -q high",
+    "render:I3": "npx --yes hyperframes@0.8.21 render -c compositions/I3-dix-semaines.html -o renders/I3-dix-semaines.mp4 -q high",
+    "render:I4": "npx --yes hyperframes@0.8.21 render -c compositions/I4-la-prise-de-sang.html -o renders/I4-la-prise-de-sang.mp4 -q high"
+  }
+}

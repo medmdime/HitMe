@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="fr" data-resolution="portrait">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=1080, height=1920">
+    <link rel="stylesheet" href="compositions/components/kit.css">
+    <link rel="stylesheet" href="compositions/components/youbud.css">
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.14.2/dist/gsap.min.js"></script>
+    <script src="assets/vendor/lucide.min.js"></script>
+    <style>
+      @font-face {
+        font-family: "Archivo";
+        src: url("assets/fonts/Archivo.woff2") format("woff2");
+        font-weight: 400 900;
+        font-display: block;
+      }
+      /* Insert 4 : sa prise de sang. Calqué sur le plan 0:50 → 0:57 de Train Bloom (la liste qui se remplit : −20 % LDL,
+         +20 % HDL, −40 % triglycérides, un pouce par ligne), avec une coche par ligne. Puis ce que Train Bloom ne dit
+         pas : pourquoi (ce ne sont sûrement pas les gâteaux, c'est le gras perdu). Les trois chiffres sont ceux de CNN
+         (2010) : −20 %, +20 %, −39 % (dit « presque quarante », écrit ≈ −40 %).
+         Tout est préfixé i4-. Zone utile : y 240 → 1500. */
+      .i4-toile { position: absolute; left: 0; top: 0; width: 1080px; height: 1920px; display: block; }
+      .i4-ico { position: absolute; }
+      .i4-ico svg.lucide { display: block; width: 100%; height: 100%; }
+      .i4-mot { position: absolute; font-weight: 900; line-height: 1; color: var(--ink); white-space: nowrap; opacity: 0; will-change: transform; }
+      .i4-trait { opacity: 0; }
+
+      /* L'en-tête : la seringue, et son mot. */
+      #i4-sang { position: absolute; left: 0; top: 262px; width: 1080px; text-align: center; opacity: 0; will-change: transform; }
+      #i4-sang span.yb-pill { font-size: 60px; padding: 12px 40px 12px 30px; background: var(--yb-red-2); color: var(--ink); box-shadow: 0 8px 0 #f5c4c4; }
+      #i4-sang .i4-ser { display: inline-block; width: 58px; height: 58px; vertical-align: -10px; margin-right: 16px; color: var(--bad-ink); }
+      #i4-sang .i4-ser svg.lucide { display: block; width: 100%; height: 100%; stroke-width: 2.6; }
+
+      /* Une ligne par résultat : la flèche, le chiffre, le nom, puis la coche sur le coin. */
+      .i4-rang { position: absolute; left: 80px; width: 920px; height: 226px; border-radius: 36px; background: #ffffff;
+        box-shadow: 0 10px 0 #dcdbd3; opacity: 0; will-change: transform; }
+      #i4-r1 { top: 424px; }
+      #i4-r2 { top: 692px; }
+      #i4-r3 { top: 960px; }
+      .i4-fleche { position: absolute; left: 34px; top: 58px; width: 110px; height: 110px; border-radius: 50%; background: var(--ink);
+        box-shadow: 0 6px 0 #2a2a2a; opacity: 0; will-change: transform; }
+      .i4-fleche .i4-ico { left: 23px; top: 23px; width: 64px; height: 64px; color: #ffffff; }
+      .i4-fleche .i4-ico svg.lucide { stroke-width: 3.2; }
+      .i4-n { position: absolute; left: 168px; top: 58px; font-size: 112px; font-weight: 900; line-height: 1; letter-spacing: -0.03em;
+        color: var(--ink); white-space: nowrap; font-variant-numeric: tabular-nums; opacity: 0; will-change: transform; transform-origin: 0% 50%; }
+      #i4-r3 .i4-n { font-size: 96px; top: 66px; }
+      .i4-nom { position: absolute; left: 520px; font-size: 50px; font-weight: 900; line-height: 1; color: var(--ink); white-space: nowrap; }
+      .i4-sorte { position: absolute; left: 518px; top: 44px; font-size: 40px; font-weight: 900; line-height: 1; padding: 9px 24px; border-radius: 999px; white-space: nowrap; }
+      #i4-r1 .i4-sorte { background: var(--yb-red); color: #ffffff; box-shadow: 0 5px 0 var(--yb-red-edge); }
+      #i4-r2 .i4-sorte { background: var(--yb-green); color: var(--ink); box-shadow: 0 5px 0 var(--yb-green-edge); }
+      #i4-r1 .i4-nom, #i4-r2 .i4-nom { top: 132px; }
+      #i4-r3 .i4-nom { top: 92px; left: 540px; font-size: 48px; }
+      .i4-rang .yb-badge { left: 846px; top: -30px; width: 100px; height: 100px; }
+
+      /* Pourquoi : pas les gâteaux (la croix), le gras perdu (la flèche vers le bas, la coche). */
+      #i4-gateau { position: absolute; left: 130px; top: 1262px; width: 216px; height: 216px; border-radius: 50%; background: #ffffff;
+        box-shadow: 0 9px 0 #dcdbd3; opacity: 0; will-change: transform; }
+      #i4-gateau img { position: absolute; left: 68px; top: -6px; width: 80px; display: block; will-change: transform; }
+      #i4-non { left: 268px; top: 1242px; width: 100px; height: 100px; }
+      #i4-gras { position: absolute; left: 470px; top: 1304px; opacity: 0; will-change: transform; transform-origin: 0% 50%; }
+      #i4-gras span.yb-pill { font-size: 84px; padding: 14px 44px 14px 34px; background: var(--yb-yellow); color: var(--ink);
+        box-shadow: 0 9px 0 var(--yb-yellow-edge); }
+      #i4-gras .i4-bas { display: inline-block; width: 78px; height: 78px; vertical-align: -12px; margin-right: 14px; }
+      #i4-gras .i4-bas svg.lucide { display: block; width: 100%; height: 100%; stroke-width: 3.2; }
+      #i4-oui { left: 872px; top: 1270px; width: 100px; height: 100px; }
+    </style>
+  </head>
+  <body>
+    <div id="i4-root" data-composition-id="gateaux-i4-sang" data-start="0" data-duration="12.17" data-width="1080" data-height="1920">
+      <div id="i4-scene" class="clip" data-start="0" data-duration="12.17" data-track-index="0">
+        <img class="i4-toile" src="assets/img/toile-pleine.jpg" alt="">
+
+        <div id="i4-sang"><span class="yb-pill"><span class="i4-ser"><i data-lucide="syringe"></i></span>Sang</span></div>
+
+        <div class="i4-rang" id="i4-r1">
+          <div class="i4-fleche"><div class="i4-ico"><i data-lucide="arrow-down"></i></div></div>
+          <div class="i4-n">−20 %</div>
+          <div class="i4-sorte">Mauvais</div>
+          <div class="i4-nom">cholestérol</div>
+          <div class="yb-badge"><svg viewBox="0 0 96 96"><path class="i4-trait" d="M27 50 L42 65 L70 34"/></svg></div>
+        </div>
+        <div class="i4-rang" id="i4-r2">
+          <div class="i4-fleche"><div class="i4-ico"><i data-lucide="arrow-up"></i></div></div>
+          <div class="i4-n">+20 %</div>
+          <div class="i4-sorte">Bon</div>
+          <div class="i4-nom">cholestérol</div>
+          <div class="yb-badge"><svg viewBox="0 0 96 96"><path class="i4-trait" d="M27 50 L42 65 L70 34"/></svg></div>
+        </div>
+        <div class="i4-rang" id="i4-r3">
+          <div class="i4-fleche"><div class="i4-ico"><i data-lucide="arrow-down"></i></div></div>
+          <div class="i4-n">≈ −40 %</div>
+          <div class="i4-nom">Triglycérides</div>
+          <div class="yb-badge"><svg viewBox="0 0 96 96"><path class="i4-trait" d="M27 50 L42 65 L70 34"/></svg></div>
+        </div>
+
+        <div id="i4-gateau"><img src="assets/img/aliments/gateau-fourre.png" alt=""></div>
+        <div class="yb-badge ko" id="i4-non"><svg viewBox="0 0 96 96"><path class="i4-trait" d="M32 32 L64 64 M64 32 L32 64"/></svg></div>
+        <div id="i4-gras"><span class="yb-pill"><span class="i4-bas"><i data-lucide="arrow-down"></i></span>Gras</span></div>
+        <div class="yb-badge" id="i4-oui"><svg viewBox="0 0 96 96"><path class="i4-trait" d="M27 50 L42 65 L70 34"/></svg></div>
+      </div>
+
+      <!-- Une liste qui se valide : une bulle par coche, qui monte à peine, et une seule réussite, sur la dernière. -->
+      <audio id="i4-s-mauvais" src="assets/sfx/soft_click.wav" data-start="0.00" data-duration="0.22" data-track-index="101" data-volume="0.6"></audio>
+      <audio id="i4-s-vingt1" src="assets/sfx/clicks.wav" data-start="1.28" data-duration="0.35" data-track-index="102" data-volume="0.57"></audio>
+      <audio id="i4-s-cent1" src="assets/sfx/bloop.mp3" data-start="1.68" data-duration="0.5" data-track-index="103" data-volume="0.13"></audio>
+      <audio id="i4-s-bon" src="assets/sfx/soft_click.wav" data-start="2.06" data-duration="0.22" data-track-index="104" data-volume="0.6"></audio>
+      <audio id="i4-s-vingt2" src="assets/sfx/clicks.wav" data-start="3.02" data-duration="0.35" data-track-index="105" data-volume="0.57"></audio>
+      <audio id="i4-s-cent2" src="assets/sfx/bloop.mp3" data-start="3.42" data-duration="0.5" data-track-index="106" data-volume="0.19"></audio>
+      <audio id="i4-s-triglycerides" src="assets/sfx/soft_click.wav" data-start="3.64" data-duration="0.22" data-track-index="107" data-volume="0.6"></audio>
+      <audio id="i4-s-quarante" src="assets/sfx/clicks.wav" data-start="6.17" data-duration="0.35" data-track-index="108" data-volume="0.57"></audio>
+      <audio id="i4-s-cent3" src="assets/sfx/correct.wav" data-start="6.59" data-duration="0.5" data-track-index="109" data-volume="0.4"></audio>
+      <audio id="i4-s-gateaux" src="assets/sfx/wrong.mp3" data-start="8.01" data-duration="0.5" data-track-index="110" data-volume="0.21"></audio>
+      <audio id="i4-s-gras" src="assets/sfx/soft_click.wav" data-start="9.04" data-duration="0.22" data-track-index="111" data-volume="0.6"></audio>
+      <audio id="i4-s-perdu" src="assets/sfx/bloop.mp3" data-start="9.57" data-duration="0.5" data-track-index="112" data-volume="0.24"></audio>
+    </div>
+
+    <script>
+      (function () {
+        // LES REPÈRES, en secondes depuis le début de l'insert. Estimés à 3,8 mots par seconde avant le tournage :
+        // chacun est attaché à un mot, et se recale sur la prise avant le rendu final. Un repère qui a un son est
+        // aussi le data-start de son <audio> (#i4-s-<nom>).
+        var CUES = {
+          mauvais: 0.00,        // « Son mauvais cholestérol » : l'en-tête Sang et la première ligne · clic
+          baisse1: 0.82,        // « a baissé » : la flèche vers le bas
+          vingt1: 1.28,         // « de vingt » : −20 % · clic
+          cent1: 1.68,          // « pour cent » : la coche · bulle
+          bon: 2.06,            // « Son bon cholestérol » : la deuxième ligne · clic
+          augmente: 2.54,       // « a augmenté » : la flèche vers le haut
+          vingt2: 3.02,         // « de vingt » : +20 % · clic
+          cent2: 3.42,          // « pour cent » : la coche · bulle
+          triglycerides: 3.64,  // « Ses triglycérides » : la troisième ligne · clic
+          baisse3: 5.83,        // « ont baissé » : la flèche vers le bas
+          quarante: 6.17,       // « presque quarante » : ≈ −40 % · clic
+          cent3: 6.59,          // « pour cent » : la coche · réussite
+          gateaux: 8.01,       // « pas les gâteaux » : le gâteau, puis sa croix · son d'erreur
+          gras: 9.04,          // « C'est le gras » : la pilule Gras, sa flèche vers le bas · clic
+          perdu: 9.57,         // « qu'il a perdu » : la coche · bulle
+          ameliore: 11.20       // « améliore ces chiffres » : les trois chiffres battent, l'un après l'autre
+        };
+
+        window.__timelines = window.__timelines || {};
+        if (window.lucide) window.lucide.createIcons();
+        var traits = document.querySelectorAll("#i4-scene .i4-trait");
+        for (var k = 0; k < traits.length; k++) {
+          var L = traits[k].getTotalLength() * 1.05;
+          traits[k].style.strokeDasharray = L;
+          traits[k].style.strokeDashoffset = L;
+        }
+        var tl = gsap.timeline({ paused: true });
+        var dessiner = function (sel, t) {
+          Array.prototype.forEach.call(document.querySelectorAll(sel), function (el) {
+            tl.fromTo(el, { opacity: 0 }, { opacity: 1, duration: 0.02, ease: "none" }, t);
+            tl.fromTo(el, { strokeDashoffset: parseFloat(el.style.strokeDasharray) }, { strokeDashoffset: 0, duration: 0.3, ease: "power2.out" }, t);
+          });
+        };
+        var verdict = function (sel, t) {
+          tl.fromTo(sel, { opacity: 0, scale: 0.3 }, { opacity: 1, scale: 1, duration: 0.35, ease: "back.out(1.8)" }, t);
+          dessiner(sel + " .i4-trait", t + 0.1);
+        };
+
+        // 0 · l'en-tête : la prise de sang.
+        tl.fromTo("#i4-sang", { opacity: 0, scale: 0.3 }, { opacity: 1, scale: 1, duration: 0.4, ease: "back.out(1.6)" }, CUES.mauvais);
+
+        // 1 à 3 · une ligne par phrase : la carte sur le nom, la flèche sur le verbe, le chiffre, puis la coche.
+        var rangs = [
+          ["#i4-r1", CUES.mauvais + 0.12, CUES.baisse1, CUES.vingt1, CUES.cent1, -14],
+          ["#i4-r2", CUES.bon, CUES.augmente, CUES.vingt2, CUES.cent2, 14],
+          ["#i4-r3", CUES.triglycerides, CUES.baisse3, CUES.quarante, CUES.cent3, -14]
+        ];
+        rangs.forEach(function (r) {
+          tl.fromTo(r[0], { opacity: 0, scale: 0, y: 40 }, { opacity: 1, scale: 1, y: 0, duration: 0.5, ease: "power3.out" }, r[1]);
+          tl.fromTo(r[0] + " .i4-fleche", { opacity: 0, scale: 0.3 }, { opacity: 1, scale: 1, duration: 0.35, ease: "back.out(1.6)" }, r[2]);
+          tl.fromTo(r[0] + " .i4-fleche .i4-ico", { y: r[5] }, { y: 0, duration: 0.3, ease: "power2.out" }, r[2] + 0.1);
+          tl.fromTo(r[0] + " .i4-n", { opacity: 0, scale: 0.3 }, { opacity: 1, scale: 1, duration: 0.4, ease: "back.out(1.6)" }, r[3]);
+          verdict(r[0] + " .yb-badge", r[4]);
+        });
+
+        // 4 · « Ce ne sont sûrement pas les gâteaux » : le gâteau, sa croix, et il encaisse.
+        tl.fromTo("#i4-gateau", { opacity: 0, scale: 0.3, x: 0 }, { opacity: 1, scale: 1, x: 0, duration: 0.4, ease: "back.out(1.6)" }, CUES.gateaux - 0.45);
+        tl.fromTo("#i4-gateau img", { rotation: -58 }, { rotation: -58, duration: 0.01 }, 0);
+        verdict("#i4-non", CUES.gateaux);
+        tl.to("#i4-gateau", { x: -9, duration: 0.04, ease: "none" }, CUES.gateaux + 0.12);
+        tl.to("#i4-gateau", { x: 9, duration: 0.04, ease: "none" }, CUES.gateaux + 0.17);
+        tl.to("#i4-gateau", { x: -9, duration: 0.04, ease: "none" }, CUES.gateaux + 0.22);
+        tl.to("#i4-gateau", { x: 0, duration: 0.04, ease: "none" }, CUES.gateaux + 0.27);
+
+        // 5 · « C'est le gras qu'il a perdu » : la pilule, sa flèche qui descend, puis la coche.
+        tl.fromTo("#i4-gras", { opacity: 0, scale: 0.3 }, { opacity: 1, scale: 1, duration: 0.4, ease: "back.out(1.6)" }, CUES.gras);
+        tl.fromTo("#i4-gras .i4-bas", { y: -16 }, { y: 0, duration: 0.3, ease: "power2.out" }, CUES.gras + 0.15);
+        verdict("#i4-oui", CUES.perdu);
+
+        // 6 · « améliore ces chiffres » : les trois chiffres battent, de haut en bas.
+        ["#i4-r1 .i4-n", "#i4-r2 .i4-n", "#i4-r3 .i4-n"].forEach(function (sel, i) {
+          tl.to(sel, { scale: 1.12, duration: 0.14, ease: "power2.out" }, CUES.ameliore + i * 0.16);
+          tl.to(sel, { scale: 1, duration: 0.2, ease: "power2.inOut" }, CUES.ameliore + i * 0.16 + 0.14);
+        });
+
+        // Tenue : rien ne bouge après 14,9.
+        window.__timelines["gateaux-i4-sang"] = tl;
+      })();
+    </script>
+  </body>
+</html>

@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=1080, height=960">
+    <link rel="stylesheet" href="compositions/components/kit.css">
+    <link rel="stylesheet" href="compositions/components/youbud.css">
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.14.2/dist/gsap.min.js"></script>
+    <style>
+      @font-face {
+        font-family: "Archivo";
+        src: url("assets/fonts/Archivo.woff2") format("woff2");
+        font-weight: 400 900;
+        font-display: block;
+      }
+      /* Le cadre B de « Perdre 10 kilos en deux mois ? » : 1080 x 960, posé en haut de l'image,
+         Mohamed en petit dessous. Rien d'important au-dessus de y = 230 (le titre fixe).
+         Trois éléments et un chiffre, de gauche à droite : le sucre et son eau, la colonne des
+         kilos perdus au bout d'un mois, le déficit (Brûlé contre Mangé) qui passe à « ÷ 2 ».
+         Jaune = le gras ; rouge pâle = ce qui manque dans l'assiette, le déficit. */
+      .clip.scene-b { width: 1080px; height: 960px; }
+      .toile { position: absolute; left: 0; top: 0; width: 1080px; height: 960px; display: block; }
+      .lab { position: absolute; font-size: 44px; font-weight: 900; line-height: 1; color: var(--ink);
+        text-align: center; white-space: nowrap; opacity: 0; will-change: transform; }
+
+      /* 1 · Le sucre et son eau : une carte bleu clair, le morceau de sucre, quatre gouttes. */
+      #b1-carte { left: 50px; top: 325px; width: 270px; height: 450px; opacity: 0;
+        --tint: var(--yb-blue-2); --edge: #b9e1f6; }
+      #b1-cube { position: absolute; left: 79px; top: 44px; width: 112px; height: 112px; border-radius: 24px;
+        background: #ffffff; box-shadow: 0 9px 0 #bcd9e8; opacity: 0; will-change: transform; }
+      #b1-cube-reflet { position: absolute; left: 20px; top: 20px; width: 28px; height: 28px; border-radius: 8px;
+        background: #eef3f5; }
+      #b1-lab-sucre { left: 0; top: 184px; width: 270px; }
+      .goutte { position: absolute; top: 262px; width: 52px; height: 75px; display: block; opacity: 0; will-change: transform; }
+      #b1-g1 { left: 17px; }
+      #b1-g2 { left: 79px; }
+      #b1-g3 { left: 141px; }
+      #b1-g4 { left: 203px; }
+      #b1-lab-eau { left: 0; top: 368px; width: 270px; }
+
+      /* 2 · Les kilos perdus au bout d'un mois : une colonne, le trait de la moitié, la part du gras.
+         Colonne 460 px : la moitié tombe à 230 px du sol (y = 585) ; le gras, 46 % (0,43 chez les
+         hommes, 0,48 chez les femmes, Heymsfield 2012), fait 212 px et s'arrête à y = 603, sous le trait. */
+      #b1-sol { position: absolute; left: 380px; top: 813px; width: 250px; height: 10px; border-radius: 5px;
+        background: #d4d3ca; opacity: 0; }
+      #b1-col { position: absolute; left: 400px; top: 355px; width: 210px; height: 460px;
+        border-radius: 30px 30px 8px 8px; background: var(--yb-blue-2); box-shadow: inset 0 -12px 0 #b9e1f6;
+        will-change: transform; }
+      #b1-gras { position: absolute; left: 400px; top: 603px; width: 210px; height: 212px;
+        border-radius: 12px 12px 8px 8px; background: var(--yb-yellow); box-shadow: inset 0 -12px 0 var(--yb-yellow-edge);
+        will-change: transform; }
+      #b1-trait { position: absolute; left: 376px; top: 579px; width: 258px; height: 12px; display: block;
+        will-change: transform; }
+      #b1-lab-moitie { left: 400px; top: 539px; width: 210px; font-size: 32px; }
+      #b1-lab-gras { left: 400px; top: 687px; width: 210px; }
+      #b1-lab-perdu { left: 400px; top: 839px; width: 210px; }
+
+      /* 3 · Le déficit : ce que ton corps brûle (orange, 420 px) contre ce que tu manges (vert).
+         Derrière la barre verte, un bloc rouge pâle de la hauteur de la barre orange : ce qui dépasse
+         de la verte, c'est le déficit. Au départ, Mangé fait 80 % de Brûlé (336 px, un déficit
+         ordinaire) ; sur « deux fois moins », elle tombe à la moitié de Brûlé (210 px, scaleY 0,625),
+         le trou rouge grandit et la pilule « ÷ 2 » se pose dedans. */
+      #b1-sol2 { position: absolute; left: 695px; top: 813px; width: 340px; height: 10px; border-radius: 5px;
+        background: #d4d3ca; opacity: 0; }
+      #b1-brule { position: absolute; left: 705px; top: 395px; width: 150px; height: 420px;
+        border-radius: 30px 30px 8px 8px; background: var(--yb-orange); box-shadow: inset 0 -12px 0 var(--yb-orange-edge);
+        will-change: transform; }
+      #b1-trou { position: absolute; left: 875px; top: 395px; width: 150px; height: 420px;
+        border-radius: 30px 30px 8px 8px; background: var(--yb-red-2); will-change: transform; }
+      #b1-mange { position: absolute; left: 875px; top: 479px; width: 150px; height: 336px;
+        border-radius: 30px 30px 8px 8px; background: var(--yb-green); box-shadow: inset 0 -12px 0 var(--yb-green-edge);
+        will-change: transform; }
+      #b1-lab-deficit { left: 850px; top: 335px; width: 200px; font-size: 40px; }
+      #b1-lab-brule { left: 705px; top: 839px; width: 150px; font-size: 40px; }
+      #b1-lab-mange { left: 875px; top: 839px; width: 150px; font-size: 40px; }
+      #b1-div { position: absolute; left: 880px; top: 452px; width: 140px; height: 96px; border-radius: 999px;
+        font-size: 64px; font-weight: 900; line-height: 96px; text-align: center; color: var(--ink); background: #ffffff;
+        box-shadow: 0 7px 0 #d9d8d0; font-variant-numeric: tabular-nums; white-space: nowrap; opacity: 0;
+        will-change: transform; }
+    </style>
+  </head>
+  <body>
+    <div id="b1-root" data-composition-id="dix-kilos-b1" data-start="0" data-duration="17.15" data-width="1080" data-height="960">
+      <div id="b1-scene" class="clip scene-b" data-start="0" data-duration="17.15" data-track-index="0">
+        <img class="toile" src="assets/img/toile.jpg" alt="">
+
+        <!-- 1 · le sucre et son eau -->
+        <div class="yb-card" id="b1-carte">
+          <div id="b1-cube"><div id="b1-cube-reflet"></div></div>
+          <div class="lab" id="b1-lab-sucre">Sucre</div>
+          <svg class="goutte" id="b1-g1" viewBox="4 1 16 23" aria-hidden="true"><path fill="#1899d6" transform="translate(0 1.2)" d="M12 22a7 7 0 0 0 7-7c0-2-1-3.9-3-5.5s-3.5-4-4-6.5c-.5 2.5-2 4.9-4 6.5C6 11.1 5 13 5 15a7 7 0 0 0 7 7z"/><path fill="#1cb0f6" d="M12 22a7 7 0 0 0 7-7c0-2-1-3.9-3-5.5s-3.5-4-4-6.5c-.5 2.5-2 4.9-4 6.5C6 11.1 5 13 5 15a7 7 0 0 0 7 7z"/><ellipse fill="#dcf2fd" cx="9.6" cy="15.2" rx="1.3" ry="2"/></svg>
+          <svg class="goutte" id="b1-g2" viewBox="4 1 16 23" aria-hidden="true"><path fill="#1899d6" transform="translate(0 1.2)" d="M12 22a7 7 0 0 0 7-7c0-2-1-3.9-3-5.5s-3.5-4-4-6.5c-.5 2.5-2 4.9-4 6.5C6 11.1 5 13 5 15a7 7 0 0 0 7 7z"/><path fill="#1cb0f6" d="M12 22a7 7 0 0 0 7-7c0-2-1-3.9-3-5.5s-3.5-4-4-6.5c-.5 2.5-2 4.9-4 6.5C6 11.1 5 13 5 15a7 7 0 0 0 7 7z"/><ellipse fill="#dcf2fd" cx="9.6" cy="15.2" rx="1.3" ry="2"/></svg>
+          <svg class="goutte" id="b1-g3" viewBox="4 1 16 23" aria-hidden="true"><path fill="#1899d6" transform="translate(0 1.2)" d="M12 22a7 7 0 0 0 7-7c0-2-1-3.9-3-5.5s-3.5-4-4-6.5c-.5 2.5-2 4.9-4 6.5C6 11.1 5 13 5 15a7 7 0 0 0 7 7z"/><path fill="#1cb0f6" d="M12 22a7 7 0 0 0 7-7c0-2-1-3.9-3-5.5s-3.5-4-4-6.5c-.5 2.5-2 4.9-4 6.5C6 11.1 5 13 5 15a7 7 0 0 0 7 7z"/><ellipse fill="#dcf2fd" cx="9.6" cy="15.2" rx="1.3" ry="2"/></svg>
+          <!-- La quatrième goutte, pâle : « trois à quatre fois leur poids ». -->
+          <svg class="goutte" id="b1-g4" viewBox="4 1 16 23" aria-hidden="true"><path fill="#1899d6" transform="translate(0 1.2)" d="M12 22a7 7 0 0 0 7-7c0-2-1-3.9-3-5.5s-3.5-4-4-6.5c-.5 2.5-2 4.9-4 6.5C6 11.1 5 13 5 15a7 7 0 0 0 7 7z"/><path fill="#1cb0f6" d="M12 22a7 7 0 0 0 7-7c0-2-1-3.9-3-5.5s-3.5-4-4-6.5c-.5 2.5-2 4.9-4 6.5C6 11.1 5 13 5 15a7 7 0 0 0 7 7z"/><ellipse fill="#dcf2fd" cx="9.6" cy="15.2" rx="1.3" ry="2"/></svg>
+          <div class="lab" id="b1-lab-eau">Eau</div>
+        </div>
+
+        <!-- 2 · les kilos perdus au bout d'un mois -->
+        <div id="b1-sol"></div>
+        <div id="b1-col"></div>
+        <div id="b1-gras"></div>
+        <svg id="b1-trait" viewBox="0 0 258 12" aria-hidden="true"><line x1="6" y1="6" x2="252" y2="6" stroke="#3c3c3c" stroke-width="6" stroke-linecap="round" stroke-dasharray="16 14"/></svg>
+        <div class="lab" id="b1-lab-moitie">Moitié</div>
+        <div class="lab" id="b1-lab-gras">Gras</div>
+        <div class="lab" id="b1-lab-perdu">Perdu</div>
+
+        <!-- 3 · le déficit : Brûlé contre Mangé, puis « ÷ 2 » -->
+        <div id="b1-sol2"></div>
+        <div id="b1-brule"></div>
+        <div id="b1-trou"></div>
+        <div id="b1-mange"></div>
+        <div class="lab" id="b1-lab-deficit">Déficit</div>
+        <div class="lab" id="b1-lab-brule">Brûlé</div>
+        <div class="lab" id="b1-lab-mange">Mangé</div>
+        <div id="b1-div">÷ 2</div>
+      </div>
+
+      <!-- Le son : un clic par entrée, soft_click à 1,0 × 0,6 (bruitages baissés de 40 % le 28 septembre). Rien d'autre. -->
+      <audio id="b1-s-01" src="assets/sfx/soft_click.wav" data-start="2.53" data-duration="0.22" data-track-index="11" data-volume="0.6"></audio>
+      <audio id="b1-s-02" src="assets/sfx/soft_click.wav" data-start="4.63" data-duration="0.22" data-track-index="12" data-volume="0.6"></audio>
+      <audio id="b1-s-03" src="assets/sfx/soft_click.wav" data-start="8.63" data-duration="0.22" data-track-index="13" data-volume="0.6"></audio>
+      <audio id="b1-s-04" src="assets/sfx/soft_click.wav" data-start="9.89" data-duration="0.22" data-track-index="14" data-volume="0.6"></audio>
+      <audio id="b1-s-05" src="assets/sfx/soft_click.wav" data-start="11.58" data-duration="0.22" data-track-index="15" data-volume="0.6"></audio>
+      <audio id="b1-s-06" src="assets/sfx/soft_click.wav" data-start="15.79" data-duration="0.22" data-track-index="16" data-volume="0.6"></audio>
+    </div>
+
+    <script>
+      (function () {
+        // Les repères, mot → seconde depuis le début de B (« Quand tu manges moins… »).
+        // Estimés à 4,75 mots par seconde : le mot n commence à (n − 1) / 4,75 s. B fait 80 mots,
+        // 16,84 s ; la composition dure 17,15 s, soit B et 0,3 s de tenue. À recaler sur la prise
+        // avant le rendu final (skill inserts-youbud, § 4) : ne changer que ces valeurs, puis les
+        // data-start des six <audio> ci-dessus.
+        var CUES = {
+          sucre: 2.53,    // mot 13, « réserves de sucre » : la carte, le morceau de sucre, « Sucre » (clic)
+          eau: 4.63,      // mot 23, « leur poids en eau » : quatre gouttes, la dernière pâle, « Eau » (clic)
+          moitie: 8.63,   // mot 42, « moins de la moitié » : la colonne, le trait, « Moitié » (clic)
+          perdus: 9.26,   // mot 45, « des kilos perdus » : « Perdu » sous la colonne (sans clic)
+          gras: 9.89,     // mot 48, « c'était du gras » : la part jaune monte, sous le trait ; « Gras » (clic)
+          deficit: 11.58, // mot 56, « avec un déficit » : Brûlé et Mangé montent, le trou rouge, « Déficit » (clic)
+          mange: 11.79,   // mot 57, « manger moins » : « Mangé » sous la barre verte (sans clic)
+          brule: 13.26,   // mot 64, « ton corps brûle » : « Brûlé » sous la barre orange (sans clic)
+          deux: 15.79     // mot 76, « deux fois moins » : Mangé tombe à la moitié de Brûlé, « ÷ 2 » (clic) ;
+                          // fini à 16,4 ; « chaque jour » (16,63) passe sans rien, puis la tenue
+        };
+        // De « Le gras, lui, part lentement » à « avec un » (10,3 → 11,5 s) et de « Dix kilos de gras »
+        // à « au minimum » (13,5 → 15,7 s), rien n'entre : on écoute.
+
+        var tl = gsap.timeline({ paused: true });
+
+        // 1 · « réserves de sucre », puis « en eau »
+        tl.fromTo("#b1-carte", { opacity: 0, scale: 0, y: 40 }, { opacity: 1, scale: 1, y: 0, duration: 0.5, ease: "power3.out" }, CUES.sucre);
+        tl.fromTo("#b1-cube", { opacity: 0, scale: 0.3 }, { opacity: 1, scale: 1, duration: 0.4, ease: "back.out(1.6)" }, CUES.sucre + 0.1);
+        tl.fromTo("#b1-lab-sucre", { opacity: 0, y: 12 }, { opacity: 1, y: 0, duration: 0.25, ease: "power3.out" }, CUES.sucre + 0.18);
+
+        tl.fromTo(["#b1-g1", "#b1-g2", "#b1-g3"], { opacity: 0, scale: 0.3, y: -24 }, { opacity: 1, scale: 1, y: 0, duration: 0.4, ease: "back.out(1.6)", stagger: 0.08 }, CUES.eau);
+        tl.fromTo("#b1-g4", { opacity: 0, scale: 0.3, y: -24 }, { opacity: 0.4, scale: 1, y: 0, duration: 0.4, ease: "back.out(1.6)" }, CUES.eau + 0.24);
+        tl.fromTo("#b1-lab-eau", { opacity: 0, y: 12 }, { opacity: 1, y: 0, duration: 0.25, ease: "power3.out" }, CUES.eau + 0.3);
+
+        // 2 · « moins de la moitié des kilos perdus, c'était du gras »
+        tl.fromTo("#b1-sol", { opacity: 0 }, { opacity: 1, duration: 0.2, ease: "power2.out" }, CUES.moitie);
+        tl.fromTo("#b1-col", { scaleY: 0, transformOrigin: "50% 100%" }, { scaleY: 1, duration: 0.45, ease: "power3.out" }, CUES.moitie);
+        tl.fromTo("#b1-trait", { scaleX: 0, transformOrigin: "0% 50%" }, { scaleX: 1, duration: 0.35, ease: "power2.out" }, CUES.moitie + 0.3);
+        tl.fromTo("#b1-lab-moitie", { opacity: 0, y: 12 }, { opacity: 1, y: 0, duration: 0.25, ease: "power3.out" }, CUES.moitie + 0.4);
+        tl.fromTo("#b1-lab-perdu", { opacity: 0, y: 12 }, { opacity: 1, y: 0, duration: 0.25, ease: "power3.out" }, CUES.perdus);
+        tl.fromTo("#b1-gras", { scaleY: 0, transformOrigin: "50% 100%" }, { scaleY: 1, duration: 0.45, ease: "power2.out" }, CUES.gras);
+        tl.fromTo("#b1-lab-gras", { opacity: 0, scale: 0.3 }, { opacity: 1, scale: 1, duration: 0.35, ease: "back.out(1.6)" }, CUES.gras + 0.25);
+
+        // 3 · « avec un déficit : manger moins que ce que ton corps brûle »
+        tl.fromTo("#b1-sol2", { opacity: 0 }, { opacity: 1, duration: 0.2, ease: "power2.out" }, CUES.deficit);
+        tl.fromTo(["#b1-brule", "#b1-trou"], { scaleY: 0, transformOrigin: "50% 100%" }, { scaleY: 1, duration: 0.45, ease: "power3.out" }, CUES.deficit);
+        tl.fromTo("#b1-mange", { scaleY: 0, transformOrigin: "50% 100%" }, { scaleY: 1, duration: 0.45, ease: "power3.out" }, CUES.deficit + 0.12);
+        tl.fromTo("#b1-lab-deficit", { opacity: 0, y: 12 }, { opacity: 1, y: 0, duration: 0.25, ease: "power3.out" }, CUES.deficit + 0.4);
+        tl.fromTo("#b1-lab-mange", { opacity: 0, y: 12 }, { opacity: 1, y: 0, duration: 0.25, ease: "power3.out" }, CUES.mange);
+        tl.fromTo("#b1-lab-brule", { opacity: 0, y: 12 }, { opacity: 1, y: 0, duration: 0.25, ease: "power3.out" }, CUES.brule);
+
+        // « Dix kilos de gras en deux mois, c'est manger au minimum deux fois moins, chaque jour. »
+        tl.to("#b1-mange", { scaleY: 0.625, duration: 0.5, ease: "power3.inOut" }, CUES.deux);
+        tl.fromTo("#b1-div", { opacity: 0, scale: 0.3 }, { opacity: 1, scale: 1, duration: 0.4, ease: "back.out(1.6)" }, CUES.deux + 0.2);
+
+        window.__timelines["dix-kilos-b1"] = tl;
+      })();
+    </script>
+  </body>
+</html>

@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="fr" data-resolution="portrait">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=1080, height=1920">
+    <link rel="stylesheet" href="compositions/components/kit.css">
+    <link rel="stylesheet" href="compositions/components/youbud.css">
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.14.2/dist/gsap.min.js"></script>
+    <script src="assets/vendor/lucide.min.js"></script>
+    <style>
+      @font-face {
+        font-family: "Archivo";
+        src: url("assets/fonts/Archivo.woff2") format("woff2");
+        font-weight: 400 900;
+        font-display: block;
+      }
+      /* Insert 2 : le déficit, en deux colonnes sur le même sol, à l'échelle (2 600 → 780 px, 1 800 → 540 px).
+         Calqué sur le plan 0:33 → 0:39 de Train Bloom : la barre bleue « calories out », sa ligne en pointillés, puis
+         la barre « calories in » remplie de gâteaux. Ajouté pour Mohamed (« chaque chose porte son chiffre ») : l'écart
+         entre les deux, nommé et chiffré, Déficit −800, à droite de la zone verte. 2 600, 1 800 et 800 sont dits dans la voix.
+         Tout est préfixé i2-. Zone utile : y 240 → 1500. */
+      .i2-toile { position: absolute; left: 0; top: 0; width: 1080px; height: 1920px; display: block; }
+      .i2-ico { position: absolute; }
+      .i2-ico svg.lucide { display: block; width: 100%; height: 100%; }
+      .i2-mot { position: absolute; font-weight: 900; line-height: 1; color: var(--ink); white-space: nowrap; opacity: 0; will-change: transform; }
+      .i2-n { position: absolute; width: 370px; text-align: center; font-size: 92px; font-weight: 900; line-height: 1; color: var(--ink);
+        font-variant-numeric: tabular-nums; white-space: nowrap; opacity: 0; will-change: transform; }
+      .i2-trait { opacity: 0; }
+
+      /* L'unité, une fois pour les deux colonnes. */
+      #i2-unite { position: absolute; left: 0; top: 290px; width: 1080px; text-align: center; opacity: 0; will-change: transform; }
+      #i2-unite span.yb-pill { font-size: 50px; padding: 12px 34px; background: #ffffff; color: var(--ink); box-shadow: 0 7px 0 #dcdbd3; }
+
+      #i2-sol { position: absolute; left: 90px; top: 1330px; width: 900px; height: 12px; border-radius: 6px; background: #d4d3ca; }
+
+      /* Ce qu'un homme comme lui brûle : la colonne bleue (la mesure), la flamme, 2 600. */
+      #i2-brule { position: absolute; left: 130px; top: 550px; width: 250px; height: 780px; border-radius: 34px 34px 8px 8px;
+        background: var(--yb-blue); box-shadow: inset 0 -12px 0 var(--yb-blue-edge); clip-path: inset(100% 0% 0% 0% round 34px 34px 8px 8px); }
+      #i2-brule .i2-ico { left: 83px; top: 36px; width: 84px; height: 84px; color: #ffffff; opacity: 0; }
+      #i2-brule-n { left: 70px; top: 436px; }
+      #i2-brule-mot { left: 130px; top: 1368px; width: 250px; text-align: center; font-size: 60px; }
+      /* La ligne de ce qu'il brûle, en pointillés, tirée jusqu'au-dessus de l'autre colonne. */
+      #i2-ligne { position: absolute; left: 106px; top: 542px; width: 632px; height: 8px; will-change: transform;
+        background: repeating-linear-gradient(90deg, var(--yb-blue-edge) 0 26px, transparent 26px 44px); }
+
+      /* Ce qu'il mange : la colonne orange, pleine de gâteaux, 1 800. Elle se découvre par le bas (clip), sans s'étirer. */
+      #i2-mange { position: absolute; left: 470px; top: 790px; width: 250px; height: 540px; border-radius: 34px 34px 8px 8px;
+        background: var(--yb-orange-2); overflow: hidden; }
+      #i2-motif { position: absolute; left: -190px; top: -200px; width: 640px; height: 940px; transform: rotate(-32deg); will-change: transform; }
+      #i2-motif img { position: absolute; display: block; width: 58px; }
+      #i2-mange-bord { position: absolute; left: 0; bottom: 0; width: 250px; height: 12px; background: var(--yb-orange-edge); }
+      #i2-mange-n { left: 744px; top: 796px; width: 300px; text-align: left; font-size: 84px; }
+      #i2-mange-mot { left: 470px; top: 1368px; width: 250px; text-align: center; font-size: 60px; }
+
+      /* L'écart : la zone verte entre ce qu'il mange et ce qu'il brûle, son mot et son chiffre. */
+      #i2-deficit { position: absolute; left: 470px; top: 550px; width: 250px; height: 244px; border-radius: 34px 34px 0 0;
+        background: #d2f0b6; will-change: transform; }
+      #i2-deficit-mot { left: 746px; top: 576px; font-size: 58px; }
+      #i2-deficit-n { position: absolute; left: 742px; top: 652px; opacity: 0; will-change: transform; transform-origin: 0% 50%; }
+      #i2-deficit-n span.yb-pill { font-size: 72px; padding: 10px 30px; background: var(--yb-green); color: var(--ink);
+        box-shadow: 0 7px 0 var(--yb-green-edge); font-variant-numeric: tabular-nums; }
+      #i2-ok { left: 543px; top: 1010px; width: 104px; height: 104px; }
+    </style>
+  </head>
+  <body>
+    <div id="i2-root" data-composition-id="gateaux-i2-deficit" data-start="0" data-duration="7.53" data-width="1080" data-height="1920">
+      <div id="i2-scene" class="clip" data-start="0" data-duration="7.53" data-track-index="0">
+        <img class="i2-toile" src="assets/img/toile-pleine.jpg" alt="">
+
+        <div id="i2-unite"><span class="yb-pill">kcal / jour</span></div>
+        <div id="i2-sol"></div>
+
+        <div id="i2-brule"><div class="i2-ico"><i data-lucide="flame"></i></div></div>
+        <div class="i2-n" id="i2-brule-n">0</div>
+        <div class="i2-mot" id="i2-brule-mot">Brûlé</div>
+
+        <div id="i2-deficit"></div>
+        <div id="i2-mange"><div id="i2-motif" data-layout-allow-overflow></div><div id="i2-mange-bord"></div></div>
+        <div class="i2-n" id="i2-mange-n">0</div>
+        <div class="i2-mot" id="i2-mange-mot">Mangé</div>
+
+        <div id="i2-ligne"></div>
+        <div class="i2-mot" id="i2-deficit-mot">Déficit</div>
+        <div id="i2-deficit-n"><span class="yb-pill">−800</span></div>
+        <div class="yb-badge" id="i2-ok"><svg viewBox="0 0 96 96"><path class="i2-trait" d="M27 50 L42 65 L70 34"/></svg></div>
+      </div>
+
+      <!-- Les deux barres qui se remplissent : le riser électronique de la bibliothèque CapCut (« Electronic Riser
+           sound », demandé par Mohamed le 5 octobre 2026). Sa montée finit à 2,35 s du fichier : chaque balise est
+           coupée pour que ce sommet tombe quand le chiffre se pose (2 600 : deuxmille + 0,75 ; 1 800 : mille + 0,5),
+           plan_bloom.py réécrit data-start et data-media-start. Durée (1,33 s, avant l'écho) et volumes (0,14 et 0,11) :
+           les réglages de Mohamed dans CapCut, le 5 octobre, avant son export. -->
+      <audio id="i2-s-monte" src="assets/sfx/riser-electronique.mp3" data-start="0.64" data-duration="1.33" data-media-start="0.82" data-track-index="42" data-volume="0.14"></audio>
+      <audio id="i2-s-jour" src="assets/sfx/soft_click.wav" data-start="2.22" data-duration="0.22" data-track-index="43" data-volume="0.6"></audio>
+      <audio id="i2-s-lui" src="assets/sfx/riser-electronique.mp3" data-start="2.75" data-duration="1.33" data-media-start="0.67" data-track-index="44" data-volume="0.11"></audio>
+      <audio id="i2-s-huit" src="assets/sfx/bloop.mp3" data-start="5.05" data-duration="0.5" data-track-index="46" data-volume="0.3"></audio>
+      <audio id="i2-s-deficit" src="assets/sfx/soft_click.wav" data-start="5.89" data-duration="0.22" data-track-index="47" data-volume="0.6"></audio>
+      <audio id="i2-s-gateaux" src="assets/sfx/correct.wav" data-start="7.09" data-duration="0.5" data-track-index="48" data-volume="0.4"></audio>
+    </div>
+
+    <script>
+      (function () {
+        // LES REPÈRES, en secondes depuis le début de l'insert. Estimés à 3,8 mots par seconde avant le tournage :
+        // chacun est attaché à un mot, et se recale sur la prise avant le rendu final. Un repère qui a un son est
+        // aussi le data-start de son <audio> (#i2-s-<nom>).
+        var CUES = {
+          brule: 0.64,      // « Un homme comme lui brûle » : la colonne bleue monte, la flamme
+          monte: 0.64,      // le même instant : le riser électronique monte avec la barre ; son sommet tombe sur
+                            // 2 600 posé (deuxmille + 0,75)
+          deuxmille: 1.42,  // « deux mille six cents » : le chiffre compte jusqu'à 2 600, sous le riser
+          jour: 2.22,       // « calories par jour » : la ligne en pointillés se tire, l'unité se pose · clic
+          lui: 2.75,        // « Lui est resté sous » : la colonne de gâteaux se découvre par le bas · le même riser
+          mille: 3.93,      // « mille huit cents » : 1 800, sur le sommet du riser
+          huit: 5.05,       // « huit cents calories » : la zone verte monte entre les deux, −800 · bulle
+          deficit: 5.89,    // « de déficit » : le mot Déficit · clic
+          meme: 6.82,       // « même avec » : les gâteaux de la colonne battent une fois
+          gateaux: 7.09     // « des gâteaux » : la coche · réussite
+        };
+
+        window.__timelines = window.__timelines || {};
+        if (window.lucide) window.lucide.createIcons();
+
+        // Le motif : des gâteaux en quinconce, posés par le calcul (aucun hasard), dans un plan incliné.
+        var motif = document.getElementById("i2-motif");
+        for (var r = 0; r < 6; r++) {
+          for (var c = 0; c < 8; c++) {
+            var im = document.createElement("img");
+            im.src = "assets/img/aliments/gateau-fourre.png";
+            im.alt = "";
+            im.style.left = (c * 82 + (r % 2) * 41) + "px";
+            im.style.top = (r * 180 - 40) + "px";
+            motif.appendChild(im);
+          }
+        }
+        var coche = document.querySelector("#i2-ok .i2-trait");
+        var L = coche.getTotalLength() * 1.05;
+        coche.style.strokeDasharray = L;
+        coche.style.strokeDashoffset = L;
+
+        var ecrire = function (el, v) {
+          var n = Math.round(v);
+          el.textContent = n >= 1000 ? Math.floor(n / 1000) + " " + ("00" + (n % 1000)).slice(-3) : String(n);
+        };
+        var tl = gsap.timeline({ paused: true });
+
+        // 1 · « brûle » : la colonne bleue se remplit depuis le sol, sans s'étirer, pendant toute la montée du riser ;
+        //     elle arrive en haut quand 2 600 se pose (deuxmille + 0,75). La flamme s'allume à l'arrivée.
+        var monteeBrule = Math.max(0.6, CUES.deuxmille + 0.75 - CUES.brule);
+        tl.fromTo("#i2-brule", { clipPath: "inset(100% 0% 0% 0% round 34px 34px 8px 8px)" },
+          { clipPath: "inset(0% 0% 0% 0% round 34px 34px 8px 8px)", duration: monteeBrule, ease: "power1.inOut" }, CUES.brule);
+        tl.fromTo("#i2-brule .i2-ico", { opacity: 0 }, { opacity: 1, duration: 0.25, ease: "power2.out" }, CUES.brule + monteeBrule - 0.2);
+        tl.fromTo("#i2-brule-mot", { opacity: 0, y: 12 }, { opacity: 1, y: 0, duration: 0.25, ease: "power3.out" }, CUES.brule + 0.05);
+
+        // 2 · « deux mille six cents » : le chiffre compte, puis bat une fois à l'arrivée.
+        var brule = { v: 0 }, bruleN = document.getElementById("i2-brule-n");
+        tl.fromTo("#i2-brule-n", { opacity: 0 }, { opacity: 1, duration: 0.15, ease: "power2.out" }, CUES.deuxmille);
+        tl.fromTo(brule, { v: 0 }, { v: 2600, duration: 0.75, ease: "power2.out", onUpdate: function () { ecrire(bruleN, brule.v); } }, CUES.deuxmille);
+        tl.fromTo("#i2-brule-n", { scale: 1 }, { scale: 1.12, duration: 0.14, ease: "power2.out" }, CUES.deuxmille + 0.75);
+        tl.to("#i2-brule-n", { scale: 1, duration: 0.2, ease: "power2.inOut" }, CUES.deuxmille + 0.9);
+
+        // 3 · « par jour » : la ligne de ce qu'il brûle se tire vers la droite ; l'unité se pose en haut.
+        tl.fromTo("#i2-ligne", { scaleX: 0, transformOrigin: "0% 50%" }, { scaleX: 1, duration: 0.45, ease: "power2.out" }, CUES.jour);
+        tl.fromTo("#i2-unite", { opacity: 0, y: 16 }, { opacity: 1, y: 0, duration: 0.3, ease: "power3.out" }, CUES.jour + 0.1);
+
+        // 4 · « Lui est resté sous » : la colonne de gâteaux se remplit par le bas, sans s'étirer, sous le même riser ;
+        //     elle arrive en haut quand 1 800 se pose (mille + 0,5).
+        var monteeMange = Math.max(0.6, CUES.mille + 0.5 - CUES.lui);
+        tl.fromTo("#i2-mange", { clipPath: "inset(100% 0% 0% 0% round 34px 34px 8px 8px)" },
+          { clipPath: "inset(0% 0% 0% 0% round 34px 34px 8px 8px)", duration: monteeMange, ease: "power1.inOut" }, CUES.lui);
+        tl.fromTo("#i2-mange-mot", { opacity: 0, y: 12 }, { opacity: 1, y: 0, duration: 0.25, ease: "power3.out" }, CUES.lui + 0.05);
+
+        // 5 · « mille huit cents » : son chiffre.
+        var mange = { v: 0 }, mangeN = document.getElementById("i2-mange-n");
+        tl.fromTo("#i2-mange-n", { opacity: 0 }, { opacity: 1, duration: 0.15, ease: "power2.out" }, CUES.mille);
+        tl.fromTo(mange, { v: 0 }, { v: 1800, duration: 0.5, ease: "power2.out", onUpdate: function () { ecrire(mangeN, mange.v); } }, CUES.mille);
+        tl.fromTo("#i2-mange-n", { scale: 1 }, { scale: 1.12, duration: 0.14, ease: "power2.out" }, CUES.mille + 0.5);
+        tl.to("#i2-mange-n", { scale: 1, duration: 0.2, ease: "power2.inOut" }, CUES.mille + 0.65);
+
+        // 6 · « huit cents » : la zone verte monte entre 1 800 et la ligne ; −800 se pose à sa droite.
+        tl.fromTo("#i2-deficit", { scaleY: 0, transformOrigin: "50% 100%" }, { scaleY: 1, duration: 0.45, ease: "power3.out" }, CUES.huit);
+        tl.fromTo("#i2-deficit-n", { opacity: 0, scale: 0.3 }, { opacity: 1, scale: 1, duration: 0.4, ease: "back.out(1.6)" }, CUES.huit + 0.18);
+
+        // 7 · « de déficit » : le mot, au-dessus du chiffre.
+        tl.fromTo("#i2-deficit-mot", { opacity: 0, y: 12 }, { opacity: 1, y: 0, duration: 0.3, ease: "power3.out" }, CUES.deficit);
+
+        // 8 · « même avec des gâteaux » : les gâteaux battent une fois, puis la coche se dessine.
+        tl.fromTo("#i2-motif", { scale: 1 }, { scale: 1.1, duration: 0.2, ease: "power2.out" }, CUES.meme);
+        tl.to("#i2-motif", { scale: 1, duration: 0.3, ease: "power2.inOut" }, CUES.meme + 0.2);
+        tl.fromTo("#i2-ok", { opacity: 0, scale: 0.3 }, { opacity: 1, scale: 1, duration: 0.35, ease: "back.out(1.8)" }, CUES.gateaux);
+        tl.fromTo(coche, { opacity: 0 }, { opacity: 1, duration: 0.02, ease: "none" }, CUES.gateaux + 0.1);
+        tl.fromTo(coche, { strokeDashoffset: L }, { strokeDashoffset: 0, duration: 0.3, ease: "power2.out" }, CUES.gateaux + 0.1);
+
+        // Tenue : rien ne bouge après 9,9.
+        window.__timelines["gateaux-i2-deficit"] = tl;
+      })();
+    </script>
+  </body>
+</html>

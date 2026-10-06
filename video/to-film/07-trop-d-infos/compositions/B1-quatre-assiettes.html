@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=1080, height=960">
+    <link rel="stylesheet" href="compositions/components/kit.css">
+    <link rel="stylesheet" href="compositions/components/youbud.css">
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.14.2/dist/gsap.min.js"></script>
+    <script src="assets/vendor/lucide.min.js"></script>
+    <style>
+      @font-face {
+        font-family: "Archivo";
+        src: url("assets/fonts/Archivo.woff2") format("woff2");
+        font-weight: 400 900;
+        font-display: block;
+      }
+      /* Le cadre B de « Tu ne sais plus quoi manger, avec toutes ces infos ? » : 1080 x 960, posé en
+         haut de l'image, Mohamed en petit dessous. Le titre fixe vit au-dessus de y = 230 : le contenu
+         utile reste entre y = 230 et y = 940. Trois éléments et un chiffre : les quatre assiettes
+         (l'essai), « = Calories » (la réponse), ce que tu avales (le plat, le jus, le biscuit), et le
+         trophée « 0 » (aucun régime n'a gagné). Aucune bordure : des teintes à rebord plein. */
+      .clip.scene-b { width: 1080px; height: 960px; }
+      .toile { position: absolute; left: 0; top: 0; width: 1080px; height: 960px; display: block; }
+      .ico { position: absolute; color: var(--ink); }
+      .ico svg.lucide { display: block; width: 100%; height: 100%; }
+
+      /* 1 · Les quatre assiettes, en grille 2 x 2 à gauche : une assiette blanche à rebord, et dedans
+         les parts de l'essai (Sacks 2009). Gras en jaune, protéines en bleu, glucides (le reste) en vert.
+         Ligne du haut : 20 % de gras ; du bas : 40 %. Colonne de gauche : 15 % de protéines ; de droite : 25 %.
+         Les glucides vont donc de 65 % (en haut à gauche) à 35 % (en bas à droite).
+         Aucun mot : on doit voir d'un coup d'œil que les quatre sont différentes. */
+      .b1-assiette { position: absolute; width: 190px; height: 190px; border-radius: 50%; background: #ffffff;
+        box-shadow: 0 9px 0 #d9d8d0; opacity: 0; will-change: transform; }
+      .b1-parts { position: absolute; left: 20px; top: 20px; width: 150px; height: 150px; border-radius: 50%; }
+      #b1-a1 { left: 85px; top: 268px; }
+      #b1-a2 { left: 325px; top: 268px; }
+      #b1-a3 { left: 85px; top: 508px; }
+      #b1-a4 { left: 325px; top: 508px; }
+      #b1-a1 .b1-parts { background: conic-gradient(var(--yb-yellow) 0 19%, #ffffff 0 20%, var(--yb-blue) 0 34%, #ffffff 0 35%, var(--yb-green) 0 99%, #ffffff 0 100%); }
+      #b1-a2 .b1-parts { background: conic-gradient(var(--yb-yellow) 0 19%, #ffffff 0 20%, var(--yb-blue) 0 44%, #ffffff 0 45%, var(--yb-green) 0 99%, #ffffff 0 100%); }
+      #b1-a3 .b1-parts { background: conic-gradient(var(--yb-yellow) 0 39%, #ffffff 0 40%, var(--yb-blue) 0 54%, #ffffff 0 55%, var(--yb-green) 0 99%, #ffffff 0 100%); }
+      #b1-a4 .b1-parts { background: conic-gradient(var(--yb-yellow) 0 39%, #ffffff 0 40%, var(--yb-blue) 0 64%, #ffffff 0 65%, var(--yb-green) 0 99%, #ffffff 0 100%); }
+
+      /* Le chiffre : le trophée et « 0 », la seule pilule rouge, sous la grille. Aucun régime n'a gagné. */
+      #b1-zero { position: absolute; left: 195px; top: 752px; width: 210px; height: 100px; border-radius: 999px;
+        background: var(--yb-red); box-shadow: 0 7px 0 var(--yb-red-edge); opacity: 0; will-change: transform; }
+      #b1-zero .ico { left: 50px; top: 24px; width: 52px; height: 52px; color: #ffffff; }
+      #b1-zero .txt { position: absolute; left: 124px; top: 0; height: 100px; line-height: 100px; font-size: 64px;
+        font-weight: 900; color: #ffffff; font-variant-numeric: tabular-nums; white-space: nowrap; }
+
+      /* 2 · La réponse, à droite de la grille : « = » puis la carte Calories, centrés sur la grille. */
+      #b1-egal { position: absolute; left: 551px; top: 426px; width: 110px; height: 110px; border-radius: 50%;
+        background: #ffffff; box-shadow: 0 7px 0 #d9d8d0; opacity: 0; will-change: transform; }
+      #b1-egal .barre { position: absolute; left: 30px; width: 50px; height: 14px; border-radius: 7px; background: var(--ink); }
+      #b1-egal .b-haut { top: 38px; }
+      #b1-egal .b-bas { top: 58px; }
+      #b1-cal { left: 700px; top: 366px; width: 300px; height: 230px; --tint: var(--yb-yellow-2); --edge: #efdc98; opacity: 0; }
+      #b1-cal .ico { left: 100px; top: 30px; width: 100px; height: 100px; color: var(--yb-orange); }
+      #b1-cal .lab { position: absolute; left: 0; top: 152px; width: 300px; font-size: 52px; font-weight: 900; line-height: 1;
+        color: var(--ink); text-align: center; white-space: nowrap; }
+
+      /* 3 · Ce que tu avales, sous la carte Calories : trois ronds blancs, le plat, le jus, le biscuit.
+         Des icônes seules : la voix les nomme au même moment. */
+      .b1-avale { position: absolute; top: 650px; width: 84px; height: 84px; border-radius: 50%; background: #ffffff;
+        box-shadow: 0 7px 0 #d9d8d0; opacity: 0; will-change: transform; }
+      .b1-avale .ico { left: 20px; top: 20px; width: 44px; height: 44px; }
+      #b1-plat { left: 703px; }
+      #b1-jus { left: 808px; }
+      #b1-biscuit { left: 913px; }
+    </style>
+  </head>
+  <body>
+    <!-- Les bruitages : un soft_click par élément, au volume du Kallaway edit (1 × 0,6). Rien d'autre.
+         Les data-start reprennent l'objet CUES du script : les changer ensemble. -->
+    <div id="b1-root" data-composition-id="trop-d-infos-b1" data-start="0" data-duration="15.67" data-width="1080" data-height="960">
+      <div id="b1-scene" class="clip scene-b" data-start="0" data-duration="15.67" data-track-index="0">
+        <img class="toile" src="assets/img/toile.jpg" alt="">
+
+        <div class="b1-assiette" id="b1-a1"><div class="b1-parts"></div></div>
+        <div class="b1-assiette" id="b1-a2"><div class="b1-parts"></div></div>
+        <div class="b1-assiette" id="b1-a3"><div class="b1-parts"></div></div>
+        <div class="b1-assiette" id="b1-a4"><div class="b1-parts"></div></div>
+
+        <div id="b1-zero">
+          <div class="ico"><i data-lucide="trophy"></i></div>
+          <div class="txt">0</div>
+        </div>
+
+        <div id="b1-egal"><div class="barre b-haut"></div><div class="barre b-bas"></div></div>
+        <div class="yb-card" id="b1-cal">
+          <div class="ico"><i data-lucide="flame"></i></div>
+          <div class="lab">Calories</div>
+        </div>
+
+        <div class="b1-avale" id="b1-plat"><div class="ico"><i data-lucide="utensils"></i></div></div>
+        <div class="b1-avale" id="b1-jus"><div class="ico"><i data-lucide="cup-soda"></i></div></div>
+        <div class="b1-avale" id="b1-biscuit"><div class="ico"><i data-lucide="cookie"></i></div></div>
+      </div>
+
+      <audio id="b1-s-01" src="assets/sfx/soft_click.wav" data-start="1.05" data-duration="0.22" data-track-index="11" data-volume="0.6"></audio>
+      <audio id="b1-s-02" src="assets/sfx/soft_click.wav" data-start="3.37" data-duration="0.22" data-track-index="12" data-volume="0.6"></audio>
+      <audio id="b1-s-03" src="assets/sfx/soft_click.wav" data-start="7.37" data-duration="0.22" data-track-index="13" data-volume="0.6"></audio>
+      <audio id="b1-s-04" src="assets/sfx/soft_click.wav" data-start="14.53" data-duration="0.22" data-track-index="14" data-volume="0.6"></audio>
+    </div>
+
+    <script>
+      (function () {
+        // Les repères : mot du texte B → seconde, depuis le début du temps B (« Des chercheurs… »).
+        // Estimés à 4,75 mots par seconde avant le tournage (le rang du mot ÷ 4,75, soit la fin du mot :
+        // jamais avant lui). Après le tournage, `ke.py … plans` donne les vrais temps : recaler chaque
+        // valeur sur sa syllabe, puis reporter quatre, aucun, calories et plat dans les data-start des
+        // quatre <audio>, et fin + 0,3 dans les deux data-duration (la racine et la scène).
+        var CUES = {
+          quatre: 1.05,    // « testé quatre régimes » (5e mot) : les quatre assiettes, l'une après l'autre, un clic
+          aucun: 3.37,     // « Aucun n'a gagné » (16e) : le trophée 0, un clic
+          calories: 7.37,  // « le même nombre de calories » (35e) : le = puis la carte Calories, un clic
+          decident: 11.37, // « les calories qui décident » (54e) : la carte Calories bat une fois, sans clic
+          plat: 14.53,     // « tout ce que tu avales : le plat » (69e) : le plat, le jus, le biscuit, un clic
+          fin: 15.37       // fin de « biscuit » (73 mots) : 0,3 s de tenue, rien ne bouge
+        };
+
+        if (window.lucide) window.lucide.createIcons();
+        var tl = gsap.timeline({ paused: true });
+
+        // 1 · Les quatre assiettes : de gauche à droite, puis de haut en bas.
+        ["#b1-a1", "#b1-a2", "#b1-a3", "#b1-a4"].forEach(function (id, i) {
+          tl.fromTo(id, { opacity: 0, scale: 0, y: 40 }, { opacity: 1, scale: 1, y: 0, duration: 0.55, ease: "power3.out" }, CUES.quatre + i * 0.12);
+        });
+
+        // Le chiffre : le trophée, 0. Aucun n'a gagné.
+        tl.fromTo("#b1-zero", { opacity: 0, scale: 0.3 }, { opacity: 1, scale: 1, duration: 0.45, ease: "back.out(1.6)" }, CUES.aucun);
+
+        // 2 · La réponse : le =, puis la carte Calories.
+        tl.fromTo("#b1-egal", { opacity: 0, scale: 0.3 }, { opacity: 1, scale: 1, duration: 0.4, ease: "back.out(1.6)" }, CUES.calories);
+        tl.fromTo("#b1-cal", { opacity: 0, scale: 0, y: 40 }, { opacity: 1, scale: 1, y: 0, duration: 0.55, ease: "power3.out" }, CUES.calories + 0.1);
+
+        // « ce sont les calories qui décident » : la carte bat une fois (fini à 11,77 s).
+        tl.fromTo("#b1-cal", { scale: 1 }, { scale: 1.08, duration: 0.2, ease: "power1.inOut", yoyo: true, repeat: 1, immediateRender: false }, CUES.decident);
+
+        // 3 · Ce que tu avales : le plat, le jus, le biscuit, un rond toutes les 0,2 s (fini à 15,43 s).
+        // Ensuite, plus rien ne bouge.
+        ["#b1-plat", "#b1-jus", "#b1-biscuit"].forEach(function (id, i) {
+          tl.fromTo(id, { opacity: 0, scale: 0, y: 40 }, { opacity: 1, scale: 1, y: 0, duration: 0.5, ease: "power3.out" }, CUES.plat + i * 0.2);
+        });
+
+        window.__timelines["trop-d-infos-b1"] = tl;
+      })();
+    </script>
+  </body>
+</html>

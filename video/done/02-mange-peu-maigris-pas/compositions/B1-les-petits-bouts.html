@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=1080, height=960">
+    <link rel="stylesheet" href="compositions/components/kit.css">
+    <link rel="stylesheet" href="compositions/components/youbud.css">
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.14.2/dist/gsap.min.js"></script>
+    <script src="assets/vendor/lucide.min.js"></script>
+    <style>
+      @font-face {
+        font-family: "Archivo";
+        src: url("assets/fonts/Archivo.woff2") format("woff2");
+        font-weight: 400 900;
+        font-display: block;
+      }
+      /* Le cadre B de « Tu manges peu, et tu ne maigris pas » : 1080 x 960, en haut de l'image, Mohamed en bas.
+         Version du 2 octobre au soir, après son retour : « la barre du corps peut montrer 2 000 calories, le téléphone
+         1 700 ; une barre de déficit ; avec le croissant et le biscuit, on y arrive. Là, on n'explique pas où on est.
+         Il faut que ça s'aligne avec ce que je dis. » Donc : chaque chose porte son chiffre, et chaque phrase a son geste.
+         Scène 1, l'histoire de son ami : l'appli dit 1 700, le corps brûle 2 000, le déficit vaut −300 ; les deux bouts
+         jamais notés tombent dedans, +300, le déficit passe à 0.
+         Scène 2, l'étude (Lichtman 1992) : mangé 2 081, noté 1 028, presque le double.
+         2 000 et 1 700 sont l'exemple donné par Mohamed pour son ami ; 300, 2 081 et 1 028 sont dits ou mesurés.
+         Tout est préfixé b1- : ces règles suivent la composition dans le montage complet. */
+      #b1-scene { width: 1080px; height: 960px; }
+      .b1-toile { position: absolute; left: 0; top: 0; width: 1080px; height: 960px; display: block; }
+      .b1-plan { position: absolute; left: 0; top: 0; width: 1080px; height: 960px; will-change: transform; }
+
+      /* Un mot seul : jamais une phrase. */
+      .b1-lab { position: absolute; font-size: 48px; font-weight: 900; line-height: 1; color: var(--ink);
+        white-space: nowrap; opacity: 0; will-change: transform; }
+      /* Une icône Lucide dans une boîte dimensionnée : la couleur vient de la boîte. */
+      .b1-ico { position: absolute; color: var(--ink); }
+      .b1-ico svg.lucide { display: block; width: 100%; height: 100%; }
+      /* Un chiffre dans sa pilule. */
+      .b1-n { font-weight: 900; line-height: 1; border-radius: 999px; white-space: nowrap; font-variant-numeric: tabular-nums; }
+
+      /* Le sol, sous la colonne de l'appli. */
+      #b1-sol { position: absolute; left: 340px; top: 858px; width: 400px; height: 10px; border-radius: 5px; background: #d4d3ca; }
+
+      /* 1 · l'appli : ce qu'il notait. La colonne EST le téléphone ; son compteur affiche 1 700. */
+      #b1-appli { position: absolute; left: 420px; top: 548px; width: 240px; height: 310px; border-radius: 30px 30px 8px 8px;
+        background: #3c3c3c; will-change: transform; }
+      #b1-appli-ico { left: 12px; top: 12px; width: 216px; height: 298px; border-radius: 20px 20px 0 0; background: #ffffff; overflow: hidden; }
+      #b1-anneau { position: absolute; left: 43px; top: 10px; width: 130px; height: 130px; display: block; }
+      #b1-kcal { position: absolute; left: 43px; top: 50px; width: 130px; text-align: center; font-size: 34px; font-weight: 900;
+        line-height: 34px; color: var(--ink); font-variant-numeric: tabular-nums; }
+      #b1-kcal-u { position: absolute; left: 43px; top: 86px; width: 130px; text-align: center; font-size: 19px; font-weight: 900;
+        line-height: 20px; color: #7d7c73; }
+      .b1-repas { position: absolute; left: 16px; width: 184px; height: 40px; border-radius: 12px; background: #f1f0ea; }
+      .b1-repas .b1-ico { left: 8px; top: 6px; width: 28px; height: 28px; color: var(--yb-orange-edge); }
+      .b1-repas .b1-trait { position: absolute; left: 46px; top: 14px; width: 86px; height: 12px; border-radius: 6px; background: #d4d3ca; }
+      .b1-repas .b1-coche { position: absolute; left: 146px; top: 6px; width: 28px; height: 28px; color: var(--good-ink); }
+      .b1-repas .b1-coche svg.lucide { display: block; width: 100%; height: 100%; stroke-width: 3.5; }
+      #b1-appli-lab { left: 420px; top: 880px; width: 240px; text-align: center; font-size: 44px; }
+
+      /* 2 · le déficit : l'espace entre ce qu'il notait et ce que son corps brûle. Vert, sous la ligne bleue. */
+      #b1-deficit { position: absolute; left: 420px; top: 380px; width: 240px; height: 176px; border-radius: 30px 30px 0 0;
+        background: #d2f0b6; will-change: transform; }
+      /* Le mot, à gauche de la zone, et son chiffre dessous : −300, puis 0 quand les bouts l'ont rempli. */
+      #b1-deficit-lab { right: 690px; top: 410px; }
+      #b1-barre { position: absolute; left: -10px; right: -10px; top: 19px; height: 12px; border-radius: 6px;
+        background: var(--yb-red); box-shadow: 0 3px 0 var(--yb-red-edge); will-change: transform; }
+      .b1-def { position: absolute; right: 690px; top: 476px; font-size: 60px; padding: 10px 28px; opacity: 0; will-change: transform; }
+      #b1-def-n { background: var(--yb-green-2); color: var(--good-ink); box-shadow: 0 6px 0 #b9e392; }
+      #b1-def-0 { background: var(--yb-red); color: #ffffff; box-shadow: 0 6px 0 var(--yb-red-edge); }
+      /* La ligne du corps : ce qu'il brûle, 2 000. Bleue (la mesure), avec la flamme, le mot et le chiffre au-dessus. */
+      #b1-ligne { position: absolute; left: 390px; top: 376px; width: 300px; height: 8px; border-radius: 4px;
+        background: var(--yb-blue); will-change: transform; }
+      #b1-corps { position: absolute; left: 290px; top: 276px; width: 500px; height: 80px; display: flex;
+        align-items: center; justify-content: center; gap: 14px; opacity: 0; will-change: transform; }
+      #b1-corps-ico { position: relative; width: 60px; height: 60px; color: var(--yb-blue-edge); }
+      #b1-corps-mot { font-size: 50px; font-weight: 900; line-height: 1; color: var(--ink); white-space: nowrap; }
+      #b1-corps-n { font-size: 48px; padding: 8px 22px; background: var(--yb-blue-2); color: var(--ink); box-shadow: 0 6px 0 #b4def6; }
+
+      /* 3 · les bouts : un bout de croissant, un biscuit. Des tuiles orange (le grignotage), posées à leur place
+         finale dans la zone ; elles entrent de travers, à droite, puis y tombent. Leur pastille : jamais notés. */
+      .b1-bout { position: absolute; left: 420px; width: 240px; height: 77px; border-radius: 22px;
+        background: var(--yb-orange-2); box-shadow: 0 7px 0 var(--yb-orange-edge); opacity: 0; will-change: transform; }
+      /* Le vrai aliment, en photo détourée, posé sur sa tuile (3 octobre : « de vrais aliments, pas des emoji »). */
+      .b1-bout > .b1-photo { position: absolute; display: block; }
+      #b1-croissant > .b1-photo { left: 42px; top: -10px; width: 156px; }
+      #b1-biscuit > .b1-photo { left: 74px; top: -8px; width: 92px; }
+      #b1-biscuit { top: 464px; }
+      #b1-croissant { top: 380px; }
+      .b1-non { position: absolute; left: 196px; top: -26px; width: 64px; height: 64px; border-radius: 50%; background: var(--yb-red);
+        box-shadow: 0 5px 0 var(--yb-red-edge); opacity: 0; will-change: transform; }
+      .b1-non .b1-ico { left: 14px; top: 14px; width: 36px; height: 36px; color: #ffffff; }
+      .b1-non .b1-ico svg.lucide { stroke-width: 2.8; }
+
+      /* Le chiffre : +300, jaune (le terme clé), à droite de la pile. */
+      #b1-plus { position: absolute; left: 702px; top: 414px; font-size: 72px; padding: 14px 32px;
+        background: var(--yb-yellow); color: var(--ink); box-shadow: 0 7px 0 var(--yb-yellow-edge); opacity: 0; will-change: transform; }
+
+      /* Scène 2 · l'étude : ce qu'elles mangeaient, ce qu'elles notaient. Deux colonnes sur le même sol, à l'échelle
+         (2 081 → 400 px, 1 028 → 198 px), et « × 2 » dans le vide au-dessus de la petite. */
+      #b1-labo { position: absolute; left: 318px; top: 236px; width: 110px; height: 110px; border-radius: 50%; background: var(--yb-blue-2);
+        box-shadow: 0 7px 0 #b4def6; opacity: 0; will-change: transform; }
+      #b1-labo .b1-ico { left: 25px; top: 25px; width: 60px; height: 60px; color: var(--yb-blue-edge); }
+      /* « des gens qui ne maigrissaient pas » : le poids, et 0 kg. */
+      #b1-stable { position: absolute; left: 462px; top: 244px; height: 94px; padding: 0 34px 0 26px; display: flex; align-items: center; gap: 16px;
+        border-radius: 999px; background: #ffffff; box-shadow: 0 7px 0 #dcdbd3; opacity: 0; will-change: transform; }
+      #b1-stable .b1-ico { position: relative; width: 56px; height: 56px; color: var(--ink); }
+      #b1-stable-n { font-size: 56px; font-weight: 900; line-height: 1; color: var(--ink); white-space: nowrap; }
+      #b1-sol2 { position: absolute; left: 240px; top: 858px; width: 600px; height: 10px; border-radius: 5px; background: #d4d3ca; opacity: 0; }
+      .b1-col { position: absolute; width: 220px; border-radius: 30px 30px 8px 8px; will-change: transform; }
+      #b1-mange { left: 290px; top: 458px; height: 400px; background: var(--yb-orange); box-shadow: inset 0 -10px 0 var(--yb-orange-edge); }
+      #b1-note { left: 570px; top: 660px; height: 198px; background: var(--yb-blue); box-shadow: inset 0 -10px 0 var(--yb-blue-edge); }
+      .b1-col .b1-ico { left: 75px; top: 28px; width: 70px; height: 70px; color: #ffffff; opacity: 0; }
+      .b1-chiffre { position: absolute; width: 220px; text-align: center; font-size: 64px; font-weight: 900; line-height: 1; color: var(--ink);
+        font-variant-numeric: tabular-nums; white-space: nowrap; opacity: 0; will-change: transform; }
+      #b1-mange-n { left: 290px; top: 382px; }
+      #b1-note-n { left: 570px; top: 584px; }
+      #b1-mange-lab { left: 290px; top: 880px; width: 220px; text-align: center; font-size: 44px; }
+      #b1-note-lab { left: 570px; top: 880px; width: 220px; text-align: center; font-size: 44px; }
+      #b1-double { position: absolute; left: 598px; top: 446px; font-size: 76px; padding: 14px 34px;
+        background: var(--yb-yellow); color: var(--ink); box-shadow: 0 7px 0 var(--yb-yellow-edge); opacity: 0; will-change: transform; }
+    </style>
+  </head>
+  <body>
+    <!-- Les bruitages : un soft_click par élément qui se pose, volume 0,6. Dans CapCut, ceux des repères « jamais » et
+         « annuler » sont remplacés par le son d'erreur de Mohamed (recaler.py, « erreurs »). Ni woosh, ni riser. -->
+    <div id="b1-root" data-composition-id="mange-peu-b1" data-start="0" data-duration="15.99" data-width="1080" data-height="960">
+      <div id="b1-scene" class="clip" data-start="0" data-duration="15.99" data-track-index="0">
+        <img class="b1-toile" src="assets/img/toile.jpg" alt="">
+
+        <div class="b1-plan" id="b1-s1">
+          <div id="b1-sol"></div>
+
+          <div id="b1-deficit"></div>
+          <div id="b1-appli">
+            <div class="b1-ico" id="b1-appli-ico">
+              <svg id="b1-anneau" viewBox="0 0 130 130">
+                <circle cx="65" cy="65" r="54" fill="none" stroke="#ecebe4" stroke-width="13"/>
+                <circle cx="65" cy="65" r="54" fill="none" stroke="#58cc02" stroke-width="13" stroke-linecap="round"
+                  stroke-dasharray="288 339.3" transform="rotate(-90 65 65)"/>
+              </svg>
+              <div id="b1-kcal">1 700</div>
+              <div id="b1-kcal-u">kcal</div>
+              <div class="b1-repas" style="top: 152px;"><div class="b1-ico"><i data-lucide="coffee"></i></div><div class="b1-trait"></div><div class="b1-coche"><i data-lucide="check"></i></div></div>
+              <div class="b1-repas" style="top: 200px;"><div class="b1-ico"><i data-lucide="sandwich"></i></div><div class="b1-trait"></div><div class="b1-coche"><i data-lucide="check"></i></div></div>
+              <div class="b1-repas" style="top: 248px;"><div class="b1-ico"><i data-lucide="salad"></i></div><div class="b1-trait"></div><div class="b1-coche"><i data-lucide="check"></i></div></div>
+            </div>
+          </div>
+          <div class="b1-lab" id="b1-appli-lab">Appli</div>
+
+          <div id="b1-ligne"></div>
+          <div id="b1-corps">
+            <div class="b1-ico" id="b1-corps-ico"><i data-lucide="flame"></i></div>
+            <div id="b1-corps-mot">Corps</div>
+            <div class="b1-n" id="b1-corps-n">2 000</div>
+          </div>
+
+          <div class="b1-lab" id="b1-deficit-lab">Déficit<div id="b1-barre"></div></div>
+          <div class="b1-n b1-def" id="b1-def-n">−300</div>
+          <div class="b1-n b1-def" id="b1-def-0">0</div>
+
+          <div class="b1-bout" id="b1-biscuit"><img class="b1-photo" src="assets/img/aliments/cookie.png" alt="">
+            <div class="b1-non" id="b1-non-biscuit"><div class="b1-ico"><i data-lucide="pencil-off"></i></div></div></div>
+          <div class="b1-bout" id="b1-croissant"><img class="b1-photo" src="assets/img/aliments/croissant.png" alt="">
+            <div class="b1-non" id="b1-non-croissant"><div class="b1-ico"><i data-lucide="pencil-off"></i></div></div></div>
+
+          <div class="b1-n" id="b1-plus">+300</div>
+        </div>
+
+        <div class="b1-plan" id="b1-s2">
+          <div id="b1-labo"><div class="b1-ico"><i data-lucide="flask-conical"></i></div></div>
+          <div id="b1-stable"><div class="b1-ico"><i data-lucide="weight"></i></div><div id="b1-stable-n">0 kg</div></div>
+          <div id="b1-sol2"></div>
+          <div class="b1-col" id="b1-mange"><div class="b1-ico"><i data-lucide="utensils"></i></div></div>
+          <div class="b1-col" id="b1-note"><div class="b1-ico"><i data-lucide="smartphone"></i></div></div>
+          <div class="b1-chiffre" id="b1-mange-n">2 081</div>
+          <div class="b1-chiffre" id="b1-note-n">1 028</div>
+          <div class="b1-lab" id="b1-mange-lab">Mangé</div>
+          <div class="b1-lab" id="b1-note-lab">Noté</div>
+          <div class="b1-n" id="b1-double">× 2</div>
+        </div>
+      </div>
+
+      <!-- Un clic par élément, chacun sur son repère (les mêmes secondes que CUES, dans le script). -->
+      <audio id="b1-s-croissant" src="assets/sfx/soft_click.wav" data-start="0.19" data-duration="0.22" data-track-index="11" data-volume="0.6"></audio>
+      <audio id="b1-s-biscuit" src="assets/sfx/soft_click.wav" data-start="1.27" data-duration="0.22" data-track-index="12" data-volume="0.6"></audio>
+      <audio id="b1-s-jamais" src="assets/sfx/soft_click.wav" data-start="2.35" data-duration="0.22" data-track-index="13" data-volume="0.6"></audio>
+      <audio id="b1-s-appli" src="assets/sfx/soft_click.wav" data-start="3.53" data-duration="0.22" data-track-index="14" data-volume="0.6"></audio>
+      <audio id="b1-s-deficit" src="assets/sfx/soft_click.wav" data-start="4.87" data-duration="0.22" data-track-index="15" data-volume="0.6"></audio>
+      <audio id="b1-s-corps" src="assets/sfx/soft_click.wav" data-start="5.29" data-duration="0.22" data-track-index="16" data-volume="0.6"></audio>
+      <audio id="b1-s-trois" src="assets/sfx/soft_click.wav" data-start="7.49" data-duration="0.22" data-track-index="17" data-volume="0.6"></audio>
+      <audio id="b1-s-annuler" src="assets/sfx/soft_click.wav" data-start="9.29" data-duration="0.22" data-track-index="18" data-volume="0.6"></audio>
+      <audio id="b1-s-chercheurs" src="assets/sfx/soft_click.wav" data-start="11.77" data-duration="0.22" data-track-index="19" data-volume="0.6"></audio>
+      <audio id="b1-s-gens" src="assets/sfx/soft_click.wav" data-start="12.97" data-duration="0.22" data-track-index="23" data-volume="0.6"></audio>
+      <audio id="b1-s-mange" src="assets/sfx/soft_click.wav" data-start="14.03" data-duration="0.22" data-track-index="20" data-volume="0.6"></audio>
+      <audio id="b1-s-double" src="assets/sfx/soft_click.wav" data-start="14.79" data-duration="0.22" data-track-index="21" data-volume="0.6"></audio>
+      <audio id="b1-s-notes" src="assets/sfx/soft_click.wav" data-start="15.25" data-duration="0.22" data-track-index="22" data-volume="0.6"></audio>
+    </div>
+
+    <script>
+      (function () {
+        // LES REPÈRES, en secondes depuis le début du plan B. Chacun est attaché à un mot de la prise : recaler.py
+        // les réécrit quand le découpage change (ne pas les régler à la main). Chaque repère qui a un clic est aussi
+        // le data-start de son <audio> (#b1-s-<nom>).
+        var CUES = {
+          croissant: 0.19,   // « Un petit croissant par ici » : la tuile du croissant, à droite, de travers · clic
+          biscuit: 1.27,     // « un petit biscuit par là » : la tuile du biscuit, au-dessus · clic
+          jamais: 2.35,      // « Mais il le notait jamais » : une pastille « pas noté » sur chaque tuile · son d'erreur
+          appli: 3.53,       // « Sur son application » : le téléphone monte du sol, son compteur dit 1 700 · clic
+          deficit: 4.87,     // « en déficit » : la zone verte au-dessus, le mot Déficit et −300 · clic
+          corps: 5.29,       // « calorique » : la ligne bleue en haut de la zone, Corps 2 000 (ce que son corps brûle) · clic
+          compte: 6.19,      // « on a compté » : le biscuit tombe dans la zone, sans clic
+          bout: 6.63,        // « chaque bout » : le croissant tombe dessus, la zone est pleine, sans clic
+          trois: 7.49,       // « 300 calories » : +300 · clic
+          annuler: 9.29,     // « annuler son déficit » : −300 devient 0, Déficit barré en rouge · son d'erreur
+          seul: 10.62,       // « Mon ami n'est pas le seul » : la scène de l'ami s'en va
+          chercheurs: 11.77, // « Les chercheurs l'ont mesuré » : la fiole · clic
+          mange: 14.03,      // « mangeaient » : la colonne Mangé monte, son chiffre compte jusqu'à 2 081 · clic
+          double: 14.79,     // « le double » : × 2, et la colonne Noté monte à côté, deux fois plus petite · clic
+          notes: 15.25,      // « ce qu'ils notaient » : Noté et 1 028 se soulignent d'un battement · clic
+          gens: 12.97        // « Des gens qui ne maigrissaient pas » : le poids, 0 kg · clic
+        };
+
+        if (window.lucide) window.lucide.createIcons();
+        var tl = gsap.timeline({ paused: true });
+
+        // Où flottent les deux bouts avant d'être comptés : à droite, de travers (décalage depuis leur place finale).
+        var HORS = {
+          biscuit: { x: 330, y: -44, rotation: -6 },    // vers x 750, y 420
+          croissant: { x: 360, y: 200, rotation: 5 }    // vers x 780, y 580
+        };
+
+        // 1 · « croissant », « biscuit » : les petits bouts, à côté, pas comptés.
+        ["croissant", "biscuit"].forEach(function (nom) {
+          var h = HORS[nom];
+          tl.fromTo("#b1-" + nom,
+            { opacity: 0, scale: 0.3, x: h.x, y: h.y, rotation: h.rotation },
+            { opacity: 1, scale: 1, x: h.x, y: h.y, rotation: h.rotation, duration: 0.45, ease: "back.out(1.6)" }, CUES[nom]);
+        });
+
+        // 2 · « il le notait jamais » : la pastille rouge, crayon barré, sur chaque bout.
+        tl.fromTo("#b1-non-croissant", { opacity: 0, scale: 0.3 }, { opacity: 1, scale: 1, duration: 0.3, ease: "back.out(1.8)" }, CUES.jamais);
+        tl.fromTo("#b1-non-biscuit", { opacity: 0, scale: 0.3 }, { opacity: 1, scale: 1, duration: 0.3, ease: "back.out(1.8)" }, CUES.jamais + 0.14);
+
+        // 3 · « appli » : ce qu'il notait monte du sol ; le compteur affiche 1 700.
+        tl.fromTo("#b1-appli", { scaleY: 0, transformOrigin: "50% 100%" }, { scaleY: 1, duration: 0.45, ease: "power3.out" }, CUES.appli);
+        tl.fromTo("#b1-appli-ico", { opacity: 0, scale: 0.3 }, { opacity: 1, scale: 1, duration: 0.4, ease: "back.out(1.6)" }, CUES.appli + 0.2);
+        tl.fromTo("#b1-appli-lab", { opacity: 0, y: 12 }, { opacity: 1, y: 0, duration: 0.25, ease: "power3.out" }, CUES.appli + 0.05);
+
+        // 4 · « déficit » : la zone verte monte au-dessus de la colonne ; le mot et son chiffre entrent à gauche.
+        tl.fromTo("#b1-deficit", { scaleY: 0, transformOrigin: "50% 100%" }, { scaleY: 1, duration: 0.45, ease: "power3.out" }, CUES.deficit);
+        tl.fromTo("#b1-deficit-lab", { opacity: 0, x: -20 }, { opacity: 1, x: 0, duration: 0.3, ease: "power3.out" }, CUES.deficit + 0.1);
+        tl.fromTo("#b1-def-n", { opacity: 0, scale: 0.3 }, { opacity: 1, scale: 1, duration: 0.35, ease: "back.out(1.6)" }, CUES.deficit + 0.22);
+
+        // 5 · « calorique » : la ligne de ce que son corps brûle se trace en haut de la zone, avec son chiffre.
+        tl.fromTo("#b1-ligne", { scaleX: 0, transformOrigin: "0% 50%" }, { scaleX: 1, duration: 0.4, ease: "power2.out" }, CUES.corps);
+        tl.fromTo("#b1-corps", { opacity: 0, y: 24 }, { opacity: 1, y: 0, duration: 0.35, ease: "power3.out" }, CUES.corps + 0.05);
+
+        // 6 · « compté », « bout » : les bouts perdent leur pastille, tombent dans la zone et la remplissent.
+        tl.to("#b1-non-biscuit", { opacity: 0, duration: 0.15, ease: "power2.in" }, CUES.compte - 0.16);
+        tl.to("#b1-biscuit", { x: 0, y: 0, rotation: 0, duration: 0.4, ease: "power3.inOut" }, CUES.compte);
+        tl.to("#b1-non-croissant", { opacity: 0, duration: 0.15, ease: "power2.in" }, CUES.bout - 0.16);
+        tl.to("#b1-croissant", { x: 0, y: 0, rotation: 0, duration: 0.4, ease: "power3.inOut" }, CUES.bout);
+
+        // 7 · « trois cents » : le chiffre se pose à droite de la pile.
+        tl.fromTo("#b1-plus", { opacity: 0, scale: 0.3 }, { opacity: 1, scale: 1, duration: 0.4, ease: "back.out(1.6)" }, CUES.trois);
+
+        // 8 · « annuler » : −300 devient 0, le mot Déficit est barré en rouge, et encaisse.
+        tl.to("#b1-def-n", { opacity: 0, duration: 0.12, ease: "power2.in" }, CUES.annuler - 0.12);
+        tl.fromTo("#b1-def-0", { opacity: 0, scale: 0.3 }, { opacity: 1, scale: 1, duration: 0.35, ease: "back.out(1.8)" }, CUES.annuler);
+        tl.fromTo("#b1-barre", { scaleX: 0, transformOrigin: "0% 50%" }, { scaleX: 1, duration: 0.25, ease: "power2.out" }, CUES.annuler);
+        tl.to("#b1-deficit-lab", { x: -9, duration: 0.045, ease: "none" }, CUES.annuler + 0.1);
+        tl.to("#b1-deficit-lab", { x: 9, duration: 0.045, ease: "none" }, CUES.annuler + 0.145);
+        tl.to("#b1-deficit-lab", { x: -9, duration: 0.045, ease: "none" }, CUES.annuler + 0.19);
+        tl.to("#b1-deficit-lab", { x: 9, duration: 0.045, ease: "none" }, CUES.annuler + 0.235);
+        tl.to("#b1-deficit-lab", { x: 0, duration: 0.04, ease: "none" }, CUES.annuler + 0.28);
+
+        // 9 · « Mon ami n'est pas le seul » : la scène de l'ami s'en va par le haut.
+        tl.to("#b1-s1", { opacity: 0, y: -30, duration: 0.25, ease: "power2.in" }, CUES.seul);
+
+        // 10 · « Les chercheurs » : la fiole, et le sol des deux colonnes.
+        tl.fromTo("#b1-labo", { opacity: 0, scale: 0.3 }, { opacity: 1, scale: 1, duration: 0.4, ease: "back.out(1.6)" }, CUES.chercheurs);
+        tl.fromTo("#b1-sol2", { opacity: 0 }, { opacity: 1, duration: 0.25, ease: "power2.out" }, CUES.chercheurs + 0.1);
+
+        // 10 bis · « Des gens qui ne maigrissaient pas » : leur poids ne bougeait pas.
+        tl.fromTo("#b1-stable", { opacity: 0, x: -24 }, { opacity: 1, x: 0, duration: 0.35, ease: "power3.out" }, CUES.gens);
+
+        // 11 · « mangeaient » : la grande colonne monte ; son chiffre compte jusqu'à 2 081.
+        var compteur = { v: 0 }, chiffre = document.getElementById("b1-mange-n");
+        var ecrire = function (v) { var n = Math.round(v); chiffre.textContent = n >= 1000 ? Math.floor(n / 1000) + " " + ("00" + (n % 1000)).slice(-3) : String(n); };
+        tl.fromTo("#b1-mange", { scaleY: 0, transformOrigin: "50% 100%" }, { scaleY: 1, duration: 0.6, ease: "power3.out" }, CUES.mange);
+        tl.fromTo("#b1-mange .b1-ico", { opacity: 0 }, { opacity: 1, duration: 0.25, ease: "power2.out" }, CUES.mange + 0.3);
+        tl.fromTo("#b1-mange-lab", { opacity: 0, y: 12 }, { opacity: 1, y: 0, duration: 0.25, ease: "power3.out" }, CUES.mange + 0.05);
+        tl.fromTo("#b1-mange-n", { opacity: 0 }, { opacity: 1, duration: 0.15, ease: "power2.out" }, CUES.mange + 0.1);
+        tl.fromTo(compteur, { v: 0 }, { v: 2081, duration: 0.6, ease: "power2.out", onUpdate: function () { ecrire(compteur.v); } }, CUES.mange + 0.1);
+
+        // 12 · « le double » : × 2, dans le vide où la petite colonne va s'arrêter.
+        tl.fromTo("#b1-double", { opacity: 0, scale: 0.3 }, { opacity: 1, scale: 1, duration: 0.4, ease: "back.out(1.6)" }, CUES.double);
+
+        // 13 · la petite colonne monte dans la foulée de « le double » ; « ce qu'ils notaient » la souligne.
+        tl.fromTo("#b1-note", { scaleY: 0, transformOrigin: "50% 100%" }, { scaleY: 1, duration: 0.35, ease: "power3.out" }, CUES.double + 0.14);
+        tl.fromTo("#b1-note .b1-ico", { opacity: 0 }, { opacity: 1, duration: 0.2, ease: "power2.out" }, CUES.double + 0.3);
+        tl.fromTo("#b1-note-lab", { opacity: 0 }, { opacity: 1, duration: 0.2, ease: "power2.out" }, CUES.double + 0.18);
+        tl.fromTo("#b1-note-n", { opacity: 0 }, { opacity: 1, duration: 0.2, ease: "power2.out" }, CUES.double + 0.3);
+        tl.fromTo("#b1-note-n", { scale: 1 }, { scale: 1.16, duration: 0.14, ease: "power2.out" }, CUES.notes);
+        tl.to("#b1-note-n", { scale: 1, duration: 0.2, ease: "power2.inOut" }, CUES.notes + 0.14);
+        tl.fromTo("#b1-note-lab", { scale: 1 }, { scale: 1.12, duration: 0.14, ease: "power2.out" }, CUES.notes);
+        tl.to("#b1-note-lab", { scale: 1, duration: 0.2, ease: "power2.inOut" }, CUES.notes + 0.14);
+
+        window.__timelines["mange-peu-b1"] = tl;
+      })();
+    </script>
+  </body>
+</html>

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=1080, height=960">
+    <link rel="stylesheet" href="compositions/components/kit.css">
+    <link rel="stylesheet" href="compositions/components/youbud.css">
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.14.2/dist/gsap.min.js"></script>
+    <style>
+      @font-face {
+        font-family: "Archivo";
+        src: url("assets/fonts/Archivo.woff2") format("woff2");
+        font-weight: 400 900;
+        font-display: block;
+      }
+      /* La page de relecture de l'animation B1, seule, en 1080 x 960.
+         Elle sera remplacée au montage par l'index.html qu'écrit `ke.py … montage`. */
+      html, body { width: 1080px; height: 960px; background: #f7f7f4; }
+      #root { position: relative; width: 1080px; height: 960px; overflow: hidden; }
+      #host-b1 { width: 1080px; height: 960px; }
+    </style>
+  </head>
+  <body>
+    <div id="root" data-composition-id="relecture-b1" data-start="0" data-duration="19.16" data-width="1080" data-height="960">
+      <div id="host-b1" data-composition-id="abdos-b1" class="clip" data-start="0" data-duration="19.16" data-track-index="1" data-composition-src="compositions/B1-sous-le-gras.html"></div>
+    </div>
+    <script>
+      (function () {
+        window.__timelines["relecture-b1"] = gsap.timeline({ paused: true });
+      })();
+    </script>
+  </body>
+</html>

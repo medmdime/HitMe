@@ -1,0 +1,8 @@
+{
+  "name": "12-apres-40-ans",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "check": "npx --yes hyperframes@0.8.21 check"
+  }
+}

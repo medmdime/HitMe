@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=1080, height=960">
+    <link rel="stylesheet" href="compositions/components/kit.css">
+    <link rel="stylesheet" href="compositions/components/youbud.css">
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.14.2/dist/gsap.min.js"></script>
+    <script src="assets/vendor/lucide.min.js"></script>
+    <style>
+      @font-face {
+        font-family: "Archivo";
+        src: url("assets/fonts/Archivo.woff2") format("woff2");
+        font-weight: 400 900;
+        font-display: block;
+      }
+      /* J5 · Tu grignotes le soir sans avoir faim. Le cadre B du format court : 1080 x 960, posé en haut
+         de l'image, Mohamed en petit dessous. Contenu utile entre y = 230 et y = 940 (au-dessus, le titre fixe).
+         Trois éléments et un chiffre : le Soir (l'horloge), les Céréales (l'épi), remplacées par les Protéines
+         (l'œuf et la viande), et le −¼. Des mots seuls, aucune bordure : des cartes teintées avec leur rebord plein. */
+      #g5-scene { width: 1080px; height: 960px; }
+      #g5-scene .g5-toile { position: absolute; left: 0; top: 0; width: 1080px; height: 960px; display: block; }
+
+      .g5-carte { width: 380px; height: 440px; top: 400px; opacity: 0; }
+      .g5-cereales { --tint: var(--yb-red-2); --edge: #f6c2c2; }
+      .g5-proteines { --tint: var(--yb-orange-2); --edge: #f3d4a4; }
+      .g5-soir { --tint: var(--yb-purple-2); --edge: #dcc3f3; }
+      /* Le Soir entre au centre (x 350 → 730), puis glisse de 220 px à droite (570 → 950) quand le matin
+         arrive à gauche (130 → 510) : d'abord les Céréales, puis les Protéines, à la même place. */
+      #g5-soir { left: 350px; }
+      #g5-cereales, #g5-proteines { left: 130px; }
+
+      .g5-ico { position: absolute; will-change: transform; }
+      .g5-ico svg.lucide { display: block; width: 100%; height: 100%; }
+      #g5-horloge { left: 90px; top: 66px; width: 200px; height: 200px; color: var(--yb-purple-edge); }
+      #g5-epi { left: 90px; top: 66px; width: 200px; height: 200px; color: var(--yb-red-edge); }
+      #g5-oeuf { left: 40px; top: 96px; width: 140px; height: 140px; color: var(--yb-orange-edge); }
+      #g5-viande { left: 200px; top: 96px; width: 140px; height: 140px; color: var(--yb-orange-edge); }
+
+      .g5-mot { position: absolute; left: 0; top: 306px; width: 380px; font-size: 68px; font-weight: 900; line-height: 1;
+        color: var(--ink); text-align: center; white-space: nowrap; }
+      /* Les deux mots longs du matin, un cran plus petits pour garder de l'air dans la carte. */
+      #g5-mot-cereales, #g5-mot-proteines { font-size: 62px; top: 309px; }
+
+      /* Le seul chiffre, le seul jaune : posé sur le coin haut du Soir, il glisse avec lui. */
+      #g5-quart { position: absolute; left: 250px; top: -66px; width: 190px; height: 116px; line-height: 116px;
+        border-radius: 58px; background: var(--key); box-shadow: 0 7px 0 var(--yb-yellow-edge); color: var(--ink);
+        font-size: 88px; font-weight: 900; text-align: center; white-space: nowrap; font-variant-numeric: tabular-nums;
+        opacity: 0; will-change: transform; }
+    </style>
+  </head>
+  <body>
+    <div id="g5-root" data-composition-id="grignoter-b1" data-start="0" data-duration="17.0" data-width="1080" data-height="960">
+      <div id="g5-scene" class="clip scene-b" data-start="0" data-duration="17.0" data-track-index="0">
+        <img class="g5-toile" src="assets/img/toile.jpg" alt="">
+
+        <div class="yb-card g5-carte g5-cereales" id="g5-cereales">
+          <div class="g5-ico" id="g5-epi"><i data-lucide="wheat"></i></div>
+          <div class="g5-mot" id="g5-mot-cereales">Céréales</div>
+        </div>
+
+        <div class="yb-card g5-carte g5-proteines" id="g5-proteines">
+          <div class="g5-ico" id="g5-oeuf"><i data-lucide="egg"></i></div>
+          <div class="g5-ico" id="g5-viande"><i data-lucide="beef"></i></div>
+          <div class="g5-mot" id="g5-mot-proteines">Protéines</div>
+        </div>
+
+        <div class="yb-card g5-carte g5-soir" id="g5-soir">
+          <div class="g5-ico" id="g5-horloge"><i data-lucide="clock-8"></i></div>
+          <div class="g5-mot" id="g5-mot-soir">Soir</div>
+          <div id="g5-quart">−¼</div>
+        </div>
+      </div>
+
+      <!-- Un clic par élément, rien d'autre (ni woosh, ni riser, ni musique). Volume 1 × 0,6 (le Kallaway edit).
+           Les data-start reprennent CUES (dans le script, plus bas) : les recaler ensemble. -->
+      <audio id="g5-s-01" src="assets/sfx/soft_click.wav" data-start="0.36" data-duration="0.22" data-track-index="11" data-volume="0.6"></audio>
+      <audio id="g5-s-02" src="assets/sfx/soft_click.wav" data-start="12.15" data-duration="0.22" data-track-index="12" data-volume="0.6"></audio>
+      <audio id="g5-s-03" src="assets/sfx/soft_click.wav" data-start="14.89" data-duration="0.22" data-track-index="13" data-volume="0.6"></audio>
+      <audio id="g5-s-04" src="assets/sfx/soft_click.wav" data-start="16.15" data-duration="0.22" data-track-index="14" data-volume="0.6"></audio>
+    </div>
+
+    <script>
+      (function () {
+        // LES REPÈRES, mot → seconde, à recaler sur la prise après le tournage (ke.py … plans les affiche).
+        // Estimés à 4,75 mots par seconde depuis le premier mot du temps B (« Le soir »), plus 0,15 s :
+        // le Kallaway edit lance l'animation 0,15 s avant la coupe, pour qu'elle soit là pendant le glissé.
+        // Le temps B : « Le soir, ton corps fait monter l'envie de manger, même quand tu as assez mangé. C'est son
+        // horloge interne. Mais ton petit-déjeuner peut calmer cette envie. Pas n'importe lequel. Dans une étude,
+        // vingt jeunes femmes en surpoids sautaient le petit-déjeuner. Après le dîner, elles recevaient une glacière
+        // pleine de gâteaux, de chips et de fruits. Avec des céréales le matin, elles ont grignoté presque autant que
+        // sans petit-déjeuner. Avec des œufs et de la viande, un quart de moins. » (79 mots, 16,63 s)
+        var CUES = {
+          soir: 0.36,      // mot 2 · « Le SOIR, ton corps… » : la carte Soir entre, au centre (clic g5-s-01)
+          horloge: 3.73,   // mot 18 · « C'est son HORLOGE interne » : l'horloge fait tic-tac, sans son (un geste, pas un élément)
+          avec: 11.73,     // mot 56 · « AVEC des céréales… » : le Soir glisse à droite, pour faire la place, sans son
+          cereales: 12.15, // mot 58 · « Avec des CÉRÉALES le matin » : la carte Céréales entre à gauche (clic g5-s-02)
+          presque: 13.41,  // mot 64 · « elles ont grignoté PRESQUE autant » : les Céréales s'éteignent, sans son
+          avec2: 14.47,    // mot 69 · « AVEC des œufs… » : les Céréales sortent, sans son
+          oeufs: 14.89,    // mot 71 · « Avec des ŒUFS et de la viande » : la carte Protéines prend leur place (clic g5-s-03)
+          quart: 16.15,    // mot 77 · « …un QUART de moins » : le −¼ se pose sur le Soir (clic g5-s-04)
+          fin: 16.78       // la fin du temps B (« …de moins. ») ; data-duration 17,0 = fin + le glissé de sortie, et la tenue
+        };
+
+        if (window.lucide) window.lucide.createIcons();
+        var tl = gsap.timeline({ paused: true });
+
+        // Le Soir : la carte entre, sans rebond.
+        tl.fromTo("#g5-soir", { opacity: 0, scale: 0.6, y: 40 }, { opacity: 1, scale: 1, y: 0, duration: 0.4, ease: "power3.out" }, CUES.soir);
+
+        // L'horloge vit, une fois : tic, tac, et retour droit.
+        tl.fromTo("#g5-horloge", { rotation: 0 }, { rotation: 12, duration: 0.1, ease: "power1.out" }, CUES.horloge);
+        tl.to("#g5-horloge", { rotation: -12, duration: 0.2, ease: "power1.inOut" }, CUES.horloge + 0.1);
+        tl.to("#g5-horloge", { rotation: 7, duration: 0.16, ease: "power1.inOut" }, CUES.horloge + 0.3);
+        tl.to("#g5-horloge", { rotation: 0, duration: 0.14, ease: "power1.out" }, CUES.horloge + 0.46);
+
+        // Le matin arrive à gauche : le Soir lui fait la place, puis les Céréales entrent sur « céréales ».
+        tl.fromTo("#g5-soir", { x: 0 }, { x: 220, duration: 0.4, ease: "power2.inOut" }, CUES.avec);
+        tl.fromTo("#g5-cereales", { opacity: 0, scale: 0.6, y: 40 }, { opacity: 1, scale: 1, y: 0, duration: 0.4, ease: "power3.out" }, CUES.cereales);
+
+        // « presque autant que sans petit-déjeuner » : les Céréales s'éteignent et s'affaissent un peu.
+        tl.fromTo("#g5-cereales", { opacity: 1, y: 0 }, { opacity: 0.5, y: 14, duration: 0.45, ease: "power2.out" }, CUES.presque);
+
+        // Elles sortent, et les Protéines prennent leur place sur « œufs ».
+        tl.fromTo("#g5-cereales", { opacity: 0.5, y: 14 }, { opacity: 0, y: -30, duration: 0.25, ease: "power2.in" }, CUES.avec2);
+        tl.fromTo("#g5-proteines", { opacity: 0, scale: 0.6, y: 40 }, { opacity: 1, scale: 1, y: 0, duration: 0.4, ease: "power3.out" }, CUES.oeufs);
+
+        // Le chiffre : le seul rebond, comme le × 2 de l'assiette.
+        tl.fromTo("#g5-quart", { opacity: 0, scale: 0.3 }, { opacity: 1, scale: 1, duration: 0.35, ease: "back.out(1.6)" }, CUES.quart);
+
+        // Puis plus rien ne bouge : l'image tient jusqu'à 17,0 s.
+        window.__timelines["grignoter-b1"] = tl;
+      })();
+    </script>
+  </body>
+</html>

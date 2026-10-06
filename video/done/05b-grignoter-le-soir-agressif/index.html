@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=1080, height=1920">
+    <link rel="stylesheet" href="compositions/components/kit.css">
+    <link rel="stylesheet" href="compositions/components/youbud.css">
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.14.2/dist/gsap.min.js"></script>
+    <style>
+      @font-face {
+        font-family: "Archivo";
+        src: url("assets/fonts/Archivo.woff2") format("woff2");
+        font-weight: 400 900;
+        font-display: block;
+      }
+      /* Le cadre B en entier, 1080 x 1920, pour le montage CapCut (écrit par recaler.py, ne pas modifier à la main) :
+         la toile partout et l'animation descendue de 100 px. Mohamed et sa carte sont posés dans CapCut, par-dessus. */
+      html, body { width: 1080px; height: 1920px; background: #f7f7f4; }
+      #cadre-root { position: relative; width: 1080px; height: 1920px; overflow: hidden; }
+      #cadre-fond { position: absolute; left: 0; top: 0; width: 1080px; height: 1920px; }
+      #cadre-fond img { position: absolute; left: 0; width: 1080px; height: 960px; display: block; }
+      #cadre-anim { position: absolute; left: 0; top: 100px; width: 1080px; height: 960px; }
+      /* la toile de l'animation est retirée : celle du cadre passe dessous, sans couture */
+      #cadre-anim img[src$="toile.jpg"] { display: none !important; }
+    </style>
+  </head>
+  <body>
+    <div id="cadre-root" data-composition-id="cadre-b" data-start="0" data-duration="20.35" data-width="1080" data-height="1920">
+      <div id="cadre-fond" class="clip" data-start="0" data-duration="20.35" data-track-index="0">
+        <img src="assets/img/toile.jpg" alt="" style="top: 0;">
+        <img src="assets/img/toile-bas.jpg" alt="" style="top: 960px;">
+      </div>
+      <div id="cadre-anim" data-composition-id="grignoter-agressif-b1" class="clip" data-start="0" data-duration="20.35" data-track-index="1" data-composition-src="compositions/B1-le-faux-conseil.html"></div>
+    </div>
+    <script>
+      (function () {
+        window.__timelines["cadre-b"] = gsap.timeline({ paused: true });
+      })();
+    </script>
+  </body>
+</html>

@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=1080, height=960">
+    <link rel="stylesheet" href="compositions/components/kit.css">
+    <link rel="stylesheet" href="compositions/components/youbud.css">
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.14.2/dist/gsap.min.js"></script>
+    <style>
+      @font-face {
+        font-family: "Archivo";
+        src: url("assets/fonts/Archivo.woff2") format("woff2");
+        font-weight: 400 900;
+        font-display: block;
+      }
+      /* Le cadre B de « On te fait des remarques sur ton corps ? » : 1080 x 960, posé en haut de
+         l'image, Mohamed en petit dessous. Le titre fixe vit au-dessus de y = 230 : le contenu utile
+         reste entre y = 230 et y = 940. Trois éléments et un chiffre : l'écran Moquerie, l'écran
+         Neutre, les bonbons qui s'empilent sur chaque écran, et « × 3 ». Aucun corps, aucune bordure :
+         des aplats à rebord plein. Les deux piles gardent le rapport de l'étude : 10 bonbons contre 3
+         (3,3 ; l'étude : 302,8 contre 89,0 kcal, 3,4). */
+      .clip.scene-b { width: 1080px; height: 960px; }
+      .toile { position: absolute; left: 0; top: 0; width: 1080px; height: 960px; display: block; }
+      .lab { position: absolute; font-size: 46px; font-weight: 900; line-height: 1; color: var(--ink);
+        text-align: center; white-space: nowrap; opacity: 0; will-change: transform; }
+
+      /* Les deux écrans, dessinés à plat : le corps, l'écran blanc, un visage au trait, deux pieds. */
+      .ecran { position: absolute; top: 640px; width: 260px; height: 214px; opacity: 0; will-change: transform; }
+      .ecran svg { display: block; width: 100%; height: 100%; overflow: visible; }
+      #b1-moq { left: 170px; }
+      #b1-neu { left: 650px; }
+      #b1-lab-moq { left: 170px; top: 876px; width: 260px; }
+      #b1-lab-neu { left: 650px; top: 876px; width: 260px; }
+
+      /* Les bonbons, dessinés à plat, empilés sur chaque écran : 38 px par bonbon, 10 px de recouvrement. */
+      .bonbon { position: absolute; width: 104px; height: 48px; opacity: 0; will-change: transform; }
+      .bonbon svg { display: block; width: 100%; height: 100%; }
+
+      /* Le chiffre : × 3, la seule pilule colorée, au sommet de la pile Moquerie. */
+      #b1-x3 { position: absolute; left: 384px; top: 250px; width: 156px; height: 92px; line-height: 92px;
+        border-radius: 999px; background: var(--yb-yellow); box-shadow: 0 7px 0 var(--yb-yellow-edge);
+        font-size: 60px; font-weight: 900; color: var(--ink); text-align: center;
+        font-variant-numeric: tabular-nums; white-space: nowrap; opacity: 0; will-change: transform; }
+    </style>
+  </head>
+  <body>
+    <!-- Les bruitages : un soft_click par élément, au volume du Kallaway edit (1 × 0,6). Rien d'autre.
+         Les data-start reprennent l'objet CUES du script : les changer ensemble. -->
+    <div id="b1-root" data-composition-id="remarques-b1" data-start="0" data-duration="12.09" data-width="1080" data-height="960">
+      <div id="b1-scene" class="clip scene-b" data-start="0" data-duration="12.09" data-track-index="0">
+        <img class="toile" src="assets/img/toile.jpg" alt="">
+
+        <!-- 1 · l'écran Moquerie : rouge, un visage qui rit. -->
+        <div class="ecran" id="b1-moq">
+          <svg viewBox="0 0 260 214">
+            <rect x="56" y="186" width="36" height="20" rx="7" fill="#e03a3a"></rect>
+            <rect x="168" y="186" width="36" height="20" rx="7" fill="#e03a3a"></rect>
+            <rect x="0" y="10" width="260" height="180" rx="32" fill="#e03a3a"></rect>
+            <rect x="0" y="0" width="260" height="180" rx="32" fill="#ff4b4b"></rect>
+            <rect x="22" y="20" width="216" height="136" rx="20" fill="#ffffff"></rect>
+            <g id="b1-rire">
+              <g transform="translate(130 88)">
+                <circle cx="0" cy="0" r="52" fill="#ffe2e2"></circle>
+                <path d="M -30 -8 Q -20 -24 -10 -8 M 10 -8 Q 20 -24 30 -8" fill="none" stroke="#3c3c3c" stroke-width="8" stroke-linecap="round"></path>
+                <path d="M -28 6 L 28 6 A 28 28 0 0 1 -28 6 Z" fill="#3c3c3c"></path>
+                <path d="M -14 24 A 16 10 0 0 1 14 24 A 28 28 0 0 1 -14 24 Z" fill="#ff4b4b"></path>
+              </g>
+            </g>
+          </svg>
+        </div>
+        <div class="lab" id="b1-lab-moq">Moquerie</div>
+
+        <!-- 2 · l'écran Neutre : gris, un visage sans expression. -->
+        <div class="ecran" id="b1-neu">
+          <svg viewBox="0 0 260 214">
+            <rect x="56" y="186" width="36" height="20" rx="7" fill="#aeada5"></rect>
+            <rect x="168" y="186" width="36" height="20" rx="7" fill="#aeada5"></rect>
+            <rect x="0" y="10" width="260" height="180" rx="32" fill="#aeada5"></rect>
+            <rect x="0" y="0" width="260" height="180" rx="32" fill="#c9c8c0"></rect>
+            <rect x="22" y="20" width="216" height="136" rx="20" fill="#ffffff"></rect>
+            <g transform="translate(130 88)">
+              <circle cx="0" cy="0" r="52" fill="#efeee8"></circle>
+              <circle cx="-18" cy="-12" r="7" fill="#3c3c3c"></circle>
+              <circle cx="18" cy="-12" r="7" fill="#3c3c3c"></circle>
+              <path d="M -22 20 L 22 20" fill="none" stroke="#3c3c3c" stroke-width="8" stroke-linecap="round"></path>
+            </g>
+          </svg>
+        </div>
+        <div class="lab" id="b1-lab-neu">Neutre</div>
+
+        <!-- 3 · les bonbons : dix sur l'écran Moquerie, trois sur l'écran Neutre (même dessin, même pas). -->
+        <div class="bonbon" id="b1-m0" style="left: 248px; top: 594px;"><svg viewBox="0 0 120 56"><use href="#b1-bonbon"></use></svg></div>
+        <div class="bonbon" id="b1-m1" style="left: 242px; top: 556px;"><svg viewBox="0 0 120 56"><use href="#b1-bonbon"></use></svg></div>
+        <div class="bonbon" id="b1-m2" style="left: 253px; top: 518px;"><svg viewBox="0 0 120 56"><use href="#b1-bonbon"></use></svg></div>
+        <div class="bonbon" id="b1-m3" style="left: 245px; top: 480px;"><svg viewBox="0 0 120 56"><use href="#b1-bonbon"></use></svg></div>
+        <div class="bonbon" id="b1-m4" style="left: 254px; top: 442px;"><svg viewBox="0 0 120 56"><use href="#b1-bonbon"></use></svg></div>
+        <div class="bonbon" id="b1-m5" style="left: 243px; top: 404px;"><svg viewBox="0 0 120 56"><use href="#b1-bonbon"></use></svg></div>
+        <div class="bonbon" id="b1-m6" style="left: 251px; top: 366px;"><svg viewBox="0 0 120 56"><use href="#b1-bonbon"></use></svg></div>
+        <div class="bonbon" id="b1-m7" style="left: 242px; top: 328px;"><svg viewBox="0 0 120 56"><use href="#b1-bonbon"></use></svg></div>
+        <div class="bonbon" id="b1-m8" style="left: 252px; top: 290px;"><svg viewBox="0 0 120 56"><use href="#b1-bonbon"></use></svg></div>
+        <div class="bonbon" id="b1-m9" style="left: 248px; top: 252px;"><svg viewBox="0 0 120 56"><use href="#b1-bonbon"></use></svg></div>
+        <div class="bonbon" id="b1-n0" style="left: 728px; top: 594px;"><svg viewBox="0 0 120 56"><use href="#b1-bonbon"></use></svg></div>
+        <div class="bonbon" id="b1-n1" style="left: 733px; top: 556px;"><svg viewBox="0 0 120 56"><use href="#b1-bonbon"></use></svg></div>
+        <div class="bonbon" id="b1-n2" style="left: 724px; top: 518px;"><svg viewBox="0 0 120 56"><use href="#b1-bonbon"></use></svg></div>
+
+        <div id="b1-x3">× 3</div>
+
+        <!-- Le bonbon, défini une fois : deux papillotes, le corps orange sur son rebord, un reflet. -->
+        <svg width="0" height="0" style="position: absolute;" aria-hidden="true">
+          <defs>
+            <g id="b1-bonbon">
+              <path d="M 32 26 L 5 7 Q 0 4 0 10 L 0 42 Q 0 48 5 45 Z" fill="#e07f00"></path>
+              <path d="M 88 26 L 115 7 Q 120 4 120 10 L 120 42 Q 120 48 115 45 Z" fill="#e07f00"></path>
+              <rect x="22" y="8" width="76" height="46" rx="23" fill="#e07f00"></rect>
+              <rect x="22" y="2" width="76" height="46" rx="23" fill="#ff9600"></rect>
+              <ellipse cx="44" cy="15" rx="12" ry="5" fill="#ffc47a"></ellipse>
+            </g>
+          </defs>
+        </svg>
+      </div>
+
+      <audio id="b1-s-01" src="assets/sfx/soft_click.wav" data-start="2.32" data-duration="0.22" data-track-index="11" data-volume="0.6"></audio>
+      <audio id="b1-s-02" src="assets/sfx/soft_click.wav" data-start="4.00" data-duration="0.22" data-track-index="12" data-volume="0.6"></audio>
+      <audio id="b1-s-03" src="assets/sfx/soft_click.wav" data-start="4.42" data-duration="0.22" data-track-index="13" data-volume="0.6"></audio>
+      <audio id="b1-s-04" src="assets/sfx/soft_click.wav" data-start="7.58" data-duration="0.22" data-track-index="14" data-volume="0.6"></audio>
+    </div>
+
+    <script>
+      (function () {
+        // Les repères : mot du texte B → seconde, depuis le début du temps B (« Des femmes en surpoids… »).
+        // Texte B du 28 septembre au soir (56 mots), après le verdict de Mohamed : « Des femmes en
+        // surpoids ont regardé une vidéo qui se moquait de femmes comme elles. D'autres, une vidéo
+        // neutre. Ensuite : bonbons et chips, à volonté. Celles qui avaient vu la moquerie ont mangé
+        // plus de trois fois plus que les autres. La moquerie ne les a pas fait manger moins : elle
+        // les a fait manger plus. »
+        // Estimés à 4,75 mots par seconde avant le tournage (le rang du mot ÷ 4,75, soit la fin
+        // estimée du mot). Après le tournage, `ke.py … plans` donne les vrais temps : recaler chaque
+        // valeur sur sa syllabe, puis reporter moquait, neutre, bonbons et trois dans les data-start
+        // des quatre <audio>, et fin + 0,3 dans les deux data-duration (la racine et la scène).
+        var CUES = {
+          moquait: 2.32,  // « une vidéo qui se moquait » (11e mot) : l'écran Moquerie, son mot, le rire ; un clic
+          neutre: 4.00,   // « D'autres, une vidéo neutre » (19e) : l'écran Neutre, son mot ; un clic
+          bonbons: 4.42,  // « Ensuite : bonbons » (21e) : un bonbon se pose sur chaque écran ; un clic
+          mange: 6.95,    // « ont mangé » (33e) : les deux piles montent, 3 à droite, 10 à gauche ; sans clic
+          trois: 7.58,    // « plus de trois fois plus » (36e) : × 3 au sommet de la pile Moquerie ; un clic
+          fait: 11.37,    // « elle les a fait manger plus » (54e, le second « fait ») : × 3 bat une fois ; sans clic
+          fin: 11.79      // fin de « plus » (56 mots) : 0,3 s de tenue, rien ne bouge
+        };
+
+        var tl = gsap.timeline({ paused: true });
+        var entree = { opacity: 1, scale: 1, y: 0, duration: 0.5, ease: "power3.out" };
+        var mot = { opacity: 1, y: 0, duration: 0.25, ease: "power3.out" };
+
+        // 1 · Moquerie : l'écran, son mot, et le visage qui rit (il bascule trois fois, puis se pose).
+        tl.fromTo("#b1-moq", { opacity: 0, scale: 0, y: 40, transformOrigin: "50% 100%" }, entree, CUES.moquait);
+        tl.fromTo("#b1-lab-moq", { opacity: 0, y: 12 }, mot, CUES.moquait + 0.12);
+        //     Six demi-battements de 0,12 s : le visage revient à 0° à CUES.moquait + 1,17.
+        tl.fromTo("#b1-rire", { rotation: 0, svgOrigin: "130 88" }, { rotation: 9, svgOrigin: "130 88", duration: 0.12, ease: "sine.inOut", yoyo: true, repeat: 5, immediateRender: false }, CUES.moquait + 0.45);
+
+        // 2 · Neutre.
+        tl.fromTo("#b1-neu", { opacity: 0, scale: 0, y: 40, transformOrigin: "50% 100%" }, entree, CUES.neutre);
+        tl.fromTo("#b1-lab-neu", { opacity: 0, y: 12 }, mot, CUES.neutre + 0.12);
+
+        // 3 · Les bonbons : le premier de chaque pile sur « bonbons », les autres sur « mangé ».
+        //     Les rotations viennent de l'index, jamais du hasard.
+        var rotM = [0, -4, 3, -2, 5, -3, 2, -5, 4, -1];
+        var rotN = [0, 3, -3];
+        function poser(id, rot, t) {
+          tl.fromTo(id, { opacity: 0, scale: 0.5, y: -26, rotation: rot }, { opacity: 1, scale: 1, y: 0, rotation: rot, duration: 0.22, ease: "power3.out" }, t);
+        }
+        poser("#b1-m0", rotM[0], CUES.bonbons);
+        poser("#b1-n0", rotN[0], CUES.bonbons + 0.04);
+        for (var i = 1; i < 10; i++) poser("#b1-m" + i, rotM[i], CUES.mange + (i - 1) * 0.05);
+        for (var j = 1; j < 3; j++) poser("#b1-n" + j, rotN[j], CUES.mange + (j - 1) * 0.05);
+
+        // Le chiffre : × 3, quand la pile Moquerie est au sommet.
+        tl.fromTo("#b1-x3", { opacity: 0, scale: 0.3 }, { opacity: 1, scale: 1, duration: 0.4, ease: "back.out(1.6)" }, CUES.trois);
+
+        // « elle les a fait manger plus » : × 3 bat une fois. Fini à 11,73 s ; ensuite, plus rien ne bouge.
+        tl.fromTo("#b1-x3", { scale: 1 }, { scale: 1.12, duration: 0.18, ease: "power1.inOut", yoyo: true, repeat: 1, immediateRender: false }, CUES.fait);
+
+        window.__timelines["remarques-b1"] = tl;
+      })();
+    </script>
+  </body>
+</html>

@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=1080, height=960">
+    <link rel="stylesheet" href="compositions/components/kit.css">
+    <link rel="stylesheet" href="compositions/components/youbud.css">
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.14.2/dist/gsap.min.js"></script>
+    <script src="assets/vendor/lucide.min.js"></script>
+    <style>
+      @font-face {
+        font-family: "Archivo";
+        src: url("assets/fonts/Archivo.woff2") format("woff2");
+        font-weight: 400 900;
+        font-display: block;
+      }
+      /* Le cadre B du format court : 1080 x 960, posé en haut de l'image, Mohamed en petit dessous.
+         Le titre fixe de la vidéo occupe y 250 -> 400 : tout le contenu vit entre y = 440 et y = 930. */
+      .clip.scene-b { width: 1080px; height: 960px; }
+      .toile { position: absolute; left: 0; top: 0; width: 1080px; height: 960px; display: block; }
+
+      /* Les deux photos, dans des cartes blanches à rebord (aucune bordure), un peu penchées.
+         Les images sont dans assets/photos/, ignoré par git : son corps et son visage ne vont pas
+         dans un dépôt public. */
+      .b0-carte { top: 456px; width: 340px; height: 452px; --tint: #ffffff; --edge: #e5e5e0; }
+      #b0-avant { left: 110px; }
+      #b0-apres { left: 630px; opacity: 0; }
+      .b0-photo { position: absolute; left: 12px; top: 12px; width: 316px; height: 428px; border-radius: 26px;
+        object-fit: cover; display: block; }
+      /* Le poids, en pilule sur le bas de chaque photo : 60 en blanc, 80 en vert (le seul chiffre coloré). */
+      .b0-kg { position: absolute; left: 65px; top: 356px; width: 210px; height: 88px; border-radius: 44px;
+        font-family: "Archivo", sans-serif; font-size: 58px; font-weight: 900; line-height: 88px; text-align: center;
+        color: var(--ink); font-variant-numeric: tabular-nums; white-space: nowrap; opacity: 0; will-change: transform; }
+      #b0-kg-60 { background: #ffffff; box-shadow: 0 6px 0 #d9d8d0; }
+      #b0-kg-80 { background: var(--yb-green); box-shadow: 0 6px 0 var(--yb-green-edge); }
+      /* La flèche, entre les deux. */
+      #b0-fleche { position: absolute; left: 485px; top: 628px; width: 110px; height: 110px; color: var(--ink); opacity: 0; will-change: transform; }
+      #b0-fleche svg.lucide { display: block; width: 100%; height: 100%; stroke-width: 3; }
+    </style>
+  </head>
+  <body>
+    <!-- B0 · « Tu manges beaucoup, et tu ne prends rien ? », le cadre B de ton histoire (« C'était mon cas,
+         avant de passer de soixante à quatre-vingts kilos. J'enchaînais les prises de masse, et aucune ne marchait. »). Tes deux photos, l'avant
+         et l'après, et deux chiffres dits dans la voix : 60 et 80 kg. Les temps sont dans CUES. -->
+    <div id="b0-root" data-composition-id="mange-beaucoup-b0" data-start="0" data-duration="4.66" data-width="1080" data-height="960">
+      <div id="b0-scene" class="clip scene-b" data-start="0" data-duration="4.66" data-track-index="0">
+        <img class="toile" src="assets/img/toile.jpg" alt="">
+
+        <!-- L'avant est là dès le glissé, sur « C'était mon cas » ; l'après arrive sur « quatre-vingts ». -->
+        <div class="yb-card b0-carte" id="b0-avant">
+          <img class="b0-photo" src="assets/photos/avant.jpg" alt="">
+          <div class="b0-kg" id="b0-kg-60">60 kg</div>
+        </div>
+        <div id="b0-fleche"><i data-lucide="arrow-right"></i></div>
+        <div class="yb-card b0-carte" id="b0-apres">
+          <img class="b0-photo" src="assets/photos/apres.jpg" alt="">
+          <div class="b0-kg" id="b0-kg-80">80 kg</div>
+        </div>
+      </div>
+
+      <!-- Le son : un clic par élément, rien d'autre (soft_click 1,0 × 0,6, le volume du Kallaway edit).
+           data-start = CUES.soixante, CUES.quatre : les recaler en même temps que CUES. -->
+      <audio id="b0-s-01" src="assets/sfx/soft_click.wav" data-start="1.62" data-duration="0.22" data-track-index="11" data-volume="0.6"></audio>
+      <audio id="b0-s-02" src="assets/sfx/soft_click.wav" data-start="2.04" data-duration="0.22" data-track-index="12" data-volume="0.6"></audio>
+    </div>
+
+    <script>
+      (function () {
+        // LES REPÈRES (mot -> seconde dans la composition). Estimés le 2 octobre, avant le tournage :
+        // 4,75 mots par seconde depuis « C'était » (« C'était mon cas… »), + 0,15 s parce que l'animation démarre
+        // 0,15 s avant la coupe (avance_anim du Kallaway edit). Après le tournage, `ke.py … plans` donne les
+        // vrais repères : les recopier ici, puis dans les data-start des deux <audio>, puis
+        // data-duration = CUES.fin + 0,3 (racine et scène).
+        var CUES = {
+          cas: 0.15,       // « C'était mon cas »     l'avant est déjà là (il arrive avec le glissé)
+          soixante: 1.62,  // « de soixante »         la pilule 60 kg se pose (clic)
+          a: 1.83,         // « à »                   la flèche glisse
+          quatre: 2.04,    // « quatre-vingts »       l'après entre (clic)
+          kilos: 2.26,     // « kilos »               la pilule 80 kg se pose
+          fin: 4.36        // fin de « marchait »     puis 0,3 s de tenue : data-duration = 4.66
+        };
+
+        if (window.lucide) window.lucide.createIcons();
+
+        // Les cartes penchent un peu, comme des photos posées ; la rotation est posée ici, pas en CSS,
+        // pour ne pas se battre avec les tweens de scale.
+        gsap.set("#b0-avant", { rotation: -3 });
+        gsap.set("#b0-apres", { rotation: 3 });
+
+        var tl = gsap.timeline({ paused: true });
+
+        // « soixante » : la pilule 60 kg se pose sur l'avant.
+        tl.fromTo("#b0-kg-60", { opacity: 0, scale: 0.3 }, { opacity: 1, scale: 1, duration: 0.4, ease: "back.out(1.6)" }, CUES.soixante);
+
+        // « à » : la flèche glisse vers l'après.
+        tl.fromTo("#b0-fleche", { opacity: 0, x: -30 }, { opacity: 1, x: 0, duration: 0.3, ease: "power3.out" }, CUES.a);
+
+        // « quatre-vingts » : l'après entre ; « kilos » : la pilule 80 kg, en vert.
+        tl.fromTo("#b0-apres", { opacity: 0, scale: 0, y: 40 }, { opacity: 1, scale: 1, y: 0, duration: 0.55, ease: "power3.out" }, CUES.quatre);
+        tl.fromTo("#b0-kg-80", { opacity: 0, scale: 0.3 }, { opacity: 1, scale: 1, duration: 0.4, ease: "back.out(1.6)" }, CUES.kilos);
+
+        // Puis la tenue, jusqu'à CUES.fin + 0,3 : rien ne bouge pendant « J'enchaînais les prises de masse, et aucune ne marchait ».
+        window.__timelines["mange-beaucoup-b0"] = tl;
+      })();
+    </script>
+  </body>
+</html>

@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=1080, height=960">
+    <link rel="stylesheet" href="compositions/components/kit.css">
+    <link rel="stylesheet" href="compositions/components/youbud.css">
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.14.2/dist/gsap.min.js"></script>
+    <script src="assets/vendor/lucide.min.js"></script>
+    <style>
+      @font-face {
+        font-family: "Archivo";
+        src: url("assets/fonts/Archivo.woff2") format("woff2");
+        font-weight: 400 900;
+        font-display: block;
+      }
+      /* Le cadre B de « Ne mange surtout pas de protéines le matin » : 1080 x 960, en haut de l'image, Mohamed en bas.
+         Version du 3 octobre, selon ses deux retours : l'animation EXPLIQUE (chaque chose porte son chiffre, on voit où
+         on en est, chaque phrase a son geste) et les aliments sont de VRAIES photos détourées, pas des icônes.
+         Scène 1, le faux conseil : trois matins « excellents » (rien, le bol de céréales, l'industriel), et les œufs et
+         la viande « surtout pas » ; à droite, du matin au soir, ce que ça change : avec les œufs et la viande, calé
+         jusqu'au soir ; sans, la jauge s'arrête en route et les biscuits arrivent le soir.
+         Scène 2, la mesure (Leidy et al. 2013, 20 jeunes femmes) : les en-cas du soir, 656 kcal sans petit-déjeuner,
+         621 avec les céréales, 486 avec les œufs et le bœuf (un quart de moins). Colonnes à l'échelle.
+         Tout est préfixé b1-. */
+      #b1-scene { width: 1080px; height: 960px; }
+      .b1-toile { position: absolute; left: 0; top: 0; width: 1080px; height: 960px; display: block; }
+      .b1-plan { position: absolute; left: 0; top: 0; width: 1080px; height: 960px; will-change: transform; }
+      .b1-lab { position: absolute; font-size: 40px; font-weight: 900; line-height: 1; color: var(--ink);
+        white-space: nowrap; text-align: center; opacity: 0; will-change: transform; }
+      .b1-ico { position: absolute; color: var(--ink); }
+      .b1-ico svg.lucide { display: block; width: 100%; height: 100%; }
+      .b1-n { position: absolute; font-weight: 900; line-height: 1; border-radius: 999px; white-space: nowrap;
+        font-variant-numeric: tabular-nums; opacity: 0; will-change: transform; }
+      .b1-food { position: absolute; display: block; opacity: 0; will-change: transform; }
+      .b1-badge { position: absolute; width: 60px; height: 60px; border-radius: 50%; opacity: 0; will-change: transform; }
+      .b1-badge .b1-ico { left: 12px; top: 12px; width: 36px; height: 36px; color: #ffffff; }
+      .b1-badge .b1-ico svg.lucide { stroke-width: 4; }
+      .b1-ok { background: var(--yb-green); box-shadow: 0 5px 0 var(--yb-green-edge); }
+      .b1-ko { background: var(--yb-red); box-shadow: 0 5px 0 var(--yb-red-edge); }
+
+      /* Scène 1 · à gauche, les matins ; à droite, la journée (Matin → Soir) et la jauge « calé ». */
+      #b1-vide { left: 30px; top: 250px; width: 176px; filter: drop-shadow(0 7px 0 #cfcec5); }
+      #b1-cereales { left: 204px; top: 240px; width: 196px; }
+      #b1-donut { left: 398px; top: 250px; width: 176px; }
+      #b1-ok-1 { left: 158px; top: 236px; }
+      #b1-ok-2 { left: 348px; top: 228px; }
+      #b1-ok-3 { left: 524px; top: 236px; }
+      #b1-oeuf { left: 52px; top: 560px; width: 236px; }
+      #b1-steak { left: 316px; top: 548px; width: 138px; }
+      #b1-ko-1 { left: 448px; top: 530px; width: 96px; height: 96px; }
+      #b1-ko-1 .b1-ico { left: 20px; top: 20px; width: 56px; height: 56px; }
+
+      .b1-axe { position: absolute; opacity: 0; will-change: transform; }
+      #b1-matin { left: 620px; top: 226px; width: 150px; height: 50px; }
+      #b1-soir { left: 884px; top: 226px; width: 140px; height: 50px; }
+      .b1-axe .b1-ico { position: absolute; left: 0; top: 2px; width: 46px; height: 46px; color: var(--yb-yellow-edge); }
+      .b1-axe span { position: absolute; left: 56px; top: 8px; font-size: 36px; font-weight: 900; line-height: 1; color: var(--ink); white-space: nowrap; }
+      .b1-piste { position: absolute; left: 620px; width: 400px; height: 46px; border-radius: 23px; background: #e2e1d9; opacity: 0; overflow: hidden; }
+      .b1-piste div { position: absolute; left: 0; top: 0; height: 46px; border-radius: 23px; will-change: transform; }
+      #b1-piste-a { top: 306px; }
+      #b1-piste-a div { width: 190px; background: var(--yb-orange); }
+      #b1-piste-b { top: 660px; }
+      #b1-piste-b div { width: 400px; background: var(--yb-green); }
+      #b1-cale { left: 620px; top: 604px; width: 400px; font-size: 44px; color: #378700; }
+      .b1-biscuit { width: 100px; }
+      #b1-bis-1 { left: 800px; top: 374px; }
+      #b1-bis-2 { left: 868px; top: 390px; }
+      #b1-bis-3 { left: 936px; top: 374px; }
+      #b1-pourquoi { left: 712px; top: 392px; font-size: 56px; padding: 6px 24px; background: #ffffff; color: var(--ink); box-shadow: 0 6px 0 #dcdbd3; }
+
+      /* Scène 2 · les en-cas du soir, en calories : trois colonnes à l'échelle (656 → 380 px), chacune sur son matin. */
+      #b1-labo { position: absolute; left: 110px; top: 232px; width: 96px; height: 96px; border-radius: 50%; background: var(--yb-blue-2);
+        box-shadow: 0 6px 0 #b4def6; opacity: 0; will-change: transform; }
+      #b1-labo .b1-ico { left: 22px; top: 22px; width: 52px; height: 52px; color: var(--yb-blue-edge); }
+      .b1-pilule { position: absolute; height: 84px; padding: 0 28px 0 22px; display: flex; align-items: center; gap: 12px; border-radius: 999px;
+        background: #ffffff; box-shadow: 0 6px 0 #dcdbd3; opacity: 0; will-change: transform; }
+      .b1-pilule .b1-ico { position: relative; width: 48px; height: 48px; }
+      .b1-pilule span { font-size: 46px; font-weight: 900; line-height: 1; color: var(--ink); white-space: nowrap; }
+      .b1-pilule img { display: block; width: 54px; }
+      #b1-femmes { left: 226px; top: 238px; }
+      #b1-quoi { left: 600px; top: 238px; }
+      #b1-quoi .b1-ico { color: var(--yb-yellow-edge); }
+      #b1-sol2 { position: absolute; left: 100px; top: 800px; width: 880px; height: 10px; border-radius: 5px; background: #d4d3ca; opacity: 0; }
+      .b1-col { position: absolute; width: 200px; border-radius: 28px 28px 8px 8px; will-change: transform; }
+      #b1-col-1 { left: 150px; top: 420px; height: 380px; background: var(--yb-orange); box-shadow: inset 0 -10px 0 var(--yb-orange-edge); }
+      #b1-col-2 { left: 440px; top: 440px; height: 360px; background: var(--yb-orange); box-shadow: inset 0 -10px 0 var(--yb-orange-edge); }
+      #b1-col-3 { left: 730px; top: 518px; height: 282px; background: var(--yb-green); box-shadow: inset 0 -10px 0 var(--yb-green-edge); }
+      .b1-chiffre { position: absolute; width: 200px; text-align: center; font-size: 62px; font-weight: 900; line-height: 1; color: var(--ink);
+        font-variant-numeric: tabular-nums; white-space: nowrap; opacity: 0; will-change: transform; }
+      #b1-n-1 { left: 150px; top: 348px; }
+      #b1-n-2 { left: 440px; top: 368px; }
+      #b1-n-3 { left: 730px; top: 446px; }
+      #b1-p-1 { left: 194px; top: 822px; width: 112px; filter: drop-shadow(0 7px 0 #cfcec5); }
+      #b1-p-2 { left: 480px; top: 818px; width: 120px; }
+      #b1-p-3a { left: 742px; top: 822px; width: 112px; }
+      #b1-p-3b { left: 858px; top: 812px; width: 70px; }
+      #b1-egal { left: 357px; top: 500px; font-size: 60px; padding: 4px 18px; background: #ffffff; color: var(--ink); box-shadow: 0 6px 0 #dcdbd3; }
+      #b1-quart { left: 770px; top: 336px; font-size: 70px; padding: 10px 30px; background: var(--yb-yellow); color: var(--ink); box-shadow: 0 7px 0 var(--yb-yellow-edge); }
+    </style>
+  </head>
+  <body>
+    <!-- Les bruitages : un soft_click par élément qui se pose, volume 0,6. Dans CapCut, ceux des repères « surtout » et
+         « placard » sont remplacés par le son d'erreur de Mohamed (recaler.py, « erreurs »). -->
+    <div id="b1-root" data-composition-id="grignoter-agressif-b1" data-start="0" data-duration="20.35" data-width="1080" data-height="960">
+      <div id="b1-scene" class="clip scene-b" data-start="0" data-duration="20.35" data-track-index="0">
+        <img class="b1-toile" src="assets/img/toile.jpg" alt="">
+
+        <div class="b1-plan" id="b1-s1">
+          <img class="b1-food" id="b1-vide" src="assets/img/aliments/assiette.png" alt="">
+          <img class="b1-food" id="b1-cereales" src="assets/img/aliments/cereales.png" alt="">
+          <img class="b1-food" id="b1-donut" src="assets/img/aliments/donut.png" alt="">
+          <div class="b1-badge b1-ok" id="b1-ok-1"><div class="b1-ico"><i data-lucide="check"></i></div></div>
+          <div class="b1-badge b1-ok" id="b1-ok-2"><div class="b1-ico"><i data-lucide="check"></i></div></div>
+          <div class="b1-badge b1-ok" id="b1-ok-3"><div class="b1-ico"><i data-lucide="check"></i></div></div>
+          <img class="b1-food" id="b1-oeuf" src="assets/img/aliments/oeuf.png" alt="">
+          <img class="b1-food" id="b1-steak" src="assets/img/aliments/steak.png" alt="">
+          <div class="b1-badge b1-ko" id="b1-ko-1"><div class="b1-ico"><i data-lucide="x"></i></div></div>
+
+          <div class="b1-axe" id="b1-matin"><div class="b1-ico"><i data-lucide="sun"></i></div><span>Matin</span></div>
+          <div class="b1-axe" id="b1-soir"><div class="b1-ico"><i data-lucide="moon"></i></div><span>Soir</span></div>
+          <div class="b1-piste" id="b1-piste-a"><div id="b1-jauge-a"></div></div>
+          <div class="b1-piste" id="b1-piste-b"><div id="b1-jauge-b"></div></div>
+          <div class="b1-lab" id="b1-cale">Calé</div>
+          <img class="b1-food b1-biscuit" id="b1-bis-1" src="assets/img/aliments/cookie.png" alt="">
+          <img class="b1-food b1-biscuit" id="b1-bis-2" src="assets/img/aliments/cookie.png" alt="">
+          <img class="b1-food b1-biscuit" id="b1-bis-3" src="assets/img/aliments/cookie.png" alt="">
+          <div class="b1-n" id="b1-pourquoi">?</div>
+        </div>
+
+        <div class="b1-plan" id="b1-s2">
+          <div id="b1-labo"><div class="b1-ico"><i data-lucide="flask-conical"></i></div></div>
+          <div class="b1-pilule" id="b1-femmes"><div class="b1-ico"><i data-lucide="users"></i></div><span>20</span></div>
+          <div class="b1-pilule" id="b1-quoi"><div class="b1-ico"><i data-lucide="moon"></i></div><img src="assets/img/aliments/cookie.png" alt=""><span>kcal</span></div>
+          <div id="b1-sol2"></div>
+          <div class="b1-col" id="b1-col-1"></div>
+          <div class="b1-col" id="b1-col-2"></div>
+          <div class="b1-col" id="b1-col-3"></div>
+          <div class="b1-chiffre" id="b1-n-1">656</div>
+          <div class="b1-chiffre" id="b1-n-2">621</div>
+          <div class="b1-chiffre" id="b1-n-3">486</div>
+          <img class="b1-food" id="b1-p-1" src="assets/img/aliments/assiette.png" alt="">
+          <img class="b1-food" id="b1-p-2" src="assets/img/aliments/cereales.png" alt="">
+          <img class="b1-food" id="b1-p-3a" src="assets/img/aliments/oeuf.png" alt="">
+          <img class="b1-food" id="b1-p-3b" src="assets/img/aliments/steak.png" alt="">
+          <div class="b1-n" id="b1-egal">≈</div>
+          <div class="b1-n" id="b1-quart">−¼</div>
+        </div>
+      </div>
+
+      <audio id="b1-s-rien" src="assets/sfx/soft_click.wav" data-start="0.10" data-duration="0.22" data-track-index="11" data-volume="0.6"></audio>
+      <audio id="b1-s-cereales" src="assets/sfx/soft_click.wav" data-start="2.20" data-duration="0.22" data-track-index="12" data-volume="0.6"></audio>
+      <audio id="b1-s-transformes" src="assets/sfx/soft_click.wav" data-start="3.70" data-duration="0.22" data-track-index="13" data-volume="0.6"></audio>
+      <audio id="b1-s-parfait" src="assets/sfx/soft_click.wav" data-start="4.70" data-duration="0.22" data-track-index="14" data-volume="0.6"></audio>
+      <audio id="b1-s-oeufs" src="assets/sfx/soft_click.wav" data-start="5.54" data-duration="0.22" data-track-index="15" data-volume="0.6"></audio>
+      <audio id="b1-s-surtout" src="assets/sfx/soft_click.wav" data-start="6.24" data-duration="0.22" data-track-index="16" data-volume="0.6"></audio>
+      <audio id="b1-s-proteines" src="assets/sfx/soft_click.wav" data-start="7.12" data-duration="0.22" data-track-index="17" data-volume="0.6"></audio>
+      <audio id="b1-s-soir" src="assets/sfx/soft_click.wav" data-start="8.58" data-duration="0.22" data-track-index="18" data-volume="0.6"></audio>
+      <audio id="b1-s-placard" src="assets/sfx/soft_click.wav" data-start="9.98" data-duration="0.22" data-track-index="19" data-volume="0.6"></audio>
+      <audio id="b1-s-mesure" src="assets/sfx/soft_click.wav" data-start="12.08" data-duration="0.22" data-track-index="20" data-volume="0.6"></audio>
+      <audio id="b1-s-sans" src="assets/sfx/soft_click.wav" data-start="13.24" data-duration="0.22" data-track-index="21" data-volume="0.6"></audio>
+      <audio id="b1-s-avec" src="assets/sfx/soft_click.wav" data-start="14.18" data-duration="0.22" data-track-index="22" data-volume="0.6"></audio>
+      <audio id="b1-s-autant" src="assets/sfx/soft_click.wav" data-start="16.56" data-duration="0.22" data-track-index="23" data-volume="0.6"></audio>
+      <audio id="b1-s-oeufs2" src="assets/sfx/soft_click.wav" data-start="17.52" data-duration="0.22" data-track-index="24" data-volume="0.6"></audio>
+      <audio id="b1-s-quart" src="assets/sfx/soft_click.wav" data-start="18.88" data-duration="0.22" data-track-index="25" data-volume="0.6"></audio>
+    </div>
+
+    <script>
+      (function () {
+        // LES REPÈRES, en secondes depuis le début du plan B. Chacun est attaché à un mot de la prise : recaler.py
+        // les réécrit quand le découpage change (ne pas les régler à la main). Chaque repère qui a un clic est aussi
+        // le data-start de son <audio> (#b1-s-<nom>).
+        var CUES = {
+          rien: 0.10,        // « Saute ton petit-déjeuner » : l'assiette vide · clic
+          cereales: 2.20,    // « un grand bol de céréales » : le bol · clic
+          transformes: 3.70, // « des aliments transformés » : le donut · clic
+          parfait: 4.70,     // « c'est excellent » : trois coches vertes, l'ironie · clic
+          oeufs: 5.54,       // « les œufs » : l'œuf au plat · clic
+          viande: 5.94,      // « la viande » : le steak
+          surtout: 6.24,     // « surtout pas » : la croix rouge, les deux encaissent · son d'erreur
+          proteines: 7.12,   // « Leurs protéines » : Matin → Soir, la piste des œufs, le mot Calé · clic
+          cale: 7.62,        // « te caleraient » : la jauge verte part
+          soir: 8.58,        // « jusqu'au soir » : elle arrive au bout · clic
+          soir2: 9.28,       // « Comme ça, le soir » : la piste des trois matins, sa jauge s'arrête en route
+          placard: 9.98,     // « tu ouvres le placard » : les biscuits, au bout de la journée · son d'erreur
+          pourquoi: 10.62,   // « sans savoir pourquoi » : ?
+          chercheurs: 11.40, // « Des chercheurs » : la scène du matin s'en va
+          mesure: 12.08,     // « l'ont mesuré » : la fiole · clic
+          femmes: 12.96,     // « des jeunes femmes » : 20 ; et ce qu'on mesure : les en-cas du soir, en kcal
+          sans: 13.24,       // « sans petit-déjeuner » : la colonne 656, sur l'assiette vide · clic
+          avec: 14.18,       // « avec des céréales » : la colonne 621, sur le bol · clic
+          autant: 16.56,     // « presque autant » : ≈ entre les deux · clic
+          avec2: 17.06,      // « Avec les œufs, la viande » : l'œuf et le steak sous la troisième colonne
+          oeufs2: 17.52,     // … la colonne 486 monte, plus basse · clic
+          quart: 18.88,      // « un quart de moins » : −¼ · clic
+          dommage: 19.84     // « Quel dommage » : 486 bat une fois
+        };
+
+        if (window.lucide) window.lucide.createIcons();
+        var tl = gsap.timeline({ paused: true });
+        var pose = function (sel, t, d) { tl.fromTo(sel, { opacity: 0, scale: 0.3 }, { opacity: 1, scale: 1, duration: d || 0.4, ease: "back.out(1.6)" }, t); };
+        var monte = function (sel, t, d) { tl.fromTo(sel, { scaleY: 0, transformOrigin: "50% 100%" }, { scaleY: 1, duration: d || 0.5, ease: "power3.out" }, t); };
+        var entre = function (sel, t) { tl.fromTo(sel, { opacity: 0, y: 14 }, { opacity: 1, y: 0, duration: 0.3, ease: "power3.out" }, t); };
+
+        // Scène 1 · les trois matins « excellents ».
+        pose("#b1-vide", CUES.rien);
+        pose("#b1-cereales", CUES.cereales);
+        pose("#b1-donut", CUES.transformes);
+        pose("#b1-ok-1", CUES.parfait, 0.3);
+        pose("#b1-ok-2", CUES.parfait + 0.12, 0.3);
+        pose("#b1-ok-3", CUES.parfait + 0.24, 0.3);
+
+        // « les œufs, la viande, surtout pas ».
+        pose("#b1-oeuf", CUES.oeufs);
+        tl.fromTo("#b1-steak", { opacity: 0, scale: 0.3, rotation: 12 }, { opacity: 1, scale: 1, rotation: 12, duration: 0.4, ease: "back.out(1.6)" }, CUES.viande);
+        pose("#b1-ko-1", CUES.surtout, 0.3);
+        [["#b1-oeuf", 0.1], ["#b1-steak", 0.1]].forEach(function (c) {
+          tl.to(c[0], { x: -9, duration: 0.045, ease: "none" }, CUES.surtout + c[1]);
+          tl.to(c[0], { x: 9, duration: 0.045, ease: "none" }, CUES.surtout + c[1] + 0.045);
+          tl.to(c[0], { x: -9, duration: 0.045, ease: "none" }, CUES.surtout + c[1] + 0.09);
+          tl.to(c[0], { x: 0, duration: 0.04, ease: "none" }, CUES.surtout + c[1] + 0.135);
+        });
+
+        // « Leurs protéines te caleraient jusqu'au soir » : la journée, et la jauge des œufs qui va au bout.
+        entre("#b1-matin", CUES.proteines);
+        entre("#b1-soir", CUES.proteines + 0.1);
+        tl.fromTo("#b1-piste-b", { opacity: 0 }, { opacity: 1, duration: 0.2, ease: "power2.out" }, CUES.proteines + 0.1);
+        entre("#b1-cale", CUES.proteines + 0.15);
+        tl.fromTo("#b1-jauge-b", { scaleX: 0, transformOrigin: "0% 50%" }, { scaleX: 1, duration: Math.max(0.4, CUES.soir - CUES.cale), ease: "power1.inOut" }, CUES.cale);
+
+        // « Comme ça, le soir, tu ouvres le placard » : sans protéines, la jauge s'arrête en route ; les biscuits arrivent.
+        tl.fromTo("#b1-piste-a", { opacity: 0 }, { opacity: 1, duration: 0.2, ease: "power2.out" }, CUES.soir2 - 0.1);
+        tl.fromTo("#b1-jauge-a", { scaleX: 0, transformOrigin: "0% 50%" }, { scaleX: 1, duration: 0.5, ease: "power2.out" }, CUES.soir2);
+        pose("#b1-bis-1", CUES.placard, 0.3);
+        pose("#b1-bis-2", CUES.placard + 0.12, 0.3);
+        pose("#b1-bis-3", CUES.placard + 0.24, 0.3);
+        pose("#b1-pourquoi", CUES.pourquoi, 0.3);
+
+        // « Des chercheurs » : la scène du matin s'en va par le haut.
+        tl.to("#b1-s1", { opacity: 0, y: -30, duration: 0.25, ease: "power2.in" }, CUES.chercheurs);
+
+        // Scène 2 · ce qu'on a mesuré : les en-cas du soir.
+        pose("#b1-labo", CUES.mesure);
+        tl.fromTo("#b1-sol2", { opacity: 0 }, { opacity: 1, duration: 0.25, ease: "power2.out" }, CUES.mesure + 0.1);
+        tl.fromTo("#b1-femmes", { opacity: 0, x: -24 }, { opacity: 1, x: 0, duration: 0.3, ease: "power3.out" }, CUES.femmes - 0.3);
+        tl.fromTo("#b1-quoi", { opacity: 0, x: 24 }, { opacity: 1, x: 0, duration: 0.3, ease: "power3.out" }, CUES.femmes - 0.1);
+
+        pose("#b1-p-1", CUES.sans, 0.3);
+        monte("#b1-col-1", CUES.sans + 0.1);
+        entre("#b1-n-1", CUES.sans + 0.4);
+        pose("#b1-p-2", CUES.avec, 0.3);
+        monte("#b1-col-2", CUES.avec + 0.1);
+        entre("#b1-n-2", CUES.avec + 0.4);
+        pose("#b1-egal", CUES.autant);
+
+        pose("#b1-p-3a", CUES.avec2, 0.3);
+        tl.fromTo("#b1-p-3b", { opacity: 0, scale: 0.3, rotation: 12 }, { opacity: 1, scale: 1, rotation: 12, duration: 0.3, ease: "back.out(1.6)" }, CUES.avec2 + 0.14);
+        monte("#b1-col-3", CUES.oeufs2);
+        entre("#b1-n-3", CUES.oeufs2 + 0.3);
+        pose("#b1-quart", CUES.quart);
+        tl.to("#b1-n-3", { scale: 1.16, duration: 0.15, ease: "power2.out" }, CUES.dommage);
+        tl.to("#b1-n-3", { scale: 1, duration: 0.2, ease: "power2.inOut" }, CUES.dommage + 0.15);
+
+        window.__timelines["grignoter-agressif-b1"] = tl;
+      })();
+    </script>
+  </body>
+</html>

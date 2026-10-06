@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="fr" data-resolution="portrait">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=1080, height=1920">
+    <link rel="stylesheet" href="compositions/components/kit.css">
+    <link rel="stylesheet" href="compositions/components/youbud.css">
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.14.2/dist/gsap.min.js"></script>
+    <script src="assets/vendor/lucide.min.js"></script>
+    <style>
+      @font-face {
+        font-family: "Archivo";
+        src: url("assets/fonts/Archivo.woff2") format("woff2");
+        font-weight: 400 900;
+        font-display: block;
+      }
+      /* Insert 3 : dix semaines plus tard. Calqué sur le plan 0:40 → 0:46 de Train Bloom (la ligne « 10 weeks »,
+         −27 lbs, −9 % de gras), en kilos et en fractions : −12 kg, un tiers puis un quart de son corps. La jauge du bas
+         reprend celle de Train Bloom (0:58, la tension), mais sur ce que CNN a publié : son indice de masse corporelle,
+         de « surpoids » (28,8) à « normal » (24,9). Aucune source ne donne sa tension : elle n'est pas montrée.
+         Tout est préfixé i3-. Zone utile : y 240 → 1510. */
+      .i3-toile { position: absolute; left: 0; top: 0; width: 1080px; height: 1920px; display: block; }
+      .i3-ico { position: absolute; }
+      .i3-ico svg.lucide { display: block; width: 100%; height: 100%; }
+      .i3-mot { position: absolute; font-weight: 900; line-height: 1; color: var(--ink); white-space: nowrap; opacity: 0; will-change: transform; }
+      .i3-trait { opacity: 0; }
+
+      /* 1 · la durée : la pilule, puis la ligne et ses dix semaines. */
+      #i3-duree { position: absolute; left: 0; top: 250px; width: 1080px; text-align: center; opacity: 0; will-change: transform; }
+      #i3-duree span.yb-pill { font-size: 62px; padding: 12px 38px; background: var(--yb-yellow); color: var(--ink);
+        box-shadow: 0 8px 0 var(--yb-yellow-edge); font-variant-numeric: tabular-nums; }
+      #i3-frise { position: absolute; left: 190px; top: 384px; width: 700px; height: 10px; border-radius: 5px; background: #d4d3ca; will-change: transform; }
+      .i3-sem { position: absolute; top: 375px; width: 28px; height: 28px; border-radius: 50%; background: var(--yb-yellow);
+        box-shadow: 0 4px 0 var(--yb-yellow-edge); opacity: 0; will-change: transform; }
+
+      /* 2 · le poids perdu : la flèche dans son rond, et le chiffre. */
+      #i3-kilos { position: absolute; left: 0; top: 462px; width: 1080px; height: 190px; }
+      #i3-bas { position: absolute; left: 118px; top: 30px; width: 132px; height: 132px; border-radius: 50%; background: var(--yb-green);
+        box-shadow: 0 8px 0 var(--yb-green-edge); opacity: 0; will-change: transform; }
+      #i3-bas .i3-ico { left: 26px; top: 26px; width: 80px; height: 80px; color: #ffffff; }
+      #i3-bas .i3-ico svg.lucide { stroke-width: 3.2; }
+      #i3-kilos-n { left: 284px; top: 6px; font-size: 180px; letter-spacing: -0.03em; font-variant-numeric: tabular-nums; }
+
+      /* 3 · le gras : son corps en camembert, la part jaune au tiers, puis au quart. (Une silhouette remplie par le
+         bas se lisait « des jambes grasses » : écartée.) */
+      #i3-corps { position: absolute; left: 140px; top: 716px; width: 330px; height: 330px; opacity: 0; will-change: transform; }
+      #i3-corps svg { display: block; width: 330px; height: 330px; filter: drop-shadow(0 9px 0 #b9b8af); }
+      #i3-corps-mot { left: 140px; top: 1082px; width: 330px; text-align: center; font-size: 56px; }
+      #i3-gras-mot { left: 552px; top: 722px; font-size: 76px; }
+      .i3-part { position: absolute; left: 546px; opacity: 0; will-change: transform; transform-origin: 0% 50%; }
+      .i3-part span.yb-pill { font-size: 110px; padding: 8px 40px; background: var(--yb-yellow); color: var(--ink);
+        box-shadow: 0 9px 0 var(--yb-yellow-edge); font-variant-numeric: tabular-nums; }
+      #i3-tiers { top: 824px; }
+      #i3-quart { top: 1000px; }
+
+      /* 4 · la jauge : de « surpoids » à « normal », sa tête (la photo de l'insert 1) pour curseur. */
+      #i3-jauge { position: absolute; left: 110px; top: 1398px; width: 860px; height: 56px; opacity: 0; will-change: transform; }
+      #i3-jauge i { position: absolute; top: 0; height: 56px; display: block; }
+      #i3-zone-n { left: 0; width: 426px; border-radius: 28px 6px 6px 28px; background: var(--yb-green-2); box-shadow: 0 7px 0 #c5e9a4; }
+      #i3-zone-s { left: 434px; width: 426px; border-radius: 6px 28px 28px 6px; background: var(--yb-orange-2); box-shadow: 0 7px 0 #f3d9ae; }
+      #i3-normal { left: 110px; top: 1480px; width: 426px; text-align: center; font-size: 50px; }
+      #i3-surpoids { left: 544px; top: 1480px; width: 426px; text-align: center; font-size: 50px; }
+      #i3-tete { position: absolute; left: 687px; top: 1262px; width: 140px; height: 140px; border-radius: 50%; background: #ffffff;
+        box-shadow: 0 7px 0 #dcdbd3; overflow: hidden; opacity: 0; will-change: transform; }
+      #i3-tete img { position: absolute; left: 24px; top: 3px; width: 92px; display: block; }
+      #i3-ok { left: 360px; top: 1238px; width: 84px; height: 84px; }
+    </style>
+  </head>
+  <body>
+    <div id="i3-root" data-composition-id="gateaux-i3-semaines" data-start="0" data-duration="7.23" data-width="1080" data-height="1920">
+      <div id="i3-scene" class="clip" data-start="0" data-duration="7.23" data-track-index="0">
+        <img class="i3-toile" src="assets/img/toile-pleine.jpg" alt="">
+
+        <div id="i3-duree"><span class="yb-pill">10 semaines</span></div>
+        <div id="i3-frise"></div>
+        <div id="i3-semaines"></div>
+
+        <div id="i3-kilos">
+          <div id="i3-bas"><div class="i3-ico"><i data-lucide="arrow-down"></i></div></div>
+          <div class="i3-mot" id="i3-kilos-n">−0 kg</div>
+        </div>
+
+        <div id="i3-corps">
+          <svg viewBox="0 0 300 300">
+            <circle cx="150" cy="150" r="150" fill="#cfcec5"/>
+            <circle id="i3-gras" cx="150" cy="150" r="75" fill="none" stroke="#ffc800" stroke-width="150" stroke-dasharray="0 471.24" transform="rotate(-90 150 150)"/>
+          </svg>
+        </div>
+        <div class="i3-mot" id="i3-corps-mot">Corps</div>
+        <div class="i3-mot" id="i3-gras-mot">Gras</div>
+        <div class="i3-part" id="i3-tiers"><span class="yb-pill">1/3</span></div>
+        <div class="i3-part" id="i3-quart"><span class="yb-pill">1/4</span></div>
+
+        <div id="i3-jauge"><i id="i3-zone-n"></i><i id="i3-zone-s"></i></div>
+        <div class="i3-mot" id="i3-normal">Normal</div>
+        <div class="i3-mot" id="i3-surpoids">Surpoids</div>
+        <div id="i3-tete"><img src="assets/img/tetes/mark-haub.png" alt="" data-layout-allow-overflow></div>
+        <div class="yb-badge" id="i3-ok"><svg viewBox="0 0 96 96"><path class="i3-trait" d="M27 50 L42 65 L70 34"/></svg></div>
+      </div>
+
+      <audio id="i3-s-dix" src="assets/sfx/clicks.wav" data-start="0.00" data-duration="0.35" data-track-index="81" data-volume="0.57"></audio>
+      <audio id="i3-s-perdu" src="assets/sfx/soft_click.wav" data-start="1.00" data-duration="0.22" data-track-index="82" data-volume="0.6"></audio>
+      <audio id="i3-s-douze" src="assets/sfx/impacts.mp3" data-start="1.26" data-duration="1.3" data-media-start="0.2" data-track-index="83" data-volume="0.26"></audio>
+      <audio id="i3-s-depart" src="assets/sfx/soft_click.wav" data-start="1.92" data-duration="0.22" data-track-index="84" data-volume="0.6"></audio>
+      <audio id="i3-s-tiers" src="assets/sfx/soft_click.wav" data-start="2.66" data-duration="0.22" data-track-index="85" data-volume="0.6"></audio>
+      <audio id="i3-s-quart" src="assets/sfx/soft_click.wav" data-start="5.10" data-duration="0.22" data-track-index="86" data-volume="0.6"></audio>
+      <audio id="i3-s-passe" src="assets/sfx/soft_click.wav" data-start="5.55" data-duration="0.22" data-track-index="87" data-volume="0.6"></audio>
+      <audio id="i3-s-surpoids" src="assets/sfx/soft_click.wav" data-start="5.63" data-duration="0.22" data-track-index="88" data-volume="0.6"></audio>
+      <audio id="i3-s-normal" src="assets/sfx/correct.wav" data-start="6.55" data-duration="0.5" data-track-index="89" data-volume="0.4"></audio>
+    </div>
+
+    <script>
+      (function () {
+        // LES REPÈRES, en secondes depuis le début de l'insert. Estimés à 3,8 mots par seconde avant le tournage :
+        // chacun est attaché à un mot, et se recale sur la prise avant le rendu final. Un repère qui a un son est
+        // aussi le data-start de son <audio> (#i3-s-<nom>).
+        var CUES = {
+          dix: 0.00,       // « Dix semaines plus tard » : la pilule, la ligne, ses dix points · clic
+          perdu: 1.00,     // « il avait perdu » : la flèche verte vers le bas · clic
+          douze: 1.26,     // « douze kilos » : le chiffre compte jusqu'à −12 kg · impact
+          depart: 1.92,    // « Au départ » : son corps, un disque gris, et son mot · clic
+          tiers: 2.66,     // « un tiers » : la part jaune s'ouvre jusqu'au tiers, la pilule 1/3 · clic
+          gras: 3.54,      // « du gras » : le mot Gras
+          quart: 5.10,     // « un quart » : la part jaune se referme au quart, la pilule 1/4 · clic
+          passe: 5.55,     // « Il est passé » : la jauge et ses deux mots · clic
+          surpoids: 5.63,  // « du surpoids » : sa tête se pose sur Surpoids · clic
+          normal: 6.55     // « à un poids normal » : la tête saute sur Normal, la coche se dessine · réussite
+        };
+
+        window.__timelines = window.__timelines || {};
+        if (window.lucide) window.lucide.createIcons();
+
+        // Les dix semaines : dix points sur la ligne, posés par le calcul.
+        var boite = document.getElementById("i3-semaines");
+        for (var k = 0; k < 10; k++) {
+          var p = document.createElement("div");
+          p.className = "i3-sem";
+          p.style.left = Math.round(190 + 35 + k * 70 - 14) + "px";
+          boite.appendChild(p);
+        }
+        var coche = document.querySelector("#i3-ok .i3-trait");
+        var L = coche.getTotalLength() * 1.05;
+        coche.style.strokeDasharray = L;
+        coche.style.strokeDashoffset = L;
+
+        var tl = gsap.timeline({ paused: true });
+
+        // 1 · « Dix semaines plus tard » : la pilule, la ligne se tire, les dix points se posent en rafale.
+        tl.fromTo("#i3-duree", { opacity: 0, scale: 0.3 }, { opacity: 1, scale: 1, duration: 0.4, ease: "back.out(1.6)" }, CUES.dix);
+        tl.fromTo("#i3-frise", { scaleX: 0, transformOrigin: "0% 50%" }, { scaleX: 1, duration: 0.7, ease: "power2.out" }, CUES.dix + 0.1);
+        tl.fromTo(".i3-sem", { opacity: 0, scale: 0.3 }, { opacity: 1, scale: 1, duration: 0.25, ease: "back.out(1.8)", stagger: 0.065 }, CUES.dix + 0.18);
+
+        // 2 · « il avait perdu douze kilos » : la flèche, puis le chiffre qui compte.
+        var kilos = { v: 0 }, kilosN = document.getElementById("i3-kilos-n");
+        tl.fromTo("#i3-bas", { opacity: 0, scale: 0.3 }, { opacity: 1, scale: 1, duration: 0.35, ease: "back.out(1.6)" }, CUES.perdu);
+        tl.fromTo("#i3-bas .i3-ico", { y: -14 }, { y: 0, duration: 0.3, ease: "power2.out" }, CUES.perdu + 0.1);
+        tl.fromTo("#i3-kilos-n", { opacity: 0 }, { opacity: 1, duration: 0.12, ease: "power2.out" }, CUES.douze);
+        tl.fromTo(kilos, { v: 0 }, { v: 12, duration: 0.5, ease: "power2.out", onUpdate: function () { kilosN.textContent = "−" + Math.round(kilos.v) + " kg"; } }, CUES.douze);
+        tl.fromTo("#i3-kilos-n", { scale: 1, transformOrigin: "0% 50%" }, { scale: 1.08, duration: 0.14, ease: "power2.out" }, CUES.douze + 0.5);
+        tl.to("#i3-kilos-n", { scale: 1, duration: 0.2, ease: "power2.inOut" }, CUES.douze + 0.64);
+
+        // 3 · « Au départ » : son corps, un disque encore gris, et son mot.
+        tl.fromTo("#i3-corps", { opacity: 0, scale: 0.3 }, { opacity: 1, scale: 1, duration: 0.45, ease: "back.out(1.4)" }, CUES.depart);
+        tl.fromTo("#i3-corps-mot", { opacity: 0, y: 12 }, { opacity: 1, y: 0, duration: 0.3, ease: "power3.out" }, CUES.depart + 0.2);
+
+        // 4 · « un tiers de son corps » : la part jaune s'ouvre jusqu'au tiers (157,08 sur 471,24 de tour), sa pilule
+        // se pose ; « du gras » : le mot.
+        tl.fromTo("#i3-gras", { attr: { "stroke-dasharray": "0 471.24" } }, { attr: { "stroke-dasharray": "157.08 471.24" }, duration: 0.6, ease: "power3.out" }, CUES.tiers);
+        tl.fromTo("#i3-tiers", { opacity: 0, scale: 0.3 }, { opacity: 1, scale: 1, duration: 0.4, ease: "back.out(1.6)" }, CUES.tiers);
+        tl.fromTo("#i3-gras-mot", { opacity: 0, x: -20 }, { opacity: 1, x: 0, duration: 0.3, ease: "power3.out" }, CUES.gras);
+
+        // 5 · « un quart » : la part se referme au quart (117,81) ; 1/3 pâlit, 1/4 se pose dessous.
+        tl.to("#i3-gras", { attr: { "stroke-dasharray": "117.81 471.24" }, duration: 0.6, ease: "power3.inOut" }, CUES.quart - 0.25);
+        tl.to("#i3-tiers", { opacity: 0.3, duration: 0.25, ease: "power2.out" }, CUES.quart - 0.1);
+        tl.fromTo("#i3-quart", { opacity: 0, scale: 0.3 }, { opacity: 1, scale: 1, duration: 0.4, ease: "back.out(1.6)" }, CUES.quart);
+
+        // 6 · « Il est passé » : la jauge et ses deux mots.
+        tl.fromTo("#i3-jauge", { opacity: 0, y: 24 }, { opacity: 1, y: 0, duration: 0.35, ease: "power3.out" }, CUES.passe);
+        tl.fromTo("#i3-normal", { opacity: 0, y: 12 }, { opacity: 1, y: 0, duration: 0.3, ease: "power3.out" }, CUES.passe + 0.15);
+        tl.fromTo("#i3-surpoids", { opacity: 0, y: 12 }, { opacity: 1, y: 0, duration: 0.3, ease: "power3.out" }, CUES.passe + 0.25);
+
+        // 7 · « du surpoids » : sa tête se pose sur Surpoids ; « normal » : elle saute sur Normal, la coche se dessine.
+        tl.fromTo("#i3-tete", { opacity: 0, scale: 0.3, x: 0, y: 0 }, { opacity: 1, scale: 1, x: 0, y: 0, duration: 0.4, ease: "back.out(1.6)" }, CUES.surpoids);
+        tl.to("#i3-tete", { x: -434, duration: 0.6, ease: "power2.inOut" }, CUES.normal - 0.45);
+        tl.to("#i3-tete", { y: -90, duration: 0.3, ease: "power2.out" }, CUES.normal - 0.45);
+        tl.to("#i3-tete", { y: 0, duration: 0.29, ease: "power2.in" }, CUES.normal - 0.14);
+        tl.fromTo("#i3-ok", { opacity: 0, scale: 0.3 }, { opacity: 1, scale: 1, duration: 0.35, ease: "back.out(1.8)" }, CUES.normal + 0.15);
+        tl.fromTo(coche, { opacity: 0 }, { opacity: 1, duration: 0.02, ease: "none" }, CUES.normal + 0.25);
+        tl.fromTo(coche, { strokeDashoffset: L }, { strokeDashoffset: 0, duration: 0.3, ease: "power2.out" }, CUES.normal + 0.25);
+
+        // Tenue : rien ne bouge après 9,8.
+        window.__timelines["gateaux-i3-semaines"] = tl;
+      })();
+    </script>
+  </body>
+</html>

@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=1080, height=960">
+    <link rel="stylesheet" href="compositions/components/kit.css">
+    <link rel="stylesheet" href="compositions/components/youbud.css">
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.14.2/dist/gsap.min.js"></script>
+    <script src="assets/vendor/lucide.min.js"></script>
+    <style>
+      @font-face {
+        font-family: "Archivo";
+        src: url("assets/fonts/Archivo.woff2") format("woff2");
+        font-weight: 400 900;
+        font-display: block;
+      }
+      /* Le cadre B de « Tu te prives de ce que tu aimes, et tu craques ? » : 1080 x 960, posé en haut
+         de l'image, Mohamed en petit dessous. Le titre fixe vit au-dessus de y = 230 : le contenu utile
+         reste entre y = 230 et y = 940. Trois éléments et un chiffre : 50 000+, la carte Interdit, sa
+         fissure, la carte Autorisé. Aucune bordure : des teintes claires à rebord plein. */
+      .clip.scene-b { width: 1080px; height: 960px; }
+      .toile { position: absolute; left: 0; top: 0; width: 1080px; height: 960px; display: block; }
+      .lab { position: absolute; font-size: 60px; font-weight: 900; line-height: 1; color: var(--ink);
+        text-align: center; white-space: nowrap; }
+      .ico { position: absolute; color: var(--ink); }
+      .ico svg.lucide { display: block; width: 100%; height: 100%; }
+      .t-rouge { --tint: var(--yb-red-2); --edge: #f4b8b8; }
+      .t-vert { --tint: var(--yb-green-2); --edge: #bfe4a0; }
+
+      /* Le chiffre : 50 000+, la seule pilule colorée, en haut au centre. */
+      #b1-chiffre { position: absolute; left: 290px; top: 262px; width: 500px; height: 128px; border-radius: 64px;
+        background: var(--yb-yellow); box-shadow: 0 8px 0 var(--yb-yellow-edge);
+        display: flex; align-items: center; justify-content: center; gap: 22px;
+        opacity: 0; will-change: transform; }
+      #b1-chiffre .ico { position: relative; width: 68px; height: 68px; }
+      #b1-chiffre .nombre { font-size: 80px; font-weight: 900; line-height: 1; color: var(--ink);
+        font-variant-numeric: tabular-nums; white-space: nowrap; }
+
+      /* Les deux cartes, côte à côte, à la même taille : un cadenas, un mot. */
+      .carte { top: 452px; width: 400px; height: 388px; opacity: 0; }
+      .carte .ico { left: 120px; top: 52px; width: 160px; height: 160px; }
+      .carte .lab { left: 0; top: 272px; width: 400px; }
+      #b1-interdit { left: 100px; }
+      #b1-interdit .ico { color: var(--yb-red); }
+      #b1-autorise { left: 580px; }
+      #b1-autorise .ico { color: var(--yb-green); }
+
+      /* La fissure : un zigzag à l'encre, du haut de la carte à travers le cadenas. Dans la carte, pour
+         encaisser la secousse avec elle. */
+      #b1-fissure { position: absolute; left: 0; top: 0; width: 400px; height: 388px; opacity: 0; overflow: visible; }
+      #b1-fissure path { fill: none; stroke: var(--ink); stroke-width: 9; stroke-linecap: round; stroke-linejoin: round; }
+    </style>
+  </head>
+  <body>
+    <!-- Les bruitages : un soft_click par élément, au volume du Kallaway edit (1 × 0,6). Rien d'autre.
+         Les data-start reprennent l'objet CUES du script : les changer ensemble. -->
+    <div id="b1-root" data-composition-id="prives-b1" data-start="0" data-duration="15.67" data-width="1080" data-height="960">
+      <div id="b1-scene" class="clip scene-b" data-start="0" data-duration="15.67" data-track-index="0">
+        <img class="toile" src="assets/img/toile.jpg" alt="">
+
+        <div id="b1-chiffre">
+          <div class="ico"><i data-lucide="users"></i></div>
+          <div class="nombre">50&nbsp;000+</div>
+        </div>
+
+        <div class="yb-card t-rouge carte" id="b1-interdit">
+          <div class="ico"><i data-lucide="lock"></i></div>
+          <div class="lab">Interdit</div>
+          <svg id="b1-fissure" viewBox="0 0 400 388" aria-hidden="true">
+            <path d="M 226 6 L 198 58 L 238 104 L 188 152 L 230 198 L 204 246"></path>
+          </svg>
+        </div>
+
+        <div class="yb-card t-vert carte" id="b1-autorise">
+          <div class="ico"><i data-lucide="lock-open"></i></div>
+          <div class="lab">Autorisé</div>
+        </div>
+      </div>
+
+      <audio id="b1-s-01" src="assets/sfx/soft_click.wav" data-start="1.47" data-duration="0.22" data-track-index="11" data-volume="0.6"></audio>
+      <audio id="b1-s-02" src="assets/sfx/soft_click.wav" data-start="4.00" data-duration="0.22" data-track-index="12" data-volume="0.6"></audio>
+      <audio id="b1-s-03" src="assets/sfx/soft_click.wav" data-start="7.58" data-duration="0.22" data-track-index="13" data-volume="0.6"></audio>
+      <audio id="b1-s-04" src="assets/sfx/soft_click.wav" data-start="10.95" data-duration="0.22" data-track-index="14" data-volume="0.6"></audio>
+    </div>
+
+    <script>
+      (function () {
+        // Les repères : mot du texte B → seconde, depuis le début du temps B (« Une étude allemande… »).
+        // Estimés à 4,75 mots par seconde avant le tournage (rang du mot − 1, divisé par 4,75). Après le
+        // tournage, `ke.py … plans` donne les vrais temps : recaler chaque valeur sur sa syllabe, reporter
+        // cinquante, privaient, casse et autorisaient dans les data-start des quatre <audio>, et fin + 0,3
+        // dans les deux data-duration (la racine et la scène).
+        var CUES = {
+          cinquante: 1.47,    // « plus de cinquante mille » (8e mot) : la pilule 50 000+, un clic
+          privaient: 4.00,    // « Celles qui se privaient » (20e) : la carte Interdit, un clic
+          casse: 7.58,        // « Une seule bouchée casse la règle » (37e) : la fissure, la carte encaisse, un clic
+          autorisaient: 10.95, // « Mais celles qui s'autorisaient tout » (53e) : la carte Autorisé, un clic
+          fin: 15.37          // fin de « plus souvent » (73 mots) : 0,3 s de tenue, rien ne bouge
+        };
+
+        if (window.lucide) window.lucide.createIcons();
+        var tl = gsap.timeline({ paused: true });
+        var carte = { opacity: 1, scale: 1, y: 0, duration: 0.55, ease: "power3.out" };
+
+        // Le chiffre.
+        tl.fromTo("#b1-chiffre", { opacity: 0, scale: 0.3 }, { opacity: 1, scale: 1, duration: 0.45, ease: "back.out(1.6)" }, CUES.cinquante);
+
+        // La carte Interdit.
+        tl.fromTo("#b1-interdit", { opacity: 0, scale: 0, y: 40 }, carte, CUES.privaient);
+
+        // La fissure se dessine, et la carte encaisse : -9 / +9 / -9 / +9, 0,05 s chacun, puis 0.
+        // La secousse part de 0 et y revient : aucun état de départ à rétablir quand on recule.
+        var fissure = document.querySelector("#b1-fissure path");
+        var long = fissure.getTotalLength() * 1.05;
+        fissure.style.strokeDasharray = long + " " + long;
+        tl.fromTo("#b1-fissure", { opacity: 0 }, { opacity: 1, duration: 0.01, ease: "none" }, CUES.casse);
+        tl.fromTo(fissure, { strokeDashoffset: long }, { strokeDashoffset: 0, duration: 0.3, ease: "power2.out" }, CUES.casse);
+        var pas = [0, -1, 1, -1, 1, 0];
+        function secousse(p) {
+          var i = Math.min(4, Math.floor(p * 5));
+          return pas[i] + (pas[i + 1] - pas[i]) * (p * 5 - i);
+        }
+        tl.fromTo("#b1-interdit", { x: 0 }, { x: 9, duration: 0.25, ease: secousse, immediateRender: false }, CUES.casse + 0.05);
+
+        // La carte Autorisé. Finie à 11,50 s ; ensuite, plus rien ne bouge jusqu'à fin + 0,3.
+        tl.fromTo("#b1-autorise", { opacity: 0, scale: 0, y: 40 }, carte, CUES.autorisaient);
+
+        window.__timelines["prives-b1"] = tl;
+      })();
+    </script>
+  </body>
+</html>

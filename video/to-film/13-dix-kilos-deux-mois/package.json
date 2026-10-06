@@ -1,0 +1,8 @@
+{
+  "name": "13-dix-kilos-deux-mois",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "check": "npx --yes hyperframes@0.8.21 check"
+  }
+}

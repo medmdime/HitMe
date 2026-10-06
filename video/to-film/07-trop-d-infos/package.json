@@ -1,0 +1,8 @@
+{
+  "name": "07-trop-d-infos",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "check": "npx --yes hyperframes@0.8.21 check"
+  }
+}
