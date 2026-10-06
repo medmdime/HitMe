@@ -8,119 +8,81 @@ ce que Claude écrit, tu le vois ici.
 
 ## Aujourd'hui
 
-**Le format jusqu'au dimanche 18 octobre : deux ou trois shorts par semaine selon ton temps, le samedi en priorité, au format Train Bloom passé au crible Kallaway ; une seule série, [[La série · ce qui annule ton déficit|ce qui annule ton déficit]] ; ta vie de tous les jours dans les stories. Pas de longue YouTube avant le semi, et le trailer attend.** Chaque script arrive avec ses animations et son b-roll : la méthode est dans le skill `science-reel`, § « Delivering a script to Mohamed ».
+**La direction, depuis le 28 septembre : répondre aux questions et aux frustrations des gens.** Pas une série sur ce qui annule ton déficit, pas un sujet tiré d'une étude : une question que les gens se posent vraiment (« je mange peu et je ne maigris pas », « toujours pas d'abdos », « j'ai tout repris »), trouvée dans [[profil/BESOIN-ET-CONCURRENCE|la recherche du besoin et de la concurrence]], et une réponse claire, preuve à l'appui, sans juger personne.
 
-**Jeudi 24 au soir : une seule série, « ce qui annule ton déficit ».** Chaque épisode raconte un moment de la semaine de la personne, pour qu'elle s'y retrouve. Le plan daté, les tournages et le tableau de bord : [[La série · ce qui annule ton déficit]], à valider avant de toucher au calendrier ; les scénarios, à lire un par un : [[Les scénarios de la série]] ; le tableau ci-dessous change à ce moment-là. La prochaine session tourne [[video/assiette-pas-le-dessert/VERSION-COURTE|la version courte de l'assiette]] et [[Laisse les gens vivre]].
+- **La promesse** : « Tu fais des efforts, et rien ne bouge ? Je t'explique pourquoi, sans te juger, et ce qui marche à la place. »
+- **Le format, ultra simple** : le hook, toi en grand ; toi en petit en bas, avec une mini-animation qui explique ; une phrase de conclusion ; l'appel. 25 à 40 secondes, pas de surmontage.
+- **Le ton** : un ami qui connaît le sujet. Une agressivité douce : dur avec les mauvaises idées, doux avec les gens. Des textes humains, qui répondent tout de suite à la question.
+- **La cadence** : une vidéo par jour, tournées par sessions de quatre. 14 vidéos au calendrier, du mercredi 30 septembre au mardi 13 octobre : [[Tes questions]].
+- **Les stories** continuent : elles marchent bien.
 
-| Sort | Short | Dossier |
+| Quand | Quoi | Où |
 |---|---|---|
-| jeudi 17, publiée | [[Déficit calorique]] | |
-| dimanche 20, publiée | **[[Ton week-end annule ta semaine]]**, 17 300 vues sur TikTok | ce qu'on en tire : [[Idées · ce qui annule ton déficit]] |
-| mardi 22, publiée | [[Les gummies de créatine, c'est pas de la créatine]] | |
-| **samedi 26** | [[Le plus calorique de ton assiette, ce n'est pas le dessert]] | [[video/assiette-pas-le-dessert/TOURNAGE\|tonalité et b-roll]] · [[video/assiette-pas-le-dessert/PROMPTEUR\|texte]] · [[video/assiette-pas-le-dessert/INSERTS-HYPERFRAMES\|animations]] |
-| **mardi 29**, proposé | [[Ton estomac ne compte pas les calories]] | [[video/estomac-sent-la-place/TOURNAGE\|tonalité et b-roll]] · [[video/estomac-sent-la-place/PROMPTEUR\|texte]] · [[video/estomac-sent-la-place/INSERTS-HYPERFRAMES\|animations]] |
-| **samedi 3 octobre**, proposé | [[Mange comme le corps que tu vises]] | [[video/corps-cible/TOURNAGE\|tonalité et b-roll]] · [[video/corps-cible/PROMPTEUR\|texte]] · [[video/corps-cible/INSERTS-HYPERFRAMES\|animations]] |
-| en réserve | [[Tu n'as jamais eu à le mériter]] | les pickups, une heure de CapCut |
+| **ce soir ou demain** | [[2026-09-29 🎬 Session 1 · J1 à J4\|session 1]] : J1 à J4 | [[Tu manges beaucoup, et tu ne prends rien]] · [[Tu manges peu, et tu ne maigris pas]] · [[Toujours pas d'abdos]] · [[Tu as perdu cinq kilos, et tout repris]] |
+| **jeudi 1er octobre** | [[2026-10-01 🎬 Session 2 · J5 à J8\|session 2]] : J5 à J8 | les dossiers 05 à 08 de [[Tes questions]] |
+| dimanche 4 et mercredi 7 | sessions 3 et 4 : J9 à J14 | [[Tes questions]] · [[Calendrier]] |
+| publiées | [[Déficit calorique]] (17 sept) · **[[Ton week-end annule ta semaine]]** (20 sept, 17 300 vues) · [[Les gummies de créatine, c'est pas de la créatine]] (22 sept) · [[Le plus calorique de ton assiette, ce n'est pas le dessert]] (28 sept) | `video/old/` |
 
-**Les trois épingles du profil** : un short qui montre ce que tu fais, la « à la une » SEMI pour la
-prépa, et le trailer quand il existera. **Les comptes**, la bio, les tags, la liste pour publier :
-[[profil/COMPTES|Les comptes]].
+**À décider ensemble** :
+- **Le compte** : dire qui tu es et pourquoi ce profil existe (un post, une vidéo très simple, ou un paragraphe dans la bio), la bio, les épingles. Les options sont dans [[profil/COMPTES|Les comptes]].
+- **La police des animations** : le fichier Archivo du kit n'a pas les lettres latines ; télécharger la bonne version, ou passer à Inter.
 
 ---
 
-## 1. Le profil : les fondamentaux
+## 1. Le profil
 
 Qui tu es, ce que tu défends, à qui tu parles, comment tu parles. À relire avant d'écrire
 un script ou une légende.
 
-| Note                                                      | Ce qu'elle contient                                                                                                                      |
-| --------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------- |
-| [[profil/README\|Le topo]]                                | les décisions en dix lignes, la semaine type, ce qui est écrit et ce qui manque                                                          |
-| [[profil/FONDAMENTAUX\|Les fondamentaux du profil]]       | le Brand Journey, le Brand Story, les deux spectateurs, le ton, la signature, le tournage, ce qu'on ne fait pas                          |
-| [[profil/PROGRAMME-FONDAMENTAUX\|Le programme]]           | les vidéos longues chapitre par chapitre, la méthode d'écriture d'une longue, la méthode du short, le packaging YouTube, la règle YouBud |
-| [[profil/STORIES-SEMI\|Les stories]]                      | le sport et la vie dans les stories, sans chrono ; le b-roll par séance ; la réserve « Manger quand tu cours »                           |
-| [[profil/PLAN-SEMI-18-OCTOBRE\|Le plan des six semaines]] | la charge par semaine, les recherches à faire, le journal. **Pour les dates, c'est le [[Calendrier]] qui fait foi**, pas ce plan         |
-| [[profil/COMPTES\|Les comptes]] | Instagram, TikTok, YouTube : le nom, la bio, la photo, le lien, les épingles, la liste pour publier une vidéo |
+| Note | Ce qu'elle contient |
+|---|---|
+| [[profil/README\|Le topo]] | la direction en quelques lignes, où sont les choses, ce qui reste à décider |
+| [[profil/BESOIN-ET-CONCURRENCE\|Le besoin et la concurrence]] | la recherche du 28 septembre : ce que les gens vivent et cherchent, les comptes qui marchent, le positionnement |
+| [[profil/FONDAMENTAUX\|Les fondamentaux]] | ton histoire, le spectateur, le ton, les règles d'écriture, le tournage, ce qu'on ne fait pas |
+| [[profil/COMPTES\|Les comptes]] | Instagram, TikTok, YouTube : la bio, la photo, le lien, les épingles, la liste pour publier ; **à rediscuter** |
+| [[profil/STORIES-SEMI\|Les stories]] | le sport et la vie dans les stories, sans chrono ; elles continuent |
+| [[profil/PROGRAMME-FONDAMENTAUX\|Le programme des longues]] · [[profil/PLAN-SEMI-18-OCTOBRE\|Le plan des six semaines]] | en pause : les longues YouTube attendent après le semi. **Pour les dates, c'est le [[Calendrier]] qui fait foi** |
 
-Les dix décisions, en une ligne chacune : un seul type de vidéo, les calories ; jusqu'au 18
-octobre, trois shorts Instagram par semaine, sujets libres, et la vie dans les stories ; les
-longues YouTube après le semi, quand le rythme tient ; aucune performance à l'image ; tenir
-longtemps ; chaque chiffre à échelle humaine ; sans jugement, à cause de ta mère ; Instagram
-d'abord, TikTok et YouTube Shorts en miroir ; aucune décision sur les vues avant vingt vidéos.
+Les décisions qui tiennent : un seul sujet, la nutrition et les calories, **sans régime** ; répondre aux vraies questions des gens ; aucune performance à l'image (ni chrono, ni allure) ; chaque chiffre à échelle humaine ; sans jugement ; rien à la première personne qui ne soit pas vrai ; Instagram d'abord, TikTok et YouTube Shorts en miroir ; les décisions se prennent sur les chiffres (partages, enregistrements, abonnés pour 1 000 vues), relevés tous les sept jours dans [[Tes questions]].
 
 ---
 
-## 2. La direction long terme
+## 2. Les vidéos
 
-**Après le semi.** Les longues sont écrites pour la plupart ; elles reprennent quand les trois
-shorts par semaine sortent sans effort, dans cet ordre : les fondamentaux d'abord, puis les
-mécanismes, puis les tabous. D'ici là, leurs shorts sortent seuls, et la décision se prend
-[[2026-10-19 📺 Après le semi · les longues YouTube|le lendemain de la course]].
-
-| Ordre | La longue | État |
-|---|---|---|
-| 1 | [[Les calories, les fondamentaux]] | **écrite** ; ses trois shorts se tournent seuls, le 18 et le 27 |
-| 2 | [[Pourquoi ça revient]] | écrite et vérifiée ; ses trois shorts aussi |
-| 3 | [[Quoi mettre dans l'assiette]] | écrite et vérifiée ; ses shorts à écrire pour la semaine du 5 |
-| 4 | [[Tu n'as jamais eu à le mériter]], version longue | le reel existe ; la longue est à écrire |
-| 5 | [[Une calorie, c'est une calorie]] | le chapitre 1 est écrit ; deux chapitres à écrire |
-| 6 | [[Vingt kilos sans prendre de ventre]] | ton histoire, à écrire avec tes chiffres |
-| 7 | [[Manger quand tu cours]] | les douze hot takes, en réserve dans [[profil/STORIES-SEMI\|les stories]] |
-
-Après : les tabous en version lourde (manger le soir, le Coca zéro, le sucre, le jeûne, le
-week-end, les médicaments) et [[profil/PROGRAMME-FONDAMENTAUX#Après le 19 octobre|la vidéo pour ta mère]].
-La liste complète des vingt-quatre sujets est dans [[profil/PROGRAMME-FONDAMENTAUX#3. La liste, par longue|le programme]].
-
----
-
-## La semaine type
-
-Trois shorts par semaine, tournés d'un coup le dimanche, montés une heure chacun la veille de
-leur sortie. Les stories tous les jours : les séances, les repas, la prépa, jamais un chrono.
-
-| Jour | Ce que tu fais | Ce qui sort |
-|---|---|---|
-| **dimanche** | après la sortie longue, le tournage : les trois shorts de la semaine d'après, le texte d'une traite puis hook et chute à part ; la série B de stories | |
-| lundi | montage du short 1, une heure | |
-| **mardi** | | short 1, Instagram |
-| mercredi | montage du short 2 ; la série A de stories après le fractionné | |
-| **jeudi** | | short 2 |
-| vendredi | montage du short 3 ; les trois scripts de dimanche lus à voix haute | |
-| **samedi** | | short 3 |
-
-Le trailer attend : seul le format Train Bloom se tourne pour l'instant. La ligne YouTube ne s'ajoute pas aux
-légendes tant que les longues n'ont pas repris. Les heures réelles se notent dans le
-[[profil/PLAN-SEMI-18-OCTOBRE#6. Le journal|journal]].
-
----
-
-## 3. Le calendrier
-
-Comme dans Notion : la grille du mois, et dans chaque case les pages du jour. Le dossier
-`calendrier/` contient **une note par événement** : un tournage, un short, une série de stories,
-la course. Chaque note porte sa date en propriété, dit ce qui se passe, et affiche
-la page de la vidéo en entier. La grille et les listes sont dans [[Calendrier]], qui lit
-`Calendrier.base` : la vue **Mois** pose chaque événement à sa date, cliquer ouvre sa note,
-le nom de la vidéo dans la case ouvre la page de la vidéo, et glisser un événement change
-sa date. Les vues **Tout**, **Tournages** et **Sorties** listent les mêmes notes en tableau.
-
-La vue Mois demande le plugin **Calendar Bases** (voir § 9) ; sans lui, les tableaux
-marchent déjà. Les notes quotidiennes restent sur ce dossier pour le journal : une date sans
-note s'en crée une depuis le modèle [[modeles/Jour|Jour]], et elle apparaît dans la grille
-comme les autres.
-
----
-
-## 4. Les vidéos, une page chacune
-
-Chaque page dit l'état, les dates, ce qu'il faut filmer, où sont le script, les shorts, la
-feuille de plateau et la direction de montage.
+| Dossier | Ce qu'il contient |
+|---|---|
+| `video/to-film/`, `video/to-edit/`, `video/done/` | **les vidéos « Tes questions », rangées par état** (depuis le 2 octobre). `video/to-film/` : **à tourner** ; `video/to-edit/` : **tournée, montage en cours** ; `video/done/` : **montée et exportée** (le texte dit, la description à coller et la vidéo sont dans le dossier). Un dossier numéroté par vidéo (la page, le script, le prompteur, le tournage, la mini-animation) ; la page d'accueil est [[Tes questions]] |
+| `video/old/` | les vidéos préparées avant le 28 septembre : l'assiette, la créatine, le week-end, les shorts des fondamentaux, les longues écrites |
+| `video/brainstorming/` | les idées : [[Idées · ce qui annule ton déficit]], [[La suite de la série · brainstorm]], [[La série · ce qui annule ton déficit]] |
 
 ![[Vidéos.base#Tableau]]
 
-Les propriétés en tête de chaque page, type, quoi, état, tournage, sortie, sont la source de
-ce tableau : change-les dans la page, le tableau suit. Le détail, les fichiers et la feuille
-de plateau restent dans la page.
+Les propriétés en tête de chaque page (type, quoi, état, tournage, sortie) sont la source de ce tableau : change-les dans la page, le tableau suit.
+
+**Les longues YouTube** sont en pause jusqu'après le semi. Elles restent écrites dans `video/old/` ([[Les calories, les fondamentaux]], [[Pourquoi ça revient]], [[Quoi mettre dans l'assiette]]…) ; la reprise se décidera sur les chiffres des shorts.
+
+---
+
+## 3. La semaine type
+
+| Quand | Ce que tu fais |
+|---|---|
+| **deux sessions par semaine** | quatre vidéos par session, une heure, un clap au début de chaque prise ; les textes sont prêts et relus la veille |
+| **chaque jour** | une vidéo sort ; la suivante se monte la veille au plus tard, avec l'outil |
+| **chaque jour** | les stories : les séances, les repas, la prépa du semi, jamais un chrono |
+| **tous les sept jours** | on relève les chiffres et on change les vidéos pas encore tournées |
+
+---
+
+## 4. Le calendrier
+
+Comme dans Notion : la grille du mois, et dans chaque case les pages du jour. Le dossier
+`calendrier/` contient **une note par événement** : une vidéo, une session de tournage, la course.
+Chaque note porte sa date en propriété et renvoie à la page de la vidéo. La grille et les listes
+sont dans [[Calendrier]], qui lit `Calendrier.base` : la vue **Mois** pose chaque événement à sa
+date, cliquer ouvre sa note, glisser un événement change sa date. Les vues **Tout**, **Tournages**
+et **Sorties** listent les mêmes notes en tableau. La vue Mois demande le plugin **Calendar
+Bases** (voir § 8).
 
 ---
 
@@ -132,27 +94,22 @@ source, puis recopie.
 
 | Note | Pour quoi |
 |---|---|
-| [[methode/Écrire un science-reel\|Écrire un science-reel]] | le format mesuré sur douze reels : les sept beats, les cinq règles, le turn, la légende, l'adaptation française et ses pièges, et les huit règles du long format |
-| [[methode/Le Kallaway edit\|Le Kallaway edit]] | le montage des shorts depuis le 26 septembre, tout dans HyperFrames : coupes à chaque souffle, lèvres recalées, toi en grand / animation et toi détouré, woosh, risers et hoop, musique, sous-titres, ×1,08 ; l'outil `outils/kallaway-edit`, l'exemple de l'assiette |
-| [[methode/Monter un reel Train Bloom dans CapCut\|Monter un reel dans CapCut]] | les pistes, la bascule musicale sur le deuxième hook, riser, whoosh, impact, les volumes exacts, les sous-titres |
-| [[methode/Le pipeline vidéo HitMe\|Le pipeline HitMe]] | la recherche d'outliers, le teardown, le remix, le b-roll, la sortie CapCut |
-| [[methode/Les hooks (Kallaway)\|Les hooks]] | la formule en trois temps, les quatre composantes alignées, les archétypes |
-| [[methode/Le storytelling (Kallaway)\|Le storytelling]] | l'échelle, les boucles, le mais et le donc, les verrous d'attention |
+| [[Tes questions]] | **le format actuel** : le hook, la mini-animation, la conclusion ; les règles du texte |
+| [[methode/Le Kallaway edit\|Le Kallaway edit]] | l'outil de montage `outils/kallaway-edit` (coupes, lèvres recalées, cadre B, sous-titres, ×1,08) ; la version complète, avec woosh et risers, reste pour une vidéo phare |
+| [[methode/Écrire un science-reel\|Écrire un science-reel]] | le format long mesuré sur douze reels, les pièges du français |
+| [[methode/Les hooks (Kallaway)\|Les hooks]] · [[methode/Le storytelling (Kallaway)\|Le storytelling]] | la formule en trois temps, les boucles, le mais et le donc |
+| [[methode/Monter un reel Train Bloom dans CapCut\|Monter dans CapCut]] · [[methode/Le pipeline vidéo HitMe\|Le pipeline HitMe]] | l'ancien montage, la recherche d'outliers |
 
-Les règles maison qui priment sur tout : chaque phrase littéralement vraie ; chaque chiffre
-à échelle humaine ; aucune unité de laboratoire ; on valide avant de corriger ; jamais
-« coûte cher » pour des calories ; rien à la première personne qui ne soit pas vrai pour
-toi. Elles sont dans [[profil/FONDAMENTAUX#6. Le ton et la signature|les fondamentaux, § 6]].
+Les règles maison qui priment sur tout : chaque phrase littéralement vraie ; un texte humain, qui parle comme un ami ; dur avec les idées, doux avec les gens ; chaque chiffre à échelle humaine ; jamais « coûte cher » pour des calories ; rien à la première personne qui ne soit pas vrai pour toi.
 
 ---
 
 ## 6. Le tournage et le montage
 
-- **Le réglage**, fait une fois : [[profil/FONDAMENTAUX#9. Le tournage|les fondamentaux, § 9]]. Une seule caméra en 4K 16:9, toi centré, recadrage fixe 9:16 pour les shorts, micro-cravate, la lampe à gauche.
-- **La feuille de plateau** de chaque session, avec le prompteur : [[Tournage du dimanche 20 septembre]] pour la première ; les suivantes se font sur ce modèle, le samedi soir.
-- **Les rushes** vont sur `D:\videos\`, un dossier par vidéo, nommés `NN-bloc-prise.mp4`. Les sons dans `D:\editing_audio\`. Rien de tout ça n'entre dans le dépôt.
-- **Le montage d'un short** se fait, depuis le 26 septembre, avec [[methode/Le Kallaway edit|le Kallaway edit]] : une fiche `kallaway.toml` par vidéo, l'outil `outils/kallaway-edit` fait le reste, jusqu'à la vidéo accélérée ×1,08 (exemple : l'assiette). Avant, dans CapCut. Un short seul : la meilleure traite, cartes texte, sous-titres, une heure. La grammaire sonore et les volumes : [[methode/Monter un reel Train Bloom dans CapCut\|la méthode]]. Pour la longue : tête parlante à 70 % au moins, huit à douze inserts, les rendus existants de `meriter` en colonne, sous-titres entre 70 et 78 % de la hauteur.
-- **Les inserts** : `SplitBar` existe (`video/deficit-calorique-fr/compositions/`), la carte 9-4-4 se rend une fois, le reste en cartes CapCut ou en photos.
+- **Le réglage**, toujours le même : une caméra en 4K 16:9, toi centré avec de l'air au-dessus de la tête, la lampe chaude, le t-shirt blanc, le micro-cravate. On reconnaît le lieu avant la voix.
+- **La feuille de plateau** : la note 🎬 Session du [[Calendrier]], et le `TOURNAGE.md` de chaque vidéo dans `video/to-film/`.
+- **Les rushes** vont sur `D:\videos\`, un dossier par vidéo, nommés `NN-bloc-prise.mp4`. Rien de tout ça n'entre dans le dépôt, qui est public.
+- **Le montage** : l'outil `outils/kallaway-edit`, au format simple (la prise coupée, une mini-animation, un titre fixe, des sous-titres sobres, pas de musique).
 
 ---
 
@@ -160,27 +117,18 @@ toi. Elles sont dans [[profil/FONDAMENTAUX#6. Le ton et la signature|les fondame
 
 | Outil | Ce qu'il fait | Où |
 |---|---|---|
-| HitMe | recherche d'outliers YouTube, TikTok, Instagram ; teardown d'une vidéo en script ; projets ; b-roll ; sortie CapCut | `outils/hitme/` : l'app et le serveur MCP. En local seulement ; la base de données sur Neon |
-| HyperFrames | les animations en HTML rendu en vidéo | `.agents/skills/hyperframes*` |
-| Higgsfield | images, vidéos, décors ; jamais toi | par Claude |
-| CapCut | le montage | installé |
-| YouBud | ton calculateur de calories, le seul lien de la bio | **à confirmer** : où il est disponible |
-| Ciqual | les calories des aliments, pour vérifier chaque chiffre avant de tourner | ciqual.anses.fr |
+| HitMe | recherche d'outliers YouTube, TikTok, Instagram ; teardown d'une vidéo en script | `outils/hitme/`, en local ; la base sur Neon |
+| Kallaway edit | le montage des shorts, de la prise brute à la vidéo livrée | `outils/kallaway-edit/` |
+| HyperFrames | les mini-animations, en HTML rendu en vidéo | `.agents/skills/hyperframes*` |
+| YouBud | ton appli de suivi nutritionnel, le seul lien de la bio | **à confirmer** : où elle est disponible |
+| Ciqual | les calories des aliments, pour vérifier chaque chiffre | ciqual.anses.fr |
 
 ---
 
-## 8. Ce qui est publié
+## 8. Ce coffre Obsidian
 
-- **YouTube** `@medmdim`, « Mohamed Elmdimegh » : le dépôt du long. [[Déficit calorique]] y est depuis le 27 août.
-- **Instagram**, à ton nom : la maison du court et des stories. Première vidéo jeudi 17 septembre. Le profil, la bio, les épingles : [[profil/COMPTES|Les comptes]].
-- **TikTok**, en miroir depuis le 17 septembre : le même fichier, la même légende, zéro production en plus.
-
----
-
-## 9. Ce coffre Obsidian
-
-- **Le coffre est le dépôt** : `C:\Users\melmdim\HitMe`. Le code vit dans `outils/`, exclu de l'affichage dans les réglages du coffre, comme les compositions HyperFrames rangées à côté de leurs vidéos. Les dossiers qui commencent par un point (`.claude`, `.agents`) ne s'affichent jamais dans Obsidian : c'est pour ça que `methode/` existe.
-- **Les dossiers** : `profil/` le profil ; `video/` une page et des fichiers par vidéo ; `calendrier/` une note par événement et la base du calendrier ; `methode/` la méthode ; `modeles/` les modèles de notes ; `pieces-jointes/` ce que tu glisses dans une note ; `outils/` le code, invisible ici.
-- **Le plugin Calendar Bases**, d'Edrick Leong : Réglages → Plugins communautaires → Parcourir → « Calendar Bases » → Installer → Activer. Il ajoute la vue Mois à Bases ; `Calendrier.base` est déjà réglé dessus, la semaine commençant le lundi. C'est le seul plugin ; rien d'autre à installer.
-- **Git** : les notes sont versionnées comme le reste. Après une session d'écriture, un commit. L'état de fenêtre d'Obsidian (`.obsidian/workspace.json`) est ignoré.
+- **Le coffre est le dépôt** : `C:\Users\melmdim\HitMe`, public sur GitHub. Le code vit dans `outils/`, exclu de l'affichage, comme les compositions HyperFrames rangées à côté de leurs vidéos. Les dossiers qui commencent par un point (`.claude`, `.agents`) ne s'affichent jamais dans Obsidian : c'est pour ça que `methode/` existe.
+- **Les dossiers** : `profil/` le profil ; `video/` les vidéos (`future/`, `old/`, `brainstorming/`) ; `calendrier/` une note par événement ; `methode/` la méthode ; `modeles/` les modèles de notes ; `outils/` le code, invisible ici.
+- **Le plugin Calendar Bases**, d'Edrick Leong : il ajoute la vue Mois à Bases ; `Calendrier.base` est déjà réglé dessus, la semaine commençant le lundi.
+- **Git** : les notes sont versionnées comme le reste ; tes prises et tes rendus ne le sont jamais.
 - **Les liens** entre notes sont des liens Obsidian, `[[Nom de la note]]`. Un nom de vidéo suffit : les noms sont uniques dans le coffre.

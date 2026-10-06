@@ -3,9 +3,9 @@
   "userIgnoreFilters": [
     "outils/",
     "/node_modules\\//",
-    "video/manger-sans-se-priver/tools/",
-    "video/deficit-calorique-fr/compositions/",
-    "video/meriter-son-repas/compositions/"
+    "video/old/manger-sans-se-priver/tools/",
+    "video/old/deficit-calorique-fr/compositions/",
+    "video/old/meriter-son-repas/compositions/"
   ],
   "showUnsupportedFiles": false,
   "alwaysUpdateLinks": true,

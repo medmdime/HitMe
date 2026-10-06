@@ -25,7 +25,7 @@ pnpm-debug.log*
 .waveform-cache/
 
 # clips détourés : trop lourds pour git, ils se régénèrent
-video/*/assets/detoure/
+video/**/assets/detoure/
 
 # outils locaux : les sessions d'agents, le journal du serveur de dev
 .omo/
@@ -33,9 +33,16 @@ video/*/assets/detoure/
 
 # la créatine : les images tirées d'autres vidéos (un visage, un pot, un logo de marque) et les
 # rendus qui les montrent restent sur la machine, parce que le dépôt est public
-video/creatine-gummies/assets/img/
-video/creatine-gummies/renders/
-video/creatine-gummies/snapshots/
+video/**/creatine-gummies/assets/img/
+video/**/creatine-gummies/renders/
+video/**/creatine-gummies/snapshots/
+
+# les têtes de personnes réelles prises sur le web (Mark Haub, pour les gâteaux) : la photo et ses détourages
+# restent sur la machine, pour la même raison ; le script qui les découpe, lui, est suivi
+video/**/assets/img/tetes/brut/
+video/**/assets/img/tetes/*.png
+# un son de la bibliothèque CapCut, copié pour le rendu : pas à nous de le redistribuer
+video/**/assets/sfx/riser-electronique.mp3
 
 # le coffre fantôme qu'Obsidian recrée parfois dans sa propre config
 .obsidian/.obsidian/
@@ -50,9 +57,14 @@ video/creatine-gummies/snapshots/
 # le Kallaway edit (outils/kallaway-edit) : les prises montées (sa voix, son visage), les musiques
 # d'une bibliothèque tierce et les caches de travail restent sur la machine, pour toutes les vidéos ;
 # tout se refait depuis D:/videos et kallaway.toml
-video/*/assets/rushes/
-video/*/assets/musique/
-video/*/montage/cache/
-video/*/.transcode-cache/
-# et les rendus de chaque vidéo montée ainsi (`ke.py … preparer` ajoute la ligne)
-video/assiette-pas-le-dessert/renders/
+video/**/assets/rushes/
+video/**/assets/musique/
+# ses photos personnelles (l'avant et l'après de J1) : son corps et son visage, jamais dans un dépôt public
+video/**/assets/photos/
+video/**/montage/cache/
+video/**/.transcode-cache/
+# et les rendus : tes prises et ton visage y sont, le dépôt est public. Les trois rendus de meriter
+# commités avant cette règle restent suivis. `**` couvre video/old/, video/to-film/, video/to-edit/ et video/done/.
+video/**/renders/
+# la vidéo finale exportée de CapCut, rangée dans le dossier de sa vidéo (video/done/…/export/)
+video/**/export/

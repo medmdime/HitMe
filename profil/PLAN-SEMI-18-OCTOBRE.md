@@ -1,5 +1,14 @@
 # Plan : six semaines autour du semi
 
+> **Remplacé le 28 septembre 2026 : ce plan n'est plus suivi.**
+>
+> - **Ce qui est remplacé** : les six longues (S1 à S6), leurs dix-huit shorts, le trailer et la semaine type à 24 h. Les longues étaient déjà suspendues le 17 septembre ; elles attendent l'après-semi, et leur reprise se décidera après la course.
+> - **Par quoi** : une vidéo courte par jour, du mercredi 30 septembre au mardi 13 octobre, quatorze en tout, tournées par sessions de quatre. Chacune répond à une question ou à une frustration réelle des gens. Le plan est dans [[Tes questions]], les dates au [[Calendrier]], qui fait foi, et la raison dans [[BESOIN-ET-CONCURRENCE]].
+> - **Le journal (§ 6)** est remplacé par le relevé des sept jours de [[Tes questions]] : les vues médianes, la part encore là à 3 s, les partages, les enregistrements et les abonnés pour 1 000 vues. La règle « on ne décide rien avant vingt vidéos » est dépassée : on adapte la suite sur ces chiffres.
+> - **Ce qui reste valable ici** : l'expérience du semi, comptée en calories et jamais en minutes, et ce qui se dit ou ne se dit pas (§ 1) ; le calage des stories sur tes séances (§ 2, le détail dans [[STORIES-SEMI]]) ; les sources à lire (§ 5), quand un sujet revient.
+>
+> Le contenu ci-dessous n'est pas réécrit : c'est la mémoire du plan d'avant.
+
 Du dimanche 13 septembre au dimanche 25 octobre 2026. Ce plan applique `FONDAMENTAUX.md`,
 `PROGRAMME-FONDAMENTAUX.md` et `STORIES-SEMI.md` ; en cas de conflit, le brief du
 7 septembre a raison, puis `FONDAMENTAUX.md`. Version du 7 septembre 2026, recalée le
@@ -80,7 +89,7 @@ gratuit.
 | la montre sur l'écran **distance** ou **calories** | l'horloge de l'arche d'arrivée, le dossard s'il porte un temps |
 
 La liste des mots interdits sert de grep : elle est dans `FONDAMENTAUX.md` § 6 et dans la
-passe de contrôle de `video/manger-sans-se-priver/tools/README.md` (section « Le grep de
+passe de contrôle de `video/old/manger-sans-se-priver/tools/README.md` (section « Le grep de
 performance », qui ne lit que `scenario.json` : sur un texte de story ou le trailer, elle
 se passe à la main). Elle tourne avant chaque tournage.
 
@@ -120,10 +129,10 @@ précède sa mise en ligne.
 
 | Sem.                                                   | Longue                                             | Chapitres                                                                                                                                                 | Source                                                                                 | État au 8 septembre                                                        | Ce qu'il faut                                                                                                                                             | Ce qui glisse si ça casse                          |
 | ------------------------------------------------------ | -------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------- | -------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------- | -------------------------------------------------- |
-| **S1** · dim 20 sept, tournée dim 13                   | **Pourquoi ça revient**                            | 4 (exception) · 1 Ce n'est pas ta volonté · 2 Le levier que tu ne mâches jamais · 3 Ton estomac sent le volume · 4 Ce n'est pas la place, c'est le signal | `video/manger-sans-se-priver/SCRIPT-video-1.md`, `script-compact.txt`, `scenario.json` | écrit, vérifié, 69 PMID, 9:08                                              | 52 s à écrire : ouverture à froid 35 s, chute 20 s · l'audit des quatre « moi aussi » · 8 inserts · l'avant/après construit jeudi 17                      | le trailer → dim 27 ; l'avant/après → cartes texte |
+| **S1** · dim 20 sept, tournée dim 13                   | **Pourquoi ça revient**                            | 4 (exception) · 1 Ce n'est pas ta volonté · 2 Le levier que tu ne mâches jamais · 3 Ton estomac sent le volume · 4 Ce n'est pas la place, c'est le signal | `video/old/manger-sans-se-priver/SCRIPT-video-1.md`, `script-compact.txt`, `scenario.json` | écrit, vérifié, 69 PMID, 9:08                                              | 52 s à écrire : ouverture à froid 35 s, chute 20 s · l'audit des quatre « moi aussi » · 8 inserts · l'avant/après construit jeudi 17                      | le trailer → dim 27 ; l'avant/après → cartes texte |
 | **S2** · dim 27 sept, tournée dim 20                   | **Quoi mettre dans l'assiette**                    | 4 (exception) · 5 Le poids de l'assiette · 6 Le levier fantôme · 7 L'aliment que tu as rayé de ta liste · 8 On ne vit qu'une fois                         | `SCRIPT-video-2.md`, même dossier                                                      | écrit, vérifié, 9:30                                                       | 30 s d'ouverture à froid · l'audit des « moi aussi » des chapitres 5, 6, 7 · 8 à 10 inserts                                                               | rien : la semaine la moins chère                   |
-| **S3** · dim 4 oct, tournée dim 27 sept                | **Tu n'as jamais eu à le mériter**, version longue | 3 · 1 Le sport, c'est cinq pour cent · 2 Ce que tu dépenses en bougeant à côté · 3 La digestion bat le sport sur la journée                               | `video/meriter-son-repas/SCRIPT.md` et `TOURNAGE.md`, `video/deficit-calorique-fr`     | **à écrire** en S1 et S2 (262 mots de reel pour 1 650 à 1 750 nécessaires) | le chapitre 1 réécrit à 165 mots/min, 15 % de mots en plus · les quatre animations recalées jeudi 1er octobre                                             | les animations → SplitBar et cartes                |
-| **S4** · dim 11 oct, tournée dim 4                     | **Une calorie, c'est une calorie**                 | 3 · 1 La taxe à la digestion · 2 Le gras à neuf calories · 3 L'alcool                                                                                     | `video/une-calorie-est-une-calorie/SCRIPT.md`, le chapitre 2 de la vidéo 1             | le chapitre 1 écrit (250 mots) ; 2 et 3 **à composer** en S2 et S3         | trancher 50 ou 70 calories par jour · sourcer « stocker coûte 3 %, convertir 25 % » ou le couper · trois assiettes en images fixes Higgsfield             | les images Higgsfield → cartes texte               |
+| **S3** · dim 4 oct, tournée dim 27 sept                | **Tu n'as jamais eu à le mériter**, version longue | 3 · 1 Le sport, c'est cinq pour cent · 2 Ce que tu dépenses en bougeant à côté · 3 La digestion bat le sport sur la journée                               | `video/old/meriter-son-repas/SCRIPT.md` et `TOURNAGE.md`, `video/old/deficit-calorique-fr`     | **à écrire** en S1 et S2 (262 mots de reel pour 1 650 à 1 750 nécessaires) | le chapitre 1 réécrit à 165 mots/min, 15 % de mots en plus · les quatre animations recalées jeudi 1er octobre                                             | les animations → SplitBar et cartes                |
+| **S4** · dim 11 oct, tournée dim 4                     | **Une calorie, c'est une calorie**                 | 3 · 1 La taxe à la digestion · 2 Le gras à neuf calories · 3 L'alcool                                                                                     | `video/old/une-calorie-est-une-calorie/SCRIPT.md`, le chapitre 2 de la vidéo 1             | le chapitre 1 écrit (250 mots) ; 2 et 3 **à composer** en S2 et S3         | trancher 50 ou 70 calories par jour · sourcer « stocker coûte 3 %, convertir 25 % » ou le couper · trois assiettes en images fixes Higgsfield             | les images Higgsfield → cartes texte               |
 | **S5** · dim 18 oct, le jour de course, tournée dim 11 | **Mange comme le corps que tu vises**              | 3 · 1 « Il faut un régime » · 2 « Il faut manger moins » · 3 « Donc je mange comme un 70 dès demain »                                                     | plan de sept beats dans `PROGRAMME-FONDAMENTAUX.md` § 7, à réduire en trois chapitres  | **à écrire** en S4                                                         | tes deux budgets YouBud sortis en S3 · la population de silhouettes construite jeudi 8 octobre · exportée et programmée jeudi 15 : le 18, rien ne se fait | la population → deux cartes texte                  |
 | **S6** · dim 25 oct, tournée sam 17                    | **Vingt kilos sans prendre de ventre**             | 3 · 1 « Prendre du poids, c'est prendre du gras » · 2 « Il faut manger énorme » · 3 « Un kilo de muscle brûle cent calories par jour »                    | l'entretien de S3, Wang 2010, tes photos `D:\videos\trailer\avant\` et `apres\`        | **à écrire** en S5, si la porte de S3 s'ouvre                              | ton journal de poids, ton surplus par jour, la durée de 60 à 80, ce qui a raté · une session courte samedi 17, la veille de la course                     | rien ne glisse : la plus légère, exportée jeudi 22 |
 
@@ -153,7 +162,7 @@ qui est `D:\videos`, et Kdenlive n'est pas installé. Deux voies :
 | Voie | Comment | Quand la choisir |
 |---|---|---|
 | **Kdenlive pour Windows** | l'installer, ouvrir le `.kdenlive`. Il signale les clips manquants et propose de les retrouver : `D:\videos`, puis `D:\editing_audio`. Poser les deux pickups dans les trous repérés (A : 0:13,5 → 0:18 ; B : 1:16,9 → 1:28,9). Normaliser les trois retours, 10 dB sous les voix seules. Exporter | si tu n'as pas retouché le projet à la main. C'est la plus courte : 2 h, une seule fois, puis CapCut pour tout le reste. **À CONFIRMER** : ton accord pour l'installer |
-| **CapCut** | reconstruire depuis `video/meriter-son-repas/montage/MONTAGE.md` : les prises retenues, les timecodes des deux pickups, sept pistes, les volumes du skill `montage-capcut` | si tu veux rester dans CapCut dès maintenant. Deux heures aussi, mais tout se refait |
+| **CapCut** | reconstruire depuis `video/old/meriter-son-repas/montage/MONTAGE.md` : les prises retenues, les timecodes des deux pickups, sept pistes, les volumes du skill `montage-capcut` | si tu veux rester dans CapCut dès maintenant. Deux heures aussi, mais tout se refait |
 
 Dans les deux cas : le demi-silence du turn, les trois textes à l'écran, la
 normalisation des trois retours, l'export.
@@ -181,7 +190,7 @@ tourner et animer une journée quand l'assiette animée existe.
 ## 4. Le calendrier
 
 > **Note du 9 septembre, elle prime sur ce qui suit.** La première longue est
-> « Les calories, les fondamentaux » (`video/calories-fondamentaux/`), tournée dimanche 20,
+> « Les calories, les fondamentaux » (`video/old/calories-fondamentaux/`), tournée dimanche 20,
 > en ligne dimanche 27 à 18 h ; ses trois shorts sortent la même semaine, avant elle, avec
 > le trailer lundi 21. Toutes les longues suivantes glissent : « Pourquoi ça revient » se
 > tourne le 27 et sort le 4 octobre. **Les dates de référence sont dans `calendrier/`, une note par jour, depuis [[HUB]].** Plus de miroir TikTok : Instagram et YouTube.
@@ -256,9 +265,9 @@ renvoie nulle part. Le premier short sort mardi 15 : le compte existe avant.
 | | |
 |---|---|
 | Chapitres | 1 · Ce n'est pas ta volonté (160 personnes, 4 régimes, 1 an, un kilo d'écart) · 2 · Le levier que tu ne mâches jamais (9 contre 4 calories le gramme) · 3 · Ton estomac sent le volume · 4 · Ce n'est pas la place, c'est le signal (la chirurgie retourne l'analogie) |
-| Source | `video/manger-sans-se-priver/SCRIPT-video-1.md` (bracket, voix seule), `script-compact.txt` (prompteur), `scenario.json` |
+| Source | `video/old/manger-sans-se-priver/SCRIPT-video-1.md` (bracket, voix seule), `script-compact.txt` (prompteur), `scenario.json` |
 | État | écrit, vérifié, 69 PMID, 9:08. Quatre chapitres : exception gardée, on ne réécrit pas ce qui est vérifié |
-| Ce qui manque | **52 s** : une ouverture à froid de 35 s (première phrase un hook, deuxième phrase le titre mot pour mot, puis les quatre questions) et une chute de 20 s qui conclut et annonce « Quoi mettre dans l'assiette ». À écrire dans la semaine du 8, 1 h · les trois hooks (25 mots) et les trois chutes (30 mots) des shorts de cette longue (chapitres 2, 3, 4), réécrits sans les gabarits à partir de l'annexe de `SCRIPT-video-1.md`, avec les deux corrections d'annexe de la vidéo 1 (§ 5) : ils se tournent dimanche 13, écrits dans `video/manger-sans-se-priver/S1-SHORTS.md` ; le quatrième, celui du chapitre 1 en réserve pour le samedi 10 octobre, n'est pas écrit (**À CONFIRMER** : le tourner le 13 ou dimanche 4 octobre) · l'audit des quatre « moi aussi » des chapitres 1 à 4, 30 min avec toi : ceux qui racontent perdre, reprendre et douter sont l'histoire de ta mère, ils deviennent « Ma mère s'est dit ça pendant des années. Je l'ai vue faire. » · la passe de contrôle avec le grep de performance |
+| Ce qui manque | **52 s** : une ouverture à froid de 35 s (première phrase un hook, deuxième phrase le titre mot pour mot, puis les quatre questions) et une chute de 20 s qui conclut et annonce « Quoi mettre dans l'assiette ». À écrire dans la semaine du 8, 1 h · les trois hooks (25 mots) et les trois chutes (30 mots) des shorts de cette longue (chapitres 2, 3, 4), réécrits sans les gabarits à partir de l'annexe de `SCRIPT-video-1.md`, avec les deux corrections d'annexe de la vidéo 1 (§ 5) : ils se tournent dimanche 13, écrits dans `video/old/manger-sans-se-priver/S1-SHORTS.md` ; le quatrième, celui du chapitre 1 en réserve pour le samedi 10 octobre, n'est pas écrit (**À CONFIRMER** : le tourner le 13 ou dimanche 4 octobre) · l'audit des quatre « moi aussi » des chapitres 1 à 4, 30 min avec toi : ceux qui racontent perdre, reprendre et douter sont l'histoire de ta mère, ils deviennent « Ma mère s'est dit ça pendant des années. Je l'ai vue faire. » · la passe de contrôle avec le grep de performance |
 | Inserts | 8 : la baignoire en une composition de 17 s ou trois cartes texte · quatre SplitBar · deux avant/après sur le dispositif construit jeudi 17 (les deux verres d'eau ; l'anneau contre le bypass) · le 20 sur 40 en carte |
 | Packaging | cinq titres, le plus court gagne · miniature : un SplitBar « un kilo d'écart » plus un chiffre, fond noir, jamais le visage seul · description : les quatre chapitres horodatés, tous les PMID du chapitre sortis de `scenario.json` |
 
@@ -271,7 +280,7 @@ renvoie nulle part. Le premier short sort mardi 15 : le compte existe avant.
 | **samedi 19** | **Tu n'as jamais eu à le mériter** | ceux du reel ; la chute corrigée est le pickup B | monté, sous-titré, à deux plans près | les pickups A et B tournés dimanche 13 au téléphone, 10 min · la voie Kdenlive mardi 15, 2 h · export, légende en cinq parties |
 
 **Le trailer.** Les trois plans face caméra tournés dimanche 13 en fin de session, 20 min, en
-4K 16:9 centré, avec les deux répliques réécrites de `video/trailer/TOURNAGE.md` (le plan
+4K 16:9 centré, avec les deux répliques réécrites de `video/old/trailer/TOURNAGE.md` (le plan
 0:25 : « Et en attendant, je prépare un semi-marathon. Le dix-huit octobre. Après, un
 Hyrox. Tout ce que je brûle, on le compte. » ; le plan 0:32 : « Première vidéo : pourquoi
 ça revient. »). Monté vendredi 18 après les shorts, 3 h, **deux exports** : 9:16 pour l'épingle
@@ -317,7 +326,7 @@ texte ; « 300 calories » → abandonné.
 | | |
 |---|---|
 | Chapitres | 5 · Le poids de l'assiette (424 calories d'écart à poids identique) · 6 · Le levier fantôme (13 rétractations ; la petite fourchette fait manger plus ; le bol sans fond n'est pas rétracté, répliqué en 2024 avec un effet de moitié) · 7 · L'aliment que tu as rayé de ta liste · 8 · On ne vit qu'une fois (déjà une chute) |
-| Source | `video/manger-sans-se-priver/SCRIPT-video-2.md`, `script-compact.txt`, `scenario.json` |
+| Source | `video/old/manger-sans-se-priver/SCRIPT-video-2.md`, `script-compact.txt`, `scenario.json` |
 | État | écrit, vérifié, 9:30. Quatre chapitres, exception gardée |
 | Ce qui manque | **30 s** d'ouverture à froid (deuxième phrase : le titre) · les quatre hooks et chutes de ses shorts, réécrits samedi 19 · l'audit des « moi aussi » des chapitres 5, 6, 7 · la passe de contrôle |
 | Inserts | 8 à 10 : deux avant/après (les deux assiettes de même poids ; la petite assiette) · quatre SplitBar · la croix/coche · une liste en carte |
@@ -370,7 +379,7 @@ tranchera). Aucun dispositif neuf, script prêt.
 | | |
 |---|---|
 | Chapitres | 1 · **Le sport, c'est cinq pour cent** (la découpe du TDEE ; croyance : « il faut brûler ce qu'on mange ») · 2 · **Ce que tu dépenses en bougeant à côté** (le NEAT, 300 à 500 calories, Levine 2002, PMID 12468415 ; croyance : « seule la séance compte ») · 3 · **La digestion bat le sport sur la journée** (Westerterp 2004, PMID 15507147 ; Halton et Hu 2004, PMID 15466943 ; croyance : « en dormant tu brûles plus qu'à ta séance ») |
-| Source | `video/meriter-son-repas/SCRIPT.md` et `TOURNAGE.md`, `video/deficit-calorique-fr` |
+| Source | `video/old/meriter-son-repas/SCRIPT.md` et `TOURNAGE.md`, `video/old/deficit-calorique-fr` |
 | État au 28 | écrite en S1 et S2, lue à voix haute samedi 26, tournée dimanche 27 |
 | Attention | le chapitre 1 rejoue le reel `meriter` publié samedi 19 : il se réécrit à 165 mots/min avec 15 % de mots en plus, son landing devient un raccord, et **son short n'est pas redécoupé** (le reel est déjà sorti) |
 | Inserts | les quatre animations existantes (découpe du TDEE, digestion contre sport, les trois leviers, la variante de `meriter`) recalées ou reparamétrées sur la nouvelle narration, jeudi 1er octobre, 2 à 3 h · plus SplitBar |
@@ -418,7 +427,7 @@ dimanche 4. Composée uniquement de matière existante.
 
 | | |
 |---|---|
-| Chapitres | 1 · **La taxe à la digestion** (le script de `video/une-calorie-est-une-calorie/SCRIPT.md`, 250 mots, réécrit à 165 mots/min ; le landing d'origine, « Les calories décident si tu perds du poids. Les macros décident de quoi tu le perds. », devient la chute du short ; le 50 ou 70 tranché en S2) · 2 · **Le gras à neuf calories** (la carte 9-4-4, les 899 calories aux cent grammes, le 121 contre 135 du chapitre 2 de la vidéo 1, sources vérifiées ; le « stocker coûte 3 %, convertir 25 % » **seulement s'il est sourcé avant**, sinon il saute) · 3 · **L'alcool** (7 calories le gramme, « du côté de l'huile, et tu le mâches pas », l'insert du chapitre 2, écrit et sourcé) |
+| Chapitres | 1 · **La taxe à la digestion** (le script de `video/old/une-calorie-est-une-calorie/SCRIPT.md`, 250 mots, réécrit à 165 mots/min ; le landing d'origine, « Les calories décident si tu perds du poids. Les macros décident de quoi tu le perds. », devient la chute du short ; le 50 ou 70 tranché en S2) · 2 · **Le gras à neuf calories** (la carte 9-4-4, les 899 calories aux cent grammes, le 121 contre 135 du chapitre 2 de la vidéo 1, sources vérifiées ; le « stocker coûte 3 %, convertir 25 % » **seulement s'il est sourcé avant**, sinon il saute) · 3 · **L'alcool** (7 calories le gramme, « du côté de l'huile, et tu le mâches pas », l'insert du chapitre 2, écrit et sourcé) |
 | Source | `SCRIPT.md` ci-dessus ; le chapitre 2 de `SCRIPT-video-1.md` |
 | État au 5 | écrite en S2 et S3, lue samedi 3, tournée dimanche 4 |
 | Ce qui part après les six longues | les suites « les glucides le soir » (tabou #18, à sourcer) et « les fibres » (sans PMID) |

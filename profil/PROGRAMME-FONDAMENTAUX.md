@@ -1,5 +1,14 @@
 # Le programme : les longues et leurs shorts
 
+> **En pause depuis le 28 septembre 2026 : ce document n'est plus le plan.**
+>
+> - **Ce qui est remplacé** : les longues YouTube hebdomadaires et les trois shorts découpés dans chacune. Les longues étaient déjà suspendues le 17 septembre ; aucune ne sort avant le semi du 18 octobre, et leur reprise se décidera après la course.
+> - **Par quoi** : une vidéo courte par jour, du 30 septembre au 13 octobre, qui répond chacune à une question ou à une frustration réelle des gens, au format ultra simple (le hook toi en grand, l'explication toi en petit avec une mini-animation, une phrase de fin, l'appel). Le plan est dans [[Tes questions]], les dates au [[Calendrier]], qui fait foi, et la raison dans [[BESOIN-ET-CONCURRENCE]].
+> - **Ce qui ne revient pas tel quel** : le short de 70 à 100 s découpé dans une longue, la chute sans appel, la sixième ligne de la légende vers YouTube, le packaging YouTube (§ 9). Depuis le 24 septembre, chaque vidéo finit par le même appel : « Moi, c'est Mohamed : je t'explique la nutrition, sans régime. Abonne-toi pour la suite, et enregistre la vidéo. »
+> - **Ce qui sert encore** : les règles maison et la passe de contrôle (§ 5), sauf ce qui touche à la longue et aux durées d'avant ; YouBud sans vendre (§ 8, sauf la règle 4, qui renvoie vers la longue), et les sujets du § 3 comme réserve de preuves. Un sujet ne revient que s'il répond à un besoin réel des gens.
+>
+> Le contenu ci-dessous n'est pas réécrit : c'est la mémoire du plan d'avant. Le ton, le format et la cadence qui font foi sont dans [[FONDAMENTAUX]].
+
 Un seul type de vidéo : les calories et la nutrition, sans régime et sans jugement.
 Deux formats : une longue YouTube par semaine, dix minutes minimum, où l'on entre dans
 le mécanisme ; et trois shorts par semaine, découpés dans la même matière, pour
@@ -20,7 +29,7 @@ conflit avec un autre document, le brief a raison, puis `FONDAMENTAUX.md`.
 > stories (cinq stories de 15 s, `STORIES-SEMI.md`, qui remplace `YAPPING-SEMI.md`).
 > La science courte devient le short découpé dans la longue. L'assiette animée n'est
 > plus un format : c'est un dispositif visuel parmi les autres, hors chemin critique.
-> Les deux vidéos de neuf minutes de `video/manger-sans-se-priver`, qui étaient
+> Les deux vidéos de neuf minutes de `video/old/manger-sans-se-priver`, qui étaient
 > garées jusqu'en 2027, deviennent S1 et S2.
 
 ---
@@ -52,7 +61,7 @@ n'est pas sur le chemin critique des six semaines.
 
 | Dispositif | État | Sert à |
 |---|---|---|
-| **SplitBar** | existe, `video/deficit-calorique-fr/compositions/components/` ; a porté 16 des 18 inserts du reel déficit | le TDEE, les 9 contre 4, les répartitions ; quatre par longue |
+| **SplitBar** | existe, `video/old/deficit-calorique-fr/compositions/components/` ; a porté 16 des 18 inserts du reel déficit | le TDEE, les 9 contre 4, les répartitions ; quatre par longue |
 | **Carte 9-4-4** | à rendre une fois, 4 s | toute vidéo qui compte des calories |
 | **Avant/après à échelle constante** | à construire, jeudi de S1, 3 h | les deux verres d'eau, l'anneau contre le bypass, les deux assiettes de même poids, le surplus de « Vingt kilos » |
 | **Population de silhouettes** | à construire, jeudi de S4, 3 h | le corps cible (80 contre 70) en S5 |
@@ -123,7 +132,7 @@ encore été lu.
 
 ### S1 · « Pourquoi ça revient »
 
-La vidéo 1 de `video/manger-sans-se-priver` (`SCRIPT-video-1.md`, `script-compact.txt`
+La vidéo 1 de `video/old/manger-sans-se-priver` (`SCRIPT-video-1.md`, `script-compact.txt`
 pour le prompteur, `scenario.json`). Elle garde ses quatre chapitres : on ne réécrit pas
 ce qui est vérifié.
 
@@ -162,8 +171,8 @@ La vidéo 2 (`SCRIPT-video-2.md`). Quatre chapitres, numérotés 5 à 8 dans le 
 
 ### S3 · « Tu n'as jamais eu à le mériter » (la longue TDEE)
 
-La version longue du reel `meriter` et du reel déficit. Source : `video/meriter-son-repas/SCRIPT.md`
-et `TOURNAGE.md`, `video/deficit-calorique-fr`. À écrire en S1 et S2 ; 262 mots de reel
+La version longue du reel `meriter` et du reel déficit. Source : `video/old/meriter-son-repas/SCRIPT.md`
+et `TOURNAGE.md`, `video/old/deficit-calorique-fr`. À écrire en S1 et S2 ; 262 mots de reel
 pour 1 650 à 1 750 mots nécessaires.
 
 | Ch. | Titre | La croyance | Le mécanisme nommé | La preuve | Le chiffre, à son échelle | Sources |
@@ -181,7 +190,7 @@ pour 1 650 à 1 750 mots nécessaires.
 
 ### S4 · « Une calorie, c'est une calorie »
 
-Composée uniquement de matière existante : le script de `video/une-calorie-est-une-calorie/SCRIPT.md`,
+Composée uniquement de matière existante : le script de `video/old/une-calorie-est-une-calorie/SCRIPT.md`,
 ses suites 02 et 05, et le chapitre 2 de la vidéo 1.
 
 | Ch. | Titre | La croyance | Le mécanisme nommé | La preuve | Le chiffre, à son échelle | Sources |
@@ -427,13 +436,13 @@ philosophique.
 
 **La description YouTube de la longue**, en plus des six parties : les chapitres en
 horodatage ; tous les PMID de la vidéo (un script de vingt lignes, à écrire dans
-`video/manger-sans-se-priver/tools/`, les sort de `scenario.json` ; `build_2_annexes.py`
+`video/old/manger-sans-se-priver/tools/`, les sort de `scenario.json` ; `build_2_annexes.py`
 en produit déjà le tableau dans les annexes) ; les références sans
 PMID signalées comme telles ; aucun lien YouBud en fin de vidéo (§ 8, règle 3).
 
 ### La passe de contrôle
 
-Celle de `video/manger-sans-se-priver/tools/README.md`, appliquée à chaque script
+Celle de `video/old/manger-sans-se-priver/tools/README.md`, appliquée à chaque script
 long, à chacun de ses textes de short, et à chaque légende :
 
 - [ ] la métaphore confinée à son micro-module, refermée à voix haute, ses noms absents des chapitres suivants
@@ -454,7 +463,7 @@ Elle tourne avant tournage, jamais après.
 
 Un short n'est pas un chapitre coupé. C'est le noyau [S] d'un chapitre, à un autre
 débit, avec un hook et une chute tournés en plus. C'est la règle des annexes de
-`video/manger-sans-se-priver` : « chaque chapitre est déjà un mini-reel ; il ne lui
+`video/old/manger-sans-se-priver` : « chaque chapitre est déjà un mini-reel ; il ne lui
 manque qu'un hook et une chute autonomes ».
 
 | Élément | Longueur | Tourné quand |
@@ -569,7 +578,7 @@ et si le journal de poids n'existe pas, « Ta montre » prend sa place.
 
 ### « Une calorie, c'est une calorie », élargie
 
-Le script de 82 s existe, `video/une-calorie-est-une-calorie/SCRIPT.md`, avec ses trois
+Le script de 82 s existe, `video/old/une-calorie-est-une-calorie/SCRIPT.md`, avec ses trois
 prompts de composition et sa légende. Il devient le chapitre 1 de S4, réécrit à
 165 mots/min ; ses suites 02 (le gras à neuf calories) et 05 (l'alcool) deviennent les
 chapitres 2 et 3 (§ 3). Le reel lui-même n'est pas tourné : le sortir tel quel le mardi
@@ -708,13 +717,13 @@ revient » est en ligne)
 | Reel | État | Sa place |
 |---|---|---|
 | **« Déficit calorique ≠ manger moins »** | publié le 27 août sur YouTube, 1080×1920 | short du mardi 15 septembre, tel quel sur Instagram et TikTok, zéro montage, légende en cinq parties sans la sixième ligne (la longue correspondante, S3, n'existe pas encore). Vérifier la zone sûre des sous-titres en Short. Sa matière est le chapitre 1 de S3 |
-| **« Tu n'as jamais eu à le mériter »** | monté à deux plans près, `video/meriter-son-repas/montage/` | short du samedi 19 septembre. Les pickups A (« Sauf que le sport, c'est cinq pour cent de ce que tu brûles. Cinq. ») et B (la chute corrigée) tournés dimanche 13 au téléphone en portrait natif, 10 min, avant l'installation 4K, pour raccorder aux rushes du 1er septembre. Voie Kdenlive, une seule fois, 2 h, détail dans `PLAN-SEMI-18-OCTOBRE.md`. Sa version longue est S3 ; son chapitre 1 n'est pas redécoupé en short |
+| **« Tu n'as jamais eu à le mériter »** | monté à deux plans près, `video/old/meriter-son-repas/montage/` | short du samedi 19 septembre. Les pickups A (« Sauf que le sport, c'est cinq pour cent de ce que tu brûles. Cinq. ») et B (la chute corrigée) tournés dimanche 13 au téléphone en portrait natif, 10 min, avant l'installation 4K, pour raccorder aux rushes du 1er septembre. Voie Kdenlive, une seule fois, 2 h, détail dans `PLAN-SEMI-18-OCTOBRE.md`. Sa version longue est S3 ; son chapitre 1 n'est pas redécoupé en short |
 
 ### Le trailer
 
 Trente-cinq secondes, tourné vers le spectateur, épinglé en premier sur Instagram et
 bande-annonce de chaîne sur YouTube. Chaque phrase sur toi est suivie d'une phrase sur
-lui. Le plan par plan, avec les fichiers, est dans `video/trailer/TOURNAGE.md` ; ce qui
+lui. Le plan par plan, avec les fichiers, est dans `video/old/trailer/TOURNAGE.md` ; ce qui
 suit est le script, avec les deux répliques réécrites le 7 septembre. Ta mère est
 d'accord pour qu'on parle d'elle : la ligne est dedans.
 
@@ -754,7 +763,7 @@ TEXT: "CETTE SEMAINE"
 
 | | |
 |---|---|
-| **Ce qui a changé** | le plan 0:25 ne dit plus de temps : le semi est une chose qu'on prépare à côté, jamais une performance qu'on annonce. Le dernier plan (0:32 ici et dans `video/trailer/TOURNAGE.md`, « plan 0:33 » dans le brief) nomme la longue réellement publiée le dimanche, sans bouteille d'huile ; la parole se règle sur la longue du jour, pas sur un ordre de document |
+| **Ce qui a changé** | le plan 0:25 ne dit plus de temps : le semi est une chose qu'on prépare à côté, jamais une performance qu'on annonce. Le dernier plan (0:32 ici et dans `video/old/trailer/TOURNAGE.md`, « plan 0:33 » dans le brief) nomme la longue réellement publiée le dimanche, sans bouteille d'huile ; la parole se règle sur la longue du jour, pas sur un ordre de document |
 | **Tournage** | les trois plans face caméra dimanche 13 en fin de session, 20 min, en 4K 16:9 centré, trois prises chacun ; le plan 0:17 reste le plus important |
 | **Montage** | vendredi 18 après les shorts, 3 h. **Deux exports** : 1080×1920 pour l'épingle Instagram ; 1920×1080 pour la bande-annonce de chaîne YouTube, le portrait centré sur le fond du kit, les textes repositionnés, mise en ligne comme vidéo classique (une verticale de moins de trois minutes serait classée Short). Sous-titres dans la zone sûre. Pas de scratch : il n'y a pas de turn dans un trailer |
 | **Publication** | dimanche 20 septembre, une heure après la longue, épinglé en premier. Si S1 déborde, il glisse au dimanche 27 : il est épinglé, pas daté |

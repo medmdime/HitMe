@@ -1,8 +1,88 @@
 # Les comptes : Instagram, TikTok, YouTube
 
-**Instagram est la maison. TikTok et YouTube Shorts sont des miroirs : le même fichier, la même légende, zéro production en plus.** TikTok revient en miroir le 17 septembre, à ta demande ; il avait été retiré le 9. Tu lis les signaux d'Instagram, tu ne compares pas les plateformes avant vingt vidéos.
+**Instagram est la maison. TikTok et YouTube Shorts sont des miroirs : le même fichier, la même légende, zéro production en plus.** TikTok revient en miroir le 17 septembre, à ta demande ; il avait été retiré le 9. ~~Tu lis les signaux d'Instagram, tu ne compares pas les plateformes avant vingt vidéos.~~ *Dépassé le 28 septembre : les chiffres se relèvent tous les sept jours, sur Instagram et sur TikTok ([[Tes questions]]).*
 
 Les mêmes quatre choses partout, pour qu'on te reconnaisse d'une appli à l'autre : le nom d'utilisateur, le nom affiché, la photo, la première ligne de la bio.
+
+---
+
+## À décider avec Mohamed
+
+*Ajouté le 28 septembre 2026, avec la nouvelle promesse : « Tu fais des efforts, et rien ne bouge ? Je t'explique pourquoi, preuve à l'écran, sans te juger. » Rien n'est tranché ici : ce sont des pistes, pour en parler. Le reste du fichier ne change pas tant que tu n'as pas choisi.*
+
+### Dire qui tu es
+
+**Le constat.** Sur Instagram, on n'a jamais dit qui tu es, ni pourquoi ce profil existe. La bio dit ta vie (le dev, la muscu, la course, tes vingt kilos, YouBud), pas ce que le visiteur trouve ici. Le trailer prévu pour ça n'a jamais été tourné (`video/old/trailer/`). Les chiffres vont dans ce sens : « Ton week-end annule ta semaine » a fait 17 300 vues sur TikTok pour 14 abonnés seulement. Beaucoup de gens ont regardé, très peu se sont abonnés. La vidéo n'avait pas encore d'appel à s'abonner ; il est à la fin de chaque vidéo depuis le 24 septembre. Le profil, lui, ne dit toujours pas pourquoi s'abonner.
+
+**Tes trois pistes :**
+
+| La piste | Ce que c'est | Ce qu'elle apporte | Ses limites |
+|---|---|---|---|
+| **Un paragraphe dans la bio** | 150 caractères : ce que le visiteur trouve ici, puis qui tu es | tout de suite, sans rien tourner ; chaque personne qui ouvre ton profil la lit, au moment où elle décide de s'abonner ou non | pas la place pour ton histoire ; elle se lit en deux secondes et ne crée pas de lien |
+| **Un post simple, sans te filmer** | quelques images en carrousel : la promesse, toi à 60 kg et à 80 kg, ce que tu expliques ici | une heure de travail ; il s'épingle ; il dit plus que la bio ; les photos à 60 kg existent (`D:\videos\trailer\`) | sans ta voix ni ton visage qui parle, il crée moins de lien ; il ne passe pas tel quel sur YouTube Shorts ; la photo à 80 kg est à dater avant de dire « aujourd'hui » dessus |
+| **Une vidéo très simple** | 20 à 30 s face caméra, au format de [[Tes questions]] : qui tu es, pourquoi ce profil, ce que tu expliques | la seule qui crée un vrai lien : ta voix, ton visage, ton corps comme preuve ; elle s'épingle ; la même sur les trois plateformes | à écrire, tourner et monter, une place dans une session ; elle ne répond à aucune question des gens : elle sert au profil, pas à la découverte |
+
+**La recommandation** : les trois ne s'excluent pas. D'abord **un paragraphe de bio, tout de suite** : cinq minutes, et chaque visiteur le lit (deux versions plus bas). Puis **une vidéo très simple, épinglée en premier**, tournée dans une prochaine session avec les quatorze. Le post sans te filmer, seulement si tu ne veux pas te présenter face caméra.
+
+**Une trame pour la vidéo**, à réécrire avec toi. Chaque phrase est vraie d'après ce que tu as dit ; environ 60 mots, une vingtaine de secondes :
+
+> Tu fais des efforts, et rien ne bouge ? À un mètre quatre-vingt-dix, je pesais soixante kilos : je mangeais beaucoup, et je ne prenais rien. Aujourd'hui, quatre-vingts. Ici, une question que tu te poses, et sa vraie réponse, preuve à l'écran, sans te juger. Moi, c'est Mohamed : je t'explique la nutrition, sans régime. Abonne-toi pour la suite.
+
+L'appel habituel perd « et enregistre la vidéo » : une présentation ne s'enregistre pas. Ta mère n'y est pas : elle est d'accord pour qu'on parle d'elle, mais une ligne sur elle dans ta présentation se décide avec toi, et avec elle.
+
+### La bio
+
+**L'actuelle** (§ 1, 142 caractères) reste en place tant que tu n'as pas choisi. Relue avec la nouvelle promesse :
+
+- elle dit qui tu es, pas ce que le visiteur trouve ici : aucune ligne ne répond à « pourquoi je m'abonnerais ? » ;
+- « Muscu, course, cuisine » annonce du sport, et les gens ne regardent pas pour ton sport ([[BESOIN-ET-CONCURRENCE]] § 4) ;
+- ta décision du 17 septembre (une bio qui parle de toi, sans le mot calories) et la promesse (qui parle du visiteur) tiennent ensemble si la première ligne dit ce qu'il trouve ici, et la suite qui tu es.
+
+**Version A**, la promesse, 145 caractères sur 150 :
+
+```
+Tu fais des efforts, et rien ne bouge ? Je t'explique pourquoi, sans te juger.
+Ma journey : de 60 à 80 kg. Semi le 18 octobre.
+Créateur de YouBud
+```
+
+**Version B**, la phrase de l'appel, celle que le visiteur vient d'entendre à la fin de la vidéo, 135 caractères sur 150 :
+
+```
+Je t'explique la nutrition, sans régime.
+1 m 90. Ma journey : de 60 à 80 kg. Semi le 18 octobre.
+Créateur de YouBud, suivi nutritionnel
+```
+
+Ce qui saute dans les deux : « Dev freelance » et « Muscu, course, cuisine ». Dans A, faute de place, ta taille et « suivi nutritionnel » sautent aussi. **La recommandation : A**, parce que sa première ligne reprend les mots des hooks et nomme le problème du visiteur. B, si tu préfères que la bio répète mot pour mot la fin de chaque vidéo.
+
+**Sur TikTok**, 78 caractères sur 80 : `Tu fais des efforts, et rien ne bouge ? Je t'explique pourquoi. De 60 à 80 kg.`
+
+### Les épingles
+
+**Le plan du 17 septembre** (§ 1) : le trailer en premier, jamais tourné ; « Déficit calorique » en deuxième ; la « à la une » SEMI en troisième. Une « à la une » n'occupe pas une place d'épingle : elle vit au-dessus de la grille. Instagram laisse épingler trois publications.
+
+**Une proposition pour maintenant :**
+
+| Place | Quoi | Pourquoi |
+|---|---|---|
+| 1 | la présentation, vidéo ou post, dès qu'elle existe | le premier que voit un visiteur : qui tu es, et pourquoi s'abonner |
+| 2 | « Ton week-end annule ta semaine » | ta vidéo la plus vue : 17 300 vues sur TikTok, 70 % encore là à 3 s sur Instagram |
+| 3 | « Déficit calorique » pour l'instant, puis la meilleure des quatorze après la première semaine | « Déficit calorique » s'enregistre bien (1,05 pour 100 vues sur TikTok) ; une des quatorze la remplace quand elle fait mieux en enregistrements et en abonnés pour 1 000 vues |
+| à la une | la « à la une » SEMI, qui reste | les stories marchent |
+
+La même chose sur TikTok, qui laisse aussi épingler trois vidéos.
+
+### Ce qu'il faut trancher
+
+1. **Dire qui tu es** : la bio seule, la bio puis une vidéo, ou la bio puis un post ?
+2. **Si c'est une vidéo** : la trame te va-t-elle ? Et ta mère : une ligne, ou rien ?
+3. **La bio** : A, B, ou l'actuelle ? « Dev freelance » et « Muscu, course, cuisine » peuvent-ils partir ?
+4. **Le nom affiché** : ton nom seul (décision du 17 septembre), ou ton nom et le sujet, par exemple « Mohamed · nutrition sans régime » ? Le champ nom compte dans la recherche Instagram.
+5. **Les épingles** : qu'est-ce qui est épinglé aujourd'hui ? Le week-end en place 2 ? « Déficit calorique » garde-t-il sa place jusqu'à la fin de la première semaine ?
+6. **Le trailer** : abandonné, ou remplacé par la présentation ?
+7. **TikTok** : la même promesse, en 80 caractères ?
+8. **Le lien YouBud** : l'appli se télécharge-t-elle déjà ? Sinon, aucun lien plutôt qu'un lien mort.
 
 ---
 
@@ -24,7 +104,7 @@ Dev freelance. Muscu, course, cuisine.
 Créateur de YouBud, suivi nutritionnel
 ```
 
-La première ligne dit qui tu es et de quoi ta vie est faite. La deuxième est ta journey, avec ta taille pour donner l'échelle, puis ton fil en cours. La troisième est ce que tu as construit. Pas de chrono, pas d'objectif de temps. Avec ta phrase mot pour mot, 146 caractères, la taille ne rentre plus :
+La première ligne dit qui tu es et de quoi ta vie est faite. La deuxième est ta journey, avec ta taille pour donner l'échelle, puis ton fil en cours. La troisième est ce que tu as construit. Pas de chrono, pas d'objectif de temps. *À relire avec la nouvelle promesse depuis le 28 septembre : deux versions sont proposées en tête (« À décider avec Mohamed »). Celle-ci reste en place tant que tu n'as pas choisi.* Avec ta phrase mot pour mot, 146 caractères, la taille ne rentre plus :
 
 ```
 Dev freelance. Muscu, course, cuisine.
@@ -32,7 +112,7 @@ J'ai réalisé une journey de 60 à 80 kg. Semi-marathon le 18 octobre.
 Créateur de YouBud, suivi nutritionnel
 ```
 
-**Les trois épingles**, dans cet ordre :
+**Les trois épingles**, dans cet ordre. *Le plan du 17 septembre, à rediscuter depuis le 28 : le trailer n'a jamais été tourné, et une proposition pour maintenant est en tête (« À décider avec Mohamed »).*
 
 | Place | Publication | Ce qu'elle dit | Quand |
 |---|---|---|---|
@@ -51,27 +131,27 @@ Pas trois vidéos de présentation à la suite : [[profil/FONDAMENTAUX#10. Ce qu
 | Nom d'utilisateur | `medmdim`, le même |
 | Nom affiché | Mohamed Elmdimegh |
 | Photo | la même |
-| Bio, 75 caractères sur 80 | 1 m 90. Ma journey : de 60 à 80 kg. Semi le 18 octobre. Créateur de YouBud. |
+| Bio, 75 caractères sur 80 | 1 m 90. Ma journey : de 60 à 80 kg. Semi le 18 octobre. Créateur de YouBud. *Une version avec la promesse est proposée en tête* |
 | Lien | TikTok ne donne le lien en bio qu'aux comptes professionnels ou à partir d'un certain nombre d'abonnés : s'il n'est pas proposé, rien. Le nom « YouBud » suffit dans une légende qui a besoin du calcul |
 
-**Le miroir, en pratique** : tu postes **le fichier d'origine**, jamais une vidéo retéléchargée depuis Instagram, qui porte un filigrane. La même légende, les mêmes trois hashtags. Pas de son TikTok ajouté : la musique est dans ton montage. Aucune vidéo pensée pour TikTok seulement.
+**Le miroir, en pratique** : tu postes **le fichier d'origine**, jamais une vidéo retéléchargée depuis Instagram, qui porte un filigrane. La même légende, les mêmes trois hashtags. Pas de son TikTok ajouté : depuis le 28 septembre, le montage n'a pas de musique, et c'est voulu. Aucune vidéo pensée pour TikTok seulement.
 
 ---
 
 ## 3. YouTube
 
-`@medmdim`, « Mohamed Elmdimegh ». Les shorts y passent en Shorts, en miroir, avec la même légende en description et le hook en titre. Les longues reprennent après le semi : [[2026-10-19 📺 Après le semi · les longues YouTube|la décision du lundi 19 octobre]].
+`@medmdim`, « Mohamed Elmdimegh ». Les shorts y passent en Shorts, en miroir, avec la même légende en description et le hook en titre. Pas de longue avant le semi ; leur reprise se décidera après la course. La note du 19 octobre qui devait porter cette décision a été retirée du calendrier le 28 septembre, avec l'ancien plan.
 
 ---
 
 ## 4. Publier une vidéo : la liste
 
-1. **Le fichier d'origine**, l'export de CapCut. Tes exports CapCut sont dans `D:\exports\`, un dossier par projet, avec la couverture et les sous-titres. Un téléchargement depuis YouTube Studio ne sert qu'en dépannage : la qualité y est réduite.
-2. **La couverture** : une image où le texte tient au centre, lisible dans la grille du profil. Toujours une image de nutrition, jamais de sport.
+1. **Le fichier d'origine.** Depuis le 28 septembre, c'est le rendu de l'outil `outils/kallaway-edit`, dans le dossier de la vidéo. Avant, l'export de CapCut : tes exports CapCut sont dans `D:\exports\`, un dossier par projet, avec la couverture et les sous-titres. Un téléchargement depuis YouTube Studio ne sert qu'en dépannage : la qualité y est réduite.
+2. **La couverture** : la question de la vidéo, en ZY Elegant, le texte au centre, lisible dans la grille du profil. Toujours une image de nutrition, jamais de sport.
 3. **La légende** du script, entière : la thèse, le qualificatif, le mécanisme, la réserve honnête, les sources. Puis les tags : voir ci-dessous.
 4. **Instagram d'abord.** Puis **une story** : le reel partagé, avec sa phrase en texte. Puis TikTok et YouTube Shorts, le même fichier.
 5. **Si la vidéo contient le clip de quelqu'un**, son nom est dans la légende, sur les trois plateformes.
-6. **Les commentaires de la première heure** : tu réponds, avec le chiffre ou la source. C'est là que se gagne le « sans jugement ».
+6. **Les commentaires de la première heure** : tu réponds, avec le chiffre ou la source. C'est là que se gagne le « sans jugement ». Chaque vraie question se note : c'est un sujet possible pour [[Tes questions]].
 
 ### Les tags
 
@@ -96,6 +176,8 @@ Jamais de tag de sport dans une vidéo de nutrition, jamais de tag attrape-tout 
 
 ## 5. Aujourd'hui, jeudi 17 septembre
 
+*Dépassé le 28 septembre, gardé comme mémoire. Ce qui sort chaque jour est au [[Calendrier]].*
+
 - Le profil Instagram réglé comme au § 1, le profil TikTok comme au § 2.
 - **La vidéo** : [[Déficit calorique]], tel quel. La légende est sur [[Déficit calorique#La légende, Instagram et TikTok|sa page]].
 - **L'épingler** en place 2.
@@ -107,6 +189,6 @@ Jamais de tag de sport dans une vidéo de nutrition, jamais de tag attrape-tout 
 
 ## 6. Ce qu'on ne met jamais
 
-Un lien YouTube sur Instagram ou TikTok. Un appel à l'action par défaut. Un titre de santé. Un temps, une allure, un chrono, même en bio. Une phrase sur toi qui n'est pas vraie. « Coûte cher » pour des calories.
+Un lien YouTube sur Instagram ou TikTok. Un autre appel que celui de la fin de chaque vidéo (« Moi, c'est Mohamed : je t'explique la nutrition, sans régime. Abonne-toi pour la suite, et enregistre la vidéo. ») ; YouBud n'y entre pas. Un titre de santé, ni diététicien ni nutritionniste. Une légende qui vise un plaisir. Un temps, une allure, un chrono, même en bio. Une phrase sur toi qui n'est pas vraie. « Coûte cher » pour des calories.
 
 [[HUB]] · [[profil/FONDAMENTAUX|Les fondamentaux]]

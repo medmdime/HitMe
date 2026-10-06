@@ -6,6 +6,18 @@ l'ancien document sur les épisodes parlés du semi. Il garde sa règle, son gé
 ses douze cartes et sa liste de plans. Il change le format : une story dure quinze
 secondes, et le semi se raconte en calories, jamais en minutes.
 
+> **Depuis le 28 septembre 2026 : les stories continuent.** Elles marchent bien, et ce
+> qu'elles montrent ne change pas : ta vie de tous les jours, tes repas, la préparation du
+> semi, sans chrono. Ce qui change autour d'elles :
+>
+> - **Les vidéos** : une par jour, du 30 septembre au 13 octobre ([[Tes questions]]). Après chaque publication, une story partage la vidéo, avec sa question en texte.
+> - **Le sticker question** : « C'est quoi ton objectif, et qu'est-ce qui te bloque ? ». Chaque réponse est un hook possible pour [[Tes questions]] ([[BESOIN-ET-CONCURRENCE]] § 7).
+> - **Le ton** : un « Si tu… » parle à la personne, jamais contre elle. Dur avec l'idée fausse, doux avec les gens, et rien ne vise un plaisir. La story 5 de A5 est réécrite dans ce sens (§ 4).
+> - **Deux vidéos, deux textes** : une série qui tombe le jour d'une vidéo sur le même sujet garde son angle et ne reprend pas son texte. Le mercredi 7 octobre, A5 (le kilo d'eau de ta semaine avant la course) tombe le jour de J8 (« Tu fais du sport, et ta balance ne descend pas ? ») : A5 parle de ta semaine, J8 de la personne qui reprend le sport.
+> - **Les longues** attendent l'après-semi. Ce qui renvoie ici à une longue (§ 6 et § 9) attend avec elles.
+> - **Les dates** : le [[Calendrier]] fait foi. `PLAN-SEMI-18-OCTOBRE.md` est en pause, gardé comme mémoire.
+> - **Les épingles** : la « à la une » SEMI reste. Ce qu'on épingle sur le profil est à rediscuter, en tête de [[COMPTES]].
+
 Ce qui a changé, en une note. Le mot « yapping » désignait un format parlé de soixante
 à quatre-vingt-dix secondes, deux fois par semaine, sur un gabarit de cinq lignes lu
 avant de lancer. Ce format est abandonné, avec sa règle de montage à un changement
@@ -13,8 +25,9 @@ toutes les deux ou trois secondes. Le gabarit survit, mais découpé en cinq sto
 quinze secondes, et son mot ne désigne plus rien.
 
 Ce document dépend de `FONDAMENTAUX.md` (le ton, l'image, ce qu'on ne fait pas) et se
-lit avec `PLAN-SEMI-18-OCTOBRE.md` (le calendrier) et `PROGRAMME-FONDAMENTAUX.md` (les
-longues et les shorts, où six des douze cartes sont devenues des chapitres).
+lit avec le [[Calendrier]], qui fait foi pour les dates. `PLAN-SEMI-18-OCTOBRE.md` (l'ancien
+calendrier) et `PROGRAMME-FONDAMENTAUX.md` (les longues et les shorts, où six des douze
+cartes sont devenues des chapitres) sont en pause depuis le 28 septembre.
 
 ---
 
@@ -23,7 +36,7 @@ longues et les shorts, où six des douze cartes sont devenues des chapitres).
 **Tu ne racontes jamais ce que tu as fait. Tu racontes ce que ça prouve.**
 
 « J'ai fait six fois huit cents ce matin » est un vlog. « J'ai fait six fois huit cents
-ce matin, et ça ne paie même pas un dîner » est une story qui vaut quelque chose. La
+ce matin, et ça ne fait même pas un dîner » est une story qui vaut quelque chose. La
 séance est la même. Ce qui change, c'est que la deuxième phrase contient une chose que
 le spectateur croyait et qui est fausse.
 
@@ -47,12 +60,12 @@ Le reste du temps, tu ne parles pas : tu montres.
 
 ### Ce que les stories montrent
 
-| Fil | Ce qu'on voit | Pourquoi c'est là |
-|---|---|---|
-| **Les séances** | les quatre séances de la semaine, dix secondes de plans chacune, la montre sur l'écran distance et calories | le semi comme fil de vie : « je prépare un semi-marathon, le dix-huit octobre. Après, un Hyrox. » Au présent, comme une chose qu'on fait à côté |
-| **Les repas** | l'assiette d'après, l'assiette d'avant, la balance de cuisine, YouBud à l'écran quand il y a un calcul | c'est là que le sport rejoint la nutrition : chaque kilomètre finit dans une assiette |
-| **La préparation du semi** | les kilomètres de la semaine, le tableau du dimanche, le poids du dimanche, ce qui a cassé | l'expérience publique : « tout ce que je brûle, on le compte, et on voit combien de desserts ça paie » |
-| **La vie autour de la nutrition** | les courses, le café du samedi, le dessert, la cuisine, la route le matin | la direction artistique de la chaîne : sport, lifestyle et nutrition. Le lifestyle vit ici, et seulement ici |
+| Fil                               | Ce qu'on voit                                                                                               | Pourquoi c'est là                                                                                                                               |
+| --------------------------------- | ----------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------- |
+| **Les séances**                   | les quatre séances de la semaine, dix secondes de plans chacune, la montre sur l'écran distance et calories | le semi comme fil de vie : « je prépare un semi-marathon, le dix-huit octobre. Après, un Hyrox. » Au présent, comme une chose qu'on fait à côté |
+| **Les repas**                     | l'assiette d'après, l'assiette d'avant, la balance de cuisine, YouBud à l'écran quand il y a un calcul      | c'est là que le sport rejoint la nutrition : chaque kilomètre finit dans une assiette                                                           |
+| **La préparation du semi**        | les kilomètres de la semaine, le tableau du dimanche, le poids du dimanche, ce qui a cassé                  | l'expérience publique : « tout ce que je brûle, on le compte, et on voit combien de desserts ça fait »                                          |
+| **La vie autour de la nutrition** | les courses, le café du samedi, le dessert, la cuisine, la route le matin                                   | la direction artistique de la chaîne : sport, lifestyle et nutrition. Le lifestyle vit ici, et seulement ici                                    |
 
 Le sport n'apparaît nulle part ailleurs : jamais dans la grille (couvertures de reels,
 miniatures YouTube), qui est cent pour cent nutrition. Dans les longues, un plan de
@@ -66,7 +79,7 @@ l'écran allure ou temps. Le jour de course se cadre sans l'horloge de l'arche
 d'arrivée, sans le dossard s'il porte un temps. La distance se dit, les calories se
 disent, le poids du dimanche se dit. Le temps ne se dit pas. La liste des mots
 interdits est le grep de performance : elle est dans `FONDAMENTAUX.md` § 6 et dans la
-passe de contrôle de `../video/manger-sans-se-priver/tools/README.md` (section « Le grep
+passe de contrôle de `../video/old/manger-sans-se-priver/tools/README.md` (section « Le grep
 de performance », qui ne lit que `scenario.json` : sur un texte de story, tu la passes à
 la main) ; elle vaut pour un texte de story comme pour un script, et `FONDAMENTAUX.md`
 § 10 la résume en une ligne.
@@ -170,6 +183,10 @@ cardio fait fondre le muscle ? ». Leurs cartes sont au § 9. B4 garde sa série
 dimanche 4 octobre ; son mécanisme est déjà le chapitre 1 de « Pourquoi ça revient ».
 Le mercredi 9 septembre et le mercredi 16, la story de séance suffit.
 
+B1 a été jouée le dimanche 20 septembre, à l'ouverture de la « à la une », et non le 13
+(le [[Calendrier]]). Les dates suivantes restent celles du tableau, sauf décision
+contraire.
+
 **Leurs « À vérifier » restent obligatoires.** Une story reste une affirmation, et une
 affirmation dite à l'image ne se corrige pas.
 
@@ -206,7 +223,7 @@ consomme, *ordre de grandeur*.
 | 1 | la montre sur l'écran distance, deux fois : les fractions, puis l'échauffement. **La même distance, le même chiffre de calories.** Jamais l'écran qui les sépare |
 | 2 | « Si tu te dis que tu vas courir plus vite pour brûler plus, j'ai une mauvaise nouvelle et une bonne. À distance égale, vite ou lentement, tu brûles à peu près pareil. » |
 | 3 | la piste, les mains sur les genoux, puis la marche du retour ; le chiffre |
-| 4 | « Le coût d'un kilomètre dépend de ton poids, très peu de ta vitesse. Courir vite, c'est finir plus tôt. Pas brûler plus. » |
+| 4 | « Ce que brûle un kilomètre dépend de ton poids, très peu de ta vitesse. Courir vite, c'est finir plus tôt. Pas brûler plus. » |
 | 5 | « La bonne nouvelle : marcher compte aussi. Un kilomètre à pied, c'est un kilomètre. Dimanche : je mange combien un jour de course, un jour de repos ? » |
 
 À vérifier avant : c'est une approximation classique de la physiologie de la course ;
@@ -255,7 +272,8 @@ observes sur toi cette semaine-là, pas une règle.
 C'est la seule série où l'histoire pèse plus que le chiffre : raconte le samedi. Son
 mécanisme est le chapitre 1 de « Pourquoi ça revient », en ligne depuis le 13
 septembre : c'est une série qui peut renvoyer à une longue, en texte, par le nom de la
-chaîne, jamais par un lien.
+chaîne, jamais par un lien. *Dépassé : « Pourquoi ça revient » n'est jamais sortie, les
+longues ont été suspendues le 17 septembre. La série ne renvoie à aucune longue.*
 
 ### A5 · mercredi 7 octobre · le kilo d'eau
 
@@ -265,7 +283,7 @@ chaîne, jamais par un lien.
 | 2 | « Si tu réduis l'entraînement avant une course et que la balance monte, ne touche à rien. La semaine avant une course, la balance monte d'un kilo, et ce n'est pas du gras. » |
 | 3 | l'assiette, le riz ; la balance de la salle de bain |
 | 4 | « Tes muscles refont le plein de glycogène, et chaque gramme de glycogène retient à peu près trois grammes d'eau. Le kilo, c'est de l'eau que tu vas dépenser dimanche. » |
-| 5 | « Si tu manges deux fois plus parce que tu t'entraînes moins et que tu t'ennuies, là, c'est du gras. Le kilo d'eau ne l'excuse pas. Dimanche : cinq semaines, et ce que ça a changé. » |
+| 5 | « Après, si tu manges deux fois plus parce que tu t'entraînes moins, là, ce n'est plus de l'eau. Dimanche : cinq semaines, et ce que ça a changé. » Réécrite le 28 septembre : l'ancienne version jugeait (« et que tu t'ennuies », « le kilo d'eau ne l'excuse pas ») |
 
 À vérifier avant : le rapport glycogène-eau, *ordre de grandeur*, avant de dire
 « trois grammes ». Et le kilo lui-même : s'il ne monte pas sur ta balance, la série
@@ -300,14 +318,16 @@ assiettes et ne donne aucun gramme.
 | Story | Ce qu'on voit et ce qu'on lit |
 |---|---|
 | 1 | le départ ; la montre sur l'écran distance, avant la première foulée |
-| 2 | « Si tu veux savoir combien de desserts paie un semi-marathon, j'ai la réponse. Elle m'a coûté six semaines et vingt et un kilomètres. » |
+| 2 | « Si tu veux savoir combien de desserts fait un semi-marathon, j'ai la réponse. Il m'a fallu six semaines et vingt et un kilomètres pour l'avoir. » |
 | 3 | la médaille ; l'assiette d'après ; le total des six semaines en journées de bouffe ; ton poids de départ contre ton poids d'arrivée. Le verdict de l'hypothèse, quel qu'il soit |
 | 4 | « Ce que tu brûles, c'est ta journée et ta nuit. Six semaines de course tiennent dans une poignée de journées de repas. » *Ordre de grandeur* : le vrai chiffre est la ligne « Total » du tableau du § 5, et c'est lui qu'on dit |
-| 5 | « Ça se compte quand même. Et le sport sert à autre chose : il m'a fait courir un semi. Après, un Hyrox. Et les calories, on continue dimanche prochain. » |
+| 5 | « Ça se compte quand même. Et le sport sert à autre chose : il m'a fait courir un semi. Après, un Hyrox. Et les calories, on continue. » |
 
 Le cadrage : sans l'horloge de l'arche d'arrivée, sans le dossard s'il porte un temps,
 la montre sur l'écran distance. Le tout archivé dans la « à la une » SEMI : c'est là
-que le jour de course vivra après le 19 octobre. Si tu as choisi de ne rien écrire la
+que le jour de course vivra après le 19 octobre. *Dépassé le 28 septembre : la story 5
+disait « dimanche prochain » pour annoncer une longue. Il n'y en a plus le dimanche : elle
+dit « on continue », sans date.* L'ancienne consigne : si tu as choisi de ne rien écrire la
 veille, la longue de « dimanche prochain » est celle du 1er novembre ; la story 5 dit
 alors « bientôt », pas « dimanche prochain ».
 
@@ -365,6 +385,9 @@ un plan en contient un par accident, il ne sort pas, ni en story, ni ailleurs.
 
 ### Les mêmes plans dans les longues
 
+*En attente depuis le 28 septembre : pas de longue avant le semi. Dans les vidéos
+courtes, un plan de séance n'entre pas : le montage reste toi, et une mini-animation.*
+
 Ces plans servent deux fois. Dans les stories, tels quels. Dans les longues YouTube,
 comme b-roll réel, **sous une phrase de calories, jamais seuls** : « un semi entier,
 c'est un repas et demi » sur la route du dimanche ; « le sport, c'est cinq pour cent
@@ -387,8 +410,9 @@ Le sous-dossier et le nom de fichier sont une proposition, pas encore ta convent
 ## 7. La « à la une » SEMI
 
 Une story n'est vue que par les abonnés et disparaît en vingt-quatre heures. La « à la
-une » est ce qui reste. Elle est créée le lundi 7 septembre au matin, avec le compte
-(`PLAN-SEMI-18-OCTOBRE.md`, semaine 1), et elle reçoit, dans l'ordre :
+une » est ce qui reste. Elle devait être créée le lundi 7 septembre au matin, avec le
+compte (`PLAN-SEMI-18-OCTOBRE.md`, semaine 1) ; elle a été ouverte le dimanche
+20 septembre, avec la série B1. Elle reçoit, dans l'ordre :
 
 | Quoi | Quand |
 |---|---|
@@ -398,15 +422,17 @@ une » est ce qui reste. Elle est créée le lundi 7 septembre au matin, avec le
 | le jour de course, entier | le 18 octobre |
 
 Elle est la troisième publication épinglée sur Instagram, après le trailer et le
-premier short. Son nom, « SEMI », est à confirmer ou à changer (question 14 du brief).
-Après le 19 octobre, c'est là que la course vit, et c'est là que « Manger quand tu
-cours » renvoie quand elle parle de « six semaines ».
+premier short. *À rediscuter depuis le 28 septembre : le trailer n'a pas été tourné, et
+ce qu'on épingle est en tête de [[COMPTES]]. La « à la une » SEMI, elle, reste.* Son
+nom, « SEMI », est à confirmer ou à changer (question 14 du brief). Après le 19 octobre,
+c'est là que la course vit, et c'est là que « Manger quand tu cours » renverra, si cette
+longue se fait, quand elle parlera de « six semaines ».
 
 ---
 
 ## 8. Ce qui reste vrai quoi qu'il arrive
 
-- **Rien n'est mesuré.** Ce gabarit vient du workbook, de l'archétype « Experimenter » et du science-reel. Le sweep de comptes de coureurs (`PLAN-SEMI-18-OCTOBRE.md` § 5) le réécrira sur des chiffres.
+- **Rien n'est mesuré en chiffres.** Le 28 septembre, tu constates que les stories marchent bien : on continue. Ce gabarit vient du workbook, de l'archétype « Experimenter » et du science-reel. Le sweep de comptes de coureurs (`PLAN-SEMI-18-OCTOBRE.md` § 5) le réécrira sur des chiffres.
 - **Une série de stories sans « Si tu… » ne se publie pas.** Une story de séance à la place.
 - **Chaque « À vérifier » se vérifie avant**, pas après. Ce qui est dit à l'image ne se corrige pas.
 - **Une story, une idée, une prise, quinze secondes.** Si tu dépasses, la story 3 est trop longue : trois plans, pas dix.
@@ -417,6 +443,11 @@ cours » renvoie quand elle parle de « six semaines ».
 ---
 
 ## 9. La réserve : « Manger quand tu cours »
+
+*En attente depuis le 28 septembre : pas de longue avant le semi, et la reprise des
+longues se décidera après. Le sujet a déjà une piste courte, dans les questions de niche
+de [[Tes questions]] : « Tu cours pour maigrir, et rien ne bouge ? », et la veille du
+semi.*
 
 Les séries du § 4, sans chrono, sont le point de départ de la première longue d'après
 la course, « Manger quand tu cours » (semaine 7, du 19 au 25 octobre, ou le 1er
@@ -462,7 +493,7 @@ ont donné », et sa preuve n'est plus la semaine 1 mais le total des six.
 |---|---|---|---|
 | A1 | « Ta montre ne sait pas ce que t'as brûlé » (semaine 8, ou semaine 6 si « Vingt kilos » n'a pas de journal de poids) | 2 · l'après-brûlage, un dixième de la séance | LaForgia 2006, lue en semaine 6 ; avant la fin de la semaine 4 si « Ta montre » passe en semaine 6, puisqu'elle s'écrit en semaine 5 |
 | A2 | « Le cardio fait fondre le muscle ? » (semaine 9) | ce n'est pas la course, c'est le déficit sans protéines | Longland 2016, lue en semaine 6 ; Bryner 1999, à retrouver |
-| B4 | sa série est au § 4, dimanche 4 octobre ; son mécanisme est le chapitre 1 de « Pourquoi ça revient » | | déjà sourcé : 69 PMID dans `../video/manger-sans-se-priver/scenario.json` |
+| B4 | sa série est au § 4, dimanche 4 octobre ; son mécanisme est le chapitre 1 de « Pourquoi ça revient » | | déjà sourcé : 69 PMID dans `../video/old/manger-sans-se-priver/scenario.json` |
 
 **A1 · le fractionné brûle moins que ce qu'on te dit**
 
