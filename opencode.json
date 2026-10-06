@@ -1,0 +1,10 @@
+{
+  "$schema": "https://opencode.ai/config.json",
+  "mcp": {
+    "hitme": {
+      "type": "local",
+      "command": ["node", "outils/hitme/node_modules/tsx/dist/cli.mjs", "outils/hitme/mcp/server.ts"],
+      "enabled": true
+    }
+  }
+}

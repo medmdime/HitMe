@@ -5,9 +5,9 @@
       "name": "hitme-dev",
       "runtimeExecutable": "bun",
       "runtimeArgs": [
+        "run",
         "--cwd",
         "outils/hitme",
-        "run",
         "dev"
       ],
       "port": 3000
@@ -17,7 +17,7 @@
       "runtimeExecutable": "npm",
       "runtimeArgs": [
         "--prefix",
-        "video/meriter-son-repas",
+        "video/old/meriter-son-repas",
         "run",
         "dev"
       ],

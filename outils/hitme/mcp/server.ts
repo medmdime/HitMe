@@ -19,6 +19,7 @@ import { registerProjectTools } from "./tools/project"
 import { registerCapCutTools } from "./tools/capcut"
 import { registerTikTokTools } from "./tools/tiktok"
 import { registerInstagramTools } from "./tools/instagram"
+import { registerTrendPickerTools } from "./tools/trend-pickers"
 import { hasEnv } from "./env"
 
 const server = new McpServer(
@@ -30,9 +31,13 @@ const server = new McpServer(
       "The loop:",
       "1. RESEARCH — yt_small_breakouts / yt_keyword_outliers / yt_channel_outliers to find videos that beat",
       "   their own channel's median. Outlier score, not raw views, is what makes a lesson replicable.",
-      "   For TikTok use tiktok_account_outliers, for Instagram instagram_account_outliers. Both need a",
-      "   named account: neither platform offers free hashtag, keyword, or trending search, so browsing at",
-      "   large is not possible. Instagram ranks on likes by default — photos carry no view count.",
+      "   For TikTok and Instagram, trend_pickers searches by topic and returns the last two weeks' videos",
+      "   that passed 50K views on an account under 5K followers — formats that travelled without an",
+      "   audience. It is the only research tool billed per call (Apify), so do not re-run it to re-sort:",
+      "   a scan is stored for 6 hours, and every search is saved — trend_pickers_history lists them and",
+      "   reads one back for free, including searches run from the web app or by another agent. Check it",
+      "   before paying for a new scan. To study one account you already know, tiktok_account_outliers and",
+      "   instagram_account_outliers are free. Instagram ranks on likes by default — photos carry no view count.",
       "2. STUDY — analyze_youtube_video for long-form, transcribe_clip for Instagram reels and TikToks.",
       "   Both return a timestamped bracket script plus a teardown, and both cache to the shared database.",
       "3. REMIX — project_create with the references, project_compare_sources to read them beat by beat,",
@@ -52,12 +57,14 @@ registerProjectTools(server)
 registerCapCutTools(server)
 registerTikTokTools(server)
 registerInstagramTools(server)
+registerTrendPickerTools(server)
 
 function warnMissingConfig() {
   const missing: string[] = []
   if (!hasEnv("YOUTUBE_API_KEY_1")) missing.push("YOUTUBE_API_KEY_1 (YouTube research tools)")
   if (!hasEnv("GEMINI_API_KEY")) missing.push("GEMINI_API_KEY (video analysis)")
   if (!hasEnv("DATABASE_URL")) missing.push("DATABASE_URL (library + projects)")
+  if (!hasEnv("APIFY_TOKEN")) missing.push("APIFY_TOKEN (trend_pickers)")
   if (missing.length) {
     process.stderr.write(
       `[hitme] Not configured, some tools will fail:\n${missing.map((m) => `  - ${m}`).join("\n")}\n`

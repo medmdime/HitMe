@@ -6,6 +6,9 @@
  *
  * Pass tool names as args to call them with no arguments, e.g.
  *   bun run mcp:smoke library_stats
+ *
+ * Tools that take minutes (a fresh trend_pickers scan) need a longer leash:
+ *   SMOKE_TIMEOUT_S=900 bun run mcp:smoke 'trend_pickers={"maxFollowers":4000}'
  */
 import { Client } from "@modelcontextprotocol/sdk/client/index.js"
 import { StdioClientTransport } from "@modelcontextprotocol/sdk/client/stdio.js"
@@ -23,10 +26,12 @@ const transport = new StdioClientTransport({
 
 const client = new Client({ name: "hitme-smoke", version: "1.0.0" })
 
+const TIMEOUT_S = Number(process.env.SMOKE_TIMEOUT_S) || 90
+
 const timer = setTimeout(() => {
-  console.error("TIMEOUT: server did not respond within 90s")
+  console.error(`TIMEOUT: server did not respond within ${TIMEOUT_S}s`)
   process.exit(1)
-}, 90_000)
+}, TIMEOUT_S * 1000)
 
 await client.connect(transport)
 transport.stderr?.on("data", (d) => process.stderr.write(`[server] ${d}`))
@@ -62,7 +67,7 @@ for (const spec of toCall) {
   }
   console.log(`\n=== ${name} ${eq === -1 ? "" : JSON.stringify(args)} ===`)
   try {
-    const res = await client.callTool({ name, arguments: args })
+    const res = await client.callTool({ name, arguments: args }, undefined, { timeout: TIMEOUT_S * 1000 })
     const content = res.content as { type: string; text?: string }[]
     console.log(content.map((c) => c.text ?? `<${c.type}>`).join("\n"))
     if (res.isError) console.log("(returned isError=true)")

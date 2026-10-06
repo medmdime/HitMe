@@ -45,6 +45,9 @@ YOUTUBE_API_KEY_5=...
 
 # Required — Neon Postgres (shared analysis store)
 DATABASE_URL=postgresql://user:pass@host.neon.tech/db?sslmode=require
+
+# Optional — Trend pickers (TikTok + Instagram topic search, billed per video)
+APIFY_TOKEN=...
 ```
 
 ### Setting up the Neon database
@@ -96,6 +99,7 @@ Where `channel_median_recent_views` is the median view count of the **bottom 80%
 - **Keyword search** — search YouTube and rank results by outlier score (not raw views).
 - **Small-channel breakouts** — videos in a niche where a small channel had a hit. Most replicable lessons live here.
 - **Hit vs flop compare** — pair a channel's outliers with its flops so you can diff script + packaging on identical production.
+- **Trend pickers** — TikTok and Instagram, by topic: the videos of the last two weeks that passed 50K views on an account under 5K followers. No audience explains those views, so the format does. The window has a start and an end date and never spans more than 14 days. This is the one mode that costs money: the search is bought from Apify (`APIFY_TOKEN`), billed per video returned, and each scan is stored for 6 hours in `.hitme/trends/` so that moving the view or follower bars re-filters it for free. Every finished search is also kept for good in `.hitme/trends/searches/` and listed under **Previous searches** in the tab, whether it was run there or by an agent over MCP: the two processes share that folder.
 
 Each result has a **Why it might have worked** panel with cheap heuristics (title patterns, engagement rate, velocity, length sweet spot) so you can pick the few worth a full Gemini analysis.
 
@@ -204,13 +208,17 @@ The TikTok *research* tools need none of this; they use plain `fetch` and no cre
 | `tiktok_account_summary` | Cadence, consistency, and breakout count. |
 | `instagram_account_outliers` | Same for Instagram; ranks on likes or reel views. |
 | `instagram_account_summary` | Format mix, cadence, engagement. |
+| `trend_pickers` | By topic, both platforms: last two weeks' videos past 50K views on accounts under 5K followers. Needs `APIFY_TOKEN`; billed per video. |
+| `trend_pickers_history` | Lists the saved trend picker searches, or reads one back by id. Reads the disk only: free. |
 
 Also available in the web UI as **TikTok** and **Instagram** tabs on `/discover`.
 
 There is **no free platform-wide search on either platform** — no hashtag, keyword,
 trending, or For You feed. Those endpoints require request signing, and TikTok's Research
 API excludes creators by policy. Only per-account reading is open, so research starts from
-a list of accounts you name rather than from a trending page.
+a list of accounts you name rather than from a trending page. `trend_pickers` is the paid
+way around that: it runs the topic search on Apify, which is why it is the only tool here
+with a bill attached.
 
 Per-platform caveats worth knowing:
 

@@ -17,6 +17,7 @@ import { HitVsFlop } from "@/components/discover/hit-vs-flop"
 import { Trending } from "@/components/discover/trending"
 import { TikTokAccounts } from "@/components/discover/tiktok-accounts"
 import { InstagramAccounts } from "@/components/discover/instagram-accounts"
+import { TrendPickers } from "@/components/discover/trend-pickers"
 import {
   RiUser3Line,
   RiSearchLine,
@@ -25,9 +26,11 @@ import {
   RiFlashlightLine,
   RiMusic2Line,
   RiInstagramLine,
+  RiRadarLine,
 } from "@remixicon/react"
 
 type Mode =
+  | "pickers"
   | "trending"
   | "channel"
   | "keyword"
@@ -42,7 +45,7 @@ const YOUTUBE_MODES: Mode[] = ["trending", "channel", "keyword", "breakouts", "c
 function DiscoverInner() {
   const router = useRouter()
   const search = useSearchParams()
-  const mode = (search.get("mode") as Mode) ?? "trending"
+  const mode = (search.get("mode") as Mode) ?? "pickers"
   const channelParam = search.get("channel") ?? undefined
 
   const [quotaTick, setQuotaTick] = React.useState(0)
@@ -82,6 +85,10 @@ function DiscoverInner() {
           className="min-w-0"
         >
           <TabsList className="flex-wrap">
+            <TabsTrigger value="pickers">
+              <RiRadarLine />
+              Trend pickers
+            </TabsTrigger>
             <TabsTrigger value="trending">
               <RiFlashlightLine />
               Trending
@@ -112,6 +119,9 @@ function DiscoverInner() {
             </TabsTrigger>
           </TabsList>
 
+          <TabsContent value="pickers" className="mt-4">
+            <TrendPickers />
+          </TabsContent>
           <TabsContent value="trending" className="mt-4">
             <Trending
               onChannelClick={jumpToChannel}
@@ -148,6 +158,15 @@ function DiscoverInner() {
         <aside className="space-y-4">
           {YOUTUBE_MODES.includes(mode) ? (
             <QuotaMeter refreshSignal={quotaTick} />
+          ) : mode === "pickers" ? (
+            <div className="rounded-3xl border p-4 text-sm">
+              <p className="font-medium">Billed per video</p>
+              <p className="mt-1 text-muted-foreground">
+                TikTok and Instagram only answer topic searches to a signed-in session, so
+                this tab buys the search from Apify (<code>APIFY_TOKEN</code>). The free
+                plan covers $5 a month. Scans are stored for 6 hours.
+              </p>
+            </div>
           ) : (
             <div className="rounded-3xl border p-4 text-sm">
               <p className="font-medium">No API quota used</p>
