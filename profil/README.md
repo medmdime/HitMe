@@ -1,5 +1,7 @@
 # Le topo
 
+**Profils, mise à jour du 7 octobre :** [[profil/COMPTES#Recommandation du 7 octobre · la marque personnelle|la recherche et les bios proposées]] reprennent ta formulation : la nutrition sans régime, créateur de YouBud, fan de course, de musculation et de cuisine. Une version Instagram et une version TikTok sont préparées ; les profils sociaux n'ont pas été modifiés.
+
 **Mohamed Elmdimegh · je t'explique la nutrition, sans régime.** Réécrit le 28 septembre
 2026, le jour de la nouvelle direction. Ce qui a changé, en dix lignes : l'encadré en tête
 de [[FONDAMENTAUX]].

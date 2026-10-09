@@ -28,7 +28,7 @@ Ce qu'il a dit, remis à l'endroit : « crânes flex » = cornflakes ; « O.G.N.
 
 ## La frustration, dans leurs mots
 
-La même que J5 : le grignotage du soir, sans faim, et la honte qui va avec (besoin n° 4 de [[profil/BESOIN-ET-CONCURRENCE|la recherche du 28 septembre]]). Les mots des gens sont relevés dans [[video/to-film/05-grignoter-le-soir/SCRIPT|le SCRIPT de J5]] : « ce sont des envies sans faim », « une question de volonté », « accro ». Ici, on ne les répète pas : on prend le problème par l'autre bout, en jouant le mauvais conseil que beaucoup suivent sans le savoir (rien le matin, ou un bol de céréales).
+La même que J5 : le grignotage du soir, sans faim, et la honte qui va avec (besoin n° 4 de [[profil/BESOIN-ET-CONCURRENCE|la recherche du 28 septembre]]). Les mots des gens sont relevés dans [[video/to-film/prochains-jalons/05-grignoter-le-soir/SCRIPT|le SCRIPT de J5]] : « ce sont des envies sans faim », « une question de volonté », « accro ». Ici, on ne les répète pas : on prend le problème par l'autre bout, en jouant le mauvais conseil que beaucoup suivent sans le savoir (rien le matin, ou un bol de céréales).
 
 ## Pourquoi un format à l'envers, et ses règles
 

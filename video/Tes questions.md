@@ -2,7 +2,7 @@
 
 **Toutes les nouvelles vidéos, depuis le 28 septembre 2026.** Chacune répond à une question ou à une frustration réelle des gens, simplement, pour apprendre quelque chose. Elles viennent de [[profil/BESOIN-ET-CONCURRENCE|la recherche du besoin et de la concurrence]] : les forums, les recherches Google et YouTube, les comptes qui marchent. L'ancien travail (la série « ce qui annule ton déficit », les shorts des fondamentaux, l'assiette, la créatine…) est rangé dans `video/old/`.
 
-**Un dossier par vidéo**, numéroté dans l'ordre de sortie, et **rangé par état** (depuis le 2 octobre) : `video/to-film/` (à tourner), `video/to-edit/` (tournée, montage en cours), `video/done/` (montée et exportée). Un dossier change de place quand la vidéo change d'état. Chaque dossier contient, comme d'habitude :
+**Un dossier par vidéo**, numéroté dans l'ordre de sortie, et **rangé par état** (depuis le 2 octobre) : `video/to-film/prochains-jalons/` (le programme à tourner), `video/to-edit/` (tournée, montage en cours), `video/done/` (montée et exportée). Depuis le 7 octobre, [[À tourner]] distingue [[Prochains jalons|les prochains jalons]] et [[Reels de test|les essais]], rangés dans `video/to-film/reels-de-test/`. Les dix itérations du week-end et les tests 18 et 19 sont dans les essais. Un dossier change de place quand la vidéo change d'état. Chaque dossier contient, comme d'habitude :
 
 - **la page** de la vidéo ;
 - **`SCRIPT.md`** : la frustration, le texte, trois hooks, les sources, la légende ;
@@ -28,6 +28,8 @@ Au calendrier : **les 14 frustrations**, une par jour, du mercredi 30 septembre 
 **La boucle d'attention** : le hook ouvre une question que le spectateur veut voir fermée (« ton corps n'est pas en panne : c'est ailleurs »), et elle ne se ferme qu'au milieu de l'explication. C'est ce qui le fait rester.
 
 **Les règles** :
+- **Précision du 7 octobre pour les reels Instagram** : la personne doit reconnaître ce qu'elle vit. Lui parler avec « tu », « ton », « ta » ; partir de ses gestes, de ses efforts et de sa frustration. Les précisions « dans cet exemple » et les limites des chiffres restent dans la légende ou les notes de préparation ; l'accroche et la narration la plongent dans sa propre situation. [[Le week-end · résultat d'abord]] applique cette règle aux trois nouvelles ouvertures.
+- **Nommer l'effort** : « tu fais attention cinq jours » laisse le sujet flou. Dire le geste et son but, par exemple « tu réduis tes portions du lundi au vendredi pour maigrir ».
 - **25 à 40 secondes**, 90 à 140 mots.
 - **Un ton posé**, un ami qui connaît le sujet. Jamais de sermon, jamais d'ironie : la vidéo de @15sdy.sport qui fait la leçon est restée à sa médiane.
 - **On ne vise jamais un plaisir** : rien d'interdit, rien à jeter.
@@ -80,6 +82,17 @@ Quatre vidéos par session, environ une heure, un clap au début de chaque prise
 | **4** | mercredi 7 | J13, J14 |
 
 **Le montage** : chaque vidéo la veille de sa sortie au plus tard, avec l'outil (`outils/kallaway-edit`) : la prise coupée, la mini-animation, les sous-titres, le titre fixe.
+
+## Les formats recopiés · tests du Trend Picker
+
+Ces deux dossiers sont dans `video/to-film/reels-de-test/`, avec leur catégorie « reels de test ». Ils sont accessibles depuis [[Reels de test]] et restent distincts des dix itérations du week-end.
+
+Hors série, hors calendrier pour l'instant. Deux vidéos trouvées le 6 octobre chez des petits comptes (moins de 4 000 abonnés), refaites au plus près pour tester le format, pas le sujet. Pas d'animation, pas de cadre A/B : c'est leur forme, pas la nôtre.
+
+| Dossier | D'après | Ce que c'est | Durée |
+|---|---|---|---|
+| `18-aliments-a-volonte` | [@ethanschwan](https://www.tiktok.com/@ethanschwan/video/7693226804357778702), 1,3 million de vues avec 1 869 abonnés | une phrase, puis onze aliments lus dans un carnet, qui s'écrivent à l'écran ; une seule prise | 13 s |
+| `19-pot-de-sauce` | [@motiv2diet](https://www.tiktok.com/@motiv2diet/video/7688776147424890144), 27 000 vues avec 1 200 abonnés, 25 fois sa médiane | le pot de sauce de la boulangerie montré au téléphone : trois cuillères à soupe, une seule suffit. Le sujet de l'assiette, avec un objet à la place de l'explication | 20 s |
 
 ## Les questions de niche · plus tard
 

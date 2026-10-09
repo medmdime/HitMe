@@ -1,0 +1,6 @@
+[mcp_servers.hitme]
+command = "node"
+args = [
+    "outils/hitme/node_modules/tsx/dist/cli.mjs",
+    "outils/hitme/mcp/server.ts",
+]

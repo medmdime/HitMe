@@ -12,6 +12,7 @@ racine. Le code n'est qu'un outil, rangé dans `outils/`.
 | `profil/` | qui je suis, ce que je défends, à qui je parle : les fondamentaux, le programme, les stories, le plan |
 | `calendrier/` | une note par événement, tournage ou sortie, avec sa date en propriété ; `Calendrier.base` les pose sur la grille du mois, comme dans Notion |
 | `video/` | un dossier par vidéo : sa page, le script, les shorts, la feuille de plateau, le montage, les rendus |
+| `video/to-film/` | [À tourner](video/to-film/À%20tourner.md) : `prochains-jalons/` pour le programme à filmer, `reels-de-test/` pour les essais du week-end et de formats |
 | `methode/` | la méthode en copie de lecture ; la source est `.claude/skills/` |
 | `modeles/` | les modèles de notes Obsidian |
 | `outils/` | le code : [`hitme/`](outils/hitme/README.md), l'app Next.js et le serveur MCP de recherche et de teardown. **En local seulement, la base de données sur Neon** |

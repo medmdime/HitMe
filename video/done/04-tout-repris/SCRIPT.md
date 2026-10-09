@@ -171,7 +171,7 @@ Les pistes de la commande (le registre américain, Wing et Phelan 2005 ; le reto
 - **Le nom d'un régime** (Dukan, Nature House…) : on attaque l'idée, pas une marque.
 - **Rien à la première personne**, sauf l'appel : ton histoire, c'est la prise de poids, pas une perte reprise.
 - **La faim, le médicament, les cuillères d'huile, la balance** : l'ancien texte ; ni dans la voix, ni à l'écran.
-- **La privation qui fait craquer** : c'est le sujet de J6 et de sa vidéo sœur sur le rééquilibrage ([[video/to-film/06-prives-et-craques/SCRIPT|J6]]) ; ici, c'est ce qui se passe après le régime. **Le carnet qui oublie** (J2) et **le déficit trop grand** (J9) : deux autres vidéos, deux autres textes.
+- **La privation qui fait craquer** : c'est le sujet de J6 et de sa vidéo sœur sur le rééquilibrage ([[video/to-film/prochains-jalons/06-prives-et-craques/SCRIPT|J6]]) ; ici, c'est ce qui se passe après le régime. **Le carnet qui oublie** (J2) et **le déficit trop grand** (J9) : deux autres vidéos, deux autres textes.
 
 ## À confirmer par Mohamed
 

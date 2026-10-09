@@ -6,7 +6,7 @@
 
 ## Pourquoi celle-là
 
-C'est la scène du lundi de la série : la balance qui affiche un kilo de plus après le week-end, la panique, le petit-déjeuner sauté. Tout le monde l'a vécue, et elle sort le matin même où la personne la vit. Elle ne parle ni de sport ni d'abdos : elle peut sortir la même semaine que [[video/to-film/03-abdos/SCRIPT|la réponse sur les abdos]].
+C'est la scène du lundi de la série : la balance qui affiche un kilo de plus après le week-end, la panique, le petit-déjeuner sauté. Tout le monde l'a vécue, et elle sort le matin même où la personne la vit. Elle ne parle ni de sport ni d'abdos : elle peut sortir la même semaine que [[video/to-film/prochains-jalons/03-abdos/SCRIPT|la réponse sur les abdos]].
 
 **La phrase à retenir**, dite et montrée : « Sauter ton petit-déjeuner pour ce kilo, c'est te priver pour de l'eau. »
 

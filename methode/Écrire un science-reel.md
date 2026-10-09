@@ -547,7 +547,7 @@ this shape.
 Decided with Mohamed on 24 and 27 September 2026 (« ajoute les scripts où je réponds aux
 commentaires, adaptés à notre écriture principale »). Worked examples:
 `video/old/reponse-laisse-les-gens-vivre/` (the opponent: « laisse les gens vivre ») and
-`video/to-film/03-abdos/` (the question he gets all the time: « des mois de régime, et toujours pas
+`video/to-film/prochains-jalons/03-abdos/` (the question he gets all the time: « des mois de régime, et toujours pas
 d'abdos »). A reply is a short like any other: same sieve (the eleven points above), same length
 (30 to 50 s), same follow call, same edit (skill `kallaway-edit`). What changes:
 

@@ -1,0 +1,46 @@
+filters:
+  and:
+    - file.inFolder("video/to-film")
+    - file.ext == "md"
+    - type == "reel"
+properties:
+  categorie:
+    displayName: Catégorie
+  serie:
+    displayName: Série
+  quoi:
+    displayName: Quoi
+  etat:
+    displayName: État
+  sortie:
+    displayName: Sortie prévue
+  priorite:
+    displayName: Priorité de test
+views:
+  - type: table
+    name: Prochains jalons
+    filters:
+      and:
+        - categorie == "prochains jalons"
+    order:
+      - file.name
+      - quoi
+      - etat
+      - sortie
+    sort:
+      - property: file.folder
+        direction: ASC
+  - type: table
+    name: Reels de test
+    filters:
+      and:
+        - categorie == "reels de test"
+    order:
+      - file.name
+      - serie
+      - priorite
+      - quoi
+      - etat
+    sort:
+      - property: file.folder
+        direction: ASC

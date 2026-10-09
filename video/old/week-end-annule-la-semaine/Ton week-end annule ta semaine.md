@@ -8,6 +8,8 @@ sortie: 2026-09-20
 
 **Un short de 35 secondes, publié le dimanche 20 septembre à 20 h 33** sur Instagram et TikTok, déjà en Short sur YouTube sous le titre « Pourquoi ton week-end annule ta semaine ». Dans le coffre, on l'appelait « Trois cents calories par jour » sans connaître son contenu : c'est un déficit de 300 calories par jour que le week-end efface.
 
+> **Corrigé le 6 octobre 2026.** Cette page décrit **la légende** de la publication, pas ce que tu dis dans la vidéo. La vidéo, décortiquée image par image, c'est une seconde de toi en grand, puis **31 secondes d'animation en plein écran** (la semaine en blocs jaunes, le week-end en blocs rouges, toi en bandeau en bas), sans « voici pourquoi », sans raisons numérotées et sans appel. Les règles 2 et 3 plus bas (« voici pourquoi », « trois raisons numérotées ») et la ligne « Premier plan : toi, face caméra » viennent donc de la légende. Le plan par plan, ce qui la sépare des vidéos suivantes et le test en dix itérations : [[Le week-end · dix itérations]].
+
 ## Ce qu'elle dit
 
 La légende, telle que publiée : « Ton week-end annule ta semaine. Voici pourquoi. Ce n'est pas un manque de volonté, c'est mécanique. » Puis trois raisons : en semaine le cadre protège, le week-end la structure disparaît ; les calories deviennent invisibles, 200 ici, 300 là ; la faim accumulée sur cinq jours compense, et on bouge un peu moins sans le savoir. La solution : piloter la semaine entière, du lundi au dimanche, au lieu de juger ses jours parfaits. Puis YouBud, et « Enregistre ce reel pour t'en souvenir ce week-end ».

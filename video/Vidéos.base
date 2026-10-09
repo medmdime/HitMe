@@ -4,6 +4,10 @@ filters:
     - file.ext == "md"
     - type == "longue" || type == "reel" || type == "trailer"
 properties:
+  categorie:
+    displayName: Catégorie
+  serie:
+    displayName: Série
   quoi:
     displayName: Quoi
   etat:
@@ -19,6 +23,8 @@ views:
     name: Tableau
     order:
       - file.name
+      - categorie
+      - serie
       - quoi
       - etat
       - tournage

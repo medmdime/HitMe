@@ -4,6 +4,72 @@
 
 Les mêmes quatre choses partout, pour qu'on te reconnaisse d'une appli à l'autre : le nom d'utilisateur, le nom affiché, la photo, la première ligne de la bio.
 
+## Recommandation du 7 octobre · la marque personnelle
+
+**Demande de Mohamed : regarder les personal brands et préparer son profil Instagram et TikTok, notamment les bios.** Cette section est la nouvelle recommandation de travail. Les versions du 17 et du 28 septembre ci-dessous gardent l'historique ; aucune modification des profils sociaux n'a été effectuée.
+
+### Ce qui a été consulté
+
+| Référence | Observation publique | Ce qu'on peut en retenir pour Mohamed |
+|---|---|---|
+| **TrainBloom / Tony** | Sa bio reproduite publiquement met en avant « Everyone tells you what to do, I explain why », puis des détails personnels. [Copie publique de la bio](https://imginn.com/trainbloom/) | Une phrase distingue la manière d'expliquer ; les détails personnels donnent une personne à suivre |
+| **Ben Nutritionniste / Benoît Boulanger** | Son propre site associe nutrition sportive, approche inclusive et intuitive, formation et parcours d'athlète. [Site du créateur](https://bennutritionniste.com/) | Un sujet clair et une façon de l'aborder ; sa crédibilité vient de son parcours déclaré |
+| **Nassim Sahili** | Sa page chez Fitmass le présente comme coach, fondateur et créateur, avec ses différents projets. [Présentation Fitmass](https://www.fitmass.school/nassim-sahili) | Le nom personnel relie les contenus et les projets ; YouBud peut s'inscrire dans le parcours de Mohamed |
+
+**Portée de la recherche :** lecture directe des profils Instagram bloquée, y compris via HitMe (limitation de requêtes). La bio de TrainBloom est une reproduction par un tiers ; les deux autres lignes analysent les pages des créateurs, pas leurs bios Instagram actuelles. Le résumé TikTok de `@medmdim` a répondu, mais ne renvoie pas le texte de sa bio. La bio de Mohamed consignée plus bas provient donc du coffre, pas d'une lecture du profil aujourd'hui. Ces observations suggèrent une structure ; elles ne prouvent pas qu'une bio explique les résultats d'un compte.
+
+### Diagnostic et direction
+
+**État :** Instagram et TikTok, vidéos courtes éducatives ; sujet du poids et de la nutrition ; parcours de 60 à 80 kg, muscu, course, développeur et créateur de YouBud.
+
+**Objectif du profil :** donner envie de suivre les prochaines explications après avoir découvert un reel. La bio consignée dans le coffre juxtapose métier, activités, taille, parcours, course et produit ; la raison de s'abonner y arrive peu clairement.
+
+**Formulation retenue avec Mohamed le 7 octobre :** « Je t'explique la nutrition sans régime », puis ton rôle de créateur de YouBud, puis ton goût pour la course, la musculation et la cuisine. Les reels répondent aux situations des gens ; les stories et une présentation épinglée développent ton histoire.
+
+La formule pour toi : **ce que tu expliques → ce que tu construis → ce que tu aimes**. Ton parcours de 60 à 80 kg peut vivre dans la présentation et les stories ; les sources et les démonstrations dans les vidéos soutiennent les explications.
+
+### Réglages proposés
+
+| Champ | Proposition |
+|---|---|
+| Nom affiché sur les deux plateformes | **Mohamed Elmdimegh · Nutrition** — 29 caractères ; proposition qui ajoute le sujet à ton nom |
+| Nom d'utilisateur | `medmdim`, identique partout si disponible ; le compte TikTok correspondant a été retrouvé |
+| Photo | Ton visage en gros plan, lumineux, reconnaissable à petite taille ; même photo sur les deux plateformes |
+| Lien Instagram | La page YouBud, dès que son adresse publique et son accès sont confirmés ; l'adresse reste à renseigner |
+| Lien TikTok | La même destination si le champ lien est disponible sur ton compte |
+
+### Bio Instagram recommandée · 121 caractères
+
+```text
+Je t'explique la nutrition sans régime
+Créateur de YouBud, suivi nutritionnel
+Fan de course, de musculation et de cuisine
+```
+
+La première ligne dit ce que tu expliques et ton approche. La deuxième présente YouBud et précise son rôle ; la troisième garde le côté personnel, dans les mots de Mohamed. La bio reste utilisable après le semi du 18 octobre.
+
+### Bio TikTok recommandée · 80 caractères
+
+```text
+Je t'explique la nutrition sans régime
+Créateur de YouBud
+Course, muscu, cuisine
+```
+
+Même première ligne qu'Instagram, une version plus courte des deux autres lignes. Les caractères ont été comptés avec espaces, ponctuation et retours à la ligne. Cette proposition tient dans 80 caractères sans supposer que ce soit la limite universelle actuelle : les sources publiques se contredisent sur 80 et 160, et la limite du champ de ton compte n'a pas été lue.
+
+### Les publications épinglées
+
+1. **Qui est Mohamed et ce que tu trouves ici**, quand la présentation sera prête : ton parcours et la promesse du compte.
+2. **Ton week-end annule ta semaine** : une explication qui illustre le compte. Les quelque 20 000 vues relevées concernent TikTok, pas une mesure Instagram.
+3. **Déficit calorique** : une deuxième explication pour donner envie de regarder plusieurs vidéos.
+
+La présentation n'a pas encore été tournée d'après le coffre ; les deux autres vidéos existent. Pour les stories à la une, trois entrées possibles : **Mon parcours**, **Nutrition**, **YouBud** (quand les éléments correspondants sont prêts).
+
+**Lecture du résultat :** noter la date du changement réellement appliqué, les visites de profil et les abonnements si disponibles ; comparer à durée égale en tenant compte des reels publiés. Garder une bio assez longtemps pour accumuler des visites ; ne pas attribuer à la bio seule une variation causée aussi par un nouveau reel.
+
+[[profil/README|Le topo]] · [[Reels de test]] · [[HUB]]
+
 ---
 
 ## À décider avec Mohamed

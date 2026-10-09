@@ -61,6 +61,8 @@ video/**/assets/rushes/
 video/**/assets/musique/
 # ses photos personnelles (l'avant et l'après de J1) : son corps et son visage, jamais dans un dépôt public
 video/**/assets/photos/
+# portraits personnels et photos de profil générées : restent sur la machine
+profil/assets/photos/
 video/**/montage/cache/
 video/**/.transcode-cache/
 # et les rendus : tes prises et ton visage y sont, le dépôt est public. Les trois rendus de meriter

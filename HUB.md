@@ -8,6 +8,8 @@ ce que Claude écrit, tu le vois ici.
 
 ## Aujourd'hui
 
+**Mise à jour du 7 octobre : [[À tourner]] sépare [[Prochains jalons|les prochains jalons à filmer]] et [[Reels de test|les reels de test]].** Les dix itérations du week-end sont dans les tests. La piste à creuser en premier est [[Le week-end · résultat d'abord|le résultat d'abord : la chute, puis le comment]], à partir de la vidéo à environ 20 000 vues. Les [[methode/HyperFrames · références pour les graphiques|références HyperFrames]] et [[Le week-end · piste longue|une piste longue sur le même sujet]] sont ajoutées.
+
 **La direction, depuis le 28 septembre : répondre aux questions et aux frustrations des gens.** Pas une série sur ce qui annule ton déficit, pas un sujet tiré d'une étude : une question que les gens se posent vraiment (« je mange peu et je ne maigris pas », « toujours pas d'abdos », « j'ai tout repris »), trouvée dans [[profil/BESOIN-ET-CONCURRENCE|la recherche du besoin et de la concurrence]], et une réponse claire, preuve à l'appui, sans juger personne.
 
 - **La promesse** : « Tu fais des efforts, et rien ne bouge ? Je t'explique pourquoi, sans te juger, et ce qui marche à la place. »
@@ -51,15 +53,19 @@ Les décisions qui tiennent : un seul sujet, la nutrition et les calories, **san
 
 | Dossier | Ce qu'il contient |
 |---|---|
-| `video/to-film/`, `video/to-edit/`, `video/done/` | **les vidéos « Tes questions », rangées par état** (depuis le 2 octobre). `video/to-film/` : **à tourner** ; `video/to-edit/` : **tournée, montage en cours** ; `video/done/` : **montée et exportée** (le texte dit, la description à coller et la vidéo sont dans le dossier). Un dossier numéroté par vidéo (la page, le script, le prompteur, le tournage, la mini-animation) ; la page d'accueil est [[Tes questions]] |
+| `video/to-film/prochains-jalons/` | **les vidéos du programme à filmer** : douze frustrations encore à tourner et deux questions de niche écrites ; [[Prochains jalons]] · [[Tes questions]] |
+| `video/to-film/reels-de-test/` | **les essais** : les dix itérations du week-end et les deux formats recopiés ; [[Reels de test]] · [[Le week-end · dix itérations]] |
+| `video/to-edit/`, `video/done/` | **les vidéos rangées par état** : tournée et en cours de montage, puis montée et exportée. Le dossier complet suit la vidéo ; [[À publier]] liste les exports prêts |
 | `video/old/` | les vidéos préparées avant le 28 septembre : l'assiette, la créatine, le week-end, les shorts des fondamentaux, les longues écrites |
 | `video/brainstorming/` | les idées : [[Idées · ce qui annule ton déficit]], [[La suite de la série · brainstorm]], [[La série · ce qui annule ton déficit]] |
 
 ![[Vidéos.base#Tableau]]
 
-Les propriétés en tête de chaque page (type, quoi, état, tournage, sortie) sont la source de ce tableau : change-les dans la page, le tableau suit.
+Les propriétés en tête de chaque page (type, catégorie, série, quoi, état, tournage, sortie) sont la source de ce tableau : change-les dans la page, le tableau suit. [[À tourner]] présente deux vues séparées pour les tournages.
 
 **Les longues YouTube** sont en pause jusqu'après le semi. Elles restent écrites dans `video/old/` ([[Les calories, les fondamentaux]], [[Pourquoi ça revient]], [[Quoi mettre dans l'assiette]]…) ; la reprise se décidera sur les chiffres des shorts.
+
+**Nouvelle piste à développer** : [[Le week-end · piste longue]], avec une ouverture par le résultat. Elle reste dans les idées, sans nouvelle date au calendrier.
 
 ---
 
@@ -98,6 +104,7 @@ source, puis recopie.
 | [[methode/Le Kallaway edit\|Le Kallaway edit]] | l'outil de montage `outils/kallaway-edit` (coupes, lèvres recalées, cadre B, sous-titres, ×1,08) ; la version complète, avec woosh et risers, reste pour une vidéo phare |
 | [[methode/Écrire un science-reel\|Écrire un science-reel]] | le format long mesuré sur douze reels, les pièges du français |
 | [[methode/Les hooks (Kallaway)\|Les hooks]] · [[methode/Le storytelling (Kallaway)\|Le storytelling]] | la formule en trois temps, les boucles, le mais et le donc |
+| [[Le week-end · résultat d'abord]] · [[methode/HyperFrames · références pour les graphiques\|HyperFrames : les références graphiques]] | le test prioritaire : la chute dès l'ouverture ; le catalogue et le guide motion pour les animations futures |
 | [[methode/Monter un reel Train Bloom dans CapCut\|Monter dans CapCut]] · [[methode/Le pipeline vidéo HitMe\|Le pipeline HitMe]] | l'ancien montage, la recherche d'outliers |
 
 Les règles maison qui priment sur tout : chaque phrase littéralement vraie ; un texte humain, qui parle comme un ami ; dur avec les idées, doux avec les gens ; chaque chiffre à échelle humaine ; jamais « coûte cher » pour des calories ; rien à la première personne qui ne soit pas vrai pour toi.
@@ -128,7 +135,7 @@ Les règles maison qui priment sur tout : chaque phrase littéralement vraie ; u
 ## 8. Ce coffre Obsidian
 
 - **Le coffre est le dépôt** : `C:\Users\melmdim\HitMe`, public sur GitHub. Le code vit dans `outils/`, exclu de l'affichage, comme les compositions HyperFrames rangées à côté de leurs vidéos. Les dossiers qui commencent par un point (`.claude`, `.agents`) ne s'affichent jamais dans Obsidian : c'est pour ça que `methode/` existe.
-- **Les dossiers** : `profil/` le profil ; `video/` les vidéos (`future/`, `old/`, `brainstorming/`) ; `calendrier/` une note par événement ; `methode/` la méthode ; `modeles/` les modèles de notes ; `outils/` le code, invisible ici.
+- **Les dossiers** : `profil/` le profil ; `video/` les vidéos (`to-film/prochains-jalons/`, `to-film/reels-de-test/`, `to-edit/`, `done/`, `old/`, `brainstorming/`) ; `calendrier/` une note par événement ; `methode/` la méthode ; `modeles/` les modèles de notes ; `outils/` le code, invisible ici.
 - **Le plugin Calendar Bases**, d'Edrick Leong : il ajoute la vue Mois à Bases ; `Calendrier.base` est déjà réglé dessus, la semaine commençant le lundi.
 - **Git** : les notes sont versionnées comme le reste ; tes prises et tes rendus ne le sont jamais.
 - **Les liens** entre notes sont des liens Obsidian, `[[Nom de la note]]`. Un nom de vidéo suffit : les noms sont uniques dans le coffre.
